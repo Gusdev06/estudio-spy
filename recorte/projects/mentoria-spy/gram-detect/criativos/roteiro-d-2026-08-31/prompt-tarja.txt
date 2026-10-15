@@ -1,0 +1,13 @@
+Generate an image with the following prompt, dont change it(DO NOT CHANGE THIS PROMPT, IT'S ALREADY AN IMPROVED PROMPT) -
+
+subject: a television broadcast lower-third graphic package, rendered alone as a clean graphic asset
+
+background: the entire canvas is pure flat solid black (#000000), completely empty, no texture, no gradient, no imagery, no studio, no people — only the graphic bars described below sit on it
+
+graphic layout: two stacked horizontal bars spanning the full width of the canvas, positioned in the lower fifth of the frame with a margin of empty black below them. The upper bar is taller, filled with a deep navy blue (#0E1A2B), and contains the words "THE SIGNAL" in heavy bold condensed white uppercase sans-serif type, left aligned with generous padding. Directly beneath it and touching it, a shorter bar filled with clean off-white (#F2F2F2) contains the words "WHY PHONE-TRACKING APPS ALMOST ALWAYS FAIL" in bold dark navy uppercase sans-serif type, left aligned with the same padding, smaller than the line above it. A narrow vertical crimson red (#C8102E) accent stripe runs down the far left edge, spanning the full combined height of both bars.
+
+style: flat vector broadcast graphic, crisp hard edges, perfectly horizontal bars, perfectly level baselines, high contrast, modern news channel design language, no bevel, no drop shadow, no glow, no gradient, no 3D effect, no transparency
+
+aspect ratio: 9:16
+
+Avoid next - any studio, any person, any background imagery, any photograph, any additional text beyond the two specified lines, any station logo, any clock, any misspelling, any tilted or rotated bars, any drop shadow, any glow, any gradient, excessive yellow in the photo, too sharp or overly sharpened.

@@ -1,0 +1,31 @@
+✔ Done in 28s.
+✔ Saved 1 file.
+{
+  "id": "247b0f27f17a42f78e58fd02ba42e8e8",
+  "model": "google/nano-banana-2.1/edit",
+  "prompt": "Image 3 is ONLY a color and light reference: copy its warm golden-hour color, low contrast, warm lifted shadows, soft glow and iPhone front camera feel. Do NOT copy the face, hair color, makeup, body, pose, jewelry or clothes from image 3.\nThe woman is the one from images 1 and 2, 100% faithful to her face, beauty mark, eyebrows, olive skin and dark brown hair. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nScene: front-camera selfie inside a car at golden hour, low sun through the side window lighting part of her face, car ceiling, seat and window visible, arm's-length from slightly above, framing a little tilted, face slightly off-center.\nBack seat, cozy. Playful smile with her tongue slightly between her teeth. Outfit: oversized sage-green crewneck sweatshirt, hair clipped up in a big tortoiseshell claw clip with loose strands, tiny gold studs, thin hair tie on the wrist, white wired earbuds hanging from one ear.\nReal iPhone 15 Pro front camera photo, natural pores, flyaway hairs lit by the sun, fabric creases, natural teeth. No text, no logos, no watermark. Avoid: beauty filter, plastic skin, studio light, heavy makeup, posed model face.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/fe29d873-a0b4-48f5-94a1-d5902fd8772b.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/influencer-bia/perfil/carro-nb21/5-moletom-garra.png"
+  ],
+  "elapsed_ms": 30215,
+  "raw": {
+    "id": "247b0f27f17a42f78e58fd02ba42e8e8",
+    "model": "google/nano-banana-2.1/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/fe29d873-a0b4-48f5-94a1-d5902fd8772b.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/247b0f27f17a42f78e58fd02ba42e8e8/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T15:01:23.358875993Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 25758
+    }
+  }
+}

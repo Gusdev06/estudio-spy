@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:FH_3BcELftk",
+  "provider": "youtube",
+  "source_id": "FH_3BcELftk",
+  "source_url": "https://www.youtube.com/watch?v=FH_3BcELftk",
+  "title": "How to View and Restore Recently Deleted Instagram Posts",
+  "creator": {
+    "name": "HardReset.Info",
+    "url": null
+  },
+  "query": "Instagram recently deleted folder how to see",
+  "collected_at": "2026-09-17T16:29:26.016204+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 89,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/FH_3BcELftk",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/FH_3BcELftk/hq720.jpg?sqp=-oaymwE6CNAFEJQDSFXyq4qpAywIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIGUoZTAPuAL3GA==&rs=AOn4CLD2lVmzRXkoF47DEcgI1JbKbIqV7Q"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

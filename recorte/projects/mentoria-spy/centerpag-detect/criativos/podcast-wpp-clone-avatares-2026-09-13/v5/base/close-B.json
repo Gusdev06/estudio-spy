@@ -1,0 +1,29 @@
+{
+  "id": "b3ad1b044efb4242b0c3d32d30f8ff7f",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same podcast studio, same camera, same framing distance, same warm daylight, same cream sofa and background with green plants and a light patterned wall, same black podcast microphone on a boom arm entering from the left. Extend the scene vertically to a 9:16 vertical frame, keeping the original composition in the middle band. REPLACE the woman with a DIFFERENT woman: a Black woman with deep brown skin, about 26 years old, long braided hair gathered over one shoulder, small gold studs, bare-faced, wearing a navy-blue blazer over a plain white t-shirt. She sits in the same position, same posture, same distance from the microphone, head and upper chest visible, turned slightly toward the person she is talking to off-camera, mouth closed, curious and skeptical expression. Photorealistic video still, natural skin texture with visible pores, no retouching, not a model, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/87448729-8e55-4e90-8abe-96600bae4f71.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-clone-avatares-2026-09-13/v5/base/close-B.png"
+  ],
+  "elapsed_ms": 78731,
+  "raw": {
+    "id": "b3ad1b044efb4242b0c3d32d30f8ff7f",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/87448729-8e55-4e90-8abe-96600bae4f71.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/b3ad1b044efb4242b0c3d32d30f8ff7f/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-13T04:20:49.903955652Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 74410
+    }
+  }
+}

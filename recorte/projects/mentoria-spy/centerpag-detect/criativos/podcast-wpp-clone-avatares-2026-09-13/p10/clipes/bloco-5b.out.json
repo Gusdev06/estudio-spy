@@ -1,0 +1,28 @@
+{
+  "id": "6c1d45e9d78f4d5ab1196d9b844d2ccc",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/ca0bcb77-741f-4399-a3d2-f01aa8b9e7f2.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-clone-avatares-2026-09-13/p10/clipes/bloco-5b.mp4"
+  ],
+  "elapsed_ms": 27066,
+  "raw": {
+    "id": "6c1d45e9d78f4d5ab1196d9b844d2ccc",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/ca0bcb77-741f-4399-a3d2-f01aa8b9e7f2.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/6c1d45e9d78f4d5ab1196d9b844d2ccc/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-19T19:31:47.033970211Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 21592
+    }
+  }
+}

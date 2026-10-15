@@ -1,0 +1,29 @@
+{
+  "id": "7176e93ae4b144b388a34bce777af8a4",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot, 3D animated feature film style. Nora walks into the warm kitchen carrying two mugs of tea and sets them on the counter, looking at Maya; Maya breaks down and Nora wraps her in a firm side hug; the camera pushes in on the two sisters forehead to forehead, Nora's eyes closed. Characters: Nora (chin-length dark bob with one silver streak, chambray denim shirt, gold bangles); Maya (Latina woman, messy low bun, heather-gray cardigan, small gold hoop earrings, small beauty mark above her lip). Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/a652c1a2-28a9-4fe7-bdfb-eef800ab6a9f-u2_22cd0ab7-c98b-4022-ac7a-b91d426185a6.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B11.mp4"
+  ],
+  "elapsed_ms": 50032,
+  "raw": {
+    "id": "7176e93ae4b144b388a34bce777af8a4",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/a652c1a2-28a9-4fe7-bdfb-eef800ab6a9f-u2_22cd0ab7-c98b-4022-ac7a-b91d426185a6.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/7176e93ae4b144b388a34bce777af8a4/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:27:51.315870474Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 46145
+    }
+  }
+}

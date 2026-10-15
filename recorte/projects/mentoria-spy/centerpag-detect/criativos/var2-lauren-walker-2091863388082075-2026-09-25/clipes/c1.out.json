@@ -1,0 +1,28 @@
+{
+  "id": "f717b8b1e73e46cfa681f18841b0ef85",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/a94cab06-5646-4c5d-a7c0-a43f5aab95fe.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/var2-lauren-walker-2091863388082075-2026-09-25/clipes/c1.mp4"
+  ],
+  "elapsed_ms": 87713,
+  "raw": {
+    "id": "f717b8b1e73e46cfa681f18841b0ef85",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/a94cab06-5646-4c5d-a7c0-a43f5aab95fe.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/f717b8b1e73e46cfa681f18841b0ef85/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:23:53.651778356Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 83292
+    }
+  }
+}

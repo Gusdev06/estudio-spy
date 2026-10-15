@@ -1,0 +1,31 @@
+✔ Done in 67s.
+✔ Saved 1 file.
+{
+  "id": "92c5bd55ee9e4ce08809eb3d0206a523",
+  "model": "openai/gpt-image-2.5-sunburst/edit",
+  "prompt": "Use images 1, 2 and 3 only for the woman's identity: same face, beauty mark, skin, eyes, eyebrows and hair. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nSquare photo for an Instagram profile picture, her face clearly visible in the center third, looking into the lens.\nShot on an iPhone 15 Pro, handheld, framing slightly tilted and a little off-center, mild digital noise, one highlight slightly blown out, real skin texture with pores and a little shine, flyaway hairs, natural fabric creases. Unretouched everyday photo a friend took. No text, no logos, no watermark.\nScene: sitting at a small table by the window of a busy neighborhood coffee shop in the late morning, holding an iced matcha latte in a clear plastic cup with a straw close to her chin, small amused closed-mouth smirk, one eyebrow slightly raised. Cream knit cardigan over a white tank top, small gold hoop earrings, hair down. Soft window light from the left, warm cafe lights behind her slightly out of focus, a laptop and a phone on the table.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/bffacebd-ff2a-4663-90ad-fbca808b7e32.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/influencer-bia/perfil/A-cafe.png"
+  ],
+  "elapsed_ms": 69118,
+  "raw": {
+    "id": "92c5bd55ee9e4ce08809eb3d0206a523",
+    "model": "openai/gpt-image-2.5-sunburst/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/bffacebd-ff2a-4663-90ad-fbca808b7e32.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/92c5bd55ee9e4ce08809eb3d0206a523/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T14:46:33.59814439Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 66261
+    }
+  }
+}

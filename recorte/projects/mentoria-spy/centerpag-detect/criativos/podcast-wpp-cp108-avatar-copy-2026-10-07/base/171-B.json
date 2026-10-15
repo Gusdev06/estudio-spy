@@ -1,0 +1,29 @@
+{
+  "id": "078eb0b49a5b41149a71dcc825b3ac46",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same podcast studio, same camera position and framing, same warm daylight, same cream sofa and background with a light curtain and green plants, same black podcast microphone on a boom arm in front of her. Keep the wide 16:9 landscape framing exactly as in the image. REPLACE the woman with a DIFFERENT woman: a white woman about 47 years old with fair skin, a short silver-grey pixie cut, small silver stud earrings, wearing a plain coral long-sleeve top. She sits in the same position, same posture, same distance from the microphone, head and upper chest visible, mouth closed, looking toward the person she is talking to off-camera. Photorealistic video still, natural skin texture with visible pores, no retouching, ordinary person, not a model, no text, no logos, no watermark.",
+  "outputs": [
+    "https://cdn.cachegalaxy.com/output/3b75df1c-0207-4b29-a2b7-5389a4e7dbd3.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-cp108-avatar-copy-2026-10-07/base/171-B.png"
+  ],
+  "elapsed_ms": 60184,
+  "raw": {
+    "id": "078eb0b49a5b41149a71dcc825b3ac46",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://cdn.cachegalaxy.com/output/3b75df1c-0207-4b29-a2b7-5389a4e7dbd3.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/078eb0b49a5b41149a71dcc825b3ac46/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-07T14:36:06.192052447Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 56590
+    }
+  }
+}

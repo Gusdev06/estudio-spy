@@ -1,0 +1,27 @@
+{
+  "id": "821f543de2ad43c2a7c42d142060fcf3",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same dark cozy podcast studio at night, same camera position and framing, same warm dim lamp and candle light, same furniture, shelves, plants and wall exactly as in the image. REPLACE the woman with a DIFFERENT woman: a white woman about 30 years old with fair freckled skin and long wavy red hair, sitting in the same brown leather armchair on the left, legs crossed the same way, wearing the SAME cream overshirt over a dark top and the SAME light-blue wide jeans and white sneakers, the SAME black over-ear headphones, the same black podcast microphone in front of her. Same position, same posture, same size in the frame, mouth closed, looking toward the person she is talking to off-camera. She is the only person in the image. Photorealistic video still, natural skin texture, no retouching, ordinary person, not a model, no text, no captions, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/5c2cd2ac-99d5-402a-81c3-898e2ea2cc42.png"
+  ],
+  "saved": [],
+  "elapsed_ms": 292862,
+  "raw": {
+    "id": "821f543de2ad43c2a7c42d142060fcf3",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/5c2cd2ac-99d5-402a-81c3-898e2ea2cc42.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/821f543de2ad43c2a7c42d142060fcf3/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T03:34:08.303213657Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 88509
+    }
+  }
+}

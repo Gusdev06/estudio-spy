@@ -1,0 +1,1 @@
+var3 emenda n1237: salto máx 5.8px/frame na emenda | movimento típico (mediana ±20 fr) 2.2 | p90 4.6

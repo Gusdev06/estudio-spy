@@ -1,0 +1,28 @@
+{
+  "id": "d91b86728f964f1f843549ab84ebe37e",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/75c609cf-df41-484b-939b-8f2fd0c292a3.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/podcast-gram-clone-avatares-2026-09-24/g1/clipes/b.mp4"
+  ],
+  "elapsed_ms": 72378,
+  "raw": {
+    "id": "d91b86728f964f1f843549ab84ebe37e",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/75c609cf-df41-484b-939b-8f2fd0c292a3.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/d91b86728f964f1f843549ab84ebe37e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T03:46:21.686774855Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 69070
+    }
+  }
+}

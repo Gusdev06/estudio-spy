@@ -1,0 +1,4 @@
+# roteiro do Isca, seção 3 — variante<TAB>linha 1|linha 2 (caixa alta). Só isso muda entre A, B e C.
+A	IF HE MISSED YOU,|HIS PHONE WOULD SHOW IT.
+B	WHAT HE DELETES|SAYS WHAT HE FEELS.
+C	HE MOVED ON IN PUBLIC.|CHECK WHAT HE DELETED.

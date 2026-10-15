@@ -1,0 +1,31 @@
+✔ Done in 60s.
+✔ Saved 1 file.
+{
+  "id": "4260f502a1e244aa96c35c658fa0c690",
+  "model": "openai/gpt-image-2.5-sunburst/edit",
+  "prompt": "Asset type: candid lifestyle photo for an Instagram profile, 4:5.\nPrimary request: a real photo taken with an iPhone 15 Pro of the woman in the reference images, 100% faithful to her face, beauty mark, eyebrows, skin tone and dark brown hair. Use the reference images ONLY for her identity, never for pose, expression, framing or background. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nScene/backdrop: city sidewalk in the afternoon, storefronts, a crosswalk, parked cars and a few pedestrians out of focus, fallen leaves.\nSubject: walking away from the camera and looking back over her shoulder with an amused smirk, coffee cup in one hand, tote bag on the shoulder. Outfit: long camel trench coat open over a grey ribbed tank top and dark straight-leg jeans, white sneakers without logos, small black shoulder bag, hair down blowing slightly.\nComposition/framing: a friend took it walking a few steps behind, vertical, she is in the right third of the frame, slight motion blur on her hand and the background, framing a little crooked.\nLighting/mood: low afternoon sun from behind her, warm rim light on her hair, slightly blown highlights on the sky, face in soft shade.\nStyle/medium: iPhone 15 Pro photo, 24mm main camera (or 12MP front camera for selfies), Smart HDR processing with slightly lifted shadows and a touch of over-sharpening, subtle sensor noise in the darker areas, true-to-life colors, no color grading.\nTextures: natural pores, uneven skin tone, slight shine on the nose, flyaway hairs, real fabric creases and wear.\nConstraints: no text, no logos, no brand names on clothes, no watermark.\nAvoid: beauty filter, plastic or waxy skin, perfectly centered symmetrical headshot, staring blankly into the lens, posed smile, studio lighting, cinematic grading, heavy makeup, generic plain grey t-shirt.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/f981d6bc-357c-4e05-911e-4a8c3c17f0aa.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/influencer-bia/perfil/v2/4-rua-olhando-pra-tras.png"
+  ],
+  "elapsed_ms": 62465,
+  "raw": {
+    "id": "4260f502a1e244aa96c35c658fa0c690",
+    "model": "openai/gpt-image-2.5-sunburst/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/f981d6bc-357c-4e05-911e-4a8c3c17f0aa.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/4260f502a1e244aa96c35c658fa0c690/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T14:52:50.496338372Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 59624
+    }
+  }
+}

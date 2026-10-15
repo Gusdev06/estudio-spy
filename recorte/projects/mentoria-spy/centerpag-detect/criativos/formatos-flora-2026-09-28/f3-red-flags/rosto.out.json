@@ -1,0 +1,27 @@
+{
+  "id": "f9023faa3c8d4a97a5d45c0c469d5538",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Photorealistic still from a vertical selfie video. A Black woman about 29 years old with dark brown skin, short natural curly hair, small gold hoop earrings, an olive-green hoodie, sitting in the driver's seat of a parked car in soft daylight, seatbelt on, the car interior and window softly out of focus behind her. She looks straight into the camera lens with a confident, knowing expression, one eyebrow slightly raised, mouth slightly open as if mid-sentence. Framing: vertical 9:16, head and shoulders centered, eyes at the upper third, camera at eye level like a front-facing phone camera held at arm's length. She is the only person in the image, and both of her hands rest down below the bottom edge of the frame. Natural skin texture with visible pores, no retouching, ordinary person, not a model. No text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/7fc9c910-7724-45fd-b61b-e38dbb7d6053.png"
+  ],
+  "saved": [],
+  "elapsed_ms": 69567,
+  "raw": {
+    "id": "f9023faa3c8d4a97a5d45c0c469d5538",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/7fc9c910-7724-45fd-b61b-e38dbb7d6053.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/f9023faa3c8d4a97a5d45c0c469d5538/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-27T17:02:33.693816813Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 67537
+    }
+  }
+}

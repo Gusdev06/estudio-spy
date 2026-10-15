@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:9DhrLW8uHTk",
+  "provider": "youtube",
+  "source_id": "9DhrLW8uHTk",
+  "source_url": "https://www.youtube.com/watch?v=9DhrLW8uHTk",
+  "title": "𝐌𝐞𝐭𝐚 𝐄𝐧𝐝𝐬 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 𝐃𝐌 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐢𝐨𝐧 𝐨𝐧 𝐌𝐚𝐲 𝟖, 𝟐𝟎𝟐𝟔 | 𝐏𝐫𝐢𝐯𝐚𝐜𝐲 𝐒𝐡𝐨𝐜𝐤 & 𝐖𝐡𝐚𝐭 𝐔𝐬𝐞𝐫𝐬 𝐌𝐮𝐬𝐭 𝐃𝐨",
+  "creator": {
+    "name": "SG Animate",
+    "url": null
+  },
+  "query": "Meta Instagram messaging update official video",
+  "collected_at": "2026-09-17T16:34:31.550335+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 288,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/9DhrLW8uHTk",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/9DhrLW8uHTk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBIL2bk2KbztxXtNYrBn4m2VPFq4g"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

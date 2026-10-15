@@ -1,0 +1,40 @@
+{
+ "A1": {
+  "taskId": "cab44292792ab03829ba3f913ab03b51",
+  "src": "A",
+  "start": 0,
+  "ends": 5.5
+ },
+ "A2": {
+  "taskId": "e58e45c5fd8337f229b72d4b591a3387",
+  "src": "A",
+  "start": 5.5,
+  "ends": 11
+ },
+ "B1": {
+  "taskId": "46483cffa62a19cbb1de9067b2cc11ce",
+  "src": "B",
+  "start": 0,
+  "ends": 5.5
+ },
+ "B2": {
+  "taskId": "26ded1f9aa033b0680b7fe17c65c6a0a",
+  "src": "B",
+  "start": 5.5,
+  "ends": 11
+ },
+ "B2r1": {
+  "taskId": "434e063830d41e82c7dd25faace1f821",
+  "src": "B",
+  "start": 5.5,
+  "ends": 11,
+  "seed": 12345
+ },
+ "B2r2": {
+  "taskId": "771a4a625fb1d22087c96e848e7205af",
+  "src": "B",
+  "start": 5.5,
+  "ends": 11,
+  "seed": 98765
+ }
+}

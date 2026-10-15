@@ -1,0 +1,28 @@
+✔ Done in 343s.
+{
+  "id": "a711859df2bd452da94b49a6fe9df11c",
+  "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "prompt": "Master Intent: A selfie video filmed on a phone in a bedroom at night. Tone: steady, resolved, closing. No music, only faint room tone.\n\nScene 1 (Duration: 8s):\nHandheld selfie framing, slight natural sway, no camera movement beyond the shake of a held phone.\n\nShe leans a fraction closer to the lens and holds the viewer's gaze.\n[Character A: Woman, steady certain voice, warm at the end, American English]: \"The answers you're looking for are right there. You just need a way to see them.\"\n\nShe holds still after the line, blinking once.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/a711859df2bd452da94b49a6fe9df11c/1.mp4"
+  ],
+  "saved": [],
+  "elapsed_ms": 343374,
+  "raw": {
+    "id": "a711859df2bd452da94b49a6fe9df11c",
+    "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/a711859df2bd452da94b49a6fe9df11c/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/a711859df2bd452da94b49a6fe9df11c/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-31T08:24:30.931543286Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 341288
+    }
+  }
+}

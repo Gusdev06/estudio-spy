@@ -1,0 +1,250 @@
+{
+ "fps": 30,
+ "total_frames": 817,
+ "scenes": [
+  {
+   "cena": 1,
+   "clip": "gram-detect/criativos/podcast-hook-polemico-2026-09-05/var5/clipes/cena-1-v3.mp4",
+   "segments": [
+    [
+     0.0,
+     0.1
+    ],
+    [
+     1.773,
+     3.5
+    ]
+   ],
+   "seg_frames": [
+    3,
+    52
+   ],
+   "removed": [
+    [
+     0.1,
+     1.773
+    ]
+   ],
+   "out_start": 0,
+   "out_frames": 55
+  },
+  {
+   "cena": 2,
+   "clip": "gram-detect/criativos/podcast-hook-polemico-2026-09-05/clipes/cena-2.mp4",
+   "clip_s": 9.417,
+   "fala_fim": 7.22,
+   "corte": 7.52,
+   "segments": [
+    [
+     0.0,
+     0.756
+    ],
+    [
+     1.319,
+     3.732
+    ],
+    [
+     4.248,
+     5.469
+    ],
+    [
+     5.832,
+     7.52
+    ]
+   ],
+   "seg_frames": [
+    23,
+    72,
+    37,
+    51
+   ],
+   "removed": [
+    [
+     0.756,
+     1.319
+    ],
+    [
+     3.732,
+     4.248
+    ],
+    [
+     5.469,
+     5.832
+    ]
+   ],
+   "out_start": 55,
+   "out_frames": 183
+  },
+  {
+   "cena": 3,
+   "clip": "gram-detect/criativos/podcast-hook-polemico-2026-09-05/clipes/cena-3.mp4",
+   "clip_s": 8.0,
+   "fala_fim": 6.3,
+   "corte": 6.6,
+   "segments": [
+    [
+     0.0,
+     1.551
+    ],
+    [
+     1.822,
+     3.056
+    ],
+    [
+     3.484,
+     4.508
+    ],
+    [
+     5.022,
+     6.6
+    ]
+   ],
+   "seg_frames": [
+    47,
+    37,
+    31,
+    47
+   ],
+   "removed": [
+    [
+     1.551,
+     1.822
+    ],
+    [
+     3.056,
+     3.484
+    ],
+    [
+     4.508,
+     5.022
+    ]
+   ],
+   "out_start": 238,
+   "out_frames": 162
+  },
+  {
+   "cena": 4,
+   "clip": "gram-detect/criativos/podcast-hook-polemico-2026-09-05/clipes/cena-4.mp4",
+   "clip_s": 4.459,
+   "fala_fim": 2.66,
+   "corte": 2.96,
+   "segments": [
+    [
+     0.0,
+     1.528
+    ],
+    [
+     1.784,
+     2.96
+    ]
+   ],
+   "seg_frames": [
+    46,
+    35
+   ],
+   "removed": [
+    [
+     1.528,
+     1.784
+    ]
+   ],
+   "out_start": 400,
+   "out_frames": 81
+  },
+  {
+   "cena": 5,
+   "clip": "gram-detect/criativos/podcast-hook-polemico-2026-09-05/clipes/cena-5.mp4",
+   "clip_s": 4.459,
+   "fala_fim": 1.48,
+   "corte": 1.78,
+   "segments": [
+    [
+     0.0,
+     1.78
+    ]
+   ],
+   "seg_frames": [
+    53
+   ],
+   "removed": [],
+   "out_start": 481,
+   "out_frames": 53
+  },
+  {
+   "cena": 6,
+   "clip": "gram-detect/criativos/podcast-hook-polemico-2026-09-05/clipes/cena-6.mp4",
+   "clip_s": 8.0,
+   "fala_fim": 6.98,
+   "corte": 7.28,
+   "segments": [
+    [
+     0.0,
+     2.154
+    ],
+    [
+     2.591,
+     3.756
+    ],
+    [
+     3.944,
+     5.466
+    ],
+    [
+     5.939,
+     7.28
+    ]
+   ],
+   "seg_frames": [
+    65,
+    35,
+    46,
+    40
+   ],
+   "removed": [
+    [
+     2.154,
+     2.591
+    ],
+    [
+     3.756,
+     3.944
+    ],
+    [
+     5.466,
+     5.939
+    ]
+   ],
+   "out_start": 534,
+   "out_frames": 186
+  },
+  {
+   "cena": 7,
+   "clip": "gram-detect/criativos/podcast-hook-polemico-2026-09-05/clipes/cena-7.mp4",
+   "clip_s": 5.167,
+   "fala_fim": 3.1,
+   "corte": 3.4,
+   "segments": [
+    [
+     0.0,
+     1.868
+    ],
+    [
+     2.032,
+     3.4
+    ]
+   ],
+   "seg_frames": [
+    56,
+    41
+   ],
+   "removed": [
+    [
+     1.868,
+     2.032
+    ]
+   ],
+   "out_start": 720,
+   "out_frames": 97
+  }
+ ]
+}

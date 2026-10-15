@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:pvq1Z9il3xQ",
+  "provider": "youtube",
+  "source_id": "pvq1Z9il3xQ",
+  "source_url": "https://www.youtube.com/watch?v=pvq1Z9il3xQ",
+  "title": "🚨 Deleted Instagram Chats? Try This Recovery Trick!",
+  "creator": {
+    "name": "Byte Vortex",
+    "url": null
+  },
+  "query": "recover deleted Instagram messages download your information 2026",
+  "collected_at": "2026-09-17T16:29:23.577662+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 93,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/pvq1Z9il3xQ",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/pvq1Z9il3xQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCIElUWkRXILUfPWFcXIm5EhiB2pQ"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

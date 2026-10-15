@@ -1,0 +1,28 @@
+{
+  "id": "e4cbe0e817e049cab3139f809c284eac",
+  "model": "minimax/speech-2.6-hd",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/e4cbe0e817e049cab3139f809c284eac/1.mp3"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/ad02-h2-zap-2026-09-17/audio/vo-zap.mp3"
+  ],
+  "elapsed_ms": 10736,
+  "raw": {
+    "id": "e4cbe0e817e049cab3139f809c284eac",
+    "model": "minimax/speech-2.6-hd",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/e4cbe0e817e049cab3139f809c284eac/1.mp3"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/e4cbe0e817e049cab3139f809c284eac/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-17T11:16:35.178962371Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 5896
+    }
+  }
+}

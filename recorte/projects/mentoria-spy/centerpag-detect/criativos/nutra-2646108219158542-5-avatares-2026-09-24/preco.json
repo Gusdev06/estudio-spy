@@ -1,0 +1,12 @@
+{
+  "model_id": "pruna-ai/p-video/avatar",
+  "price": 0.9,
+  "discounted_price": 0.9,
+  "discount_rate": 100,
+  "currency": "USD",
+  "estimate": true,
+  "unpriced_inputs": [],
+  "at_base_price": false,
+  "disclaimer": "Estimate only, for reference — the amount actually charged for a run is authoritative.",
+  "uploaded": {}
+}

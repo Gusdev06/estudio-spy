@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:Mnq9swZ3-98",
+  "provider": "youtube",
+  "source_id": "Mnq9swZ3-98",
+  "source_url": "https://www.youtube.com/watch?v=Mnq9swZ3-98",
+  "title": "5-24-25: Social Media News: Instagram DM Features, Quick Follow Options, and AI Insights from Ash...",
+  "creator": {
+    "name": "DanielHillMedia",
+    "url": null
+  },
+  "query": "Instagram official new DM features announcement",
+  "collected_at": "2026-09-17T16:34:29.545039+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 681,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/Mnq9swZ3-98",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/Mnq9swZ3-98/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBtgiAArgIigIMCAAQARh_ICIoWzAP&rs=AOn4CLC0oZpSBvdshsFb3MF6g2kffD2hdw"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

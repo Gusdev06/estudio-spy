@@ -1,0 +1,29 @@
+{
+  "id": "3ef3cb2c61204b97a5638357ff0d8ea7",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same podcast studio, same camera position and framing, same warm daylight, same cream sofa and background with a light curtain and green plants, same black podcast microphone on a boom arm in front of her. Keep the wide 16:9 landscape framing exactly as in the image. REPLACE the woman with a DIFFERENT woman: a Black woman about 42 years old with medium-dark skin, natural curls with a few grey streaks, small pearl earrings, wearing a plain soft-blue blouse. She sits in the same position, same posture, same distance from the microphone, head and upper chest visible, mouth closed, looking toward the person she is talking to off-camera. Photorealistic video still, natural skin texture with visible pores, no retouching, ordinary person, not a model, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/f85aaf9e-65df-45a3-b620-98b491aa3f0a.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-57s-copy-nova-2026-09-23/var6/base/x5-A.png"
+  ],
+  "elapsed_ms": 37794,
+  "raw": {
+    "id": "3ef3cb2c61204b97a5638357ff0d8ea7",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/f85aaf9e-65df-45a3-b620-98b491aa3f0a.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/3ef3cb2c61204b97a5638357ff0d8ea7/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T03:06:10.03678499Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 34029
+    }
+  }
+}

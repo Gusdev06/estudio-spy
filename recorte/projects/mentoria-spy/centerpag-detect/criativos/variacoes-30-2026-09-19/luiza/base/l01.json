@@ -1,0 +1,29 @@
+{
+  "id": "f47776c51f954ceebf6fa419956467da",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same bedroom, same phone front camera held at arm's length at eye level, same framing distance and same soft indoor light, same background: pale wall with a hanging string of pink flowers and green leaves, a white curtain, a bed at the bottom. Extend the scene to a 9:16 vertical frame keeping the original composition in the center. REPLACE the woman with a DIFFERENT woman: a Black woman about 27 with dark brown skin, long box braids, small gold hoops, plain white ribbed tank top. Same posture: head and shoulders in the upper half, torso to the bottom, looking straight into the lens, mouth closed, calm confiding expression. Photorealistic phone-camera video still, slightly soft, mild noise, natural skin texture, no retouching, ordinary person, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/dcb213e4-6411-4d0c-adb7-e03598f95194.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/variacoes-30-2026-09-19/luiza/base/l01.png"
+  ],
+  "elapsed_ms": 47719,
+  "raw": {
+    "id": "f47776c51f954ceebf6fa419956467da",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/dcb213e4-6411-4d0c-adb7-e03598f95194.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/f47776c51f954ceebf6fa419956467da/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-19T15:43:34.469031376Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 44419
+    }
+  }
+}

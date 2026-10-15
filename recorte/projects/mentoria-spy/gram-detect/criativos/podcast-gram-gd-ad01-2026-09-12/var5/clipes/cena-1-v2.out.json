@@ -1,0 +1,28 @@
+{
+  "id": "5d0400034d82483e8523a3ef2e819bcd",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/78035a2e-81ef-47f0-8faa-964ad687e8d9.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/podcast-gram-gd-ad01-2026-09-12/var5/clipes/cena-1-v2.mp4"
+  ],
+  "elapsed_ms": 43718,
+  "raw": {
+    "id": "5d0400034d82483e8523a3ef2e819bcd",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/78035a2e-81ef-47f0-8faa-964ad687e8d9.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/5d0400034d82483e8523a3ef2e819bcd/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-12T09:35:52.905179117Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 39660
+    }
+  }
+}

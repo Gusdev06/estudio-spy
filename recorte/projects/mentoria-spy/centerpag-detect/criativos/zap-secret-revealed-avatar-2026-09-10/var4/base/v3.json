@@ -1,0 +1,29 @@
+{
+  "id": "a2ffa81dc66e4fcb8753e93e42b7f08d",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still, front phone camera at eye level, bright home office. A 31-year-old white man with short blond hair and light stubble, blue eyes, no glasses, plain navy t-shirt. He looks straight into the lens with a friendly, slightly conspiratorial half-smile, as if about to explain a secret, mouth closed. Framing: chest up, hands out of frame, subject centered, eyes at about 35% from the top. Behind him: a white upholstered chair, a light neutral wall, soft natural window daylight, slightly overexposed background like a real webcam-style recording. Realistic skin texture, mild phone-camera softness, no retouching, ordinary person, not a model.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/bef7f1dd-815e-435a-ae76-fadfe37b48fc.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-secret-revealed-avatar-2026-09-10/var4/base/avatar-v3-homem-branco-loiro.png"
+  ],
+  "elapsed_ms": 73601,
+  "raw": {
+    "id": "a2ffa81dc66e4fcb8753e93e42b7f08d",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/bef7f1dd-815e-435a-ae76-fadfe37b48fc.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/a2ffa81dc66e4fcb8753e93e42b7f08d/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-09T18:33:12.926873552Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 68651
+    }
+  }
+}

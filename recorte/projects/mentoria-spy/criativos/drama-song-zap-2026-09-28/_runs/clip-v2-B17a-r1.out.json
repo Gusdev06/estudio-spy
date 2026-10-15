@@ -1,0 +1,29 @@
+{
+  "id": "9585d497810f4189ab81af67fac87ffc",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot in Maya's sunny bedroom in the morning, 3D animated feature film style. Maya (Latina woman, dark-brown hair down in soft waves, small gold hoop earrings) sleeps peacefully as morning sun comes in, a gray cardigan tossed on a chair. She wakes, gets up and pulls the curtains open with both hands, sunlight flooding the room. Maya is alone in the room the whole time. Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/1294df07-b938-4364-9025-54559f0f2c3e-u1_b988792c-2c6f-4d2f-b196-589107036427.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B17a-r1.mp4"
+  ],
+  "elapsed_ms": 20242,
+  "raw": {
+    "id": "9585d497810f4189ab81af67fac87ffc",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/1294df07-b938-4364-9025-54559f0f2c3e-u1_b988792c-2c6f-4d2f-b196-589107036427.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/9585d497810f4189ab81af67fac87ffc/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:31:04.546502893Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 16572
+    }
+  }
+}

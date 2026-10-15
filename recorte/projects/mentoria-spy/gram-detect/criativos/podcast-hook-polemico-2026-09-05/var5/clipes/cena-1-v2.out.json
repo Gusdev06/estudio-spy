@@ -1,0 +1,29 @@
+{
+  "id": "2b05bdd48e1449b4b025c50cf6f4b407",
+  "model": "minimax/h3/reference-to-video",
+  "prompt": "Podcast studio, fixed camera, close-up of the host (woman in black blazer). She speaks the line in <Audio 1> straight into the camera lens, firm and confident, natural lip sync, small head movements, subtle hand gesture. Warm amber light, background static. No camera movement, no zoom.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/2b05bdd48e1449b4b025c50cf6f4b407/1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/podcast-hook-polemico-2026-09-05/var5/clipes/cena-1-v2.mp4"
+  ],
+  "elapsed_ms": 193143,
+  "raw": {
+    "id": "2b05bdd48e1449b4b025c50cf6f4b407",
+    "model": "minimax/h3/reference-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/2b05bdd48e1449b4b025c50cf6f4b407/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/2b05bdd48e1449b4b025c50cf6f4b407/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-05T12:53:49.53881039Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 189592
+    }
+  }
+}

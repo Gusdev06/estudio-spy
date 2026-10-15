@@ -1,0 +1,29 @@
+{
+  "id": "41056f002040459e927b87a53702fc72",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Image 1 is the character sheet for Maya (before). Keep their faces, hair, outfits and signature details exactly as in the sheets (Maya: beauty mark above the left corner of her upper lip, small gold hoops, gray cardigan, messy low bun).\nA 2x2 grid storyboard in a single image, four sequential moments of the same continuous shot, read left-to-right, top-to-bottom. Thin white gutters between panels. No text, no captions, no panel numbers.\nSetting (same in all four panels unless stated): a small bathroom in the mother-in-law's house, old green tiles, cold overhead light, a mirror over the sink.\nCharacters: Maya, a 34-year-old Latina woman with warm light-brown skin, shoulder-length wavy dark-brown hair tied in a messy low bun with loose strands, hazel eyes with faint dark circles, a small beauty mark above the left corner of her upper lip, small gold hoop earrings, wearing an oversized heather-gray cardigan over a plain white t-shirt and dark jeans, slightly hunched posture.\nPanel 1: Maya closes the door and leans her back against it, eyes closed, palms flat against the door.\nPanel 2: Maya looks at herself in the mirror and tucks a loose strand of hair behind her ear, practicing a smile.\nPanel 3: close-up of her reflection in the mirror: the smile fades.\nPanel 4: Maya has switched off the light; only her dark silhouette remains, a thin line of warm light under the door.\nAny phone screen shows only a soft glow or is dark, never any readable interface, text or logo.\n3D animated feature film style, cinematic lighting, shallow depth of field, consistent characters, outfits and lighting across panels, vertical 9:16 framing inside each panel.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/bf9a8e2c-12ff-41a2-823a-9bd857fab35a.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/shot-sheets-v2/B06.png"
+  ],
+  "elapsed_ms": 89789,
+  "raw": {
+    "id": "41056f002040459e927b87a53702fc72",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/bf9a8e2c-12ff-41a2-823a-9bd857fab35a.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/41056f002040459e927b87a53702fc72/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:22:55.960349388Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 85357
+    }
+  }
+}

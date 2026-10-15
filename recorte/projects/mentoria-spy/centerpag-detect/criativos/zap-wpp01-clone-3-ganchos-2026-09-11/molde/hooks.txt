@@ -1,0 +1,5 @@
+# lote zap-wpp01-clone-3-ganchos — variante<TAB>linha 1|linha 2 (caixa alta). Muda o matte E o bloco 1 falado (call-out ~5 s).
+# H1 = clone fiel do matte do wpp-01. H2/H3 = ganchos do Peneira/Isca (roteiros/2026-09-11-wpp01-clone-3-ganchos.md §3), definitivos em 11/09.
+H1	WHAT THEIR|WHATSAPP IS HIDING...
+H2	SEE THIS BEFORE|IT'S TOO LATE.
+H3	SICK AND TIRED|OF THE LIES?

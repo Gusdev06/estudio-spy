@@ -1,0 +1,49 @@
+{
+ "voice_id": "Deep_Voice_Man",
+ "atempo_base": 1.1995,
+ "lead_in": 0.2,
+ "beats": [
+  {
+   "id": "B1",
+   "marca": 0.0,
+   "dur": 2.322,
+   "atempo_total": 1.2651
+  },
+  {
+   "id": "B2",
+   "marca": 2.578,
+   "dur": 2.236,
+   "atempo_total": 1.1995
+  },
+  {
+   "id": "B3",
+   "marca": 5.595,
+   "dur": 1.988,
+   "atempo_total": 1.1995
+  },
+  {
+   "id": "B4",
+   "marca": 8.377,
+   "dur": 1.755,
+   "atempo_total": 1.1995
+  },
+  {
+   "id": "B5",
+   "marca": 11.16,
+   "dur": 3.215,
+   "atempo_total": 1.2968
+  },
+  {
+   "id": "B6",
+   "marca": 14.616,
+   "dur": 3.799,
+   "atempo_total": 1.1995
+  },
+  {
+   "id": "B7",
+   "marca": 18.745,
+   "dur": 2.673,
+   "atempo_total": 1.1995
+  }
+ ]
+}

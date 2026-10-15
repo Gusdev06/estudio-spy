@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:Gy9l1m7VV_k",
+  "provider": "youtube",
+  "source_id": "Gy9l1m7VV_k",
+  "source_url": "https://www.youtube.com/watch?v=Gy9l1m7VV_k",
+  "title": "Recover Deleted Chats On Instagram | How to Recover Delete Chats On Instagram 2026",
+  "creator": {
+    "name": "PRP TECH",
+    "url": null
+  },
+  "query": "recover deleted Instagram messages download your information 2026",
+  "collected_at": "2026-09-17T16:29:23.577736+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 538,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/Gy9l1m7VV_k",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/Gy9l1m7VV_k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDpiLQtMf_IFHf_Al2HGPQ4K2NeWw"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

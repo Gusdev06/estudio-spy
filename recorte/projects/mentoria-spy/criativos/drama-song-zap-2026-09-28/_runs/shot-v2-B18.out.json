@@ -1,0 +1,29 @@
+{
+  "id": "133d398634774487818b8f52c8820741",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Image 1 is the character sheet for Maya (after). Image 2 is the character sheet for Ryan. Image 3 is the character sheet for Linda. Keep their faces, hair, outfits and signature details exactly as in the sheets (Maya: same face, beauty mark above the left corner of her upper lip, small gold hoops, hair down in soft waves, emerald-green wrap blouse; Ryan: lopsided half-smile, large silver watch on his left wrist, navy quarter-zip; Linda: short silver bob, floral blouse, small brooch).\nA 2x2 grid storyboard in a single image, four sequential moments of the same continuous shot, read left-to-right, top-to-bottom. Thin white gutters between panels. No text, no captions, no panel numbers.\nSetting (same in all four panels unless stated): panels 1-2: Maya's kitchen in daylight. Panels 3-4: the front door of Linda's house.\nCharacters: Maya, a 34-year-old Latina woman with warm light-brown skin, shoulder-length wavy dark-brown hair worn down in glossy soft waves, bright hazel eyes, a small beauty mark above the left corner of her upper lip, small gold hoop earrings, subtle burnt-red lipstick, wearing an emerald-green wrap blouse and cream tailored trousers, upright confident posture, chin slightly raised. Ryan, a 36-year-old white American man, short dark-blond hair with a neat side part, light stubble, gray-blue eyes, a smug lopsided half-smile, a large silver wristwatch on his left wrist, wearing a navy quarter-zip sweater over a white collared shirt and khaki chinos, athletic build. Linda, a 64-year-old white woman with a short silver bob, rosy cheeks, wearing a floral blouse with a small brooch.\nPanel 1: Ryan looks at his phone at the kitchen counter; Maya walks past him serene without looking, in the emerald-green blouse.\nPanel 2: Ryan, puzzled, watches Maya from behind as she walks away.\nPanel 3: at the front door of her house, Linda opens the door and sees Maya.\nPanel 4: Linda tilts her head, curious, and takes Maya's hand in both of hers.\nAny phone screen shows only a soft glow or is dark, never any readable interface, text or logo.\n3D animated feature film style, cinematic lighting, shallow depth of field, consistent characters, outfits and lighting across panels, vertical 9:16 framing inside each panel.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/b5163816-0c3f-4204-af5c-4193581d4951.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/shot-sheets-v2/B18.png"
+  ],
+  "elapsed_ms": 97655,
+  "raw": {
+    "id": "133d398634774487818b8f52c8820741",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/b5163816-0c3f-4204-af5c-4193581d4951.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/133d398634774487818b8f52c8820741/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:26:20.602544393Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 94269
+    }
+  }
+}

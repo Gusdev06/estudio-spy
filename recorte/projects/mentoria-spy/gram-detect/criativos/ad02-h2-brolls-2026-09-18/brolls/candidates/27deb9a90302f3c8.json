@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:wiPhAZPszg0",
+  "provider": "youtube",
+  "source_id": "wiPhAZPszg0",
+  "source_url": "https://www.youtube.com/watch?v=wiPhAZPszg0",
+  "title": "AI CEO Humiliated as Mark Zuckerberg Responds to His Threat",
+  "creator": {
+    "name": "The Rubin Report",
+    "url": null
+  },
+  "query": "Meta Instagram messaging update official video",
+  "collected_at": "2026-09-17T16:34:31.550372+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 4060,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/wiPhAZPszg0",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/wiPhAZPszg0/hq720_custom_1.jpg?sqp=CIirsNUG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbVubgH04oV9kuy1Fa1x21sPf0KQ"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "0aa5416cafd74ea6b220b12fc42802b3",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/b45c5e12-5457-40c9-9507-e01bae3149e8.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/super-zap-2026-09-19/clipes/s1-p2.mp4"
+  ],
+  "elapsed_ms": 166355,
+  "raw": {
+    "id": "0aa5416cafd74ea6b220b12fc42802b3",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/b45c5e12-5457-40c9-9507-e01bae3149e8.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/0aa5416cafd74ea6b220b12fc42802b3/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-19T02:16:13.325834726Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 161698
+    }
+  }
+}

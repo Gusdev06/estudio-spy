@@ -1,0 +1,79 @@
+[
+  {
+    "id": "v00-replica-baseline",
+    "alavanca": "nenhuma (replica do campeao, controle do teste)",
+    "hook": "What you see / What really happens",
+    "cta": "Stop guessing. Start knowing.",
+    "pill": "Link in bio - Limited access"
+  },
+  {
+    "id": "v01-hook-they-hide",
+    "alavanca": "HOOK do topo -> promessa de ocultacao deliberada",
+    "hook": "What you see / What they hide",
+    "cta": "Stop guessing. Start knowing.",
+    "pill": "Link in bio - Limited access"
+  },
+  {
+    "id": "v02-hook-who-watching",
+    "alavanca": "HOOK do topo -> pergunta direta (curiosidade)",
+    "hook": "Who's watching you / Now you'll know",
+    "cta": "Stop guessing. Start knowing.",
+    "pill": "Link in bio - Limited access"
+  },
+  {
+    "id": "v03-hook-instagram-shows",
+    "alavanca": "HOOK do topo -> vilao nomeado (Instagram esconde)",
+    "hook": "What Instagram shows you / What Instagram hides",
+    "cta": "Stop guessing. Start knowing.",
+    "pill": "Link in bio - Limited access"
+  },
+  {
+    "id": "v04-hook-your-app-vs-real",
+    "alavanca": "HOOK do topo -> comparacao app x realidade",
+    "hook": "Your app right now / Your account for real",
+    "cta": "Stop guessing. Start knowing.",
+    "pill": "Link in bio - Limited access"
+  },
+  {
+    "id": "v05-stack-stalker",
+    "alavanca": "VALUE STACK -> revelacoes sobre quem te observa (ghost followers)",
+    "hook": "What you see / What really happens",
+    "cta": "Stop guessing. Start knowing.",
+    "pill": "Link in bio - Limited access"
+  },
+  {
+    "id": "v06-stack-night",
+    "alavanca": "VALUE STACK -> angulo noturno (horario / recorrencia)",
+    "hook": "What you see / What happens at 3 AM",
+    "cta": "Stop guessing. Start knowing.",
+    "pill": "Link in bio - Limited access"
+  },
+  {
+    "id": "v07-cta-before-deleted",
+    "alavanca": "CTA de baixo -> urgencia por perda (dado some)",
+    "hook": "What you see / What really happens",
+    "cta": "See it before they delete it.",
+    "pill": "Link in bio - Free check"
+  },
+  {
+    "id": "v08-cta-30-seconds",
+    "alavanca": "CTA de baixo -> baixo esforco / tempo (30 segundos)",
+    "hook": "What you see / What really happens",
+    "cta": "Check yours in 30 seconds.",
+    "pill": "Link in bio - No password needed"
+  },
+  {
+    "id": "v09-tema-alerta-vermelho",
+    "alavanca": "COR/TEMA -> alerta vermelho (quebra o padrao do feed IG)",
+    "hook": "What you see / What really happens",
+    "cta": "Stop guessing. Start knowing.",
+    "pill": "Link in bio - Limited access"
+  },
+  {
+    "id": "v10-tema-neon-verde",
+    "alavanca": "COR/TEMA -> terminal neon verde (cara de ferramenta/tech)",
+    "hook": "What you see / What really happens",
+    "cta": "Stop guessing. Start knowing.",
+    "pill": "Link in bio - Limited access"
+  }
+]

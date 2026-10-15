@@ -1,0 +1,29 @@
+{
+  "id": "2cb63aceeeb04516ae2d31da65eec154",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot, 3D animated feature film style. Maya holds her phone turned toward herself, only its glow lighting her calm face; she lays the phone face down on her knee and looks into the camera; she smiles and settles back, relaxed. Characters: Maya (Latina woman, dark-brown hair down in soft waves, emerald-green wrap blouse, small gold hoop earrings, small beauty mark above her lip, burnt-red lipstick). Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/77b375c9-8c25-4d3c-b882-2a51d1fb2764-u1_7b16ff30-bf07-4575-9ce6-aebef6e60fc3.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B24.mp4"
+  ],
+  "elapsed_ms": 104053,
+  "raw": {
+    "id": "2cb63aceeeb04516ae2d31da65eec154",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/77b375c9-8c25-4d3c-b882-2a51d1fb2764-u1_7b16ff30-bf07-4575-9ce6-aebef6e60fc3.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/2cb63aceeeb04516ae2d31da65eec154/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:30:22.403320429Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 100847
+    }
+  }
+}

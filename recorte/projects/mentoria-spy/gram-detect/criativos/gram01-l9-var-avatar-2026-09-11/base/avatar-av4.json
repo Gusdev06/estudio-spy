@@ -1,0 +1,29 @@
+{
+  "id": "6e41106fa60e481fb4230c1f18f4825d",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still from a phone's front camera, held in one hand a little below eye level and tilted slightly upward. An ordinary white woman around 40 years old with fair skin, fine lines around her eyes and at the corners of her mouth, shoulder-length light-brown hair with a few grey strands, worn down and a little flat, natural eyebrows, no makeup. She wears a plain dark-green cotton crewneck t-shirt. No glasses, no hat, no earrings, no logos, no text anywhere. She looks straight into the lens with her mouth closed and a calm, direct expression, the look of someone who has seen this happen to a friend before, eyes open. Framing: head and upper chest, shoulders cropped at the sides, top of her head about 25 percent from the top edge, eyes about 44 percent from the top, chin about 62 percent from the top, her face about half the frame width, collar and upper chest visible below, plain background above her head; hands out of frame. She is sitting on a couch in a small apartment living room at night; behind her a bookshelf with books and a few objects, a folded throw blanket on the back of the couch, a plain wall. Dim available light from a floor lamp to camera-left, warm, mixed with cooler light from a television off-frame, slightly underexposed, low contrast, no ring light, no studio light. Realistic skin texture with visible pores, faint expression lines and a little oil on the forehead and nose bridge, mild phone-camera softness and grain, no retouching, not a model, not a stock photo.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e70376ae-46d7-4fb6-89f7-5ead4bc330fc.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/gram01-l9-var-avatar-2026-09-11/base/avatar-av4.png"
+  ],
+  "elapsed_ms": 155149,
+  "raw": {
+    "id": "6e41106fa60e481fb4230c1f18f4825d",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e70376ae-46d7-4fb6-89f7-5ead4bc330fc.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/6e41106fa60e481fb4230c1f18f4825d/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-11T16:55:08.36280794Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 152006
+    }
+  }
+}

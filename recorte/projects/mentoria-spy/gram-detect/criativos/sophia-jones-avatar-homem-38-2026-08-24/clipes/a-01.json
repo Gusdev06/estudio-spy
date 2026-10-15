@@ -1,0 +1,31 @@
+✔ Done in 112s.
+✔ Saved 1 file.
+{
+  "id": "c9492986d15e402b817bcac1d691b129",
+  "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "prompt": "The man looks directly into the lens and speaks continuously, calm and serious, low energy, like someone telling a friend something difficult. He leans forward very slightly at the start, then settles back into the sofa. He blinks naturally twice. Camera is locked off. Hands stay out of frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/c9492986d15e402b817bcac1d691b129/1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/gram-detect/criativos/sophia-jones-avatar-homem-38-2026-08-24/clipes/a-01.mp4"
+  ],
+  "elapsed_ms": 115053,
+  "raw": {
+    "id": "c9492986d15e402b817bcac1d691b129",
+    "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/c9492986d15e402b817bcac1d691b129/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c9492986d15e402b817bcac1d691b129/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-23T17:41:00.815788837Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 110126
+    }
+  }
+}

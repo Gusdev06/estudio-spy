@@ -1,0 +1,29 @@
+{
+  "id": "b2bbe7f6e84a4efb800bebccaaca2968",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot, 3D animated feature film style. Top-down on Maya lying awake staring at the ceiling, the other side of the bed empty; a red glow from the bedside clock; the door opens and Ryan tiptoes in holding his shoes, his face lit by his phone's glow, while Maya shuts her eyes and pretends to sleep; she ends curled on her side, small in the middle of the big bed. Characters: Maya (Latina woman, messy low bun, heather-gray cardigan, small gold hoop earrings, small beauty mark above her lip); Ryan (dark-blond side part, navy quarter-zip, large silver wristwatch, smug half-smile). Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/b884228f-a08f-4b18-960a-1df18f42dc6e-u2_6e4174c9-7845-4462-869a-7f07cdb3961c.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B09.mp4"
+  ],
+  "elapsed_ms": 75572,
+  "raw": {
+    "id": "b2bbe7f6e84a4efb800bebccaaca2968",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/b884228f-a08f-4b18-960a-1df18f42dc6e-u2_6e4174c9-7845-4462-869a-7f07cdb3961c.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/b2bbe7f6e84a4efb800bebccaaca2968/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:27:22.760271808Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 71967
+    }
+  }
+}

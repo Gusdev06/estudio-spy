@@ -1,0 +1,28 @@
+{
+  "id": "253ffc9ac3d64d51bd464cae25729c18",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/81412a6d-b40e-4991-930a-3a608235771c.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-57s-copy-nova-2026-09-23/var6/x3/clipes/b4.mp4"
+  ],
+  "elapsed_ms": 60792,
+  "raw": {
+    "id": "253ffc9ac3d64d51bd464cae25729c18",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/81412a6d-b40e-4991-930a-3a608235771c.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/253ffc9ac3d64d51bd464cae25729c18/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T03:13:50.531714358Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 56786
+    }
+  }
+}

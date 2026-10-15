@@ -1,0 +1,5 @@
+{
+  "error": "Prediction failed: The provider could not complete the request. Please try again. (task_id: f6a951f9f98b4bcd9f2a72033c5ce707)",
+  "prediction_id": "f6a951f9f98b4bcd9f2a72033c5ce707",
+  "query_command": "wavespeed show f6a951f9f98b4bcd9f2a72033c5ce707"
+}

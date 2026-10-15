@@ -1,0 +1,5 @@
+base/avatar-av2.png: rosto Haar x149-570 (59.8 % de 704) y320-741 · olhos n=2 y=474 (37.0 %) · queixo 57.9 % → CW=678 CH=702 CX=20 OY=144 · escala 1.73× · rosto no painel 62.1 %
+base/avatar-av3.png: rosto Haar x188-574 (54.8 % de 704) y382-768 · olhos n=2 y=530 (41.4 %) · queixo 60.0 % → CW=622 CH=644 CX=70 OY=227 · escala 1.88× · rosto no painel 62.1 %
+base/avatar-av4.png: rosto Haar x193-560 (52.1 % de 704) y402-769 · olhos n=2 y=536 (41.9 %) · queixo 60.1 % → CW=592 CH=612 CX=80 OY=249 · escala 1.98× · rosto no painel 62.0 %
+base/avatar-av5.png: rosto Haar x169-563 (56.0 % de 704) y399-793 · olhos n=2 y=550 (43.0 %) · queixo 62.0 % → CW=634 CH=656 CX=49 OY=242 · escala 1.85× · rosto no painel 62.1 %
+base/avatar-av1.png: rosto Haar x167-547 (54.0 % de 704) y314-694 · olhos n=2 y=462 (36.1 %) · queixo 54.2 % → CW=612 CH=634 CX=51 OY=164 · escala 1.91× · rosto no painel 62.1 %

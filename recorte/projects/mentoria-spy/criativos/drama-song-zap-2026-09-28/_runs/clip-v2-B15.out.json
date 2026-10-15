@@ -1,0 +1,29 @@
+{
+  "id": "ee167b57a59a40ab8c1983f4c44e019d",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot, 3D animated feature film style. Maya's hands tremble as they grip the edge of the sink; she lifts her eyes to the mirror; her reflection goes slightly blurred and doubled; she closes her eyes and takes a deep breath. Characters: Maya (Latina woman, messy low bun, heather-gray cardigan, small gold hoop earrings, small beauty mark above her lip). Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/00a2fbd7-cc7e-4c06-82c1-53f70d1008ef-u2_daa74618-9857-4361-b6c0-e5e4f9c32d6a.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B15.mp4"
+  ],
+  "elapsed_ms": 45166,
+  "raw": {
+    "id": "ee167b57a59a40ab8c1983f4c44e019d",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/00a2fbd7-cc7e-4c06-82c1-53f70d1008ef-u2_daa74618-9857-4361-b6c0-e5e4f9c32d6a.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/ee167b57a59a40ab8c1983f4c44e019d/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:28:52.649723008Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 42635
+    }
+  }
+}

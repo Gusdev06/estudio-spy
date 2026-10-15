@@ -1,0 +1,56 @@
+Args: {'audio': ['musica/cancao-v2.mp3'], 'model': 'mlx-community/whisper-large-v3-mlx', 'output_name': None, 'output_dir': '_runs/whisper-v2', 'output_format': 'json', 'verbose': True, 'task': 'transcribe', 'language': 'en', 'temperature': 0, 'best_of': 5, 'patience': None, 'length_penalty': None, 'suppress_tokens': '-1', 'initial_prompt': None, 'condition_on_previous_text': False, 'fp16': True, 'compression_ratio_threshold': 2.4, 'logprob_threshold': -1.0, 'no_speech_threshold': 0.6, 'word_timestamps': True, 'prepend_punctuations': '"\'“¿([{-', 'append_punctuations': '"\'.。,，!！?？:：”)]}、', 'highlight_words': False, 'max_line_width': None, 'max_line_count': None, 'max_words_per_line': None, 'hallucination_silence_threshold': None, 'clip_timestamps': '0'}
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 2734.23it/s]
+[00:01.340 --> 00:03.820]  I was the last one at that table to know
+[00:09.240 --> 00:12.140]  I was the last one at that table to know
+[00:16.920 --> 00:19.600]  Sunday dinner at his mother's place
+[00:20.260 --> 00:23.280]  Candles lit, a smile on every face
+[00:23.280 --> 00:25.460]  His phone lit up beside his plate
+[00:25.460 --> 00:28.640]  He turned it over, babe, it's late
+[00:29.300 --> 00:31.820]  I asked him softly, who was that?
+[00:31.860 --> 00:33.960]  The whole room froze and then he laughed
+[00:33.960 --> 00:35.680]  He slid his phone to me
+[00:36.540 --> 00:39.480]  Go on, check she's jealous again
+[00:40.460 --> 00:43.520]  He told the rest, so I swallowed it
+[00:43.520 --> 00:47.000]  I said I'm fine, I blame my heart, I blame my mind
+[00:47.000 --> 00:48.960]  Every night that screen would glow
+[00:48.960 --> 00:51.780]  And I was the last to know
+[00:54.420 --> 00:57.580]  I called my best friend, Jess, at two
+[00:57.580 --> 01:00.500]  She said, girl, he'd never hurt you
+[01:02.820 --> 01:06.080]  I asked a counselor what was true
+[01:06.080 --> 01:09.060]  She said, no proof, there's nothing to do
+[01:11.980 --> 01:14.700]  So I stopped asking, stopped the fight
+[01:14.700 --> 01:16.720]  Stared at the ceiling every night
+[01:16.720 --> 01:18.680]  He came home later every week
+[01:18.680 --> 01:21.360]  I got so quiet I could barely speak
+[01:21.360 --> 01:24.280]  So I swallowed it, I said I'm fine
+[01:24.280 --> 01:26.540]  I blame my heart, I blame my mind
+[01:26.540 --> 01:31.280]  Every night that screen would glow and I was the last to know
+[01:34.100 --> 01:37.560]  Then my sister Nora came by one night
+[01:37.560 --> 01:41.140]  She'd live this one, she held me tight
+[01:41.140 --> 01:44.900]  You're not crazy, you just can't see
+[01:44.900 --> 01:48.400]  There's a way to look, sit here with me
+[01:50.020 --> 01:52.380]  On the phone he told me I could check
+[01:52.380 --> 01:54.540]  She showed me how I held my breath
+[01:54.540 --> 01:56.540]  The conversation's all in view
+[01:56.540 --> 01:59.400]  Not a stranger, it was Jess, my best friend
+[01:59.400 --> 02:01.100]  Jess, the one I knew
+[02:02.460 --> 02:04.960]  My hands were shaking, what if I'm wrong?
+[02:05.100 --> 02:07.400]  What if the crazy one was me all along?
+[02:07.520 --> 02:09.420]  But the truth was right there in my hand
+[02:09.420 --> 02:11.700]  And for the first time I could stand
+[02:15.060 --> 02:17.500]  Week one, I slept right through the night
+[02:17.500 --> 02:19.600]  Week two, Nora said your eyes look bright
+[02:19.600 --> 02:21.680]  Week three, I stopped asking, I just knew
+[02:21.680 --> 02:24.240]  Week four, his mother asked what's new with you
+[02:24.240 --> 02:28.400]  No more swallowing, no more I'm fine It was never my heart, never my mind
+[02:28.400 --> 02:35.060]  Let that screen light up and glow I won't be the last to know
+[02:39.060 --> 02:43.740]  Sunday dinner at his mother's place Same candle, same smile on every face
+[02:43.740 --> 02:48.000]  His phone lit up, he reached too late Just was sitting three seats away
+[02:48.000 --> 02:50.980]  I smiled, go on, turn it over, babe, I already know
+[02:50.980 --> 02:53.440]  And the whole room froze
+[02:56.820 --> 02:59.560]  If your gut has been whispering for months
+[02:59.560 --> 03:01.460]  You're not crazy, you deserve to know
+[03:01.460 --> 03:03.840]  This app shows you the conversations clear
+[03:03.840 --> 03:07.320]  In one place, on a phone you're allowed to open
+[03:08.220 --> 03:11.440]  No more guessing, no more fights
+[03:11.980 --> 03:15.560]  Tap the link, see the truth for yourself

@@ -1,0 +1,29 @@
+{
+  "id": "556b1d24d473436db20d0ac468228dc7",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot, 3D animated feature film style. Maya leans toward Ryan and speaks quietly; the whole table freezes, forks in the air; Ryan throws his head back in a big laugh; Linda and Jess start laughing along, awkward. Characters: Maya (Latina woman, messy low bun, heather-gray cardigan, small gold hoop earrings, small beauty mark above her lip); Ryan (dark-blond side part, navy quarter-zip, large silver wristwatch, smug half-smile); Linda (short silver bob, floral blouse, brooch); Jess (long wavy copper-auburn hair, freckles, pearl earrings, blush-pink sweater). Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/12427451-3b8d-4289-bb05-edeae0c8684e-u1_b4b50988-0585-48d1-abc0-c7c174fe1319.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B04.mp4"
+  ],
+  "elapsed_ms": 32290,
+  "raw": {
+    "id": "556b1d24d473436db20d0ac468228dc7",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/12427451-3b8d-4289-bb05-edeae0c8684e-u1_b4b50988-0585-48d1-abc0-c7c174fe1319.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/556b1d24d473436db20d0ac468228dc7/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:27:06.717481576Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 27971
+    }
+  }
+}

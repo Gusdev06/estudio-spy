@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:4bwnM8Dqrg4",
+  "provider": "youtube",
+  "source_id": "4bwnM8Dqrg4",
+  "source_url": "https://www.youtube.com/watch?v=4bwnM8Dqrg4",
+  "title": "𝑺𝑯𝑯… 🤫 𝑴𝑶𝑺𝑻 𝑺𝑬𝑪𝑹𝑬𝑻 𝑻𝑰𝑷𝑺 𝑻𝑶 𝑮𝑬𝑻 𝟒𝑲 𝑸𝑼𝑨𝑳𝑰𝑻𝒀! 💎𝑵𝑶𝑩𝑶𝑫𝒀 𝑲𝑵𝑶𝑾𝑺… 👀𝑺𝑨𝑽𝑬 𝑻𝑯𝑰𝑺 𝑩𝑬𝑭𝑶𝑹𝑬 𝑰𝑻 𝑮𝑬𝑻𝑺 𝑳𝑶𝑺𝑻! 🫧📌 #hype ",
+  "creator": {
+    "name": "𝑺𝒍𝒂𝒚𝒑𝒊𝒏𝒌𝒛.ৎ ",
+    "url": null
+  },
+  "query": "instagram dm tricks nobody knows #shorts",
+  "collected_at": "2026-09-17T16:32:17.951999+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 73,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/4bwnM8Dqrg4",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/4bwnM8Dqrg4/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDoCkh_S3iXl1KMP2BeiI3ABp9KnA"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

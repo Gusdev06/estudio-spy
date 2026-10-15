@@ -1,0 +1,29 @@
+{
+  "id": "88b20102a4b44cdfb945bd81a65ec5f3",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Image 1 is the character sheet of Maya BEFORE. Same woman, same face, same beauty mark and gold hoops, only hair, outfit, makeup and posture change. Keep the exact same layout: Character turnaround sheet in a single image, the same character shown four times on a plain flat light-gray background (#C8C8C8), evenly spaced left to right, no text, no labels, no props, no floor shadow clutter:\n1) head-and-shoulders close-up facing the camera, neutral expression;\n2) full body, front view, standing relaxed, arms at the sides;\n3) full body, three-quarter view facing left;\n4) full body, three-quarter view facing right.\nCharacter: Maya, a 34-year-old Latina woman with warm light-brown skin, shoulder-length wavy dark-brown hair worn down in glossy soft waves, bright hazel eyes, a small beauty mark above the left corner of her upper lip, small gold hoop earrings, subtle burnt-red lipstick, wearing an emerald-green wrap blouse and cream tailored trousers, upright confident posture, chin slightly raised.\n3D animated feature film style, stylized proportions, soft subsurface skin, large expressive eyes, sculpted hair strands, soft even studio lighting, high detail, consistent outfit and features across all four views.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/34312f0f-0e65-4fc0-8c17-625059e2ca45.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/fichas/maya-depois.png"
+  ],
+  "elapsed_ms": 57328,
+  "raw": {
+    "id": "88b20102a4b44cdfb945bd81a65ec5f3",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/34312f0f-0e65-4fc0-8c17-625059e2ca45.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/88b20102a4b44cdfb945bd81a65ec5f3/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:17:44.196285606Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 53843
+    }
+  }
+}

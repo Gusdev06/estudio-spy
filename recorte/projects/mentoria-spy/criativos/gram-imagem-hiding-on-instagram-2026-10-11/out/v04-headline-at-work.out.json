@@ -1,0 +1,29 @@
+{
+  "id": "34b75141231144c1b590858791c7c04f",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate this exact ad, keeping the same woman, phone with the Instagram DM list, scene, lighting, feature list, box, CTA button and all other elements identical. Change ONLY the big headline on the left. Replace it with exactly these 4 lines in the same bold white condensed font, same size and position: line 1 \"HE SAID HE\", line 2 \"WAS AT WORK.\", line 3 \"HIS INSTAGRAM\" (white text on the pink-to-orange gradient brush stroke, like the original), line 4 \"SAID OTHERWISE.\" (with the same purple-pink-orange gradient fill as the original last word). Spell every word exactly. Keep \"Trust but verify...\" note above it.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/5e86ace4-a1a1-41a7-97b5-334f3e31e70d.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/gram-imagem-hiding-on-instagram-2026-10-11/out/v04-headline-at-work.png"
+  ],
+  "elapsed_ms": 112735,
+  "raw": {
+    "id": "34b75141231144c1b590858791c7c04f",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/5e86ace4-a1a1-41a7-97b5-334f3e31e70d.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/34b75141231144c1b590858791c7c04f/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-11T15:40:48.071346466Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 109983
+    }
+  }
+}

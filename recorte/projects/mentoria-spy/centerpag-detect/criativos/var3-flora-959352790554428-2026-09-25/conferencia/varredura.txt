@@ -1,0 +1,3 @@
+frames 1026 1026 fps 30/1 audio MD5=317d323d80b5b2ce454825e1aaf93a5a MD5=317d323d80b5b2ce454825e1aaf93a5a
+dupla (408 fr): dif janela mediana 82.9 min 12.6 (n 266); corr bordas max 0.13 (n 983) mediana 0.09
+fora da janela dif max 3.2; painéis dif max 3.1; YuNet rostos/frame max 1 (frames com >1: []); dupla sem rosto: 1 fr

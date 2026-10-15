@@ -1,0 +1,28 @@
+{
+  "id": "62e43382594741248ea1a69f03061422",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/879d2b5d-68cd-443a-94ba-1dbfc0bed4c1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/var3-beatriz-aguiar-1622854622757052-2026-09-25/clipes/s3.mp4"
+  ],
+  "elapsed_ms": 46383,
+  "raw": {
+    "id": "62e43382594741248ea1a69f03061422",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/879d2b5d-68cd-443a-94ba-1dbfc0bed4c1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/62e43382594741248ea1a69f03061422/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:28:20.50578013Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 41316
+    }
+  }
+}

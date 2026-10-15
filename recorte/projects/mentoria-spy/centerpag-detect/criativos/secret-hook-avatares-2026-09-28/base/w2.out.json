@@ -1,0 +1,29 @@
+{
+  "id": "d16f813ae03a4a81b074a5c5f0416d8c",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still, front phone camera at eye level. a Black woman about 32 with dark brown skin, shoulder-length straightened hair, small gold hoop earrings, wearing a mustard-yellow t-shirt, sitting in a softly lit bedroom. She looks straight into the lens with a serious, direct expression, as if telling a hard truth, mouth closed. Framing: chest up, hands out of frame, subject centered, eyes at about 35% from the top. Background softly out of focus, slightly overexposed like a real webcam-style recording. Realistic skin texture, mild phone-camera softness, no retouching, ordinary person, not a model. Only one person in frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/23504ff2-340d-4440-b56c-75935341b5e7.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-hook-avatares-2026-09-28/base/w2.png"
+  ],
+  "elapsed_ms": 76613,
+  "raw": {
+    "id": "d16f813ae03a4a81b074a5c5f0416d8c",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/23504ff2-340d-4440-b56c-75935341b5e7.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/d16f813ae03a4a81b074a5c5f0416d8c/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-27T17:22:25.132894228Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 72165
+    }
+  }
+}

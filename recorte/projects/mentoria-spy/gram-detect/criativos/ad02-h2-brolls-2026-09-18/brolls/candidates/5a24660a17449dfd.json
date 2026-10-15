@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:CLCF2Jb6Td0",
+  "provider": "youtube",
+  "source_id": "CLCF2Jb6Td0",
+  "source_url": "https://www.youtube.com/watch?v=CLCF2Jb6Td0",
+  "title": "How to Turn ON/OFF Vanish Mode On Instagram | Instagram Vanish Mode",
+  "creator": {
+    "name": "App Tutor",
+    "url": null
+  },
+  "query": "instagram vanish mode secret chat #shorts",
+  "collected_at": "2026-09-17T16:32:16.583187+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 84,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/CLCF2Jb6Td0",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/CLCF2Jb6Td0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAS6Ji1CZi-w6kH7VrKQHmKHBH4lQ"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

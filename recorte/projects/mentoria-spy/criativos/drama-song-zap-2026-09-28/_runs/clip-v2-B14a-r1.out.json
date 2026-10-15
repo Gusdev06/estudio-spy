@@ -1,0 +1,29 @@
+{
+  "id": "6d762673b3eb4961876f7ef2c948b645",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot in a dark kitchen at night, 3D animated feature film style. Maya (Latina woman, messy low bun, heather-gray cardigan, small gold hoop earrings) holds a phone toward herself; the phone is an out-of-focus dark shape in the foreground with only a soft blank glow. Her eyes slowly widen in shock and she covers her mouth with her free hand. Her sister Nora (chin-length dark bob with one silver streak, chambray denim shirt, gold bangles) steps in beside her and rests a hand on her shoulder. Only Maya and Nora are in the kitchen; nobody else appears. Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/f9dfc707-c229-4d21-aa11-263df5f9244e-u2_5342a0d8-2130-4681-b821-1dca23b8e251.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B14a-r1.mp4"
+  ],
+  "elapsed_ms": 39089,
+  "raw": {
+    "id": "6d762673b3eb4961876f7ef2c948b645",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/f9dfc707-c229-4d21-aa11-263df5f9244e-u2_5342a0d8-2130-4681-b821-1dca23b8e251.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/6d762673b3eb4961876f7ef2c948b645/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:31:08.97820767Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 36294
+    }
+  }
+}

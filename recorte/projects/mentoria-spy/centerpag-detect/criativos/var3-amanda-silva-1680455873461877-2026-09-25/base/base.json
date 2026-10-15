@@ -1,0 +1,29 @@
+{
+  "id": "be117458238c4275ac5a49d9d1f62768",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Horizontal 4:3 webcam-style video still, same camera position, same framing and same pose as the image: a young woman seen from the chest up, centered slightly left of the middle, head at the same height and the same size in the frame, looking straight into the camera, mouth closed, calm and serious. REPLACE the woman with a DIFFERENT woman: a woman about 28 years old with deep brown skin and a medium-length natural curly afro, small silver stud earrings, wearing a mustard-yellow ribbed knit top with a round neck. REPLACE the whole room behind her with a DIFFERENT place: a bright clean kitchen with white cabinets and a light wooden countertop behind her, a bowl of lemons and green apples on the counter, a hanging pothos plant, a white tiled backsplash, soft daylight. She is the only person in the image. No television, no screens with content, no text, no letters, no logos, no watermark. Photorealistic, natural skin texture with visible pores, light natural makeup, ordinary person, not a model, soft natural indoor light, shot on a phone front camera.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/379d528c-8b0b-4739-93f8-8b777d984e5f.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/var3-amanda-silva-1680455873461877-2026-09-25/base/base.png"
+  ],
+  "elapsed_ms": 80945,
+  "raw": {
+    "id": "be117458238c4275ac5a49d9d1f62768",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/379d528c-8b0b-4739-93f8-8b777d984e5f.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/be117458238c4275ac5a49d9d1f62768/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:21:27.213226528Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 77232
+    }
+  }
+}

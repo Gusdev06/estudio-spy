@@ -1,0 +1,22 @@
+{
+ "B2": {
+  "state": "success",
+  "credits": 168.0,
+  "fail": null
+ },
+ "A1": {
+  "state": "success",
+  "credits": 168.0,
+  "fail": null
+ },
+ "A2": {
+  "state": "success",
+  "credits": 168.0,
+  "fail": null
+ },
+ "B1": {
+  "state": "success",
+  "credits": 168.0,
+  "fail": null
+ }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "6ab9e9639afa485a924d16584f30ad55",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot at the front door of a suburban house in daylight, 3D animated feature film style. Linda (short silver bob, rosy cheeks, floral blouse with a small brooch) opens the front door and sees Maya (seen from behind: dark-brown hair down in soft waves, emerald-green blouse). Linda tilts her head, curious and warm, and takes Maya's hand in both of hers. Only Linda and Maya are at the door; nobody else appears. Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e26f7ddf-7ebd-4168-b6ec-01cd1d0dceb2-u2_29f4df67-bf80-4704-b68d-12ddedba104d.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B18b-r1.mp4"
+  ],
+  "elapsed_ms": 27905,
+  "raw": {
+    "id": "6ab9e9639afa485a924d16584f30ad55",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e26f7ddf-7ebd-4168-b6ec-01cd1d0dceb2-u2_29f4df67-bf80-4704-b68d-12ddedba104d.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/6ab9e9639afa485a924d16584f30ad55/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:31:05.947575816Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 24555
+    }
+  }
+}

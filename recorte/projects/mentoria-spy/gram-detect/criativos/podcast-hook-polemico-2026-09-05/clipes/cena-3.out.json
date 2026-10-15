@@ -1,0 +1,29 @@
+{
+  "id": "f76da1b1f08a4171b7efc94850e307f3",
+  "model": "minimax/h3/reference-to-video",
+  "prompt": "Podcast studio, fixed camera, two-shot of both women at the table with microphones. The guest on the RIGHT (beige sweater) speaks the line in <Audio 1>, listing things, natural lip sync; the host on the LEFT (black blazer) listens, nods slightly, arms on the table, mouth closed. Warm light, background static. No camera movement.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/f76da1b1f08a4171b7efc94850e307f3/1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/podcast-hook-polemico-2026-09-05/clipes/cena-3.mp4"
+  ],
+  "elapsed_ms": 204305,
+  "raw": {
+    "id": "f76da1b1f08a4171b7efc94850e307f3",
+    "model": "minimax/h3/reference-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/f76da1b1f08a4171b7efc94850e307f3/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/f76da1b1f08a4171b7efc94850e307f3/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-04T18:03:59.939956534Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 200155
+    }
+  }
+}

@@ -1,0 +1,31 @@
+✔ Done in 60s.
+✔ Saved 1 file.
+{
+  "id": "5fba34e0912b4f57bbe4b6e2850eb01e",
+  "model": "openai/gpt-image-2.5-sunburst/edit",
+  "prompt": "Asset type: candid lifestyle photo for an Instagram profile, 4:5.\nPrimary request: a real photo taken with an iPhone 15 Pro of the woman in the reference images, 100% faithful to her face, beauty mark, eyebrows, skin tone and dark brown hair. Use the reference images ONLY for her identity, never for pose, expression, framing or background. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nScene/backdrop: sidewalk table of a busy neighborhood cafe at late morning, iced latte with condensation and a croissant on a small plate, a friend's arm and phone partly visible at the edge, people walking by out of focus.\nSubject: photographed by a friend across the table, caught mid-laugh while looking down at her phone, then glancing up toward the side, not at the lens. Outfit: cropped cream cable-knit sweater over a white collared shirt with the collar out, dark wide-leg trousers, small gold hoop earrings, hair in a loose low ponytail with face-framing strands, black sunglasses pushed up on her head.\nComposition/framing: shot from across the table at eye level, she sits slightly right of center, the cup in the blurry foreground cuts the lower left corner, frame slightly tilted.\nLighting/mood: bright daylight under an awning, sunlight patch on the table, shadows a bit blue.\nStyle/medium: iPhone 15 Pro photo, 24mm main camera (or 12MP front camera for selfies), Smart HDR processing with slightly lifted shadows and a touch of over-sharpening, subtle sensor noise in the darker areas, true-to-life colors, no color grading.\nTextures: natural pores, uneven skin tone, slight shine on the nose, flyaway hairs, real fabric creases and wear.\nConstraints: no text, no logos, no brand names on clothes, no watermark.\nAvoid: beauty filter, plastic or waxy skin, perfectly centered symmetrical headshot, staring blankly into the lens, posed smile, studio lighting, cinematic grading, heavy makeup, generic plain grey t-shirt.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/fa721721-65b2-447e-8499-8a88fb48e71f.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/influencer-bia/perfil/v2/2-mesa-cafe-amiga.png"
+  ],
+  "elapsed_ms": 61967,
+  "raw": {
+    "id": "5fba34e0912b4f57bbe4b6e2850eb01e",
+    "model": "openai/gpt-image-2.5-sunburst/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/fa721721-65b2-447e-8499-8a88fb48e71f.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/5fba34e0912b4f57bbe4b6e2850eb01e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T14:52:50.717983903Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 58807
+    }
+  }
+}

@@ -1,0 +1,30 @@
+✔ Done in 278s.
+✔ Saved 1 file.
+{
+  "id": "6af5d4449d3e4bb7b348ec603d7801ae",
+  "model": "sync/lipsync-2",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/6af5d4449d3e4bb7b348ec603d7801ae/1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/gram-detect/criativos/sophia-jones-avatar-homem-38-2026-08-24/versao-A-voz-original.mp4"
+  ],
+  "elapsed_ms": 282247,
+  "raw": {
+    "id": "6af5d4449d3e4bb7b348ec603d7801ae",
+    "model": "sync/lipsync-2",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/6af5d4449d3e4bb7b348ec603d7801ae/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/6af5d4449d3e4bb7b348ec603d7801ae/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-23T17:59:20.423635299Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 275325
+    }
+  }
+}

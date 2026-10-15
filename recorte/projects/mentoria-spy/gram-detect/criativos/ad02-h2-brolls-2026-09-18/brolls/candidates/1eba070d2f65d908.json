@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:UISbqxNqJlY",
+  "provider": "youtube",
+  "source_id": "UISbqxNqJlY",
+  "source_url": "https://www.youtube.com/watch?v=UISbqxNqJlY",
+  "title": "What is Hidden requests is now called Spam |Instagram Messages Spam Folder Update 2026",
+  "creator": {
+    "name": "Issue Tech",
+    "url": null
+  },
+  "query": "Instagram hidden message requests folder how to find",
+  "collected_at": "2026-09-17T16:29:21.900257+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 138,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/UISbqxNqJlY",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/UISbqxNqJlY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB4DDdztcBIvg5W8JOIxaDjaCRiwg"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

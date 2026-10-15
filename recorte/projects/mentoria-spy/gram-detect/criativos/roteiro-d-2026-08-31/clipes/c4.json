@@ -1,0 +1,28 @@
+✔ Done in 243s.
+{
+  "id": "a77a60e9302e490ea45f146653d12229",
+  "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "prompt": "Master Intent: The guest side of a late-night television news broadcast. Tone: matter-of-fact, quietly confident. No music, only the quiet room tone of a studio.\n\nScene 1 (Duration: 10s):\nLocked-off medium shot, camera at eye level, no camera movement, no zoom.\n\nThe guest turns her palm upward toward camera in a small presenting gesture.\n[Character B: Elena, clear articulate voice, warm and measured, American English]: \"This is what changes that.\"\n\nImmediately, she counts the points off with small controlled movements of her fingers.\n[Character B: Elena, clear articulate voice, warm and measured, American English]: \"You enter the number. Nothing gets installed. Not on their phone, not on yours. Ten minutes later you're reading what was already there.\"\n\nShe lowers both hands into her lap and holds still.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/a77a60e9302e490ea45f146653d12229/1.mp4"
+  ],
+  "saved": [],
+  "elapsed_ms": 243807,
+  "raw": {
+    "id": "a77a60e9302e490ea45f146653d12229",
+    "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/a77a60e9302e490ea45f146653d12229/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/a77a60e9302e490ea45f146653d12229/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-31T05:30:36.490992023Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 241793
+    }
+  }
+}

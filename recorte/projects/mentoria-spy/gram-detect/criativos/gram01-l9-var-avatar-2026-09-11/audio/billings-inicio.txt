@@ -1,0 +1,37 @@
+- Fetching billing records…
+
+15 records  · page 1  · more available (--page)
+
+  -$0.0810    2026-09-11 16:39:14 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: 506b981a6949487e9d3c7324724efb06
+  -$0.0810    2026-09-11 16:39:04 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: 9db6d103c53f4879bacca48f9e392ec2
+  -$0.0891    2026-09-11 15:29:53 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: bca03795f68446ca8f53c262f37c4a79
+  -$0.0891    2026-09-11 15:19:55 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: 46939c48b8bb41dd946457f81781deaa
+  -$1.4000    2026-09-11 15:18:56 UTC  bytedance/seedance-2.0-fast/image-to-video-spicy key:tes
+      prediction: 06faf11243d74e88a452ce5dafa8ba35
+  -$0.0864    2026-09-11 15:13:57 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: 7bbb7f4508b04c32a7176276032871e4
+  -$0.0810    2026-09-11 15:06:39 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: e727095383fe4899a54c410fea6e759e
+  -$0.0810    2026-09-11 15:04:13 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: b952616f1ee9425cad45312129fc0fd2
+  -$4.0000    2026-09-11 15:01:37 UTC  bytedance/seedance-2.0-fast/image-to-video-spicy key:tes
+      prediction: 53521b12639d4c6c87c36ac3836d33fa
+  -$0.0810    2026-09-11 15:01:11 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: 7ec7dadee5c44745a048bab8d7c6e3d8
+  -$0.0810    2026-09-11 14:57:38 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: 4a09969facea4beda711db0b00aab455
+  -$0.0810    2026-09-11 14:54:41 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: 2eb782f1643e452990da0f31e8fba60f
+  -$0.4800    2026-09-11 14:53:38 UTC  wavespeed-ai/ltx-2.3-spicy/image-to-video key:tes
+      prediction: 73655557513b4b88a6fb8dbce9c3ae89
+  -$0.0810    2026-09-11 14:52:55 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: 5407be1d528d4dae87faa79feda44916
+  -$0.0810    2026-09-11 14:22:57 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: 39e2c3681b5e40ddb49c72cb0b691f8a
+
+  page net: -$6.8736
+

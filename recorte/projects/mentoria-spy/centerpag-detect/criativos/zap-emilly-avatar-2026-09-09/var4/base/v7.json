@@ -1,0 +1,29 @@
+{
+  "id": "ef6c734a0d334304b567ecd75cbfdf39",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still of a podcast-style talking head. A 32-year-old East Asian man with short black hair and light stubble, plain black t-shirt. Looks straight into the lens with a serious, explaining expression, brows slightly furrowed, mouth closed. Framing: medium close-up from the chest up, eyes at about 38% from the top of the frame, hands out of frame, subject centered. A black dynamic podcast microphone on an articulated boom arm enters the frame from the left in front of the subject. Background: dark studio, black backdrop with two or three warm amber lights out of focus as soft bokeh, a subtle warm rim light on the shoulder. Fixed camera at eye level, mirrorless camera look, slight grain, realistic skin texture, no retouching, not a model.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/8fc60727-b722-4ca0-9bac-004453e8c10c.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-emilly-avatar-2026-09-09/var4/base/avatar-v7-homem-asiatico.png"
+  ],
+  "elapsed_ms": 55680,
+  "raw": {
+    "id": "ef6c734a0d334304b567ecd75cbfdf39",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/8fc60727-b722-4ca0-9bac-004453e8c10c.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/ef6c734a0d334304b567ecd75cbfdf39/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-09T16:51:53.355299689Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 51702
+    }
+  }
+}

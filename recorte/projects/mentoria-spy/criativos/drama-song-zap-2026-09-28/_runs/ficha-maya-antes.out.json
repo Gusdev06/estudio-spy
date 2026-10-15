@@ -1,0 +1,29 @@
+{
+  "id": "eac94c1b8ced4279b84515f06dfce3ae",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Character turnaround sheet in a single image, the same character shown four times on a plain flat light-gray background (#C8C8C8), evenly spaced left to right, no text, no labels, no props, no floor shadow clutter:\n1) head-and-shoulders close-up facing the camera, neutral expression;\n2) full body, front view, standing relaxed, arms at the sides;\n3) full body, three-quarter view facing left;\n4) full body, three-quarter view facing right.\nCharacter: Maya, a 34-year-old Latina woman with warm light-brown skin, shoulder-length wavy dark-brown hair tied in a messy low bun with loose strands, hazel eyes with faint dark circles, a small beauty mark above the left corner of her upper lip, small gold hoop earrings, wearing an oversized heather-gray cardigan over a plain white t-shirt and dark jeans, slightly hunched posture.\n3D animated feature film style, stylized proportions, soft subsurface skin, large expressive eyes, sculpted hair strands, soft even studio lighting, high detail, consistent outfit and features across all four views.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/7a1d9670-7626-4077-8c2d-491d1c668562.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/fichas/maya-antes.png"
+  ],
+  "elapsed_ms": 56622,
+  "raw": {
+    "id": "eac94c1b8ced4279b84515f06dfce3ae",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/7a1d9670-7626-4077-8c2d-491d1c668562.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/eac94c1b8ced4279b84515f06dfce3ae/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T09:53:15.750302299Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 52601
+    }
+  }
+}

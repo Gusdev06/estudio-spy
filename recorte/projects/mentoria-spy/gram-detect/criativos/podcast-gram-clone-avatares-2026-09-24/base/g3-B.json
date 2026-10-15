@@ -1,0 +1,29 @@
+{
+  "id": "22ff31d5c04e43f1b965028a49e9dbc6",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same dark cozy podcast studio at night, same camera position and framing, same warm dim lamp and candle light, same furniture, shelves, plants and wall exactly as in the image. REPLACE the woman with a DIFFERENT woman: a Black woman about 27 years old with medium brown skin and a short natural afro, sitting in the same light-grey armchair, legs crossed the same way, one hand resting on the armrest, wearing the SAME black hoodie and dark trousers and white socks, the SAME black over-ear headphones, the same black podcast microphone on a boom arm in front of her. Same position, same posture, same size in the frame, mouth closed, looking toward the person she is talking to off-camera. She is the only person in the image. Photorealistic video still, natural skin texture, no retouching, ordinary person, not a model, no text, no captions, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/a1afbc3d-9721-46c6-a04d-64fd862773ff.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/podcast-gram-clone-avatares-2026-09-24/base/g3-B.png"
+  ],
+  "elapsed_ms": 39978,
+  "raw": {
+    "id": "22ff31d5c04e43f1b965028a49e9dbc6",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/a1afbc3d-9721-46c6-a04d-64fd862773ff.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/22ff31d5c04e43f1b965028a49e9dbc6/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T03:34:08.842447701Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 34486
+    }
+  }
+}

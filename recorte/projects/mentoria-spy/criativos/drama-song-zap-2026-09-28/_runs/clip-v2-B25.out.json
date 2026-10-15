@@ -1,0 +1,29 @@
+{
+  "id": "0beca5024abd4a89be3d2aed6be0dcf2",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot, 3D animated feature film style. Maya smiles and points down toward the bottom of the frame; she stands up and walks into the house, outlined by the warm doorway light; the front door is left ajar, warm light spilling onto the empty porch. Characters: Maya (Latina woman, dark-brown hair down in soft waves, emerald-green wrap blouse, small gold hoop earrings, small beauty mark above her lip, burnt-red lipstick). Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/a51d23b3-53e1-4c4f-bbf3-59000430c5a0-u1_e85811b2-d88f-46e7-b37e-389d350956cc.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B25.mp4"
+  ],
+  "elapsed_ms": 42541,
+  "raw": {
+    "id": "0beca5024abd4a89be3d2aed6be0dcf2",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/a51d23b3-53e1-4c4f-bbf3-59000430c5a0-u1_e85811b2-d88f-46e7-b37e-389d350956cc.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/0beca5024abd4a89be3d2aed6be0dcf2/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:30:23.127686439Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 40529
+    }
+  }
+}

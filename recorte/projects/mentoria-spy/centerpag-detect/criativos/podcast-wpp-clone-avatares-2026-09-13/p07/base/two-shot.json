@@ -1,0 +1,29 @@
+{
+  "id": "b28b12f63ede4fb0b24ea108b42d6b78",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate the FIRST image exactly — same podcast studio, same cream curved sofa, same low round table, same two black podcast microphones on boom arms, same green plants, same light patterned wall, same wide two-shot framing from the same camera position and height, same warm daylight, same body language (both women seated turned toward each other, mid-conversation). ONLY REPLACE the two women: the woman on the RIGHT must be the woman from the SECOND image (a mixed-race woman about 28 with light brown skin and long brown curls, lavender ribbed knit top, light jeans). The woman on the LEFT must be the woman from the THIRD image (a Filipina woman about 25 with medium tan skin, wavy dark hair, plain black long-sleeve top, black trousers). Keep their faces, hair and clothing exactly as in those images. Photorealistic video still, natural skin texture, no retouching, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/77d0efd1-e64a-485b-8a3c-e62649a0f40d.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-clone-avatares-2026-09-13/p07/base/two-shot.png"
+  ],
+  "elapsed_ms": 711300,
+  "raw": {
+    "id": "b28b12f63ede4fb0b24ea108b42d6b78",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/77d0efd1-e64a-485b-8a3c-e62649a0f40d.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/b28b12f63ede4fb0b24ea108b42d6b78/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-19T16:04:24.447240742Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 33820
+    }
+  }
+}

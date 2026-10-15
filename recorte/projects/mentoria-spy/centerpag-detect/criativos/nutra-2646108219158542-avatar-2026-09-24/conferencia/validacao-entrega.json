@@ -1,0 +1,31 @@
+{
+  "arquivo": "projects/mentoria-spy/centerpag-detect/criativos/nutra-2646108219158542-avatar-2026-09-24/nutra-2646108219158542-variacao-avatar.mp4",
+  "media": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 360,
+        "height": 640,
+        "r_frame_rate": "30/1",
+        "nb_frames": "8141"
+      },
+      {
+        "codec_name": "aac",
+        "profile": "HE-AAC",
+        "r_frame_rate": "0/0",
+        "nb_frames": "5846"
+      }
+    ],
+    "format": {
+      "duration": "271.370000",
+      "size": "9044521"
+    }
+  },
+  "audio_sha256": "83a41b3d04b3b8fc9ddb78d215c8d1c673bd2c06106ca3b757273cfae4894fbf",
+  "audio_identico_ao_original": true,
+  "master_lossless": "master-sem-perdas.mp4",
+  "validacao_master": "conferencia/validacao-master.json",
+  "nota": "Entrega comprimida H.264 High CRF 16; hash de pixels id\u00eanticos de hook/cauda aplica-se ao master sem perdas."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "643a8d1e96804d539537660fa49e2e7f",
+  "model": "minimax/speech-2.6-hd",
+  "outputs": [
+    "https://cdn.cachegalaxy.com/predictions/643a8d1e96804d539537660fa49e2e7f/1.mp3"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-top5-avatar-copy-2026-10-07/audio/v165.mp3"
+  ],
+  "elapsed_ms": 7992,
+  "raw": {
+    "id": "643a8d1e96804d539537660fa49e2e7f",
+    "model": "minimax/speech-2.6-hd",
+    "outputs": [
+      "https://cdn.cachegalaxy.com/predictions/643a8d1e96804d539537660fa49e2e7f/1.mp3"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/643a8d1e96804d539537660fa49e2e7f/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-07T14:31:06.807245101Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 6256
+    }
+  }
+}

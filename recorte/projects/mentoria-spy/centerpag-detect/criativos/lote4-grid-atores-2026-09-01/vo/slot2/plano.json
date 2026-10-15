@@ -1,0 +1,49 @@
+{
+ "voice_id": "Determined_Man",
+ "atempo_base": 1.1995,
+ "lead_in": 0.2,
+ "beats": [
+  {
+   "id": "B1",
+   "marca": 0.0,
+   "dur": 1.6,
+   "atempo_total": 1.1995
+  },
+  {
+   "id": "B2",
+   "marca": 2.578,
+   "dur": 2.766,
+   "atempo_total": 1.3364
+  },
+  {
+   "id": "B3",
+   "marca": 5.595,
+   "dur": 2.001,
+   "atempo_total": 1.1995
+  },
+  {
+   "id": "B4",
+   "marca": 8.377,
+   "dur": 2.22,
+   "atempo_total": 1.1995
+  },
+  {
+   "id": "B5",
+   "marca": 11.16,
+   "dur": 2.749,
+   "atempo_total": 1.1995
+  },
+  {
+   "id": "B6",
+   "marca": 14.616,
+   "dur": 3.878,
+   "atempo_total": 1.7432
+  },
+  {
+   "id": "B7",
+   "marca": 18.745,
+   "dur": 3.037,
+   "atempo_total": 1.3734
+  }
+ ]
+}

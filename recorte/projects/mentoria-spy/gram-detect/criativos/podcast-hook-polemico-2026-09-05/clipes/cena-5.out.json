@@ -1,0 +1,29 @@
+{
+  "id": "a0bf4e87d478495c9478481b247d13eb",
+  "model": "minimax/h3/reference-to-video",
+  "prompt": "Podcast studio, fixed camera, close-up of the guest (woman in beige sweater). She turns from the host and looks straight into the camera lens while speaking the line in <Audio 1>, calm and direct, natural lip sync. Warm light, background static. No camera movement.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/a0bf4e87d478495c9478481b247d13eb/1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/podcast-hook-polemico-2026-09-05/clipes/cena-5.mp4"
+  ],
+  "elapsed_ms": 116548,
+  "raw": {
+    "id": "a0bf4e87d478495c9478481b247d13eb",
+    "model": "minimax/h3/reference-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/a0bf4e87d478495c9478481b247d13eb/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/a0bf4e87d478495c9478481b247d13eb/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-04T18:12:19.418080573Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 112736
+    }
+  }
+}

@@ -1,0 +1,21 @@
+# Orquestrador: site público + porta interna (ferramentas e proxy da Anthropic) + disparo de um container por pedido.
+# É o ÚNICO lugar com as chaves (ANTHROPIC_API_KEY_PRODUTO e WAVESPEED_API_KEY). Fala com o Docker do host pelo socket.
+FROM node:24-bookworm-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg curl ca-certificates gnupg \
+  && install -m 0755 -d /etc/apt/keyrings \
+  && curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc \
+  && echo "deb [signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian bookworm stable" > /etc/apt/sources.list.d/docker.list \
+  && apt-get update && apt-get install -y --no-install-recommends docker-ce-cli \
+  && rm -rf /var/lib/apt/lists/*
+RUN npm install -g @wavespeed/cli@0.4.2 && npm cache clean --force
+
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci --omit=dev && npm cache clean --force
+COPY site/ ./site/
+
+ENV EXECUTOR=docker PORT=4330 PORT_INTERNO=4331 HOST_INTERNO=0.0.0.0 ESTUDIO_BASE=/data/jobs \
+    ORQ_URL_INTERNO=http://orquestrador:4331 AGENTE_REDE=estudio-interno AGENTE_IMAGEM=estudio-spy-agente
+EXPOSE 4330
+CMD ["node", "site/server.mjs"]

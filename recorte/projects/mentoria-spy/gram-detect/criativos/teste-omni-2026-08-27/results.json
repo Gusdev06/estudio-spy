@@ -1,0 +1,40 @@
+{
+ "p-video-txt": {
+  "status": "completed",
+  "error": "",
+  "outputs": [
+   "https://d2h7xmz5gqybh9.cloudfront.net/output/8d941bce-bbd4-4375-9fe4-e5711ddd658c.mp4"
+  ],
+  "secs": 101108
+ },
+ "p-video-img": {
+  "status": "completed",
+  "error": "",
+  "outputs": [
+   "https://d2h7xmz5gqybh9.cloudfront.net/output/a6363a99-39c1-40dc-9414-7100c80727b7.mp4"
+  ],
+  "secs": 163895
+ },
+ "kling-o3-txt": {
+  "status": "completed",
+  "error": "",
+  "outputs": [
+   "https://d2h7xmz5gqybh9.cloudfront.net/predictions/93ec6d36357144d48adfa12d059717cd/1.mp4"
+  ],
+  "secs": 413474
+ },
+ "kling-o3-img": {
+  "status": "failed",
+  "error": "Image pixel is invalid",
+  "outputs": [],
+  "secs": 1687
+ },
+ "skyreels-txt": {
+  "status": "completed",
+  "error": "",
+  "outputs": [
+   "https://d2h7xmz5gqybh9.cloudfront.net/output/719a576f-c0df-4380-b980-b2a7feafd012.mp4"
+  ],
+  "secs": 742207
+ }
+}

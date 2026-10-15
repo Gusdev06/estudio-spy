@@ -1,0 +1,249 @@
+{
+  "status": "rascunho-para-aprovacao",
+  "language": "en",
+  "user_confirmation": "Acessar uma conta com consentimento do titular",
+  "confirmed_capability": "Acesso com consentimento; demais funcionalidades não verificadas.",
+  "estimated_video_budget_usd": 6,
+  "pricing_basis": "Pruna 720p US$0.025/s com arredondamento por clipe; nova fala estimada entre 32–44s/peça, total depende da duração real. MiniMax speech-2.6-hd cotado a US$0.0196 por amostra de 196 caracteres. Teto proposto, ainda não autorizado.",
+  "variants": [
+    {
+      "id": "v01-sala-botanica",
+      "scene": "Sala com plantas",
+      "spoken": "A real screenshot can still leave out what matters.",
+      "pt": "Um print verdadeiro ainda pode deixar de fora o que importa.",
+      "caption": "WHAT'S MISSING?",
+      "bridge": [
+        [
+          "B",
+          "Then how do you get the context?"
+        ]
+      ],
+      "dialogue": [
+        [
+          "A",
+          "A real screenshot can still leave out what matters."
+        ],
+        [
+          "B",
+          "Then how do you get the context?"
+        ],
+        [
+          "A",
+          "This service is for accessing an account with the account holder's consent. They need to agree to the access."
+        ],
+        [
+          "B",
+          "And what am I actually paying for?"
+        ],
+        [
+          "A",
+          "Check the process and the included features before you decide. Don't buy a mystery."
+        ],
+        [
+          "B",
+          "Where do I find that?"
+        ],
+        [
+          "A",
+          "Tap the link below. Get the details, understand the offer, then decide."
+        ]
+      ]
+    },
+    {
+      "id": "v02-estudio-madeira",
+      "scene": "Estúdio de madeira",
+      "spoken": "Stop paying for big promises and tiny explanations.",
+      "pt": "Pare de pagar por grandes promessas e explicações minúsculas.",
+      "caption": "KNOW WHAT YOU'RE BUYING",
+      "bridge": [
+        [
+          "B",
+          "What should I know before paying?"
+        ],
+        [
+          "A",
+          "How access works, who authorizes it, and what's included."
+        ]
+      ],
+      "dialogue": [
+        [
+          "A",
+          "Stop paying for big promises and tiny explanations."
+        ],
+        [
+          "B",
+          "What should I know before paying?"
+        ],
+        [
+          "A",
+          "How access works, who authorizes it, and what's included."
+        ],
+        [
+          "A",
+          "This service is for accessing an account with the account holder's consent. They need to agree to the access."
+        ],
+        [
+          "B",
+          "And what am I actually paying for?"
+        ],
+        [
+          "A",
+          "Check the process and the included features before you decide. Don't buy a mystery."
+        ],
+        [
+          "B",
+          "Where do I find that?"
+        ],
+        [
+          "A",
+          "Tap the link below. Get the details, understand the offer, then decide."
+        ]
+      ]
+    },
+    {
+      "id": "v03-loft-industrial",
+      "scene": "Loft industrial",
+      "spoken": "One message. Three assumptions. That's how misunderstandings start.",
+      "pt": "Uma mensagem. Três suposições. É assim que começam os mal-entendidos.",
+      "caption": "CONTEXT CHANGES THE STORY",
+      "bridge": [
+        [
+          "B",
+          "So how do you stop guessing?"
+        ]
+      ],
+      "dialogue": [
+        [
+          "A",
+          "One message. Three assumptions. That's how misunderstandings start."
+        ],
+        [
+          "B",
+          "So how do you stop guessing?"
+        ],
+        [
+          "A",
+          "This service is for accessing an account with the account holder's consent. They need to agree to the access."
+        ],
+        [
+          "B",
+          "And what am I actually paying for?"
+        ],
+        [
+          "A",
+          "Check the process and the included features before you decide. Don't buy a mystery."
+        ],
+        [
+          "B",
+          "Where do I find that?"
+        ],
+        [
+          "A",
+          "Tap the link below. Get the details, understand the offer, then decide."
+        ]
+      ]
+    },
+    {
+      "id": "v04-biblioteca",
+      "scene": "Biblioteca",
+      "spoken": "Agreed to share access? Stop passing screenshots back and forth.",
+      "pt": "Combinaram de compartilhar o acesso? Parem de trocar prints sem fim.",
+      "caption": "AGREED ACCESS. CLEAR EXPECTATIONS.",
+      "bridge": [
+        [
+          "B",
+          "What should we look at instead?"
+        ],
+        [
+          "A",
+          "See how authorized account access works."
+        ]
+      ],
+      "dialogue": [
+        [
+          "A",
+          "Agreed to share access? Stop passing screenshots back and forth."
+        ],
+        [
+          "B",
+          "What should we look at instead?"
+        ],
+        [
+          "A",
+          "See how authorized account access works."
+        ],
+        [
+          "A",
+          "This service is for accessing an account with the account holder's consent. They need to agree to the access."
+        ],
+        [
+          "B",
+          "And what am I actually paying for?"
+        ],
+        [
+          "A",
+          "Check the process and the included features before you decide. Don't buy a mystery."
+        ],
+        [
+          "B",
+          "Where do I find that?"
+        ],
+        [
+          "A",
+          "Tap the link below. Get the details, understand the offer, then decide."
+        ]
+      ]
+    },
+    {
+      "id": "v05-estudio-azul",
+      "scene": "Estúdio azul",
+      "spoken": "Before you pay for WhatsApp access, ask this.",
+      "pt": "Antes de pagar por acesso ao WhatsApp, pergunte isto.",
+      "caption": "ONE QUESTION BEFORE YOU PAY",
+      "bridge": [
+        [
+          "B",
+          "Ask what?"
+        ],
+        [
+          "A",
+          "Whose permission makes that access possible?"
+        ]
+      ],
+      "dialogue": [
+        [
+          "A",
+          "Before you pay for WhatsApp access, ask this."
+        ],
+        [
+          "B",
+          "Ask what?"
+        ],
+        [
+          "A",
+          "Whose permission makes that access possible?"
+        ],
+        [
+          "A",
+          "This service is for accessing an account with the account holder's consent. They need to agree to the access."
+        ],
+        [
+          "B",
+          "And what am I actually paying for?"
+        ],
+        [
+          "A",
+          "Check the process and the included features before you decide. Don't buy a mystery."
+        ],
+        [
+          "B",
+          "Where do I find that?"
+        ],
+        [
+          "A",
+          "Tap the link below. Get the details, understand the offer, then decide."
+        ]
+      ]
+    }
+  ]
+}

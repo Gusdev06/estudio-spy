@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Estúdio Spy (protótipo local): sobe o site com o login e religa se ele cair.
+  Sem isso o servidor morria junto com a sessão do Claude Code e levava os pedidos em andamento.
+
+  Instalar:
+    cp projects/estudio-spy/fase0/site/com.gusta.estudiospy.site.plist ~/Library/LaunchAgents/
+    launchctl load -w ~/Library/LaunchAgents/com.gusta.estudiospy.site.plist
+  Reiniciar (depois de mudar o código):
+    launchctl kickstart -k gui/$(id -u)/com.gusta.estudiospy.site
+  Parar:
+    launchctl unload -w ~/Library/LaunchAgents/com.gusta.estudiospy.site.plist
+  Log:  tail -f ~/estudio-spy-fase0/site.log   (erros detalhados em ~/estudio-spy-fase0/site-jobs/_servidor.log)
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.gusta.estudiospy.site</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/node</string>
+    <string>site/server.mjs</string>
+  </array>
+  <key>WorkingDirectory</key><string>/Users/gustagoat/Documents/AIS-OS/projects/estudio-spy/fase0</string>
+  <!-- O launchd não herda o PATH do shell: ffmpeg, yt-dlp e a CLI da WaveSpeed moram em ~/.local/bin. -->
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>/Users/gustagoat/.local/bin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string>
+    <key>ADMIN_EMAILS</key><string>coven688@gmail.com</string>
+    <key>PORT</key><string>4330</string>
+  </dict>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>ThrottleInterval</key><integer>10</integer>
+  <key>StandardOutPath</key><string>/Users/gustagoat/estudio-spy-fase0/site.log</string>
+  <key>StandardErrorPath</key><string>/Users/gustagoat/estudio-spy-fase0/site.log</string>
+</dict>
+</plist>

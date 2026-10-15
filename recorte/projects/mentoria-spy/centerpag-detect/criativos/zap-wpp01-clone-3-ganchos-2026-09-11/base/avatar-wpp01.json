@@ -1,0 +1,29 @@
+{
+  "id": "28d3c58c781949f598a7dc3c30649ac2",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still from a phone's front camera, held in one hand slightly below eye level and tilted upward (mild low angle). An ordinary man around 32 years old, white with light skin and faint redness on the cheeks, short dark-auburn (reddish-brown) hair with a high forehead and receding hairline, a full short beard about one centimeter long in the same auburn color, well filled on the chin and mustache, light-colored eyes. He wears a plain black zip-up track jacket with thin white piping along the collar and shoulders, and a light gray t-shirt underneath. No glasses, no hat, no earrings, no logos, no text anywhere. He looks straight into the lens with a slightly furrowed brow, casual serious expression, mouth closed, as if about to say something. Framing: head and chest, shoulders cropped at the sides, top of the head near the top edge, eyes around 37 percent from the top. He is sitting low on a couch at home; behind him a dark grayish-green wall and part of the ceiling is visible with a small white round ceiling fixture in the upper left corner. Dim ambient indoor light, cool and slightly underexposed, low contrast, no lamp glow, no ring light. Realistic skin texture with pores and slight oiliness, mild phone-camera softness and grain, no retouching, not a model, not a stock photo. Hands out of frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/5f4164f5-d7dc-4792-9c21-cb4c7dbbd6c5.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-wpp01-clone-3-ganchos-2026-09-11/base/avatar-wpp01.png"
+  ],
+  "elapsed_ms": 80479,
+  "raw": {
+    "id": "28d3c58c781949f598a7dc3c30649ac2",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/5f4164f5-d7dc-4792-9c21-cb4c7dbbd6c5.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/28d3c58c781949f598a7dc3c30649ac2/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-10T18:10:59.37682969Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 76225
+    }
+  }
+}

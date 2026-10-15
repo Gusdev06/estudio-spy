@@ -1,0 +1,28 @@
+{
+  "id": "95937a793673414eb45edfd5aae6e332",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/d912b257-99f0-4bfc-a904-cb64d703709c.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-hook-agressivo-2026-09-23/clipes/v07.mp4"
+  ],
+  "elapsed_ms": 59365,
+  "raw": {
+    "id": "95937a793673414eb45edfd5aae6e332",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/d912b257-99f0-4bfc-a904-cb64d703709c.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/95937a793673414eb45edfd5aae6e332/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-23T03:34:49.165548831Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 54104
+    }
+  }
+}

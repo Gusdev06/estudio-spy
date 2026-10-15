@@ -1,0 +1,6 @@
+base/avatar-av1.png frame 0: 960x1696 · rosto x157-859 y248-950 (largura 702 = 73.1 % da largura; queixo≈y950 = 56.0 %) · olhos n=0 y≈nan = nan % · x=[]
+base/avatar-av2.png frame 0: 940x1672 · rosto x206-743 y423-960 (largura 537 = 57.1 % da largura; queixo≈y960 = 57.4 %) · olhos n=2 y≈620 = 37.1 % · x=[356, 578]
+base/avatar-av3.png frame 0: 941x1672 · rosto x250-760 y498-1008 (largura 510 = 54.2 % da largura; queixo≈y1008 = 60.3 %) · olhos n=2 y≈691 = 41.3 % · x=[396, 594]
+base/avatar-av4.png frame 0: 940x1672 · rosto x263-735 y528-1000 (largura 472 = 50.2 % da largura; queixo≈y1000 = 59.8 %) · olhos n=2 y≈702 = 42.0 % · x=[392, 584]
+base/avatar-av5.png frame 0: 940x1672 · rosto x226-745 y522-1041 (largura 519 = 55.2 % da largura; queixo≈y1041 = 62.3 %) · olhos n=2 y≈719 = 43.0 % · x=[380, 581]
+base/avatar-av1.png frame 0: 941x1672 · rosto x226-724 y414-912 (largura 498 = 52.9 % da largura; queixo≈y912 = 54.5 %) · olhos n=2 y≈604 = 36.1 % · x=[370, 562]

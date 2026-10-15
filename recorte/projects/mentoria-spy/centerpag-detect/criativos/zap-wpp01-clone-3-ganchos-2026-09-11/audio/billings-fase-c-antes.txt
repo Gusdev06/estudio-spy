@@ -1,0 +1,12 @@
+- Fetching billing records…
+
+20 records  · page 1  · more available (--page)
+
+  -$0.4800    2026-09-10 18:54:33 UTC  wavespeed-ai/ltx-2.3-spicy/image-to-video key:tes
+      prediction: f44ec896c0684435837a81f9bf2fd459
+  -$0.6000    2026-09-10 18:50:18 UTC  wavespeed-ai/ltx-2.3-spicy/image-to-video key:tes
+      prediction: 11f891cd6da0476ebb21151c32b727f6
+  -$0.0810    2026-09-10 18:20:59 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: e43cc2e38c96498eb1d64d4e189de2f0
+  -$0.0570    2026-09-10 18:10:59 UTC  openai/gpt-image-2/text-to-image         key:macbook
+      prediction: 28d3c58c781949f598a7dc3c30649ac2

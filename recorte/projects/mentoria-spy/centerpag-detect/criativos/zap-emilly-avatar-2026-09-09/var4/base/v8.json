@@ -1,0 +1,29 @@
+{
+  "id": "eadaaa4fa6af4cf5886443db9c0cd0a1",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still of a podcast-style talking head. A 34-year-old white man with short dark-blonde hair and a trimmed ginger-blonde beard, plain black t-shirt. Looks straight into the lens with a serious, explaining expression, brows slightly furrowed, mouth closed. Framing: medium close-up from the chest up, eyes at about 38% from the top of the frame, hands out of frame, subject centered. A black dynamic podcast microphone on an articulated boom arm enters the frame from the left in front of the subject. Background: dark studio, black backdrop with two or three warm amber lights out of focus as soft bokeh, a subtle warm rim light on the shoulder. Fixed camera at eye level, mirrorless camera look, slight grain, realistic skin texture, no retouching, not a model.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e2a00229-1ff5-490c-9375-2e4f8d9a32ad.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-emilly-avatar-2026-09-09/var4/base/avatar-v8-homem-loiro-barba.png"
+  ],
+  "elapsed_ms": 65877,
+  "raw": {
+    "id": "eadaaa4fa6af4cf5886443db9c0cd0a1",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e2a00229-1ff5-490c-9375-2e4f8d9a32ad.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/eadaaa4fa6af4cf5886443db9c0cd0a1/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-09T16:51:53.351635776Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 61678
+    }
+  }
+}

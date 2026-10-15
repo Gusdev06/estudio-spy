@@ -1,0 +1,98 @@
+[
+ {
+  "gancho_vs_slogan": 0.9333333333333332,
+  "confissao_primeira_pessoa": 0.96,
+  "loop_curiosidade": 0.89,
+  "carga_emocional": 0.7266666666666667,
+  "dor_concreta": 0.71,
+  "promessa_proibida_na_fala": 0.1,
+  "especificidade": 0.115,
+  "transferivel": 0.91,
+  "_nome": "flora-f5-notcrazy",
+  "_composto": 0.8303666666666666
+ },
+ {
+  "gancho_vs_slogan": 0.6966666666666667,
+  "confissao_primeira_pessoa": 0.91,
+  "loop_curiosidade": 0.74,
+  "carga_emocional": 0.7866666666666666,
+  "dor_concreta": 0.92,
+  "promessa_proibida_na_fala": 0.06,
+  "especificidade": 0.38,
+  "transferivel": 0.93,
+  "_nome": "flora-f1-love",
+  "_composto": 0.7800000000000001
+ },
+ {
+  "gancho_vs_slogan": 0.6666666666666666,
+  "confissao_primeira_pessoa": 0.57,
+  "loop_curiosidade": 0.82,
+  "carga_emocional": 0.9433333333333334,
+  "dor_concreta": 0.95,
+  "promessa_proibida_na_fala": 0.05,
+  "especificidade": 0.515,
+  "transferivel": 0.93,
+  "_nome": "121-secret-amiga",
+  "_composto": 0.7478333333333333
+ },
+ {
+  "gancho_vs_slogan": 0.6433333333333333,
+  "confissao_primeira_pessoa": 0.49,
+  "loop_curiosidade": 0.85,
+  "carga_emocional": 0.7233333333333333,
+  "dor_concreta": 0.85,
+  "promessa_proibida_na_fala": 0.06,
+  "especificidade": 0.095,
+  "transferivel": 0.86,
+  "_nome": "flora-f2-clean",
+  "_composto": 0.6579
+ },
+ {
+  "gancho_vs_slogan": 0.6633333333333333,
+  "confissao_primeira_pessoa": 0.09,
+  "loop_curiosidade": 0.81,
+  "carga_emocional": 0.6833333333333332,
+  "dor_concreta": 0.93,
+  "promessa_proibida_na_fala": 0.04,
+  "especificidade": 0.39,
+  "transferivel": 0.9,
+  "_nome": "flora-f3-redflags",
+  "_composto": 0.6012
+ },
+ {
+  "gancho_vs_slogan": 0.6566666666666666,
+  "confissao_primeira_pessoa": 0.2,
+  "loop_curiosidade": 0.67,
+  "carga_emocional": 0.7033333333333333,
+  "dor_concreta": 0.77,
+  "promessa_proibida_na_fala": 0.07,
+  "especificidade": 0.045,
+  "transferivel": 0.91,
+  "_nome": "flora-f4-podcast",
+  "_composto": 0.5686333333333333
+ },
+ {
+  "gancho_vs_slogan": 0.37999999999999995,
+  "confissao_primeira_pessoa": 0.08,
+  "loop_curiosidade": 0.73,
+  "carga_emocional": 0.38666666666666666,
+  "dor_concreta": 0.08,
+  "promessa_proibida_na_fala": 0.08,
+  "especificidade": 0.465,
+  "transferivel": 0.8,
+  "_nome": "*ancora Secret Revealed (escalou)",
+  "_composto": 0.3786333333333334
+ },
+ {
+  "gancho_vs_slogan": 0.0,
+  "confissao_primeira_pessoa": 0.02,
+  "loop_curiosidade": 0.08,
+  "carga_emocional": 0.016666666666666666,
+  "dor_concreta": 0.03,
+  "promessa_proibida_na_fala": 0.03,
+  "especificidade": 0.145,
+  "transferivel": 0.41,
+  "_nome": "*ancora slogan fixo L9 (não gastou)",
+  "_composto": 0.06203333333333333
+ }
+]

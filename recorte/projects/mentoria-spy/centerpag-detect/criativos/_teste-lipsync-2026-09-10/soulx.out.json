@@ -1,0 +1,28 @@
+{
+  "id": "badd7d8261b743c2879229a4587ce25b",
+  "model": "wavespeed-ai/soulx-flashhead",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/577bab0c-25b7-47cd-a801-caf5296bdfba-u1_632445b6-dcc2-4156-872a-f9ddf55ab72c.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/_teste-lipsync-2026-09-10/out-soulx.mp4"
+  ],
+  "elapsed_ms": 82380,
+  "raw": {
+    "id": "badd7d8261b743c2879229a4587ce25b",
+    "model": "wavespeed-ai/soulx-flashhead",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/577bab0c-25b7-47cd-a801-caf5296bdfba-u1_632445b6-dcc2-4156-872a-f9ddf55ab72c.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/badd7d8261b743c2879229a4587ce25b/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-09T18:26:43.575761766Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 79051
+    }
+  }
+}

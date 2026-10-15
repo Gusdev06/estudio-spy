@@ -1,0 +1,29 @@
+{
+  "id": "e7101a1a78bf47cda1e5f48aaa8d30ce",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still, front phone camera at eye level, bright home office. A 29-year-old Black man with short hair and a neat beard, dark skin with real texture, thin round glasses, plain white t-shirt. He looks straight into the lens with a friendly, slightly conspiratorial half-smile, as if about to explain a secret, mouth closed. Framing: chest up, hands out of frame, subject centered, eyes at about 35% from the top. Behind him: a white upholstered chair, a light neutral wall, soft natural window daylight, slightly overexposed background like a real webcam-style recording. Realistic skin texture, mild phone-camera softness, no retouching, ordinary person, not a model.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/977764a6-0065-47f4-9006-af17487b6471.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-secret-revealed-avatar-2026-09-10/var4/base/avatar-v2-homem-negro-oculos.png"
+  ],
+  "elapsed_ms": 55873,
+  "raw": {
+    "id": "e7101a1a78bf47cda1e5f48aaa8d30ce",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/977764a6-0065-47f4-9006-af17487b6471.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/e7101a1a78bf47cda1e5f48aaa8d30ce/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-09T18:33:12.905343379Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 50805
+    }
+  }
+}

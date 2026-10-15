@@ -1,0 +1,29 @@
+{
+  "id": "cf32d48475534b90ba090772686f581e",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Vertical 9:16 front-camera smartphone selfie video still. Keep EXACTLY the same room, background, curtains, light, camera position, close-up framing, head size and head position as the image. REPLACE the woman with a DIFFERENT woman: a Black woman about 25 years old with deep-brown skin, dark-brown eyes and shoulder-length natural curly black hair, wearing a plain white crewneck t-shirt. She looks straight into the phone camera, mouth relaxed and slightly open as if mid-sentence, natural light makeup. Only her head, shoulders and upper chest are visible; both of her arms hang relaxed at her sides, out of frame. She is the only person in the image. No text, no captions, no logos, no watermark. Photorealistic, natural skin texture with visible pores, no retouching, ordinary person, not a model, shot on a front phone camera.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e36dcd4b-a397-4660-a9b9-d552eb5c1796.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/manuela-avatares-2026-10-06/base/a2.png"
+  ],
+  "elapsed_ms": 43741,
+  "raw": {
+    "id": "cf32d48475534b90ba090772686f581e",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e36dcd4b-a397-4660-a9b9-d552eb5c1796.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/cf32d48475534b90ba090772686f581e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-06T01:10:33.606352938Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 39693
+    }
+  }
+}

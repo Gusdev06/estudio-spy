@@ -1,0 +1,29 @@
+{
+  "id": "d1b2f961011247bb91b0d96450a15c10",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still, front phone camera at eye level. a white man about 34 with fair skin, light-brown tousled hair, short stubble, wearing a plain navy-blue t-shirt, sitting in a home office with a softly blurred desk behind him. He looks straight into the lens with a serious, direct expression, as if telling a hard truth, mouth closed. Framing: chest up, hands out of frame, subject centered, eyes at about 35% from the top. Background softly out of focus, slightly overexposed like a real webcam-style recording. Realistic skin texture, mild phone-camera softness, no retouching, ordinary person, not a model. Only one person in frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/2feea707-1d80-4508-be2e-418151af9005.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-hook-avatares-2026-09-28/base/m2.png"
+  ],
+  "elapsed_ms": 41340,
+  "raw": {
+    "id": "d1b2f961011247bb91b0d96450a15c10",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/2feea707-1d80-4508-be2e-418151af9005.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/d1b2f961011247bb91b0d96450a15c10/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-27T17:22:25.144144667Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 38938
+    }
+  }
+}

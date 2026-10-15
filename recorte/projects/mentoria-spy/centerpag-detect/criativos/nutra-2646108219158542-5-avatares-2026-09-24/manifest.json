@@ -1,0 +1,71 @@
+{
+  "date_local": "2026-09-24",
+  "status": "completed",
+  "variants": [
+    {
+      "variant": "v01-negro",
+      "label": "Negro",
+      "file": "v01-negro/v01-negro-nutra-2646108219158542.mp4",
+      "bytes": 8646229,
+      "sha256": "86d5ccb6874f17665dd83762c08fbfe98ec1bc15dbf91cbe7baf9738196311c5",
+      "prediction_id": "05f77ff66ce2492b8b31f1d97e4f7e3f",
+      "cost_usd": 0.9,
+      "validation": "conferencia/validacao.json",
+      "criativos_prontos": "CRIATIVOS-PRONTOS/122-ZAP-nutra-2646108219158542-v01-negro.mp4"
+    },
+    {
+      "variant": "v02-leste-asiatico",
+      "label": "Leste-asiático",
+      "file": "v02-leste-asiatico/v02-leste-asiatico-nutra-2646108219158542.mp4",
+      "bytes": 8276570,
+      "sha256": "1f0f4e19462fed88bc88dfcba2389406739f9536d53de7e6e2e5ed76ab88738d",
+      "prediction_id": "ebbf973d2f5848bcaa7ea7a525196f7c",
+      "cost_usd": 0.9,
+      "validation": "conferencia/validacao.json",
+      "criativos_prontos": "CRIATIVOS-PRONTOS/123-ZAP-nutra-2646108219158542-v02-leste-asiatico.mp4"
+    },
+    {
+      "variant": "v03-sul-asiatico",
+      "label": "Sul-asiático",
+      "file": "v03-sul-asiatico/v03-sul-asiatico-nutra-2646108219158542.mp4",
+      "bytes": 9498994,
+      "sha256": "b76ea58a5f1daea552f59671cf86b2ff44eb4b763a76cb0ae59467cd99c7b1de",
+      "prediction_id": "0835f51e2c8e4015b18d8cac57eb4636",
+      "cost_usd": 0.9,
+      "validation": "conferencia/validacao.json",
+      "criativos_prontos": "CRIATIVOS-PRONTOS/124-ZAP-nutra-2646108219158542-v03-sul-asiatico.mp4"
+    },
+    {
+      "variant": "v04-arabe",
+      "label": "Árabe",
+      "file": "v04-arabe/v04-arabe-nutra-2646108219158542.mp4",
+      "bytes": 8580245,
+      "sha256": "26dd98af1f183f22de511ab76a6477f00f98339e127712209be12e2291f8aac7",
+      "prediction_id": "640174fe8a42439483182c49a6fc5dc8",
+      "cost_usd": 0.9,
+      "validation": "conferencia/validacao.json",
+      "criativos_prontos": "CRIATIVOS-PRONTOS/125-ZAP-nutra-2646108219158542-v04-arabe.mp4"
+    },
+    {
+      "variant": "v05-branco",
+      "label": "Branco",
+      "file": "v05-branco/v05-branco-nutra-2646108219158542.mp4",
+      "bytes": 8970534,
+      "sha256": "4dfe04c17ebaf86a7855d40f7061afa372a6f6c70271cff7bff5ed53f0fbbfe0",
+      "prediction_id": "b29f507e6db04c9c9c91d5e20bec4ad3",
+      "cost_usd": 0.9,
+      "validation": "conferencia/validacao.json",
+      "criativos_prontos": "CRIATIVOS-PRONTOS/126-ZAP-nutra-2646108219158542-v05-branco.mp4"
+    }
+  ],
+  "cost_net_usd": 4.5,
+  "attempts": 6,
+  "completed": 5,
+  "failed_refunded": 1,
+  "approval": "aprovacao.json",
+  "voice": "original",
+  "duration_seconds": 271.37,
+  "resolution": "360x640",
+  "fps": 30,
+  "frames": 8141
+}

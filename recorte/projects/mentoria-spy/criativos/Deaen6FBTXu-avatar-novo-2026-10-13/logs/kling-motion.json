@@ -1,0 +1,31 @@
+✔ Done in 305s.
+✔ Saved 1 file.
+{
+  "id": "d2d1ea0544434fc098b5cbf5b4790f5a",
+  "model": "kwaivgi/kling-v3.0-std/motion-control",
+  "prompt": "A woman doing her foundation makeup routine in a bathroom, deadpan expression, mouth closed, raw iPhone selfie video, no text on screen.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/11bff6a2-020a-4aed-8883-f9216b993cb7.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/Deaen6FBTXu-avatar-novo-2026-10-13/clipes/kling-motion.mp4"
+  ],
+  "elapsed_ms": 307510,
+  "raw": {
+    "id": "d2d1ea0544434fc098b5cbf5b4790f5a",
+    "model": "kwaivgi/kling-v3.0-std/motion-control",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/11bff6a2-020a-4aed-8883-f9216b993cb7.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/d2d1ea0544434fc098b5cbf5b4790f5a/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-13T06:37:00.812633588Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 301350
+    }
+  }
+}

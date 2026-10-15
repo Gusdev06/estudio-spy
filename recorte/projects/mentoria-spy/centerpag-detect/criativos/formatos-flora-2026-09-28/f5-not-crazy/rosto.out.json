@@ -1,0 +1,27 @@
+{
+  "id": "ad102c1c510d42f5b8d80b5e880f7117",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Photorealistic still from a vertical selfie video. A Hispanic woman about 38 years old with tan skin, dark wavy hair in a messy bun, eyes a little red as if she has been crying, a beige knit cardigan, sitting on a couch in a dim living room in the evening with soft window light, the room softly out of focus behind her. She looks straight into the camera lens, frustrated and emotional but composed, mouth slightly open as if mid-sentence. Framing: vertical 9:16, head and shoulders centered, eyes at the upper third, camera at eye level like a front-facing phone camera held at arm's length. She is the only person in the image, and both of her hands rest down below the bottom edge of the frame. Natural skin texture with visible pores, no retouching, ordinary person, not a model. No text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/5f134757-151f-44b0-a618-b466070f669c.png"
+  ],
+  "saved": [],
+  "elapsed_ms": 32481,
+  "raw": {
+    "id": "ad102c1c510d42f5b8d80b5e880f7117",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/5f134757-151f-44b0-a618-b466070f669c.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/ad102c1c510d42f5b8d80b5e880f7117/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-27T17:02:33.745972348Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 29531
+    }
+  }
+}

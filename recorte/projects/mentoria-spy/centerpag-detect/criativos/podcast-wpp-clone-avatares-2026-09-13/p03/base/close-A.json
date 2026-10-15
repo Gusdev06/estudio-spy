@@ -1,0 +1,29 @@
+{
+  "id": "73296c61a3794decb1b9a25c633c8f12",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same podcast studio, same camera, same framing distance, same warm daylight, same cream sofa and background with green plants, same black podcast microphone on a boom arm entering from the left. Extend the scene vertically to a 9:16 vertical frame, keeping the original composition in the middle band. REPLACE the woman with a DIFFERENT woman: an Indian woman about 31 with medium brown skin, long dark wavy hair, small gold studs She sits in the same position, same posture, same distance from the microphone, head and upper chest visible, looking slightly off-camera toward the person she is talking to, mouth closed, warm confident expression. Photorealistic video still, natural skin texture with visible pores, no retouching, not a model, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/87d38167-7b47-4e04-90e6-910ca804b01a.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-clone-avatares-2026-09-13/p03/base/close-A.png"
+  ],
+  "elapsed_ms": 660730,
+  "raw": {
+    "id": "73296c61a3794decb1b9a25c633c8f12",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/87d38167-7b47-4e04-90e6-910ca804b01a.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/73296c61a3794decb1b9a25c633c8f12/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-19T15:47:39.301952006Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 657231
+    }
+  }
+}

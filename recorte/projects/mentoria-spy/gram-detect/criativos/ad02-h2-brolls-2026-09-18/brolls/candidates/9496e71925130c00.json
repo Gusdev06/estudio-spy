@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:LLo6GEVqGvY",
+  "provider": "youtube",
+  "source_id": "LLo6GEVqGvY",
+  "source_url": "https://www.youtube.com/watch?v=LLo6GEVqGvY",
+  "title": "Recover Deleted Instagram Messages in 2026 🔥 Easy & Fast Method",
+  "creator": {
+    "name": "The world of smartphones",
+    "url": null
+  },
+  "query": "recover deleted Instagram messages download your information 2026",
+  "collected_at": "2026-09-17T16:29:23.577700+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 425,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/LLo6GEVqGvY",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/LLo6GEVqGvY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3Bjp-HBoHYsUKo-NcH0cUgMwc-g"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

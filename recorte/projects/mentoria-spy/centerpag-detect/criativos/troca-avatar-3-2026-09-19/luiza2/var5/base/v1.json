@@ -1,0 +1,29 @@
+{
+  "id": "3ffe13386eb64894a31e895b944daa14",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same podcast studio set: warm wooden slat wall, green tropical plants on both sides, a large black broadcast microphone on a boom arm in front of her, same framing from the chest up, same soft studio light, 9:16 vertical. REPLACE the woman with a DIFFERENT woman: a Latina woman about 28 years old with tan skin, long dark wavy hair loose, small gold hoops, wearing a plain black blouse. Same posture, seated, looking into the camera, mouth closed, calm confident expression, hands resting out of frame. Photorealistic video still from a podcast camera, natural skin texture, no text, no logos, no watermark, and the burned-in caption box at the bottom must NOT be drawn.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/8d83ad05-8942-4b92-af79-6e5b09783942.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/troca-avatar-3-2026-09-19/luiza2/var5/base/v1.png"
+  ],
+  "elapsed_ms": 35698,
+  "raw": {
+    "id": "3ffe13386eb64894a31e895b944daa14",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/8d83ad05-8942-4b92-af79-6e5b09783942.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/3ffe13386eb64894a31e895b944daa14/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-21T04:24:13.010261559Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 32437
+    }
+  }
+}

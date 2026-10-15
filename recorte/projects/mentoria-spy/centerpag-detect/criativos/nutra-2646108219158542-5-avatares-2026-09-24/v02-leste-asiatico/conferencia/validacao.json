@@ -1,0 +1,62 @@
+{
+  "master_metadata": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "profile": "High 4:4:4 Predictive",
+        "width": 360,
+        "height": 640,
+        "r_frame_rate": "30/1",
+        "duration": "271.366667",
+        "nb_frames": "8141"
+      },
+      {
+        "codec_name": "aac",
+        "profile": "HE-AAC",
+        "r_frame_rate": "0/0",
+        "duration": "271.370000",
+        "nb_frames": "5846"
+      }
+    ],
+    "format": {
+      "duration": "271.370000",
+      "size": "51225254"
+    }
+  },
+  "delivery_metadata": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 360,
+        "height": 640,
+        "r_frame_rate": "30/1",
+        "duration": "271.366667",
+        "nb_frames": "8141"
+      },
+      {
+        "codec_name": "aac",
+        "profile": "HE-AAC",
+        "r_frame_rate": "0/0",
+        "duration": "271.370000",
+        "nb_frames": "5846"
+      }
+    ],
+    "format": {
+      "duration": "271.370000",
+      "size": "8276570"
+    }
+  },
+  "audio_source_sha256": "83a41b3d04b3b8fc9ddb78d215c8d1c673bd2c06106ca3b757273cfae4894fbf",
+  "audio_master_sha256": "83a41b3d04b3b8fc9ddb78d215c8d1c673bd2c06106ca3b757273cfae4894fbf",
+  "audio_delivery_sha256": "83a41b3d04b3b8fc9ddb78d215c8d1c673bd2c06106ca3b757273cfae4894fbf",
+  "frames_master": 8141,
+  "audio_original_preservado": true,
+  "hook_identico_no_master": true,
+  "cauda_identica_no_master": true,
+  "duracao_frames_preservada": true,
+  "delivery_decodifica_inteiro": true,
+  "decode_stderr": ""
+}

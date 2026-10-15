@@ -1,0 +1,31 @@
+✔ Done in 402s.
+✔ Saved 1 file.
+{
+  "id": "17608af7298949c3b0a89cb3fe73e295",
+  "model": "bytedance/seedance-2.0/video-edit",
+  "prompt": "Replace the blonde woman in the video with the dark-haired woman from the reference images for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her cheek, dark brown hair twisted up in a tortoiseshell claw clip, deep burgundy halter-neck knit top and a thin gold necklace exactly as in the first reference image. She must not be blonde in any frame and must keep this outfit in every frame. She is alone. Keep every movement, gesture, timing, camera framing, the knife, the purple bell pepper and every cut piece, the wooden cutting board, the counter and the kitchen exactly as in the original video. Remove the yellow on-screen text caption; show only the original scene there.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/df1a3298-96c3-4343-8cd4-8f0165faa7c8.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/DdsYwhpB-qD-troca-avatar-2026-10-15/clipes/seedance-edit.mp4"
+  ],
+  "elapsed_ms": 403727,
+  "raw": {
+    "id": "17608af7298949c3b0a89cb3fe73e295",
+    "model": "bytedance/seedance-2.0/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/df1a3298-96c3-4343-8cd4-8f0165faa7c8.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/17608af7298949c3b0a89cb3fe73e295/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-15T05:17:21.972793186Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 401542
+    }
+  }
+}

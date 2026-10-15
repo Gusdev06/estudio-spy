@@ -1,0 +1,28 @@
+{
+  "id": "f37b8bb4c1164be69a95841cf01bbabe",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/bf508888-8f6b-4bf6-9ad4-92c16803dfa3.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/zap-working-late-etnias-2026-10-06/clipes/v1-branco.mp4"
+  ],
+  "elapsed_ms": 114471,
+  "raw": {
+    "id": "f37b8bb4c1164be69a95841cf01bbabe",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/bf508888-8f6b-4bf6-9ad4-92c16803dfa3.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/f37b8bb4c1164be69a95841cf01bbabe/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-06T01:14:57.846704083Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 106871
+    }
+  }
+}

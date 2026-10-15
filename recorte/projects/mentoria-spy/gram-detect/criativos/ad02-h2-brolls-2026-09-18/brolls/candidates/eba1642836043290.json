@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "youtube:Tl0Hnmii5qM",
+  "provider": "youtube",
+  "source_id": "Tl0Hnmii5qM",
+  "source_url": "https://www.youtube.com/watch?v=Tl0Hnmii5qM",
+  "title": "How to Recover Deleted Chats on Instagram (2023) | Recover Deleted Instagram Messages",
+  "creator": {
+    "name": "Guideify",
+    "url": null
+  },
+  "query": "recover deleted instagram messages #shorts",
+  "collected_at": "2026-09-17T16:32:13.106143+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "1ª rodada: janela exploratória, checando se é vertical"
+  },
+  "media": {
+    "duration_s": 57,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0
+  },
+  "preview": {
+    "embed_url": "https://www.youtube-nocookie.com/embed/Tl0Hnmii5qM",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/Tl0Hnmii5qM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAuRzVgxK3a5R-8lTUjsJm-Rjwd4w",
+    "poster_path": "previews/eba1642836043290-r1-4d812712-poster.jpg",
+    "contact_sheet_path": "previews/eba1642836043290-r1-4d812712-sheet.jpg",
+    "gif_path": "previews/eba1642836043290-r1-4d812712.gif",
+    "frame_times_s": [
+      20.0,
+      20.667,
+      21.333,
+      22.0,
+      22.667,
+      23.333,
+      24.0,
+      24.667,
+      25.333,
+      26.0,
+      26.667,
+      27.333
+    ],
+    "sheet_grid": [
+      4,
+      3
+    ],
+    "sheet_labels": true,
+    "config": {
+      "scope": "broll",
+      "mode": "gif",
+      "width": 360,
+      "fps": 8,
+      "colors": 128,
+      "max_mb": 5,
+      "max_seconds": 10,
+      "frames": 12
+    },
+    "warning": null,
+    "gif_bytes": 90561,
+    "scope": "broll"
+  },
+  "segment": {
+    "start_s": 20.0,
+    "end_s": 28.0,
+    "revision": 1
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "rejected",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "rejected",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": 1920,
+    "source_height": 1080,
+    "fit": "native",
+    "transform": "preserve_native"
+  },
+  "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/eba1642836043290-8da9b2eb6966844da0a783b667d54508bd8da6cf37879dd55ade87eb695ea179.mp4",
+  "local_sha256": "8da9b2eb6966844da0a783b667d54508bd8da6cf37879dd55ade87eb695ea179",
+  "local_start_s": 20.0,
+  "local_duration_s": 8.0,
+  "preview_scope": "broll",
+  "narration": "Even when the other person thinks they deleted everything"
+}

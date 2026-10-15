@@ -1,0 +1,28 @@
+{
+  "id": "597d1637dae34ee5b2b3af08ee41723c",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e773c33f-5343-4cb8-a95e-6f256f6f8769.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/formatos-flora-2026-09-28/f4-podcast-mistake/lipsync-B.mp4"
+  ],
+  "elapsed_ms": 38315,
+  "raw": {
+    "id": "597d1637dae34ee5b2b3af08ee41723c",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e773c33f-5343-4cb8-a95e-6f256f6f8769.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/597d1637dae34ee5b2b3af08ee41723c/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-27T17:06:04.986976986Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 32497
+    }
+  }
+}

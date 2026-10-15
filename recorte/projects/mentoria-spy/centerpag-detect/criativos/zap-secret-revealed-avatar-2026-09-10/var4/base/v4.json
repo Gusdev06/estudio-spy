@@ -1,0 +1,29 @@
+{
+  "id": "50d3809f299044ae866c57f61c5e2dac",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still, front phone camera at eye level, bright home office. A 30-year-old South Asian man with short black hair and a trimmed beard, no glasses, plain olive-green t-shirt. He looks straight into the lens with a friendly, slightly conspiratorial half-smile, as if about to explain a secret, mouth closed. Framing: chest up, hands out of frame, subject centered, eyes at about 35% from the top. Behind him: a white upholstered chair, a light neutral wall, soft natural window daylight, slightly overexposed background like a real webcam-style recording. Realistic skin texture, mild phone-camera softness, no retouching, ordinary person, not a model.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/1e00e78c-657b-4806-9905-021353501b53.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-secret-revealed-avatar-2026-09-10/var4/base/avatar-v4-homem-indiano.png"
+  ],
+  "elapsed_ms": 156311,
+  "raw": {
+    "id": "50d3809f299044ae866c57f61c5e2dac",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/1e00e78c-657b-4806-9905-021353501b53.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/50d3809f299044ae866c57f61c5e2dac/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-09T18:33:12.901169949Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 151532
+    }
+  }
+}

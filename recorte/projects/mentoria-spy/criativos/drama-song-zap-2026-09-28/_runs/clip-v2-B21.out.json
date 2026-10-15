@@ -1,0 +1,29 @@
+{
+  "id": "4b3beb55f2e143a0a3c5edbbba3c663a",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot, 3D animated feature film style. Ryan's phone lights up with a soft glow beside his plate; his hand rushes to flip it, a beat too late; Maya slowly turns her head to look down the table at Jess; close on Jess as her wide smile freezes. Characters: Ryan (dark-blond side part, navy quarter-zip, large silver wristwatch, smug half-smile); Maya (Latina woman, dark-brown hair down in soft waves, emerald-green wrap blouse, small gold hoop earrings, small beauty mark above her lip, burnt-red lipstick); Jess (long wavy copper-auburn hair, freckles, pearl earrings, blush-pink sweater). Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/4d909a7d-baba-4194-a003-382d95331986-u1_3ff26718-4445-42bd-9885-33e26489b29d.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B21.mp4"
+  ],
+  "elapsed_ms": 32475,
+  "raw": {
+    "id": "4b3beb55f2e143a0a3c5edbbba3c663a",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/4d909a7d-baba-4194-a003-382d95331986-u1_3ff26718-4445-42bd-9885-33e26489b29d.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/4b3beb55f2e143a0a3c5edbbba3c663a/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:30:23.012558006Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 28670
+    }
+  }
+}

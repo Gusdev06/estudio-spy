@@ -1,0 +1,28 @@
+{
+  "id": "de630671e96c4f9487bca76da3ebc31b",
+  "model": "minimax/speech-2.6-hd",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/de630671e96c4f9487bca76da3ebc31b/1.mp3"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-57s-copy-nova-2026-09-23/audio/l3.mp3"
+  ],
+  "elapsed_ms": 7304,
+  "raw": {
+    "id": "de630671e96c4f9487bca76da3ebc31b",
+    "model": "minimax/speech-2.6-hd",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/de630671e96c4f9487bca76da3ebc31b/1.mp3"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/de630671e96c4f9487bca76da3ebc31b/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-23T02:21:01.387174026Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 3677
+    }
+  }
+}

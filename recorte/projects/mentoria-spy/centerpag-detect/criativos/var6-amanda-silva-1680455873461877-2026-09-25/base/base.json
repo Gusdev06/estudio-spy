@@ -1,0 +1,29 @@
+{
+  "id": "a4462cd3045c4e7ea004298e029e98bf",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Horizontal 4:3 webcam-style video still, same camera position, same framing and same pose as the image: a young woman seen from the chest up, centered slightly left of the middle, head at the same height and the same size in the frame, looking straight into the camera, mouth closed, calm and serious. REPLACE the woman with a DIFFERENT woman: a Latina woman about 29 years old with warm olive skin and dark-brown straight hair pulled back in a sleek high ponytail, thin gold chain necklace, wearing a white linen button-up shirt with an open collar. REPLACE the whole room behind her with a DIFFERENT place: a bright airy living room with a large window behind her covered by natural beige linen curtains glowing with soft daylight, a big monstera plant beside the window, a light wooden bench with a folded cream blanket. She is the only person in the image. No television, no screens with content, no text, no letters, no logos, no watermark. Photorealistic, natural skin texture with visible pores, light natural makeup, ordinary person, not a model, soft natural indoor light, shot on a phone front camera.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/a4b0609a-3e7d-48b4-be05-74d696dd430a.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/var6-amanda-silva-1680455873461877-2026-09-25/base/base.png"
+  ],
+  "elapsed_ms": 102157,
+  "raw": {
+    "id": "a4462cd3045c4e7ea004298e029e98bf",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/a4b0609a-3e7d-48b4-be05-74d696dd430a.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/a4462cd3045c4e7ea004298e029e98bf/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:21:27.216321114Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 99648
+    }
+  }
+}

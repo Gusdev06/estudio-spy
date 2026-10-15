@@ -1,0 +1,28 @@
+{
+  "id": "fde1b08e0fb54de3b41c818a791fc559",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/dee78a75-76c3-465e-a49f-0379e40bbaa9.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/nutra-2646108219158542-avatar-2026-09-24/avatar-animado.mp4"
+  ],
+  "elapsed_ms": 292291,
+  "raw": {
+    "id": "fde1b08e0fb54de3b41c818a791fc559",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/dee78a75-76c3-465e-a49f-0379e40bbaa9.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/fde1b08e0fb54de3b41c818a791fc559/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-23T18:48:48.430201654Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 286997
+    }
+  }
+}

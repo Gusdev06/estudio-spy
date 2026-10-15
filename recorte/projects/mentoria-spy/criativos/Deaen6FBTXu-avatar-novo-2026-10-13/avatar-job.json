@@ -1,0 +1,31 @@
+✔ Done in 44s.
+✔ Saved 1 file.
+{
+  "id": "54dcdeee03e0452584b82142e46e8a1e",
+  "model": "openai/gpt-image-2.5-sunburst/edit",
+  "prompt": "Edit this photo: replace the woman with a completely different woman. Keep EVERYTHING else identical: same bathroom, same white shower curtain, same camera angle, framing, lighting and color, same pose and arm position, same white ribbed spaghetti-strap tank top, same blue terry-cloth bow headband, same makeup sponge in one hand and beige foundation pump bottle in the other hand.\nNew woman: 27 years old, light olive skin, dark brown hair pulled back under the headband with a few loose strands, brown eyes, thick natural eyebrows, small beauty mark on the left cheek, a few faint freckles across the nose, full lips, no makeup yet. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows.\nPhoto quality: raw iPhone front camera selfie video still, 26mm lens, available bathroom vanity light, natural grain ISO 640, slightly soft focus, not retouched, not studio.\nRemove all on-screen text and captions completely; the top of the frame shows only the bathroom wall and ceiling vent.\nHands anatomically correct, five fingers each, natural grip.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/40e1d8a9-ea50-4f6a-a115-08d26f1a2f1f.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/Deaen6FBTXu-avatar-novo-2026-10-13/avatar-base.png"
+  ],
+  "elapsed_ms": 46755,
+  "raw": {
+    "id": "54dcdeee03e0452584b82142e46e8a1e",
+    "model": "openai/gpt-image-2.5-sunburst/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/40e1d8a9-ea50-4f6a-a115-08d26f1a2f1f.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/54dcdeee03e0452584b82142e46e8a1e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-13T06:23:48.406129166Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 42501
+    }
+  }
+}

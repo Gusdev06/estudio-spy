@@ -1,0 +1,28 @@
+✔ Done in 314s.
+{
+  "id": "8ac75b1c085b4da3a8b6589d2f722973",
+  "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "prompt": "Master Intent: The guest side of a late-night television news broadcast. Tone: composed, explanatory, credible. No music, only the quiet room tone of a studio.\n\nScene 1 (Duration: 15s):\nLocked-off medium shot, camera at eye level, no camera movement, no zoom.\n\nThe guest leans slightly forward in the armchair and turns her head a few degrees toward camera.\n[Character B: Elena, clear articulate voice, warm and measured, American English]: \"Every one of them needs the phone in your hand. Physically. And that's the one thing you're never going to get.\"\n\nPause. She settles back into the chair and lifts one hand in a small flat gesture as she continues.\n[Character B: Elena, clear articulate voice, warm and measured, American English]: \"But the phone was never where the record lived. Every message, every deleted text, every location ping. It's stored off the device.\"\n\nShe holds the gesture for a beat, then lowers her hand into her lap.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/8ac75b1c085b4da3a8b6589d2f722973/1.mp4"
+  ],
+  "saved": [],
+  "elapsed_ms": 314586,
+  "raw": {
+    "id": "8ac75b1c085b4da3a8b6589d2f722973",
+    "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/8ac75b1c085b4da3a8b6589d2f722973/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/8ac75b1c085b4da3a8b6589d2f722973/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-31T05:30:36.536757092Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 312084
+    }
+  }
+}

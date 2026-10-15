@@ -1,0 +1,1 @@
+p172 pecas/172-ZAP-flora-chats-apagados.mp4: decodifica OK · 360,640,30/1,945 · 31.50s · silêncios>=0,5s: 0 · rostos/frame max 1 (frames >1: []) · frames de rosto sem rosto: 1 · bordas janela x dupla original max 0.21 · título x original 0.35 · karaokê x original max 0.64 · painéis dif max 2.2

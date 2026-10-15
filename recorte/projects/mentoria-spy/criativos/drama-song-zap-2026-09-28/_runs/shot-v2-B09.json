@@ -1,0 +1,11 @@
+{
+ "prompt": "Image 1 is the character sheet for Maya (before). Image 2 is the character sheet for Ryan. Keep their faces, hair, outfits and signature details exactly as in the sheets (Maya: beauty mark above the left corner of her upper lip, small gold hoops, gray cardigan, messy low bun; Ryan: lopsided half-smile, large silver watch on his left wrist, navy quarter-zip).\nA 2x2 grid storyboard in a single image, four sequential moments of the same continuous shot, read left-to-right, top-to-bottom. Thin white gutters between panels. No text, no captions, no panel numbers.\nSetting (same in all four panels unless stated): the couple's bedroom at night, bluish light from the window, a digital clock on the nightstand.\nCharacters: Maya, a 34-year-old Latina woman with warm light-brown skin, shoulder-length wavy dark-brown hair tied in a messy low bun with loose strands, hazel eyes with faint dark circles, a small beauty mark above the left corner of her upper lip, small gold hoop earrings, wearing an oversized heather-gray cardigan over a plain white t-shirt and dark jeans, slightly hunched posture. Ryan, a 36-year-old white American man, short dark-blond hair with a neat side part, light stubble, gray-blue eyes, a smug lopsided half-smile, a large silver wristwatch on his left wrist, wearing a navy quarter-zip sweater over a white collared shirt and khaki chinos, athletic build.\nPanel 1: top-down view: Maya lying on her back with eyes open, staring at the ceiling, Ryan's side of the bed empty.\nPanel 2: detail of the digital clock on the nightstand, only a red glow, no readable digits.\nPanel 3: the door opens: Ryan steps in holding his shoes, his face lit by his phone's glow; Maya pretends to sleep.\nPanel 4: Maya curled on her side, small in the middle of the big bed.\nAny phone screen shows only a soft glow or is dark, never any readable interface, text or logo.\n3D animated feature film style, cinematic lighting, shallow depth of field, consistent characters, outfits and lighting across panels, vertical 9:16 framing inside each panel.",
+ "images": [
+  "https://d2h7xmz5gqybh9.cloudfront.net/output/7a1d9670-7626-4077-8c2d-491d1c668562.png",
+  "https://d2h7xmz5gqybh9.cloudfront.net/output/1097a6e7-0095-49db-8a47-d7aa5a9eef09.png"
+ ],
+ "aspect_ratio": "9:16",
+ "resolution": "1k",
+ "quality": "high",
+ "output_format": "png"
+}

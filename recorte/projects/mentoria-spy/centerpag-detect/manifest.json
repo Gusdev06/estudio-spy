@@ -1,0 +1,3161 @@
+{
+ "fonte": "Meta Ad Library — busca por palavra-chave \"go.centerpag.com\" (active_status=active, country=ALL, sort=total_impressions desc, search_type=keyword_unordered)",
+ "url_busca": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&q=go.centerpag.com&search_type=keyword_unordered&sort_data[direction]=desc&sort_data[mode]=total_impressions",
+ "coletado_em": "2026-08-27",
+ "total_anuncios": 87,
+ "relevantes": 85,
+ "ruido_da_busca": 2,
+ "com_criativo": 79,
+ "sem_criativo": 8,
+ "escalados": 26,
+ "anuncios": [
+  {
+   "ad_id": "1762552938111855",
+   "status": "Ativo",
+   "pagina": "Esther Vicman",
+   "inicio": "Veiculação iniciada em 11 de ago de 2026",
+   "rodando_ha": "16.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1762552938111855",
+   "arquivos": [
+    {
+     "file": "esther-vicman-1762552938111855.mp4",
+     "md5": "31d9b6a30c53905c1ae2ac57f1a9b830",
+     "bytes": 1743046
+    },
+    {
+     "file": "esther-vicman-1762552938111855-thumb.jpg",
+     "md5": "be58759897fb515672128d225ddbacf7",
+     "bytes": 106387
+    }
+   ],
+   "rank_impressoes": 1,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 16.1,
+   "ads_da_pagina": 2,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "A-escalado",
+   "posicao_escalados": 1,
+   "arquivos_escalados": [
+    "01-esther-vicman-1762552938111855.mp4",
+    "01-esther-vicman-1762552938111855-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "2491484787930687",
+   "status": "Ativo",
+   "pagina": "Alberto Souza",
+   "inicio": "Veiculação iniciada em 23 de ago de 2026",
+   "rodando_ha": "4.1 days",
+   "formato": "video",
+   "copy": null,
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "See today everything that happens!",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2491484787930687",
+   "arquivos": [
+    {
+     "file": "alberto-souza-2491484787930687.mp4",
+     "md5": "b220e3b52d665ea9f8ca260b86b8573c",
+     "bytes": 1018167
+    },
+    {
+     "file": "alberto-souza-2491484787930687-thumb.jpg",
+     "md5": "c8ebc1f7d6227bb0da4124cf48084194",
+     "bytes": 32216
+    }
+   ],
+   "rank_impressoes": 2,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 4.1,
+   "ads_da_pagina": 2,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "A-escalado",
+   "posicao_escalados": 2,
+   "arquivos_escalados": [
+    "02-alberto-souza-2491484787930687.mp4",
+    "02-alberto-souza-2491484787930687-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "939122432559594",
+   "status": "Ativo",
+   "pagina": "Emilly Bredoff",
+   "inicio": "Veiculação iniciada em 11 de ago de 2026",
+   "rodando_ha": "16.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=939122432559594",
+   "arquivos": [
+    {
+     "file": "emilly-bredoff-939122432559594.mp4",
+     "md5": "e00cc6a45215ee7413a982c591f1442d",
+     "bytes": 809132
+    },
+    {
+     "file": "emilly-bredoff-939122432559594-thumb.jpg",
+     "md5": "b7d10e73ebb0659e0d0a61c4b0c176b0",
+     "bytes": 30088
+    }
+   ],
+   "rank_impressoes": 3,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 16.1,
+   "ads_da_pagina": 1,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "A-escalado",
+   "posicao_escalados": 3,
+   "arquivos_escalados": [
+    "03-emilly-bredoff-939122432559594.mp4",
+    "03-emilly-bredoff-939122432559594-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1351759213605785",
+   "status": "Ativo",
+   "pagina": "Alberto Souza",
+   "inicio": "Veiculação iniciada em 10 de ago de 2026",
+   "rodando_ha": "17.1 days",
+   "formato": "video",
+   "copy": null,
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "See today everything that happens... 🔥",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1351759213605785",
+   "arquivos": [
+    {
+     "file": "alberto-souza-1351759213605785.mp4",
+     "md5": "95508173accf633c3c116b05dcddf475",
+     "bytes": 1524960
+    },
+    {
+     "file": "alberto-souza-1351759213605785-thumb.jpg",
+     "md5": "e38f5f8b71f4bfc433ef5e0d4549d061",
+     "bytes": 32615
+    }
+   ],
+   "rank_impressoes": 4,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 17.1,
+   "ads_da_pagina": 2,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "A-escalado",
+   "posicao_escalados": 4,
+   "arquivos_escalados": [
+    "04-alberto-souza-1351759213605785.mp4",
+    "04-alberto-souza-1351759213605785-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "2249644725837044",
+   "status": "Inativo",
+   "pagina": "Miriam Digital",
+   "inicio": "30 de mai de 2026 a 2 de jun de 2026",
+   "rodando_ha": "3 days",
+   "formato": "imagem",
+   "copy": "Unshakable Confidence: The Modern Man’s Guide to Self-Belief",
+   "destino": null,
+   "headline": "Learn more",
+   "descricao": "Click here",
+   "cta": "Learn More",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2249644725837044",
+   "arquivos": [
+    {
+     "file": "miriam-digital-2249644725837044.jpg",
+     "md5": "511d57de609a6f47303cf7af01f7da0d",
+     "bytes": 55652
+    }
+   ],
+   "rank_impressoes": 5,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": false,
+   "canal": null,
+   "dias_no_ar": 3.0,
+   "ads_da_pagina": 0,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "D-ruido-da-busca"
+  },
+  {
+   "ad_id": "1472763134868396",
+   "status": "Inativo",
+   "pagina": "Rachel Thompson",
+   "inicio": "30 de jul de 2026 a 2 de ago de 2026",
+   "rodando_ha": "3 days",
+   "formato": "indisponivel",
+   "copy": null,
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1472763134868396",
+   "arquivos": [],
+   "rank_impressoes": 6,
+   "baixo_volume": false,
+   "impressoes": null,
+   "nota": "Criativo removido pela Meta — conta/Página desabilitada por violar Padrões de Publicidade.",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 3.0,
+   "ads_da_pagina": 8,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "C-sem-criativo"
+  },
+  {
+   "ad_id": "1311355187753478",
+   "status": "Inativo",
+   "pagina": "Miriam Digital",
+   "inicio": "30 de mai de 2026 a 3 de jun de 2026",
+   "rodando_ha": "4 days",
+   "formato": "imagem",
+   "copy": "Unshakable Confidence: The Modern Man’s Guide to Self-Belief",
+   "destino": null,
+   "headline": "Learn more",
+   "descricao": "Click here",
+   "cta": "Learn More",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1311355187753478",
+   "arquivos": [
+    {
+     "file": "miriam-digital-1311355187753478.jpg",
+     "md5": "b7f49a235e846469eb8f2b22da5b40a6",
+     "bytes": 54149
+    }
+   ],
+   "rank_impressoes": 7,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": false,
+   "canal": null,
+   "dias_no_ar": 4.0,
+   "ads_da_pagina": 0,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "D-ruido-da-busca"
+  },
+  {
+   "ad_id": "1060048763093271",
+   "status": "Ativo",
+   "pagina": "Sara Oliveira",
+   "inicio": "Veiculação iniciada em 23 de ago de 2026",
+   "rodando_ha": "4.1 days",
+   "formato": "video",
+   "copy": "Try the app for free now and discover the whole truth.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1060048763093271",
+   "arquivos": [
+    {
+     "file": "sara-oliveira-1060048763093271.mp4",
+     "md5": "fb8f91a31886bee05416162f8a662e07",
+     "bytes": 1755038
+    },
+    {
+     "file": "sara-oliveira-1060048763093271-thumb.jpg",
+     "md5": "c36e53b81c98ba39c48951e1dc29dc61",
+     "bytes": 137497
+    }
+   ],
+   "rank_impressoes": 8,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 4.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 10,
+   "tier": "A-escalado",
+   "posicao_escalados": 5,
+   "arquivos_escalados": [
+    "05-sara-oliveira-1060048763093271.mp4",
+    "05-sara-oliveira-1060048763093271-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1027329530149788",
+   "status": "Inativo",
+   "pagina": "Rachel Thompson",
+   "inicio": "31 de jul de 2026 a 3 de ago de 2026",
+   "rodando_ha": "3 days",
+   "formato": "indisponivel",
+   "copy": null,
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1027329530149788",
+   "arquivos": [],
+   "rank_impressoes": 9,
+   "baixo_volume": false,
+   "impressoes": null,
+   "nota": "Criativo removido pela Meta — conta/Página desabilitada por violar Padrões de Publicidade.",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 3.0,
+   "ads_da_pagina": 8,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "C-sem-criativo"
+  },
+  {
+   "ad_id": "1623822739115793",
+   "status": "Inativo",
+   "pagina": "Rachel Thompson",
+   "inicio": "31 de jul de 2026 a 2 de ago de 2026",
+   "rodando_ha": "2 days",
+   "formato": "indisponivel",
+   "copy": null,
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1623822739115793",
+   "arquivos": [],
+   "rank_impressoes": 10,
+   "baixo_volume": false,
+   "impressoes": null,
+   "nota": "Criativo removido pela Meta — conta/Página desabilitada por violar Padrões de Publicidade.",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 2.0,
+   "ads_da_pagina": 8,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "C-sem-criativo"
+  },
+  {
+   "ad_id": "2338791276876982",
+   "status": "Inativo",
+   "pagina": "Rachel Thompson",
+   "inicio": "31 de jul de 2026 a 2 de ago de 2026",
+   "rodando_ha": "2 days",
+   "formato": "indisponivel",
+   "copy": null,
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2338791276876982",
+   "arquivos": [],
+   "rank_impressoes": 11,
+   "baixo_volume": false,
+   "impressoes": null,
+   "nota": "Criativo removido pela Meta — conta/Página desabilitada por violar Padrões de Publicidade.",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 2.0,
+   "ads_da_pagina": 8,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "C-sem-criativo"
+  },
+  {
+   "ad_id": "2543126402772589",
+   "status": "Inativo",
+   "pagina": "Rachel Thompson",
+   "inicio": "31 de jul de 2026 a 2 de ago de 2026",
+   "rodando_ha": "2 days",
+   "formato": "indisponivel",
+   "copy": null,
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2543126402772589",
+   "arquivos": [],
+   "rank_impressoes": 12,
+   "baixo_volume": false,
+   "impressoes": null,
+   "nota": "Criativo removido pela Meta — conta/Página desabilitada por violar Padrões de Publicidade.",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 2.0,
+   "ads_da_pagina": 8,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "C-sem-criativo"
+  },
+  {
+   "ad_id": "1574339671069220",
+   "status": "Ativo",
+   "pagina": "Isabella Walker",
+   "inicio": "Veiculação iniciada em 23 de jul de 2026",
+   "rodando_ha": "35.1 days",
+   "formato": "video",
+   "copy": null,
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "See this before it's too late...",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1574339671069220",
+   "arquivos": [
+    {
+     "file": "isabella-walker-1574339671069220.mp4",
+     "md5": "ba68f5040797fee0acbb6e7bf1d3aacb",
+     "bytes": 984416
+    },
+    {
+     "file": "isabella-walker-1574339671069220-thumb.jpg",
+     "md5": "683f514e36cd3fc7645da602926319cf",
+     "bytes": 29047
+    }
+   ],
+   "rank_impressoes": 13,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 35.1,
+   "ads_da_pagina": 1,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "A-escalado",
+   "posicao_escalados": 6,
+   "arquivos_escalados": [
+    "06-isabella-walker-1574339671069220.mp4",
+    "06-isabella-walker-1574339671069220-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1073681562273341",
+   "status": "Ativo",
+   "pagina": "Esther Vicman",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 6h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1073681562273341",
+   "arquivos": [
+    {
+     "file": "esther-vicman-1073681562273341.mp4",
+     "md5": "4ad3297e6f442ee8cb1c5f032cfb00fe",
+     "bytes": 1773018
+    },
+    {
+     "file": "esther-vicman-1073681562273341-thumb.jpg",
+     "md5": "54f73faadbaece368b7e53bcc6a3e63d",
+     "bytes": 66696
+    }
+   ],
+   "rank_impressoes": 14,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 2,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "A-escalado",
+   "posicao_escalados": 7,
+   "arquivos_escalados": [
+    "07-esther-vicman-1073681562273341.mp4",
+    "07-esther-vicman-1073681562273341-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1536342437706682",
+   "status": "Ativo",
+   "pagina": "Kendall Godfrey Stephanie",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 7h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1536342437706682",
+   "arquivos": [
+    {
+     "file": "kendall-godfrey-stephanie-1536342437706682.mp4",
+     "md5": "39d263ae2cbca644679e8e8930c00588",
+     "bytes": 1035245
+    },
+    {
+     "file": "kendall-godfrey-stephanie-1536342437706682-thumb.jpg",
+     "md5": "4add770b5ba49128db8a09626620f80e",
+     "bytes": 158747
+    }
+   ],
+   "rank_impressoes": 15,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 13,
+   "tier": "A-escalado",
+   "posicao_escalados": 8,
+   "arquivos_escalados": [
+    "08-kendall-godfrey-stephanie-1536342437706682.mp4",
+    "08-kendall-godfrey-stephanie-1536342437706682-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "922548900909384",
+   "status": "Ativo",
+   "pagina": "Sophia Jones",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026",
+   "rodando_ha": "1.1 days",
+   "formato": "imagem",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": null,
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": "Free test",
+   "cta": "Learn More",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=922548900909384",
+   "arquivos": [
+    {
+     "file": "sophia-jones-922548900909384.jpg",
+     "md5": "d5982965f0712b8e8d5711a675649036",
+     "bytes": 54881
+    }
+   ],
+   "rank_impressoes": 16,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "A-escalado",
+   "posicao_escalados": 9,
+   "arquivos_escalados": [
+    "09-sophia-jones-922548900909384.jpg"
+   ]
+  },
+  {
+   "ad_id": "2006430546681746",
+   "status": "Ativo",
+   "pagina": "Lauren Roberts",
+   "inicio": "Veiculação iniciada em 23 de jul de 2026",
+   "rodando_ha": "35.1 days",
+   "formato": "video",
+   "copy": null,
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "See this before it's too late...",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2006430546681746",
+   "arquivos": [
+    {
+     "file": "lauren-roberts-2006430546681746.mp4",
+     "md5": "0a3827356bb16964b88a553c4c7447ee",
+     "bytes": 1017571
+    },
+    {
+     "file": "lauren-roberts-2006430546681746-thumb.jpg",
+     "md5": "c8ebc1f7d6227bb0da4124cf48084194",
+     "bytes": 32216
+    }
+   ],
+   "rank_impressoes": 17,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 35.1,
+   "ads_da_pagina": 1,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "A-escalado",
+   "posicao_escalados": 10,
+   "arquivos_escalados": [
+    "10-lauren-roberts-2006430546681746.mp4",
+    "10-lauren-roberts-2006430546681746-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1002898376058187",
+   "status": "Inativo",
+   "pagina": "Rachel Thompson",
+   "inicio": "1 de ago de 2026 a 2 de ago de 2026",
+   "rodando_ha": "1 days",
+   "formato": "indisponivel",
+   "copy": null,
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1002898376058187",
+   "arquivos": [],
+   "rank_impressoes": 18,
+   "baixo_volume": false,
+   "impressoes": null,
+   "nota": "Criativo removido pela Meta — conta/Página desabilitada por violar Padrões de Publicidade.",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.0,
+   "ads_da_pagina": 8,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "C-sem-criativo"
+  },
+  {
+   "ad_id": "1048189044370943",
+   "status": "Inativo",
+   "pagina": "Rachel Thompson",
+   "inicio": "1 de ago de 2026 a 2 de ago de 2026",
+   "rodando_ha": "1 days",
+   "formato": "indisponivel",
+   "copy": null,
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1048189044370943",
+   "arquivos": [],
+   "rank_impressoes": 19,
+   "baixo_volume": false,
+   "impressoes": null,
+   "nota": "Criativo removido pela Meta — conta/Página desabilitada por violar Padrões de Publicidade.",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.0,
+   "ads_da_pagina": 8,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "C-sem-criativo"
+  },
+  {
+   "ad_id": "2083754532260157",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=2083754532260157",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-2083754532260157.mp4",
+     "md5": "7ffa4fff13f78fd2cf00da368b14df10",
+     "bytes": 2425999
+    },
+    {
+     "file": "fernanda-mello-2083754532260157-thumb.jpg",
+     "md5": "5b590e083065f138a5d3788cdff9dd11",
+     "bytes": 166057
+    }
+   ],
+   "rank_impressoes": 20,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "A-escalado",
+   "posicao_escalados": 11,
+   "arquivos_escalados": [
+    "11-fernanda-mello-2083754532260157.mp4",
+    "11-fernanda-mello-2083754532260157-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "2834045090284230",
+   "status": "Ativo",
+   "pagina": "Karoliny Lucas - Especialista em Diástase",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2834045090284230",
+   "arquivos": [
+    {
+     "file": "karoliny-lucas-especialista-em-diastase-2834045090284230.mp4",
+     "md5": "fc45ddbcf336b2f046faa311db256de6",
+     "bytes": 709805
+    },
+    {
+     "file": "karoliny-lucas-especialista-em-diastase-2834045090284230-thumb.jpg",
+     "md5": "d3c5f015889a35f87478bca0c84403ad",
+     "bytes": 167062
+    }
+   ],
+   "rank_impressoes": 21,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 13,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1400541334870533",
+   "status": "Ativo",
+   "pagina": "Sara Oliveira",
+   "inicio": "Veiculação iniciada em 23 de ago de 2026",
+   "rodando_ha": "4.1 days",
+   "formato": "video",
+   "copy": "Try the app for free now and discover the whole truth.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1400541334870533",
+   "arquivos": [
+    {
+     "file": "sara-oliveira-1400541334870533.mp4",
+     "md5": "bddb4222bed5383973b57178b22d6fd1",
+     "bytes": 874291
+    },
+    {
+     "file": "sara-oliveira-1400541334870533-thumb.jpg",
+     "md5": "4a23b6d0539e457ee747e52ee508ed35",
+     "bytes": 89304
+    }
+   ],
+   "rank_impressoes": 22,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 4.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 10,
+   "tier": "A-escalado",
+   "posicao_escalados": 12,
+   "arquivos_escalados": [
+    "12-sara-oliveira-1400541334870533.mp4",
+    "12-sara-oliveira-1400541334870533-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "2119245882799536",
+   "status": "Ativo",
+   "pagina": "Sophia Jones",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2119245882799536",
+   "arquivos": [
+    {
+     "file": "sophia-jones-2119245882799536.mp4",
+     "md5": "9a8af6600e129247ec4d619ecd4f6683",
+     "bytes": 2899606
+    },
+    {
+     "file": "sophia-jones-2119245882799536-thumb.jpg",
+     "md5": "da78e2cc97b8f6fa5a3a7344da3a8817",
+     "bytes": 148791
+    }
+   ],
+   "rank_impressoes": 23,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 13,
+   "tier": "A-escalado",
+   "posicao_escalados": 13,
+   "arquivos_escalados": [
+    "13-sophia-jones-2119245882799536.mp4",
+    "13-sophia-jones-2119245882799536-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "2281998592601320",
+   "status": "Ativo",
+   "pagina": "Karoliny Lucas - Especialista em Diástase",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2281998592601320",
+   "arquivos": [
+    {
+     "file": "karoliny-lucas-especialista-em-diastase-2281998592601320.mp4",
+     "md5": "30f29249bd929435d50d4fa49371e484",
+     "bytes": 600541
+    },
+    {
+     "file": "karoliny-lucas-especialista-em-diastase-2281998592601320-thumb.jpg",
+     "md5": "4c31006703ad12117f6c6c1c4ab99cd7",
+     "bytes": 269817
+    }
+   ],
+   "rank_impressoes": 24,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 13,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "27996919946629328",
+   "status": "Ativo",
+   "pagina": "Simone Maria Braum",
+   "inicio": "Veiculação iniciada em 25 de ago de 2026",
+   "rodando_ha": "2.1 days",
+   "formato": "video",
+   "copy": null,
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "See this before it's too late...",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=27996919946629328",
+   "arquivos": [
+    {
+     "file": "simone-maria-braum-27996919946629328.mp4",
+     "md5": "4c6b6b7fe6f77fc1c04fd4c861aa5d16",
+     "bytes": 941730
+    },
+    {
+     "file": "simone-maria-braum-27996919946629328-thumb.jpg",
+     "md5": "bbd3678486388e3274185e1500f978e4",
+     "bytes": 23756
+    }
+   ],
+   "rank_impressoes": 25,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 2.1,
+   "ads_da_pagina": 1,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "A-escalado",
+   "posicao_escalados": 14,
+   "arquivos_escalados": [
+    "14-simone-maria-braum-27996919946629328.mp4",
+    "14-simone-maria-braum-27996919946629328-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1441420878044785",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Fernanda Mello",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1441420878044785",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1441420878044785.mp4",
+     "md5": "2fe7a8a77be8ef652a3ae4b52b17c1e9",
+     "bytes": 1472462
+    },
+    {
+     "file": "fernanda-mello-1441420878044785-thumb.jpg",
+     "md5": "db6a3506582e32dbaf8939c92f4c9c49",
+     "bytes": 175615
+    }
+   ],
+   "rank_impressoes": 26,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "27963760006608886",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=27963760006608886",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-27963760006608886.mp4",
+     "md5": "b4c8523110a78eb1c55896da081a6f88",
+     "bytes": 687173
+    },
+    {
+     "file": "fernanda-mello-27963760006608886-thumb.jpg",
+     "md5": "c6873bec53460404a83b5290c74b5f34",
+     "bytes": 204872
+    }
+   ],
+   "rank_impressoes": 27,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "instagram",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 12,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "946357818507385",
+   "status": "Ativo",
+   "pagina": "Karoliny Lucas - Especialista em Diástase",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=946357818507385",
+   "arquivos": [
+    {
+     "file": "karoliny-lucas-especialista-em-diastase-946357818507385.mp4",
+     "md5": "28ccb20269dae2079cdbc1745afffe70",
+     "bytes": 806168
+    },
+    {
+     "file": "karoliny-lucas-especialista-em-diastase-946357818507385-thumb.jpg",
+     "md5": "9111874853da181b05bd265c9a229127",
+     "bytes": 209636
+    }
+   ],
+   "rank_impressoes": 28,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 13,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1597467568534556",
+   "status": "Ativo",
+   "pagina": "Sara Oliveira",
+   "inicio": "Veiculação iniciada em 23 de ago de 2026",
+   "rodando_ha": "4.1 days",
+   "formato": "video",
+   "copy": "Try the app for free now and discover the whole truth.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1597467568534556",
+   "arquivos": [
+    {
+     "file": "sara-oliveira-1597467568534556.mp4",
+     "md5": "fab3b9e932dfbd383f5bc69e3b98b568",
+     "bytes": 810324
+    },
+    {
+     "file": "sara-oliveira-1597467568534556-thumb.jpg",
+     "md5": "2e15cfd35c6f5bd4f110810336d28569",
+     "bytes": 147125
+    }
+   ],
+   "rank_impressoes": 29,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 4.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 10,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1625364762480254",
+   "status": "Ativo",
+   "pagina": "Sophia Jones",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026",
+   "rodando_ha": "1.1 days",
+   "formato": "imagem",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": null,
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": "Free test",
+   "cta": "Learn More",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1625364762480254",
+   "arquivos": [
+    {
+     "file": "sophia-jones-1625364762480254.jpg",
+     "md5": "f9f11e59cb56d331264a245f8f563afe",
+     "bytes": 55285
+    }
+   ],
+   "rank_impressoes": 30,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "A-escalado",
+   "posicao_escalados": 15,
+   "arquivos_escalados": [
+    "15-sophia-jones-1625364762480254.jpg"
+   ]
+  },
+  {
+   "ad_id": "1043551788660434",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1043551788660434",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1043551788660434.mp4",
+     "md5": "dd00861338b69d70a38d828ae09940d8",
+     "bytes": 1586983
+    },
+    {
+     "file": "fernanda-mello-1043551788660434-thumb.jpg",
+     "md5": "9fdc573774832810c020a6750e63eb43",
+     "bytes": 66391
+    }
+   ],
+   "rank_impressoes": 31,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "38342094555404124",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=38342094555404124",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-38342094555404124.mp4",
+     "md5": "3066bf5b59f6d1bdc306615961adeb85",
+     "bytes": 1920250
+    },
+    {
+     "file": "fernanda-mello-38342094555404124-thumb.jpg",
+     "md5": "2824fac900a8e8731df4a50967869083",
+     "bytes": 118828
+    }
+   ],
+   "rank_impressoes": 32,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1074678444957714",
+   "status": "Ativo",
+   "pagina": "Sophia Jones",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1074678444957714",
+   "arquivos": [
+    {
+     "file": "sophia-jones-1074678444957714.mp4",
+     "md5": "edfd70dcbdb4f011c92a6b0f53a30d54",
+     "bytes": 1995564
+    },
+    {
+     "file": "sophia-jones-1074678444957714-thumb.jpg",
+     "md5": "bcb512eee6c75829e1edc0071912b700",
+     "bytes": 135124
+    }
+   ],
+   "rank_impressoes": 33,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 13,
+   "tier": "A-escalado",
+   "posicao_escalados": 16,
+   "arquivos_escalados": [
+    "16-sophia-jones-1074678444957714.mp4",
+    "16-sophia-jones-1074678444957714-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1079644457870625",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1079644457870625",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1079644457870625.mp4",
+     "md5": "3b0249c700daf42ce7822ceb8407c05b",
+     "bytes": 687109
+    },
+    {
+     "file": "fernanda-mello-1079644457870625-thumb.jpg",
+     "md5": "c6873bec53460404a83b5290c74b5f34",
+     "bytes": 204872
+    }
+   ],
+   "rank_impressoes": 34,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "instagram",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 12,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1421333439848359",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1421333439848359",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1421333439848359.mp4",
+     "md5": "34be9e0457a964f22f34bf3190982ae9",
+     "bytes": 2078737
+    },
+    {
+     "file": "fernanda-mello-1421333439848359-thumb.jpg",
+     "md5": "92c0f4a690e48e3c6eb6ef13f1076106",
+     "bytes": 156433
+    }
+   ],
+   "rank_impressoes": 35,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "2249870845809574",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=2249870845809574",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-2249870845809574.mp4",
+     "md5": "b5431e0ac71aed432febd1c830ee5892",
+     "bytes": 879053
+    },
+    {
+     "file": "fernanda-mello-2249870845809574-thumb.jpg",
+     "md5": "df33d939d90e1167c4c1e328845fed87",
+     "bytes": 154370
+    }
+   ],
+   "rank_impressoes": 36,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "instagram",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 12,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1062855422994761",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Fernanda Mello",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1062855422994761",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1062855422994761.mp4",
+     "md5": "e9f8b2063016dac7995cbdace24034d5",
+     "bytes": 1823694
+    },
+    {
+     "file": "fernanda-mello-1062855422994761-thumb.jpg",
+     "md5": "3c7d5a4fb38dd493db35de6591d54712",
+     "bytes": 182553
+    }
+   ],
+   "rank_impressoes": 37,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "927217797123410",
+   "status": "Ativo",
+   "pagina": "Verônica Borges",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 5h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=927217797123410",
+   "arquivos": [
+    {
+     "file": "veronica-borges-927217797123410.mp4",
+     "md5": "2b79fafaff835333c76baea2d35e23df",
+     "bytes": 881976
+    },
+    {
+     "file": "veronica-borges-927217797123410-thumb.jpg",
+     "md5": "a680dae59686e3ca7f27cdfccf59f22a",
+     "bytes": 203302
+    }
+   ],
+   "rank_impressoes": 38,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "A-escalado",
+   "posicao_escalados": 17,
+   "arquivos_escalados": [
+    "17-veronica-borges-927217797123410.mp4",
+    "17-veronica-borges-927217797123410-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "2121939292007154",
+   "status": "Ativo",
+   "pagina": "Sara Oliveira",
+   "inicio": "Veiculação iniciada em 25 de ago de 2026",
+   "rodando_ha": "2.1 days",
+   "formato": "video",
+   "copy": "Try the app for free now and discover the whole truth.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2121939292007154",
+   "arquivos": [
+    {
+     "file": "sara-oliveira-2121939292007154.mp4",
+     "md5": "a63d9b85516e0fd79c2086d3d7052ea1",
+     "bytes": 2148785
+    },
+    {
+     "file": "sara-oliveira-2121939292007154-thumb.jpg",
+     "md5": "0e4037934caf26342d7055fc9df9184e",
+     "bytes": 197267
+    }
+   ],
+   "rank_impressoes": 39,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 2.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 10,
+   "tier": "A-escalado",
+   "posicao_escalados": 18,
+   "arquivos_escalados": [
+    "18-sara-oliveira-2121939292007154.mp4",
+    "18-sara-oliveira-2121939292007154-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "897567769777872",
+   "status": "Ativo",
+   "pagina": "Karoliny Lucas - Especialista em Diástase",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=897567769777872",
+   "arquivos": [
+    {
+     "file": "karoliny-lucas-especialista-em-diastase-897567769777872.mp4",
+     "md5": "2bdd8b16675c5c3d38e08eec503399f4",
+     "bytes": 528466
+    },
+    {
+     "file": "karoliny-lucas-especialista-em-diastase-897567769777872-thumb.jpg",
+     "md5": "b4c2a50ddc59c7dd759b5ddeaf501342",
+     "bytes": 154366
+    }
+   ],
+   "rank_impressoes": 40,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 13,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1093940513240997",
+   "status": "Ativo",
+   "pagina": "Verônica Borges",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 5h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1093940513240997",
+   "arquivos": [
+    {
+     "file": "veronica-borges-1093940513240997.mp4",
+     "md5": "eee5a8c514a8f79d8286ca7f0569e8cf",
+     "bytes": 871925
+    },
+    {
+     "file": "veronica-borges-1093940513240997-thumb.jpg",
+     "md5": "a8e301129fdc0d91360ceb61edbc3c5a",
+     "bytes": 156075
+    }
+   ],
+   "rank_impressoes": 41,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1714191159873542",
+   "status": "Ativo",
+   "pagina": "Victorai Martins",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 13h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1714191159873542",
+   "arquivos": [
+    {
+     "file": "victorai-martins-1714191159873542.mp4",
+     "md5": "0afa0a07f21af244600672562941d215",
+     "bytes": 1945914
+    },
+    {
+     "file": "victorai-martins-1714191159873542-thumb.jpg",
+     "md5": "62735cca065f2e278e0a6373693c38f5",
+     "bytes": 149426
+    }
+   ],
+   "rank_impressoes": 42,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1075625704907769",
+   "status": "Ativo",
+   "pagina": "Kendall Godfrey Stephanie",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 7h",
+   "rodando_ha": "1.1 days",
+   "formato": "imagem",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1075625704907769",
+   "arquivos": [
+    {
+     "file": "kendall-godfrey-stephanie-1075625704907769.jpg",
+     "md5": "b823d88525a504849dc3870301c140f0",
+     "bytes": 22926
+    }
+   ],
+   "rank_impressoes": 43,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 13,
+   "tier": "A-escalado",
+   "posicao_escalados": 19,
+   "arquivos_escalados": [
+    "19-kendall-godfrey-stephanie-1075625704907769.jpg"
+   ]
+  },
+  {
+   "ad_id": "987941640929829",
+   "status": "Ativo",
+   "pagina": "Victorai Martins",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 13h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=987941640929829",
+   "arquivos": [
+    {
+     "file": "victorai-martins-987941640929829.mp4",
+     "md5": "89880121ac3e9f68381388545f2c9777",
+     "bytes": 1082842
+    },
+    {
+     "file": "victorai-martins-987941640929829-thumb.jpg",
+     "md5": "cbdf0ef02ccfa6e1ddd5d20cf2b08a49",
+     "bytes": 118819
+    }
+   ],
+   "rank_impressoes": 44,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1419798406750928",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Fernanda Mello",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1419798406750928",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1419798406750928.mp4",
+     "md5": "2fcf31098e01d04577780cab70645b86",
+     "bytes": 2427018
+    },
+    {
+     "file": "fernanda-mello-1419798406750928-thumb.jpg",
+     "md5": "5b590e083065f138a5d3788cdff9dd11",
+     "bytes": 166057
+    }
+   ],
+   "rank_impressoes": 45,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "4469263633315682",
+   "status": "Ativo",
+   "pagina": "Elaine Bezerra",
+   "inicio": "Veiculação iniciada em 23 de jul de 2026",
+   "rodando_ha": "35.1 days",
+   "formato": "video",
+   "copy": null,
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "See this before it's too late...",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=4469263633315682",
+   "arquivos": [
+    {
+     "file": "elaine-bezerra-4469263633315682.mp4",
+     "md5": "a14886d464bffaa7fc042c8bdabc0f03",
+     "bytes": 1045710
+    },
+    {
+     "file": "elaine-bezerra-4469263633315682-thumb.jpg",
+     "md5": "21d73fd3fad5b6082bb73135a6b592ce",
+     "bytes": 28957
+    }
+   ],
+   "rank_impressoes": 46,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 35.1,
+   "ads_da_pagina": 1,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "4606993699547493",
+   "status": "Ativo",
+   "pagina": "Verônica Borges",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 5h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=4606993699547493",
+   "arquivos": [
+    {
+     "file": "veronica-borges-4606993699547493.mp4",
+     "md5": "fb6c133ec8bd1d6efbe80d9f09024f30",
+     "bytes": 865265
+    },
+    {
+     "file": "veronica-borges-4606993699547493-thumb.jpg",
+     "md5": "2c3d020e4aebe4fed27ba3bd57708c3f",
+     "bytes": 126398
+    }
+   ],
+   "rank_impressoes": 47,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1369811928699739",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1369811928699739",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1369811928699739.mp4",
+     "md5": "44bb3a9213bda1e5b3f6e37ac63cf5db",
+     "bytes": 881760
+    },
+    {
+     "file": "fernanda-mello-1369811928699739-thumb.jpg",
+     "md5": "a680dae59686e3ca7f27cdfccf59f22a",
+     "bytes": 203302
+    }
+   ],
+   "rank_impressoes": 48,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "instagram",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 12,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1064417276135386",
+   "status": "Ativo",
+   "pagina": "Victorai Martins",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 13h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": null,
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "See Details",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1064417276135386",
+   "arquivos": [
+    {
+     "file": "victorai-martins-1064417276135386.mp4",
+     "md5": "c8627a7dc17142338098b6e76a07b7ec",
+     "bytes": 853691
+    },
+    {
+     "file": "victorai-martins-1064417276135386-thumb.jpg",
+     "md5": "d444f27fb9074f768e64c2e29d5eed93",
+     "bytes": 32226
+    }
+   ],
+   "rank_impressoes": 49,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "27803503362605364",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=27803503362605364",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-27803503362605364.mp4",
+     "md5": "410baad5492cb4fefa2c758bff034a39",
+     "bytes": 879034
+    },
+    {
+     "file": "fernanda-mello-27803503362605364-thumb.jpg",
+     "md5": "df33d939d90e1167c4c1e328845fed87",
+     "bytes": 154370
+    }
+   ],
+   "rank_impressoes": 50,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "instagram",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 12,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1378183431123084",
+   "status": "Ativo",
+   "pagina": "Gonçalo Antunes",
+   "inicio": "Veiculação iniciada em 23 de jul de 2026",
+   "rodando_ha": "35.1 days",
+   "formato": "video",
+   "copy": null,
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "See this before it's too late...",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1378183431123084",
+   "arquivos": [
+    {
+     "file": "goncalo-antunes-1378183431123084.mp4",
+     "md5": "b1c12c506050447fa83cc9ebd3298026",
+     "bytes": 981757
+    },
+    {
+     "file": "goncalo-antunes-1378183431123084-thumb.jpg",
+     "md5": "a9a9632afee47152ca23c280d2eb8556",
+     "bytes": 23130
+    }
+   ],
+   "rank_impressoes": 51,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 35.1,
+   "ads_da_pagina": 1,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "A-escalado",
+   "posicao_escalados": 20,
+   "arquivos_escalados": [
+    "20-goncalo-antunes-1378183431123084.mp4",
+    "20-goncalo-antunes-1378183431123084-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1069366202168300",
+   "status": "Ativo",
+   "pagina": "Sara Oliveira",
+   "inicio": "Veiculação iniciada em 25 de ago de 2026",
+   "rodando_ha": "2.1 days",
+   "formato": "video",
+   "copy": "Try the app for free now and discover the whole truth.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1069366202168300",
+   "arquivos": [
+    {
+     "file": "sara-oliveira-1069366202168300.mp4",
+     "md5": "9174e6ccbb8fe666b82576e5b6dcafea",
+     "bytes": 2181864
+    },
+    {
+     "file": "sara-oliveira-1069366202168300-thumb.jpg",
+     "md5": "bfc3127d3a0b26905a5bbb138d2ef2c1",
+     "bytes": 185131
+    }
+   ],
+   "rank_impressoes": 52,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 2.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 10,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1688560655554373",
+   "status": "Ativo",
+   "pagina": "Sara Oliveira",
+   "inicio": "Veiculação iniciada em 25 de ago de 2026",
+   "rodando_ha": "2.1 days",
+   "formato": "video",
+   "copy": "Try the app for free now and discover the whole truth.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1688560655554373",
+   "arquivos": [
+    {
+     "file": "sara-oliveira-1688560655554373.mp4",
+     "md5": "51802c84a5b479aa52224e5497751402",
+     "bytes": 1930302
+    },
+    {
+     "file": "sara-oliveira-1688560655554373-thumb.jpg",
+     "md5": "02717ab0fc5a01e515912cc5d570bade",
+     "bytes": 172283
+    }
+   ],
+   "rank_impressoes": 53,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 2.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 10,
+   "tier": "A-escalado",
+   "posicao_escalados": 21,
+   "arquivos_escalados": [
+    "21-sara-oliveira-1688560655554373.mp4",
+    "21-sara-oliveira-1688560655554373-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1637590257921060",
+   "status": "Ativo",
+   "pagina": "Sara Oliveira",
+   "inicio": "Veiculação iniciada em 23 de ago de 2026",
+   "rodando_ha": "4.1 days",
+   "formato": "video",
+   "copy": "Try the app for free now and discover the whole truth.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1637590257921060",
+   "arquivos": [
+    {
+     "file": "sara-oliveira-1637590257921060.mp4",
+     "md5": "96b30be9e0d7483617d5f75697d39f0b",
+     "bytes": 2036089
+    },
+    {
+     "file": "sara-oliveira-1637590257921060-thumb.jpg",
+     "md5": "f131ef205e334dcaf4cb7f4f110266a2",
+     "bytes": 35507
+    }
+   ],
+   "rank_impressoes": 54,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 4.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 10,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "943137872164129",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=943137872164129",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-943137872164129.mp4",
+     "md5": "853caa7c4c3ad3a309667d988ad00c4b",
+     "bytes": 2057367
+    },
+    {
+     "file": "fernanda-mello-943137872164129-thumb.jpg",
+     "md5": "b0f900f257e29393c53a1b87c9ca32ad",
+     "bytes": 142062
+    }
+   ],
+   "rank_impressoes": 55,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "instagram",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 12,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1066538269524100",
+   "status": "Ativo",
+   "pagina": "Kendall Godfrey Stephanie",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 7h",
+   "rodando_ha": "1.1 days",
+   "formato": "imagem",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1066538269524100",
+   "arquivos": [
+    {
+     "file": "kendall-godfrey-stephanie-1066538269524100.jpg",
+     "md5": "6465227d7a4211b527c972fd2f72ba9e",
+     "bytes": 29499
+    }
+   ],
+   "rank_impressoes": 56,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 13,
+   "tier": "A-escalado",
+   "posicao_escalados": 22,
+   "arquivos_escalados": [
+    "22-kendall-godfrey-stephanie-1066538269524100.jpg"
+   ]
+  },
+  {
+   "ad_id": "1219286013695942",
+   "status": "Ativo",
+   "pagina": "Verônica Borges",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 5h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1219286013695942",
+   "arquivos": [
+    {
+     "file": "veronica-borges-1219286013695942.mp4",
+     "md5": "396a93cfbd17accd5a7cd2dabf46e209",
+     "bytes": 859173
+    },
+    {
+     "file": "veronica-borges-1219286013695942-thumb.jpg",
+     "md5": "883fd27be229990ceec7eb1f69951589",
+     "bytes": 154607
+    }
+   ],
+   "rank_impressoes": 57,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "A-escalado",
+   "posicao_escalados": 23,
+   "arquivos_escalados": [
+    "23-veronica-borges-1219286013695942.mp4",
+    "23-veronica-borges-1219286013695942-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1966412624021347",
+   "status": "Inativo",
+   "pagina": "Rachel Thompson",
+   "inicio": "1 de ago de 2026 a 2 de ago de 2026",
+   "rodando_ha": "1 days",
+   "formato": "indisponivel",
+   "copy": null,
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1966412624021347",
+   "arquivos": [],
+   "rank_impressoes": 58,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "nota": "Criativo removido pela Meta — conta/Página desabilitada por violar Padrões de Publicidade.",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.0,
+   "ads_da_pagina": 8,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "C-sem-criativo"
+  },
+  {
+   "ad_id": "1090961466792971",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": null,
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1090961466792971",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1090961466792971.mp4",
+     "md5": "3066bf5b59f6d1bdc306615961adeb85",
+     "bytes": 1920250
+    },
+    {
+     "file": "fernanda-mello-1090961466792971-thumb.jpg",
+     "md5": "2824fac900a8e8731df4a50967869083",
+     "bytes": 118828
+    }
+   ],
+   "rank_impressoes": 59,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": null,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1592657008921504",
+   "status": "Ativo",
+   "pagina": "Kendall Godfrey Stephanie",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 7h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1592657008921504",
+   "arquivos": [
+    {
+     "file": "kendall-godfrey-stephanie-1592657008921504.mp4",
+     "md5": "93a4b0401fa99ab8171c46f65cd40537",
+     "bytes": 617281
+    },
+    {
+     "file": "kendall-godfrey-stephanie-1592657008921504-thumb.jpg",
+     "md5": "2a6d897b244484754c308c1ad736973a",
+     "bytes": 142524
+    }
+   ],
+   "rank_impressoes": 60,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 13,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1066103859296767",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": null,
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1066103859296767",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1066103859296767.mp4",
+     "md5": "44bb3a9213bda1e5b3f6e37ac63cf5db",
+     "bytes": 881760
+    },
+    {
+     "file": "fernanda-mello-1066103859296767-thumb.jpg",
+     "md5": "a680dae59686e3ca7f27cdfccf59f22a",
+     "bytes": 203302
+    }
+   ],
+   "rank_impressoes": 61,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "instagram",
+   "dias_no_ar": null,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 12,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1069922362636702",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1069922362636702",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1069922362636702.mp4",
+     "md5": "4be1379751ff0e954c5e71ddbe1377f6",
+     "bytes": 865497
+    },
+    {
+     "file": "fernanda-mello-1069922362636702-thumb.jpg",
+     "md5": "f47ed33d6a781764f71982336ab2e1c1",
+     "bytes": 211646
+    }
+   ],
+   "rank_impressoes": 62,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1770356160874456",
+   "status": "Ativo",
+   "pagina": "Verônica Borges",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 5h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1770356160874456",
+   "arquivos": [
+    {
+     "file": "veronica-borges-1770356160874456.mp4",
+     "md5": "9fd9194ffa2fdd6a2a7da13aa5f98a7b",
+     "bytes": 686941
+    },
+    {
+     "file": "veronica-borges-1770356160874456-thumb.jpg",
+     "md5": "c6873bec53460404a83b5290c74b5f34",
+     "bytes": 204872
+    }
+   ],
+   "rank_impressoes": 63,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "instagram",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 12,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1276525892216960",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1276525892216960",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1276525892216960.mp4",
+     "md5": "c38e1dcbb86edf03fe4201f8a31313ad",
+     "bytes": 881896
+    },
+    {
+     "file": "fernanda-mello-1276525892216960-thumb.jpg",
+     "md5": "3469f3a4cd953de94316d157763d3656",
+     "bytes": 191949
+    }
+   ],
+   "rank_impressoes": 64,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "instagram",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 12,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1549360527232613",
+   "status": "Ativo",
+   "pagina": "Verônica Borges",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 5h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1549360527232613",
+   "arquivos": [
+    {
+     "file": "veronica-borges-1549360527232613.mp4",
+     "md5": "e3dfbfacfd9a88003f627ee565df2b80",
+     "bytes": 1325336
+    },
+    {
+     "file": "veronica-borges-1549360527232613-thumb.jpg",
+     "md5": "ef754ec8aa2a4a624104b6ec24f3324e",
+     "bytes": 165073
+    }
+   ],
+   "rank_impressoes": 65,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1853687699374819",
+   "status": "Ativo",
+   "pagina": "Livia Rain",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 7h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "I thought I knew who they really were… until I saw those messages 😳\nWhat I found was packed with secrets, lies, and things I wish I had never discovered 💔",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1853687699374819",
+   "arquivos": [
+    {
+     "file": "livia-rain-1853687699374819.mp4",
+     "md5": "2d5547fb373ab234827892a82771e84a",
+     "bytes": 989563
+    },
+    {
+     "file": "livia-rain-1853687699374819-thumb.jpg",
+     "md5": "bfd24de80b32819b834cbe3ddeafa403",
+     "bytes": 92207
+    }
+   ],
+   "rank_impressoes": 66,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 6,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1060413226915974",
+   "status": "Ativo",
+   "pagina": "Verônica Borges",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 5h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1060413226915974",
+   "arquivos": [
+    {
+     "file": "veronica-borges-1060413226915974.mp4",
+     "md5": "620fd6d9dfe99bd34be7430e996be9e7",
+     "bytes": 714032
+    },
+    {
+     "file": "veronica-borges-1060413226915974-thumb.jpg",
+     "md5": "895ddbce4b0c9c543ec5b00a232f02af",
+     "bytes": 99507
+    }
+   ],
+   "rank_impressoes": 67,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "3481743582007630",
+   "status": "Ativo",
+   "pagina": "Verônica Borges",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 5h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=3481743582007630",
+   "arquivos": [
+    {
+     "file": "veronica-borges-3481743582007630.mp4",
+     "md5": "a5aab7c031ab9be3951f8a6c4f296a62",
+     "bytes": 921736
+    },
+    {
+     "file": "veronica-borges-3481743582007630-thumb.jpg",
+     "md5": "b2ee851570df9fb6d6beaaa9cca9ba22",
+     "bytes": 158574
+    }
+   ],
+   "rank_impressoes": 68,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "938429372628175",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Fernanda Mello",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=938429372628175",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-938429372628175.mp4",
+     "md5": "64d6c398f4717caa0cf83642b36aab9f",
+     "bytes": 1174401
+    },
+    {
+     "file": "fernanda-mello-938429372628175-thumb.jpg",
+     "md5": "9ec293c1abe6183adaf32dcf1b424dc3",
+     "bytes": 128516
+    }
+   ],
+   "rank_impressoes": 69,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1381347960196492",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1381347960196492",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1381347960196492.mp4",
+     "md5": "1f709b9a6e780cb7965be74594c40630",
+     "bytes": 2057843
+    },
+    {
+     "file": "fernanda-mello-1381347960196492-thumb.jpg",
+     "md5": "9045f6a4795879f64cf10259240fb13d",
+     "bytes": 54907
+    }
+   ],
+   "rank_impressoes": 70,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "instagram",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 12,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "28206680295629935",
+   "status": "Ativo",
+   "pagina": "Karoliny Lucas - Especialista em Diástase",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": "0.1 days",
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=28206680295629935",
+   "arquivos": [
+    {
+     "file": "karoliny-lucas-especialista-em-diastase-28206680295629935.mp4",
+     "md5": "2c1a36012ff7f26488c08cd748a216eb",
+     "bytes": 781997
+    },
+    {
+     "file": "karoliny-lucas-especialista-em-diastase-28206680295629935-thumb.jpg",
+     "md5": "02999862c861b79bf1625cef1e93458f",
+     "bytes": 162599
+    }
+   ],
+   "rank_impressoes": 71,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 0.1,
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 13,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1084703207256757",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": null,
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1084703207256757",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1084703207256757.mp4",
+     "md5": "410baad5492cb4fefa2c758bff034a39",
+     "bytes": 879034
+    },
+    {
+     "file": "fernanda-mello-1084703207256757-thumb.jpg",
+     "md5": "df33d939d90e1167c4c1e328845fed87",
+     "bytes": 154370
+    }
+   ],
+   "rank_impressoes": 72,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "instagram",
+   "dias_no_ar": null,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 12,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1045946381757589",
+   "status": "Ativo",
+   "pagina": "Victorai Martins",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 13h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1045946381757589",
+   "arquivos": [
+    {
+     "file": "victorai-martins-1045946381757589.mp4",
+     "md5": "a49c89f420b55f4dad7de2309294668a",
+     "bytes": 1772718
+    },
+    {
+     "file": "victorai-martins-1045946381757589-thumb.jpg",
+     "md5": "54f73faadbaece368b7e53bcc6a3e63d",
+     "bytes": 66696
+    }
+   ],
+   "rank_impressoes": 73,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "A-escalado",
+   "posicao_escalados": 24,
+   "arquivos_escalados": [
+    "24-victorai-martins-1045946381757589.mp4",
+    "24-victorai-martins-1045946381757589-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1393228559449168",
+   "status": "Ativo",
+   "pagina": "Verônica Borges",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 5h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1393228559449168",
+   "arquivos": [
+    {
+     "file": "veronica-borges-1393228559449168.mp4",
+     "md5": "c35cc5feaf6a7309de84fe4ac100a787",
+     "bytes": 878938
+    },
+    {
+     "file": "veronica-borges-1393228559449168-thumb.jpg",
+     "md5": "df33d939d90e1167c4c1e328845fed87",
+     "bytes": 154370
+    }
+   ],
+   "rank_impressoes": 74,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1055195590826957",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": null,
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1055195590826957",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-1055195590826957.mp4",
+     "md5": "b5431e0ac71aed432febd1c830ee5892",
+     "bytes": 879053
+    },
+    {
+     "file": "fernanda-mello-1055195590826957-thumb.jpg",
+     "md5": "df33d939d90e1167c4c1e328845fed87",
+     "bytes": 154370
+    }
+   ],
+   "rank_impressoes": 75,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "instagram",
+   "dias_no_ar": null,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 12,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "2306468203449856",
+   "status": "Ativo",
+   "pagina": "Verônica Borges",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 5h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2306468203449856",
+   "arquivos": [
+    {
+     "file": "veronica-borges-2306468203449856.mp4",
+     "md5": "3508af53f8f14914e80223aca421385d",
+     "bytes": 2056795
+    },
+    {
+     "file": "veronica-borges-2306468203449856-thumb.jpg",
+     "md5": "b0f900f257e29393c53a1b87c9ca32ad",
+     "bytes": 142062
+    }
+   ],
+   "rank_impressoes": 76,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "841254142314040",
+   "status": "Ativo",
+   "pagina": "Livia Rain",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 7h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "I thought I knew who they really were… until I saw those messages 😳\nWhat I found was packed with secrets, lies, and things I wish I had never discovered 💔",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=841254142314040",
+   "arquivos": [
+    {
+     "file": "livia-rain-841254142314040.mp4",
+     "md5": "13043118e9df7e8be9bd4b9a7141caab",
+     "bytes": 2431469
+    },
+    {
+     "file": "livia-rain-841254142314040-thumb.jpg",
+     "md5": "58d6ba8f4d75c6c813fb99fcf148d79e",
+     "bytes": 74765
+    }
+   ],
+   "rank_impressoes": 77,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 6,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1382487603846096",
+   "status": "Ativo",
+   "pagina": "Livia Rain",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": null,
+   "formato": "video",
+   "copy": "I thought I knew who they really were… until I saw those messages 😳\nWhat I found was packed with secrets, lies, and things I wish I had never discovered 💔",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1382487603846096",
+   "arquivos": [
+    {
+     "file": "livia-rain-1382487603846096.mp4",
+     "md5": "2d5547fb373ab234827892a82771e84a",
+     "bytes": 989563
+    },
+    {
+     "file": "livia-rain-1382487603846096-thumb.jpg",
+     "md5": "bfd24de80b32819b834cbe3ddeafa403",
+     "bytes": 92207
+    }
+   ],
+   "rank_impressoes": 78,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": null,
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 6,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1987478995288058",
+   "status": "Ativo",
+   "pagina": "Kendall Godfrey Stephanie",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 7h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1987478995288058",
+   "arquivos": [
+    {
+     "file": "kendall-godfrey-stephanie-1987478995288058.mp4",
+     "md5": "1f8a7b36d4c410151d954a7d708c90c3",
+     "bytes": 546442
+    },
+    {
+     "file": "kendall-godfrey-stephanie-1987478995288058-thumb.jpg",
+     "md5": "a49f074153b12c4721134567124c036c",
+     "bytes": 214007
+    }
+   ],
+   "rank_impressoes": 79,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 13,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "4419835821566991",
+   "status": "Ativo",
+   "pagina": "Sara Oliveira",
+   "inicio": "Veiculação iniciada em 25 de ago de 2026",
+   "rodando_ha": "2.1 days",
+   "formato": "video",
+   "copy": "Try the app for free now and discover the whole truth.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=4419835821566991",
+   "arquivos": [
+    {
+     "file": "sara-oliveira-4419835821566991.mp4",
+     "md5": "a4957f051d9d2b554126e44a70fafcc4",
+     "bytes": 2592326
+    },
+    {
+     "file": "sara-oliveira-4419835821566991-thumb.jpg",
+     "md5": "990eb1479276510e4d712579a6f7583e",
+     "bytes": 172202
+    }
+   ],
+   "rank_impressoes": 80,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 2.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 10,
+   "tier": "A-escalado",
+   "posicao_escalados": 25,
+   "arquivos_escalados": [
+    "25-sara-oliveira-4419835821566991.mp4",
+    "25-sara-oliveira-4419835821566991-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "901080816063174",
+   "status": "Ativo",
+   "pagina": "Sara Oliveira",
+   "inicio": "Veiculação iniciada em 25 de ago de 2026",
+   "rodando_ha": "2.1 days",
+   "formato": "video",
+   "copy": "Try the app for free now and discover the whole truth.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=901080816063174",
+   "arquivos": [
+    {
+     "file": "sara-oliveira-901080816063174.mp4",
+     "md5": "09e5f92f84838fb9d1078d06923c0d7d",
+     "bytes": 976216
+    },
+    {
+     "file": "sara-oliveira-901080816063174-thumb.jpg",
+     "md5": "85dbf2d8d8b4208448dc1f7ea14387ae",
+     "bytes": 98489
+    }
+   ],
+   "rank_impressoes": 81,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 2.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 10,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1397132832345514",
+   "status": "Ativo",
+   "pagina": "Livia Rain",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": null,
+   "formato": "video",
+   "copy": "I thought I knew who they really were… until I saw those messages 😳\nWhat I found was packed with secrets, lies, and things I wish I had never discovered 💔",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1397132832345514",
+   "arquivos": [
+    {
+     "file": "livia-rain-1397132832345514.mp4",
+     "md5": "13043118e9df7e8be9bd4b9a7141caab",
+     "bytes": 2431469
+    },
+    {
+     "file": "livia-rain-1397132832345514-thumb.jpg",
+     "md5": "58d6ba8f4d75c6c813fb99fcf148d79e",
+     "bytes": 74765
+    }
+   ],
+   "rank_impressoes": 82,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": null,
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 6,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1083393537967528",
+   "status": "Ativo",
+   "pagina": "Livia Rain",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 7h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "I thought I knew who they really were… until I saw those messages 😳\nWhat I found was packed with secrets, lies, and things I wish I had never discovered 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Trial: Enter Your Partner’s Phone Number",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1083393537967528",
+   "arquivos": [
+    {
+     "file": "livia-rain-1083393537967528.mp4",
+     "md5": "4bb8cf10ff3614553c958afe23d374b5",
+     "bytes": 2130189
+    },
+    {
+     "file": "livia-rain-1083393537967528-thumb.jpg",
+     "md5": "6ed0ef886a8764cd538838282e972406",
+     "bytes": 87877
+    }
+   ],
+   "rank_impressoes": 83,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 6,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1342788010946667",
+   "status": "Ativo",
+   "pagina": "Sara Oliveira",
+   "inicio": "Veiculação iniciada em 25 de ago de 2026",
+   "rodando_ha": "2.1 days",
+   "formato": "video",
+   "copy": "Try the app for free now and discover the whole truth.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1342788010946667",
+   "arquivos": [
+    {
+     "file": "sara-oliveira-1342788010946667.mp4",
+     "md5": "0fdc50c450fd519e035cb55923eaca6b",
+     "bytes": 2673634
+    },
+    {
+     "file": "sara-oliveira-1342788010946667-thumb.jpg",
+     "md5": "33b02a2487cf652a6885ae6606946dcb",
+     "bytes": 175585
+    }
+   ],
+   "rank_impressoes": 84,
+   "baixo_volume": false,
+   "impressoes": null,
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 2.1,
+   "ads_da_pagina": 10,
+   "pecas_no_mesmo_angulo": 10,
+   "tier": "A-escalado",
+   "posicao_escalados": 26,
+   "arquivos_escalados": [
+    "26-sara-oliveira-1342788010946667.mp4",
+    "26-sara-oliveira-1342788010946667-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1428494215761390",
+   "status": "Ativo",
+   "pagina": "Livia Rain",
+   "inicio": "Veiculação iniciada em 26 de ago de 2026 · Tempo total ativo: 7h",
+   "rodando_ha": "1.1 days",
+   "formato": "video",
+   "copy": "I thought I knew who they really were… until I saw those messages 😳\nWhat I found was packed with secrets, lies, and things I wish I had never discovered 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Trial: Enter Your Partner’s Phone Number",
+   "descricao": null,
+   "cta": "Ver detalhes",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1428494215761390",
+   "arquivos": [
+    {
+     "file": "livia-rain-1428494215761390.mp4",
+     "md5": "7fcd52bf13275c84d341b9c383d9763e",
+     "bytes": 2455357
+    },
+    {
+     "file": "livia-rain-1428494215761390-thumb.jpg",
+     "md5": "885f831140b88fad81682a4f1dd0430e",
+     "bytes": 104738
+    }
+   ],
+   "rank_impressoes": 85,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": 1.1,
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 6,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "1673419433755197",
+   "status": "Ativo",
+   "pagina": "Karoliny Lucas - Especialista em Diástase",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": null,
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1673419433755197",
+   "arquivos": [
+    {
+     "file": "karoliny-lucas-especialista-em-diastase-1673419433755197.mp4",
+     "md5": "2bdd8b16675c5c3d38e08eec503399f4",
+     "bytes": 528466
+    },
+    {
+     "file": "karoliny-lucas-especialista-em-diastase-1673419433755197-thumb.jpg",
+     "md5": "b4c2a50ddc59c7dd759b5ddeaf501342",
+     "bytes": 154366
+    }
+   ],
+   "rank_impressoes": 86,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": null,
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 13,
+   "tier": "B-baixo-volume"
+  },
+  {
+   "ad_id": "2131009207769837",
+   "status": "Ativo",
+   "pagina": "Fernanda Mello",
+   "inicio": "Veiculação iniciada em 27 de ago de 2026 · Tempo total ativo: 3h",
+   "rodando_ha": null,
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=2131009207769837",
+   "arquivos": [
+    {
+     "file": "fernanda-mello-2131009207769837.mp4",
+     "md5": "dd00861338b69d70a38d828ae09940d8",
+     "bytes": 1586983
+    },
+    {
+     "file": "fernanda-mello-2131009207769837-thumb.jpg",
+     "md5": "9fdc573774832810c020a6750e63eb43",
+     "bytes": 66391
+    }
+   ],
+   "rank_impressoes": 87,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "relevante": true,
+   "canal": "whatsapp",
+   "dias_no_ar": null,
+   "ads_da_pagina": 22,
+   "pecas_no_mesmo_angulo": 29,
+   "tier": "B-baixo-volume"
+  }
+ ]
+}

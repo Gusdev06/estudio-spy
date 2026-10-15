@@ -1,0 +1,29 @@
+{
+  "id": "d374d6f818714420b106b92046bfdfff",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate this exact ad, keeping the same woman, phone with the Instagram DM list, scene, lighting and EVERY text element identical in words, fonts, colors, sizes and positions. Change ONLY her expression: she is quietly crying, tears running down her cheeks, red watery eyes looking directly into the camera, fingertips touching her lips. Heartbroken, real, not theatrical. Photorealistic, natural skin texture.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/4520fa50-9ae7-498e-a4aa-b5954d3f1156.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/gram-imagem-hiding-on-instagram-2026-10-11/out/v10-expressao-choro.png"
+  ],
+  "elapsed_ms": 107778,
+  "raw": {
+    "id": "d374d6f818714420b106b92046bfdfff",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/4520fa50-9ae7-498e-a4aa-b5954d3f1156.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/d374d6f818714420b106b92046bfdfff/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-11T15:40:48.510062924Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 104874
+    }
+  }
+}

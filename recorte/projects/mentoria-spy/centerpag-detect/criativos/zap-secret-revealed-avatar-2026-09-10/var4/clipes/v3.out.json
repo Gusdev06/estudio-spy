@@ -1,0 +1,28 @@
+{
+  "id": "528c7fbe9b5c40d9b0921b6aecd76b7c",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/0a908535-9053-4300-b35b-dc6d2de1024d.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-secret-revealed-avatar-2026-09-10/var4/clipes/talking-head-v3.mp4"
+  ],
+  "elapsed_ms": 179664,
+  "raw": {
+    "id": "528c7fbe9b5c40d9b0921b6aecd76b7c",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/0a908535-9053-4300-b35b-dc6d2de1024d.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/528c7fbe9b5c40d9b0921b6aecd76b7c/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-09T18:35:57.364026732Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 175400
+    }
+  }
+}

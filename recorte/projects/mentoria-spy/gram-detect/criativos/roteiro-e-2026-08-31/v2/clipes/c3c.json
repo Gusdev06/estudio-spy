@@ -1,0 +1,28 @@
+✔ Done in 474s.
+{
+  "id": "4da0aea14b9a4a52b7276407ccb1a9f6",
+  "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "prompt": "Master Intent: A selfie video filmed on a phone in a bedroom at night. Tone: direct, dropping into something more serious and knowing. No music, only faint room tone.\n\nScene 1 (Duration: 15s):\nHandheld selfie framing, slight natural sway, no camera movement beyond the shake of a held phone.\n\nShe lowers her hand and her expression settles.\n[Character A: Woman, direct voice, clear, crisp diction, American English]: \"Their social media. Their activity. Instant messages from just about any private app they might be using.\"\n\nThen, she narrows her eyes slightly and tilts her head.\n[Character A: Woman, quieter and knowing, deliberate, American English]: \"If there's something going on in their phone. And you know what I mean.\"\n\nPause. She nods once.\n[Character A: Woman, quiet and certain, American English]: \"You will be able to find out. Because the truth always leaves a trail, and that trail is on their phone.\"",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/4da0aea14b9a4a52b7276407ccb1a9f6/1.mp4"
+  ],
+  "saved": [],
+  "elapsed_ms": 474523,
+  "raw": {
+    "id": "4da0aea14b9a4a52b7276407ccb1a9f6",
+    "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/4da0aea14b9a4a52b7276407ccb1a9f6/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/4da0aea14b9a4a52b7276407ccb1a9f6/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-31T08:33:14.102024209Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 471885
+    }
+  }
+}

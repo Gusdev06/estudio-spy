@@ -1,0 +1,29 @@
+{
+  "id": "243f1e464f844916887673db24c76d1c",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still, front phone camera at eye level, bright home office. a Malaysian man about 27 with medium tan skin, shoulder-length black hair tied back in a small bun, clean-shaven, wearing a plain white crewneck sweatshirt. He looks straight into the lens with a serious, direct expression, as if telling a hard truth, mouth closed. Framing: chest up, hands out of frame, subject centered, eyes at about 35% from the top. Behind him: a white upholstered chair, a light neutral wall, a bookshelf with a small plant, soft natural window daylight, slightly overexposed background like a real webcam-style recording. Realistic skin texture, mild phone-camera softness, no retouching, ordinary person, not a model. Only one person in frame.",
+  "outputs": [
+    "https://cdn.cachegalaxy.com/output/bace3d6d-cbd8-4e78-9692-7ee20d4356f8.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-top5-avatar-copy-2026-10-07/base/v168.png"
+  ],
+  "elapsed_ms": 60616,
+  "raw": {
+    "id": "243f1e464f844916887673db24c76d1c",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://cdn.cachegalaxy.com/output/bace3d6d-cbd8-4e78-9692-7ee20d4356f8.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/243f1e464f844916887673db24c76d1c/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-07T14:37:11.12172298Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 57567
+    }
+  }
+}

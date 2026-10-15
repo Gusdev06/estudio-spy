@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:m0BCQM9yqr0",
+  "provider": "youtube",
+  "source_id": "m0BCQM9yqr0",
+  "source_url": "https://www.youtube.com/watch?v=m0BCQM9yqr0",
+  "title": "NOBODY KNOWS  🔥 | Lobby video editing | edit by DANII PLAYS",
+  "creator": {
+    "name": "DANII PLAYS",
+    "url": null
+  },
+  "query": "instagram dm tricks nobody knows #shorts",
+  "collected_at": "2026-09-17T16:32:17.951927+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 47,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/m0BCQM9yqr0",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/m0BCQM9yqr0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFwoODAP&rs=AOn4CLCIFRATuU9gO7MjUk6ToHckabCSAA"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

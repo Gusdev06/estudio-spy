@@ -1,0 +1,17 @@
+- Fetching billing records…
+
+5 records  · page 1  · more available (--page)
+
+  -$0.0570    2026-09-11 16:59:12 UTC  openai/gpt-image-2/text-to-image         key:macbook
+      prediction: 77e08f14930b498bb4c5d15de57a79f8
+  -$0.0810    2026-09-11 16:55:40 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: 4e0f067a30a34d71ac1007d5103f20b4
+  -$0.0570    2026-09-11 16:55:08 UTC  openai/gpt-image-2/text-to-image         key:macbook
+      prediction: 6a617c0caac84c49971dc910bc7513c3
+  -$0.0570    2026-09-11 16:55:08 UTC  openai/gpt-image-2/text-to-image         key:macbook
+      prediction: 4c5d8262e3694c2ca7966fd19ee2d670
+  -$0.0570    2026-09-11 16:55:08 UTC  openai/gpt-image-2/text-to-image         key:macbook
+      prediction: 72bb2c58b4f741488eb007db3e18c570
+
+  page net: -$0.3090
+

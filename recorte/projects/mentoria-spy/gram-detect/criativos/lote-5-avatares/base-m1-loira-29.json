@@ -1,0 +1,31 @@
+✔ Done in 89s.
+✔ Saved 1 file.
+{
+  "id": "f18b04d3b92c491bb026c067527fb6b0",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "A vertical 9:16 UGC-style video frame shot on an iPhone propped on a tripod across the room. MEDIUM SHOT - the subject's head occupies only the upper third of the frame, torso and lap visible, clear space above the head and on both sides. Camera at TRUE EYE LEVEL, perfectly level, NOT tilted.\n\nSUBJECT: A 29-year-old white woman with fair skin, light blue eyes, straight shoulder-length dirty-blonde hair tucked behind one ear, light freckles across the nose. Sitting relaxed on a sofa, leaning back slightly, looking directly into the lens. Expression is calm, serious and low-energy - the face of someone quietly telling you something you need to hear. Mouth relaxed and slightly parted mid-sentence, not smiling.\n\nWARDROBE: soft oatmeal-coloured knit sweater, crew neck.\n\nSKIN: Visible pores across the T-zone, faint expression lines, natural oil catching light on the forehead. Light shadow under the eyes. No filter, no foundation, no retouching.\n\nFRAMING: Wide enough to show chest, shoulders and the top of the lap. Hands rest below the frame edge and are NOT visible.\n\nCAMERA: Native phone lens, 26mm equivalent, mild barrel softness at the edges.\n\nLIGHTING: BRIGHT and AIRY. Strong soft daylight from a large window camera-left filling the whole room. Overall exposure light and clean, not moody, not dark. Gentle natural falloff. Subtle ISO grain 400-600.\n\nBACKGROUND: A bright living room with an off-white wall, a small framed print, and a pale linen curtain at the edge of frame. Softly out of focus. Lived-in but tidy. Plenty of visible wall around the subject.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/f944f541-500b-47d5-a9d1-834b32218614.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/gram-detect/criativos/lote-5-avatares/base-m1-loira-29.png"
+  ],
+  "elapsed_ms": 91343,
+  "raw": {
+    "id": "f18b04d3b92c491bb026c067527fb6b0",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/f944f541-500b-47d5-a9d1-834b32218614.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/f18b04d3b92c491bb026c067527fb6b0/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-23T18:31:52.644861359Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 87909
+    }
+  }
+}

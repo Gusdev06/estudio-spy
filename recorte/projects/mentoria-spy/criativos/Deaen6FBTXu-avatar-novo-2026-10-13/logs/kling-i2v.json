@@ -1,0 +1,31 @@
+✔ Done in 100s.
+✔ Saved 1 file.
+{
+  "id": "c7eca9d851d3473b91ad5416289240dd",
+  "model": "kwaivgi/kling-v3.0-std/image-to-video",
+  "prompt": "Raw iPhone front-camera selfie video, locked-off camera, 9:16. The woman does her foundation routine in the bathroom with a deadpan, unbothered expression, never speaking, mouth closed. 0-1s: she pumps beige foundation from the bottle onto the makeup sponge, looking down. 1-3s: she dabs the sponge on her right cheek with quick small taps, eyes half closed. 3-4s: she rubs foundation across her forehead with her fingertips. 4-5s: she blends her cheek with her fingers and tilts her head slightly. 5-6s: she taps the sponge under her eye next to her nose. 6-7s: she dabs her other cheek. 7-8s: she rubs her forehead again, then glances flatly at the camera. Natural blinking, small casual movements, same face, hair, blue bow headband and white tank top throughout. Available bathroom light, natural grain. No text, no captions.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/f9c82f62-41e9-4649-8950-1fdb7a1407f2.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/Deaen6FBTXu-avatar-novo-2026-10-13/clipes/kling-i2v.mp4"
+  ],
+  "elapsed_ms": 102123,
+  "raw": {
+    "id": "c7eca9d851d3473b91ad5416289240dd",
+    "model": "kwaivgi/kling-v3.0-std/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/f9c82f62-41e9-4649-8950-1fdb7a1407f2.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c7eca9d851d3473b91ad5416289240dd/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-13T06:28:52.627360977Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 98286
+    }
+  }
+}

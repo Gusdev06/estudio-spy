@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "youtube:Owhq9vqN0X0",
+  "provider": "youtube",
+  "source_id": "Owhq9vqN0X0",
+  "source_url": "https://www.youtube.com/watch?v=Owhq9vqN0X0",
+  "title": "Recover DELETED Instagram Messages And Conversations",
+  "creator": {
+    "name": "The Instant Fix",
+    "url": null
+  },
+  "query": "recover deleted instagram messages #shorts",
+  "collected_at": "2026-09-17T16:32:13.105894+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "1ª rodada: janela exploratória, checando se é vertical"
+  },
+  "media": {
+    "duration_s": 54,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0
+  },
+  "preview": {
+    "embed_url": "https://www.youtube-nocookie.com/embed/Owhq9vqN0X0",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/Owhq9vqN0X0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBaOQqHzM_2l7jL3zmQkAaj-uZ2Dg",
+    "poster_path": "previews/2ad9d08068a23a87-r1-4d812712-poster.jpg",
+    "contact_sheet_path": "previews/2ad9d08068a23a87-r1-4d812712-sheet.jpg",
+    "gif_path": "previews/2ad9d08068a23a87-r1-4d812712.gif",
+    "frame_times_s": [
+      20.0,
+      20.667,
+      21.333,
+      22.0,
+      22.667,
+      23.333,
+      24.0,
+      24.667,
+      25.333,
+      26.0,
+      26.667,
+      27.333
+    ],
+    "sheet_grid": [
+      4,
+      3
+    ],
+    "sheet_labels": true,
+    "config": {
+      "scope": "broll",
+      "mode": "gif",
+      "width": 360,
+      "fps": 8,
+      "colors": 128,
+      "max_mb": 5,
+      "max_seconds": 10,
+      "frames": 12
+    },
+    "warning": null,
+    "gif_bytes": 116396,
+    "scope": "broll"
+  },
+  "segment": {
+    "start_s": 20.0,
+    "end_s": 28.0,
+    "revision": 1
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "rejected",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "rejected",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": 1920,
+    "source_height": 1080,
+    "fit": "native",
+    "transform": "preserve_native"
+  },
+  "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/2ad9d08068a23a87-bb8a37911025458923d72682ab591c9adad62255213378f252a1be7d09426a9b.mp4",
+  "local_sha256": "bb8a37911025458923d72682ab591c9adad62255213378f252a1be7d09426a9b",
+  "local_start_s": 20.0,
+  "local_duration_s": 8.0,
+  "preview_scope": "broll",
+  "narration": "Even when the other person thinks they deleted everything"
+}

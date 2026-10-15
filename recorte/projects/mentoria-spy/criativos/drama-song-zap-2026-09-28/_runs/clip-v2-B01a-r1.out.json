@@ -1,0 +1,29 @@
+{
+  "id": "10ee3dccb4684dd0ae38d6a9b0e79ff1",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot at a candlelit family dinner table at night, 3D animated feature film style. Close on Maya (Latina woman, messy low bun, heather-gray cardigan, small gold hoop earrings, small beauty mark above her lip), a lost, faraway gaze, candle bokeh in the foreground, both of her hands resting still in her lap. The focus slowly shifts to the guests laughing at the table behind her. There are no phones anywhere in the shot, nothing enters the foreground. Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/d9066d7b-48c2-4feb-9d4c-368768a92327-u1_49ee70ca-ef32-420b-b987-470fa6018e30.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B01a-r1.mp4"
+  ],
+  "elapsed_ms": 93873,
+  "raw": {
+    "id": "10ee3dccb4684dd0ae38d6a9b0e79ff1",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/d9066d7b-48c2-4feb-9d4c-368768a92327-u1_49ee70ca-ef32-420b-b987-470fa6018e30.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/10ee3dccb4684dd0ae38d6a9b0e79ff1/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:31:14.521820342Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 90435
+    }
+  }
+}

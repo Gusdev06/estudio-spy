@@ -1,0 +1,31 @@
+✔ Done in 194s.
+✔ Saved 1 file.
+{
+  "id": "960f6f7f9486468aaecb6df37c3d770a",
+  "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "prompt": "The person keeps their eyes on the lens and speaks steadily.\n[Rafa, calm low serious voice]: \"That's why so many people uncover messages, contacts, and suspicious behavior, even when the other person thinks they deleted everything. You just need to know where to look. Access is right below, while this tool is still available.\"\nThen gives a small nod and holds still. Camera is locked off. Hands stay out of frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/960f6f7f9486468aaecb6df37c3d770a/1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/gram-detect/criativos/lote-5-avatares/h1-jovem-27/clipes/b-03.mp4"
+  ],
+  "elapsed_ms": 198874,
+  "raw": {
+    "id": "960f6f7f9486468aaecb6df37c3d770a",
+    "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/960f6f7f9486468aaecb6df37c3d770a/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/960f6f7f9486468aaecb6df37c3d770a/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-23T19:30:02.96299893Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 191628
+    }
+  }
+}

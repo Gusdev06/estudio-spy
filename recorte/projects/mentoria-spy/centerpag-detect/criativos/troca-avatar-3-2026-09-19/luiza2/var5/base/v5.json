@@ -1,0 +1,29 @@
+{
+  "id": "cc3bb622d0504fd1bb328f554e256efe",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same podcast studio set: warm wooden slat wall, green tropical plants on both sides, a large black broadcast microphone on a boom arm in front of her, same framing from the chest up, same soft studio light, 9:16 vertical. REPLACE the woman with a DIFFERENT woman: a Black woman about 35 years old with deep dark skin, a short natural afro, gold hoop earrings, wearing a plain white button-up shirt. Same posture, seated, looking into the camera, mouth closed, calm confident expression, hands resting out of frame. Photorealistic video still from a podcast camera, natural skin texture, no text, no logos, no watermark, and the burned-in caption box at the bottom must NOT be drawn.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/25a705fe-5dba-4113-afdd-85f9c2e8cb44.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/troca-avatar-3-2026-09-19/luiza2/var5/base/v5.png"
+  ],
+  "elapsed_ms": 35486,
+  "raw": {
+    "id": "cc3bb622d0504fd1bb328f554e256efe",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/25a705fe-5dba-4113-afdd-85f9c2e8cb44.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/cc3bb622d0504fd1bb328f554e256efe/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-21T04:24:13.010905118Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 31386
+    }
+  }
+}

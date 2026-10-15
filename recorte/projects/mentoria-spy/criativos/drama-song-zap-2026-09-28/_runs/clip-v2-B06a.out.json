@@ -1,0 +1,29 @@
+{
+  "id": "84353a09ba5b4134b1e445ca35fe7c55",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot, 3D animated feature film style. Maya shuts the bathroom door and leans her back against it, eyes closed, palms flat on the door; she steps to the sink and looks into the mirror, tucking a loose strand of hair behind her ear and practicing a smile. Characters: Maya (Latina woman, messy low bun, heather-gray cardigan, small gold hoop earrings, small beauty mark above her lip). Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/838170b2-2c3f-4c71-a037-971ef1d457fa-u2_9daddf24-b856-4d29-af03-079fd64ea096.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B06a.mp4"
+  ],
+  "elapsed_ms": 74762,
+  "raw": {
+    "id": "84353a09ba5b4134b1e445ca35fe7c55",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/838170b2-2c3f-4c71-a037-971ef1d457fa-u2_9daddf24-b856-4d29-af03-079fd64ea096.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/84353a09ba5b4134b1e445ca35fe7c55/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:27:24.914360901Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 71984
+    }
+  }
+}

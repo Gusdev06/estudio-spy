@@ -1,0 +1,29 @@
+{
+  "id": "46c8cdc6e6f94bc390f6e4b3bed73812",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still, front phone camera at eye level, bright home office. a Thai man about 30 with light tan skin, short textured crop haircut, light stubble, wearing a plain sage-green hoodie. He looks straight into the lens with a serious, direct expression, as if telling a hard truth, mouth closed. Framing: chest up, hands out of frame, subject centered, eyes at about 35% from the top. Behind him: a white upholstered chair, a light neutral wall, a bookshelf with a small plant, soft natural window daylight, slightly overexposed background like a real webcam-style recording. Realistic skin texture, mild phone-camera softness, no retouching, ordinary person, not a model. Only one person in frame.",
+  "outputs": [
+    "https://cdn.cachegalaxy.com/output/da26305c-e014-4508-9b56-f8efef26358d.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-top5-avatar-copy-2026-10-07/base/v169.png"
+  ],
+  "elapsed_ms": 85980,
+  "raw": {
+    "id": "46c8cdc6e6f94bc390f6e4b3bed73812",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://cdn.cachegalaxy.com/output/da26305c-e014-4508-9b56-f8efef26358d.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/46c8cdc6e6f94bc390f6e4b3bed73812/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-07T14:37:11.416493281Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 81898
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "7cce97f1fa84432e981a88fcbf6d256d",
+  "model": "bytedance/seedance-v1-lite-i2v-720p",
+  "prompt": "Handheld amateur phone video, slightly shaky. The young South Asian woman with a long black side braid in an oversized lavender sweatshirt leans back against the edge of the open doorway, holding her phone, looking up at the ceiling and ranting dramatically, shaking her head and moving her free hand, comedic skit energy, the camera stays at the same wide distance. Natural indoor light, realistic.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/9b0d95b8-70e9-4e02-9cc7-639a7e1d104e-u2_26e6f149-cba4-40bc-b04a-6c8828e56771.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/var5-beatriz-aguiar-1622854622757052-2026-09-25/clipes/eB.mp4"
+  ],
+  "elapsed_ms": 42590,
+  "raw": {
+    "id": "7cce97f1fa84432e981a88fcbf6d256d",
+    "model": "bytedance/seedance-v1-lite-i2v-720p",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/9b0d95b8-70e9-4e02-9cc7-639a7e1d104e-u2_26e6f149-cba4-40bc-b04a-6c8828e56771.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/7cce97f1fa84432e981a88fcbf6d256d/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:28:18.878259261Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 38825
+    }
+  }
+}

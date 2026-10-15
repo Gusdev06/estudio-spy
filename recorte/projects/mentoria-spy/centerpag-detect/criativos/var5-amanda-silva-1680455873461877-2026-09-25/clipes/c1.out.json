@@ -1,0 +1,28 @@
+{
+  "id": "afe496f2c292456da59646b880bd2376",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/ccd9fa24-8e0d-44d3-9d4d-0ca57d0eddc3.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/var5-amanda-silva-1680455873461877-2026-09-25/clipes/c1.mp4"
+  ],
+  "elapsed_ms": 64357,
+  "raw": {
+    "id": "afe496f2c292456da59646b880bd2376",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/ccd9fa24-8e0d-44d3-9d4d-0ca57d0eddc3.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/afe496f2c292456da59646b880bd2376/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:27:33.573998919Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 60803
+    }
+  }
+}

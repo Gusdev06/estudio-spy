@@ -1,0 +1,29 @@
+{
+  "id": "c00691f9ab204fdca4f6c93827938c68",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Image 1 is the character sheet for Maya (after). Keep their faces, hair, outfits and signature details exactly as in the sheets (Maya: same face, beauty mark above the left corner of her upper lip, small gold hoops, hair down in soft waves, emerald-green wrap blouse).\nA 2x2 grid storyboard in a single image, four sequential moments of the same continuous shot, read left-to-right, top-to-bottom. Thin white gutters between panels. No text, no captions, no panel numbers.\nSetting (same in all four panels unless stated): the front porch of Maya's house at night, warm porch light, Maya sitting on the step.\nCharacters: Maya, a 34-year-old Latina woman with warm light-brown skin, shoulder-length wavy dark-brown hair worn down in glossy soft waves, bright hazel eyes, a small beauty mark above the left corner of her upper lip, small gold hoop earrings, subtle burnt-red lipstick, wearing an emerald-green wrap blouse and cream tailored trousers, upright confident posture, chin slightly raised.\nPanel 1: medium shot: Maya sitting on the porch step, looking out at the street, hands clasped around her knees.\nPanel 2: she turns her head and looks straight into the camera.\nPanel 3: frontal close-up, steady and warm gaze.\nPanel 4: a slight knowing nod.\nAny phone screen shows only a soft glow or is dark, never any readable interface, text or logo.\n3D animated feature film style, cinematic lighting, shallow depth of field, consistent characters, outfits and lighting across panels, vertical 9:16 framing inside each panel.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/c072a122-0133-4f29-b520-b445c0453345.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/shot-sheets-v2/B23.png"
+  ],
+  "elapsed_ms": 82025,
+  "raw": {
+    "id": "c00691f9ab204fdca4f6c93827938c68",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/c072a122-0133-4f29-b520-b445c0453345.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c00691f9ab204fdca4f6c93827938c68/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:27:57.270396106Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 80633
+    }
+  }
+}

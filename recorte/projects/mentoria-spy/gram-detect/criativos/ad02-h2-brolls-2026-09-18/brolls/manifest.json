@@ -1,0 +1,5321 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "schema_version": 1,
+      "id": "youtube:b4Rrd-Gtc1k",
+      "provider": "youtube",
+      "source_id": "b4Rrd-Gtc1k",
+      "source_url": "https://www.youtube.com/watch?v=b4Rrd-Gtc1k",
+      "title": "How to Hide Instagram Activity Status 2026 | Active Now",
+      "creator": {
+        "name": "Miss Config",
+        "url": null
+      },
+      "query": "Instagram activity status active now how to see 2026",
+      "collected_at": "2026-09-17T16:29:20.081211+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, ainda sem conferir"
+      },
+      "media": {
+        "duration_s": 47,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/b4Rrd-Gtc1k",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/b4Rrd-Gtc1k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC30SEwVa8-ua_8QXBcyY7BjKY7Cw",
+        "poster_path": "previews/a148f5951cc98fee-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/a148f5951cc98fee-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/a148f5951cc98fee-r1-4d812712.gif",
+        "frame_times_s": [
+          15.0,
+          15.667,
+          16.333,
+          17.0,
+          17.667,
+          18.333,
+          19.0,
+          19.667,
+          20.333,
+          21.0,
+          21.667,
+          22.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 95458,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 15.0,
+        "end_s": 23.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "rejected",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "rejected",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/a148f5951cc98fee-c0f36f20952b7dd40fd7d9e8aa6a931992fc4426c1e422475a3ec731ec172d8b.mp4",
+      "local_sha256": "c0f36f20952b7dd40fd7d9e8aa6a931992fc4426c1e422475a3ec731ec172d8b",
+      "local_start_s": 15.0,
+      "local_duration_s": 8.0,
+      "preview_scope": "broll",
+      "narration": "There's one Instagram detail that gives almost everyone away"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:h4iI0qNTm3g",
+      "provider": "youtube",
+      "source_id": "h4iI0qNTm3g",
+      "source_url": "https://www.youtube.com/watch?v=h4iI0qNTm3g",
+      "title": "How to Hide Active Now on Instagram (2026) - Hide Activity Status",
+      "creator": {
+        "name": "2Basa Tech",
+        "url": null
+      },
+      "query": "Instagram activity status active now how to see 2026",
+      "collected_at": "2026-09-17T16:29:20.081333+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, ainda sem conferir"
+      },
+      "media": {
+        "duration_s": 122,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/h4iI0qNTm3g",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/h4iI0qNTm3g/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBJ06242wx22hnT89c-gFk0MteDnQ",
+        "poster_path": "previews/9d85c308a2ace35a-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/9d85c308a2ace35a-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/9d85c308a2ace35a-r1-4d812712.gif",
+        "frame_times_s": [
+          40.0,
+          40.667,
+          41.333,
+          42.0,
+          42.667,
+          43.333,
+          44.0,
+          44.667,
+          45.333,
+          46.0,
+          46.667,
+          47.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 84495,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 40.0,
+        "end_s": 48.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "rejected",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "rejected",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/9d85c308a2ace35a-bed8cbf2a51940c4c24d3ba671c52c758af687a3866eb9aa9e6cbd38e3f5c6f4.mp4",
+      "local_sha256": "bed8cbf2a51940c4c24d3ba671c52c758af687a3866eb9aa9e6cbd38e3f5c6f4",
+      "local_start_s": 40.0,
+      "local_duration_s": 8.0,
+      "preview_scope": "broll",
+      "narration": "There's one Instagram detail that gives almost everyone away"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:5zRjPV_KMRo",
+      "provider": "youtube",
+      "source_id": "5zRjPV_KMRo",
+      "source_url": "https://www.youtube.com/watch?v=5zRjPV_KMRo",
+      "title": "How To Hide Activity Status on Instagram   Turn Off Active Now 2026 | Easy and Fast 💻📱",
+      "creator": {
+        "name": "NEXDX",
+        "url": null
+      },
+      "query": "Instagram activity status active now how to see 2026",
+      "collected_at": "2026-09-17T16:29:20.081376+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 52,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/5zRjPV_KMRo",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/5zRjPV_KMRo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBmU8IOhKZ7DnJ44b-ik0dFYac2YQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:oRYo4nWtJAA",
+      "provider": "youtube",
+      "source_id": "oRYo4nWtJAA",
+      "source_url": "https://www.youtube.com/watch?v=oRYo4nWtJAA",
+      "title": "How To Hide Activity Status on Instagram | Turn Off Active Now (2026 Guide)",
+      "creator": {
+        "name": "DNEXDX",
+        "url": null
+      },
+      "query": "Instagram activity status active now how to see 2026",
+      "collected_at": "2026-09-17T16:29:20.081415+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 58,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/oRYo4nWtJAA",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/oRYo4nWtJAA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB11V43PMeta4GRI1XJKxX-zVvy0A"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:qglf7szo_RM",
+      "provider": "youtube",
+      "source_id": "qglf7szo_RM",
+      "source_url": "https://www.youtube.com/watch?v=qglf7szo_RM",
+      "title": "How To Hide Active Now & Activity Status on Instagram (2026)",
+      "creator": {
+        "name": "Guideify",
+        "url": null
+      },
+      "query": "Instagram activity status active now how to see 2026",
+      "collected_at": "2026-09-17T16:29:20.081449+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 77,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/qglf7szo_RM",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/qglf7szo_RM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDOm1e148V310I_sFj9WXNH9e_xeg"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:z8L8egfV3yE",
+      "provider": "youtube",
+      "source_id": "z8L8egfV3yE",
+      "source_url": "https://www.youtube.com/watch?v=z8L8egfV3yE",
+      "title": "How to Get Out of the Instagram \"Hidden Message Requests\"",
+      "creator": {
+        "name": "aiDr",
+        "url": null
+      },
+      "query": "Instagram hidden message requests folder how to find",
+      "collected_at": "2026-09-17T16:29:21.900035+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, ainda sem conferir"
+      },
+      "media": {
+        "duration_s": 322,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/z8L8egfV3yE",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/z8L8egfV3yE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD36shqvGPTbEM9taq9OJF6TfCQhA",
+        "poster_path": "previews/d8751e45d01db4b7-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/d8751e45d01db4b7-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/d8751e45d01db4b7-r1-4d812712.gif",
+        "frame_times_s": [
+          60.0,
+          60.667,
+          61.333,
+          62.0,
+          62.667,
+          63.333,
+          64.0,
+          64.667,
+          65.333,
+          66.0,
+          66.667,
+          67.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 2231254,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 60.0,
+        "end_s": 68.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "rejected",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "rejected",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/d8751e45d01db4b7-f5add12f00ca38827de0bea1c3b9b41194e908fa55876a9652cf0c126e62a842.mp4",
+      "local_sha256": "f5add12f00ca38827de0bea1c3b9b41194e908fa55876a9652cf0c126e62a842",
+      "local_start_s": 60.0,
+      "local_duration_s": 8.0,
+      "preview_scope": "broll",
+      "narration": "But hardly anyone knows where to look"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:nPyNrJasANg",
+      "provider": "youtube",
+      "source_id": "nPyNrJasANg",
+      "source_url": "https://www.youtube.com/watch?v=nPyNrJasANg",
+      "title": "✅  How To See Instagram Hidden Message Requests 🔴",
+      "creator": {
+        "name": "Make Money Anthony",
+        "url": null
+      },
+      "query": "Instagram hidden message requests folder how to find",
+      "collected_at": "2026-09-17T16:29:21.900173+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 117,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/nPyNrJasANg",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/nPyNrJasANg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB2AutJ5ofoAlOnOAwhHUmuW9xxqg"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:iTpXukAAC5U",
+      "provider": "youtube",
+      "source_id": "iTpXukAAC5U",
+      "source_url": "https://www.youtube.com/watch?v=iTpXukAAC5U",
+      "title": "Instagram message requests hidden | where to find them",
+      "creator": {
+        "name": "GuideTech Pro",
+        "url": null
+      },
+      "query": "Instagram hidden message requests folder how to find",
+      "collected_at": "2026-09-17T16:29:21.900216+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, ainda sem conferir"
+      },
+      "media": {
+        "duration_s": 66,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/iTpXukAAC5U",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/iTpXukAAC5U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDxzDI1I3Nah7r8ogkluPi2DrlzdA",
+        "poster_path": "previews/688bbefb10a8c411-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/688bbefb10a8c411-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/688bbefb10a8c411-r1-4d812712.gif",
+        "frame_times_s": [
+          20.0,
+          20.667,
+          21.333,
+          22.0,
+          22.667,
+          23.333,
+          24.0,
+          24.667,
+          25.333,
+          26.0,
+          26.667,
+          27.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 66460,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 20.0,
+        "end_s": 28.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "awaiting_approval",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/688bbefb10a8c411-05412ec87381e664e627f332f8e57c7f7b26a5081f5caca4c453589bd2b4460a.mp4",
+      "local_sha256": "05412ec87381e664e627f332f8e57c7f7b26a5081f5caca4c453589bd2b4460a",
+      "local_start_s": 20.0,
+      "local_duration_s": 8.0,
+      "preview_scope": "broll",
+      "narration": "But hardly anyone knows where to look"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:UISbqxNqJlY",
+      "provider": "youtube",
+      "source_id": "UISbqxNqJlY",
+      "source_url": "https://www.youtube.com/watch?v=UISbqxNqJlY",
+      "title": "What is Hidden requests is now called Spam |Instagram Messages Spam Folder Update 2026",
+      "creator": {
+        "name": "Issue Tech",
+        "url": null
+      },
+      "query": "Instagram hidden message requests folder how to find",
+      "collected_at": "2026-09-17T16:29:21.900257+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 138,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/UISbqxNqJlY",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/UISbqxNqJlY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB4DDdztcBIvg5W8JOIxaDjaCRiwg"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:MDUa6a2zQak",
+      "provider": "youtube",
+      "source_id": "MDUa6a2zQak",
+      "source_url": "https://www.youtube.com/watch?v=MDUa6a2zQak",
+      "title": "How To See Hidden Message Requests On Instagram",
+      "creator": {
+        "name": "Trevor Nace",
+        "url": null
+      },
+      "query": "Instagram hidden message requests folder how to find",
+      "collected_at": "2026-09-17T16:29:21.900288+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, ainda sem conferir"
+      },
+      "media": {
+        "duration_s": 88,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/MDUa6a2zQak",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/MDUa6a2zQak/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHlXgVUMg9jiVSOOCMD0fF3--J7g",
+        "poster_path": "previews/534deae114dd1949-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/534deae114dd1949-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/534deae114dd1949-r1-4d812712.gif",
+        "frame_times_s": [
+          30.0,
+          30.667,
+          31.333,
+          32.0,
+          32.667,
+          33.333,
+          34.0,
+          34.667,
+          35.333,
+          36.0,
+          36.667,
+          37.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 1055669,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 30.0,
+        "end_s": 38.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "rejected",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "rejected",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/534deae114dd1949-d0069b90b1dcac979bc1d4c007c00e3db3391c7da7cf8ff12fc670950271ba8b.mp4",
+      "local_sha256": "d0069b90b1dcac979bc1d4c007c00e3db3391c7da7cf8ff12fc670950271ba8b",
+      "local_start_s": 30.0,
+      "local_duration_s": 8.0,
+      "preview_scope": "broll",
+      "narration": "You just need to know where to look"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:RS1BxpdYclA",
+      "provider": "youtube",
+      "source_id": "RS1BxpdYclA",
+      "source_url": "https://www.youtube.com/watch?v=RS1BxpdYclA",
+      "title": "How to Recover Deleted Messages on Instagram (2026) | Restore Deleted Instagram Chats",
+      "creator": {
+        "name": "Tech Oracle",
+        "url": null
+      },
+      "query": "recover deleted Instagram messages download your information 2026",
+      "collected_at": "2026-09-17T16:29:23.577516+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, ainda sem conferir"
+      },
+      "media": {
+        "duration_s": 44,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/RS1BxpdYclA",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/RS1BxpdYclA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAIexJDb3ZqT6luVOt5a5qLX7N4ow",
+        "poster_path": "previews/76773d10ed811087-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/76773d10ed811087-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/76773d10ed811087-r1-4d812712.gif",
+        "frame_times_s": [
+          15.0,
+          15.667,
+          16.333,
+          17.0,
+          17.667,
+          18.333,
+          19.0,
+          19.667,
+          20.333,
+          21.0,
+          21.667,
+          22.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 55731,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 15.0,
+        "end_s": 23.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "awaiting_approval",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/76773d10ed811087-3c7d65d3fc33af02b606e205bb5e3351d962d32c0fa6b847662c2e412761c605.mp4",
+      "local_sha256": "3c7d65d3fc33af02b606e205bb5e3351d962d32c0fa6b847662c2e412761c605",
+      "local_start_s": 15.0,
+      "local_duration_s": 8.0,
+      "preview_scope": "broll",
+      "narration": "Even when the other person thinks they deleted everything"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:DYv1Z_7C8Jo",
+      "provider": "youtube",
+      "source_id": "DYv1Z_7C8Jo",
+      "source_url": "https://www.youtube.com/watch?v=DYv1Z_7C8Jo",
+      "title": "How to Recover Deleted Instagram Messages (2026)",
+      "creator": {
+        "name": "Fixphile",
+        "url": null
+      },
+      "query": "recover deleted Instagram messages download your information 2026",
+      "collected_at": "2026-09-17T16:29:23.577620+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, ainda sem conferir"
+      },
+      "media": {
+        "duration_s": 84,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/DYv1Z_7C8Jo",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/DYv1Z_7C8Jo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAg7rK1A99DAwr4u91GND-ceBsFYQ",
+        "poster_path": "previews/9e2551245a73ded6-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/9e2551245a73ded6-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/9e2551245a73ded6-r1-4d812712.gif",
+        "frame_times_s": [
+          30.0,
+          30.667,
+          31.333,
+          32.0,
+          32.667,
+          33.333,
+          34.0,
+          34.667,
+          35.333,
+          36.0,
+          36.667,
+          37.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 47509,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 30.0,
+        "end_s": 38.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "awaiting_approval",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/9e2551245a73ded6-26c816fd92923be8a8f1f0a9864a42aa0441121971982dfc2197d994e789f371.mp4",
+      "local_sha256": "26c816fd92923be8a8f1f0a9864a42aa0441121971982dfc2197d994e789f371",
+      "local_start_s": 30.0,
+      "local_duration_s": 8.0,
+      "preview_scope": "broll",
+      "narration": "Even when the other person thinks they deleted everything"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:pvq1Z9il3xQ",
+      "provider": "youtube",
+      "source_id": "pvq1Z9il3xQ",
+      "source_url": "https://www.youtube.com/watch?v=pvq1Z9il3xQ",
+      "title": "🚨 Deleted Instagram Chats? Try This Recovery Trick!",
+      "creator": {
+        "name": "Byte Vortex",
+        "url": null
+      },
+      "query": "recover deleted Instagram messages download your information 2026",
+      "collected_at": "2026-09-17T16:29:23.577662+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 93,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/pvq1Z9il3xQ",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/pvq1Z9il3xQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCIElUWkRXILUfPWFcXIm5EhiB2pQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:LLo6GEVqGvY",
+      "provider": "youtube",
+      "source_id": "LLo6GEVqGvY",
+      "source_url": "https://www.youtube.com/watch?v=LLo6GEVqGvY",
+      "title": "Recover Deleted Instagram Messages in 2026 🔥 Easy & Fast Method",
+      "creator": {
+        "name": "The world of smartphones",
+        "url": null
+      },
+      "query": "recover deleted Instagram messages download your information 2026",
+      "collected_at": "2026-09-17T16:29:23.577700+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 425,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/LLo6GEVqGvY",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/LLo6GEVqGvY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3Bjp-HBoHYsUKo-NcH0cUgMwc-g"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:Gy9l1m7VV_k",
+      "provider": "youtube",
+      "source_id": "Gy9l1m7VV_k",
+      "source_url": "https://www.youtube.com/watch?v=Gy9l1m7VV_k",
+      "title": "Recover Deleted Chats On Instagram | How to Recover Delete Chats On Instagram 2026",
+      "creator": {
+        "name": "PRP TECH",
+        "url": null
+      },
+      "query": "recover deleted Instagram messages download your information 2026",
+      "collected_at": "2026-09-17T16:29:23.577736+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 538,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/Gy9l1m7VV_k",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/Gy9l1m7VV_k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDpiLQtMf_IFHf_Al2HGPQ4K2NeWw"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:elFaXYoECoE",
+      "provider": "youtube",
+      "source_id": "elFaXYoECoE",
+      "source_url": "https://www.youtube.com/watch?v=elFaXYoECoE",
+      "title": "Fix Instagram Vanish Mode You Took a Screenshot Error — Easy 2025 Guide",
+      "creator": {
+        "name": "Quick Fix Innovation",
+        "url": null
+      },
+      "query": "Instagram vanish mode DM screen recording",
+      "collected_at": "2026-09-17T16:29:24.758138+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 81,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/elFaXYoECoE",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/elFaXYoECoE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGEbu30wbDL0UWb5SHkbA4uLo3wQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:hZ93k5ehdHA",
+      "provider": "youtube",
+      "source_id": "hZ93k5ehdHA",
+      "source_url": "https://www.youtube.com/watch?v=hZ93k5ehdHA",
+      "title": "Instagram Screen Record Notification Dm",
+      "creator": {
+        "name": "Wlastmaks",
+        "url": null
+      },
+      "query": "Instagram vanish mode DM screen recording",
+      "collected_at": "2026-09-17T16:29:24.758237+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 49,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/hZ93k5ehdHA",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/hZ93k5ehdHA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBU1DjUAMaAxK0OEbIhpD6WwJscsA"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:XkaFGd1AQGw",
+      "provider": "youtube",
+      "source_id": "XkaFGd1AQGw",
+      "source_url": "https://www.youtube.com/watch?v=XkaFGd1AQGw",
+      "title": "How to Take Screenshot Of ALLOW REPLAY Instagram Photo/Video | Instagram Tutorial",
+      "creator": {
+        "name": "Quick Apps Guide ",
+        "url": null
+      },
+      "query": "Instagram vanish mode DM screen recording",
+      "collected_at": "2026-09-17T16:29:24.758281+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 93,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/XkaFGd1AQGw",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/XkaFGd1AQGw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD0Qpz9zkL9ILARpnHn3fi_1L8I4A"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:JH6AqDW2Ncg",
+      "provider": "youtube",
+      "source_id": "JH6AqDW2Ncg",
+      "source_url": "https://www.youtube.com/watch?v=JH6AqDW2Ncg",
+      "title": "How to Screen Record View Once Messages on Instagram (2026)",
+      "creator": {
+        "name": "Tech Oracle",
+        "url": null
+      },
+      "query": "Instagram vanish mode DM screen recording",
+      "collected_at": "2026-09-17T16:29:24.758318+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, ainda sem conferir"
+      },
+      "media": {
+        "duration_s": 68,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/JH6AqDW2Ncg",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/JH6AqDW2Ncg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDWabH_ZJKxbezT-QdAGCneqJWRKw",
+        "poster_path": "previews/7415b8389f35551a-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/7415b8389f35551a-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/7415b8389f35551a-r1-4d812712.gif",
+        "frame_times_s": [
+          25.0,
+          25.667,
+          26.333,
+          27.0,
+          27.667,
+          28.333,
+          29.0,
+          29.667,
+          30.333,
+          31.0,
+          31.667,
+          32.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 73994,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 25.0,
+        "end_s": 33.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "awaiting_approval",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/7415b8389f35551a-d2fcc5f1f733f1b25c7c3ce53864b052074780d25b255d9daca11fdd315d753b.mp4",
+      "local_sha256": "d2fcc5f1f733f1b25c7c3ce53864b052074780d25b255d9daca11fdd315d753b",
+      "local_start_s": 25.0,
+      "local_duration_s": 8.0,
+      "preview_scope": "broll",
+      "narration": "uncover suspicious messages, contacts and unusual behavior"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:FH_3BcELftk",
+      "provider": "youtube",
+      "source_id": "FH_3BcELftk",
+      "source_url": "https://www.youtube.com/watch?v=FH_3BcELftk",
+      "title": "How to View and Restore Recently Deleted Instagram Posts",
+      "creator": {
+        "name": "HardReset.Info",
+        "url": null
+      },
+      "query": "Instagram recently deleted folder how to see",
+      "collected_at": "2026-09-17T16:29:26.016204+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 89,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/FH_3BcELftk",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/FH_3BcELftk/hq720.jpg?sqp=-oaymwE6CNAFEJQDSFXyq4qpAywIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIGUoZTAPuAL3GA==&rs=AOn4CLD2lVmzRXkoF47DEcgI1JbKbIqV7Q"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:_uQjh91ywI0",
+      "provider": "youtube",
+      "source_id": "_uQjh91ywI0",
+      "source_url": "https://www.youtube.com/watch?v=_uQjh91ywI0",
+      "title": "How To Check Recently Deleted Messages On Instagram",
+      "creator": {
+        "name": "Trevor Nace",
+        "url": null
+      },
+      "query": "Instagram recently deleted folder how to see",
+      "collected_at": "2026-09-17T16:29:26.016321+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, ainda sem conferir"
+      },
+      "media": {
+        "duration_s": 127,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.97002997002997
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/_uQjh91ywI0",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/_uQjh91ywI0/hq720.jpg?sqp=-oaymwEgCNAFEJQDSFXyq4qpAxIIARUAAIhCGAFwAcABBrgC9xg=&rs=AOn4CLA0RUdaFLyMD7C4vhb8wm2-PEBgDQ",
+        "poster_path": "previews/aa2547cec07eebbc-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/aa2547cec07eebbc-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/aa2547cec07eebbc-r1-4d812712.gif",
+        "frame_times_s": [
+          40.0,
+          40.667,
+          41.333,
+          42.0,
+          42.667,
+          43.333,
+          44.0,
+          44.667,
+          45.333,
+          46.0,
+          46.667,
+          47.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 965929,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 40.0,
+        "end_s": 48.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "rejected",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "rejected",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/aa2547cec07eebbc-a479503cd0c8dc44f10acee2f40aa485b9fe7935745633be51cf67a6c07a0311.mp4",
+      "local_sha256": "a479503cd0c8dc44f10acee2f40aa485b9fe7935745633be51cf67a6c07a0311",
+      "local_start_s": 40.0,
+      "local_duration_s": 8.008,
+      "preview_scope": "broll",
+      "narration": "they usually leave small clues behind without even realizing it"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:ltzA_AXqiN8",
+      "provider": "youtube",
+      "source_id": "ltzA_AXqiN8",
+      "source_url": "https://www.youtube.com/watch?v=ltzA_AXqiN8",
+      "title": "How to Restore Recently Deleted Instagram Posts",
+      "creator": {
+        "name": "Howfinity",
+        "url": null
+      },
+      "query": "Instagram recently deleted folder how to see",
+      "collected_at": "2026-09-17T16:29:26.016362+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 127,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/ltzA_AXqiN8",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/ltzA_AXqiN8/hq720.jpg?sqp=-oaymwEgCNAFEJQDSFXyq4qpAxIIARUAAIhCGAFwAcABBrgC9xg=&rs=AOn4CLDMpqLT3BNoP3sLBdkALjmgysyt_g"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:BDsJcFpw7JU",
+      "provider": "youtube",
+      "source_id": "BDsJcFpw7JU",
+      "source_url": "https://www.youtube.com/watch?v=BDsJcFpw7JU",
+      "title": "How to Find Recently Deleted On Instagram with the NEW UPDATE",
+      "creator": {
+        "name": "Supreme Guru Tech",
+        "url": null
+      },
+      "query": "Instagram recently deleted folder how to see",
+      "collected_at": "2026-09-17T16:29:26.016401+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 33,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/BDsJcFpw7JU",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/BDsJcFpw7JU/hq720.jpg?sqp=-oaymwEgCNAFEJQDSFXyq4qpAxIIARUAAIhCGAFwAcABBrgC9xg=&rs=AOn4CLAPcZrFGV34Ow_mSBCshMHyo_PyxA"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:zzJFRVD85nM",
+      "provider": "youtube",
+      "source_id": "zzJFRVD85nM",
+      "source_url": "https://www.youtube.com/watch?v=zzJFRVD85nM",
+      "title": "I GOT CAUGHT TEXTING ANOTHER MAN PRANK ON MY BOYFRIEND!!!! 😱 *HE GETS HEATED!*",
+      "creator": {
+        "name": "Javen & Chanel",
+        "url": null
+      },
+      "query": "going through boyfriend's phone caught texting other girls",
+      "collected_at": "2026-09-17T16:29:27.480855+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 1412,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/zzJFRVD85nM",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/zzJFRVD85nM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB6Y_i5Xem-iNXuMckmHHeFwzGbYg"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:yYXjQHWRWkY",
+      "provider": "youtube",
+      "source_id": "yYXjQHWRWkY",
+      "source_url": "https://www.youtube.com/watch?v=yYXjQHWRWkY",
+      "title": "How To Get Someone To Tell The Truth About Cheating",
+      "creator": {
+        "name": "Brannon Patrick",
+        "url": null
+      },
+      "query": "going through boyfriend's phone caught texting other girls",
+      "collected_at": "2026-09-17T16:29:27.480957+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 432,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/yYXjQHWRWkY",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/yYXjQHWRWkY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCqtMM7tLl0f4lSzzTjM0WPWXc7uw"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:20nopDh7dUA",
+      "provider": "youtube",
+      "source_id": "20nopDh7dUA",
+      "source_url": "https://www.youtube.com/watch?v=20nopDh7dUA",
+      "title": "15 Things Cheaters Say When Confronted",
+      "creator": {
+        "name": "True Medallion",
+        "url": null
+      },
+      "query": "going through boyfriend's phone caught texting other girls",
+      "collected_at": "2026-09-17T16:29:27.481025+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 662,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/20nopDh7dUA",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/20nopDh7dUA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAHoZFnioko7Q89wdcGXjtStZORYA"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:UoVv3ZsQrMA",
+      "provider": "youtube",
+      "source_id": "UoVv3ZsQrMA",
+      "source_url": "https://www.youtube.com/watch?v=UoVv3ZsQrMA",
+      "title": "Will Her Boyfriend MAKE A MOVE on her BESTFRIEND?!?!  (UDY Loyalty Test)",
+      "creator": {
+        "name": "UDY",
+        "url": null
+      },
+      "query": "going through boyfriend's phone caught texting other girls",
+      "collected_at": "2026-09-17T16:29:27.481122+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 1596,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/UoVv3ZsQrMA",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/UoVv3ZsQrMA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBs6U1ZEPr3Z2HkG2WKh4nGnBNr8A"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:KNihUWgFMLA",
+      "provider": "youtube",
+      "source_id": "KNihUWgFMLA",
+      "source_url": "https://www.youtube.com/watch?v=KNihUWgFMLA",
+      "title": "How To Hide Message Requests On Instagram",
+      "creator": {
+        "name": "Trevor Nace",
+        "url": null
+      },
+      "query": "instagram hidden message requests #shorts",
+      "collected_at": "2026-09-17T16:32:11.347356+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 64,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/KNihUWgFMLA",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/KNihUWgFMLA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD617pIctDXyjbyT_hwNgTDLynKqQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:REulpEoR-8k",
+      "provider": "youtube",
+      "source_id": "REulpEoR-8k",
+      "source_url": "https://www.youtube.com/watch?v=REulpEoR-8k",
+      "title": "How To Hide Message Requests And Offensive Comments On Instagram",
+      "creator": {
+        "name": "Easy Tech Tutorials",
+        "url": null
+      },
+      "query": "instagram hidden message requests #shorts",
+      "collected_at": "2026-09-17T16:32:11.347454+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 138,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/REulpEoR-8k",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/REulpEoR-8k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBdSCQcTBbJs7W6zmumPPO7QFVw_Q"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:rDKkUrKpaL0",
+      "provider": "youtube",
+      "source_id": "rDKkUrKpaL0",
+      "source_url": "https://www.youtube.com/watch?v=rDKkUrKpaL0",
+      "title": "How to See Hidden Message Requests on Instagram",
+      "creator": {
+        "name": "How To Social",
+        "url": null
+      },
+      "query": "instagram hidden message requests #shorts",
+      "collected_at": "2026-09-17T16:32:11.347535+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, checando se é vertical"
+      },
+      "media": {
+        "duration_s": 32,
+        "width": 1920,
+        "height": 1080,
+        "fps": 59.94005994005994
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/rDKkUrKpaL0",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/rDKkUrKpaL0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCz14-S3ipmNi0U7L7oYclJs5eN1g",
+        "poster_path": "previews/5baae54b162e85ca-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/5baae54b162e85ca-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/5baae54b162e85ca-r1-4d812712.gif",
+        "frame_times_s": [
+          10.0,
+          10.667,
+          11.333,
+          12.0,
+          12.667,
+          13.333,
+          14.0,
+          14.667,
+          15.333,
+          16.0,
+          16.667,
+          17.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 165150,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 10.0,
+        "end_s": 18.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "rejected",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "rejected",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/5baae54b162e85ca-3df83a859db533d98598e249ff8fcc25fb3255f7e28bca4b21917080ded3f627.mp4",
+      "local_sha256": "3df83a859db533d98598e249ff8fcc25fb3255f7e28bca4b21917080ded3f627",
+      "local_start_s": 10.0,
+      "local_duration_s": 8.025,
+      "preview_scope": "broll",
+      "narration": "But hardly anyone knows where to look"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:m8fwJY_GLew",
+      "provider": "youtube",
+      "source_id": "m8fwJY_GLew",
+      "source_url": "https://www.youtube.com/watch?v=m8fwJY_GLew",
+      "title": "How To See Your Hidden Message Requests On Instagram (2022)",
+      "creator": {
+        "name": "Apple Guy",
+        "url": null
+      },
+      "query": "instagram hidden message requests #shorts",
+      "collected_at": "2026-09-17T16:32:11.347566+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 102,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/m8fwJY_GLew",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/m8fwJY_GLew/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDLOBTydJUVZNhQ24Y0CN71O0DLZw"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:Om4mkOPPO_M",
+      "provider": "youtube",
+      "source_id": "Om4mkOPPO_M",
+      "source_url": "https://www.youtube.com/watch?v=Om4mkOPPO_M",
+      "title": "How to Find Hidden Message Requests on Instagram",
+      "creator": {
+        "name": "How to Online",
+        "url": null
+      },
+      "query": "instagram hidden message requests #shorts",
+      "collected_at": "2026-09-17T16:32:11.347595+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, checando se é vertical"
+      },
+      "media": {
+        "duration_s": 36,
+        "width": 1920,
+        "height": 1080,
+        "fps": 59.94005994005994
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/Om4mkOPPO_M",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/Om4mkOPPO_M/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPty3sQF9aL3u-Gvz6Dxhw1DEUNQ",
+        "poster_path": "previews/b110493d4a6d4248-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/b110493d4a6d4248-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/b110493d4a6d4248-r1-4d812712.gif",
+        "frame_times_s": [
+          12.0,
+          12.667,
+          13.333,
+          14.0,
+          14.667,
+          15.333,
+          16.0,
+          16.667,
+          17.333,
+          18.0,
+          18.667,
+          19.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 42987,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 12.0,
+        "end_s": 20.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "rejected",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "rejected",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/b110493d4a6d4248-d9052643d325e2e8569f6a6690c8aada6d2baef1cae9964be0f64fcce6e238e7.mp4",
+      "local_sha256": "d9052643d325e2e8569f6a6690c8aada6d2baef1cae9964be0f64fcce6e238e7",
+      "local_start_s": 12.0,
+      "local_duration_s": 8.025,
+      "preview_scope": "broll",
+      "narration": "But hardly anyone knows where to look"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:Owhq9vqN0X0",
+      "provider": "youtube",
+      "source_id": "Owhq9vqN0X0",
+      "source_url": "https://www.youtube.com/watch?v=Owhq9vqN0X0",
+      "title": "Recover DELETED Instagram Messages And Conversations",
+      "creator": {
+        "name": "The Instant Fix",
+        "url": null
+      },
+      "query": "recover deleted instagram messages #shorts",
+      "collected_at": "2026-09-17T16:32:13.105894+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, checando se é vertical"
+      },
+      "media": {
+        "duration_s": 54,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/Owhq9vqN0X0",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/Owhq9vqN0X0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBaOQqHzM_2l7jL3zmQkAaj-uZ2Dg",
+        "poster_path": "previews/2ad9d08068a23a87-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/2ad9d08068a23a87-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/2ad9d08068a23a87-r1-4d812712.gif",
+        "frame_times_s": [
+          20.0,
+          20.667,
+          21.333,
+          22.0,
+          22.667,
+          23.333,
+          24.0,
+          24.667,
+          25.333,
+          26.0,
+          26.667,
+          27.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 116396,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 20.0,
+        "end_s": 28.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "rejected",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "rejected",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/2ad9d08068a23a87-bb8a37911025458923d72682ab591c9adad62255213378f252a1be7d09426a9b.mp4",
+      "local_sha256": "bb8a37911025458923d72682ab591c9adad62255213378f252a1be7d09426a9b",
+      "local_start_s": 20.0,
+      "local_duration_s": 8.0,
+      "preview_scope": "broll",
+      "narration": "Even when the other person thinks they deleted everything"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:P8K6G3f5Sxc",
+      "provider": "youtube",
+      "source_id": "P8K6G3f5Sxc",
+      "source_url": "https://www.youtube.com/watch?v=P8K6G3f5Sxc",
+      "title": "How to Recover Deleted Instagram Messages Recovery !",
+      "creator": {
+        "name": "Genie Guide",
+        "url": null
+      },
+      "query": "recover deleted instagram messages #shorts",
+      "collected_at": "2026-09-17T16:32:13.106005+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 105,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/P8K6G3f5Sxc",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/P8K6G3f5Sxc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDxs30cuZjItQVW7HpjO8dNkO60PA"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:kBnXymwZ_7k",
+      "provider": "youtube",
+      "source_id": "kBnXymwZ_7k",
+      "source_url": "https://www.youtube.com/watch?v=kBnXymwZ_7k",
+      "title": "How To Recover Deleted Messages In Instagram",
+      "creator": {
+        "name": "E-TECH",
+        "url": null
+      },
+      "query": "recover deleted instagram messages #shorts",
+      "collected_at": "2026-09-17T16:32:13.106046+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, checando se é vertical"
+      },
+      "media": {
+        "duration_s": 37,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/kBnXymwZ_7k",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/kBnXymwZ_7k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB4UfwQZJalcjjvDvYGFs90yItnNw",
+        "poster_path": "previews/9af09b987b8b2ecb-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/9af09b987b8b2ecb-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/9af09b987b8b2ecb-r1-4d812712.gif",
+        "frame_times_s": [
+          12.0,
+          12.667,
+          13.333,
+          14.0,
+          14.667,
+          15.333,
+          16.0,
+          16.667,
+          17.333,
+          18.0,
+          18.667,
+          19.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 71678,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 12.0,
+        "end_s": 20.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "rejected",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "rejected",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/9af09b987b8b2ecb-33d2c98ad7ad0b4aa98a920c17bbaabdd2d2b9dd7f054e54b4d72f32d5b37320.mp4",
+      "local_sha256": "33d2c98ad7ad0b4aa98a920c17bbaabdd2d2b9dd7f054e54b4d72f32d5b37320",
+      "local_start_s": 12.0,
+      "local_duration_s": 8.0,
+      "preview_scope": "broll",
+      "narration": "Even when the other person thinks they deleted everything"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:eQYe_99Cyys",
+      "provider": "youtube",
+      "source_id": "eQYe_99Cyys",
+      "source_url": "https://www.youtube.com/watch?v=eQYe_99Cyys",
+      "title": "How to RECOVER deleted messages on Instagram Fast in 2023",
+      "creator": {
+        "name": "Your Help Desk",
+        "url": null
+      },
+      "query": "recover deleted instagram messages #shorts",
+      "collected_at": "2026-09-17T16:32:13.106083+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 211,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/eQYe_99Cyys",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/eQYe_99Cyys/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCxygpcUghx43N8aK3mbPCOvrJMzA"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:MthRqoYVFpg",
+      "provider": "youtube",
+      "source_id": "MthRqoYVFpg",
+      "source_url": "https://www.youtube.com/watch?v=MthRqoYVFpg",
+      "title": "How to recover deleted instagram messages 2026",
+      "creator": {
+        "name": "How To 1 Minute",
+        "url": null
+      },
+      "query": "recover deleted instagram messages #shorts",
+      "collected_at": "2026-09-17T16:32:13.106114+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 81,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/MthRqoYVFpg",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/MthRqoYVFpg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZ36g2xAKkZZ_XYwwbgztWhdj3WQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:Tl0Hnmii5qM",
+      "provider": "youtube",
+      "source_id": "Tl0Hnmii5qM",
+      "source_url": "https://www.youtube.com/watch?v=Tl0Hnmii5qM",
+      "title": "How to Recover Deleted Chats on Instagram (2023) | Recover Deleted Instagram Messages",
+      "creator": {
+        "name": "Guideify",
+        "url": null
+      },
+      "query": "recover deleted instagram messages #shorts",
+      "collected_at": "2026-09-17T16:32:13.106143+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, checando se é vertical"
+      },
+      "media": {
+        "duration_s": 57,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/Tl0Hnmii5qM",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/Tl0Hnmii5qM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAuRzVgxK3a5R-8lTUjsJm-Rjwd4w",
+        "poster_path": "previews/eba1642836043290-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/eba1642836043290-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/eba1642836043290-r1-4d812712.gif",
+        "frame_times_s": [
+          20.0,
+          20.667,
+          21.333,
+          22.0,
+          22.667,
+          23.333,
+          24.0,
+          24.667,
+          25.333,
+          26.0,
+          26.667,
+          27.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 90561,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 20.0,
+        "end_s": 28.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "rejected",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "rejected",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/eba1642836043290-8da9b2eb6966844da0a783b667d54508bd8da6cf37879dd55ade87eb695ea179.mp4",
+      "local_sha256": "8da9b2eb6966844da0a783b667d54508bd8da6cf37879dd55ade87eb695ea179",
+      "local_start_s": 20.0,
+      "local_duration_s": 8.0,
+      "preview_scope": "broll",
+      "narration": "Even when the other person thinks they deleted everything"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:aJ865ekQVYQ",
+      "provider": "youtube",
+      "source_id": "aJ865ekQVYQ",
+      "source_url": "https://www.youtube.com/watch?v=aJ865ekQVYQ",
+      "title": "How To Hide Active Now Activity Status On Instagram - Full Guide",
+      "creator": {
+        "name": "GuideRealm",
+        "url": null
+      },
+      "query": "instagram active now activity status #shorts",
+      "collected_at": "2026-09-17T16:32:14.478138+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 75,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/aJ865ekQVYQ",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/aJ865ekQVYQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDc2R3reCKy-B1R4BCpPZc312P-WQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:qImHQufRY9c",
+      "provider": "youtube",
+      "source_id": "qImHQufRY9c",
+      "source_url": "https://www.youtube.com/watch?v=qImHQufRY9c",
+      "title": "Disable Instagram's 'Active Now' Status and Keep Your Activity Private 2025",
+      "creator": {
+        "name": "Techavro",
+        "url": null
+      },
+      "query": "instagram active now activity status #shorts",
+      "collected_at": "2026-09-17T16:32:14.478264+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 87,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/qImHQufRY9c",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/qImHQufRY9c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYhALJ38ZWCv5jsu-aqQ5UsQ5xYg"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:E7Afa08qMa0",
+      "provider": "youtube",
+      "source_id": "E7Afa08qMa0",
+      "source_url": "https://www.youtube.com/watch?v=E7Afa08qMa0",
+      "title": "How To Turn Off Active Status On Instagram For One Specific person",
+      "creator": {
+        "name": "How To Tech",
+        "url": null
+      },
+      "query": "instagram active now activity status #shorts",
+      "collected_at": "2026-09-17T16:32:14.478309+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 98,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/E7Afa08qMa0",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/E7Afa08qMa0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACab1fOcpF_FFxZ40XLpZ5i0RGEg"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:RUvw1shLd7c",
+      "provider": "youtube",
+      "source_id": "RUvw1shLd7c",
+      "source_url": "https://www.youtube.com/watch?v=RUvw1shLd7c",
+      "title": "2 Ways To Know If Someone Is Online On Instagram",
+      "creator": {
+        "name": "Trevor Nace",
+        "url": null
+      },
+      "query": "instagram active now activity status #shorts",
+      "collected_at": "2026-09-17T16:32:14.478348+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 187,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/RUvw1shLd7c",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/RUvw1shLd7c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDt--lqlsqc8lSMP6WcxZe-PKHlAg"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:LBk5OVISLro",
+      "provider": "youtube",
+      "source_id": "LBk5OVISLro",
+      "source_url": "https://www.youtube.com/watch?v=LBk5OVISLro",
+      "title": "What Does Active Today Mean On Instagram?",
+      "creator": {
+        "name": "Trevor Nace",
+        "url": null
+      },
+      "query": "instagram active now activity status #shorts",
+      "collected_at": "2026-09-17T16:32:14.478379+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 127,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/LBk5OVISLro",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/LBk5OVISLro/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBJTKJr4mZkZYYFdQc-2Xk36ihKeQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:MHUbAGJWds8",
+      "provider": "youtube",
+      "source_id": "MHUbAGJWds8",
+      "source_url": "https://www.youtube.com/watch?v=MHUbAGJWds8",
+      "title": "Make Your Instagram Activity Visible with 'Active Now' Status 2025",
+      "creator": {
+        "name": "Techavro",
+        "url": null
+      },
+      "query": "instagram active now activity status #shorts",
+      "collected_at": "2026-09-17T16:32:14.478408+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 77,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/MHUbAGJWds8",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/MHUbAGJWds8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBtsMKn6rmBs0CbNOal3X23zSeJXQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:VHCUWWImoZQ",
+      "provider": "youtube",
+      "source_id": "VHCUWWImoZQ",
+      "source_url": "https://www.youtube.com/watch?v=VHCUWWImoZQ",
+      "title": "How Instagram Vanishing mode works and how to use Vanishing mode on Direct message on Instagram",
+      "creator": {
+        "name": "TS Tech Talk",
+        "url": null
+      },
+      "query": "instagram vanish mode secret chat #shorts",
+      "collected_at": "2026-09-17T16:32:16.582940+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 425,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/VHCUWWImoZQ",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/VHCUWWImoZQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBWgPZMFB7AeY1Onl4s8wwe9JEOlw"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:6ecjCZAnxMg",
+      "provider": "youtube",
+      "source_id": "6ecjCZAnxMg",
+      "source_url": "https://www.youtube.com/watch?v=6ecjCZAnxMg",
+      "title": "What Is Instagram’s Vanish Mode and How to Use It: All You Need to Know",
+      "creator": {
+        "name": "Gadgets 360",
+        "url": null
+      },
+      "query": "instagram vanish mode secret chat #shorts",
+      "collected_at": "2026-09-17T16:32:16.583036+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 128,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/6ecjCZAnxMg",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/6ecjCZAnxMg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAGybe4AiOqh0t1Q_7TBs_Xh5_7Rg"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:hMSsCc2RXKc",
+      "provider": "youtube",
+      "source_id": "hMSsCc2RXKc",
+      "source_url": "https://www.youtube.com/watch?v=hMSsCc2RXKc",
+      "title": "Hide Your Messages On Instagram | Vanish Mode",
+      "creator": {
+        "name": "Do It Like This",
+        "url": null
+      },
+      "query": "instagram vanish mode secret chat #shorts",
+      "collected_at": "2026-09-17T16:32:16.583082+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "1ª rodada: janela exploratória, checando se é vertical"
+      },
+      "media": {
+        "duration_s": 61,
+        "width": 1920,
+        "height": 1080,
+        "fps": 60.0
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/hMSsCc2RXKc",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/hMSsCc2RXKc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDXPMgnBOckX-WdLNv5pnOHOWS1pg",
+        "poster_path": "previews/f7038278d44d8d15-r1-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/f7038278d44d8d15-r1-4d812712-sheet.jpg",
+        "gif_path": "previews/f7038278d44d8d15-r1-4d812712.gif",
+        "frame_times_s": [
+          20.0,
+          20.667,
+          21.333,
+          22.0,
+          22.667,
+          23.333,
+          24.0,
+          24.667,
+          25.333,
+          26.0,
+          26.667,
+          27.333
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 155514,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 20.0,
+        "end_s": 28.0,
+        "revision": 1
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "rejected",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "rejected",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 1920,
+        "source_height": 1080,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/f7038278d44d8d15-24c718b0f7e3a3fb7b01e16affbcd23540351022faa35bb701b83302b6c800f1.mp4",
+      "local_sha256": "24c718b0f7e3a3fb7b01e16affbcd23540351022faa35bb701b83302b6c800f1",
+      "local_start_s": 20.0,
+      "local_duration_s": 8.0,
+      "preview_scope": "broll",
+      "narration": "When someone tries to hide something"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:puvrApk8Vw8",
+      "provider": "youtube",
+      "source_id": "puvrApk8Vw8",
+      "source_url": "https://www.youtube.com/watch?v=puvrApk8Vw8",
+      "title": "How Does Instagram Vanish Mode Work In 2024?",
+      "creator": {
+        "name": "HowToUnleashed",
+        "url": null
+      },
+      "query": "instagram vanish mode secret chat #shorts",
+      "collected_at": "2026-09-17T16:32:16.583124+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 93,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/puvrApk8Vw8",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/puvrApk8Vw8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCc6Cf6oJq8Tp5PI9groFqSQxBrnQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:4WLQCzV8KLk",
+      "provider": "youtube",
+      "source_id": "4WLQCzV8KLk",
+      "source_url": "https://www.youtube.com/watch?v=4WLQCzV8KLk",
+      "title": "How to turn vanish mode on | Instagram vanish chat mode",
+      "creator": {
+        "name": "A R MOIZ",
+        "url": null
+      },
+      "query": "instagram vanish mode secret chat #shorts",
+      "collected_at": "2026-09-17T16:32:16.583157+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 110,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/4WLQCzV8KLk",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/4WLQCzV8KLk/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWEAwVHkZAvuyFUyoAUh0mcDWkdQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:CLCF2Jb6Td0",
+      "provider": "youtube",
+      "source_id": "CLCF2Jb6Td0",
+      "source_url": "https://www.youtube.com/watch?v=CLCF2Jb6Td0",
+      "title": "How to Turn ON/OFF Vanish Mode On Instagram | Instagram Vanish Mode",
+      "creator": {
+        "name": "App Tutor",
+        "url": null
+      },
+      "query": "instagram vanish mode secret chat #shorts",
+      "collected_at": "2026-09-17T16:32:16.583187+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 84,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/CLCF2Jb6Td0",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/CLCF2Jb6Td0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAS6Ji1CZi-w6kH7VrKQHmKHBH4lQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:ociMjAD0VMM",
+      "provider": "youtube",
+      "source_id": "ociMjAD0VMM",
+      "source_url": "https://www.youtube.com/watch?v=ociMjAD0VMM",
+      "title": "How To DM Someone On Instagram That You Don't Know",
+      "creator": {
+        "name": "Trevor Nace",
+        "url": null
+      },
+      "query": "instagram dm tricks nobody knows #shorts",
+      "collected_at": "2026-09-17T16:32:17.951759+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 116,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/ociMjAD0VMM",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/ociMjAD0VMM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCcQJmJYqKhJ4v8ZzczLdJB_EbFDw"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:EREu4veB8Wk",
+      "provider": "youtube",
+      "source_id": "EREu4veB8Wk",
+      "source_url": "https://www.youtube.com/watch?v=EREu4veB8Wk",
+      "title": "How To Read Instagram Messages Without Them Knowing (NO SEEN) [2023]",
+      "creator": {
+        "name": "Digital Guide",
+        "url": null
+      },
+      "query": "instagram dm tricks nobody knows #shorts",
+      "collected_at": "2026-09-17T16:32:17.951875+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 97,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/EREu4veB8Wk",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/EREu4veB8Wk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBFs-qfZs10tUoYXkWiEjjkr-raEA"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:m0BCQM9yqr0",
+      "provider": "youtube",
+      "source_id": "m0BCQM9yqr0",
+      "source_url": "https://www.youtube.com/watch?v=m0BCQM9yqr0",
+      "title": "NOBODY KNOWS  🔥 | Lobby video editing | edit by DANII PLAYS",
+      "creator": {
+        "name": "DANII PLAYS",
+        "url": null
+      },
+      "query": "instagram dm tricks nobody knows #shorts",
+      "collected_at": "2026-09-17T16:32:17.951927+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 47,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/m0BCQM9yqr0",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/m0BCQM9yqr0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFwoODAP&rs=AOn4CLCIFRATuU9gO7MjUk6ToHckabCSAA"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:RY2S4NtIB18",
+      "provider": "youtube",
+      "source_id": "RY2S4NtIB18",
+      "source_url": "https://www.youtube.com/watch?v=RY2S4NtIB18",
+      "title": "Secret-HIDDEN New WhatsApp Tricks NOBODY KNOWS (2023)",
+      "creator": {
+        "name": "ʙɪꜱᴍᴀʀcᴋ ᴛᴇᴄʜɴᴏʟᴏɢʏ ",
+        "url": null
+      },
+      "query": "instagram dm tricks nobody knows #shorts",
+      "collected_at": "2026-09-17T16:32:17.951968+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 49,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/RY2S4NtIB18",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/RY2S4NtIB18/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC9wRnB-7rMce1EcnpHUD5yQ4Re3Q"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:4bwnM8Dqrg4",
+      "provider": "youtube",
+      "source_id": "4bwnM8Dqrg4",
+      "source_url": "https://www.youtube.com/watch?v=4bwnM8Dqrg4",
+      "title": "𝑺𝑯𝑯… 🤫 𝑴𝑶𝑺𝑻 𝑺𝑬𝑪𝑹𝑬𝑻 𝑻𝑰𝑷𝑺 𝑻𝑶 𝑮𝑬𝑻 𝟒𝑲 𝑸𝑼𝑨𝑳𝑰𝑻𝒀! 💎𝑵𝑶𝑩𝑶𝑫𝒀 𝑲𝑵𝑶𝑾𝑺… 👀𝑺𝑨𝑽𝑬 𝑻𝑯𝑰𝑺 𝑩𝑬𝑭𝑶𝑹𝑬 𝑰𝑻 𝑮𝑬𝑻𝑺 𝑳𝑶𝑺𝑻! 🫧📌 #hype ",
+      "creator": {
+        "name": "𝑺𝒍𝒂𝒚𝒑𝒊𝒏𝒌𝒛.ৎ ",
+        "url": null
+      },
+      "query": "instagram dm tricks nobody knows #shorts",
+      "collected_at": "2026-09-17T16:32:17.951999+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 73,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/4bwnM8Dqrg4",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/4bwnM8Dqrg4/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDoCkh_S3iXl1KMP2BeiI3ABp9KnA"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:Km23Qa_XQt4",
+      "provider": "youtube",
+      "source_id": "Km23Qa_XQt4",
+      "source_url": "https://www.youtube.com/watch?v=Km23Qa_XQt4",
+      "title": "Secret nobody knows 🚀#bgmi@JONATHANGAMINGYT",
+      "creator": {
+        "name": "Mr Vishnu Gaming",
+        "url": null
+      },
+      "query": "instagram dm tricks nobody knows #shorts",
+      "collected_at": "2026-09-17T16:32:17.952033+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 65,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/Km23Qa_XQt4",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/Km23Qa_XQt4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDT7hNU8RPqI4crM7KONcHVxpiWiw"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:KDE0UGnQF9w",
+      "provider": "youtube",
+      "source_id": "KDE0UGnQF9w",
+      "source_url": "https://www.youtube.com/watch?v=KDE0UGnQF9w",
+      "title": "YouTube · KDE0UGnQF9w",
+      "creator": {
+        "name": null,
+        "url": null
+      },
+      "query": null,
+      "collected_at": "2026-09-17T16:34:26.650094+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Sheet r1 células 1-7 (30-35s): celular vertical em tela cheia na página instagram.com 'Download Your Information', clique em Download e barra de progresso; a partir da célula 8 (36s) corta pro rosto do youtuber. Aparei antes do rosto."
+      },
+      "media": {
+        "duration_s": null,
+        "width": 480,
+        "height": 854,
+        "fps": 30.0
+      },
+      "preview": {
+        "embed_url": "https://www.youtube-nocookie.com/embed/KDE0UGnQF9w",
+        "seek_mode": "native",
+        "poster_path": "previews/1f32e17bba5c5952-r2-4d812712-poster.jpg",
+        "contact_sheet_path": "previews/1f32e17bba5c5952-r2-4d812712-sheet.jpg",
+        "gif_path": "previews/1f32e17bba5c5952-r2-4d812712.gif",
+        "frame_times_s": [
+          30.0,
+          30.458,
+          30.917,
+          31.375,
+          31.833,
+          32.292,
+          32.75,
+          33.208,
+          33.667,
+          34.125,
+          34.583,
+          35.042
+        ],
+        "sheet_grid": [
+          4,
+          3
+        ],
+        "sheet_labels": true,
+        "config": {
+          "scope": "broll",
+          "mode": "gif",
+          "width": 360,
+          "fps": 8,
+          "colors": 128,
+          "max_mb": 5,
+          "max_seconds": 10,
+          "frames": 12
+        },
+        "warning": null,
+        "gif_bytes": 1027193,
+        "scope": "broll"
+      },
+      "segment": {
+        "start_s": 30.0,
+        "end_s": 35.5,
+        "revision": 2
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "awaiting_approval",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": 480,
+        "source_height": 854,
+        "fit": "native",
+        "transform": "preserve_native"
+      },
+      "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/1f32e17bba5c5952-11df9fce443ccecbd678dad7d6883afb65618849fd98e9c2f2b63ebb7eaa7551.mp4",
+      "local_sha256": "11df9fce443ccecbd678dad7d6883afb65618849fd98e9c2f2b63ebb7eaa7551",
+      "local_start_s": 30.0,
+      "local_duration_s": 10.0,
+      "preview_scope": "broll",
+      "narration": "Even when the other person thinks they deleted everything"
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:YFSWgvi98d8",
+      "provider": "youtube",
+      "source_id": "YFSWgvi98d8",
+      "source_url": "https://www.youtube.com/watch?v=YFSWgvi98d8",
+      "title": "How to Turn On Instagram's Vanish Mode ⬆️ | Instagram Vanish Mode ⬆️",
+      "creator": {
+        "name": "Piyush Rajput",
+        "url": null
+      },
+      "query": "Instagram official vanish mode introducing",
+      "collected_at": "2026-09-17T16:34:27.990260+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 61,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/YFSWgvi98d8",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/YFSWgvi98d8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB5kfA10ToQoGjzCXQtJE6IQ-Szeg"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:vcXOM5cDoyM",
+      "provider": "youtube",
+      "source_id": "vcXOM5cDoyM",
+      "source_url": "https://www.youtube.com/watch?v=vcXOM5cDoyM",
+      "title": "How To Turn ON Vanish Mode On Instagram",
+      "creator": {
+        "name": "Techmates",
+        "url": null
+      },
+      "query": "Instagram official vanish mode introducing",
+      "collected_at": "2026-09-17T16:34:27.990297+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 81,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/vcXOM5cDoyM",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/vcXOM5cDoyM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA9TIAESU8cvtrnCZrtdbNaUQduUQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:7XbvL5VSqL8",
+      "provider": "youtube",
+      "source_id": "7XbvL5VSqL8",
+      "source_url": "https://www.youtube.com/watch?v=7XbvL5VSqL8",
+      "title": "How to use Vanish Mode in Instagram | Instagram Vanish Mode",
+      "creator": {
+        "name": "Techno Window",
+        "url": null
+      },
+      "query": "Instagram official vanish mode introducing",
+      "collected_at": "2026-09-17T16:34:27.990328+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 115,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/7XbvL5VSqL8",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/7XbvL5VSqL8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAKtNWCky_hpXnbrxBXnkENmH5xQg"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:7zfs0a786tU",
+      "provider": "youtube",
+      "source_id": "7zfs0a786tU",
+      "source_url": "https://www.youtube.com/watch?v=7zfs0a786tU",
+      "title": "How to Use Instagram DM Request Accept Feature",
+      "creator": {
+        "name": "Tekwiq",
+        "url": null
+      },
+      "query": "Instagram official new DM features announcement",
+      "collected_at": "2026-09-17T16:34:29.544866+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 63,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/7zfs0a786tU",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/7zfs0a786tU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAo__xmXtbi0CP5THpeUnZ6T7WheA"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:X09NozRs-iQ",
+      "provider": "youtube",
+      "source_id": "X09NozRs-iQ",
+      "source_url": "https://www.youtube.com/watch?v=X09NozRs-iQ",
+      "title": "Instagram DM features | Instagram messaging features | chit chat | Instagram official announcement",
+      "creator": {
+        "name": "Scrolls And Taps",
+        "url": null
+      },
+      "query": "Instagram official new DM features announcement",
+      "collected_at": "2026-09-17T16:34:29.544959+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 314,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/X09NozRs-iQ",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/X09NozRs-iQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBlAOAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLAcgNhcHOxts80fptgnTCBX4J6JkQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:_HcHCqS-Mp0",
+      "provider": "youtube",
+      "source_id": "_HcHCqS-Mp0",
+      "source_url": "https://www.youtube.com/watch?v=_HcHCqS-Mp0",
+      "title": "5-24-25: Social Media News: Instagram DM Features, Quick Follow Options, and AI Insights from Ash...",
+      "creator": {
+        "name": "DanielHillMedia",
+        "url": null
+      },
+      "query": "Instagram official new DM features announcement",
+      "collected_at": "2026-09-17T16:34:29.545001+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 591,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/_HcHCqS-Mp0",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/_HcHCqS-Mp0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBtgiAArgIigIMCAAQARh_ICIoWjAP&rs=AOn4CLCw8JFWaJK1b241Fw2b8tt5MhKAvQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:Mnq9swZ3-98",
+      "provider": "youtube",
+      "source_id": "Mnq9swZ3-98",
+      "source_url": "https://www.youtube.com/watch?v=Mnq9swZ3-98",
+      "title": "5-24-25: Social Media News: Instagram DM Features, Quick Follow Options, and AI Insights from Ash...",
+      "creator": {
+        "name": "DanielHillMedia",
+        "url": null
+      },
+      "query": "Instagram official new DM features announcement",
+      "collected_at": "2026-09-17T16:34:29.545039+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 681,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/Mnq9swZ3-98",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/Mnq9swZ3-98/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBtgiAArgIigIMCAAQARh_ICIoWzAP&rs=AOn4CLC0oZpSBvdshsFb3MF6g2kffD2hdw"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:PGp3kqZGyMU",
+      "provider": "youtube",
+      "source_id": "PGp3kqZGyMU",
+      "source_url": "https://www.youtube.com/watch?v=PGp3kqZGyMU",
+      "title": "11-3-24 - Instagram announces changes for the DM Inbox and YouTube Shorts Get Product Tagging",
+      "creator": {
+        "name": "DanielHillMedia",
+        "url": null
+      },
+      "query": "Instagram official new DM features announcement",
+      "collected_at": "2026-09-17T16:34:29.545074+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 409,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/PGp3kqZGyMU",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/PGp3kqZGyMU/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBtgiAArgIigIMCAAQARh_ICIoWzAP&rs=AOn4CLC3SkwHfLTWuHlbYZgRZA10pXv93g"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:uo4ZoUF2wy0",
+      "provider": "youtube",
+      "source_id": "uo4ZoUF2wy0",
+      "source_url": "https://www.youtube.com/watch?v=uo4ZoUF2wy0",
+      "title": "Instagram BANNED Me… Then I Sent Meta This Message",
+      "creator": {
+        "name": "Infinite Waters (Diving Deep)",
+        "url": null
+      },
+      "query": "Meta Instagram messaging update official video",
+      "collected_at": "2026-09-17T16:34:31.550196+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 1015,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/uo4ZoUF2wy0",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/uo4ZoUF2wy0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAIoPLVGP5xoLxqXSdfNsfUquwQpw"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:-FSlWd3yc-4",
+      "provider": "youtube",
+      "source_id": "-FSlWd3yc-4",
+      "source_url": "https://www.youtube.com/watch?v=-FSlWd3yc-4",
+      "title": "WhatsApp Service Messages Are No Longer Free! Meta’s Major Pricing Update",
+      "creator": {
+        "name": "Lakshit Ukani | AI Automation and ChatSyncs",
+        "url": null
+      },
+      "query": "Meta Instagram messaging update official video",
+      "collected_at": "2026-09-17T16:34:31.550294+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 855,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/-FSlWd3yc-4",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/-FSlWd3yc-4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCgVJ2ZBbFVJ8KGKoX6Bh8QMRDCLQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:9DhrLW8uHTk",
+      "provider": "youtube",
+      "source_id": "9DhrLW8uHTk",
+      "source_url": "https://www.youtube.com/watch?v=9DhrLW8uHTk",
+      "title": "𝐌𝐞𝐭𝐚 𝐄𝐧𝐝𝐬 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 𝐃𝐌 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐢𝐨𝐧 𝐨𝐧 𝐌𝐚𝐲 𝟖, 𝟐𝟎𝟐𝟔 | 𝐏𝐫𝐢𝐯𝐚𝐜𝐲 𝐒𝐡𝐨𝐜𝐤 & 𝐖𝐡𝐚𝐭 𝐔𝐬𝐞𝐫𝐬 𝐌𝐮𝐬𝐭 𝐃𝐨",
+      "creator": {
+        "name": "SG Animate",
+        "url": null
+      },
+      "query": "Meta Instagram messaging update official video",
+      "collected_at": "2026-09-17T16:34:31.550335+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 288,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/9DhrLW8uHTk",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/9DhrLW8uHTk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBIL2bk2KbztxXtNYrBn4m2VPFq4g"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    },
+    {
+      "schema_version": 1,
+      "id": "youtube:wiPhAZPszg0",
+      "provider": "youtube",
+      "source_id": "wiPhAZPszg0",
+      "source_url": "https://www.youtube.com/watch?v=wiPhAZPszg0",
+      "title": "AI CEO Humiliated as Mark Zuckerberg Responds to His Threat",
+      "creator": {
+        "name": "The Rubin Report",
+        "url": null
+      },
+      "query": "Meta Instagram messaging update official video",
+      "collected_at": "2026-09-17T16:34:31.550372+00:00",
+      "match": {
+        "kind": "literal",
+        "reason": "Candidato de busca: correspondência visual deve ser revisada."
+      },
+      "media": {
+        "duration_s": 4060,
+        "width": null,
+        "height": null,
+        "fps": null
+      },
+      "preview": {
+        "poster_path": null,
+        "contact_sheet_path": null,
+        "embed_url": "https://www.youtube-nocookie.com/embed/wiPhAZPszg0",
+        "seek_mode": "native",
+        "poster_url": "https://i.ytimg.com/vi/wiPhAZPszg0/hq720_custom_1.jpg?sqp=CIirsNUG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbVubgH04oV9kuy1Fa1x21sPf0KQ"
+      },
+      "segment": {
+        "start_s": null,
+        "end_s": null,
+        "revision": 0
+      },
+      "rights": {
+        "status": "unknown",
+        "license_name": null,
+        "license_url": null,
+        "evidence": [],
+        "attribution": null
+      },
+      "acquisition": {
+        "status": "available",
+        "method": "yt-dlp",
+        "evidence": []
+      },
+      "approval": {
+        "status": "pending",
+        "by": null,
+        "at": null,
+        "revision": null
+      },
+      "output": {
+        "path": null,
+        "sha256": null,
+        "verified": false
+      },
+      "state": "candidate",
+      "errors": [],
+      "format": {
+        "target": "native",
+        "source_width": null,
+        "source_height": null,
+        "fit": "unknown",
+        "transform": "preserve_native"
+      }
+    }
+  ],
+  "project_id": "90c4846d-e3e3-48f8-98f3-05326d626fac"
+}

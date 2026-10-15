@@ -1,0 +1,31 @@
+✔ Done in 96s.
+✔ Saved 1 file.
+{
+  "id": "fc2d9095f4984f84a922a50dc18c9018",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "A vertical 9:16 UGC-style video frame shot on an iPhone propped on a tripod across the room. MEDIUM SHOT - the subject's head occupies only the upper third of the frame, torso and lap visible, clear space above the head and on both sides. Camera at TRUE EYE LEVEL, perfectly level, NOT tilted.\n\nSUBJECT: A 27-year-old Brazilian man with light-tan skin, brown eyes, messy short dark hair, patchy light stubble along the jaw. Sitting relaxed on a sofa, leaning back slightly, looking directly into the lens. Expression is calm, serious and low-energy - the face of someone quietly telling you something you need to hear. Mouth relaxed and slightly parted mid-sentence, not smiling.\n\nWARDROBE: faded olive-green crew-neck t-shirt.\n\nSKIN: Visible pores across the T-zone, faint expression lines, natural oil catching light on the forehead. Light shadow under the eyes. No filter, no foundation, no retouching.\n\nFRAMING: Wide enough to show chest, shoulders and the top of the lap. Hands rest below the frame edge and are NOT visible.\n\nCAMERA: Native phone lens, 26mm equivalent, mild barrel softness at the edges.\n\nLIGHTING: BRIGHT and AIRY. Strong soft daylight from a large window camera-left filling the whole room. Overall exposure light and clean, not moody, not dark. Gentle natural falloff. Subtle ISO grain 400-600.\n\nBACKGROUND: A bright bedroom-office with a plain white wall, a desk edge and a monitor corner far behind. Softly out of focus. Lived-in but tidy. Plenty of visible wall around the subject.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/3f2ac39c-df58-40ab-88b1-792f1784efec.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/gram-detect/criativos/lote-5-avatares/base-h1-jovem-27.png"
+  ],
+  "elapsed_ms": 98407,
+  "raw": {
+    "id": "fc2d9095f4984f84a922a50dc18c9018",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/3f2ac39c-df58-40ab-88b1-792f1784efec.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/fc2d9095f4984f84a922a50dc18c9018/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-23T18:36:25.149469085Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 93851
+    }
+  }
+}

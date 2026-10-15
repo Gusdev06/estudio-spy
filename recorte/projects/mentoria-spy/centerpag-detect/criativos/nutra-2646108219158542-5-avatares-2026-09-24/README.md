@@ -1,0 +1,39 @@
+# Nutra 2646108219158542 — cinco variações de avatar
+
+Entregues em 24/09/2026 após aprovação explícita “OK” das cinco bases e US$ 4,50.
+
+Cinco homens fictícios, com descrições de casting aprovadas: negro, leste-asiático, sul-asiático, árabe e branco. Os rótulos descrevem o briefing de geração, não uma inferência sobre pessoas reais. Camiseta verde-escura, óculos, cenário e microfone mantidos.
+
+## Arquivos
+
+- **V01 Negro**: `v01-negro/v01-negro-nutra-2646108219158542.mp4` — 8.65 MB.
+- **V02 Leste-asiático**: `v02-leste-asiatico/v02-leste-asiatico-nutra-2646108219158542.mp4` — 8.28 MB.
+- **V03 Sul-asiático**: `v03-sul-asiatico/v03-sul-asiatico-nutra-2646108219158542.mp4` — 9.50 MB.
+- **V04 Árabe**: `v04-arabe/v04-arabe-nutra-2646108219158542.mp4` — 8.58 MB.
+- **V05 Branco**: `v05-branco/v05-branco-nutra-2646108219158542.mp4` — 8.97 MB.
+
+`nutra-5-variacoes.zip` contém os cinco MP4 e uma nota de entrega. `previa-final.jpg` mostra frames dos cinco vídeos efetivamente renderizados. Bases, prompts, pedidos, resultados, masters e evidências permanecem nas pastas individuais.
+
+## Edição e validação
+
+- Referência: versão 1 do anúncio de catálogo https://www.facebook.com/ads/library/?id=2646108219158542 . Fonte baixada em 24/09/2026.
+- Mesma montagem da variação anterior aprovada: hook frames 0–219, novo avatar frames 220–1289 (7,333–43s), contagem e cauda a partir do frame 1290.
+- Cada entrega: H.264 High, yuv420p, 360×640, 30fps, 8.141 frames, aproximadamente 4min31s; decodificação completa sem erros.
+- Faixa AAC original idêntica por SHA-256 nas cinco entregas e nos cinco masters.
+- Hook e cauda pixel a pixel idênticos ao original nos masters sem perdas, verificados por hash de cada frame. Os MP4 compactos passam por recompressão de vídeo.
+- Mesmas caixas de texto, conteúdo, posições e tempos: camada alfa extraída do controle, com entrada de 7 frames. Partículas claras preservadas fora do rosto; grão/partículas sobre o rosto não são idênticos.
+- Inspeção visual amostral: dez frames por variação, nove no trecho do avatar e um no corte para a contagem. Identidades, óculos, roupa e cenário consistentes; pequenos gestos inferiores sem oclusão do rosto nas amostras. A atuação é nova. Sincronia labial não foi medida por um sistema objetivo.
+- Evidência individual: `conferencia/validacao.json`, `contato-final.jpg` e frames PNG. Verificação implementada em `verificar-lote.py`.
+
+## Geração e cobrança
+
+- Imagens aprovadas feitas pela ferramenta nativa do Codex; sem custo de imagem WaveSpeed atribuído.
+- Animação: `pruna-ai/p-video/avatar`, 720p, áudio de 35,667s do original; preço confirmado de US$ 0,90 por variação.
+- Cinco gerações concluídas e uma tentativa falha, integralmente estornada. Bruto US$ 5,40 menos estorno US$ 0,90 = **US$ 4,50 líquidos**, comprovados pelos registros dos seis IDs em `custo.json`.
+- Tentativa falha: `f6a951f9f98b4bcd9f2a72033c5ce707`; estorno verificado antes de refazer V02. A repetição permaneceu dentro do orçamento aprovado.
+- Quatro processos perderam a conexão na consulta/download; os resultados foram recuperados pelos IDs existentes, sem novas gerações para essas falhas de rede. Histórico preservado em `video-result.json` e `recovery-result.json`.
+- Áudio não foi regravado, nenhuma voz nova foi criada, não houve publicação em campanha. Performance não verificada.
+
+## Cópias na pasta de entrega
+
+A pedido de Gusta, os cinco finais foram copiados para `projects/mentoria-spy/CRIATIVOS-PRONTOS/`, números 122–126. SHA-256 das cópias conferido contra os finais. Originais preservados. Mapeamento no `manifest.json` e no `LEIA-ME.md` do destino.

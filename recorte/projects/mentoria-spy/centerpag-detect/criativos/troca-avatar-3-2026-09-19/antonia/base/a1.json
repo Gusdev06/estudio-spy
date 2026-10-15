@@ -1,0 +1,29 @@
+{
+  "id": "fe79940e3f964363a48048699922209f",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same radio studio scene: dark broadcast studio with purple and magenta LED accent lighting, a professional broadcast microphone on a boom arm in front of her, a mixing desk, a water bottle, wide 16:9 landscape framing from a fixed studio camera. REPLACE the woman with a DIFFERENT woman: a woman about 32 years old with light brown skin and dark wavy shoulder-length hair, wearing a black long-sleeve top, small hoop earrings. Same seated posture at the desk, facing the camera, mouth closed, relaxed talk-show expression. Remove every logo, brand name and on-screen text; plain studio panels instead. Photorealistic broadcast video still, natural skin texture, no text, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/c947223d-0be0-44c7-9bb6-65a7f2d33f33.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/troca-avatar-3-2026-09-19/antonia/base/a1.png"
+  ],
+  "elapsed_ms": 45066,
+  "raw": {
+    "id": "fe79940e3f964363a48048699922209f",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/c947223d-0be0-44c7-9bb6-65a7f2d33f33.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/fe79940e3f964363a48048699922209f/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-19T02:34:15.152363859Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 40386
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_nota": "Gancho = a linha [Intro - spoken] da letra.txt + a faixa queimada nos primeiros 5-8 s. Molde: gancho de confissao em 1a pessoa (wiki/trafego-criativos/wiki/tecnicas/gancho-de-confissao-em-primeira-pessoa.md): 1a pessoa, termina em '...', nao nomeia o produto nem acusa. A letra.txt usa 'ultima-a-saber'. Trocar por outro gancho = trocar so a linha do Intro e reconferir com wc -c (limite 3000; a letra atual tem ~2.373). Performance: nenhuma verificada, sao hipoteses para teste.",
+  "ultima-a-saber": {
+    "headline": "I was the last one at that table to know...",
+    "primeira_fala": "I was the last one at that table to know...",
+    "angulo": "confissao em 1a pessoa + loop aberto (molde dos ganchos do Spy Gram que gastaram); planta o lugar da humilhacao e da vindicacao",
+    "formato": "drama-song-vsl"
+  },
+  "go-on-check": {
+    "headline": "He slid his phone to me and said 'go on, check'...",
+    "primeira_fala": "He slid his phone across the table and said, 'Go on, check'...",
+    "angulo": "humilhacao publica / desafio do parceiro; abre direto na cena da sonda (B05) e ja carrega o consentimento dentro da historia",
+    "formato": "drama-song-vsl"
+  },
+  "achei-que-a-louca-era-eu": {
+    "headline": "For months I really thought the crazy one was me...",
+    "primeira_fala": "For months I really thought the crazy one was me...",
+    "angulo": "duvida de si / ser chamada de ciumenta; identificacao com quem ja ouviu 'you're just jealous', sem acusar ninguem na abertura",
+    "formato": "drama-song-vsl"
+  }
+}

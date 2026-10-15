@@ -1,0 +1,10 @@
+{
+ "prompt": "Image 1 is the character sheet of Maya BEFORE. Same woman, same face, same beauty mark and gold hoops, only hair, outfit, makeup and posture change. Keep the exact same layout: Character turnaround sheet in a single image, the same character shown four times on a plain flat light-gray background (#C8C8C8), evenly spaced left to right, no text, no labels, no props, no floor shadow clutter:\n1) head-and-shoulders close-up facing the camera, neutral expression;\n2) full body, front view, standing relaxed, arms at the sides;\n3) full body, three-quarter view facing left;\n4) full body, three-quarter view facing right.\nCharacter: Maya, a 34-year-old Latina woman with warm light-brown skin, shoulder-length wavy dark-brown hair worn down in glossy soft waves, bright hazel eyes, a small beauty mark above the left corner of her upper lip, small gold hoop earrings, subtle burnt-red lipstick, wearing an emerald-green wrap blouse and cream tailored trousers, upright confident posture, chin slightly raised.\n3D animated feature film style, stylized proportions, soft subsurface skin, large expressive eyes, sculpted hair strands, soft even studio lighting, high detail, consistent outfit and features across all four views.",
+ "images": [
+  "https://d2h7xmz5gqybh9.cloudfront.net/output/7a1d9670-7626-4077-8c2d-491d1c668562.png"
+ ],
+ "aspect_ratio": "16:9",
+ "resolution": "1k",
+ "quality": "medium",
+ "output_format": "png"
+}

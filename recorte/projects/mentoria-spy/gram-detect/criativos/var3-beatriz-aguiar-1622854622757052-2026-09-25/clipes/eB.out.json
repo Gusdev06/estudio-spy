@@ -1,0 +1,29 @@
+{
+  "id": "81802e5b7dfa48e4b5361942ccaae39c",
+  "model": "bytedance/seedance-v1-lite-i2v-720p",
+  "prompt": "Handheld amateur phone video, slightly shaky. The young woman with long straight honey-blonde hair in an oversized light-blue denim shirt leans back against the edge of the open doorway, holding her phone, looking up at the ceiling and ranting dramatically, shaking her head and moving her free hand, comedic skit energy, the camera stays at the same wide distance. Natural indoor light, realistic.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/5250a7d6-d46b-4f40-af92-6f228de7255f-u1_db3d7c83-8b40-4be1-86f1-0f8b1c57b817.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/var3-beatriz-aguiar-1622854622757052-2026-09-25/clipes/eB.mp4"
+  ],
+  "elapsed_ms": 47981,
+  "raw": {
+    "id": "81802e5b7dfa48e4b5361942ccaae39c",
+    "model": "bytedance/seedance-v1-lite-i2v-720p",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/5250a7d6-d46b-4f40-af92-6f228de7255f-u1_db3d7c83-8b40-4be1-86f1-0f8b1c57b817.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/81802e5b7dfa48e4b5361942ccaae39c/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:28:19.447694404Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 44819
+    }
+  }
+}

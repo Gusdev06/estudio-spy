@@ -1,0 +1,29 @@
+{
+  "id": "4b679b2f6bdd42378dcad37f7b64c357",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot, 3D animated feature film style. Maya opens her eyes and her reflection is sharp; she pulls out her hair tie with both hands and her hair falls loose onto her shoulders; she straightens her back, chin up; she switches off the light and walks out through the door into warm hallway light. Characters: Maya (Latina woman, messy low bun, heather-gray cardigan, small gold hoop earrings, small beauty mark above her lip). Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/62fa9554-4273-40c0-8380-d59f25b84151-u2_7b3c4a02-aba6-4a31-acda-249e688aa3df.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B16.mp4"
+  ],
+  "elapsed_ms": 45016,
+  "raw": {
+    "id": "4b679b2f6bdd42378dcad37f7b64c357",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/62fa9554-4273-40c0-8380-d59f25b84151-u2_7b3c4a02-aba6-4a31-acda-249e688aa3df.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/4b679b2f6bdd42378dcad37f7b64c357/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:28:50.53634987Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 42330
+    }
+  }
+}

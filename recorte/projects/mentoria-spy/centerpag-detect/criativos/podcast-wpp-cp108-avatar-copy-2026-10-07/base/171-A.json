@@ -1,0 +1,29 @@
+{
+  "id": "42589ae5152046939bac9ae8efb53414",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same podcast studio, same camera position and framing, same warm daylight, same cream sofa and background with a light curtain and green plants, same black podcast microphone on a boom arm in front of her. Keep the wide 16:9 landscape framing exactly as in the image. REPLACE the woman with a DIFFERENT woman: a Persian woman about 36 years old with olive skin, long straight dark brown hair, thick dark eyebrows, a thin gold necklace, wearing a plain black blazer over a white top. She sits in the same position, same posture, same distance from the microphone, head and upper chest visible, mouth closed, looking toward the person she is talking to off-camera. Photorealistic video still, natural skin texture with visible pores, no retouching, ordinary person, not a model, no text, no logos, no watermark.",
+  "outputs": [
+    "https://cdn.cachegalaxy.com/output/1d3dd437-fb90-4fca-8869-7bd7a28a9e80.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-cp108-avatar-copy-2026-10-07/base/171-A.png"
+  ],
+  "elapsed_ms": 82516,
+  "raw": {
+    "id": "42589ae5152046939bac9ae8efb53414",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://cdn.cachegalaxy.com/output/1d3dd437-fb90-4fca-8869-7bd7a28a9e80.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/42589ae5152046939bac9ae8efb53414/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-07T14:36:06.118124468Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 77928
+    }
+  }
+}

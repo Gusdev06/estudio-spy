@@ -1,0 +1,6 @@
+{
+ "original": "https://www.instagram.com/reel/DdoqNVChINJ/",
+ "roupa": "regata canelada azul-marinho, argolas prateadas, rabo baixo",
+ "pipeline": "yt-dlp -> frame 1,5 s -> nano-banana-2.1/edit 2k [frame,01,05] -> seedance-2.0/video-edit 720p ref [bia-na-cena,01,05] -> legenda.py + áudio original",
+ "custo_usd_estimado": 2.5
+}

@@ -1,0 +1,59 @@
+{
+  "original": "https://www.instagram.com/reel/Deaen6FBTXu/",
+  "formato": "8s sem fala, rotina de maquiagem, musica + legenda fixa; legenda recriada em legenda.png, audio original reaplicado",
+  "avatar": {
+    "modelo": "openai/gpt-image-2.5-sunburst/edit",
+    "base": "original/frame0.jpg",
+    "custo_usd": 0.165,
+    "job": "54dcdeee03e0452584b82142e46e8a1e"
+  },
+  "videos": [
+    {
+      "arquivo": "final/kling-i2v.mp4",
+      "modelo": "kwaivgi/kling-v3.0-std/image-to-video",
+      "custo_usd": 0.672,
+      "job": "c7eca9d851d3473b91ad5416289240dd",
+      "nota": "mais fraco: base em manchas amarelas, esponja some"
+    },
+    {
+      "arquivo": "final/kling-motion.mp4",
+      "modelo": "kwaivgi/kling-v3.0-std/motion-control",
+      "custo_usd": 1.134,
+      "job": "d2d1ea0544434fc098b5cbf5b4790f5a",
+      "nota": "referencia precisou ser H.264 (VP9 falha); esponja vira disco de algodao"
+    },
+    {
+      "arquivo": "final/seedance-i2v.mp4",
+      "modelo": "bytedance/seedance-2.0/image-to-video",
+      "custo_usd": 1.728,
+      "job": "b389ec2801a244b6a66cb270128c291e"
+    },
+    {
+      "arquivo": "final/seedance-edit.mp4",
+      "modelo": "bytedance/seedance-2.0/video-edit",
+      "custo_usd": 2.43,
+      "job": "acff77b66abb47128fb3317e201719f5",
+      "nota": "fiel a coreografia"
+    },
+    {
+      "arquivo": "final/gemini-i2v.mp4",
+      "modelo": "google/gemini-omni-1.1-flash/image-to-video",
+      "custo_usd": 0.8,
+      "job": "8fb840217f4245a8bda11f032df64404"
+    },
+    {
+      "arquivo": "final/minimax-h3-edit.mp4",
+      "modelo": "wavespeed-ai/minimax-h3/video-edit 768p",
+      "custo_usd": 0.86,
+      "job": "88b5989b84e54393839ad2af67bdf202",
+      "nota": "tao fiel quanto o seedance-edit por 1/3 do preco"
+    },
+    {
+      "arquivo": "final/minimax-h3-edit-1080p.mp4",
+      "modelo": "wavespeed-ai/minimax-h3/video-edit 1080p (ref 1080 H.264)",
+      "custo_usd": 1.71,
+      "nota": "mais nitido que o 768p, mesmo atraso de ~1s na coreografia vs original"
+    }
+  ],
+  "custo_total_usd": 9.499
+}

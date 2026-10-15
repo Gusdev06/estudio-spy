@@ -1,0 +1,28 @@
+{
+  "id": "683608f177ea4b3993f06c8bcdae260b",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/b00b14d8-32be-4608-8c15-761ff7075e74.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/variacoes-30-2026-09-19/luiza/clipes/l08.mp4"
+  ],
+  "elapsed_ms": 183506,
+  "raw": {
+    "id": "683608f177ea4b3993f06c8bcdae260b",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/b00b14d8-32be-4608-8c15-761ff7075e74.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/683608f177ea4b3993f06c8bcdae260b/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-20T03:21:49.61443076Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 176253
+    }
+  }
+}

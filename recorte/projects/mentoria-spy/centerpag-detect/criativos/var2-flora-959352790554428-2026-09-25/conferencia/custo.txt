@@ -1,0 +1,7 @@
+0.533
+A.json 0.067
+B.json 0.067
+a1-s7.out.json 0.100
+a2-s7.out.json 0.075
+a3-s7.out.json 0.125
+b-s7.out.json 0.100

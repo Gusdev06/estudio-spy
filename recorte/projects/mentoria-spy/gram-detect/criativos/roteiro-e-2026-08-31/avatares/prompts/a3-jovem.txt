@@ -1,0 +1,17 @@
+Generate an image with the following prompt, dont change it(DO NOT CHANGE THIS PROMPT, IT'S ALREADY AN IMPROVED PROMPT) -
+
+subject: a Black woman in her early twenties, long box braids pulled back, small stud earrings, minimal makeup, wearing an oversized grey hoodie, unsettled expression
+
+pose and framing: sitting on the floor against the side of a bed, holding the phone at arm's length in front of her face as if recording a selfie video, looking directly into the lens, framed from mid-chest up, her face in the upper-middle third of the frame
+
+scene: an ordinary small bedroom at night, unmade bed edge and a cluttered nightstand softly out of focus behind her, a phone charger cable visible, string lights off, one warm lamp on the right
+
+lighting: warm lamp light from one side of the face, cool ambient from a window on the other, uneven and a little harsh, the way a phone camera renders a room at night
+
+photo quality and vibe: non-studio lighting, no oversharpening, real light from the location, iphone front camera video still, imperfect photo quality and raw quality for realism, slight motion blur, mild grain in the shadows, a random real moment rather than a posed shot, make sure the lighting is natural and matches the background
+
+composition note: keep the lower quarter of the frame simple and uncluttered, nothing important in that band
+
+aspect ratio: 9:16
+
+Avoid next - any text, any letters, any caption, any watermark, any logo, studio lighting, ring light catchlight, beauty retouching, plastic skin, excessive yellow in the photo, too sharp or overly sharpened, too many highlights or glare on the face.

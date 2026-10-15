@@ -1,0 +1,29 @@
+{
+  "id": "6cb91d8aa2e14417ad57b246d137432c",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Character turnaround sheet in a single image, the same character shown four times on a plain flat light-gray background (#C8C8C8), evenly spaced left to right, no text, no labels, no props, no floor shadow clutter:\n1) head-and-shoulders close-up facing the camera, neutral expression;\n2) full body, front view, standing relaxed, arms at the sides;\n3) full body, three-quarter view facing left;\n4) full body, three-quarter view facing right.\nCharacter: Jess, a 33-year-old white woman with fair freckled skin, long wavy copper-auburn hair, green eyes, pearl stud earrings, a wide friendly smile, wearing a blush-pink boat-neck knit sweater and a cream midi skirt.\n3D animated feature film style, stylized proportions, soft subsurface skin, large expressive eyes, sculpted hair strands, soft even studio lighting, high detail, consistent outfit and features across all four views.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/6dfa28dc-473f-4d50-8925-9e189ee514f7.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/fichas/jess.png"
+  ],
+  "elapsed_ms": 49445,
+  "raw": {
+    "id": "6cb91d8aa2e14417ad57b246d137432c",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/6dfa28dc-473f-4d50-8925-9e189ee514f7.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/6cb91d8aa2e14417ad57b246d137432c/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:17:43.462655843Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 45927
+    }
+  }
+}

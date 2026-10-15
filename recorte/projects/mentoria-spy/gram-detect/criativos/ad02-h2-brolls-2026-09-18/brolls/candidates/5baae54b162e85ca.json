@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "youtube:rDKkUrKpaL0",
+  "provider": "youtube",
+  "source_id": "rDKkUrKpaL0",
+  "source_url": "https://www.youtube.com/watch?v=rDKkUrKpaL0",
+  "title": "How to See Hidden Message Requests on Instagram",
+  "creator": {
+    "name": "How To Social",
+    "url": null
+  },
+  "query": "instagram hidden message requests #shorts",
+  "collected_at": "2026-09-17T16:32:11.347535+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "1ª rodada: janela exploratória, checando se é vertical"
+  },
+  "media": {
+    "duration_s": 32,
+    "width": 1920,
+    "height": 1080,
+    "fps": 59.94005994005994
+  },
+  "preview": {
+    "embed_url": "https://www.youtube-nocookie.com/embed/rDKkUrKpaL0",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/rDKkUrKpaL0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCz14-S3ipmNi0U7L7oYclJs5eN1g",
+    "poster_path": "previews/5baae54b162e85ca-r1-4d812712-poster.jpg",
+    "contact_sheet_path": "previews/5baae54b162e85ca-r1-4d812712-sheet.jpg",
+    "gif_path": "previews/5baae54b162e85ca-r1-4d812712.gif",
+    "frame_times_s": [
+      10.0,
+      10.667,
+      11.333,
+      12.0,
+      12.667,
+      13.333,
+      14.0,
+      14.667,
+      15.333,
+      16.0,
+      16.667,
+      17.333
+    ],
+    "sheet_grid": [
+      4,
+      3
+    ],
+    "sheet_labels": true,
+    "config": {
+      "scope": "broll",
+      "mode": "gif",
+      "width": 360,
+      "fps": 8,
+      "colors": 128,
+      "max_mb": 5,
+      "max_seconds": 10,
+      "frames": 12
+    },
+    "warning": null,
+    "gif_bytes": 165150,
+    "scope": "broll"
+  },
+  "segment": {
+    "start_s": 10.0,
+    "end_s": 18.0,
+    "revision": 1
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "rejected",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "rejected",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": 1920,
+    "source_height": 1080,
+    "fit": "native",
+    "transform": "preserve_native"
+  },
+  "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/5baae54b162e85ca-3df83a859db533d98598e249ff8fcc25fb3255f7e28bca4b21917080ded3f627.mp4",
+  "local_sha256": "3df83a859db533d98598e249ff8fcc25fb3255f7e28bca4b21917080ded3f627",
+  "local_start_s": 10.0,
+  "local_duration_s": 8.025,
+  "preview_scope": "broll",
+  "narration": "But hardly anyone knows where to look"
+}

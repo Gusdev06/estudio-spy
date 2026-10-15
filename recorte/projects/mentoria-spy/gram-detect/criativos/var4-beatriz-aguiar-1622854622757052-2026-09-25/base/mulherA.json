@@ -1,0 +1,29 @@
+{
+  "id": "5cbbe2d260ca4d02be992545945e15e0",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Vertical 9:16 handheld smartphone video still, same camera position, same framing, same pose and same size in frame as the image: a woman standing in front of a closed door, holding her phone out in one hand, the other arm moving, mouth open mid-shout, annoyed and dramatic expression. REPLACE the woman with a DIFFERENT woman: a Black woman about 24 years old with deep-brown skin and a short rounded natural afro, small gold hoop earrings, wearing an oversized plain mustard-yellow t-shirt and black joggers. REPLACE the place with a DIFFERENT place: a narrow apartment hallway with light-grey concrete-textured walls and a plain black-painted metal-frame door, a small potted snake plant on the floor, cool white ceiling light. She is the only person in the image. No text, no captions, no logos, no print on clothes, no watermark. Photorealistic amateur phone footage look, natural skin texture, ordinary person, slight motion softness.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/93cf74f6-b0fe-4fe6-a03c-e96cbaaa5e5c.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/var4-beatriz-aguiar-1622854622757052-2026-09-25/base/mulherA.png"
+  ],
+  "elapsed_ms": 58614,
+  "raw": {
+    "id": "5cbbe2d260ca4d02be992545945e15e0",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/93cf74f6-b0fe-4fe6-a03c-e96cbaaa5e5c.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/5cbbe2d260ca4d02be992545945e15e0/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:21:06.437163923Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 55953
+    }
+  }
+}

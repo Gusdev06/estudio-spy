@@ -1,0 +1,28 @@
+{
+  "id": "6b47ebea15294a48ad1c50319effde98",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/249bf3e2-b9db-4818-83c5-62c35148ad8b.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-wpp01-clone-3-ganchos-2026-09-11/clipes/talking-head-H2.mp4"
+  ],
+  "elapsed_ms": 70694,
+  "raw": {
+    "id": "6b47ebea15294a48ad1c50319effde98",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/249bf3e2-b9db-4818-83c5-62c35148ad8b.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/6b47ebea15294a48ad1c50319effde98/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-10T18:58:48.568872689Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 64749
+    }
+  }
+}

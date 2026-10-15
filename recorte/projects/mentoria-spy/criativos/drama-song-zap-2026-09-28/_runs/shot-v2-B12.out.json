@@ -1,0 +1,29 @@
+{
+  "id": "ac11690c4ca9439eaa18865fb7635a3b",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Image 1 is the character sheet for Nora. Image 2 is the character sheet for Maya (before). Keep their faces, hair, outfits and signature details exactly as in the sheets (Nora: chin-length dark bob with one silver-gray streak at the front, chambray shirt, reading glasses on the collar, gold bangles; Maya: beauty mark above the left corner of her upper lip, small gold hoops, gray cardigan, messy low bun).\nA 2x2 grid storyboard in a single image, four sequential moments of the same continuous shot, read left-to-right, top-to-bottom. Thin white gutters between panels. No text, no captions, no panel numbers.\nSetting (same in all four panels unless stated): the same kitchen at night, the sisters at a small kitchen table, warm pendant light.\nCharacters: Nora, a 41-year-old Latina woman with warm light-brown skin, a straight chin-length dark-brown bob with a single silver-gray streak at the front, hazel eyes, calm kind expression, thin gold bangles, wearing a chambray denim shirt with rolled sleeves and reading glasses hooked on the collar, dark trousers. Maya, a 34-year-old Latina woman with warm light-brown skin, shoulder-length wavy dark-brown hair tied in a messy low bun with loose strands, hazel eyes with faint dark circles, a small beauty mark above the left corner of her upper lip, small gold hoop earrings, wearing an oversized heather-gray cardigan over a plain white t-shirt and dark jeans, slightly hunched posture.\nPanel 1: Nora holds both of Maya's hands across the small table.\nPanel 2: close-up of Nora, calm and steady gaze.\nPanel 3: Nora pulls her chair closer and pats the seat beside her.\nPanel 4: Maya hesitates, then sits down next to her sister.\nAny phone screen shows only a soft glow or is dark, never any readable interface, text or logo.\n3D animated feature film style, cinematic lighting, shallow depth of field, consistent characters, outfits and lighting across panels, vertical 9:16 framing inside each panel.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/51a5d1b5-ec18-470b-9bae-cd619ebbdd22.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/shot-sheets-v2/B12.png"
+  ],
+  "elapsed_ms": 96095,
+  "raw": {
+    "id": "ac11690c4ca9439eaa18865fb7635a3b",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/51a5d1b5-ec18-470b-9bae-cd619ebbdd22.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/ac11690c4ca9439eaa18865fb7635a3b/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:24:43.980332425Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 93651
+    }
+  }
+}

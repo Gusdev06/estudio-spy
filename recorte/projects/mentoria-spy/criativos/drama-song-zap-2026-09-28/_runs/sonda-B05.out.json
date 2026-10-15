@@ -1,0 +1,29 @@
+{
+  "id": "3e702cff3a5345e7a5989167ad56b022",
+  "model": "bytedance/seedance-2.0-fast/image-to-video",
+  "prompt": "The input image is a 2x2 STORYBOARD, not a frame: four sequential moments of one continuous shot, read left-to-right, top-to-bottom. Animate as ONE continuous full-frame vertical 9:16 shot moving through the four moments in order. The grid, the white gutters and the panel borders must NOT appear in the video, not even in the first frame: open directly on moment 1 filling the whole frame.\nMoment 1: medium two-shot at a candlelit dinner table at night, Ryan (navy quarter-zip, silver watch, smug half-smile) slides his phone across the white tablecloth until it stops in front of Maya (gray cardigan, messy low bun, small gold hoops). Moment 2: slow push-in to Maya's hand hovering frozen above the phone, not touching it. Moment 3: Ryan turns to the table and opens his arms wide, grinning at the guests; Maya soft in the foreground. Moment 4: close-up of Maya, eyes glassy with tears, forced smile, Ryan and the table laughing blurred behind her.\nOnly these characters: Maya, Ryan and the two blurred women at the back of the table. Same faces, outfits and warm amber candlelight throughout. Smooth, slow cinematic camera, shallow depth of field, 3D animated feature film style. No text, no subtitles, no speech, no lip movement, no phone interface.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/caad1a23-7b8e-4389-a13d-8a62d538d167.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/sonda/B05-clipe.mp4"
+  ],
+  "elapsed_ms": 195050,
+  "raw": {
+    "id": "3e702cff3a5345e7a5989167ad56b022",
+    "model": "bytedance/seedance-2.0-fast/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/caad1a23-7b8e-4389-a13d-8a62d538d167.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/3e702cff3a5345e7a5989167ad56b022/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T09:57:46.783540295Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 191722
+    }
+  }
+}

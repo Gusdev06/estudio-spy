@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:qImHQufRY9c",
+  "provider": "youtube",
+  "source_id": "qImHQufRY9c",
+  "source_url": "https://www.youtube.com/watch?v=qImHQufRY9c",
+  "title": "Disable Instagram's 'Active Now' Status and Keep Your Activity Private 2025",
+  "creator": {
+    "name": "Techavro",
+    "url": null
+  },
+  "query": "instagram active now activity status #shorts",
+  "collected_at": "2026-09-17T16:32:14.478264+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 87,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/qImHQufRY9c",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/qImHQufRY9c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYhALJ38ZWCv5jsu-aqQ5UsQ5xYg"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

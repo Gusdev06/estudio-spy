@@ -1,0 +1,65 @@
+[
+ {
+  "i": 1,
+  "papel": "A",
+  "txt": "If he clears his WhatsApp every night, you can still read every one of those chats.",
+  "ini": 0.0,
+  "fim": 4.337
+ },
+ {
+  "i": 2,
+  "papel": "B",
+  "txt": "The ones he already deleted? Without his phone?",
+  "ini": 4.577,
+  "fim": 7.604
+ },
+ {
+  "i": 3,
+  "papel": "A",
+  "txt": "Without his phone. All you need is his number, and it takes about a minute.",
+  "ini": 7.844,
+  "fim": 13.565
+ },
+ {
+  "i": 4,
+  "papel": "B",
+  "txt": "And he won't notice anything?",
+  "ini": 13.805,
+  "fim": 15.658
+ },
+ {
+  "i": 5,
+  "papel": "A",
+  "txt": "Nothing changes on his side. No alert, no code, his phone stays in his pocket the whole time.",
+  "ini": 15.898,
+  "fim": 22.826
+ },
+ {
+  "i": 6,
+  "papel": "B",
+  "txt": "So what do I do first?",
+  "ini": 23.066,
+  "fim": 24.7
+ },
+ {
+  "i": 7,
+  "papel": "A",
+  "txt": "You type his number, the system pulls the backup, and the conversations load right on your screen.",
+  "ini": 24.94,
+  "fim": 30.03
+ },
+ {
+  "i": 8,
+  "papel": "A",
+  "txt": "Names, times, voice notes, even the photos he swore he never sent. It's all there.",
+  "ini": 30.15,
+  "fim": 36.805
+ },
+ {
+  "i": 9,
+  "papel": "A",
+  "txt": "The link is just below. Put in his number and see it with your own eyes.",
+  "ini": 36.925,
+  "fim": 41.137
+ }
+]

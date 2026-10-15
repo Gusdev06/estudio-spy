@@ -1,0 +1,480 @@
+{
+  "id": "jmtcqhsej",
+  "created": "2026-08-28T09:13:11.947Z",
+  "windows": [
+    {
+      "id": "a1-c1",
+      "start": 0,
+      "end": 10,
+      "person": true,
+      "pessoaS": 0,
+      "totalS": 10,
+      "segStart": 0,
+      "segEnd": 20,
+      "base": "c1",
+      "avatar": "a1",
+      "state": "idle",
+      "attempts": []
+    },
+    {
+      "id": "a1-c2",
+      "start": 10,
+      "end": 20,
+      "person": true,
+      "pessoaS": 0,
+      "totalS": 10,
+      "segStart": 0,
+      "segEnd": 20,
+      "base": "c2",
+      "avatar": "a1",
+      "state": "idle",
+      "attempts": []
+    }
+  ],
+  "spentCredits": 0,
+  "video": "video.mp4",
+  "avatars": [
+    {
+      "id": "a1",
+      "file": "avatar-1.jpg"
+    }
+  ],
+  "meta": {
+    "duration": 56.982,
+    "size": 156324212,
+    "width": 1440,
+    "height": 2560,
+    "fps": 60,
+    "hasAudio": true
+  },
+  "mode": "chunks",
+  "frames": [
+    {
+      "t": 0,
+      "skin": 0.4644
+    },
+    {
+      "t": 1,
+      "skin": 0.5026
+    },
+    {
+      "t": 2,
+      "skin": 0.4614
+    },
+    {
+      "t": 3,
+      "skin": 0.4861
+    },
+    {
+      "t": 4,
+      "skin": 0.549
+    },
+    {
+      "t": 5,
+      "skin": 0.4705
+    },
+    {
+      "t": 6,
+      "skin": 0.4818
+    },
+    {
+      "t": 7,
+      "skin": 0.5052
+    },
+    {
+      "t": 8,
+      "skin": 0.0642
+    },
+    {
+      "t": 9,
+      "skin": 0.0647
+    },
+    {
+      "t": 10,
+      "skin": 0.0677
+    },
+    {
+      "t": 11,
+      "skin": 0.0694
+    },
+    {
+      "t": 12,
+      "skin": 0.0686
+    },
+    {
+      "t": 13,
+      "skin": 0.0651
+    },
+    {
+      "t": 14,
+      "skin": 0.059
+    },
+    {
+      "t": 15,
+      "skin": 0.0616
+    },
+    {
+      "t": 16,
+      "skin": 0.0608
+    },
+    {
+      "t": 17,
+      "skin": 0.0621
+    },
+    {
+      "t": 18,
+      "skin": 0.0603
+    },
+    {
+      "t": 19,
+      "skin": 0.0586
+    },
+    {
+      "t": 20,
+      "skin": 0.8941
+    },
+    {
+      "t": 21,
+      "skin": 0.9067
+    },
+    {
+      "t": 22,
+      "skin": 0.8676
+    },
+    {
+      "t": 23,
+      "skin": 0.9444
+    },
+    {
+      "t": 24,
+      "skin": 0.9349
+    },
+    {
+      "t": 25,
+      "skin": 0.9384
+    },
+    {
+      "t": 26,
+      "skin": 0.9332
+    },
+    {
+      "t": 27,
+      "skin": 0.9405
+    },
+    {
+      "t": 28,
+      "skin": 0.9262
+    },
+    {
+      "t": 29,
+      "skin": 0.8993
+    },
+    {
+      "t": 30,
+      "skin": 0.8355
+    },
+    {
+      "t": 31,
+      "skin": 0.0443
+    },
+    {
+      "t": 32,
+      "skin": 0.0616
+    },
+    {
+      "t": 33,
+      "skin": 0.0694
+    },
+    {
+      "t": 34,
+      "skin": 0.1107
+    },
+    {
+      "t": 35,
+      "skin": 0.043
+    },
+    {
+      "t": 36,
+      "skin": 0.0556
+    },
+    {
+      "t": 37,
+      "skin": 0.0443
+    },
+    {
+      "t": 38,
+      "skin": 0.9661
+    },
+    {
+      "t": 39,
+      "skin": 0.9592
+    },
+    {
+      "t": 40,
+      "skin": 0.9466
+    },
+    {
+      "t": 41,
+      "skin": 0.9405
+    },
+    {
+      "t": 42,
+      "skin": 0.8902
+    },
+    {
+      "t": 43,
+      "skin": 0.9193
+    },
+    {
+      "t": 44,
+      "skin": 0.9375
+    },
+    {
+      "t": 45,
+      "skin": 0.9384
+    },
+    {
+      "t": 46,
+      "skin": 0.9362
+    },
+    {
+      "t": 47,
+      "skin": 0.9449
+    },
+    {
+      "t": 48,
+      "skin": 0.8676
+    },
+    {
+      "t": 49,
+      "skin": 0.1636
+    },
+    {
+      "t": 50,
+      "skin": 0.2999
+    },
+    {
+      "t": 51,
+      "skin": 0.2053
+    },
+    {
+      "t": 52,
+      "skin": 0.2982
+    },
+    {
+      "t": 53,
+      "skin": 0.3216
+    },
+    {
+      "t": 54,
+      "skin": 0.197
+    },
+    {
+      "t": 55,
+      "skin": 0.3294
+    },
+    {
+      "t": 56,
+      "skin": 0.2313
+    }
+  ],
+  "labels": [
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen"
+  ],
+  "thumbs": [
+    "t0001.jpg",
+    "t0002.jpg",
+    "t0003.jpg",
+    "t0004.jpg",
+    "t0005.jpg",
+    "t0006.jpg",
+    "t0007.jpg",
+    "t0008.jpg",
+    "t0009.jpg",
+    "t0010.jpg",
+    "t0011.jpg",
+    "t0012.jpg",
+    "t0013.jpg",
+    "t0014.jpg",
+    "t0015.jpg",
+    "t0016.jpg",
+    "t0017.jpg",
+    "t0018.jpg",
+    "t0019.jpg",
+    "t0020.jpg",
+    "t0021.jpg",
+    "t0022.jpg",
+    "t0023.jpg",
+    "t0024.jpg",
+    "t0025.jpg",
+    "t0026.jpg",
+    "t0027.jpg",
+    "t0028.jpg",
+    "t0029.jpg",
+    "t0030.jpg",
+    "t0031.jpg",
+    "t0032.jpg",
+    "t0033.jpg",
+    "t0034.jpg",
+    "t0035.jpg",
+    "t0036.jpg",
+    "t0037.jpg",
+    "t0038.jpg",
+    "t0039.jpg",
+    "t0040.jpg",
+    "t0041.jpg",
+    "t0042.jpg",
+    "t0043.jpg",
+    "t0044.jpg",
+    "t0045.jpg",
+    "t0046.jpg",
+    "t0047.jpg",
+    "t0048.jpg",
+    "t0049.jpg",
+    "t0050.jpg",
+    "t0051.jpg",
+    "t0052.jpg",
+    "t0053.jpg",
+    "t0054.jpg",
+    "t0055.jpg",
+    "t0056.jpg",
+    "t0057.jpg"
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 20,
+      "kind": "screen"
+    },
+    {
+      "start": 20,
+      "end": 31,
+      "kind": "person"
+    },
+    {
+      "start": 31,
+      "end": 38,
+      "kind": "screen"
+    },
+    {
+      "start": 38,
+      "end": 49,
+      "kind": "person"
+    },
+    {
+      "start": 49,
+      "end": 57,
+      "kind": "screen"
+    }
+  ],
+  "chunks": [
+    {
+      "id": "c1",
+      "start": 0,
+      "end": 10,
+      "person": true,
+      "pessoaS": 0,
+      "totalS": 10,
+      "segStart": 0,
+      "segEnd": 20
+    },
+    {
+      "id": "c2",
+      "start": 10,
+      "end": 20,
+      "person": true,
+      "pessoaS": 0,
+      "totalS": 10,
+      "segStart": 0,
+      "segEnd": 20
+    },
+    {
+      "id": "c3",
+      "start": 20,
+      "end": 30,
+      "person": false,
+      "pessoaS": 10,
+      "totalS": 10
+    },
+    {
+      "id": "c4",
+      "start": 30,
+      "end": 40,
+      "person": false,
+      "pessoaS": 3,
+      "totalS": 10
+    },
+    {
+      "id": "c5",
+      "start": 40,
+      "end": 50,
+      "person": false,
+      "pessoaS": 9,
+      "totalS": 10
+    },
+    {
+      "id": "c6",
+      "start": 50,
+      "end": 56.982,
+      "person": false,
+      "pessoaS": 0,
+      "totalS": 7
+    }
+  ]
+}

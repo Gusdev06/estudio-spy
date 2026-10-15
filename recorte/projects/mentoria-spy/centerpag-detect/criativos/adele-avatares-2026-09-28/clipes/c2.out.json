@@ -1,0 +1,28 @@
+{
+  "id": "309a76b8439248338d5a6389f1211cf3",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e568e95a-f8fb-4fab-bc86-dd1f08808610.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/adele-avatares-2026-09-28/clipes/c2.mp4"
+  ],
+  "elapsed_ms": 40796,
+  "raw": {
+    "id": "309a76b8439248338d5a6389f1211cf3",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e568e95a-f8fb-4fab-bc86-dd1f08808610.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/309a76b8439248338d5a6389f1211cf3/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T08:44:25.183846294Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 36337
+    }
+  }
+}

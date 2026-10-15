@@ -1,0 +1,29 @@
+{
+  "id": "ba3cc29faed749a18a00d9392067f154",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Character turnaround sheet in a single image, the same character shown four times on a plain flat light-gray background (#C8C8C8), evenly spaced left to right, no text, no labels, no props, no floor shadow clutter:\n1) head-and-shoulders close-up facing the camera, neutral expression;\n2) full body, front view, standing relaxed, arms at the sides;\n3) full body, three-quarter view facing left;\n4) full body, three-quarter view facing right.\nCharacter: Linda, a 64-year-old white woman with a short silver bob, rosy cheeks, wearing a floral blouse with a small brooch.\n3D animated feature film style, stylized proportions, soft subsurface skin, large expressive eyes, sculpted hair strands, soft even studio lighting, high detail, consistent outfit and features across all four views.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/c052a2db-8171-4c72-9652-ab1f09e2d374.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/fichas/linda.png"
+  ],
+  "elapsed_ms": 49805,
+  "raw": {
+    "id": "ba3cc29faed749a18a00d9392067f154",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/c052a2db-8171-4c72-9652-ab1f09e2d374.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/ba3cc29faed749a18a00d9392067f154/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:17:43.7019455Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 46958
+    }
+  }
+}

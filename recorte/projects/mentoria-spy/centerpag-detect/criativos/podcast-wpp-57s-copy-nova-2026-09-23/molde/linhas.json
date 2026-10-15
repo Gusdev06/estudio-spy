@@ -1,0 +1,65 @@
+[
+ {
+  "i": 1,
+  "papel": "A",
+  "txt": "Did you know you can read every message on his WhatsApp without ever touching his phone?",
+  "ini": 0.0,
+  "fim": 4.178
+ },
+ {
+  "i": 2,
+  "papel": "B",
+  "txt": "Without touching it? How is that even possible?",
+  "ini": 4.418,
+  "fim": 7.329
+ },
+ {
+  "i": 3,
+  "papel": "A",
+  "txt": "You just need his number. Sixty seconds and it's all on your screen.",
+  "ini": 7.569,
+  "fim": 11.509
+ },
+ {
+  "i": 4,
+  "papel": "B",
+  "txt": "Even the messages he deletes?",
+  "ini": 11.749,
+  "fim": 13.301
+ },
+ {
+  "i": 5,
+  "papel": "A",
+  "txt": "Especially those. Deleted chats, hidden contacts, the photos he sends at two in the morning.",
+  "ini": 13.541,
+  "fim": 19.962
+ },
+ {
+  "i": 6,
+  "papel": "B",
+  "txt": "Okay. How do I start?",
+  "ini": 20.202,
+  "fim": 22.087
+ },
+ {
+  "i": 7,
+  "papel": "A",
+  "txt": "You type the number, the system pulls the backup, and every conversation opens on your own phone.",
+  "ini": 22.327,
+  "fim": 28.322
+ },
+ {
+  "i": 8,
+  "papel": "A",
+  "txt": "You'll see who he talks to all day, what he erased, and who he's been hiding from you.",
+  "ini": 28.442,
+  "fim": 33.49
+ },
+ {
+  "i": 9,
+  "papel": "A",
+  "txt": "The link is right below. Check his number and stop guessing tonight.",
+  "ini": 33.61,
+  "fim": 37.676
+ }
+]

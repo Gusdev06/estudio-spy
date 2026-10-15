@@ -1,0 +1,29 @@
+{
+  "id": "c447cb12dd614db8a7e611b42b0984eb",
+  "model": "wavespeed-ai/infinitetalk-fast",
+  "prompt": "A man talking to the camera, natural head movement",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/4bebfe35-4581-464b-ac42-cbcfd2b9a230-u1_78e04cc7-64bc-452a-a902-78995f04adcf.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/_teste-lipsync-2026-09-10/out-infinitetalk-fast.mp4"
+  ],
+  "elapsed_ms": 47277,
+  "raw": {
+    "id": "c447cb12dd614db8a7e611b42b0984eb",
+    "model": "wavespeed-ai/infinitetalk-fast",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/4bebfe35-4581-464b-ac42-cbcfd2b9a230-u1_78e04cc7-64bc-452a-a902-78995f04adcf.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c447cb12dd614db8a7e611b42b0984eb/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-09T18:26:43.836677408Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 43799
+    }
+  }
+}

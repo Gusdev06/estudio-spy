@@ -1,0 +1,31 @@
+✔ Done in 204s.
+✔ Saved 1 file.
+{
+  "id": "2568274143e548bda99554ae1a29c8fc",
+  "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "prompt": "The man continues speaking directly into the lens, calm and deliberate, then slows down toward the end. He gives a small nod, holds a steady look into the lens and stops speaking, lips closing. Camera is locked off. Hands stay out of frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/2568274143e548bda99554ae1a29c8fc/1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/gram-detect/criativos/sophia-jones-avatar-homem-38-2026-08-24/clipes/a-03.mp4"
+  ],
+  "elapsed_ms": 207096,
+  "raw": {
+    "id": "2568274143e548bda99554ae1a29c8fc",
+    "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/2568274143e548bda99554ae1a29c8fc/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/2568274143e548bda99554ae1a29c8fc/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-23T17:49:07.459739766Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 202667
+    }
+  }
+}

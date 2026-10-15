@@ -1,0 +1,29 @@
+{
+  "id": "77307ea232864cf5b4a9474583b2171c",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Vertical 9:16 smartphone video still, same camera position, same framing and same pose as the image: a woman seen from head to bare feet, sitting and leaning slightly forward, forearms resting on her knees, hands clasped loosely in front of her knees, looking straight into the camera, mouth closed, calm and serious. REPLACE the woman with a DIFFERENT woman: a white woman about 30 years old with fair freckled skin and long wavy auburn hair, wearing a plain olive-green sweater and black leggings. REPLACE the whole room with a DIFFERENT place: sitting on a cushioned outdoor bench on a small apartment balcony with potted plants, string lights and a blurred city skyline in soft evening light. Same size of the woman in the frame and same head position as in the image. She is the only person in the image. No television, no screens with content, no text, no logos, no watermark. Photorealistic, natural skin texture with visible pores, no retouching, ordinary person, not a model, soft natural light, shot on a phone.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/dfb5c31f-3b5b-4490-8f2c-ca04240922d5.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/kendall-1987478995288058-avatar-cenario-2026-09-25/base/k5.png"
+  ],
+  "elapsed_ms": 80239,
+  "raw": {
+    "id": "77307ea232864cf5b4a9474583b2171c",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/dfb5c31f-3b5b-4490-8f2c-ca04240922d5.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/77307ea232864cf5b4a9474583b2171c/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T16:08:41.814858227Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 77291
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "original": "https://www.instagram.com/reel/Dd7kt-vBdVK/ (2,78M views, #2 do @gigi.girltea)",
+  "formato": "troca pura de avatar (decisão 14/10): cenário, frase EN e áudio do original; só a pessoa vira a Bia",
+  "pipeline": [
+    "1. frame limpo do reel (sem legenda) -> gpt-image-2.5-sunburst/edit com a Bia (avatar-base do Deaen6FBTXu) = original/bia-na-cena.png (~US$0,17)",
+    "2. seedance-2.0/video-edit 720p com bia-na-cena como reference_images (US$2,43)",
+    "3. legenda.py recria a frase (65px, pitch 81, centro y=968 neste reel; medir por reel) + áudio original"
+  ],
+  "licao": "referência da Bia de OUTRA cena (banheiro) foi ignorada pelo Seedance: a gigi ficou no vídeo (v1-falhou, US$2,43 perdidos). A referência precisa ser a Bia dentro da cena do próprio reel.",
+  "custo_usd_estimado": 5.03,
+  "final": "final/Dd7kt-bia.mp4",
+  "comparacao": "final/comparacao-original-vs-bia.mp4"
+}

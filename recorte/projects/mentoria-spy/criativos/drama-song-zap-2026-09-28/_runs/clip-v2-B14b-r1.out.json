@@ -1,0 +1,29 @@
+{
+  "id": "6d7ae3b9e5f149979f3fa40624367713",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot, a warm sepia-toned memory, 3D animated feature film style. Jess (long wavy copper-auburn hair, freckles, pearl earrings, blush-pink sweater) sits alone at a candlelit dinner table laughing and tossing her hair, slow dreamy push-in on her. Jess stays the only person in frame the whole time; she has no phone. Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/2f0d14c7-1039-443e-8c4c-e0849b002934-u1_c6897479-0014-4dd7-90fe-895eab8c7cda.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B14b-r1.mp4"
+  ],
+  "elapsed_ms": 35202,
+  "raw": {
+    "id": "6d7ae3b9e5f149979f3fa40624367713",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/2f0d14c7-1039-443e-8c4c-e0849b002934-u1_c6897479-0014-4dd7-90fe-895eab8c7cda.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/6d7ae3b9e5f149979f3fa40624367713/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:31:11.247067691Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 31398
+    }
+  }
+}

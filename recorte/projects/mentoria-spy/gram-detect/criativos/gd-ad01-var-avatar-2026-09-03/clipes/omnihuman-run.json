@@ -1,0 +1,28 @@
+{
+  "id": "cc983bfa82454c42ba87593f43090aef",
+  "model": "bytedance/avatar-omni-human-1.5",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/d5e67226-c9c0-4531-9b2f-c58db917f7c5-u2_f0a5e5e0-c445-4a27-98a9-30a8ed8c5b65.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/gd-ad01-var-avatar-2026-09-03/clipes/talking-head-omnihuman.mp4"
+  ],
+  "elapsed_ms": 1064764,
+  "raw": {
+    "id": "cc983bfa82454c42ba87593f43090aef",
+    "model": "bytedance/avatar-omni-human-1.5",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/d5e67226-c9c0-4531-9b2f-c58db917f7c5-u2_f0a5e5e0-c445-4a27-98a9-30a8ed8c5b65.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/cc983bfa82454c42ba87593f43090aef/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-03T17:28:27.086064727Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 474535
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fab297e1aad348c78807455a75516ab9",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/0beeaece-86b4-4588-bd07-c760464fda50.mp4"
+  ],
+  "urls": {
+    "get": "https://api.wavespeed.ai/api/v3/predictions/fab297e1aad348c78807455a75516ab9/result"
+  },
+  "status": "completed",
+  "created_at": "2026-09-24T19:17:19.912590702Z",
+  "code": 0,
+  "error": "",
+  "timings": {
+    "inference": 54080
+  },
+  "saved": []
+}

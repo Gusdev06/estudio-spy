@@ -1,0 +1,31 @@
+✔ Done in 148s.
+✔ Saved 1 file.
+{
+  "id": "caebfbc5939c4beb933c91d257166efe",
+  "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "prompt": "The man keeps speaking directly into the lens, steady and unhurried. He tilts his head slightly to his left to make a point, then straightens. One slow blink. Small shoulder shift. Camera is locked off. Hands stay out of frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/caebfbc5939c4beb933c91d257166efe/1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/gram-detect/criativos/sophia-jones-avatar-homem-38-2026-08-24/clipes/a-02.mp4"
+  ],
+  "elapsed_ms": 150733,
+  "raw": {
+    "id": "caebfbc5939c4beb933c91d257166efe",
+    "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/caebfbc5939c4beb933c91d257166efe/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/caebfbc5939c4beb933c91d257166efe/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-23T17:46:31.842663422Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 145203
+    }
+  }
+}

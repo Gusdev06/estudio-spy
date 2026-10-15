@@ -1,0 +1,28 @@
+{
+  "id": "155eb1abf1e34f0bb59e09d64b76f11e",
+  "model": "minimax/speech-2.6-hd",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/155eb1abf1e34f0bb59e09d64b76f11e/1.mp3"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-hook-agressivo-2026-09-23/audio/v01.mp3"
+  ],
+  "elapsed_ms": 10387,
+  "raw": {
+    "id": "155eb1abf1e34f0bb59e09d64b76f11e",
+    "model": "minimax/speech-2.6-hd",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/155eb1abf1e34f0bb59e09d64b76f11e/1.mp3"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/155eb1abf1e34f0bb59e09d64b76f11e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-23T03:15:10.46561298Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 5576
+    }
+  }
+}

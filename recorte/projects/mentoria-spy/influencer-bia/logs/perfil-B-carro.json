@@ -1,0 +1,31 @@
+✔ Done in 61s.
+✔ Saved 1 file.
+{
+  "id": "b2eaa4078c174bdb8142644d870903e3",
+  "model": "openai/gpt-image-2.5-sunburst/edit",
+  "prompt": "Use images 1, 2 and 3 only for the woman's identity: same face, beauty mark, skin, eyes, eyebrows and hair. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nSquare photo for an Instagram profile picture, her face clearly visible in the center third, looking into the lens.\nShot on an iPhone 15 Pro, handheld, framing slightly tilted and a little off-center, mild digital noise, one highlight slightly blown out, real skin texture with pores and a little shine, flyaway hairs, natural fabric creases. Unretouched everyday photo a friend took. No text, no logos, no watermark.\nScene: selfie in the driver seat of a parked car at golden hour, low warm sun coming through the side window and hitting half of her face, seatbelt across her chest, sunglasses pushed up on her head, hair in a loose low bun, oversized grey crewneck sweatshirt, small knowing smile with lips closed. Front camera selfie, arm's length, a bit of lens flare.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/48ff7527-d93e-4545-8f66-eabda3610a53.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/influencer-bia/perfil/B-carro.png"
+  ],
+  "elapsed_ms": 63204,
+  "raw": {
+    "id": "b2eaa4078c174bdb8142644d870903e3",
+    "model": "openai/gpt-image-2.5-sunburst/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/48ff7527-d93e-4545-8f66-eabda3610a53.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/b2eaa4078c174bdb8142644d870903e3/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T14:46:33.470006467Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 60016
+    }
+  }
+}

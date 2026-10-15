@@ -1,0 +1,40 @@
+av1 f  0: olhos y=466 (36.4 %) · rosto cx=358 w=373 (53.0 %) · painel c/ OY atual: olhos 47.7 %
+av1 f128: olhos y=459 (35.8 %) · rosto cx=348 w=385 (54.7 %) · painel c/ OY atual: olhos 46.5 %
+av1 f256: olhos y=463 (36.2 %) · rosto cx=449 w=360 (51.1 %) · painel c/ OY atual: olhos 47.2 %
+av1 f384: olhos y=456 (35.6 %) · rosto cx=352 w=384 (54.5 %) · painel c/ OY atual: olhos 46.0 %
+av1 f512: olhos y=458 (35.7 %) · rosto cx=342 w=374 (53.1 %) · painel c/ OY atual: olhos 46.3 %
+av1 f640: olhos y=450 (35.2 %) · rosto cx=384 w=368 (52.3 %) · painel c/ OY atual: olhos 45.1 %
+av1 f744: olhos y=453 (35.4 %) · rosto cx=391 w=358 (50.9 %) · painel c/ OY atual: olhos 45.5 %
+av1 RESUMO: olhos média 458 (35.8 %) min 450 max 466 (faixa 1.3 % da altura) · cx média 375 (crop atual centro 357) · OY atual 164 → pela média 160 (Δ -4 px = -0.3 %) · CX atual 51 → 69 · rosto médio 52.8 %
+av2 f  0: olhos y=475 (37.1 %) · rosto cx=360 w=414 (58.8 %) · painel c/ OY atual: olhos 47.1 %
+av2 f128: olhos y=468 (36.5 %) · rosto cx=434 w=393 (55.8 %) · painel c/ OY atual: olhos 46.1 %
+av2 f256: olhos y=468 (36.6 %) · rosto cx=376 w=411 (58.4 %) · painel c/ OY atual: olhos 46.2 %
+av2 f384: olhos y=486 (37.9 %) · rosto cx=425 w=430 (61.1 %) · painel c/ OY atual: olhos 48.6 %
+av2 f512: olhos y=468 (36.6 %) · rosto cx=358 w=420 (59.7 %) · painel c/ OY atual: olhos 46.2 %
+av2 f640: olhos y=467 (36.5 %) · rosto cx=406 w=406 (57.7 %) · painel c/ OY atual: olhos 46.0 %
+av2 f744: olhos y=464 (36.3 %) · rosto cx=342 w=417 (59.2 %) · painel c/ OY atual: olhos 45.7 %
+av2 RESUMO: olhos média 471 (36.8 %) min 464 max 486 (faixa 1.6 % da altura) · cx média 386 (crop atual centro 359) · OY atual 144 → pela média 141 (Δ -3 px = -0.2 %) · CX atual 20 → 26 · rosto médio 58.7 %
+av3 f  0: olhos y=528 (41.3 %) · rosto cx=381 w=378 (53.7 %) · painel c/ OY atual: olhos 46.8 %
+av3 f128: olhos y=499 (39.0 %) · rosto cx=392 w=393 (55.8 %) · painel c/ OY atual: olhos 42.3 %
+av3 f256: olhos y=482 (37.6 %) · rosto cx=432 w=369 (52.4 %) · painel c/ OY atual: olhos 39.6 %
+av3 f384: olhos y=475 (37.1 %) · rosto cx=468 w=354 (50.3 %) · painel c/ OY atual: olhos 38.5 %
+av3 f512: olhos y=483 (37.8 %) · rosto cx=445 w=376 (53.4 %) · painel c/ OY atual: olhos 39.8 %
+av3 f640: olhos y=478 (37.3 %) · rosto cx=402 w=382 (54.3 %) · painel c/ OY atual: olhos 38.9 %
+av3 f744: olhos y=481 (37.6 %) · rosto cx=416 w=389 (55.3 %) · painel c/ OY atual: olhos 39.4 %
+av3 RESUMO: olhos média 489 (38.2 %) min 475 max 528 (faixa 4.2 % da altura) · cx média 420 (crop atual centro 381) · OY atual 227 → pela média 187 (Δ -40 px = -3.1 %) · CX atual 70 → 82 · rosto médio 53.6 %
+av4 f  0: olhos y=537 (42.0 %) · rosto cx=378 w=365 (51.8 %) · painel c/ OY atual: olhos 47.1 %
+av4 f128: olhos y=527 (41.2 %) · rosto cx=420 w=357 (50.7 %) · painel c/ OY atual: olhos 45.4 %
+av4 f256: olhos y=503 (39.3 %) · rosto cx=419 w=364 (51.7 %) · painel c/ OY atual: olhos 41.5 %
+av4 f384: olhos y=519 (40.5 %) · rosto cx=356 w=368 (52.3 %) · painel c/ OY atual: olhos 44.1 %
+av4 f512: olhos y=521 (40.7 %) · rosto cx=398 w=362 (51.4 %) · painel c/ OY atual: olhos 44.5 %
+av4 f640: olhos y=529 (41.3 %) · rosto cx=384 w=359 (51.0 %) · painel c/ OY atual: olhos 45.7 %
+av4 f744: olhos y=522 (40.7 %) · rosto cx=396 w=371 (52.7 %) · painel c/ OY atual: olhos 44.5 %
+av4 RESUMO: olhos média 522 (40.8 %) min 503 max 537 (faixa 2.7 % da altura) · cx média 393 (crop atual centro 376) · OY atual 249 → pela média 235 (Δ -14 px = -1.1 %) · CX atual 80 → 97 · rosto médio 51.7 %
+av5 f  0: olhos y=551 (43.0 %) · rosto cx=366 w=387 (55.0 %) · painel c/ OY atual: olhos 47.1 %
+av5 f128: olhos y=520 (40.7 %) · rosto cx=380 w=373 (53.0 %) · painel c/ OY atual: olhos 42.5 %
+av5 f256: olhos y=502 (39.2 %) · rosto cx=444 w=375 (53.3 %) · painel c/ OY atual: olhos 39.6 %
+av5 f384: olhos y=510 (39.9 %) · rosto cx=416 w=367 (52.1 %) · painel c/ OY atual: olhos 40.9 %
+av5 f512: olhos y=494 (38.6 %) · rosto cx=418 w=363 (51.6 %) · painel c/ OY atual: olhos 38.5 %
+av5 f640: olhos y=502 (39.3 %) · rosto cx=444 w=399 (56.7 %) · painel c/ OY atual: olhos 39.7 %
+av5 f744: olhos y=498 (38.9 %) · rosto cx=443 w=382 (54.3 %) · painel c/ OY atual: olhos 39.0 %
+av5 RESUMO: olhos média 511 (39.9 %) min 494 max 551 (faixa 4.4 % da altura) · cx média 416 (crop atual centro 366) · OY atual 242 → pela média 203 (Δ -39 px = -3.0 %) · CX atual 49 → 70 · rosto médio 53.7 %

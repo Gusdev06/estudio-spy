@@ -1,0 +1,4 @@
+frames: 1817 | igual ao original fora das áreas herdadas: média 0.0037 máx 0.0069 em n 122
+dentro da caixa do rosto original: máx 0.0373 em n 720
+rostos na peça (fora da tela do app): min 1 máx 1 | frames com !=1: []
+top 8 por igualdade: [(122, 0.0069, 0.0349, 1), (118, 0.0067, 0.0344, 1), (120, 0.0065, 0.0312, 1), (124, 0.0065, 0.0304, 1), (123, 0.0064, 0.0307, 1), (116, 0.0063, 0.0296, 1), (117, 0.0063, 0.0303, 1), (119, 0.0063, 0.032, 1)]

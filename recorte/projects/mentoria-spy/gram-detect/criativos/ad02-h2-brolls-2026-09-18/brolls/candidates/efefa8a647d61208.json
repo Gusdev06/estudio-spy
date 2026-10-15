@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:REulpEoR-8k",
+  "provider": "youtube",
+  "source_id": "REulpEoR-8k",
+  "source_url": "https://www.youtube.com/watch?v=REulpEoR-8k",
+  "title": "How To Hide Message Requests And Offensive Comments On Instagram",
+  "creator": {
+    "name": "Easy Tech Tutorials",
+    "url": null
+  },
+  "query": "instagram hidden message requests #shorts",
+  "collected_at": "2026-09-17T16:32:11.347454+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 138,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/REulpEoR-8k",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/REulpEoR-8k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBdSCQcTBbJs7W6zmumPPO7QFVw_Q"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "a9d404179023416e8c011b2df67bf4ad",
+  "model": "openai/gpt-image-2.5-flare/text-to-image",
+  "prompt": "Photorealistic vertical 9:16 selfie-style video still, front phone camera at eye level. A Taiwanese woman about 31 with fair skin, long dark wavy hair, light natural makeup, wearing a soft camel knit sweater, sitting at a bright modern desk with a blurred bookshelf and warm plants behind her. She looks straight into the lens with a warm, confident teaching expression, mouth slightly open mid-sentence. Chest-up framing, eyes at about 35% from top. Natural skin texture with visible pores, no retouching, ordinary person not a model. Only one person, no text, no logos.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/ca9f4ded-a30c-40bb-9eab-c1e358a5c862.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/seedance-teste-2026-09-28/rosto.png"
+  ],
+  "elapsed_ms": 25060,
+  "raw": {
+    "id": "a9d404179023416e8c011b2df67bf4ad",
+    "model": "openai/gpt-image-2.5-flare/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/ca9f4ded-a30c-40bb-9eab-c1e358a5c862.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/a9d404179023416e8c011b2df67bf4ad/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T09:25:37.427368237Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 22012
+    }
+  }
+}

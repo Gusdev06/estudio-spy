@@ -1,0 +1,31 @@
+✔ Done in 443s.
+✔ Saved 1 file.
+{
+  "id": "ddbd01edd31e4baca07b40522c024701",
+  "model": "bytedance/seedance-2.0/video-edit",
+  "prompt": "Use the input video ONLY as a guide for body motion, hand actions and timing. Completely replace the person AND the entire environment with the reference image: the woman from the reference image (her face, dark brown hair in a low bun, black ribbed tank top, beauty mark), standing in the kitchen from the reference image (light oak cabinets, white subway tiles, window with daylight, plant, coffee maker, grey quartz counter). She performs the same actions as in the video: squeezing a red sriracha bottle and then a white mayo bottle over the rice and salmon bowl, then mixing it with a fork, with a flat unbothered expression. Keep her face centered in frame the whole time. Nothing from the original kitchen, clothing or person remains. Raw iPhone video look, locked camera. No text or captions on screen. Audio: quiet kitchen ambience only, no voice, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/fce0f0ad-5053-47fb-a580-faf075d43472.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/piloto-molde-gigi-h3-2026-10-13/bruto-seedance.mp4"
+  ],
+  "elapsed_ms": 445888,
+  "raw": {
+    "id": "ddbd01edd31e4baca07b40522c024701",
+    "model": "bytedance/seedance-2.0/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/fce0f0ad-5053-47fb-a580-faf075d43472.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/ddbd01edd31e4baca07b40522c024701/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-13T07:41:14.751633434Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 441898
+    }
+  }
+}

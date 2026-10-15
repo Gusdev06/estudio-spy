@@ -1,0 +1,3 @@
+p1-two-shot	https://d2h7xmz5gqybh9.cloudfront.net/media/cc96ac48027e40ab8f92189bbfcd32c9/images/1788544362678888435_Z5BzYqVe.png
+p2-close-host	https://d2h7xmz5gqybh9.cloudfront.net/media/cc96ac48027e40ab8f92189bbfcd32c9/images/1788545004271130626_7RDLU4dn.png
+p3-close-guest	https://d2h7xmz5gqybh9.cloudfront.net/media/cc96ac48027e40ab8f92189bbfcd32c9/images/1788545008818153992_lrSbwWyM.png

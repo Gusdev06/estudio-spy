@@ -1,0 +1,28 @@
+{
+  "id": "ece82ba91e33409d947246dbe25f7cb2",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/abb532fe-1121-49ec-be43-e6b15d29a524.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-curso-2026-09-28/clipes/A3.mp4"
+  ],
+  "elapsed_ms": 29069,
+  "raw": {
+    "id": "ece82ba91e33409d947246dbe25f7cb2",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/abb532fe-1121-49ec-be43-e6b15d29a524.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/ece82ba91e33409d947246dbe25f7cb2/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T09:14:28.446743611Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 24926
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "460ec10d9011468a80f25f89c125c011",
+  "model": "minimax/h3/reference-to-video",
+  "prompt": "Podcast studio, fixed camera, close-up of the guest (woman in beige sweater). She speaks the line in <Audio 1> looking toward the host off-frame left, hesitant and confessional, natural lip sync, lowers her gaze to the table at the end. Elbows on the table. Warm light, background static. No camera movement.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/460ec10d9011468a80f25f89c125c011/1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/podcast-hook-polemico-2026-09-05/clipes/cena-2.mp4"
+  ],
+  "elapsed_ms": 357179,
+  "raw": {
+    "id": "460ec10d9011468a80f25f89c125c011",
+    "model": "minimax/h3/reference-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/460ec10d9011468a80f25f89c125c011/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/460ec10d9011468a80f25f89c125c011/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-04T18:03:59.900523417Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 352593
+    }
+  }
+}

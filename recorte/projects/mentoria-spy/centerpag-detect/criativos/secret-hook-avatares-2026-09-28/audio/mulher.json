@@ -1,0 +1,28 @@
+{
+  "id": "a9e8f7e409c0409bacce0d845ac1a2b4",
+  "model": "minimax/speech-2.6-hd",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/a9e8f7e409c0409bacce0d845ac1a2b4/1.mp3"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-hook-avatares-2026-09-28/audio/mulher.mp3"
+  ],
+  "elapsed_ms": 9709,
+  "raw": {
+    "id": "a9e8f7e409c0409bacce0d845ac1a2b4",
+    "model": "minimax/speech-2.6-hd",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/a9e8f7e409c0409bacce0d845ac1a2b4/1.mp3"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/a9e8f7e409c0409bacce0d845ac1a2b4/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-27T17:23:59.905673523Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 6116
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "f13d79ebd721433dbd0937702d519fbe",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate the FIRST image exactly — same podcast studio, same cream curved sofa, same low round table, same two black podcast microphones on boom arms, same green plants, same light patterned wall, same wide two-shot framing from the same camera position and height, same warm daylight, same body language (both women seated turned toward each other, mid-conversation). ONLY REPLACE the two women: the woman on the RIGHT must be the woman from the SECOND image (a Middle Eastern woman about 30 wearing a plain beige hijab, warm brown eyes, dusty-pink knit top, dark jeans). The woman on the LEFT must be the woman from the THIRD image (a Latina woman about 26 with tan skin, dark hair loose, plain white long-sleeve top, black trousers). Keep their faces, hair and clothing exactly as in those images. Photorealistic video still, natural skin texture, no retouching, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/5984da89-c3bc-4d06-8268-2ea7bbf2e2ca.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-clone-avatares-2026-09-13/p09/base/two-shot.png"
+  ],
+  "elapsed_ms": 739548,
+  "raw": {
+    "id": "f13d79ebd721433dbd0937702d519fbe",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/5984da89-c3bc-4d06-8268-2ea7bbf2e2ca.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/f13d79ebd721433dbd0937702d519fbe/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-19T16:03:56.746893727Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 657624
+    }
+  }
+}

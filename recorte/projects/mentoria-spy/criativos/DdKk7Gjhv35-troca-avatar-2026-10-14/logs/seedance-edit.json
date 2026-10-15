@@ -1,0 +1,31 @@
+✔ Done in 497s.
+✔ Saved 1 file.
+{
+  "id": "be2df1552ae5459dbebec29f8ca5a327",
+  "model": "bytedance/seedance-2.0/video-edit",
+  "prompt": "Replace the blonde woman in the video with the dark-haired woman from the reference images for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her cheek, dark brown hair twisted up in a tortoiseshell claw clip, sage green ribbed spaghetti-strap tank top and small gold hoop earrings exactly as in the first reference image. She must not be blonde and must not wear black in any frame. Keep every movement, gesture, timing, camera framing, the knife, the red onion, the wooden cutting board, the counter and the kitchen exactly as in the original video. Remove the yellow on-screen text caption; show only the original scene there.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e4a8885e-19db-46fa-b9c7-9c042254fa04.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/DdKk7Gjhv35-troca-avatar-2026-10-14/clipes/seedance-edit.mp4"
+  ],
+  "elapsed_ms": 499306,
+  "raw": {
+    "id": "be2df1552ae5459dbebec29f8ca5a327",
+    "model": "bytedance/seedance-2.0/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e4a8885e-19db-46fa-b9c7-9c042254fa04.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/be2df1552ae5459dbebec29f8ca5a327/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T13:49:24.000802859Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 495138
+    }
+  }
+}

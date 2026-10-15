@@ -1,0 +1,27 @@
+- Fetching billing records…
+
+10 records  · page 1  · more available (--page)
+
+  -$0.8000    2026-09-11 17:12:24 UTC  pruna-ai/p-video/avatar                  key:macbook
+      prediction: 5abe9cef9f6f4ff6ad082423b8caa315
+  -$0.8000    2026-09-11 17:12:23 UTC  pruna-ai/p-video/avatar                  key:macbook
+      prediction: 545d9c16fbdb405ea18fd02c78d422d2
+  -$0.8000    2026-09-11 17:12:23 UTC  pruna-ai/p-video/avatar                  key:macbook
+      prediction: f2d012dcceb143afb9d72641c39681ae
+  -$0.8000    2026-09-11 17:12:23 UTC  pruna-ai/p-video/avatar                  key:macbook
+      prediction: 33279755c20f41f8bfdeb118c60a0914
+  -$0.8000    2026-09-11 17:12:23 UTC  pruna-ai/p-video/avatar                  key:macbook
+      prediction: de9803b625844dabb694528ce7bc5cc0
+  -$0.0570    2026-09-11 16:59:12 UTC  openai/gpt-image-2/text-to-image         key:macbook
+      prediction: 77e08f14930b498bb4c5d15de57a79f8
+  -$0.0810    2026-09-11 16:55:40 UTC  bytedance/seedream-v5.0-pro/edit         key:tes
+      prediction: 4e0f067a30a34d71ac1007d5103f20b4
+  -$0.0570    2026-09-11 16:55:08 UTC  openai/gpt-image-2/text-to-image         key:macbook
+      prediction: 6a617c0caac84c49971dc910bc7513c3
+  -$0.0570    2026-09-11 16:55:08 UTC  openai/gpt-image-2/text-to-image         key:macbook
+      prediction: 4c5d8262e3694c2ca7966fd19ee2d670
+  -$0.0570    2026-09-11 16:55:08 UTC  openai/gpt-image-2/text-to-image         key:macbook
+      prediction: 72bb2c58b4f741488eb007db3e18c570
+
+  page net: -$4.3090
+

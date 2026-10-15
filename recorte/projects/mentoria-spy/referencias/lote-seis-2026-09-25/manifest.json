@@ -1,0 +1,160 @@
+[
+  {
+    "id": "1259333446315112",
+    "source": "/Users/gustagoat/Downloads/Amanda Lima_1259333446315112_2026-09-25.mp4",
+    "duration": 60.859,
+    "width": 720,
+    "height": 1280,
+    "fps": "30/1",
+    "frames": "1822",
+    "md5": "a9e6c08e92c2fea2cc5c2be87dbbb096",
+    "palette_t0": [
+      "#9A7F5F",
+      "#161211",
+      "#876A51",
+      "#ECE2E0",
+      "#B19979"
+    ],
+    "scene_candidates_seconds": [
+      5.86667,
+      7.63333,
+      7.7,
+      7.76667,
+      7.86667,
+      13.3333,
+      13.4,
+      13.4667,
+      41.3333,
+      45.3333,
+      45.4,
+      48.8
+    ]
+  },
+  {
+    "id": "1680455873461877",
+    "source": "/Users/gustagoat/Downloads/Amanda Silva_1680455873461877_2026-09-25.mp4",
+    "duration": 60.742,
+    "width": 960,
+    "height": 720,
+    "fps": "30/1",
+    "frames": "1817",
+    "md5": "36f93080bcc3850a118237dba5aea36a",
+    "palette_t0": [
+      "#D2BEAA",
+      "#1A1517",
+      "#5B4C3B",
+      "#9D826E",
+      "#373234"
+    ],
+    "scene_candidates_seconds": [
+      7.2,
+      24.4667
+    ]
+  },
+  {
+    "id": "1622854622757052",
+    "source": "/Users/gustagoat/Downloads/Beatriz Aguiar_1622854622757052_2026-09-25.mp4",
+    "duration": 46.136,
+    "width": 720,
+    "height": 1280,
+    "fps": "30/1",
+    "frames": "1380",
+    "md5": "1bf1e5c285b884a3583974ecae1661f7",
+    "palette_t0": [
+      "#A1715E",
+      "#301C17",
+      "#C9B19A",
+      "#DBC2AC",
+      "#EBD7C3"
+    ],
+    "scene_candidates_seconds": [
+      2.73333,
+      7.16667,
+      10.3,
+      14.3,
+      15.2667,
+      21.4,
+      27.6,
+      34.5,
+      35.6333,
+      39.5667,
+      39.6
+    ]
+  },
+  {
+    "id": "959352790554428",
+    "source": "/Users/gustagoat/Downloads/Flora Zamorano Castejón_959352790554428_2026-09-25.mp4",
+    "duration": 34.205,
+    "width": 360,
+    "height": 640,
+    "fps": "30/1",
+    "frames": "1026",
+    "md5": "56d846419e4cc88254ebc62d85cec274",
+    "palette_t0": [
+      "#000000",
+      "#433D2F",
+      "#CADFC0",
+      "#0C0711",
+      "#000203"
+    ],
+    "scene_candidates_seconds": [
+      3.9,
+      7.53333,
+      8.83333,
+      29.5
+    ]
+  },
+  {
+    "id": "1987478995288058",
+    "source": "/Users/gustagoat/Downloads/Kendall Godfrey Stephanie_1987478995288058_2026-09-25.mp4",
+    "duration": 20.2,
+    "width": 720,
+    "height": 1254,
+    "fps": "30/1",
+    "frames": "602",
+    "md5": "eab217def8ca6373811a7f906376723b",
+    "palette_t0": [
+      "#6C5B54",
+      "#181314",
+      "#A69282",
+      "#C7BCAF",
+      "#F2E339"
+    ],
+    "scene_candidates_seconds": [
+      2.66667,
+      7.83333,
+      8.0,
+      12.5667,
+      15.0667,
+      16.0
+    ]
+  },
+  {
+    "id": "2091863388082075",
+    "source": "/Users/gustagoat/Downloads/Lauren Walker_2091863388082075_2026-09-25.mp4",
+    "duration": 20.154,
+    "width": 720,
+    "height": 1280,
+    "fps": "30/1",
+    "frames": "601",
+    "md5": "3dfa6b3ae79e1e787b3e6f7746e3a336",
+    "palette_t0": [
+      "#8C9093",
+      "#B0B9B2",
+      "#2B2622",
+      "#AB3637",
+      "#CDD4CE"
+    ],
+    "scene_candidates_seconds": [
+      3.3,
+      6.66667,
+      11.4667,
+      12.3,
+      14.9333,
+      17.5,
+      17.5333,
+      18.8,
+      19.8333
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+var2 emenda n1231: salto máx 4.4px/frame na emenda | movimento típico (mediana ±20 fr) 1.6 | p90 4.4

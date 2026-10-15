@@ -1,0 +1,29 @@
+# Imagem do container de UM pedido. Roda o runner do agente; não tem chave nenhuma e não tem internet
+# (a rede estudio-interno só alcança o orquestrador). O recorte entra montado somente leitura em /w e a pasta do pedido em /w/job.
+FROM node:24-bookworm-slim
+
+# Tudo que o agente já usou nos pedidos: ffmpeg, Python com visão (opencv, mediapipe, numpy, pillow, scipy) e fontes livres.
+# Pré-instalado de propósito: sem internet no container, e instalar no meio do pedido já travou 9 min.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      ffmpeg python3 python3-venv ca-certificates fontconfig fonts-dejavu-core fonts-liberation fonts-noto-core curl \
+  && rm -rf /var/lib/apt/lists/*
+RUN python3 -m venv /opt/py && /opt/py/bin/pip install --no-cache-dir \
+      numpy opencv-python-headless pillow mediapipe scipy soundfile
+ENV PATH=/opt/py/bin:$PATH
+
+# Modelos que o agente baixava na hora (segmentação de pessoa) e o detector de rosto já ficam na imagem.
+RUN mkdir -p /opt/modelos && cd /opt/modelos \
+  && curl -fsSL -o selfie_multiclass_256x256.tflite https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_multiclass_256x256/float32/latest/selfie_multiclass_256x256.tflite \
+  && curl -fsSL -o selfie_segmenter.tflite https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_segmenter/float16/latest/selfie_segmenter.tflite \
+  && curl -fsSL -o face_detector.tflite https://storage.googleapis.com/mediapipe-models/face_detector/blaze_face_short_range/float16/latest/blaze_face_short_range.tflite
+ENV ESTUDIO_MODELOS=/opt/modelos
+
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci --omit=dev && npm cache clean --force
+COPY site/agente-runner.mjs site/ferramentas-spec.mjs site/trava.mjs ./
+
+RUN useradd -u 1000 -m -d /home/agente agente || true
+USER 1000:1000
+WORKDIR /w
+CMD ["node", "/app/agente-runner.mjs"]

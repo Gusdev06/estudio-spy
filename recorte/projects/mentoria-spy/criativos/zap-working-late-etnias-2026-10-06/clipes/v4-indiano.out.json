@@ -1,0 +1,28 @@
+{
+  "id": "fa990696074c45f9b5cbf613f562dd78",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/06e47958-3dfc-44d1-b1c3-53a0501aa532.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/zap-working-late-etnias-2026-10-06/clipes/v4-indiano.mp4"
+  ],
+  "elapsed_ms": 115547,
+  "raw": {
+    "id": "fa990696074c45f9b5cbf613f562dd78",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/06e47958-3dfc-44d1-b1c3-53a0501aa532.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/fa990696074c45f9b5cbf613f562dd78/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-06T01:14:57.843870699Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 106342
+    }
+  }
+}

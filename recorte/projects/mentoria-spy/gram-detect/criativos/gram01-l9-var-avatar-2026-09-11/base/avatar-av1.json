@@ -1,0 +1,29 @@
+{
+  "id": "77e08f14930b498bb4c5d15de57a79f8",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still from a phone's front camera, held in one hand a little below eye level and tilted slightly upward. An ordinary woman around 25 years old, white with light olive skin, long dark-brown hair worn loose and slightly messy with a few strands across her forehead, thick natural eyebrows, a small mole on her left cheek, faint dark circles under her eyes, no makeup. She wears a plain oversized heather-grey crewneck sweatshirt with a slightly stretched collar. No glasses, no hat, no earrings, no logos, no text anywhere. She looks straight into the lens with her mouth closed and her brows slightly drawn together, the quiet serious expression of someone about to tell a friend something she just found out, eyes open. Framing: head and upper chest, shoulders cropped at the sides, top of her head about 25 percent from the top edge, eyes about 44 percent from the top, chin about 62 percent from the top, her face about 40 percent of the frame width (the phone held a little further from her face than a typical selfie), collar and upper chest visible below, plain background above her head; hands out of frame. She is sitting on the edge of an unmade bed in a small bedroom at night; behind her a wardrobe with one door half open and clothes hanging, a cream-colored wall, the corner of a pillow. Dim available light from a small bedside lamp to camera-right mixed with cooler light from off-frame, slightly underexposed, low contrast, no ring light, no studio light. Realistic skin texture with visible pores and a little oil on the forehead and nose bridge, mild phone-camera softness and grain, no retouching, not a model, not a stock photo.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/5bc0ba39-dbda-49f2-9900-e29cac5c82ff.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/gram01-l9-var-avatar-2026-09-11/base/avatar-av1.png"
+  ],
+  "elapsed_ms": 40012,
+  "raw": {
+    "id": "77e08f14930b498bb4c5d15de57a79f8",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/5bc0ba39-dbda-49f2-9900-e29cac5c82ff.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/77e08f14930b498bb4c5d15de57a79f8/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-11T16:59:12.434516199Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 34773
+    }
+  }
+}

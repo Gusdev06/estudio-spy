@@ -1,0 +1,29 @@
+{
+  "id": "86dccc55a7f14fb3a00b004d4fa23b2e",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot in Jess's bedroom at night, lit by a pink bedside lamp, 3D animated feature film style. Jess (long wavy copper-auburn hair, freckles, pearl earrings, blush-pink boat-neck sweater, cream skirt) sits alone on her bed holding a phone to her ear with her right hand, worried eyes and a sweet smile, her left hand resting on her knee. The camera slowly drifts past her shoulder to the nightstand, where a large silver wristwatch lies next to the pink lamp. Jess is the only person in the room; nobody else enters. Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/ddaa74d7-db67-4d0c-adaa-6e02c4750665-u1_bb1dc615-478b-48d8-b5d1-3c55ed9b3caf.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B07b-r1.mp4"
+  ],
+  "elapsed_ms": 40460,
+  "raw": {
+    "id": "86dccc55a7f14fb3a00b004d4fa23b2e",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/ddaa74d7-db67-4d0c-adaa-6e02c4750665-u1_bb1dc615-478b-48d8-b5d1-3c55ed9b3caf.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/86dccc55a7f14fb3a00b004d4fa23b2e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:29:34.976381222Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 38070
+    }
+  }
+}

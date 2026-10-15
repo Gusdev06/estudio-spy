@@ -1,0 +1,29 @@
+{
+  "id": "1135405909604a339a8749751860dbae",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still, front phone camera at eye level. a white woman about 35 with fair skin, light freckles, auburn hair in a low ponytail, wearing a plain charcoal-grey t-shirt, sitting in a dim room with warm lamp light behind her. She looks straight into the lens with a serious, direct expression, as if telling a hard truth, mouth closed. Framing: chest up, hands out of frame, subject centered, eyes at about 35% from the top. Background softly out of focus, slightly overexposed like a real webcam-style recording. Realistic skin texture, mild phone-camera softness, no retouching, ordinary person, not a model. Only one person in frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/76c3a21c-551e-4986-a5fc-3c2418c3b1b5.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-hook-avatares-2026-09-28/base/w3.png"
+  ],
+  "elapsed_ms": 34615,
+  "raw": {
+    "id": "1135405909604a339a8749751860dbae",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/76c3a21c-551e-4986-a5fc-3c2418c3b1b5.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/1135405909604a339a8749751860dbae/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-27T17:22:25.141585935Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 31462
+    }
+  }
+}

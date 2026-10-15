@@ -1,0 +1,29 @@
+{
+  "id": "054875bc2a154925bb0968fe2dd605b1",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same podcast studio set: warm wooden slat wall, green tropical plants on both sides, a large black broadcast microphone on a boom arm in front of her, same framing from the chest up, same soft studio light, 9:16 vertical. REPLACE the woman with a DIFFERENT woman: an East Asian woman about 30 years old with light skin, a sleek black bob with bangs, no earrings, wearing a plain white button-up shirt. Same posture, seated, looking into the camera, mouth closed, calm confident expression, hands resting out of frame. Photorealistic video still from a podcast camera, natural skin texture, no text, no logos, no watermark, and the burned-in caption box at the bottom must NOT be drawn.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/55f3c365-f183-4723-b86a-86bc73707847.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/troca-avatar-3-2026-09-19/luiza2/var5/base/v2.png"
+  ],
+  "elapsed_ms": 91046,
+  "raw": {
+    "id": "054875bc2a154925bb0968fe2dd605b1",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/55f3c365-f183-4723-b86a-86bc73707847.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/054875bc2a154925bb0968fe2dd605b1/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-21T04:24:13.011184964Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 87746
+    }
+  }
+}

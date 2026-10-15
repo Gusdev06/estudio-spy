@@ -1,0 +1,28 @@
+{
+  "id": "8bbe6e37cea249c9beae09e1eab3e0fc",
+  "model": "bytedance/avatar-omni-human-1.5",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e0af8096-0813-4f76-b54a-3cb94170ff30-u1_5e2e388c-1eb4-4c5d-bb05-002066223937.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-ex-presente-hook-2026-09-05/clipes/talking-head-ex-omnihuman.mp4"
+  ],
+  "elapsed_ms": 742224,
+  "raw": {
+    "id": "8bbe6e37cea249c9beae09e1eab3e0fc",
+    "model": "bytedance/avatar-omni-human-1.5",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e0af8096-0813-4f76-b54a-3cb94170ff30-u1_5e2e388c-1eb4-4c5d-bb05-002066223937.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/8bbe6e37cea249c9beae09e1eab3e0fc/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-05T04:48:54.093206353Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 737972
+    }
+  }
+}

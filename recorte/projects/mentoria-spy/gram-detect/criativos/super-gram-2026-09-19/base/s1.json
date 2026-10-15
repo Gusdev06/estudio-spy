@@ -1,0 +1,29 @@
+{
+  "id": "8566ef2504234b6495b528a638bbabd2",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same messy bedroom, same phone front camera held at arm's length slightly below eye level, same framing distance, same dim natural window light from the side, same background of an unmade bed, cluttered shelves and a door. Keep the 9:16 vertical frame and composition. REPLACE the woman with a DIFFERENT woman: a woman about 28 years old with olive skin, no makeup, tired natural face, dark brown hair tied up in a messy bun with loose strands, small silver stud earrings, wearing an oversized plain heather-grey t-shirt. Same posture: face large in the upper half of the frame, shoulders visible, looking straight into the lens, mouth closed, slightly worried confiding expression, like she is about to tell a secret. Photorealistic phone-camera video still, slightly soft, mild sensor noise, natural skin texture with visible pores, no retouching, ordinary person, not a model, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/0e958854-8ae4-4848-89ce-1854eda06cce.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/super-gram-2026-09-19/base/s1.png"
+  ],
+  "elapsed_ms": 34856,
+  "raw": {
+    "id": "8566ef2504234b6495b528a638bbabd2",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/0e958854-8ae4-4848-89ce-1854eda06cce.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/8566ef2504234b6495b528a638bbabd2/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-19T01:52:17.292794525Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 30905
+    }
+  }
+}

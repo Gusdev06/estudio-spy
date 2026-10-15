@@ -1,0 +1,29 @@
+{
+  "id": "1933f7058e4a4b3a97b1d734d3632560",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still, front phone camera at eye level, bright home office. A 42-year-old Indian man with short salt-and-pepper hair and a neatly trimmed grey beard, deep brown skin, thick-rimmed glasses, plain charcoal t-shirt He looks straight into the lens with a friendly, slightly conspiratorial half-smile, as if about to explain a secret, mouth closed. Framing: chest up, hands out of frame, subject centered, eyes at about 35% from the top. Behind him: a white upholstered chair, a light neutral wall, soft natural window daylight, slightly overexposed background like a real webcam-style recording. Realistic skin texture, mild phone-camera softness, no retouching, ordinary person, not a model.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/f03b1767-93e8-4a91-8ba4-ed96f36303bb.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-secret-revealed-indianos-2026-09-13/base/avatar-i2.png"
+  ],
+  "elapsed_ms": 77269,
+  "raw": {
+    "id": "1933f7058e4a4b3a97b1d734d3632560",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/f03b1767-93e8-4a91-8ba4-ed96f36303bb.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/1933f7058e4a4b3a97b1d734d3632560/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-13T05:08:45.713111241Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 72909
+    }
+  }
+}

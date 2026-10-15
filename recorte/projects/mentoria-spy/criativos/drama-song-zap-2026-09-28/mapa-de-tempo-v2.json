@@ -1,0 +1,875 @@
+{
+ "fonte_audio": "musica/cancao-v2.mp3",
+ "duracao_audio": 197.250612,
+ "whisper": "mlx-community/whisper-large-v3-mlx (mlx_whisper local, word_timestamps)",
+ "regra": "texto = letra.txt (a letra manda); tempos = palavras do Whisper casadas por difflib. Blocos ladrilham a linha do tempo: bloco vai do início da 1a linha dele até o início da 1a linha do próximo (instrumental entra no bloco anterior).",
+ "linhas": [
+  {
+   "secao": "Intro - spoken",
+   "texto": "I was the last one at that table to know...",
+   "palavras_casadas": "10/10",
+   "inicio": 9.24,
+   "fim": 12.14,
+   "whisper_ouviu": "I was the last one at that table to know",
+   "n": 1
+  },
+  {
+   "secao": "Verse 1",
+   "texto": "Sunday dinner at his mother's place",
+   "palavras_casadas": "6/6",
+   "inicio": 16.92,
+   "fim": 19.6,
+   "whisper_ouviu": "Sunday dinner at his mother's place",
+   "n": 2
+  },
+  {
+   "secao": "Verse 1",
+   "texto": "Candles lit, a smile on every face",
+   "palavras_casadas": "7/7",
+   "inicio": 20.26,
+   "fim": 23.28,
+   "whisper_ouviu": "Candles lit, a smile on every face",
+   "n": 3
+  },
+  {
+   "secao": "Verse 1",
+   "texto": "His phone lit up beside his plate",
+   "palavras_casadas": "7/7",
+   "inicio": 23.28,
+   "fim": 25.46,
+   "whisper_ouviu": "His phone lit up beside his plate",
+   "n": 4
+  },
+  {
+   "secao": "Verse 1",
+   "texto": "He turned it over. \"Babe, it's late.\"",
+   "palavras_casadas": "7/7",
+   "inicio": 25.46,
+   "fim": 28.64,
+   "whisper_ouviu": "He turned it over, babe, it's late",
+   "n": 5
+  },
+  {
+   "secao": "Pre-Chorus",
+   "texto": "I asked him softly, \"Who was that?\"",
+   "palavras_casadas": "7/7",
+   "inicio": 29.3,
+   "fim": 31.82,
+   "whisper_ouviu": "I asked him softly, who was that?",
+   "n": 6
+  },
+  {
+   "secao": "Pre-Chorus",
+   "texto": "The whole room froze. And then he laughed.",
+   "palavras_casadas": "8/8",
+   "inicio": 31.86,
+   "fim": 33.96,
+   "whisper_ouviu": "The whole room froze and then he laughed",
+   "n": 7
+  },
+  {
+   "secao": "Pre-Chorus",
+   "texto": "He slid his phone to me: \"Go on, check.",
+   "palavras_casadas": "9/9",
+   "inicio": 33.96,
+   "fim": 38.22,
+   "whisper_ouviu": "He slid his phone to me Go on, check",
+   "n": 8
+  },
+  {
+   "secao": "Pre-Chorus",
+   "texto": "She's jealous again,\" he told the rest.",
+   "palavras_casadas": "7/7",
+   "inicio": 38.22,
+   "fim": 41.94,
+   "whisper_ouviu": "she's jealous again He told the rest,",
+   "n": 9
+  },
+  {
+   "secao": "Chorus",
+   "texto": "So I swallowed it, I said I'm fine",
+   "palavras_casadas": "8/8",
+   "inicio": 42.16,
+   "fim": 44.72,
+   "whisper_ouviu": "so I swallowed it I said I'm fine,",
+   "n": 10
+  },
+  {
+   "secao": "Chorus",
+   "texto": "I blamed my heart, I blamed my mind",
+   "palavras_casadas": "6/8",
+   "inicio": 44.82,
+   "fim": 47.0,
+   "whisper_ouviu": "I blame my heart, I blame my mind",
+   "n": 11
+  },
+  {
+   "secao": "Chorus",
+   "texto": "Every night that screen would glow",
+   "palavras_casadas": "6/6",
+   "inicio": 47.0,
+   "fim": 48.96,
+   "whisper_ouviu": "Every night that screen would glow",
+   "n": 12
+  },
+  {
+   "secao": "Chorus",
+   "texto": "And I was the last to know",
+   "palavras_casadas": "7/7",
+   "inicio": 48.96,
+   "fim": 51.78,
+   "whisper_ouviu": "And I was the last to know",
+   "n": 13
+  },
+  {
+   "secao": "Verse 2",
+   "texto": "I called my best friend Jess at two",
+   "palavras_casadas": "8/8",
+   "inicio": 54.42,
+   "fim": 57.58,
+   "whisper_ouviu": "I called my best friend, Jess, at two",
+   "n": 14
+  },
+  {
+   "secao": "Verse 2",
+   "texto": "She said, \"Girl, he'd never hurt you.\"",
+   "palavras_casadas": "7/7",
+   "inicio": 57.58,
+   "fim": 60.5,
+   "whisper_ouviu": "She said, girl, he'd never hurt you",
+   "n": 15
+  },
+  {
+   "secao": "Verse 2",
+   "texto": "I asked a counselor what was true",
+   "palavras_casadas": "7/7",
+   "inicio": 62.82,
+   "fim": 66.08,
+   "whisper_ouviu": "I asked a counselor what was true",
+   "n": 16
+  },
+  {
+   "secao": "Verse 2",
+   "texto": "She said, \"No proof? There's nothing to do.\"",
+   "palavras_casadas": "8/8",
+   "inicio": 66.08,
+   "fim": 69.06,
+   "whisper_ouviu": "She said, no proof, there's nothing to do",
+   "n": 17
+  },
+  {
+   "secao": "Verse 3",
+   "texto": "So I stopped asking. Stopped the fights.",
+   "palavras_casadas": "6/7",
+   "inicio": 71.98,
+   "fim": 74.4,
+   "whisper_ouviu": "So I stopped asking, stopped the",
+   "n": 18
+  },
+  {
+   "secao": "Verse 3",
+   "texto": "Stared at the ceiling every night.",
+   "palavras_casadas": "6/6",
+   "inicio": 74.7,
+   "fim": 76.72,
+   "whisper_ouviu": "Stared at the ceiling every night",
+   "n": 19
+  },
+  {
+   "secao": "Verse 3",
+   "texto": "He came home later every week.",
+   "palavras_casadas": "6/6",
+   "inicio": 76.72,
+   "fim": 78.68,
+   "whisper_ouviu": "He came home later every week",
+   "n": 20
+  },
+  {
+   "secao": "Verse 3",
+   "texto": "I got so quiet I could barely speak.",
+   "palavras_casadas": "8/8",
+   "inicio": 78.68,
+   "fim": 81.36,
+   "whisper_ouviu": "I got so quiet I could barely speak",
+   "n": 21
+  },
+  {
+   "secao": "Chorus",
+   "texto": "So I swallowed it, I said I'm fine",
+   "palavras_casadas": "8/8",
+   "inicio": 81.36,
+   "fim": 84.28,
+   "whisper_ouviu": "So I swallowed it, I said I'm fine",
+   "n": 22
+  },
+  {
+   "secao": "Chorus",
+   "texto": "I blamed my heart, I blamed my mind",
+   "palavras_casadas": "6/8",
+   "inicio": 84.28,
+   "fim": 86.54,
+   "whisper_ouviu": "I blame my heart, I blame my mind",
+   "n": 23
+  },
+  {
+   "secao": "Chorus",
+   "texto": "Every night that screen would glow",
+   "palavras_casadas": "6/6",
+   "inicio": 86.54,
+   "fim": 88.58,
+   "whisper_ouviu": "Every night that screen would glow",
+   "n": 24
+  },
+  {
+   "secao": "Chorus",
+   "texto": "And I was the last to know",
+   "palavras_casadas": "7/7",
+   "inicio": 88.58,
+   "fim": 91.28,
+   "whisper_ouviu": "and I was the last to know",
+   "n": 25
+  },
+  {
+   "secao": "Bridge - spoken",
+   "texto": "Then my sister Nora came by one night.",
+   "palavras_casadas": "8/8",
+   "inicio": 94.1,
+   "fim": 97.56,
+   "whisper_ouviu": "Then my sister Nora came by one night",
+   "n": 26
+  },
+  {
+   "secao": "Bridge - spoken",
+   "texto": "She'd lived this once. She held me tight.",
+   "palavras_casadas": "6/8",
+   "inicio": 97.56,
+   "fim": 101.14,
+   "whisper_ouviu": "She'd live this one, she held me tight",
+   "n": 27
+  },
+  {
+   "secao": "Bridge - spoken",
+   "texto": "\"You're not crazy. You just can't see.",
+   "palavras_casadas": "7/7",
+   "inicio": 101.14,
+   "fim": 104.9,
+   "whisper_ouviu": "You're not crazy, you just can't see",
+   "n": 28
+  },
+  {
+   "secao": "Bridge - spoken",
+   "texto": "There's a way to look. Sit here with me.\"",
+   "palavras_casadas": "9/9",
+   "inicio": 104.9,
+   "fim": 108.4,
+   "whisper_ouviu": "There's a way to look, sit here with me",
+   "n": 29
+  },
+  {
+   "secao": "Verse 4",
+   "texto": "On the phone he'd told me I could check",
+   "palavras_casadas": "8/9",
+   "inicio": 110.02,
+   "fim": 112.38,
+   "whisper_ouviu": "On the phone he told me I could check",
+   "n": 30
+  },
+  {
+   "secao": "Verse 4",
+   "texto": "She showed me how. I held my breath.",
+   "palavras_casadas": "8/8",
+   "inicio": 112.38,
+   "fim": 114.54,
+   "whisper_ouviu": "She showed me how I held my breath",
+   "n": 31
+  },
+  {
+   "secao": "Verse 4",
+   "texto": "The conversations, all in view.",
+   "palavras_casadas": "5/5",
+   "inicio": 114.54,
+   "fim": 116.54,
+   "whisper_ouviu": "The conversation's all in view",
+   "n": 32
+  },
+  {
+   "secao": "Verse 4",
+   "texto": "Not a stranger. It was Jess.",
+   "palavras_casadas": "6/6",
+   "inicio": 116.54,
+   "fim": 118.24,
+   "whisper_ouviu": "Not a stranger, it was Jess,",
+   "n": 33
+  },
+  {
+   "secao": "Verse 4",
+   "texto": "My best friend. Jess. The one I knew.",
+   "palavras_casadas": "8/8",
+   "inicio": 118.42,
+   "fim": 121.1,
+   "whisper_ouviu": "my best friend Jess, the one I knew",
+   "n": 34
+  },
+  {
+   "secao": "Pre-Chorus",
+   "texto": "My hands were shaking. What if I'm wrong?",
+   "palavras_casadas": "8/8",
+   "inicio": 122.46,
+   "fim": 124.96,
+   "whisper_ouviu": "My hands were shaking, what if I'm wrong?",
+   "n": 35
+  },
+  {
+   "secao": "Pre-Chorus",
+   "texto": "What if the crazy one was me all along?",
+   "palavras_casadas": "9/9",
+   "inicio": 125.1,
+   "fim": 127.4,
+   "whisper_ouviu": "What if the crazy one was me all along?",
+   "n": 36
+  },
+  {
+   "secao": "Pre-Chorus",
+   "texto": "But the truth was right there in my hand",
+   "palavras_casadas": "9/9",
+   "inicio": 127.52,
+   "fim": 129.42,
+   "whisper_ouviu": "But the truth was right there in my hand",
+   "n": 37
+  },
+  {
+   "secao": "Pre-Chorus",
+   "texto": "And for the first time, I could stand.",
+   "palavras_casadas": "8/8",
+   "inicio": 129.42,
+   "fim": 131.7,
+   "whisper_ouviu": "And for the first time I could stand",
+   "n": 38
+  },
+  {
+   "secao": "Verse 5",
+   "texto": "Week one, I slept right through the night",
+   "palavras_casadas": "8/8",
+   "inicio": 135.06,
+   "fim": 137.5,
+   "whisper_ouviu": "Week one, I slept right through the night",
+   "n": 39
+  },
+  {
+   "secao": "Verse 5",
+   "texto": "Week two, Nora said, \"Your eyes look bright.\"",
+   "palavras_casadas": "8/8",
+   "inicio": 137.5,
+   "fim": 139.6,
+   "whisper_ouviu": "Week two, Nora said your eyes look bright",
+   "n": 40
+  },
+  {
+   "secao": "Verse 5",
+   "texto": "Week three, I stopped asking. I just knew.",
+   "palavras_casadas": "8/8",
+   "inicio": 139.6,
+   "fim": 141.68,
+   "whisper_ouviu": "Week three, I stopped asking, I just knew",
+   "n": 41
+  },
+  {
+   "secao": "Verse 5",
+   "texto": "Week four, his mother asked, \"What's new with you?\"",
+   "palavras_casadas": "9/9",
+   "inicio": 141.68,
+   "fim": 144.24,
+   "whisper_ouviu": "Week four, his mother asked what's new with you",
+   "n": 42
+  },
+  {
+   "secao": "Final Chorus",
+   "texto": "No more swallowing, no more \"I'm fine\"",
+   "palavras_casadas": "7/7",
+   "inicio": 144.24,
+   "fim": 146.3,
+   "whisper_ouviu": "No more swallowing, no more I'm fine",
+   "n": 43
+  },
+  {
+   "secao": "Final Chorus",
+   "texto": "It was never my heart, never my mind",
+   "palavras_casadas": "8/8",
+   "inicio": 146.3,
+   "fim": 148.4,
+   "whisper_ouviu": "It was never my heart, never my mind",
+   "n": 44
+  },
+  {
+   "secao": "Final Chorus",
+   "texto": "Let that screen light up and glow",
+   "palavras_casadas": "7/7",
+   "inicio": 148.4,
+   "fim": 150.34,
+   "whisper_ouviu": "Let that screen light up and glow",
+   "n": 45
+  },
+  {
+   "secao": "Final Chorus",
+   "texto": "I won't be the last to know",
+   "palavras_casadas": "7/7",
+   "inicio": 150.34,
+   "fim": 155.06,
+   "whisper_ouviu": "I won't be the last to know",
+   "n": 46
+  },
+  {
+   "secao": "Verse 6",
+   "texto": "Sunday dinner at his mother's place",
+   "palavras_casadas": "6/6",
+   "inicio": 159.06,
+   "fim": 161.5,
+   "whisper_ouviu": "Sunday dinner at his mother's place",
+   "n": 47
+  },
+  {
+   "secao": "Verse 6",
+   "texto": "Same candles, same smile on every face",
+   "palavras_casadas": "6/7",
+   "inicio": 161.5,
+   "fim": 163.74,
+   "whisper_ouviu": "Same candle, same smile on every face",
+   "n": 48
+  },
+  {
+   "secao": "Verse 6",
+   "texto": "His phone lit up. He reached too late.",
+   "palavras_casadas": "8/8",
+   "inicio": 163.74,
+   "fim": 165.72,
+   "whisper_ouviu": "His phone lit up, he reached too late",
+   "n": 49
+  },
+  {
+   "secao": "Verse 6",
+   "texto": "Jess was sitting three seats away.",
+   "palavras_casadas": "5/6",
+   "inicio": 166.46,
+   "fim": 168.0,
+   "whisper_ouviu": "was sitting three seats away",
+   "n": 50
+  },
+  {
+   "secao": "Verse 6",
+   "texto": "I smiled: \"Go on. Turn it over, babe.",
+   "palavras_casadas": "8/8",
+   "inicio": 168.0,
+   "fim": 170.2,
+   "whisper_ouviu": "I smiled, go on, turn it over, babe,",
+   "n": 51
+  },
+  {
+   "secao": "Verse 6",
+   "texto": "I already know.\" And the whole room froze.",
+   "palavras_casadas": "8/8",
+   "inicio": 170.28,
+   "fim": 173.44,
+   "whisper_ouviu": "I already know And the whole room froze",
+   "n": 52
+  },
+  {
+   "secao": "Outro - spoken",
+   "texto": "If your gut has been whispering for months...",
+   "palavras_casadas": "8/8",
+   "inicio": 176.82,
+   "fim": 179.56,
+   "whisper_ouviu": "If your gut has been whispering for months",
+   "n": 53
+  },
+  {
+   "secao": "Outro - spoken",
+   "texto": "You're not crazy. You deserve to know.",
+   "palavras_casadas": "7/7",
+   "inicio": 179.56,
+   "fim": 181.46,
+   "whisper_ouviu": "You're not crazy, you deserve to know",
+   "n": 54
+  },
+  {
+   "secao": "Outro - spoken",
+   "texto": "This app shows you the conversations.",
+   "palavras_casadas": "6/6",
+   "inicio": 181.46,
+   "fim": 183.22,
+   "whisper_ouviu": "This app shows you the conversations",
+   "n": 55
+  },
+  {
+   "secao": "Outro - spoken",
+   "texto": "Clear. In one place.",
+   "palavras_casadas": "4/4",
+   "inicio": 183.22,
+   "fim": 185.18,
+   "whisper_ouviu": "clear In one place,",
+   "n": 56
+  },
+  {
+   "secao": "Outro - spoken",
+   "texto": "On a phone you're allowed to open.",
+   "palavras_casadas": "7/7",
+   "inicio": 185.46,
+   "fim": 187.32,
+   "whisper_ouviu": "on a phone you're allowed to open",
+   "n": 57
+  },
+  {
+   "secao": "Outro - spoken",
+   "texto": "No more guessing. No more fights.",
+   "palavras_casadas": "6/6",
+   "inicio": 188.22,
+   "fim": 191.44,
+   "whisper_ouviu": "No more guessing, no more fights",
+   "n": 58
+  },
+  {
+   "secao": "Outro - spoken",
+   "texto": "Tap the link. See the truth for yourself.",
+   "palavras_casadas": "8/8",
+   "inicio": 191.98,
+   "fim": 195.56,
+   "whisper_ouviu": "Tap the link, see the truth for yourself",
+   "n": 59
+  }
+ ],
+ "blocos": [
+  {
+   "bloco": "B01",
+   "linhas": [
+    "I was the last one at that table to know..."
+   ],
+   "inicio": 0.0,
+   "fim": 16.92,
+   "duracao": 16.92,
+   "voz_ini": 9.24,
+   "voz_fim": 12.14,
+   "estimado_plano": 6
+  },
+  {
+   "bloco": "B02",
+   "linhas": [
+    "Sunday dinner at his mother's place",
+    "Candles lit, a smile on every face"
+   ],
+   "inicio": 16.92,
+   "fim": 23.28,
+   "duracao": 6.36,
+   "voz_ini": 16.92,
+   "voz_fim": 23.28,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B03",
+   "linhas": [
+    "His phone lit up beside his plate",
+    "He turned it over. \"Babe, it's late.\""
+   ],
+   "inicio": 23.28,
+   "fim": 29.3,
+   "duracao": 6.02,
+   "voz_ini": 23.28,
+   "voz_fim": 28.64,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B04",
+   "linhas": [
+    "I asked him softly, \"Who was that?\"",
+    "The whole room froze. And then he laughed."
+   ],
+   "inicio": 29.3,
+   "fim": 33.96,
+   "duracao": 4.66,
+   "voz_ini": 29.3,
+   "voz_fim": 33.96,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B05",
+   "linhas": [
+    "He slid his phone to me: \"Go on, check.",
+    "She's jealous again,\" he told the rest."
+   ],
+   "inicio": 33.96,
+   "fim": 42.16,
+   "duracao": 8.2,
+   "voz_ini": 33.96,
+   "voz_fim": 41.94,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B06",
+   "linhas": [
+    "So I swallowed it, I said I'm fine",
+    "I blamed my heart, I blamed my mind",
+    "Every night that screen would glow",
+    "And I was the last to know"
+   ],
+   "inicio": 42.16,
+   "fim": 54.42,
+   "duracao": 12.26,
+   "voz_ini": 42.16,
+   "voz_fim": 51.78,
+   "estimado_plano": 13
+  },
+  {
+   "bloco": "B07",
+   "linhas": [
+    "I called my best friend Jess at two",
+    "She said, \"Girl, he'd never hurt you.\""
+   ],
+   "inicio": 54.42,
+   "fim": 62.82,
+   "duracao": 8.4,
+   "voz_ini": 54.42,
+   "voz_fim": 60.5,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B08",
+   "linhas": [
+    "I asked a counselor what was true",
+    "She said, \"No proof? There's nothing to do.\""
+   ],
+   "inicio": 62.82,
+   "fim": 71.98,
+   "duracao": 9.16,
+   "voz_ini": 62.82,
+   "voz_fim": 69.06,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B09",
+   "linhas": [
+    "So I stopped asking. Stopped the fights.",
+    "Stared at the ceiling every night.",
+    "He came home later every week.",
+    "I got so quiet I could barely speak."
+   ],
+   "inicio": 71.98,
+   "fim": 81.36,
+   "duracao": 9.38,
+   "voz_ini": 71.98,
+   "voz_fim": 81.36,
+   "estimado_plano": 13
+  },
+  {
+   "bloco": "B10",
+   "linhas": [
+    "So I swallowed it, I said I'm fine",
+    "I blamed my heart, I blamed my mind",
+    "Every night that screen would glow",
+    "And I was the last to know"
+   ],
+   "inicio": 81.36,
+   "fim": 94.1,
+   "duracao": 12.74,
+   "voz_ini": 81.36,
+   "voz_fim": 91.28,
+   "estimado_plano": 13
+  },
+  {
+   "bloco": "B11",
+   "linhas": [
+    "Then my sister Nora came by one night.",
+    "She'd lived this once. She held me tight."
+   ],
+   "inicio": 94.1,
+   "fim": 101.14,
+   "duracao": 7.04,
+   "voz_ini": 94.1,
+   "voz_fim": 101.14,
+   "estimado_plano": 8
+  },
+  {
+   "bloco": "B12",
+   "linhas": [
+    "\"You're not crazy. You just can't see.",
+    "There's a way to look. Sit here with me.\""
+   ],
+   "inicio": 101.14,
+   "fim": 110.02,
+   "duracao": 8.88,
+   "voz_ini": 101.14,
+   "voz_fim": 108.4,
+   "estimado_plano": 8
+  },
+  {
+   "bloco": "B13",
+   "linhas": [
+    "On the phone he'd told me I could check",
+    "She showed me how. I held my breath."
+   ],
+   "inicio": 110.02,
+   "fim": 114.54,
+   "duracao": 4.52,
+   "voz_ini": 110.02,
+   "voz_fim": 114.54,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B14",
+   "linhas": [
+    "The conversations, all in view.",
+    "Not a stranger. It was Jess.",
+    "My best friend. Jess. The one I knew."
+   ],
+   "inicio": 114.54,
+   "fim": 122.46,
+   "duracao": 7.92,
+   "voz_ini": 114.54,
+   "voz_fim": 121.1,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B15",
+   "linhas": [
+    "My hands were shaking. What if I'm wrong?",
+    "What if the crazy one was me all along?"
+   ],
+   "inicio": 122.46,
+   "fim": 127.52,
+   "duracao": 5.06,
+   "voz_ini": 122.46,
+   "voz_fim": 127.4,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B16",
+   "linhas": [
+    "But the truth was right there in my hand",
+    "And for the first time, I could stand."
+   ],
+   "inicio": 127.52,
+   "fim": 135.06,
+   "duracao": 7.54,
+   "voz_ini": 127.52,
+   "voz_fim": 131.7,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B17",
+   "linhas": [
+    "Week one, I slept right through the night",
+    "Week two, Nora said, \"Your eyes look bright.\""
+   ],
+   "inicio": 135.06,
+   "fim": 139.6,
+   "duracao": 4.54,
+   "voz_ini": 135.06,
+   "voz_fim": 139.6,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B18",
+   "linhas": [
+    "Week three, I stopped asking. I just knew.",
+    "Week four, his mother asked, \"What's new with you?\""
+   ],
+   "inicio": 139.6,
+   "fim": 144.24,
+   "duracao": 4.64,
+   "voz_ini": 139.6,
+   "voz_fim": 144.24,
+   "estimado_plano": 8
+  },
+  {
+   "bloco": "B19",
+   "linhas": [
+    "No more swallowing, no more \"I'm fine\"",
+    "It was never my heart, never my mind",
+    "Let that screen light up and glow",
+    "I won't be the last to know"
+   ],
+   "inicio": 144.24,
+   "fim": 159.06,
+   "duracao": 14.82,
+   "voz_ini": 144.24,
+   "voz_fim": 155.06,
+   "estimado_plano": 13
+  },
+  {
+   "bloco": "B20",
+   "linhas": [
+    "Sunday dinner at his mother's place",
+    "Same candles, same smile on every face"
+   ],
+   "inicio": 159.06,
+   "fim": 163.74,
+   "duracao": 4.68,
+   "voz_ini": 159.06,
+   "voz_fim": 163.74,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B21",
+   "linhas": [
+    "His phone lit up. He reached too late.",
+    "Jess was sitting three seats away."
+   ],
+   "inicio": 163.74,
+   "fim": 168.0,
+   "duracao": 4.26,
+   "voz_ini": 163.74,
+   "voz_fim": 168.0,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B22",
+   "linhas": [
+    "I smiled: \"Go on. Turn it over, babe.",
+    "I already know.\" And the whole room froze."
+   ],
+   "inicio": 168.0,
+   "fim": 176.82,
+   "duracao": 8.82,
+   "voz_ini": 168.0,
+   "voz_fim": 173.44,
+   "estimado_plano": 8
+  },
+  {
+   "bloco": "B23",
+   "linhas": [
+    "If your gut has been whispering for months...",
+    "You're not crazy. You deserve to know."
+   ],
+   "inicio": 176.82,
+   "fim": 181.46,
+   "duracao": 4.64,
+   "voz_ini": 176.82,
+   "voz_fim": 181.46,
+   "estimado_plano": 7
+  },
+  {
+   "bloco": "B24",
+   "linhas": [
+    "This app shows you the conversations.",
+    "Clear. In one place.",
+    "On a phone you're allowed to open.",
+    "No more guessing. No more fights."
+   ],
+   "inicio": 181.46,
+   "fim": 191.98,
+   "duracao": 10.52,
+   "voz_ini": 181.46,
+   "voz_fim": 191.44,
+   "estimado_plano": 9
+  },
+  {
+   "bloco": "B25",
+   "linhas": [
+    "Tap the link. See the truth for yourself."
+   ],
+   "inicio": 191.98,
+   "fim": 197.25,
+   "duracao": 5.27,
+   "voz_ini": 191.98,
+   "voz_fim": 195.56,
+   "estimado_plano": 5
+  }
+ ]
+}

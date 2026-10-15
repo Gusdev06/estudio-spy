@@ -1,0 +1,28 @@
+{
+  "id": "f057e4fa206b4b7ca03ae7d7fdd55a45",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/5e576599-99ed-4119-9808-a62b595012b1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/troca-avatar-3-2026-09-19/luiza2/var5/clipes/v1.mp4"
+  ],
+  "elapsed_ms": 182307,
+  "raw": {
+    "id": "f057e4fa206b4b7ca03ae7d7fdd55a45",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/5e576599-99ed-4119-9808-a62b595012b1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/f057e4fa206b4b7ca03ae7d7fdd55a45/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-21T04:26:44.131550894Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 177585
+    }
+  }
+}

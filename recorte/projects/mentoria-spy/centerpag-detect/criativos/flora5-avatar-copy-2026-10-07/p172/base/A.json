@@ -1,0 +1,29 @@
+{
+  "id": "3aa0cc5826d44e11a75f6969db72677b",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Photorealistic video still from a podcast recording. Same camera position, same close-up framing and same pose as the image: she is seen from the chest up, turned three-quarters toward the right side of the frame, wearing black over-ear headphones, a black podcast microphone on a boom arm in front of her on the right, mouth slightly open as if mid-sentence, looking toward the person off-camera on the right. REPLACE the person with a DIFFERENT person: a woman about 40 years old of East African (Ethiopian) descent with warm brown skin, very short natural cropped black hair, small gold stud earrings, wearing a cobalt-blue silk blouse. REPLACE the whole background with a DIFFERENT podcast studio: warm terracotta limewash plaster wall, an arched wall niche with small ceramic vases, dried pampas grass in a tall vase, a warm golden table lamp glowing softly, earthy warm tones. Same size of the head in the frame and same head position as in the image. This person is the only person in the image. No monitors, no screens, no text, no logos, no watermark. Natural skin texture with visible pores, no retouching, ordinary person, not a model, soft warm studio light, shallow depth of field.",
+  "outputs": [
+    "https://cdn.cachegalaxy.com/output/d224a6c2-3370-4f01-970b-e6081eaac71e.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/flora5-avatar-copy-2026-10-07/p172/base/A.png"
+  ],
+  "elapsed_ms": 40825,
+  "raw": {
+    "id": "3aa0cc5826d44e11a75f6969db72677b",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://cdn.cachegalaxy.com/output/d224a6c2-3370-4f01-970b-e6081eaac71e.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/3aa0cc5826d44e11a75f6969db72677b/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-07T14:33:59.344646515Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 37823
+    }
+  }
+}

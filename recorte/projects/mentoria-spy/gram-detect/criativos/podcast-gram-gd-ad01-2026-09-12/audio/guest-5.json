@@ -1,0 +1,28 @@
+{
+  "id": "4e65ac57182347d4b7f6740b0051ec40",
+  "model": "minimax/speech-2.6-hd",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/4e65ac57182347d4b7f6740b0051ec40/1.mp3"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/podcast-gram-gd-ad01-2026-09-12/audio/guest-5.mp3"
+  ],
+  "elapsed_ms": 6899,
+  "raw": {
+    "id": "4e65ac57182347d4b7f6740b0051ec40",
+    "model": "minimax/speech-2.6-hd",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/4e65ac57182347d4b7f6740b0051ec40/1.mp3"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/4e65ac57182347d4b7f6740b0051ec40/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-12T07:52:30.713616852Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 3349
+    }
+  }
+}

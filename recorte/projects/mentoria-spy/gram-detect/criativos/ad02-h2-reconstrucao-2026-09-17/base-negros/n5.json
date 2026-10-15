@@ -1,0 +1,29 @@
+{
+  "id": "98bf7fdc163042f2b04924464c979269",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same room, same selfie camera held at arm's length just above eye level, same framing distance, same soft daylight, same background of a bathroom doorway with a wooden door frame and a mirror, same slightly overexposed look of a real phone recording. Extend the scene vertically into a 9:16 vertical frame, keeping the original composition in the upper band. REPLACE the man with a DIFFERENT man: a Black man with brown skin, about 31 years old, shoulder-length locs tied back and light stubble, wearing the same style plain cream hoodie Same posture, head and shoulders filling the upper half of the frame, looking straight into the lens, mouth closed, serious and confiding expression. Photorealistic phone-camera video still, natural skin texture with visible pores, mild camera softness, no retouching, ordinary person, not a model, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/ba4216fc-3c44-4366-bf32-521171ab2fae.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-reconstrucao-2026-09-17/base-negros/n5.png"
+  ],
+  "elapsed_ms": 74109,
+  "raw": {
+    "id": "98bf7fdc163042f2b04924464c979269",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/ba4216fc-3c44-4366-bf32-521171ab2fae.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/98bf7fdc163042f2b04924464c979269/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-17T10:37:26.47358326Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 67756
+    }
+  }
+}

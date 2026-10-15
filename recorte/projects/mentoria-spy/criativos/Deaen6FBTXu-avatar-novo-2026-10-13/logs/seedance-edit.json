@@ -1,0 +1,31 @@
+✔ Done in 455s.
+✔ Saved 1 file.
+{
+  "id": "acff77b66abb47128fb3317e201719f5",
+  "model": "bytedance/seedance-2.0/video-edit",
+  "prompt": "Replace the woman in the video with the woman from the reference image: her face, dark brown hair, skin tone and beauty mark. Keep every movement, gesture, timing, camera framing, the blue bow headband, white tank top, makeup sponge, foundation bottle and bathroom exactly as in the original video. Remove the yellow on-screen text caption at the top; show only the bathroom wall there.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/74a7046f-faf3-4868-bd25-afed5849ace7.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/Deaen6FBTXu-avatar-novo-2026-10-13/clipes/seedance-edit.mp4"
+  ],
+  "elapsed_ms": 457248,
+  "raw": {
+    "id": "acff77b66abb47128fb3317e201719f5",
+    "model": "bytedance/seedance-2.0/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/74a7046f-faf3-4868-bd25-afed5849ace7.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/acff77b66abb47128fb3317e201719f5/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-13T06:28:53.403347114Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 452811
+    }
+  }
+}

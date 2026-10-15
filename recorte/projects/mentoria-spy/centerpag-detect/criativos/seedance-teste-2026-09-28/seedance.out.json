@@ -1,0 +1,29 @@
+{
+  "id": "f6a60c81da534a3694be63c2b61eb463",
+  "model": "bytedance/seedance-2.5/talking-avatar",
+  "prompt": "A warm, confident language teacher speaking directly to the camera, natural expressive facial movements and subtle head motion, sitting at a bright desk.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/4e3d9b16-7aab-4b34-95f8-b839f00249fa.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/seedance-teste-2026-09-28/seedance.mp4"
+  ],
+  "elapsed_ms": 429295,
+  "raw": {
+    "id": "f6a60c81da534a3694be63c2b61eb463",
+    "model": "bytedance/seedance-2.5/talking-avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/4e3d9b16-7aab-4b34-95f8-b839f00249fa.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/f6a60c81da534a3694be63c2b61eb463/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T09:28:37.344894033Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 424896
+    }
+  }
+}

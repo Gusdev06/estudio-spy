@@ -1,0 +1,29 @@
+{
+  "id": "3957972497034313a50e47ad1a1f1056",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Image 1 is the character sheet for Maya (before). Keep their faces, hair, outfits and signature details exactly as in the sheets (Maya: beauty mark above the left corner of her upper lip, small gold hoops, gray cardigan, messy low bun).\nA 2x2 grid storyboard in a single image, four sequential moments of the same continuous shot, read left-to-right, top-to-bottom. Thin white gutters between panels. No text, no captions, no panel numbers.\nSetting (same in all four panels unless stated): the bathroom in Maya's own house, white tiles, mirror over the sink, cold light.\nCharacters: Maya, a 34-year-old Latina woman with warm light-brown skin, shoulder-length wavy dark-brown hair tied in a messy low bun with loose strands, hazel eyes with faint dark circles, a small beauty mark above the left corner of her upper lip, small gold hoop earrings, wearing an oversized heather-gray cardigan over a plain white t-shirt and dark jeans, slightly hunched posture.\nPanel 1: close-up of Maya's hands trembling, gripping the edge of the sink.\nPanel 2: Maya looks at herself in the mirror.\nPanel 3: her reflection goes slightly blurred and doubled.\nPanel 4: Maya closes her eyes and takes a deep breath.\nAny phone screen shows only a soft glow or is dark, never any readable interface, text or logo.\n3D animated feature film style, cinematic lighting, shallow depth of field, consistent characters, outfits and lighting across panels, vertical 9:16 framing inside each panel.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/1057eaeb-6fa4-4842-a279-ff8a15d4059e.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/shot-sheets-v2/B15.png"
+  ],
+  "elapsed_ms": 93426,
+  "raw": {
+    "id": "3957972497034313a50e47ad1a1f1056",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/1057eaeb-6fa4-4842-a279-ff8a15d4059e.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/3957972497034313a50e47ad1a1f1056/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:26:07.470929182Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 90086
+    }
+  }
+}

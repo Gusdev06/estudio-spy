@@ -1,0 +1,29 @@
+{
+  "id": "2d48c2862cf44db38283eebf2fd754ed",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same room, same camera, same framing distance, same warm lamp light, same background of dark wooden bookshelves filled with books and small objects, same large black podcast microphone on a boom arm entering from the lower left. Extend the scene vertically to a 9:16 vertical frame, keeping the original composition in the middle band. REPLACE the man with a DIFFERENT man: an Indian man with deep brown skin, about 48 years old, short salt-and-pepper hair greying at the temples, a neatly trimmed grey-flecked beard, thin-rimmed glasses, wearing the same style dark charcoal button-up shirt. He sits in the same position, same posture, same distance from the microphone, head and upper chest visible, looking straight into the camera lens, mouth closed, serious and confiding expression. Photorealistic video still, natural skin texture with visible pores, no retouching, not a model, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/54e7d835-fb54-4818-beb2-8d0a7ecd3636.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/talkinghead-wpp-indianos-2026-09-13/base/i2.png"
+  ],
+  "elapsed_ms": 102183,
+  "raw": {
+    "id": "2d48c2862cf44db38283eebf2fd754ed",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/54e7d835-fb54-4818-beb2-8d0a7ecd3636.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/2d48c2862cf44db38283eebf2fd754ed/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-13T03:58:13.093081169Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 98311
+    }
+  }
+}

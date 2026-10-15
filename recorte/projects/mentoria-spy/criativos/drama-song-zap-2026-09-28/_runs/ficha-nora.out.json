@@ -1,0 +1,29 @@
+{
+  "id": "1a65fedb3edc4682b3b64baf8a1e7e08",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Character turnaround sheet in a single image, the same character shown four times on a plain flat light-gray background (#C8C8C8), evenly spaced left to right, no text, no labels, no props, no floor shadow clutter:\n1) head-and-shoulders close-up facing the camera, neutral expression;\n2) full body, front view, standing relaxed, arms at the sides;\n3) full body, three-quarter view facing left;\n4) full body, three-quarter view facing right.\nCharacter: Nora, a 41-year-old Latina woman with warm light-brown skin, a straight chin-length dark-brown bob with a single silver-gray streak at the front, hazel eyes, calm kind expression, thin gold bangles, wearing a chambray denim shirt with rolled sleeves and reading glasses hooked on the collar, dark trousers.\n3D animated feature film style, stylized proportions, soft subsurface skin, large expressive eyes, sculpted hair strands, soft even studio lighting, high detail, consistent outfit and features across all four views.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/b1ac925b-e3d1-4651-a18e-d948ff4d2985.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/fichas/nora.png"
+  ],
+  "elapsed_ms": 48641,
+  "raw": {
+    "id": "1a65fedb3edc4682b3b64baf8a1e7e08",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/b1ac925b-e3d1-4651-a18e-d948ff4d2985.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/1a65fedb3edc4682b3b64baf8a1e7e08/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:17:43.703643052Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 45398
+    }
+  }
+}

@@ -1,0 +1,65 @@
+[
+ {
+  "i": 1,
+  "papel": "A",
+  "txt": "If your gut says something is off, you can see his WhatsApp conversations on your own phone today.",
+  "ini": 0.0,
+  "fim": 5.95
+ },
+ {
+  "i": 2,
+  "papel": "B",
+  "txt": "On my phone? He never lets that thing out of his sight.",
+  "ini": 6.19,
+  "fim": 9.633
+ },
+ {
+  "i": 3,
+  "papel": "A",
+  "txt": "He doesn't have to. You never touch his phone. All you need is his number.",
+  "ini": 9.873,
+  "fim": 13.788
+ },
+ {
+  "i": 4,
+  "papel": "B",
+  "txt": "That's it? Just the number?",
+  "ini": 14.028,
+  "fim": 15.713
+ },
+ {
+  "i": 5,
+  "papel": "A",
+  "txt": "That's it. Archived chats, deleted messages, and who he texts at night while you're asleep.",
+  "ini": 15.953,
+  "fim": 21.963
+ },
+ {
+  "i": 6,
+  "papel": "B",
+  "txt": "Alright. Show me how it works.",
+  "ini": 22.203,
+  "fim": 24.923
+ },
+ {
+  "i": 7,
+  "papel": "A",
+  "txt": "You type the number, the system pulls the backup, and his conversations open right on your screen.",
+  "ini": 25.163,
+  "fim": 30.543
+ },
+ {
+  "i": 8,
+  "papel": "A",
+  "txt": "Every name, every timestamp, every message he thought was gone forever. No more guessing.",
+  "ini": 30.663,
+  "fim": 37.877
+ },
+ {
+  "i": 9,
+  "papel": "A",
+  "txt": "Tap the link below, type in his number and finally get your answer.",
+  "ini": 37.997,
+  "fim": 42.531
+ }
+]

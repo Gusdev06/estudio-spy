@@ -1,0 +1,29 @@
+{
+  "id": "c75198dd0cb241fb932540d8955ae829",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate this exact ad. Keep the same woman, her pose with hand over mouth, her shocked expression, the phone showing the Instagram DM list, and EVERY text element identical in words, fonts, colors, sizes and positions (handwritten \"Trust but verify...\", headline \"I FOUND WHAT HE'S HIDING ON INSTAGRAM.\", 8-item feature list, \"The truth isn't always obvious. But now, it is.\" box, \"SEE THE TRUTH NOW →\" button). Change ONLY the setting: she is sitting on the floor of a dark bathroom late at night, back against the tub, door closed, lit mainly by the phone screen glow and a dim light under the door. Remove the chalkboard. Keep the left side dark enough for the text to read. Photorealistic, phone-photo realism.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/9d571559-cb8b-45e6-bbf7-2de705ce5c4a.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/gram-imagem-hiding-on-instagram-2026-10-11/out/v08-cena-banheiro.png"
+  ],
+  "elapsed_ms": 108219,
+  "raw": {
+    "id": "c75198dd0cb241fb932540d8955ae829",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/9d571559-cb8b-45e6-bbf7-2de705ce5c4a.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c75198dd0cb241fb932540d8955ae829/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-11T15:40:48.663093083Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 104547
+    }
+  }
+}

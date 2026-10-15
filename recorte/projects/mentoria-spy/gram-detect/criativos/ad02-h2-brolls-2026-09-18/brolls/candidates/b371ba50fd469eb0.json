@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:RY2S4NtIB18",
+  "provider": "youtube",
+  "source_id": "RY2S4NtIB18",
+  "source_url": "https://www.youtube.com/watch?v=RY2S4NtIB18",
+  "title": "Secret-HIDDEN New WhatsApp Tricks NOBODY KNOWS (2023)",
+  "creator": {
+    "name": "ʙɪꜱᴍᴀʀcᴋ ᴛᴇᴄʜɴᴏʟᴏɢʏ ",
+    "url": null
+  },
+  "query": "instagram dm tricks nobody knows #shorts",
+  "collected_at": "2026-09-17T16:32:17.951968+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 49,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/RY2S4NtIB18",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/RY2S4NtIB18/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC9wRnB-7rMce1EcnpHUD5yQ4Re3Q"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

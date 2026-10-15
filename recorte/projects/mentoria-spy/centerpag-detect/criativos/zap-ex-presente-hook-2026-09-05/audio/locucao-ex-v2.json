@@ -1,0 +1,28 @@
+{
+  "id": "bb155ee6e29744c58f34103cae25a7de",
+  "model": "minimax/speech-2.6-hd",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/bb155ee6e29744c58f34103cae25a7de/1.mp3"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-ex-presente-hook-2026-09-05/audio/locucao-ex-v2.mp3"
+  ],
+  "elapsed_ms": 8581,
+  "raw": {
+    "id": "bb155ee6e29744c58f34103cae25a7de",
+    "model": "minimax/speech-2.6-hd",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/bb155ee6e29744c58f34103cae25a7de/1.mp3"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/bb155ee6e29744c58f34103cae25a7de/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-04T19:06:00.927418852Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 4158
+    }
+  }
+}

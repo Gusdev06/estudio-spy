@@ -1,0 +1,28 @@
+{
+  "id": "3521419e7cec4ff3a64336e10adde230",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e66b41a9-5555-4506-9f3d-459c67590f61.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/luiza-troca-avatar-android-2026-09-19/clipes/w1.mp4"
+  ],
+  "elapsed_ms": 82005,
+  "raw": {
+    "id": "3521419e7cec4ff3a64336e10adde230",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e66b41a9-5555-4506-9f3d-459c67590f61.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/3521419e7cec4ff3a64336e10adde230/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-19T01:42:33.671038325Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 77292
+    }
+  }
+}

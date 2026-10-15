@@ -1,0 +1,29 @@
+{
+  "id": "fe9e408cfec848d088fd9c533227062b",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still, front phone camera at eye level, bright home office. an Indonesian man about 29 with warm brown skin, side-parted short black hair, a thin moustache, wearing a plain denim-blue chambray shirt. He looks straight into the lens with a friendly, slightly conspiratorial half-smile, as if about to explain a secret, mouth closed. Framing: chest up, hands out of frame, subject centered, eyes at about 35% from the top. Behind him: a white upholstered chair, a light neutral wall, a bookshelf with a small plant, soft natural window daylight, slightly overexposed background like a real webcam-style recording. Realistic skin texture, mild phone-camera softness, no retouching, ordinary person, not a model. Only one person in frame.",
+  "outputs": [
+    "https://cdn.cachegalaxy.com/output/c4641c22-37b0-432b-b349-a2025d421fe9.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-top5-avatar-copy-2026-10-07/base/v165.png"
+  ],
+  "elapsed_ms": 73619,
+  "raw": {
+    "id": "fe9e408cfec848d088fd9c533227062b",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://cdn.cachegalaxy.com/output/c4641c22-37b0-432b-b349-a2025d421fe9.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/fe9e408cfec848d088fd9c533227062b/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-07T14:37:11.724541712Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 69845
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "cost_net_usd": 4.5,
+  "items": [
+    {
+      "access_key_name": "macbook",
+      "access_key_uuid": "f2ef146d-8f10-41e0-b79c-4d5538d4f136",
+      "billing_type": "deduct",
+      "created_at": "2026-09-23T19:32:26.261Z",
+      "order": {
+        "origin_price": 0.9,
+        "price": 0.9,
+        "state": "done",
+        "status": "",
+        "uuid": "98f7fc953a4c4aafb751863008e9122f"
+      },
+      "prediction": {
+        "model_uuid": "pruna-ai/p-video/avatar",
+        "status": "completed",
+        "uuid": "ebbf973d2f5848bcaa7ea7a525196f7c"
+      },
+      "price": 0.9,
+      "updated_at": "2026-09-23T19:32:26.261Z",
+      "uuid": "b03a57595e7a4f149e717014435c6a26"
+    },
+    {
+      "access_key_name": "macbook",
+      "access_key_uuid": "f2ef146d-8f10-41e0-b79c-4d5538d4f136",
+      "billing_type": "refund",
+      "created_at": "2026-09-23T19:10:54.101Z",
+      "order": {
+        "origin_price": 0.9,
+        "price": 0.9,
+        "state": "refunded",
+        "status": "",
+        "uuid": "2ac0c68fd5d748b7b6a58d940cb3e91a"
+      },
+      "prediction": {
+        "model_uuid": "pruna-ai/p-video/avatar",
+        "status": "failed",
+        "uuid": "f6a951f9f98b4bcd9f2a72033c5ce707"
+      },
+      "price": 0.9,
+      "updated_at": "2026-09-23T19:10:54.101Z",
+      "uuid": "aa505c949c4946458e1b5135acf5f150"
+    },
+    {
+      "access_key_name": "macbook",
+      "access_key_uuid": "f2ef146d-8f10-41e0-b79c-4d5538d4f136",
+      "billing_type": "deduct",
+      "created_at": "2026-09-23T19:10:40.776Z",
+      "order": {
+        "origin_price": 0.9,
+        "price": 0.9,
+        "state": "refunded",
+        "status": "",
+        "uuid": "2ac0c68fd5d748b7b6a58d940cb3e91a"
+      },
+      "prediction": {
+        "model_uuid": "pruna-ai/p-video/avatar",
+        "status": "failed",
+        "uuid": "f6a951f9f98b4bcd9f2a72033c5ce707"
+      },
+      "price": 0.9,
+      "updated_at": "2026-09-23T19:10:40.776Z",
+      "uuid": "459dc7c175f64a62864b160b897a3779"
+    },
+    {
+      "access_key_name": "macbook",
+      "access_key_uuid": "f2ef146d-8f10-41e0-b79c-4d5538d4f136",
+      "billing_type": "deduct",
+      "created_at": "2026-09-23T19:10:40.749Z",
+      "order": {
+        "origin_price": 0.9,
+        "price": 0.9,
+        "state": "done",
+        "status": "",
+        "uuid": "5f53da25fda34855874616f8f55e8724"
+      },
+      "prediction": {
+        "model_uuid": "pruna-ai/p-video/avatar",
+        "status": "completed",
+        "uuid": "b29f507e6db04c9c9c91d5e20bec4ad3"
+      },
+      "price": 0.9,
+      "updated_at": "2026-09-23T19:10:40.749Z",
+      "uuid": "841d7a99d3fa4d45882b9f56177478d3"
+    },
+    {
+      "access_key_name": "macbook",
+      "access_key_uuid": "f2ef146d-8f10-41e0-b79c-4d5538d4f136",
+      "billing_type": "deduct",
+      "created_at": "2026-09-23T19:10:40.501Z",
+      "order": {
+        "origin_price": 0.9,
+        "price": 0.9,
+        "state": "done",
+        "status": "",
+        "uuid": "11c5968ed3e0422682dc84181149e047"
+      },
+      "prediction": {
+        "model_uuid": "pruna-ai/p-video/avatar",
+        "status": "completed",
+        "uuid": "05f77ff66ce2492b8b31f1d97e4f7e3f"
+      },
+      "price": 0.9,
+      "updated_at": "2026-09-23T19:10:40.501Z",
+      "uuid": "1e9755b67fec4bf6a852ab20bda3cd53"
+    },
+    {
+      "access_key_name": "macbook",
+      "access_key_uuid": "f2ef146d-8f10-41e0-b79c-4d5538d4f136",
+      "billing_type": "deduct",
+      "created_at": "2026-09-23T19:10:39.624Z",
+      "order": {
+        "origin_price": 0.9,
+        "price": 0.9,
+        "state": "done",
+        "status": "",
+        "uuid": "da5fad2955894734ac63c5d98948648b"
+      },
+      "prediction": {
+        "model_uuid": "pruna-ai/p-video/avatar",
+        "status": "completed",
+        "uuid": "0835f51e2c8e4015b18d8cac57eb4636"
+      },
+      "price": 0.9,
+      "updated_at": "2026-09-23T19:10:39.624Z",
+      "uuid": "d98b5685f66d436aa3a66ee989b7231d"
+    },
+    {
+      "access_key_name": "macbook",
+      "access_key_uuid": "f2ef146d-8f10-41e0-b79c-4d5538d4f136",
+      "billing_type": "deduct",
+      "created_at": "2026-09-23T19:10:39.619Z",
+      "order": {
+        "origin_price": 0.9,
+        "price": 0.9,
+        "state": "done",
+        "status": "",
+        "uuid": "7752a930c8f04e69961d91ced8ac9f8e"
+      },
+      "prediction": {
+        "model_uuid": "pruna-ai/p-video/avatar",
+        "status": "completed",
+        "uuid": "640174fe8a42439483182c49a6fc5dc8"
+      },
+      "price": 0.9,
+      "updated_at": "2026-09-23T19:10:39.619Z",
+      "uuid": "8d94ca84d86a435d96e93e95de253f19"
+    }
+  ]
+}

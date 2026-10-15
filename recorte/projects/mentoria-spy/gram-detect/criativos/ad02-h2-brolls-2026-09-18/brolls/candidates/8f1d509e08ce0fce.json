@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:puvrApk8Vw8",
+  "provider": "youtube",
+  "source_id": "puvrApk8Vw8",
+  "source_url": "https://www.youtube.com/watch?v=puvrApk8Vw8",
+  "title": "How Does Instagram Vanish Mode Work In 2024?",
+  "creator": {
+    "name": "HowToUnleashed",
+    "url": null
+  },
+  "query": "instagram vanish mode secret chat #shorts",
+  "collected_at": "2026-09-17T16:32:16.583124+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 93,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/puvrApk8Vw8",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/puvrApk8Vw8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCc6Cf6oJq8Tp5PI9groFqSQxBrnQ"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

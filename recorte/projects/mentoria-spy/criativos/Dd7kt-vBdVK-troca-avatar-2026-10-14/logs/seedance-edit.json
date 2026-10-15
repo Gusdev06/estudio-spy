@@ -1,0 +1,31 @@
+✔ Done in 1033s.
+✔ Saved 1 file.
+{
+  "id": "4dd067d9253846328c0e64b64eebd715",
+  "model": "bytedance/seedance-2.0/video-edit",
+  "prompt": "Replace the blonde woman in the video with the dark-haired woman from the reference image for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her left cheek and dark brown hair pulled back. She must not be blonde in any frame. Keep every movement, gesture, timing, camera framing, the light blue tank top, dark nail polish, the steel pot, the slotted spoon, the broccoli, the white bowl, the marble counter and the kitchen exactly as in the original video. Remove the yellow on-screen text caption in the middle; show only the original scene there.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e8a46f73-541b-4920-b5f0-6fc395cf342e.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/Dd7kt-vBdVK-troca-avatar-2026-10-14/clipes/seedance-edit.mp4"
+  ],
+  "elapsed_ms": 1035766,
+  "raw": {
+    "id": "4dd067d9253846328c0e64b64eebd715",
+    "model": "bytedance/seedance-2.0/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e8a46f73-541b-4920-b5f0-6fc395cf342e.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/4dd067d9253846328c0e64b64eebd715/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T13:04:56.535782119Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 1032035
+    }
+  }
+}

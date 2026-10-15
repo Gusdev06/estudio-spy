@@ -1,0 +1,31 @@
+✔ Done in 311s.
+✔ Saved 1 file.
+{
+  "id": "f90fec9ad20b41029c465500e32d3657",
+  "model": "bytedance/seedance-2.0/video-edit",
+  "prompt": "Replace the woman in the video with the woman from the reference image: her face, dark brown hair pulled back, skin tone and beauty mark. Keep every movement, gesture, timing, camera framing, the light blue tank top, dark nail polish, the steel pot, the tongs, the broccoli, the white bowl, the marble counter and the kitchen exactly as in the original video. Remove the yellow on-screen text caption in the middle; show only the original scene there.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/9c4a3cc1-dca5-497e-b69d-fc50ae7b2379.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/Dd7kt-vBdVK-troca-avatar-2026-10-14/clipes/seedance-edit.mp4"
+  ],
+  "elapsed_ms": 313247,
+  "raw": {
+    "id": "f90fec9ad20b41029c465500e32d3657",
+    "model": "bytedance/seedance-2.0/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/9c4a3cc1-dca5-497e-b69d-fc50ae7b2379.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/f90fec9ad20b41029c465500e32d3657/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T12:55:39.390538761Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 309097
+    }
+  }
+}

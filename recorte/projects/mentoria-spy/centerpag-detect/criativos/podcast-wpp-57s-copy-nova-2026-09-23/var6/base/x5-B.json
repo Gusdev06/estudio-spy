@@ -1,0 +1,29 @@
+{
+  "id": "3837cddc2757460f93260f2cec215ead",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same podcast studio, same camera position and framing, same warm daylight, same cream sofa and background with a light curtain and green plants, same black podcast microphone on a boom arm in front of her. Keep the wide 16:9 landscape framing exactly as in the image. REPLACE the woman with a DIFFERENT woman: a Latina woman about 26 years old with tan skin, a sleek high ponytail, small hoops, wearing a plain white long-sleeve top. She sits in the same position, same posture, same distance from the microphone, head and upper chest visible, mouth closed, looking toward the person she is talking to off-camera. Photorealistic video still, natural skin texture with visible pores, no retouching, ordinary person, not a model, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/a35e085f-4cbc-4e1b-97d5-40febbd8e7b9.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-57s-copy-nova-2026-09-23/var6/base/x5-B.png"
+  ],
+  "elapsed_ms": 36466,
+  "raw": {
+    "id": "3837cddc2757460f93260f2cec215ead",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/a35e085f-4cbc-4e1b-97d5-40febbd8e7b9.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/3837cddc2757460f93260f2cec215ead/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T03:06:10.036464408Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 33574
+    }
+  }
+}

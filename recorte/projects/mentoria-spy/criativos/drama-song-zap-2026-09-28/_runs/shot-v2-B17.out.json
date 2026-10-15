@@ -1,0 +1,29 @@
+{
+  "id": "47c1a26f1c7448f684a33fc273e5b977",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Image 1 is the character sheet for Maya (after). Image 2 is the character sheet for Nora. Keep their faces, hair, outfits and signature details exactly as in the sheets (Maya: same face, beauty mark above the left corner of her upper lip, small gold hoops, hair down in soft waves, emerald-green wrap blouse; Nora: chin-length dark bob with one silver-gray streak at the front, chambray shirt, reading glasses on the collar, gold bangles).\nA 2x2 grid storyboard in a single image, four sequential moments of the same continuous shot, read left-to-right, top-to-bottom. Thin white gutters between panels. No text, no captions, no panel numbers.\nSetting (same in all four panels unless stated): panels 1-2: Maya's bedroom in the morning, sunlight. Panels 3-4: a cozy neighborhood cafe in daylight.\nCharacters: Maya, a 34-year-old Latina woman with warm light-brown skin, shoulder-length wavy dark-brown hair worn down in glossy soft waves, bright hazel eyes, a small beauty mark above the left corner of her upper lip, small gold hoop earrings, subtle burnt-red lipstick, wearing an emerald-green wrap blouse and cream tailored trousers, upright confident posture, chin slightly raised. Nora, a 41-year-old Latina woman with warm light-brown skin, a straight chin-length dark-brown bob with a single silver-gray streak at the front, hazel eyes, calm kind expression, thin gold bangles, wearing a chambray denim shirt with rolled sleeves and reading glasses hooked on the collar, dark trousers.\nPanel 1: Maya sleeping peacefully, morning sun coming in, the gray cardigan tossed on a chair.\nPanel 2: Maya in a soft white t-shirt opening the curtains, light flooding the room.\nPanel 3: at the cafe, Nora points at Maya's face and smiles.\nPanel 4: Maya in the emerald-green wrap blouse laughing for real, hair down.\nAny phone screen shows only a soft glow or is dark, never any readable interface, text or logo.\n3D animated feature film style, cinematic lighting, shallow depth of field, consistent characters, outfits and lighting across panels, vertical 9:16 framing inside each panel.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/c7093870-a42d-4548-9a9b-350ac75ca74e.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/shot-sheets-v2/B17.png"
+  ],
+  "elapsed_ms": 101105,
+  "raw": {
+    "id": "47c1a26f1c7448f684a33fc273e5b977",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/c7093870-a42d-4548-9a9b-350ac75ca74e.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/47c1a26f1c7448f684a33fc273e5b977/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:26:15.917025329Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 98261
+    }
+  }
+}

@@ -1,0 +1,674 @@
+{
+ "preset": "quente",
+ "so_metadados": false,
+ "ffmpeg_disponivel": false,
+ "total": 43,
+ "erros": 0,
+ "arquivos": [
+  {
+   "origem": "anuncios/charlotte-miller-1062087256401023.jpg",
+   "saida": "tratados/charlotte-miller-1062087256401023.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "97791baf1d7a9cb8006fd73a513e9913",
+   "md5_depois": "6b77263e9ec6ceea4fe5162dd37971a4",
+   "bytes_antes": 43311,
+   "bytes_depois": 65039,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/charlotte-miller-1097910339469459.jpg",
+   "saida": "tratados/charlotte-miller-1097910339469459.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "d8fbb334922836456ce1db56029597e1",
+   "md5_depois": "066bf7f867bb19f777140c020fc1aa5a",
+   "bytes_antes": 44512,
+   "bytes_depois": 67119,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/charlotte-miller-2302510360514309.jpg",
+   "saida": "tratados/charlotte-miller-2302510360514309.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "e661bf1f612dacab67acf8f4aa259b2e",
+   "md5_depois": "da24d95da5c1ad2e51edb152e3d0bfa9",
+   "bytes_antes": 47074,
+   "bytes_depois": 70250,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/charlotte-miller-4182228071912475-thumb.jpg",
+   "saida": "tratados/charlotte-miller-4182228071912475-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "e203def666356a5b5c20dbe8c1b23b94",
+   "md5_depois": "b689dec2751461821eefff15872c7ed1",
+   "bytes_antes": 157173,
+   "bytes_depois": 251904,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/charlotte-miller-4182228071912475.mp4",
+   "saida": "tratados/charlotte-miller-4182228071912475.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "312170594b24920f70e538971eea9c3c",
+   "md5_depois": "57ed820df1776c389b3b5512b5fbfc9d",
+   "bytes_antes": 2440335,
+   "bytes_depois": 2440335,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/gustagoat-1011226631934551-thumb.jpg",
+   "saida": "tratados/gustagoat-1011226631934551-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "2d86867318b60173870b94393c23a84b",
+   "md5_depois": "2f76c6d5e2f184e83fbfc267e9457938",
+   "bytes_antes": 371751,
+   "bytes_depois": 492395,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/gustagoat-1011226631934551.mp4",
+   "saida": "tratados/gustagoat-1011226631934551.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "739fc36b82f44d38bc4fdf51948725ab",
+   "md5_depois": "d711fa057736d09df007664ca4b7a762",
+   "bytes_antes": 920539,
+   "bytes_depois": 920539,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/gustagoat-1384176317230598-thumb.jpg",
+   "saida": "tratados/gustagoat-1384176317230598-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "a78df8561f813b057d0e699bedad252c",
+   "md5_depois": "201e5827b044ee16763a39c9e28edb22",
+   "bytes_antes": 246562,
+   "bytes_depois": 340798,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/gustagoat-1384176317230598.mp4",
+   "saida": "tratados/gustagoat-1384176317230598.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "346e2dd963ca53a24898d4bbc7d40291",
+   "md5_depois": "aca365dc19c77a77ca8dcb5183ecede0",
+   "bytes_antes": 1024600,
+   "bytes_depois": 1024600,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/gustagoat-1392130866394716-thumb.jpg",
+   "saida": "tratados/gustagoat-1392130866394716-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "e1250e94567cd88039850ea406457ebd",
+   "md5_depois": "5c0a01149291faed7299ecc085b70e79",
+   "bytes_antes": 374358,
+   "bytes_depois": 495551,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/gustagoat-1392130866394716.mp4",
+   "saida": "tratados/gustagoat-1392130866394716.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "1294cdeb0ca51ba6a1a7f523e6ea4917",
+   "md5_depois": "a6bdd66ab017c508f7b2742566451cce",
+   "bytes_antes": 981471,
+   "bytes_depois": 981471,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/gustagoat-1394281849345342-thumb.jpg",
+   "saida": "tratados/gustagoat-1394281849345342-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "3df3604f1266d4bd3978c57aa0491484",
+   "md5_depois": "eed91a77af0e8c21a714614bde1dd1be",
+   "bytes_antes": 305993,
+   "bytes_depois": 423509,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/gustagoat-1394281849345342.mp4",
+   "saida": "tratados/gustagoat-1394281849345342.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "29e0dcfb740a6ce9ca3ef2f8375b5e81",
+   "md5_depois": "ee2739ed864857cede69fe040bf35898",
+   "bytes_antes": 776279,
+   "bytes_depois": 776279,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/gustagoat-1431371458899401-thumb.jpg",
+   "saida": "tratados/gustagoat-1431371458899401-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "82d73850745f568261bddb1acb7b8050",
+   "md5_depois": "b7e71cb3c880d91cd7de6ede0e3c345e",
+   "bytes_antes": 248435,
+   "bytes_depois": 359344,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/gustagoat-1431371458899401.mp4",
+   "saida": "tratados/gustagoat-1431371458899401.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "2cc57e0f8af8ad03e656527d0c19f3b0",
+   "md5_depois": "238732b9670f552d133cc8bd4afc8d44",
+   "bytes_antes": 963761,
+   "bytes_depois": 963761,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/gustagoat-1584670570033447-thumb.jpg",
+   "saida": "tratados/gustagoat-1584670570033447-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "6f7f29681c1f17a606a52e0172605a24",
+   "md5_depois": "71db9bd8f27325f1d530885dcacc61fb",
+   "bytes_antes": 279176,
+   "bytes_depois": 379051,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/gustagoat-1584670570033447.mp4",
+   "saida": "tratados/gustagoat-1584670570033447.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "ecffb52a0187b062edc36518808c255e",
+   "md5_depois": "36910d9d037f09eb59a814647f71a4ca",
+   "bytes_antes": 1112578,
+   "bytes_depois": 1112578,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/gustagoat-2163375947554632-thumb.jpg",
+   "saida": "tratados/gustagoat-2163375947554632-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "44f937f11fc28d06d19d3d14387e5430",
+   "md5_depois": "4108112a1f76fa3dd2ae9868f0764a60",
+   "bytes_antes": 254490,
+   "bytes_depois": 336380,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/gustagoat-2163375947554632.mp4",
+   "saida": "tratados/gustagoat-2163375947554632.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "734ff02fcd121dc5e1670517fc48ad4a",
+   "md5_depois": "8e0af2f6dd22dcfd7667c5b6fc21335d",
+   "bytes_antes": 762178,
+   "bytes_depois": 762178,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/gustagoat-28028650136777965-thumb.jpg",
+   "saida": "tratados/gustagoat-28028650136777965-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "13d312f3caeab28454a99286b393812e",
+   "md5_depois": "816a476a5581ac5cff5644dce6d78e39",
+   "bytes_antes": 307222,
+   "bytes_depois": 423319,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/gustagoat-28028650136777965.mp4",
+   "saida": "tratados/gustagoat-28028650136777965.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "6581ddfe8f65b17f2cbfa706c5c198ab",
+   "md5_depois": "5cb7ecf9a6a71472eb6cee401aa0f705",
+   "bytes_antes": 1038368,
+   "bytes_depois": 1038368,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/gustagoat-3199979683532834-thumb.jpg",
+   "saida": "tratados/gustagoat-3199979683532834-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "a61bd81787006f34fe22e0c058a4de76",
+   "md5_depois": "f2199a7016f70bbb3d1325650ca9dab9",
+   "bytes_antes": 455732,
+   "bytes_depois": 597419,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/gustagoat-3199979683532834.mp4",
+   "saida": "tratados/gustagoat-3199979683532834.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "de7c841acfe30712958a97c097be4e07",
+   "md5_depois": "6ca3fa3dad329ef7fd41b7d92e1cb8c8",
+   "bytes_antes": 1105300,
+   "bytes_depois": 1105300,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/sophia-jones-1541537987137161-thumb.jpg",
+   "saida": "tratados/sophia-jones-1541537987137161-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "6f7f29681c1f17a606a52e0172605a24",
+   "md5_depois": "71db9bd8f27325f1d530885dcacc61fb",
+   "bytes_antes": 279176,
+   "bytes_depois": 379051,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/sophia-jones-1541537987137161.mp4",
+   "saida": "tratados/sophia-jones-1541537987137161.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "2abac5b567d7af283a1a673fb5d2290c",
+   "md5_depois": "3cc45c061718eb0b61ee126fbac483a0",
+   "bytes_antes": 1112678,
+   "bytes_depois": 1112678,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/sophia-jones-1632753375186917-thumb.jpg",
+   "saida": "tratados/sophia-jones-1632753375186917-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "a78df8561f813b057d0e699bedad252c",
+   "md5_depois": "201e5827b044ee16763a39c9e28edb22",
+   "bytes_antes": 246562,
+   "bytes_depois": 340798,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/sophia-jones-1632753375186917.mp4",
+   "saida": "tratados/sophia-jones-1632753375186917.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "eb9a8f3944f4afec4ceb4bf429668c3f",
+   "md5_depois": "fd7897b1a0a9236e64c664af62e5ff6f",
+   "bytes_antes": 1024588,
+   "bytes_depois": 1024588,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/sophia-jones-1761247818659822-thumb.jpg",
+   "saida": "tratados/sophia-jones-1761247818659822-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "7e8326af0285a0387a13dd88fd2ce3dd",
+   "md5_depois": "4cc1d35094da9f8d3410328530de29bc",
+   "bytes_antes": 276927,
+   "bytes_depois": 377547,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/sophia-jones-1761247818659822.mp4",
+   "saida": "tratados/sophia-jones-1761247818659822.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "9e300448c20fd4d138ba074a2e35caa1",
+   "md5_depois": "87c97b3b1edf4b47a4930667c5e140f1",
+   "bytes_antes": 1061460,
+   "bytes_depois": 1061460,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/sophia-jones-1802327631206922-thumb.jpg",
+   "saida": "tratados/sophia-jones-1802327631206922-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "44f937f11fc28d06d19d3d14387e5430",
+   "md5_depois": "4108112a1f76fa3dd2ae9868f0764a60",
+   "bytes_antes": 254490,
+   "bytes_depois": 336380,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/sophia-jones-1802327631206922.mp4",
+   "saida": "tratados/sophia-jones-1802327631206922.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "0ce2e4ce35cd64bc79caa4874637675b",
+   "md5_depois": "6cb81be0e541bd27a5691724d33d2566",
+   "bytes_antes": 762154,
+   "bytes_depois": 762154,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/sophia-jones-1878736593305369-thumb.jpg",
+   "saida": "tratados/sophia-jones-1878736593305369-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "25129ddade61d067cc16aa2d82b1dfcd",
+   "md5_depois": "d56c2f86edf7c8df0294c3b4176e24d4",
+   "bytes_antes": 200510,
+   "bytes_depois": 280016,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/sophia-jones-1878736593305369.mp4",
+   "saida": "tratados/sophia-jones-1878736593305369.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "8040c84ec7928bc73dc1d155197ec644",
+   "md5_depois": "7d03cf6d7f17251e7227aadcd3f8cfcf",
+   "bytes_antes": 985303,
+   "bytes_depois": 985303,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/volutpay-1080058538040737-thumb.jpg",
+   "saida": "tratados/volutpay-1080058538040737-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "b1019537c17a6c1b4a295cfed6bbd11d",
+   "md5_depois": "5c2b1e4ba3f40aa6ab128c4ad00c4d69",
+   "bytes_antes": 72449,
+   "bytes_depois": 99897,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/volutpay-1080058538040737.mp4",
+   "saida": "tratados/volutpay-1080058538040737.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "0d85cd759d982b3b51bb91d7085672bb",
+   "md5_depois": "1cf7a61690c42f9552114b93203b3dc9",
+   "bytes_antes": 1238437,
+   "bytes_depois": 1238437,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/volutpay-1220064266976954-thumb.jpg",
+   "saida": "tratados/volutpay-1220064266976954-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "6d3e2b6aa192c8d8e7552af8ae6e5796",
+   "md5_depois": "a19303f1b2e757b09c1dd25d712c5a57",
+   "bytes_antes": 119530,
+   "bytes_depois": 166762,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/volutpay-1220064266976954.mp4",
+   "saida": "tratados/volutpay-1220064266976954.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "b5484ce8bcf72d1a75017bb3091c3f05",
+   "md5_depois": "867927735555f77fab47c7073f03c6d8",
+   "bytes_antes": 877060,
+   "bytes_depois": 877060,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/volutpay-1560047599470034-thumb.jpg",
+   "saida": "tratados/volutpay-1560047599470034-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "363056f9a0336d3bc8fe4cd21cf67176",
+   "md5_depois": "cd9d04683507a140bf7e025b1042ce23",
+   "bytes_antes": 139253,
+   "bytes_depois": 191872,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/volutpay-1560047599470034.mp4",
+   "saida": "tratados/volutpay-1560047599470034.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "9d91adb0a5b33990517f2ff94455724f",
+   "md5_depois": "f57cc245d21ebc20e569cd69c21ee5e6",
+   "bytes_antes": 959493,
+   "bytes_depois": 959493,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/volutpay-1721731255729332-thumb.jpg",
+   "saida": "tratados/volutpay-1721731255729332-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "16f6aa0c9beadf08733a02b51337eef4",
+   "md5_depois": "ef060c9dce15ae9df4d79ff7e31177ea",
+   "bytes_antes": 161086,
+   "bytes_depois": 208620,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/volutpay-1721731255729332.mp4",
+   "saida": "tratados/volutpay-1721731255729332.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "ac72089e2185e0492765e258d93f6262",
+   "md5_depois": "a9945bd06752cfb05a4b1c28029a3ae0",
+   "bytes_antes": 1105148,
+   "bytes_depois": 1105148,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  },
+  {
+   "origem": "anuncios/volutpay-2139608616904424-thumb.jpg",
+   "saida": "tratados/volutpay-2139608616904424-thumb.jpg",
+   "tipo": "imagem",
+   "preset": "quente",
+   "md5_antes": "f79f082fcdd4781d7bcdd41c61604055",
+   "md5_depois": "ea3280c89facb66e22aa2b7fff295f9f",
+   "bytes_antes": 88714,
+   "bytes_depois": 133773,
+   "metadados_removidos": [
+    "EXIF/ICC/XMP"
+   ],
+   "recodificado": true,
+   "verificado_sem_metadados": true
+  },
+  {
+   "origem": "anuncios/volutpay-2139608616904424.mp4",
+   "saida": "tratados/volutpay-2139608616904424.mp4",
+   "tipo": "video",
+   "preset": "nenhum",
+   "md5_antes": "f8c010a0c591f3d6831e01a41bc0fdf5",
+   "md5_depois": "5e8a3c2924b15fe84539ff5cf97c1d9c",
+   "bytes_antes": 2403601,
+   "bytes_depois": 2403601,
+   "metadados_removidos": [
+    "udta"
+   ],
+   "recodificado": false,
+   "verificado_sem_metadados": true,
+   "cor_aplicada": false
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "omni-img": {
+  "taskId": "5b6ca7b1e779aab17e438035982a510c",
+  "raw": null
+ },
+ "omni-txt": {
+  "taskId": "90e93280ca130f5857292949f4230e07",
+  "raw": null
+ },
+ "mudo-img": {
+  "taskId": "932ef95d0d99e89681c640770b30b509",
+  "raw": null
+ },
+ "mudo-txt": {
+  "taskId": "efe3fafcce35ed2567eb744470b9e902",
+  "raw": null
+ },
+ "mudo-img-v2": {
+  "taskId": "e1a6c8693d115712444ddf01952230db"
+ },
+ "mudo-img-v3": {
+  "taskId": "9679c5bf3106d5d8b58b3f48a52fd5a1"
+ }
+}

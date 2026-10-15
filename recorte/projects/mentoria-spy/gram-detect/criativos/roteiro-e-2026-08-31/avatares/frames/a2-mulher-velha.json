@@ -1,0 +1,28 @@
+✔ Done in 105s.
+{
+  "id": "3d4ab15c8cb74861bbf946b328d7bd38",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Generate an image with the following prompt, dont change it(DO NOT CHANGE THIS PROMPT, IT'S ALREADY AN IMPROVED PROMPT) -\n\nsubject: a Black woman in her late fifties, short natural grey-streaked hair, small gold hoop earrings, laugh lines around her eyes, wearing a soft burgundy cardigan over a plain top, tired but composed expression\n\npose and framing: sitting at a kitchen table, holding the phone at arm's length in front of her face as if recording a selfie video, looking directly into the lens, framed from mid-chest up, her face in the upper-middle third of the frame\n\nscene: an ordinary kitchen at night, cabinets and a kettle softly out of focus behind her, warm overhead light, a mug on the table just in frame\n\nlighting: warm lamp light from one side of the face, cool ambient from a window on the other, uneven and a little harsh, the way a phone camera renders a room at night\n\nphoto quality and vibe: non-studio lighting, no oversharpening, real light from the location, iphone front camera video still, imperfect photo quality and raw quality for realism, slight motion blur, mild grain in the shadows, a random real moment rather than a posed shot, make sure the lighting is natural and matches the background\n\ncomposition note: keep the lower quarter of the frame simple and uncluttered, nothing important in that band\n\naspect ratio: 9:16\n\nAvoid next - any text, any letters, any caption, any watermark, any logo, studio lighting, ring light catchlight, beauty retouching, plastic skin, excessive yellow in the photo, too sharp or overly sharpened, too many highlights or glare on the face.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e7b01548-f435-4963-94ad-8fd6f76ea64c.png"
+  ],
+  "saved": [],
+  "elapsed_ms": 105605,
+  "raw": {
+    "id": "3d4ab15c8cb74861bbf946b328d7bd38",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e7b01548-f435-4963-94ad-8fd6f76ea64c.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/3d4ab15c8cb74861bbf946b328d7bd38/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-31T09:54:42.887480986Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 103692
+    }
+  }
+}

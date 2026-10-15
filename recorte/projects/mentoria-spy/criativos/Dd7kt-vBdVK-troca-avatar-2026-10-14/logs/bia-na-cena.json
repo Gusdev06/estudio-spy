@@ -1,0 +1,31 @@
+✔ Done in 36s.
+✔ Saved 1 file.
+{
+  "id": "c3ff382f8ee8482785309968d6a0f1f3",
+  "model": "openai/gpt-image-2.5-sunburst/edit",
+  "prompt": "Edit image 1. Replace only the woman's face, head and hair with the woman from image 2: her identical face, light olive skin, brown eyes, thick dark eyebrows, small beauty mark on her left cheek, dark brown hair pulled back in a low ponytail. Keep everything else in image 1 exactly the same: the light blue tank top, her arms and dark nail polish, the slotted serving spoon, the steel pot, the broccoli, the white bowl, the marble counter, the kitchen, the lighting, the framing and the camera angle. Raw iPhone photo, natural skin texture, no text.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/d155e1ee-2ed3-4152-8d06-b6e0a7565afc.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/Dd7kt-vBdVK-troca-avatar-2026-10-14/original/bia-na-cena.png"
+  ],
+  "elapsed_ms": 36858,
+  "raw": {
+    "id": "c3ff382f8ee8482785309968d6a0f1f3",
+    "model": "openai/gpt-image-2.5-sunburst/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/d155e1ee-2ed3-4152-8d06-b6e0a7565afc.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c3ff382f8ee8482785309968d6a0f1f3/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T13:02:22.369456865Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 34595
+    }
+  }
+}

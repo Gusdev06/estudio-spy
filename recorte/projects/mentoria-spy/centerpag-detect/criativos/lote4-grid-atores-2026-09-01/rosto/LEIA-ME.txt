@@ -1,0 +1,11 @@
+QUAL ARQUIVO VAI PRO LIPSYNC:  slotN-conformado.mp4
+
+Mesmo vocabulario do lote 3, onde rosto-conformado.mp4 e o que casa a moldura.
+IOD 496-510px contra 510 do controle; olhos em y1216-1280 contra 1236.
+
+slotN-aberto-NAO-USAR.mp4 e o plano ABERTO, guardado so como alternativa.
+Os olhos ficam ~100-140px acima do eixo do controle. NAO mandar pro lipsync.
+
+ATENCAO: a palavra "plano" foi removida deste lote de proposito. No lote 3
+rosto-PLANO.mp4 e o enquadramento FECHADO; aqui ela significaria o oposto.
+Colisao apontada pelo Peneira em 2026-09-01.

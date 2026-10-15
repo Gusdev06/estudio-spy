@@ -1,0 +1,1 @@
+var4 emenda n1230: salto máx 5.2px/frame na emenda | movimento típico (mediana ±20 fr) 2.2 | p90 5.2

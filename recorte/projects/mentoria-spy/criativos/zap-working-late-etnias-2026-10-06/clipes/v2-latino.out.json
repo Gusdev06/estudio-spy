@@ -1,0 +1,28 @@
+{
+  "id": "0fdd837e98264c5586b10b87bad2962e",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/31dcd609-6cd1-4528-91aa-c9eef3d956ed.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/zap-working-late-etnias-2026-10-06/clipes/v2-latino.mp4"
+  ],
+  "elapsed_ms": 115440,
+  "raw": {
+    "id": "0fdd837e98264c5586b10b87bad2962e",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/31dcd609-6cd1-4528-91aa-c9eef3d956ed.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/0fdd837e98264c5586b10b87bad2962e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-06T01:14:57.893452777Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 107764
+    }
+  }
+}

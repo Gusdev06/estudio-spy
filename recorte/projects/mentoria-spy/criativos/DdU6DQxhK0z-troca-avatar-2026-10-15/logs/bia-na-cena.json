@@ -1,0 +1,31 @@
+✔ Done in 38s.
+✔ Saved 1 file.
+{
+  "id": "069f8480b8634a4da487bacab2599ca2",
+  "model": "openai/gpt-image-2.5-sunburst/edit",
+  "prompt": "Edit image 1. Replace the blonde woman with the woman from images 2 and 3 (same identity, face and beauty mark). Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nHer dark brown hair is pulled back in a sleek low bun with a middle part and a few loose strands. She wears a fitted cherry-red ribbed tank top, a thin gold chain necklace and small gold hoop earrings.\nKeep everything else in image 1 exactly the same: her pose, hand and arm positions, the knife, the cucumber, the wooden cutting board, the counter, the kitchen background, the lighting, the framing and the camera angle.\nRemove all on-screen text and captions completely; show only the kitchen and her body there. Raw iPhone front camera photo, natural grain, real skin texture. Hands anatomically correct, five fingers each.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/58baadab-18a0-47db-949e-20b17100fab5.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/DdU6DQxhK0z-troca-avatar-2026-10-15/original/bia-na-cena.png"
+  ],
+  "elapsed_ms": 41317,
+  "raw": {
+    "id": "069f8480b8634a4da487bacab2599ca2",
+    "model": "openai/gpt-image-2.5-sunburst/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/58baadab-18a0-47db-949e-20b17100fab5.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/069f8480b8634a4da487bacab2599ca2/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T16:31:19.400121201Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 37252
+    }
+  }
+}

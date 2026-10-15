@@ -1,0 +1,29 @@
+{
+  "id": "c810217715b24dd4ab96eb877cdbc3f0",
+  "model": "minimax/music-2.6",
+  "prompt": "Cinematic pop ballad, 110 BPM, A minor, female vocal early 30s, warm breathy alto, half-sung verses with intimate spoken lines, soft piano, muted guitar, sub bass, sparse drums building to anthemic final chorus, strings swell, emotional, confessional",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/c810217715b24dd4ab96eb877cdbc3f0/1.mp3"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/musica/cancao-v1.mp3"
+  ],
+  "elapsed_ms": 180528,
+  "raw": {
+    "id": "c810217715b24dd4ab96eb877cdbc3f0",
+    "model": "minimax/music-2.6",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/c810217715b24dd4ab96eb877cdbc3f0/1.mp3"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c810217715b24dd4ab96eb877cdbc3f0/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T09:47:53.998392177Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 177038
+    }
+  }
+}

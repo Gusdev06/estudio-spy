@@ -1,0 +1,28 @@
+{
+  "id": "d770fffe4ef544c697a4594d22b3e17d",
+  "model": "minimax/speech-2.6-hd",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/d770fffe4ef544c697a4594d22b3e17d/1.mp3"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-curso-2026-09-28/audio/A2.mp3"
+  ],
+  "elapsed_ms": 5825,
+  "raw": {
+    "id": "d770fffe4ef544c697a4594d22b3e17d",
+    "model": "minimax/speech-2.6-hd",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/d770fffe4ef544c697a4594d22b3e17d/1.mp3"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/d770fffe4ef544c697a4594d22b3e17d/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T09:12:34.80821883Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 3252
+    }
+  }
+}

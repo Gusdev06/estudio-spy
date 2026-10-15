@@ -1,0 +1,29 @@
+{
+  "id": "98c2ea77ec684ad595fd33f59569bc8b",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot, 3D animated feature film style. Maya holds a cold mug with both hands, gazing at the rain on the window; Ryan walks behind her staring at his phone, air-kisses near her head without looking and heads for the door. Characters: Maya (Latina woman, messy low bun, heather-gray cardigan, small gold hoop earrings, small beauty mark above her lip); Ryan (dark-blond side part, navy quarter-zip, large silver wristwatch, smug half-smile). Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/37c1fe40-9a39-423f-b84f-65b8c5c422d8-u2_bc03a192-6835-4872-acac-7f2fa453877d.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B10a.mp4"
+  ],
+  "elapsed_ms": 60676,
+  "raw": {
+    "id": "98c2ea77ec684ad595fd33f59569bc8b",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/37c1fe40-9a39-423f-b84f-65b8c5c422d8-u2_bc03a192-6835-4872-acac-7f2fa453877d.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/98c2ea77ec684ad595fd33f59569bc8b/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:27:51.167149482Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 56671
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "b23d1c0ed4c34eabb9e760df3c887323",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Image 1 is the character sheet for Maya (before). Image 2 is the character sheet for Ryan. Image 3 is the character sheet for Jess. Image 4 is the character sheet for Linda. Keep their faces, hair, outfits and signature details exactly as in the sheets (Maya: beauty mark above the left corner of her upper lip, small gold hoops, gray cardigan, messy low bun; Ryan: lopsided half-smile, large silver watch on his left wrist, navy quarter-zip; Jess: long copper-auburn hair, freckles, pearl stud earrings, blush-pink sweater; Linda: short silver bob, floral blouse, small brooch).\nA 2x2 grid storyboard in a single image, four sequential moments of the same continuous shot, read left-to-right, top-to-bottom. Thin white gutters between panels. No text, no captions, no panel numbers.\nSetting (same in all four panels unless stated): a suburban American dining room at night, long wooden table with a white tablecloth, a roast and side dishes, lit candles, warm amber light, dark window in the background. Linda at the head of the table, Ryan next to Maya, Jess across the table.\nCharacters: Maya, a 34-year-old Latina woman with warm light-brown skin, shoulder-length wavy dark-brown hair tied in a messy low bun with loose strands, hazel eyes with faint dark circles, a small beauty mark above the left corner of her upper lip, small gold hoop earrings, wearing an oversized heather-gray cardigan over a plain white t-shirt and dark jeans, slightly hunched posture. Ryan, a 36-year-old white American man, short dark-blond hair with a neat side part, light stubble, gray-blue eyes, a smug lopsided half-smile, a large silver wristwatch on his left wrist, wearing a navy quarter-zip sweater over a white collared shirt and khaki chinos, athletic build. Jess, a 33-year-old white woman with fair freckled skin, long wavy copper-auburn hair, green eyes, pearl stud earrings, a wide friendly smile, wearing a blush-pink boat-neck knit sweater and a cream midi skirt. Linda, a 64-year-old white woman with a short silver bob, rosy cheeks, wearing a floral blouse with a small brooch.\nPanel 1: high overhead shot of the whole table, dishes being passed from hand to hand.\nPanel 2: Linda at the head of the table raising her wine glass, smiling.\nPanel 3: Jess laughing, tossing her copper-auburn hair back.\nPanel 4: Maya smiling politely, a smile that does not reach her eyes, Ryan beside her.\nAny phone screen shows only a soft glow or is dark, never any readable interface, text or logo.\n3D animated feature film style, cinematic lighting, shallow depth of field, consistent characters, outfits and lighting across panels, vertical 9:16 framing inside each panel.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/0474e9e3-d548-4ea8-bc99-85e2c82c8b9a.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/shot-sheets-v2/B02.png"
+  ],
+  "elapsed_ms": 108910,
+  "raw": {
+    "id": "b23d1c0ed4c34eabb9e760df3c887323",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/0474e9e3-d548-4ea8-bc99-85e2c82c8b9a.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/b23d1c0ed4c34eabb9e760df3c887323/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:22:55.928151297Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 104853
+    }
+  }
+}

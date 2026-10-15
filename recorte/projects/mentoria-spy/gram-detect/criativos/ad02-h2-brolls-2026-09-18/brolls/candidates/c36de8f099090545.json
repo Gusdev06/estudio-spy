@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:ltzA_AXqiN8",
+  "provider": "youtube",
+  "source_id": "ltzA_AXqiN8",
+  "source_url": "https://www.youtube.com/watch?v=ltzA_AXqiN8",
+  "title": "How to Restore Recently Deleted Instagram Posts",
+  "creator": {
+    "name": "Howfinity",
+    "url": null
+  },
+  "query": "Instagram recently deleted folder how to see",
+  "collected_at": "2026-09-17T16:29:26.016362+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 127,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/ltzA_AXqiN8",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/ltzA_AXqiN8/hq720.jpg?sqp=-oaymwEgCNAFEJQDSFXyq4qpAxIIARUAAIhCGAFwAcABBrgC9xg=&rs=AOn4CLDMpqLT3BNoP3sLBdkALjmgysyt_g"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

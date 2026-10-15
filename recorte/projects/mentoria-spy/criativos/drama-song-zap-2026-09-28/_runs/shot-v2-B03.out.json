@@ -1,0 +1,29 @@
+{
+  "id": "09ddfb5e87dd46bbb466d2ae03021e17",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Image 1 is the character sheet for Ryan. Image 2 is the character sheet for Maya (before). Keep their faces, hair, outfits and signature details exactly as in the sheets (Ryan: lopsided half-smile, large silver watch on his left wrist, navy quarter-zip; Maya: beauty mark above the left corner of her upper lip, small gold hoops, gray cardigan, messy low bun).\nA 2x2 grid storyboard in a single image, four sequential moments of the same continuous shot, read left-to-right, top-to-bottom. Thin white gutters between panels. No text, no captions, no panel numbers.\nSetting (same in all four panels unless stated): a suburban American dining room at night, long wooden table with a white tablecloth, a roast and side dishes, lit candles, warm amber light, dark window in the background, camera at table height.\nCharacters: Ryan, a 36-year-old white American man, short dark-blond hair with a neat side part, light stubble, gray-blue eyes, a smug lopsided half-smile, a large silver wristwatch on his left wrist, wearing a navy quarter-zip sweater over a white collared shirt and khaki chinos, athletic build. Maya, a 34-year-old Latina woman with warm light-brown skin, shoulder-length wavy dark-brown hair tied in a messy low bun with loose strands, hazel eyes with faint dark circles, a small beauty mark above the left corner of her upper lip, small gold hoop earrings, wearing an oversized heather-gray cardigan over a plain white t-shirt and dark jeans, slightly hunched posture. In the background, soft and out of focus: Linda, a 64-year-old white woman with a short silver bob, rosy cheeks, wearing a floral blouse with a small brooch. Jess, a 33-year-old white woman with fair freckled skin, long wavy copper-auburn hair, green eyes, pearl stud earrings, a wide friendly smile, wearing a blush-pink boat-neck knit sweater and a cream midi skirt.\nPanel 1: detail: a phone beside Ryan's plate lights up with a soft glow, his large silver wristwatch next to it.\nPanel 2: Ryan's hand quickly flips the phone face down.\nPanel 3: medium shot of Ryan, smug half-smile, glancing sideways at Maya.\nPanel 4: reverse shot: Maya looking at the face-down phone, brow furrowed, hands in her lap.\nAny phone screen shows only a soft glow or is dark, never any readable interface, text or logo.\n3D animated feature film style, cinematic lighting, shallow depth of field, consistent characters, outfits and lighting across panels, vertical 9:16 framing inside each panel.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/5de49f97-4d47-4d5d-8634-c6a83b02cbce.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/shot-sheets-v2/B03.png"
+  ],
+  "elapsed_ms": 108145,
+  "raw": {
+    "id": "09ddfb5e87dd46bbb466d2ae03021e17",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/5de49f97-4d47-4d5d-8634-c6a83b02cbce.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/09ddfb5e87dd46bbb466d2ae03021e17/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:22:56.310605545Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 104364
+    }
+  }
+}

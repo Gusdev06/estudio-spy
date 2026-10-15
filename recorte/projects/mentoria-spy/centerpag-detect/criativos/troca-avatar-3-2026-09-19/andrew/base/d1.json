@@ -1,0 +1,29 @@
+{
+  "id": "2af5a5218cb64e7481109a2c4c446b05",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same scene: a living room with warm string lights and white festive decorations softly out of focus behind her, soft frontal light, wide 16:9 landscape framing from the chest up, camera at eye level. REPLACE the woman with a DIFFERENT woman: a Black woman about 35 years old with dark skin, short natural curly hair, small gold earrings, wearing a plain dark green sweater. Same posture, seated, looking straight into the camera, mouth closed, serious sincere expression, hands out of frame. Photorealistic video still from a home camera, slightly soft, natural skin texture, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/49471f9f-4dae-4bf6-9211-7df6a983df0d.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/troca-avatar-3-2026-09-19/andrew/base/d1.png"
+  ],
+  "elapsed_ms": 66208,
+  "raw": {
+    "id": "2af5a5218cb64e7481109a2c4c446b05",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/49471f9f-4dae-4bf6-9211-7df6a983df0d.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/2af5a5218cb64e7481109a2c4c446b05/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-19T02:38:55.375062461Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 63269
+    }
+  }
+}

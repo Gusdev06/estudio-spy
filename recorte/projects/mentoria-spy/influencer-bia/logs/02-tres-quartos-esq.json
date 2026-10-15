@@ -1,0 +1,31 @@
+✔ Done in 42s.
+✔ Saved 1 file.
+{
+  "id": "1a3ac40c43634366abc6007b1dcec797",
+  "model": "openai/gpt-image-2.5-sunburst/edit",
+  "prompt": "Same woman as in the reference images, identical face, identity, skin, beauty mark and hair. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her left cheek, a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched. Plain fitted black spaghetti-strap tank top, no jewelry, no makeup, hair down and loose. Plain light grey wall background, soft even daylight, raw iPhone photo, natural grain, sharp focus. No text. New photo: head-and-shoulders, head turned about 45 degrees to her left (three-quarter view), eyes looking toward the camera, neutral deadpan expression, mouth closed. Hands out of frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e69b7e48-b6d5-45ef-bdca-a5a7890d51f6.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/influencer-bia/base/02-tres-quartos-esq.png"
+  ],
+  "elapsed_ms": 44631,
+  "raw": {
+    "id": "1a3ac40c43634366abc6007b1dcec797",
+    "model": "openai/gpt-image-2.5-sunburst/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e69b7e48-b6d5-45ef-bdca-a5a7890d51f6.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/1a3ac40c43634366abc6007b1dcec797/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T13:32:38.240339403Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 40865
+    }
+  }
+}

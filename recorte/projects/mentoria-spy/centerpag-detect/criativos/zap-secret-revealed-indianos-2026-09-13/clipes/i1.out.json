@@ -1,0 +1,28 @@
+{
+  "id": "008cb7a828114a519e33e5f59a3ba087",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e1fb28d9-7206-4f80-a9db-e2ca303f1c6d.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-secret-revealed-indianos-2026-09-13/clipes/talking-head-i1.mp4"
+  ],
+  "elapsed_ms": 77400,
+  "raw": {
+    "id": "008cb7a828114a519e33e5f59a3ba087",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e1fb28d9-7206-4f80-a9db-e2ca303f1c6d.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/008cb7a828114a519e33e5f59a3ba087/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-13T05:10:23.773447374Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 71322
+    }
+  }
+}

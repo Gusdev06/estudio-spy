@@ -1,0 +1,31 @@
+✔ Done in 62s.
+✔ Saved 1 file.
+{
+  "id": "47739ec80fd5485da30e6218826aab70",
+  "model": "openai/gpt-image-2.5-sunburst/edit",
+  "prompt": "Asset type: candid lifestyle photo for an Instagram profile, 4:5.\nPrimary request: a real photo taken with an iPhone 15 Pro of the woman in the reference images, 100% faithful to her face, beauty mark, eyebrows, skin tone and dark brown hair. Use the reference images ONLY for her identity, never for pose, expression, framing or background. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nScene/backdrop: crowded small restaurant at night, wine glasses, a half-eaten pasta plate, candle, friends' shoulders blurred in the foreground.\nSubject: turning her head toward the camera mid-conversation with a half smile, eyebrows slightly raised like she is about to tell gossip. Outfit: black square-neck fitted top with a cropped black leather bomber jacket off one shoulder, gold chunky hoop earrings, hair down, slightly messy, small claw clip holding one side.\nComposition/framing: a friend took it with the phone flash on from across the table, slightly above eye level, subject off-center to the left, frame tilted a few degrees.\nLighting/mood: direct iPhone flash, bright hotspot on her forehead and nose, background falling off into warm darkness with candle bokeh, slight red-eye free.\nStyle/medium: iPhone 15 Pro photo, 24mm main camera (or 12MP front camera for selfies), Smart HDR processing with slightly lifted shadows and a touch of over-sharpening, subtle sensor noise in the darker areas, true-to-life colors, no color grading.\nTextures: natural pores, uneven skin tone, slight shine on the nose, flyaway hairs, real fabric creases and wear.\nConstraints: no text, no logos, no brand names on clothes, no watermark.\nAvoid: beauty filter, plastic or waxy skin, perfectly centered symmetrical headshot, staring blankly into the lens, posed smile, studio lighting, cinematic grading, heavy makeup, generic plain grey t-shirt.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/38929880-4c61-4fd5-b2e8-8f2a296aecbd.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/influencer-bia/perfil/v2/3-jantar-flash.png"
+  ],
+  "elapsed_ms": 64635,
+  "raw": {
+    "id": "47739ec80fd5485da30e6218826aab70",
+    "model": "openai/gpt-image-2.5-sunburst/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/38929880-4c61-4fd5-b2e8-8f2a296aecbd.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/47739ec80fd5485da30e6218826aab70/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T14:52:50.497860599Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 60779
+    }
+  }
+}

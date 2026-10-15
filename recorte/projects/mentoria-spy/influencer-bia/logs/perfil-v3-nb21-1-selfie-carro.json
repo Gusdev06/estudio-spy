@@ -1,0 +1,31 @@
+✔ Done in 28s.
+✔ Saved 1 file.
+{
+  "id": "2de1774f27744fc5a1c3b5d360be20f1",
+  "model": "google/nano-banana-2.1/edit",
+  "prompt": "Image 3 is ONLY a color and light reference: copy its color grading, warm golden-hour amber cast, low contrast with warm lifted shadows, creamy soft highlights, slight haze and glow, slightly soft front-camera focus and iPhone front camera feel. Do NOT copy the face, hair color, makeup, body, pose, jewelry or clothes from image 3.\nThe woman is the one from images 1 and 2, 100% faithful to her face, beauty mark, eyebrows, olive skin and dark brown hair. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nColor and light: warm amber sunlight, skin glowing golden, no cool or blue tones, no deep blacks, no crisp HDR look, no oversaturation, gentle sun haze.\nScene: front-camera selfie in the passenger seat of a car at golden hour, low sun coming through the side window and lighting half of her face, car ceiling and seat visible. Subject: relaxed, one hand pushing her hair back, soft closed-mouth half smile, eyes looking slightly off the lens. Outfit: cream ribbed square-neck tank top, thin gold layered necklaces, small gold hoops, hair down. Framing: arm's-length selfie from slightly above, tilted, face off-center.\nReal iPhone 15 Pro photo, natural pores, flyaway hairs lit by the sun, fabric creases. No text, no logos, no watermark. Avoid: beauty filter, plastic skin, studio light, cinematic grading, cold colors, HDR.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/d4b943ad-ee55-4a86-b07d-9d37bf3911ee.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/influencer-bia/perfil/v3-nb21/1-selfie-carro.png"
+  ],
+  "elapsed_ms": 30562,
+  "raw": {
+    "id": "2de1774f27744fc5a1c3b5d360be20f1",
+    "model": "google/nano-banana-2.1/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/d4b943ad-ee55-4a86-b07d-9d37bf3911ee.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/2de1774f27744fc5a1c3b5d360be20f1/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T14:59:50.108871562Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 27255
+    }
+  }
+}

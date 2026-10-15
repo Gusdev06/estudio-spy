@@ -1,0 +1,29 @@
+{
+  "id": "02c271e05e9f42f884db2bbbdc44af51",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Vertical 9:16 handheld smartphone video still, same camera position, same framing, same pose and same size in frame as the image: a woman standing in front of a closed door, holding her phone out in one hand, the other arm moving, mouth open mid-shout, annoyed and dramatic expression. REPLACE the woman with a DIFFERENT woman: a woman about 25 years old with medium-brown skin and long loose curly dark-brown hair, wearing an oversized plain pastel-pink hoodie and light-grey sweatpants. REPLACE the place with a DIFFERENT place: a narrow apartment hallway with light sage-green painted walls and a dark walnut-wood door with a black handle, a small framed photo on the wall, warm ceiling light. She is the only person in the image. No text, no captions, no logos, no print on clothes, no watermark. Photorealistic amateur phone footage look, natural skin texture, ordinary person, slight motion softness.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/187c5476-5237-4f18-ade0-1db684c3527e.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/var1-beatriz-aguiar-1622854622757052-2026-09-25/base/mulherA.png"
+  ],
+  "elapsed_ms": 44533,
+  "raw": {
+    "id": "02c271e05e9f42f884db2bbbdc44af51",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/187c5476-5237-4f18-ade0-1db684c3527e.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/02c271e05e9f42f884db2bbbdc44af51/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T17:01:56.26721736Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 39518
+    }
+  }
+}

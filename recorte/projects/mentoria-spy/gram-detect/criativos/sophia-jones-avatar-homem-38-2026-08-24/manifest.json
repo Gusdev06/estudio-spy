@@ -1,0 +1,30 @@
+{
+  "original": "escalados/instagram/10-sophia-jones-1541537987137161.mp4",
+  "duracao_original_s": 32.533,
+  "avatar": {
+    "nota_casting": "Homem brasileiro, 37, pele oliva, barba curta escura com grisalho no maxilar, camiseta azul-marinho gola careca (ancora de figurino), sentado no sofa de uma sala clara, tom calmo e serio",
+    "imagem_base": "avatar-base-v2.png",
+    "prompt_base": "prompt-base-v2.txt",
+    "modelo": "bytedance/seedream-v5.0-pro",
+    "descartada": "avatar-base.png (v1 - plano fechado demais, contra-plongee, cozinha escura: nao casava com o original)"
+  },
+  "clipes": [
+    {"n": 1, "dur": 8,  "silabas": 29, "texto": "There's one detail on Instagram that gives almost everyone away. The problem is, hardly anyone knows where to look."},
+    {"n": 2, "dur": 11, "silabas": 40, "texto": "You don't need to guess, or argue, or secretly check someone's phone. Because when people try to hide something, they usually leave small traces behind without realizing it."},
+    {"n": 3, "dur": 15, "silabas": 59, "texto": "That's why so many people uncover messages, contacts, and suspicious behavior, even when the other person thinks they deleted everything. You just need to know where to look. Access is right below, while this tool is still available."}
+  ],
+  "modelo_video": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "parametros": {"cfg_scale": 0.45, "encadeamento": "ultimo frame do clipe anterior como start_image"},
+  "ritmo_calibrado_sil_s": 3.94,
+  "entregas": {
+    "versao-B-voz-kling.mp4": "APROVADA pelo Gusta - rosto e voz gerados pelo Kling",
+    "versao-A-voz-original.mp4": "REJEITADA pelo Gusta - lipsync da voz original no rosto novo"
+  },
+  "nao_replicado_do_original": [
+    "split screen de 3 andares nos primeiros 11s",
+    "screen recording de DMs do Instagram",
+    "dramatizacao gerada por IA",
+    "selo 'X people analyzing right now'",
+    "barra de caption vermelha fixa"
+  ]
+}

@@ -1,0 +1,26 @@
+mãe: stream|codec_type=video|width=360|height=640|r_frame_rate=30/1|nb_frames=1026 | stream|codec_type=audio|r_frame_rate=0/0|nb_frames=739 | format|duration=34.206000 | audio md5 56739afc0f470528947a3b04d8289b30
+194-ZAP-flora-quando-nao-olha.mp4: stream|codec_type=video|width=360|height=640|r_frame_rate=30/1|nb_frames=1026 | stream|codec_type=audio|r_frame_rate=0/0|nb_frames=739 | format|duration=34.206000
+  decodifica inteira: sim | frames 1026 (mãe 1026) OK | audio md5 56739afc0f470528947a3b04d8289b30 = mãe
+  janela/karaokê/painéis (y>=168) vs mãe: média 1.31, máx 1.84 (frame 264)
+  título: pílula y 50-141 x 25-334 corte=False | pixels da pílula antiga fora da nova: 4967, brilho máx ali 2 (preto≈0)
+  frames em que a faixa difere da faixa estática (>2): [263, 264, 265, 266, 267, 268, 269, 270, 282, 283, 284, 721, 747]
+195-ZAP-flora-digitei-numero.mp4: stream|codec_type=video|width=360|height=640|r_frame_rate=30/1|nb_frames=1026 | stream|codec_type=audio|r_frame_rate=0/0|nb_frames=739 | format|duration=34.206000
+  decodifica inteira: sim | frames 1026 (mãe 1026) OK | audio md5 56739afc0f470528947a3b04d8289b30 = mãe
+  janela/karaokê/painéis (y>=168) vs mãe: média 1.31, máx 1.74 (frame 265)
+  título: pílula y 48-142 x 25-334 corte=False | pixels da pílula antiga fora da nova: 1874, brilho máx ali 1 (preto≈0)
+  frames em que a faixa difere da faixa estática (>2): [263, 264, 265, 266, 267, 268, 269, 270, 282, 283, 284, 618, 720, 721, 747]
+196-ZAP-flora-com-quem-fala.mp4: stream|codec_type=video|width=360|height=640|r_frame_rate=30/1|nb_frames=1026 | stream|codec_type=audio|r_frame_rate=0/0|nb_frames=739 | format|duration=34.206000
+  decodifica inteira: sim | frames 1026 (mãe 1026) OK | audio md5 56739afc0f470528947a3b04d8289b30 = mãe
+  janela/karaokê/painéis (y>=168) vs mãe: média 1.31, máx 1.74 (frame 265)
+  título: pílula y 49-141 x 26-333 corte=False | pixels da pílula antiga fora da nova: 4588, brilho máx ali 1 (preto≈0)
+  frames em que a faixa difere da faixa estática (>2): [263, 264, 265, 266, 267, 268, 269, 270, 282, 283, 284, 618, 720, 721, 747]
+197-ZAP-flora-poucos-segundos.mp4: stream|codec_type=video|width=360|height=640|r_frame_rate=30/1|nb_frames=1026 | stream|codec_type=audio|r_frame_rate=0/0|nb_frames=739 | format|duration=34.206000
+  decodifica inteira: sim | frames 1026 (mãe 1026) OK | audio md5 56739afc0f470528947a3b04d8289b30 = mãe
+  janela/karaokê/painéis (y>=168) vs mãe: média 1.31, máx 1.84 (frame 264)
+  título: pílula y 50-140 x 26-333 corte=False | pixels da pílula antiga fora da nova: 4837, brilho máx ali 0 (preto≈0)
+  frames em que a faixa difere da faixa estática (>2): [263, 264, 265, 266, 267, 268, 269, 270, 282, 283, 284, 618, 720, 721, 747]
+198-ZAP-flora-arquivadas.mp4: stream|codec_type=video|width=360|height=640|r_frame_rate=30/1|nb_frames=1026 | stream|codec_type=audio|r_frame_rate=0/0|nb_frames=739 | format|duration=34.206000
+  decodifica inteira: sim | frames 1026 (mãe 1026) OK | audio md5 56739afc0f470528947a3b04d8289b30 = mãe
+  janela/karaokê/painéis (y>=168) vs mãe: média 1.31, máx 1.73 (frame 265)
+  título: pílula y 47-143 x 27-333 corte=False | pixels da pílula antiga fora da nova: 1304, brilho máx ali 1 (preto≈0)
+  frames em que a faixa difere da faixa estática (>2): [263, 264, 265, 266, 267, 268, 269, 270, 283, 284, 721, 747]

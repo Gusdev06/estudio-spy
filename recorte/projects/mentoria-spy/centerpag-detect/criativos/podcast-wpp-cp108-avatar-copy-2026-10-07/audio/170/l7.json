@@ -1,0 +1,28 @@
+{
+  "id": "a338db3f76714a099a1479d550c746d3",
+  "model": "minimax/speech-2.6-hd",
+  "outputs": [
+    "https://cdn.cachegalaxy.com/predictions/a338db3f76714a099a1479d550c746d3/1.mp3"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-cp108-avatar-copy-2026-10-07/audio/170/l7.mp3"
+  ],
+  "elapsed_ms": 6262,
+  "raw": {
+    "id": "a338db3f76714a099a1479d550c746d3",
+    "model": "minimax/speech-2.6-hd",
+    "outputs": [
+      "https://cdn.cachegalaxy.com/predictions/a338db3f76714a099a1479d550c746d3/1.mp3"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/a338db3f76714a099a1479d550c746d3/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-07T14:30:21.072375589Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 3999
+    }
+  }
+}

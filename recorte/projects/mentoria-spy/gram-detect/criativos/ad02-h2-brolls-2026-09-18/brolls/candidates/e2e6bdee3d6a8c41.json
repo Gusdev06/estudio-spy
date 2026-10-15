@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:aJ865ekQVYQ",
+  "provider": "youtube",
+  "source_id": "aJ865ekQVYQ",
+  "source_url": "https://www.youtube.com/watch?v=aJ865ekQVYQ",
+  "title": "How To Hide Active Now Activity Status On Instagram - Full Guide",
+  "creator": {
+    "name": "GuideRealm",
+    "url": null
+  },
+  "query": "instagram active now activity status #shorts",
+  "collected_at": "2026-09-17T16:32:14.478138+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 75,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/aJ865ekQVYQ",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/aJ865ekQVYQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDc2R3reCKy-B1R4BCpPZc312P-WQ"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

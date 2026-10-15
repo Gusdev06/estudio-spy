@@ -1,0 +1,62 @@
+{
+ "a1-homem-velho/01": {
+  "taskId": "52248a1ecdfb885a80322de596797f6f",
+  "dur": 15
+ },
+ "a1-homem-velho/02": {
+  "taskId": "0ea73a32669993b65b79b1ad6c54c141",
+  "dur": 15
+ },
+ "a1-homem-velho/03": {
+  "taskId": "3d01cb3f39e4e4a52ef82263ca0a49c1",
+  "dur": 15
+ },
+ "a1-homem-velho/04": {
+  "taskId": "11b38d6b898c9476a9cf38a9932d118f",
+  "dur": 13
+ },
+ "a1-homem-velho/05": {
+  "taskId": "cf27280f6ed1aaffe38cac302fc75dbd",
+  "dur": 8
+ },
+ "a2-mulher-velha/01": {
+  "taskId": "3a3024d02740d18758b2daee85f65cda",
+  "dur": 15
+ },
+ "a2-mulher-velha/02": {
+  "taskId": "de379d9f9c4318796998937fdf9fc7d6",
+  "dur": 15
+ },
+ "a2-mulher-velha/03": {
+  "taskId": "d32c006af3f28ac19c7073da25debfec",
+  "dur": 15
+ },
+ "a2-mulher-velha/04": {
+  "taskId": "fc213e0409c0fdc0ced68d88bd024ca7",
+  "dur": 13
+ },
+ "a2-mulher-velha/05": {
+  "taskId": "da818e8f1e47d28345c4c1e0f430a795",
+  "dur": 8
+ },
+ "a3-jovem/01": {
+  "taskId": "61a5c8be21508184a72efe899fa8906b",
+  "dur": 15
+ },
+ "a3-jovem/02": {
+  "taskId": "180103e485f4063dc8005d98f15bc38a",
+  "dur": 15
+ },
+ "a3-jovem/03": {
+  "taskId": "b654867a96d97be306664271a37c256f",
+  "dur": 15
+ },
+ "a3-jovem/04": {
+  "taskId": "740db1c3dc1f3b324556290fcc5e7f38",
+  "dur": 13
+ },
+ "a3-jovem/05": {
+  "taskId": "597e259007d691ccc05056fb63856a90",
+  "dur": 8
+ }
+}

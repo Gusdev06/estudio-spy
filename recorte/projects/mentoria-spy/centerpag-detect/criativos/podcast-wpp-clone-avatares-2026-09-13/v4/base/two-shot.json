@@ -1,0 +1,29 @@
+{
+  "id": "7de723abc84145b79947fea110203432",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate the FIRST image exactly — same podcast studio, same cream curved sofa, same low round table, same two black podcast microphones on boom arms, same green plants, same light patterned wall, same wide two-shot framing from the same camera position and height, same warm daylight, same body language (both women seated turned toward each other, mid-conversation). ONLY REPLACE the two women: the woman on the RIGHT must be the woman from the SECOND image (a Black woman with light brown skin and freckles across the nose, about 27 years old, long straight black hair with a middle part, small gold studs, light natural makeup, wearing the same style sage-green ribbed knit top., sage-green ribbed knit top, light blue jeans). The woman on the LEFT must be the woman from the THIRD image (a Black woman with deep brown skin, about 32 years old, shoulder-length locs pulled half back, thin gold hoop earrings, bare-faced, wearing the same style plain black long-sleeve top., plain black long-sleeve top, black trousers). Keep their faces, hair and clothing exactly as in those images. Photorealistic video still, natural skin texture, no retouching, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/ea19c91c-205f-4aa3-9674-b7c93e8b140d.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-clone-avatares-2026-09-13/v4/base/two-shot.png"
+  ],
+  "elapsed_ms": 145778,
+  "raw": {
+    "id": "7de723abc84145b79947fea110203432",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/ea19c91c-205f-4aa3-9674-b7c93e8b140d.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/7de723abc84145b79947fea110203432/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-13T03:41:27.077697499Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 140877
+    }
+  }
+}

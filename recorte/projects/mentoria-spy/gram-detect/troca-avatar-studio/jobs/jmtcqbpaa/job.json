@@ -1,0 +1,159 @@
+{
+  "id": "jmtcqbpaa",
+  "created": "2026-08-28T09:08:27.970Z",
+  "windows": [
+    {
+      "id": "a1-w1",
+      "segStart": 0,
+      "segEnd": 33,
+      "start": 0,
+      "end": 8.25,
+      "base": "w1",
+      "avatar": "a1",
+      "state": "idle",
+      "attempts": []
+    },
+    {
+      "id": "a1-w2",
+      "segStart": 0,
+      "segEnd": 33,
+      "start": 8.25,
+      "end": 16.5,
+      "base": "w2",
+      "avatar": "a1",
+      "state": "idle",
+      "attempts": []
+    },
+    {
+      "id": "a1-w3",
+      "segStart": 0,
+      "segEnd": 33,
+      "start": 16.5,
+      "end": 24.75,
+      "base": "w3",
+      "avatar": "a1",
+      "state": "idle",
+      "attempts": []
+    },
+    {
+      "id": "a1-w4",
+      "segStart": 0,
+      "segEnd": 33,
+      "start": 24.75,
+      "end": 33,
+      "base": "w4",
+      "avatar": "a1",
+      "state": "idle",
+      "attempts": []
+    },
+    {
+      "id": "a2-w1",
+      "segStart": 0,
+      "segEnd": 33,
+      "start": 0,
+      "end": 8.25,
+      "base": "w1",
+      "avatar": "a2",
+      "state": "idle",
+      "attempts": []
+    },
+    {
+      "id": "a2-w2",
+      "segStart": 0,
+      "segEnd": 33,
+      "start": 8.25,
+      "end": 16.5,
+      "base": "w2",
+      "avatar": "a2",
+      "state": "idle",
+      "attempts": []
+    },
+    {
+      "id": "a2-w3",
+      "segStart": 0,
+      "segEnd": 33,
+      "start": 16.5,
+      "end": 24.75,
+      "base": "w3",
+      "avatar": "a2",
+      "state": "idle",
+      "attempts": []
+    },
+    {
+      "id": "a2-w4",
+      "segStart": 0,
+      "segEnd": 33,
+      "start": 24.75,
+      "end": 33,
+      "base": "w4",
+      "avatar": "a2",
+      "state": "idle",
+      "attempts": []
+    }
+  ],
+  "spentCredits": 0,
+  "video": "video.mov",
+  "avatars": [
+    {
+      "id": "a1",
+      "file": "avatar-1.jpg"
+    },
+    {
+      "id": "a2",
+      "file": "avatar-2.jpg"
+    }
+  ],
+  "meta": {
+    "duration": 32.416,
+    "size": 73832247,
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "hasAudio": true
+  },
+  "mode": "full",
+  "frames": [],
+  "thumbs": [],
+  "labels": [
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person"
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 33,
+      "kind": "person"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# Pruna: moldura, "foto no papel" e gente entrando. Prompt em positivo resolve (24/09)
+
+No clone do podcast Gram (cena escura, plano aberto de corpo inteiro), a 1ª leva do Pruna com um prompt que dizia "nobody enters from any edge" estragou 3 de 4 clipes: o quadro encolheu virando foto sobre papel, apareceu moldura verde e entrou gente pela direita, sempre depois de ~4 s. Com o prompt reescrito só em positivo ("one continuous full-frame shot… fills the whole frame edge to edge… the room stays still and empty") e outro seed, 19 de 19 saíram limpos. Triagem automática: borda clara (> 110 numa cena escura), faixa lateral de 70 px mudando vs o 1º frame (> 28) e YuNet com score ≥ 0,86 (o vaso da estante dá 0,80).
+Fonte: `projects/mentoria-spy/gram-detect/criativos/podcast-gram-clone-avatares-2026-09-24/README.md`.

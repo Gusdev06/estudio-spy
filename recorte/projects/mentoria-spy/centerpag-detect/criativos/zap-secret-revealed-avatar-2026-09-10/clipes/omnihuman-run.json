@@ -1,0 +1,28 @@
+{
+  "id": "af48d27224b74792b8277e9afa0b6709",
+  "model": "bytedance/avatar-omni-human-1.5",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/0c4efc9f-3765-4c55-ab74-4a61c89d6253-u1_be8ecd1f-1479-4b77-9415-7a47a1bb5c47.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-secret-revealed-avatar-2026-09-10/clipes/talking-head-secret-omnihuman.mp4"
+  ],
+  "elapsed_ms": 440111,
+  "raw": {
+    "id": "af48d27224b74792b8277e9afa0b6709",
+    "model": "bytedance/avatar-omni-human-1.5",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/0c4efc9f-3765-4c55-ab74-4a61c89d6253-u1_be8ecd1f-1479-4b77-9415-7a47a1bb5c47.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/af48d27224b74792b8277e9afa0b6709/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-09T18:09:06.631377751Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 435505
+    }
+  }
+}

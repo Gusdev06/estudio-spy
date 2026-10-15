@@ -1,0 +1,28 @@
+{
+  "id": "686ce88335324f65825bf7b826738242",
+  "model": "minimax/speech-2.6-hd",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/686ce88335324f65825bf7b826738242/1.mp3"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-wpp01-clone-3-ganchos-2026-09-11/audio/h2.mp3"
+  ],
+  "elapsed_ms": 7738,
+  "raw": {
+    "id": "686ce88335324f65825bf7b826738242",
+    "model": "minimax/speech-2.6-hd",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/686ce88335324f65825bf7b826738242/1.mp3"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/686ce88335324f65825bf7b826738242/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-10T18:10:03.209283508Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 3861
+    }
+  }
+}

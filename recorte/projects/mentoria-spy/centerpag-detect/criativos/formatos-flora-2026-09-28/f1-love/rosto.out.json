@@ -1,0 +1,27 @@
+{
+  "id": "02ed450e8b624e6f836ca9d965affde7",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Photorealistic still from a vertical selfie video. A woman about 32 years old, American, light skin, long straight dark-blonde hair, a plain grey oversized t-shirt, sitting on her bed at night with warm light from a bedside lamp, the bedroom softly out of focus behind her. She looks straight into the camera lens with a serious, hurt expression, mouth slightly open as if mid-sentence. Framing: vertical 9:16, head and shoulders centered, eyes at the upper third, camera at eye level like a front-facing phone camera held at arm's length. She is the only person in the image, and both of her hands rest down below the bottom edge of the frame. Natural skin texture with visible pores, no retouching, ordinary person, not a model. No text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/d51c12ee-baa5-44ea-a47e-07f9cb164292.png"
+  ],
+  "saved": [],
+  "elapsed_ms": 40956,
+  "raw": {
+    "id": "02ed450e8b624e6f836ca9d965affde7",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/d51c12ee-baa5-44ea-a47e-07f9cb164292.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/02ed450e8b624e6f836ca9d965affde7/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-27T17:02:33.743730972Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 38893
+    }
+  }
+}

@@ -1,0 +1,28 @@
+✔ Done in 185s.
+{
+  "id": "8030eb54abe54132ab183449c4fc68be",
+  "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "prompt": "Master Intent: The closing shot of a late-night television news broadcast. Tone: calm, direct, resolved. No music, only the quiet room tone of a studio.\n\nScene 1 (Duration: 4s):\nLocked-off medium shot, camera at eye level, no camera movement, no zoom.\n\nThe anchor leans a few degrees toward camera and holds the viewer's gaze steadily.\n[Character A: Anchor, calm measured broadcast voice, slightly warmer, American English]: \"You don't have to keep torturing yourself with what if. The first search is free.\"\n\nHe holds still after the line, blinking once.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/8030eb54abe54132ab183449c4fc68be/1.mp4"
+  ],
+  "saved": [],
+  "elapsed_ms": 185086,
+  "raw": {
+    "id": "8030eb54abe54132ab183449c4fc68be",
+    "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/8030eb54abe54132ab183449c4fc68be/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/8030eb54abe54132ab183449c4fc68be/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-31T05:30:36.538719611Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 182200
+    }
+  }
+}

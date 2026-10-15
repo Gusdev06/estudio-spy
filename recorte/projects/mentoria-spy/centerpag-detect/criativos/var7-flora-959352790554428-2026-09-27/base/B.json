@@ -1,0 +1,29 @@
+{
+  "id": "dbc26eb9f97a4d00b05e535edfbadb9a",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Photorealistic video still from a podcast recording. Same camera position, same tight close-up framing and same pose as the image: his face in profile turned toward the left side of the frame, wearing black over-ear headphones, a black podcast microphone in front of his mouth at the lower left, mouth slightly open as if mid-sentence, looking toward the person off-camera on the left. REPLACE the person with a DIFFERENT person: an East Asian man about 34 years old with short black textured hair, clean-shaven, wearing a navy-blue crewneck sweatshirt. REPLACE the whole background with a DIFFERENT podcast studio: walls covered with light-grey hexagonal acoustic felt panels, a small softbox light, a light grey fabric backdrop, clean neutral cool-white light, minimal modern look, grey and white tones. Same size of the head in the frame and same head position as in the image. This person is the only person in the image. No monitors, no screens, no text, no logos, no watermark. Natural skin texture with visible pores, no retouching, ordinary person, not a model, soft warm studio light, shallow depth of field.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/ee314965-2ddd-4c5c-8b69-feda4d6450ee.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/var7-flora-959352790554428-2026-09-27/base/B.png"
+  ],
+  "elapsed_ms": 36053,
+  "raw": {
+    "id": "dbc26eb9f97a4d00b05e535edfbadb9a",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/ee314965-2ddd-4c5c-8b69-feda4d6450ee.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/dbc26eb9f97a4d00b05e535edfbadb9a/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-26T16:58:56.841234727Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 32263
+    }
+  }
+}

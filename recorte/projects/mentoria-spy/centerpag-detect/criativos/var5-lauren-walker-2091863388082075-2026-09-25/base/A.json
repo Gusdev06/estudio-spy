@@ -1,0 +1,29 @@
+{
+  "id": "fe11fa2cbcd746c9a614f5d50dbb0fb2",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Vertical 9:16 smartphone selfie video still, same camera position, same framing and same pose as the image: a man sitting, seen from the chest up, his head in the lower half of the frame exactly where the man's head is in the image, same head size, lots of empty background above him, looking straight into the camera, mouth closed, calm and serious. REPLACE the man with a DIFFERENT man: a South Asian Indian man about 42 years old with short wavy black hair, a thick black mustache and light stubble, medium build, wearing a plain white polo shirt. REPLACE the whole place with a DIFFERENT place: a dining room: a wooden dining table, a sideboard with a vase and a large mirror on a beige wall behind him, all softly out of focus like phone portrait mode, warm pendant light. He is the only person in the image; the background has only furniture and objects. Clean photo with no graphics, no text, no stickers, no emoji, no logos, no watermark. Photorealistic, natural skin texture with visible pores, no retouching, ordinary person, not a model, soft natural light, shot on a phone front camera.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/317b8c9d-7cba-45ec-90f4-1bb3b70565e7.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/var5-lauren-walker-2091863388082075-2026-09-25/base/A.png"
+  ],
+  "elapsed_ms": 40028,
+  "raw": {
+    "id": "fe11fa2cbcd746c9a614f5d50dbb0fb2",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/317b8c9d-7cba-45ec-90f4-1bb3b70565e7.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/fe11fa2cbcd746c9a614f5d50dbb0fb2/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:20:03.653691112Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 37208
+    }
+  }
+}

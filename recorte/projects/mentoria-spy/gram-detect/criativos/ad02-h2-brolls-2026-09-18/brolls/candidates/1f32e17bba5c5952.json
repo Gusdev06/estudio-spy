@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "youtube:KDE0UGnQF9w",
+  "provider": "youtube",
+  "source_id": "KDE0UGnQF9w",
+  "source_url": "https://www.youtube.com/watch?v=KDE0UGnQF9w",
+  "title": "YouTube · KDE0UGnQF9w",
+  "creator": {
+    "name": null,
+    "url": null
+  },
+  "query": null,
+  "collected_at": "2026-09-17T16:34:26.650094+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Sheet r1 células 1-7 (30-35s): celular vertical em tela cheia na página instagram.com 'Download Your Information', clique em Download e barra de progresso; a partir da célula 8 (36s) corta pro rosto do youtuber. Aparei antes do rosto."
+  },
+  "media": {
+    "duration_s": null,
+    "width": 480,
+    "height": 854,
+    "fps": 30.0
+  },
+  "preview": {
+    "embed_url": "https://www.youtube-nocookie.com/embed/KDE0UGnQF9w",
+    "seek_mode": "native",
+    "poster_path": "previews/1f32e17bba5c5952-r2-4d812712-poster.jpg",
+    "contact_sheet_path": "previews/1f32e17bba5c5952-r2-4d812712-sheet.jpg",
+    "gif_path": "previews/1f32e17bba5c5952-r2-4d812712.gif",
+    "frame_times_s": [
+      30.0,
+      30.458,
+      30.917,
+      31.375,
+      31.833,
+      32.292,
+      32.75,
+      33.208,
+      33.667,
+      34.125,
+      34.583,
+      35.042
+    ],
+    "sheet_grid": [
+      4,
+      3
+    ],
+    "sheet_labels": true,
+    "config": {
+      "scope": "broll",
+      "mode": "gif",
+      "width": 360,
+      "fps": 8,
+      "colors": 128,
+      "max_mb": 5,
+      "max_seconds": 10,
+      "frames": 12
+    },
+    "warning": null,
+    "gif_bytes": 1027193,
+    "scope": "broll"
+  },
+  "segment": {
+    "start_s": 30.0,
+    "end_s": 35.5,
+    "revision": 2
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "awaiting_approval",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": 480,
+    "source_height": 854,
+    "fit": "native",
+    "transform": "preserve_native"
+  },
+  "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/1f32e17bba5c5952-11df9fce443ccecbd678dad7d6883afb65618849fd98e9c2f2b63ebb7eaa7551.mp4",
+  "local_sha256": "11df9fce443ccecbd678dad7d6883afb65618849fd98e9c2f2b63ebb7eaa7551",
+  "local_start_s": 30.0,
+  "local_duration_s": 10.0,
+  "preview_scope": "broll",
+  "narration": "Even when the other person thinks they deleted everything"
+}

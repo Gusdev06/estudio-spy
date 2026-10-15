@@ -1,0 +1,28 @@
+{
+  "id": "9c3c9a435b5b456c837ea8bae2d11b84",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/8fa65b7a-203b-4bc5-8b5d-52d86ecf0eb9.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-hook-avatares-2026-09-28/clipes/w1.mp4"
+  ],
+  "elapsed_ms": 89463,
+  "raw": {
+    "id": "9c3c9a435b5b456c837ea8bae2d11b84",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/8fa65b7a-203b-4bc5-8b5d-52d86ecf0eb9.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/9c3c9a435b5b456c837ea8bae2d11b84/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-27T17:24:51.438401584Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 82523
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "ebbf973d2f5848bcaa7ea7a525196f7c",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/98118cf9-984f-4c90-8147-e6d5245162fe.mp4"
+  ],
+  "urls": {
+    "get": "https://api.wavespeed.ai/api/v3/predictions/ebbf973d2f5848bcaa7ea7a525196f7c/result"
+  },
+  "status": "completed",
+  "created_at": "2026-09-23T19:32:26.259219696Z",
+  "code": 0,
+  "error": "",
+  "timings": {
+    "inference": 75854
+  },
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/nutra-2646108219158542-5-avatares-2026-09-24/v02-leste-asiatico/avatar-animado.mp4"
+  ]
+}

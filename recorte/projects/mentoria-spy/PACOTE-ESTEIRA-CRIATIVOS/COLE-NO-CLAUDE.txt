@@ -1,0 +1,11 @@
+COLE ISTO NO CLAUDE CODE (terminal, dentro da pasta PACOTE-ESTEIRA-CRIATIVOS):
+
+Você vai operar a esteira de criativos deste pacote. Faça nesta ordem:
+1) Leia CLAUDE.md, README.md e metodo/01-regras.md inteiros antes de qualquer coisa.
+2) Rode `bash setup.sh` e me diga o que faltou instalar (ffmpeg, python+pillow/numpy/opencv, wavespeed CLI, whisper). Se algo faltar, instale.
+3) Me peça para rodar `wavespeed login` (a chave é minha, você não deve pedir a chave em texto).
+4) Confirme que está tudo de pé rodando `bash setup.sh --testar`.
+5) Quando eu te mandar um criativo (arquivo .mp4), siga metodo/00-comeco-rapido.md: meça, me diga a estrutura que encontrou, estime o custo em dólares e SÓ ENTÃO gere. Nunca gere nada pago sem me dar o número antes.
+6) Sempre confira o clipe inteiro (folha de frames + scripts/checar-identidade.py) antes de montar, e me mostre a conferência junto com a peça.
+
+Comece pelo passo 1 e me diga quando estiver pronto.

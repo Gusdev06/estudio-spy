@@ -1,0 +1,31 @@
+✔ Done in 28s.
+✔ Saved 1 file.
+{
+  "id": "c0f42ff5567d404e923d04caf672df65",
+  "model": "google/nano-banana-2.1/edit",
+  "prompt": "Image 3 is ONLY a color and light reference: copy its color grading, warm golden-hour amber cast, low contrast with warm lifted shadows, creamy soft highlights, slight haze and glow, slightly soft front-camera focus and iPhone front camera feel. Do NOT copy the face, hair color, makeup, body, pose, jewelry or clothes from image 3.\nThe woman is the one from images 1 and 2, 100% faithful to her face, beauty mark, eyebrows, olive skin and dark brown hair. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nColor and light: warm amber sunlight, skin glowing golden, no cool or blue tones, no deep blacks, no crisp HDR look, no oversaturation, gentle sun haze.\nScene: sidewalk cafe table at late afternoon, low sun from the side, iced latte and a croissant on the table, people blurred behind. Subject: photographed by a friend across the table, chin resting on her hand, glancing to the side with a small smile, phone in the other hand. Outfit: cropped cream cable-knit sweater over a white collared shirt, sunglasses pushed up on her head, small gold hoops, loose low ponytail with face-framing strands. Framing: eye level, she is slightly right of center, the cup blurry in the lower left foreground.\nReal iPhone 15 Pro photo, natural pores, flyaway hairs lit by the sun, fabric creases. No text, no logos, no watermark. Avoid: beauty filter, plastic skin, studio light, cinematic grading, cold colors, HDR.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/4c555afe-3ca8-41b3-8a48-bebb8a3ceba2.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/influencer-bia/perfil/v3-nb21/2-cafe-golden.png"
+  ],
+  "elapsed_ms": 31041,
+  "raw": {
+    "id": "c0f42ff5567d404e923d04caf672df65",
+    "model": "google/nano-banana-2.1/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/4c555afe-3ca8-41b3-8a48-bebb8a3ceba2.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c0f42ff5567d404e923d04caf672df65/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-14T14:59:50.107382597Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 26558
+    }
+  }
+}

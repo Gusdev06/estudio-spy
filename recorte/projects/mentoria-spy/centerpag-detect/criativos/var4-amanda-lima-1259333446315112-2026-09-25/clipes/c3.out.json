@@ -1,0 +1,28 @@
+{
+  "id": "3929f7a0f2974f4e8ee9c674cc087da7",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e57629a8-6c80-4086-ab49-25736de92803.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/var4-amanda-lima-1259333446315112-2026-09-25/clipes/c3.mp4"
+  ],
+  "elapsed_ms": 42069,
+  "raw": {
+    "id": "3929f7a0f2974f4e8ee9c674cc087da7",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e57629a8-6c80-4086-ab49-25736de92803.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/3929f7a0f2974f4e8ee9c674cc087da7/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T19:20:18.603489944Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 34176
+    }
+  }
+}

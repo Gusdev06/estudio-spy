@@ -1,0 +1,536 @@
+{
+ "frames": [
+  {
+   "frame": 0,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 50,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 100,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 150,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 200,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 250,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 300,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 350,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 400,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 450,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 500,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 550,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 600,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 650,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 700,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 750,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 800,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 850,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 900,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    0.9982905982905983,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    0.9982905982905983,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 930,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 939,
+   "head": 0.0,
+   "faixa": 0.0,
+   "funil": 0.0,
+   "broll": 0.0,
+   "cauda": null,
+   "faixaA": [
+    0.0,
+    1.0,
+    0.9991452991452991,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    1.0,
+    0.9991452991452991,
+    0.0
+   ]
+  },
+  {
+   "frame": 940,
+   "cauda": 0.0,
+   "head": null,
+   "faixa": null,
+   "funil": null,
+   "broll": null,
+   "faixaA": [
+    0.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 941,
+   "cauda": 0.0,
+   "head": null,
+   "faixa": null,
+   "funil": null,
+   "broll": null,
+   "faixaA": [
+    0.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 950,
+   "cauda": 0.0,
+   "head": null,
+   "faixa": null,
+   "funil": null,
+   "broll": null,
+   "faixaA": [
+    0.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 960,
+   "cauda": 0.0,
+   "head": null,
+   "faixa": null,
+   "funil": null,
+   "broll": null,
+   "faixaA": [
+    0.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "frame": 974,
+   "cauda": 0.0,
+   "head": null,
+   "faixa": null,
+   "funil": null,
+   "broll": null,
+   "faixaA": [
+    0.0,
+    0.0
+   ],
+   "faixaB": [
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "agg": {
+  "head": {
+   "mean": 0.0,
+   "max": 0.0,
+   "n": 21
+  },
+  "faixa": {
+   "mean": 0.0,
+   "max": 0.0,
+   "n": 21
+  },
+  "funil": {
+   "mean": 0.0,
+   "max": 0.0,
+   "n": 21
+  },
+  "broll": {
+   "mean": 0.0,
+   "max": 0.0,
+   "n": 21
+  },
+  "cauda": {
+   "mean": 0.0,
+   "max": 0.0,
+   "n": 5
+  }
+ },
+ "magenta": [
+  214.0,
+  15.0,
+  118.0
+ ]
+}

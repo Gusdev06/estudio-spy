@@ -1,0 +1,29 @@
+{
+  "id": "245f52ef3477497c80c48c48eb09191d",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still from a phone's front camera, held in one hand a little below eye level and tilted slightly upward. An ordinary Black woman around 30 years old with deep brown skin, short natural hair cropped close to the head, no braids, defined cheekbones, natural eyebrows, no makeup, a small healed scar near her right eyebrow. She wears a plain white ribbed long-sleeve top. No glasses, no hat, no earrings, no necklace, no logos, no text anywhere. She looks straight into the lens with her mouth closed and a knowing, slightly conspiratorial expression, the faint beginning of a smile held back, eyes open. Framing: head and upper chest, shoulders cropped at the sides, top of her head about 25 percent from the top edge, eyes about 44 percent from the top, chin about 62 percent from the top, her face about half the frame width, collar and upper chest visible below, plain background above her head; hands out of frame. She is sitting at the corner of a small dining table in a small apartment at night; behind her the kitchen counter, a warm pendant light hanging over the table, a potted plant, a plain wall. Warm dim available light from the pendant above and slightly behind her, cooler fill on her face from the phone screen, slightly underexposed, low contrast, no ring light, no studio light. Realistic skin texture with visible pores and a little oil on the forehead and cheekbones, mild phone-camera softness and grain, no retouching, not a model, not a stock photo.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/01c392b0-f01d-4f8c-ad3e-b5e4f4a89062.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/gram01-l9-var-avatar-2026-09-11/base/avatar-av5.png"
+  ],
+  "elapsed_ms": 93175,
+  "raw": {
+    "id": "245f52ef3477497c80c48c48eb09191d",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/01c392b0-f01d-4f8c-ad3e-b5e4f4a89062.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/245f52ef3477497c80c48c48eb09191d/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-11T16:55:08.316313665Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 88044
+    }
+  }
+}

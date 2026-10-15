@@ -1,0 +1,29 @@
+{
+  "id": "559d987ed17548cb9259a7f58e3ac904",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same podcast studio, same camera position and framing, same warm daylight, same cream sofa and background with a light curtain and green plants, same black podcast microphone on a boom arm in front of her. Keep the wide 16:9 landscape framing exactly as in the image. REPLACE the woman with a DIFFERENT woman: a Vietnamese woman about 25 years old with light skin, long straight black hair tucked behind her ears, wearing a plain lavender long-sleeve top. She sits in the same position, same posture, same distance from the microphone, head and upper chest visible, mouth closed, looking toward the person she is talking to off-camera. Photorealistic video still, natural skin texture with visible pores, no retouching, ordinary person, not a model, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/4313ee2a-d11d-49cb-8d5f-31b46fbffd9b.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-57s-copy-nova-2026-09-23/var6/base/x2-B.png"
+  ],
+  "elapsed_ms": 37464,
+  "raw": {
+    "id": "559d987ed17548cb9259a7f58e3ac904",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/4313ee2a-d11d-49cb-8d5f-31b46fbffd9b.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/559d987ed17548cb9259a7f58e3ac904/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T03:06:10.256710605Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 33782
+    }
+  }
+}

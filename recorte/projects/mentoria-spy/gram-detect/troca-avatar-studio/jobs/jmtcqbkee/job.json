@@ -1,0 +1,231 @@
+{
+  "id": "jmtcqbkee",
+  "created": "2026-08-28T09:08:21.639Z",
+  "windows": [],
+  "spentCredits": 0,
+  "video": "video.mov",
+  "avatars": [
+    {
+      "id": "a1",
+      "file": "avatar-1.jpg"
+    },
+    {
+      "id": "a2",
+      "file": "avatar-2.jpg"
+    }
+  ],
+  "meta": {
+    "duration": 32.416,
+    "size": 73832247,
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "hasAudio": true
+  },
+  "mode": "segments",
+  "frames": [
+    {
+      "t": 0,
+      "skin": 0.5208
+    },
+    {
+      "t": 1,
+      "skin": 0.5191
+    },
+    {
+      "t": 2,
+      "skin": 0.5668
+    },
+    {
+      "t": 3,
+      "skin": 0.5499
+    },
+    {
+      "t": 4,
+      "skin": 0.526
+    },
+    {
+      "t": 5,
+      "skin": 0.5551
+    },
+    {
+      "t": 6,
+      "skin": 0.5577
+    },
+    {
+      "t": 7,
+      "skin": 0.5538
+    },
+    {
+      "t": 8,
+      "skin": 0.5677
+    },
+    {
+      "t": 9,
+      "skin": 0.5178
+    },
+    {
+      "t": 10,
+      "skin": 0.5998
+    },
+    {
+      "t": 11,
+      "skin": 0.5794
+    },
+    {
+      "t": 12,
+      "skin": 0.6662
+    },
+    {
+      "t": 13,
+      "skin": 0.6467
+    },
+    {
+      "t": 14,
+      "skin": 0.6076
+    },
+    {
+      "t": 15,
+      "skin": 0.6168
+    },
+    {
+      "t": 16,
+      "skin": 0.6319
+    },
+    {
+      "t": 17,
+      "skin": 0.6289
+    },
+    {
+      "t": 18,
+      "skin": 0
+    },
+    {
+      "t": 19,
+      "skin": 0
+    },
+    {
+      "t": 20,
+      "skin": 0
+    },
+    {
+      "t": 21,
+      "skin": 0
+    },
+    {
+      "t": 22,
+      "skin": 0.6432
+    },
+    {
+      "t": 23,
+      "skin": 0.6363
+    },
+    {
+      "t": 24,
+      "skin": 0
+    },
+    {
+      "t": 25,
+      "skin": 0
+    },
+    {
+      "t": 26,
+      "skin": 0
+    },
+    {
+      "t": 27,
+      "skin": 0.5538
+    },
+    {
+      "t": 28,
+      "skin": 0.5582
+    },
+    {
+      "t": 29,
+      "skin": 0.5421
+    },
+    {
+      "t": 30,
+      "skin": 0.553
+    },
+    {
+      "t": 31,
+      "skin": 0.5586
+    }
+  ],
+  "labels": [
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen",
+    "screen"
+  ],
+  "thumbs": [
+    "t0001.jpg",
+    "t0002.jpg",
+    "t0003.jpg",
+    "t0004.jpg",
+    "t0005.jpg",
+    "t0006.jpg",
+    "t0007.jpg",
+    "t0008.jpg",
+    "t0009.jpg",
+    "t0010.jpg",
+    "t0011.jpg",
+    "t0012.jpg",
+    "t0013.jpg",
+    "t0014.jpg",
+    "t0015.jpg",
+    "t0016.jpg",
+    "t0017.jpg",
+    "t0018.jpg",
+    "t0019.jpg",
+    "t0020.jpg",
+    "t0021.jpg",
+    "t0022.jpg",
+    "t0023.jpg",
+    "t0024.jpg",
+    "t0025.jpg",
+    "t0026.jpg",
+    "t0027.jpg",
+    "t0028.jpg",
+    "t0029.jpg",
+    "t0030.jpg",
+    "t0031.jpg",
+    "t0032.jpg"
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 32,
+      "kind": "screen"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+// Definição das ferramentas do Estúdio (nome, descrição, schema). Compartilhada entre o servidor (que executa)
+// e o runner do container (que só repassa a chamada ao servidor). Nenhuma lógica nem segredo aqui.
+import { z } from 'zod';
+
+export const SPEC = {
+  pedir_aprovacao: {
+    descricao: 'Mostra ao cliente um botão "Aprovar" que reserva N vídeos do saldo dele. Chame depois de mostrar o plano/rosto e ANTES de qualquer geração paga de vídeo. Depois de chamar, termine a sua vez e espere: a aprovação chega como mensagem do cliente.',
+    schema: { videos: z.number().int().min(1).max(20).describe('quantas peças finais serão entregues (1 peça = 1 vídeo do saldo)'),
+              resumo: z.string().max(400).describe('uma frase pro cliente: o que será entregue') },
+  },
+  gerar_midia: {
+    descricao: 'ÚNICA forma de gerar mídia paga (imagem, vídeo, lipsync, voz, transcrição). Equivale a `wavespeed run <modelo> -i chave=valor`. Arquivos locais: valor "@caminho" relativo a job/ (ex.: "@trabalho/rosto/a1.png"). Estima o preço com os arquivos reais e recusa se passar do limite do pedido. Antes da aprovação só cabe prévia barata (rosto, sonda). Também use para consultar parâmetros: modelo + inputs {"_schema": true}.',
+    schema: { modelo: z.string().max(120).describe('id do modelo, ex.: openai/gpt-image-2/edit'),
+              inputs: z.record(z.string(), z.any()).describe('inputs do modelo; arquivos como "@trabalho/…"'),
+              saida: z.string().max(120).regex(/^[\w\-\/]+$/).describe('nome base dentro de job/trabalho/gerado/, sem extensão, ex.: rosto-v1') },
+  },
+  ver_modelo: {
+    descricao: 'Mostra os parâmetros (schema) de um modelo de geração, sem gerar nada nem gastar. Equivale a `wavespeed schema <modelo>`.',
+    schema: { modelo: z.string().max(120) },
+  },
+  recuperar_midia: {
+    descricao: 'Baixa o resultado de uma geração que já foi feita (pelo id), sem gerar de novo nem pagar outra vez.',
+    schema: { id: z.string().regex(/^[0-9a-f]{32}$/), saida: z.string().max(120).regex(/^[\w\-\/]+$/) },
+  },
+  entregar_video: {
+    descricao: 'Registra uma peça final como entregue ao cliente (consome 1 vídeo da reserva). Só pra peças finais em job/saida/, já conferidas.',
+    schema: { caminho: z.string().max(200).describe('ex.: job/saida/variacao-1.mp4') },
+  },
+  finalizar_pedido: {
+    descricao: 'Chame quando tudo o que foi pedido estiver entregue: devolve ao saldo do cliente os vídeos reservados e não usados.',
+    schema: {},
+  },
+};
+export const NOMES = Object.keys(SPEC).map((n) => `mcp__estudio__${n}`);

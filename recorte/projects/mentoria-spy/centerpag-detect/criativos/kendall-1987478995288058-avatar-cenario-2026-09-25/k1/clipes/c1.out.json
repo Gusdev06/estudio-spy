@@ -1,0 +1,28 @@
+{
+  "id": "4de26314a80c4660b2d41e8338ad7361",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/35ba97a6-b166-4d87-8063-ed1cee612b0d.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/kendall-1987478995288058-avatar-cenario-2026-09-25/k1/clipes/c1.mp4"
+  ],
+  "elapsed_ms": 29020,
+  "raw": {
+    "id": "4de26314a80c4660b2d41e8338ad7361",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/35ba97a6-b166-4d87-8063-ed1cee612b0d.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/4de26314a80c4660b2d41e8338ad7361/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T16:18:24.566646968Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 24884
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "cbaff629495845fab968f977e00be4c9",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Photorealistic video still from a podcast recording. Same camera position, same close-up framing and same pose as the image: she is seen from the chest up, turned three-quarters toward the right side of the frame, wearing black over-ear headphones, a black podcast microphone on a boom arm in front of her on the right, mouth slightly open as if mid-sentence, looking toward the person off-camera on the right. REPLACE the person with a DIFFERENT person: a South Asian woman about 40 years old with medium-brown skin, long black hair in a loose side braid over one shoulder, a tiny gold nose stud, wearing a deep-teal blouse. REPLACE the whole background with a DIFFERENT podcast studio: walls covered with light-grey hexagonal acoustic felt panels, a small softbox light, a light grey fabric backdrop, clean neutral cool-white light, minimal modern look, grey and white tones. Same size of the head in the frame and same head position as in the image. This person is the only person in the image. No monitors, no screens, no text, no logos, no watermark. Natural skin texture with visible pores, no retouching, ordinary person, not a model, soft warm studio light, shallow depth of field.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/0ceea638-590a-4368-b5fb-29d8b5213eac.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/var10-flora-959352790554428-2026-09-27/base/A.png"
+  ],
+  "elapsed_ms": 79418,
+  "raw": {
+    "id": "cbaff629495845fab968f977e00be4c9",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/0ceea638-590a-4368-b5fb-29d8b5213eac.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/cbaff629495845fab968f977e00be4c9/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-26T16:58:56.933060016Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 74973
+    }
+  }
+}

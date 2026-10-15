@@ -1,0 +1,29 @@
+{
+  "id": "fc24d6d0d8984d7089f31744fa5ab16e",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Vertical 9:16 front-camera smartphone selfie video still. Keep EXACTLY the same room, background, curtains, light, camera position, close-up framing, head size and head position as the image. REPLACE the woman with a DIFFERENT woman: a white woman about 23 years old with fair skin, light-blue eyes and straight light-blonde hair just past her shoulders, wearing a plain light-blue knit sweater. She looks straight into the phone camera, mouth relaxed and slightly open as if mid-sentence, natural light makeup. Only her head, shoulders and upper chest are visible; both of her arms hang relaxed at her sides, out of frame. She is the only person in the image. No text, no captions, no logos, no watermark. Photorealistic, natural skin texture with visible pores, no retouching, ordinary person, not a model, shot on a front phone camera.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/b39b7d1d-9ea7-4e9a-8aab-d787c72738c6.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/manuela-avatares-2026-10-06/base/a3.png"
+  ],
+  "elapsed_ms": 43209,
+  "raw": {
+    "id": "fc24d6d0d8984d7089f31744fa5ab16e",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/b39b7d1d-9ea7-4e9a-8aab-d787c72738c6.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/fc24d6d0d8984d7089f31744fa5ab16e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-06T01:10:33.075454739Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 40145
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model_id": "pruna-ai/p-video/avatar",
+  "price": 0.825,
+  "discounted_price": 0.825,
+  "discount_rate": 100,
+  "currency": "USD",
+  "estimate": true,
+  "unpriced_inputs": [],
+  "at_base_price": false,
+  "disclaimer": "Estimate only, for reference — the amount actually charged for a run is authoritative.",
+  "uploaded": {
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/gram01-l9-var-avatar-2026-09-11/conferencia/price-probe-9x16.png": "https://d2h7xmz5gqybh9.cloudfront.net/media/cc96ac48027e40ab8f92189bbfcd32c9/images/1789145338012129239_LB1sTm6v.png"
+  }
+}

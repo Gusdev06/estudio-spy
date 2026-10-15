@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:XkaFGd1AQGw",
+  "provider": "youtube",
+  "source_id": "XkaFGd1AQGw",
+  "source_url": "https://www.youtube.com/watch?v=XkaFGd1AQGw",
+  "title": "How to Take Screenshot Of ALLOW REPLAY Instagram Photo/Video | Instagram Tutorial",
+  "creator": {
+    "name": "Quick Apps Guide ",
+    "url": null
+  },
+  "query": "Instagram vanish mode DM screen recording",
+  "collected_at": "2026-09-17T16:29:24.758281+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 93,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/XkaFGd1AQGw",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/XkaFGd1AQGw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD0Qpz9zkL9ILARpnHn3fi_1L8I4A"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

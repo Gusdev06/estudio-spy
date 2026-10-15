@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "youtube:b4Rrd-Gtc1k",
+  "provider": "youtube",
+  "source_id": "b4Rrd-Gtc1k",
+  "source_url": "https://www.youtube.com/watch?v=b4Rrd-Gtc1k",
+  "title": "How to Hide Instagram Activity Status 2026 | Active Now",
+  "creator": {
+    "name": "Miss Config",
+    "url": null
+  },
+  "query": "Instagram activity status active now how to see 2026",
+  "collected_at": "2026-09-17T16:29:20.081211+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "1ª rodada: janela exploratória, ainda sem conferir"
+  },
+  "media": {
+    "duration_s": 47,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0
+  },
+  "preview": {
+    "embed_url": "https://www.youtube-nocookie.com/embed/b4Rrd-Gtc1k",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/b4Rrd-Gtc1k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC30SEwVa8-ua_8QXBcyY7BjKY7Cw",
+    "poster_path": "previews/a148f5951cc98fee-r1-4d812712-poster.jpg",
+    "contact_sheet_path": "previews/a148f5951cc98fee-r1-4d812712-sheet.jpg",
+    "gif_path": "previews/a148f5951cc98fee-r1-4d812712.gif",
+    "frame_times_s": [
+      15.0,
+      15.667,
+      16.333,
+      17.0,
+      17.667,
+      18.333,
+      19.0,
+      19.667,
+      20.333,
+      21.0,
+      21.667,
+      22.333
+    ],
+    "sheet_grid": [
+      4,
+      3
+    ],
+    "sheet_labels": true,
+    "config": {
+      "scope": "broll",
+      "mode": "gif",
+      "width": 360,
+      "fps": 8,
+      "colors": 128,
+      "max_mb": 5,
+      "max_seconds": 10,
+      "frames": 12
+    },
+    "warning": null,
+    "gif_bytes": 95458,
+    "scope": "broll"
+  },
+  "segment": {
+    "start_s": 15.0,
+    "end_s": 23.0,
+    "revision": 1
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "rejected",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "rejected",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": 1920,
+    "source_height": 1080,
+    "fit": "native",
+    "transform": "preserve_native"
+  },
+  "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/a148f5951cc98fee-c0f36f20952b7dd40fd7d9e8aa6a931992fc4426c1e422475a3ec731ec172d8b.mp4",
+  "local_sha256": "c0f36f20952b7dd40fd7d9e8aa6a931992fc4426c1e422475a3ec731ec172d8b",
+  "local_start_s": 15.0,
+  "local_duration_s": 8.0,
+  "preview_scope": "broll",
+  "narration": "There's one Instagram detail that gives almost everyone away"
+}

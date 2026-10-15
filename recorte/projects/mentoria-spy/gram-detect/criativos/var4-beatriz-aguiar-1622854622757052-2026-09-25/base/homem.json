@@ -1,0 +1,29 @@
+{
+  "id": "e3abefe5e7624464b509fe33d102b841",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Vertical 9:16 smartphone selfie video still, same camera position, same close-up framing and same head size, head position and pose as the image: a man looking straight into the phone camera, mouth relaxed and slightly open as if mid-sentence. REPLACE the man with a DIFFERENT man: a Black man about 23 years old with deep-brown skin, short black two-strand twists on top with a tapered fade, a thin mustache and light chin stubble, wearing a plain burgundy hoodie. REPLACE the background with a DIFFERENT place: sitting on his bed in a bedroom at night: a plain charcoal wall behind him, a dark-grey duvet and pillows out of focus behind his shoulder, a faint deep-blue LED strip glowing along the top of the wall, a soft warm light on his face from off-camera, the rest of the room in shadow. Keep the same dark moody low-light look and the same crop (top of the head touching the top edge). He is the only person in the image. No text, no captions, no logos, no watermark. Photorealistic, natural skin texture with visible pores, no retouching, ordinary person, not a model, shot on a front phone camera.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/4c932526-4ca2-47da-926e-ea3b0acde497.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/var4-beatriz-aguiar-1622854622757052-2026-09-25/base/homem.png"
+  ],
+  "elapsed_ms": 50495,
+  "raw": {
+    "id": "e3abefe5e7624464b509fe33d102b841",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/4c932526-4ca2-47da-926e-ea3b0acde497.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/e3abefe5e7624464b509fe33d102b841/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:21:06.335482545Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 47265
+    }
+  }
+}

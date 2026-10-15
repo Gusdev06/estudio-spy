@@ -1,0 +1,8 @@
+{
+  "original": "https://www.instagram.com/reel/DdKk7Gjhv35/ (2,50M views, #3 do @gigi.girltea)",
+  "formato": "troca pura + roupa/acessórios novos (decisões de 14/10): cenário, frase EN, movimento e áudio do original",
+  "roupa": "regata canelada verde-sálvia de alça, argolas douradas finas, cabelo preso com piranha tartaruga",
+  "pipeline": "frame 1,5 s com legenda -> gpt-image-2.5-sunburst/edit [frame, influencer-bia 01-frente, 05-close] (troca pessoa+roupa, remove legenda) -> seedance-2.0/video-edit 720p ref [bia-na-cena, 01, 05] -> legenda.py (70px, pitch 87, centro y=970) + áudio original",
+  "custo_usd_estimado": 2.65,
+  "final": "final/DdKk7-bia.mp4"
+}

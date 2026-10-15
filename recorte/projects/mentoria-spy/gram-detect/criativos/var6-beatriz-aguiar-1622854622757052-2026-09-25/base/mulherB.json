@@ -1,0 +1,29 @@
+{
+  "id": "c9dda86934164bff86d6df19d8cfede2",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Vertical 9:16 handheld smartphone video still. Use the FIRST image for the exact camera position, wide framing, composition and the woman's pose (leaning with her back against the edge of an open doorway, holding a phone in one hand, looking up, mouth open, dramatic). Use the SECOND image for the woman's identity and clothes and for the place: the SAME woman, same face, same hair, same clothes, in the SAME hallway with butter-yellow walls and the white door, now seen wider: the open door shows a small bedroom corner with a bed with a navy-blue duvet. She is the only person in the image. No text, no captions, no logos, no print on clothes, no watermark. Photorealistic amateur phone footage look, natural skin texture.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/769dc9db-36ba-4931-aa49-4113534e0144.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/var6-beatriz-aguiar-1622854622757052-2026-09-25/base/mulherB.png"
+  ],
+  "elapsed_ms": 70797,
+  "raw": {
+    "id": "c9dda86934164bff86d6df19d8cfede2",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/769dc9db-36ba-4931-aa49-4113534e0144.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c9dda86934164bff86d6df19d8cfede2/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:26:07.368367044Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 67311
+    }
+  }
+}

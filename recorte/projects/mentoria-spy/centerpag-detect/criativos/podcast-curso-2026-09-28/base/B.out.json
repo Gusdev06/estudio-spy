@@ -1,0 +1,29 @@
+{
+  "id": "a02ff719598046c28d5c932d4fdff610",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Photorealistic vertical 9:16 video still from a podcast recording. A Taiwanese man about 30 with short black hair, clean-shaven, wearing a dark grey crewneck, black over-ear headphones, a black podcast microphone in front of him. Modern podcast studio with light-grey acoustic panels and soft warm light, softly out of focus. He is the ONLY person in the image, seen chest up, in profile turned to the left, looking toward the person off-camera on the left, mouth slightly open mid-sentence, curious and surprised. Natural skin texture, no retouching, ordinary person not a model. No text, no logos.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/800e123b-6a8d-49d5-bbf3-1bf17ca92993.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-curso-2026-09-28/base/B.png"
+  ],
+  "elapsed_ms": 64772,
+  "raw": {
+    "id": "a02ff719598046c28d5c932d4fdff610",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/800e123b-6a8d-49d5-bbf3-1bf17ca92993.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/a02ff719598046c28d5c932d4fdff610/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T09:11:23.610412294Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 61677
+    }
+  }
+}

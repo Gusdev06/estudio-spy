@@ -1,0 +1,31 @@
+✔ Done in 147s.
+✔ Saved 1 file.
+{
+  "id": "a8f3169de83e4b81949d90f5b1c420bb",
+  "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "prompt": "The man tilts his head slightly to his left and continues.\n[Marcos, calm low serious voice]: \"You don't need to guess, or argue, or secretly check someone's phone. Because when people try to hide something, they usually leave small traces behind without realizing it.\"\nHe straightens and blinks once. Camera is locked off. Hands stay out of frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/a8f3169de83e4b81949d90f5b1c420bb/1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/gram-detect/criativos/sophia-jones-avatar-homem-38-2026-08-24/clipes/b-02.mp4"
+  ],
+  "elapsed_ms": 149037,
+  "raw": {
+    "id": "a8f3169de83e4b81949d90f5b1c420bb",
+    "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/a8f3169de83e4b81949d90f5b1c420bb/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/a8f3169de83e4b81949d90f5b1c420bb/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-23T17:52:37.183709457Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 145843
+    }
+  }
+}

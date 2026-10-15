@@ -1,0 +1,29 @@
+{
+  "id": "b7d245ba46c3449c9b327d44a07d168a",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Photorealistic video still from a podcast recording. Same camera position, same tight close-up framing and same pose as the image: his face in profile turned toward the left side of the frame, wearing black over-ear headphones, a black podcast microphone in front of his mouth at the lower left, mouth slightly open as if mid-sentence, looking toward the person off-camera on the left. REPLACE the person with a DIFFERENT person: a Latino man about 35 years old with tan skin, dark brown hair slicked back and a short dark stubble beard, wearing a dark-navy denim shirt. REPLACE the whole background with a DIFFERENT podcast studio: dark walnut wood-paneled walls, a heavy deep burgundy velvet curtain, a brass floor lamp with a warm glow, a leather armchair in the background, rich dark wood, burgundy and warm gold tones, elegant and moody. Same size of the head in the frame and same head position as in the image. This person is the only person in the image. No monitors, no screens, no text, no logos, no watermark. Natural skin texture with visible pores, no retouching, ordinary person, not a model, soft warm studio light, shallow depth of field.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/fc1944fc-2824-4241-ab0c-c97b8dcbc2cd.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/var4-flora-959352790554428-2026-09-25/base/B.png"
+  ],
+  "elapsed_ms": 56682,
+  "raw": {
+    "id": "b7d245ba46c3449c9b327d44a07d168a",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/fc1944fc-2824-4241-ab0c-c97b8dcbc2cd.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/b7d245ba46c3449c9b327d44a07d168a/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:02:21.32814693Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 53023
+    }
+  }
+}

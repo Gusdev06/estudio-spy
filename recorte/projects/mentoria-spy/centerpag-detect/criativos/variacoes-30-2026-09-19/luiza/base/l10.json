@@ -1,0 +1,29 @@
+{
+  "id": "c16daff563a24d85bfb587520acc9bf5",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same bedroom, same phone front camera held at arm's length at eye level, same framing distance and same soft indoor light, same background: pale wall with a hanging string of pink flowers and green leaves, a white curtain, a bed at the bottom. Extend the scene to a 9:16 vertical frame keeping the original composition in the center. REPLACE the woman with a DIFFERENT woman: a Filipina woman about 26 with medium tan skin, wavy dark hair loose, small hoops, plain lilac t-shirt. Same posture: head and shoulders in the upper half, torso to the bottom, looking straight into the lens, mouth closed, calm confiding expression. Photorealistic phone-camera video still, slightly soft, mild noise, natural skin texture, no retouching, ordinary person, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/430b810d-e38d-43c9-a755-8870c1e825a5.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/variacoes-30-2026-09-19/luiza/base/l10.png"
+  ],
+  "elapsed_ms": 50109,
+  "raw": {
+    "id": "c16daff563a24d85bfb587520acc9bf5",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/430b810d-e38d-43c9-a755-8870c1e825a5.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c16daff563a24d85bfb587520acc9bf5/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-19T15:45:04.093819448Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 47212
+    }
+  }
+}

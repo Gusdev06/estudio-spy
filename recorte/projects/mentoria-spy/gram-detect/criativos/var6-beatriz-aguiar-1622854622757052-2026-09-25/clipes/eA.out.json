@@ -1,0 +1,29 @@
+{
+  "id": "0c5570f8a1e64aada887799ce42ec86c",
+  "model": "bytedance/seedance-v1-lite-i2v-720p",
+  "prompt": "Shaky amateur handheld phone video filmed by her boyfriend in a narrow hallway with butter-yellow walls and a white door. The young Latina woman with wavy shoulder-length auburn-red hair in a black zip-up hoodie is dramatically outraged: she shouts and talks fast at the camera, waves her phone in one hand, gestures wildly with the other, lunges toward the camera and swats at it so the frame whips around, then stumbles back and leans against the wall, still ranting. Comedic skit energy, fast jerky handheld camera movement, natural indoor light, realistic.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/19a16f25-9d79-4101-9ca9-9bcd1554ba55.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/var6-beatriz-aguiar-1622854622757052-2026-09-25/clipes/eA.mp4"
+  ],
+  "elapsed_ms": 196340,
+  "raw": {
+    "id": "0c5570f8a1e64aada887799ce42ec86c",
+    "model": "bytedance/seedance-v1-lite-i2v-720p",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/19a16f25-9d79-4101-9ca9-9bcd1554ba55.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/0c5570f8a1e64aada887799ce42ec86c/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:28:19.165490196Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 192189
+    }
+  }
+}

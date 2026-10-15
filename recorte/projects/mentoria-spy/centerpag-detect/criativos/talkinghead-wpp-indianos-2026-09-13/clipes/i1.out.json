@@ -1,0 +1,28 @@
+{
+  "id": "b529cb7e1dc54086a7c162cf3f4dda9b",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/85a2d679-649b-4393-9db0-e19132f6de86.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/talkinghead-wpp-indianos-2026-09-13/clipes/i1.mp4"
+  ],
+  "elapsed_ms": 439967,
+  "raw": {
+    "id": "b529cb7e1dc54086a7c162cf3f4dda9b",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/85a2d679-649b-4393-9db0-e19132f6de86.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/b529cb7e1dc54086a7c162cf3f4dda9b/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-13T04:00:16.637588228Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 433231
+    }
+  }
+}

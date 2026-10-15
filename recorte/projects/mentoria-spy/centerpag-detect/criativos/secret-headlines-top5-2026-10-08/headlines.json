@@ -1,0 +1,17 @@
+{
+ "174": {"mae": "77",  "gatilho": "prova sem tocar no celular", "slug": "ver-mensagens-sem-tocar", "h1": "SEE YOUR PARTNER'S 📱", "h2": "TEXTS WITHOUT TOUCHING IT"},
+ "175": {"mae": "77",  "gatilho": "pergunta",                   "slug": "com-quem-ta-falando-agora", "h1": "WHO IS YOUR PARTNER 📱", "h2": "TEXTING RIGHT NOW?"},
+ "176": {"mae": "77",  "gatilho": "número (passos)",            "slug": "3-passos-mensagens", "h1": "3 STEPS TO SEE YOUR 📱", "h2": "PARTNER'S MESSAGES"},
+ "177": {"mae": "77",  "gatilho": "curiosidade/mecanismo",      "slug": "so-precisa-do-numero", "h1": "ALL YOU NEED IS 📱", "h2": "YOUR PARTNER'S NUMBER"},
+ "178": {"mae": "77",  "gatilho": "prova do cotidiano",         "slug": "apagou-a-conversa", "h1": "THEY DELETED THE CHAT?", "h2": "YOU CAN STILL READ IT"},
+ "179": {"mae": "121", "gatilho": "pergunta",                   "slug": "amigo-com-nome-falso", "h1": "JUST A FRIEND?", "h2": "THEN WHY THE FAKE NAME?"},
+ "180": {"mae": "121", "gatilho": "acusação",                   "slug": "so-um-amigo-apaga-conversa", "h1": "HE'S \"JUST A FRIEND\"", "h2": "SHE DELETES HIS TEXTS"},
+ "181": {"mae": "121", "gatilho": "número/tempo",               "slug": "2am-tela-acende", "h1": "2AM. HER SCREEN LIGHTS UP", "h2": "SHE FLIPS IT OVER"},
+ "182": {"mae": "121", "gatilho": "prova concreta",             "slug": "salvo-como-jessica", "h1": "SAVED AS \"JESSICA\"", "h2": "BUT IT'S A GUY"},
+ "183": {"mae": "121", "gatilho": "curiosidade",                "slug": "o-que-o-amigo-manda", "h1": "SEE WHAT HER \"FRIEND\"", "h2": "TEXTS HER AT NIGHT"},
+ "184": {"mae": "112", "gatilho": "acusação",                   "slug": "voce-nao-ta-imaginando", "h1": "YOU'RE NOT IMAGINING IT", "h2": "SHE'S HIDING SOMETHING"},
+ "185": {"mae": "112", "gatilho": "prova do cotidiano",         "slug": "vira-o-celular", "h1": "SHE FLIPS HER PHONE", "h2": "EVERY TIME YOU WALK IN"},
+ "186": {"mae": "112", "gatilho": "pergunta",                   "slug": "quem-faz-ela-rir", "h1": "WHO MAKES HER LAUGH", "h2": "AT MIDNIGHT?"},
+ "187": {"mae": "112", "gatilho": "número/tempo",               "slug": "3-meses-de-sinais", "h1": "3 MONTHS OF SIGNS", "h2": "AND YOU STILL IGNORE THEM"},
+ "188": {"mae": "112", "gatilho": "prova do cotidiano",         "slug": "sorri-pro-celular", "h1": "SHE SMILES AT HER PHONE", "h2": "NOT AT YOU"}
+}

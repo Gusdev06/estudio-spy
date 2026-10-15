@@ -1,0 +1,28 @@
+{
+  "id": "0ce46157e25c45b796dd6bc0e25958b1",
+  "model": "bytedance/avatar-omni-human-1.5",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/6570716e-3200-4632-922d-9b750b04c0ba-u1_897e1c5b-b51c-4d2f-94ae-0378b6dcee34.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-emilly-avatar-2026-09-09/var4/clipes/talking-head-v8.mp4"
+  ],
+  "elapsed_ms": 1135896,
+  "raw": {
+    "id": "0ce46157e25c45b796dd6bc0e25958b1",
+    "model": "bytedance/avatar-omni-human-1.5",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/6570716e-3200-4632-922d-9b750b04c0ba-u1_897e1c5b-b51c-4d2f-94ae-0378b6dcee34.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/0ce46157e25c45b796dd6bc0e25958b1/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-09T16:54:36.759030269Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 1132300
+    }
+  }
+}

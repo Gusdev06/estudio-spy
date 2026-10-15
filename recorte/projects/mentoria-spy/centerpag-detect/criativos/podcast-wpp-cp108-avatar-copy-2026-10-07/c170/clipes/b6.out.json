@@ -1,0 +1,28 @@
+{
+  "id": "adba18b72b234a0996e205eb2bff4e4f",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://cdn.cachegalaxy.com/output/c23e3252-52a8-49dc-a5c3-b1e1e829ea21.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-cp108-avatar-copy-2026-10-07/c170/clipes/b6.mp4"
+  ],
+  "elapsed_ms": 21038,
+  "raw": {
+    "id": "adba18b72b234a0996e205eb2bff4e4f",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://cdn.cachegalaxy.com/output/c23e3252-52a8-49dc-a5c3-b1e1e829ea21.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/adba18b72b234a0996e205eb2bff4e4f/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-07T14:38:25.545419346Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 17664
+    }
+  }
+}

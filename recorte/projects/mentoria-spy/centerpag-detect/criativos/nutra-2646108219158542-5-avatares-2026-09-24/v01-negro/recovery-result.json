@@ -1,0 +1,20 @@
+{
+  "id": "05f77ff66ce2492b8b31f1d97e4f7e3f",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/2bdfe5bb-8c69-4d5a-aca5-c35efd4394aa.mp4"
+  ],
+  "urls": {
+    "get": "https://api.wavespeed.ai/api/v3/predictions/05f77ff66ce2492b8b31f1d97e4f7e3f/result"
+  },
+  "status": "completed",
+  "created_at": "2026-09-23T19:10:40.499244809Z",
+  "code": 0,
+  "error": "",
+  "timings": {
+    "inference": 159714
+  },
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/nutra-2646108219158542-5-avatares-2026-09-24/v01-negro/avatar-animado.mp4"
+  ]
+}

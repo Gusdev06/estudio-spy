@@ -1,0 +1,29 @@
+{
+  "id": "6a617c0caac84c49971dc910bc7513c3",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still from a phone's front camera, held in one hand a little below eye level and tilted slightly upward. An ordinary East Asian woman around 27 years old with fair skin, straight black hair to the collarbone with a middle part, monolid eyes, light freckles across her nose, the tip of her nose and her cheeks slightly reddish, no makeup except a bit of lip balm. She wears a plain white cotton crewneck t-shirt. No glasses, no hat, no earrings, no logos, no text anywhere. She looks straight into the lens with her mouth closed and a serious, steady expression, brows slightly drawn together, eyes open. Framing: head and upper chest, shoulders cropped at the sides, top of her head about 25 percent from the top edge, eyes about 44 percent from the top, chin about 62 percent from the top, her face about half the frame width, collar and upper chest visible below, plain background above her head; hands out of frame. She is sitting at a small vanity in her bedroom in the evening; behind her a shelf crowded with skincare bottles and jars, the edge of a mirror with a few warm bulbs along its frame, a pale wall. Available light only — warm spill from the mirror bulbs to camera-left and dimmer cool light from a window off-frame, slightly underexposed, low contrast, no ring light, no studio light. Realistic skin texture with visible pores and a little oil on the forehead and nose bridge, mild phone-camera softness and grain, no retouching, not a model, not a stock photo.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/b18e0d5c-b523-4e7e-ab99-6a636c649f7d.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/gram01-l9-var-avatar-2026-09-11/base/avatar-av3.png"
+  ],
+  "elapsed_ms": 50244,
+  "raw": {
+    "id": "6a617c0caac84c49971dc910bc7513c3",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/b18e0d5c-b523-4e7e-ab99-6a636c649f7d.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/6a617c0caac84c49971dc910bc7513c3/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-11T16:55:08.385691907Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 45737
+    }
+  }
+}

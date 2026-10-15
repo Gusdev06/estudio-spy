@@ -1,0 +1,29 @@
+{
+  "id": "cf2448683b0745d5b52cf450bea6ab57",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate this exact ad. Keep the same woman, her pose with hand over mouth, her shocked expression, the phone showing the Instagram DM list, and EVERY text element identical in words, fonts, colors, sizes and positions (handwritten \"Trust but verify...\", headline \"I FOUND WHAT HE'S HIDING ON INSTAGRAM.\", 8-item feature list, \"The truth isn't always obvious. But now, it is.\" box, \"SEE THE TRUTH NOW →\" button). Change ONLY the setting: she is sitting in the driver's seat of a parked car at night, dark interior, faint streetlight through the windows and the phone screen glow lighting her face. Remove the chalkboard. Keep the left side dark enough for the text to read. Photorealistic, phone-photo realism.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/bceafcd6-2af4-4f2f-ad2f-c389c0954a34.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/gram-imagem-hiding-on-instagram-2026-10-11/out/v07-cena-carro.png"
+  ],
+  "elapsed_ms": 106173,
+  "raw": {
+    "id": "cf2448683b0745d5b52cf450bea6ab57",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/bceafcd6-2af4-4f2f-ad2f-c389c0954a34.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/cf2448683b0745d5b52cf450bea6ab57/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-11T15:40:48.428991966Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 102453
+    }
+  }
+}

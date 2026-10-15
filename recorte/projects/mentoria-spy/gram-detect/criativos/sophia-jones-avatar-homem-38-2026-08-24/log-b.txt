@@ -1,0 +1,8 @@
+[b] iniciando
+  -> clipes/b-01.mp4 (8s, sound=true)
+  !! FALHOU clipes/b-01.mp4
+{
+  "error": "fetch failed",
+  "prediction_id": "b4f0f5cbe3dc45d39ffe67aeb93b6e64",
+  "query_command": "wavespeed show b4f0f5cbe3dc45d39ffe67aeb93b6e64"
+}

@@ -1,0 +1,206 @@
+[
+ {
+  "id": "g01",
+  "ini": 0.0,
+  "fim": 0.829,
+  "txt": "I FOUND OUT",
+  "verde": []
+ },
+ {
+  "id": "g02",
+  "ini": 0.829,
+  "fim": 1.659,
+  "txt": "WHERE SHE WENT",
+  "verde": [
+   "WENT"
+  ]
+ },
+ {
+  "id": "g03",
+  "ini": 1.659,
+  "fim": 2.488,
+  "txt": "AFTER WORK",
+  "verde": [
+   "WORK"
+  ]
+ },
+ {
+  "id": "g04",
+  "ini": 2.578,
+  "fim": 3.31,
+  "txt": "IT TOOK ONE",
+  "verde": []
+ },
+ {
+  "id": "g05",
+  "ini": 3.31,
+  "fim": 4.042,
+  "txt": "AFTERNOON",
+  "verde": [
+   "AFTERNOON"
+  ]
+ },
+ {
+  "id": "g06",
+  "ini": 4.042,
+  "fim": 4.773,
+  "txt": "AND I NEVER ASKED",
+  "verde": []
+ },
+ {
+  "id": "g07",
+  "ini": 4.773,
+  "fim": 5.505,
+  "txt": "A SINGLE QUESTION",
+  "verde": [
+   "QUESTION"
+  ]
+ },
+ {
+  "id": "g08",
+  "ini": 5.595,
+  "fim": 6.492,
+  "txt": "YOU PUT IN",
+  "verde": []
+ },
+ {
+  "id": "g09",
+  "ini": 6.492,
+  "fim": 7.39,
+  "txt": "THE NUMBER",
+  "verde": [
+   "NUMBER"
+  ]
+ },
+ {
+  "id": "g10",
+  "ini": 7.39,
+  "fim": 8.287,
+  "txt": "THEN YOU PRESS CHECK",
+  "verde": [
+   "CHECK"
+  ]
+ },
+ {
+  "id": "g11",
+  "ini": 8.377,
+  "fim": 9.724,
+  "txt": "IT DOES THE CONNECTING",
+  "verde": []
+ },
+ {
+  "id": "g12",
+  "ini": 9.724,
+  "fim": 11.07,
+  "txt": "YOU JUST WAIT THERE",
+  "verde": [
+   "WAIT"
+  ]
+ },
+ {
+  "id": "g13",
+  "ini": 11.16,
+  "fim": 12.002,
+  "txt": "AND WHAT COMES BACK",
+  "verde": []
+ },
+ {
+  "id": "g14",
+  "ini": 12.002,
+  "fim": 12.843,
+  "txt": "IS THE PART",
+  "verde": [
+   "PART"
+  ]
+ },
+ {
+  "id": "g15",
+  "ini": 12.843,
+  "fim": 13.684,
+  "txt": "SOMEBODY TRIED",
+  "verde": []
+ },
+ {
+  "id": "g16",
+  "ini": 13.684,
+  "fim": 14.526,
+  "txt": "TO ERASE",
+  "verde": [
+   "ERASE"
+  ]
+ },
+ {
+  "id": "g17",
+  "ini": 14.616,
+  "fim": 15.442,
+  "txt": "THE TOOL IS",
+  "verde": [
+   "TOOL"
+  ]
+ },
+ {
+  "id": "g18",
+  "ini": 15.442,
+  "fim": 16.268,
+  "txt": "100% DISCREET WITH",
+  "verde": [
+   "DISCREET"
+  ]
+ },
+ {
+  "id": "g19",
+  "ini": 16.268,
+  "fim": 17.093,
+  "txt": "NO NOTIFICATIONS, NO",
+  "verde": []
+ },
+ {
+  "id": "g20",
+  "ini": 17.093,
+  "fim": 17.919,
+  "txt": "TRACE. SHE WON'T",
+  "verde": [
+   "TRACE"
+  ]
+ },
+ {
+  "id": "g21",
+  "ini": 17.919,
+  "fim": 18.745,
+  "txt": "KNOW YOU'RE WATCHING",
+  "verde": []
+ },
+ {
+  "id": "g22",
+  "ini": 18.745,
+  "fim": 19.557,
+  "txt": "STOP BELIEVING",
+  "verde": []
+ },
+ {
+  "id": "g23",
+  "ini": 19.557,
+  "fim": 20.37,
+  "txt": "THE EXCUSES",
+  "verde": []
+ },
+ {
+  "id": "g24",
+  "ini": 20.37,
+  "fim": 21.182,
+  "txt": "GO AND LOOK",
+  "verde": [
+   "LOOK"
+  ]
+ },
+ {
+  "id": "g25",
+  "ini": 21.182,
+  "fim": 21.994,
+  "txt": "FOR YOURSELF",
+  "verde": [
+   "FOR",
+   "YOURSELF"
+  ]
+ }
+]

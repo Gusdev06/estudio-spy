@@ -1,0 +1,17 @@
+Generate an image with the following prompt, dont change it(DO NOT CHANGE THIS PROMPT, IT'S ALREADY AN IMPROVED PROMPT) -
+
+subject: a female guest expert, late 30s, shoulder-length dark brown hair, tortoiseshell glasses, wearing a charcoal blazer over a plain white shirt, no badge, no name tag, no embroidery on the clothing
+
+pose and framing: seated in a pale grey upholstered armchair, leaning very slightly forward, hands relaxed in her lap, mid-sentence with a composed engaged expression, medium shot from the waist up, camera at exact eye level, subject centred
+
+scene: the guest side of the same modern television news studio at night, behind her the identical large window wall revealing an out-of-focus night city skyline with scattered warm window lights, the same curved deep desaturated blue studio walls with the same horizontal warm amber cove lighting strips, everything behind her softly out of focus
+
+lighting: broadcast key light, soft and frontal, slightly cool; gentle warm rim light on her hair and shoulders; no harsh shadows on the face; lighting must match the anchor desk side of the same studio exactly
+
+composition note: leave the lower fifth of the frame visually simple and uncluttered, nothing important in that band
+
+photo quality and vibe: focused cinematic shot, movie-still composition, raw quality, subtle film grain, clean composition, cool ambient shadows, colors with a slight gray tone, natural lighting that matches the background, no oversaturation, no oversharpening, a lively vibe as if the frame was caught mid-interview, strong vignette
+
+aspect ratio: 9:16
+
+Avoid next - any text, any letters, any lower third graphic, any news ticker, any station logo, any watermark, any on-screen banner, any lab coat, any medical uniform, any credential or name embroidered on clothing, excessive yellow in the photo, too sharp or overly sharpened, too many highlights or glare on the face, plastic skin, artificial background.

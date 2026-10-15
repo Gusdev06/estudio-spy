@@ -1,0 +1,28 @@
+{
+  "id": "299eeff2160940ebafe828c39a4be059",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://cdn.cachegalaxy.com/output/f57b6886-bd80-42db-8e4a-015f2357a209.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-top5-avatar-copy-2026-10-07/clipes/v169.mp4"
+  ],
+  "elapsed_ms": 65746,
+  "raw": {
+    "id": "299eeff2160940ebafe828c39a4be059",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://cdn.cachegalaxy.com/output/f57b6886-bd80-42db-8e4a-015f2357a209.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/299eeff2160940ebafe828c39a4be059/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-07T14:39:04.47434386Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 60733
+    }
+  }
+}

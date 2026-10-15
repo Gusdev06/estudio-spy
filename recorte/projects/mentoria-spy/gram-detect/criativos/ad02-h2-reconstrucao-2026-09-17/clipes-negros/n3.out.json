@@ -1,0 +1,28 @@
+{
+  "id": "a2effc8ea2bc49eaac1a022db0c225f6",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/aa095248-de1c-4928-a44a-28ef750eca8d.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-reconstrucao-2026-09-17/clipes-negros/n3.mp4"
+  ],
+  "elapsed_ms": 122996,
+  "raw": {
+    "id": "a2effc8ea2bc49eaac1a022db0c225f6",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/aa095248-de1c-4928-a44a-28ef750eca8d.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/a2effc8ea2bc49eaac1a022db0c225f6/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-17T10:39:31.009811749Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 114309
+    }
+  }
+}

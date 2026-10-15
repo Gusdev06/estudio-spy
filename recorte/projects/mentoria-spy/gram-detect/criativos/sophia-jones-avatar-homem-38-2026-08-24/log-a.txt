@@ -1,0 +1,9 @@
+[a] iniciando
+  -> clipes/a-01.mp4 (8s, sound=false)
+  ok clipes/a-01.mp4 (8.042000s)
+  -> clipes/a-02.mp4 (11s, sound=false)
+  !! FALHOU clipes/a-02.mp4
+✖ fetch failed
+{
+  "error": "fetch failed"
+}

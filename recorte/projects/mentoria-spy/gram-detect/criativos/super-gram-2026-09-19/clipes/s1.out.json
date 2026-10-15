@@ -1,0 +1,28 @@
+{
+  "id": "d162d58fb63c4c9eba3883315d87f8fd",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e0dfadf5-a069-4096-bd41-d257f5b12a7c.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/super-gram-2026-09-19/clipes/s1.mp4"
+  ],
+  "elapsed_ms": 82072,
+  "raw": {
+    "id": "d162d58fb63c4c9eba3883315d87f8fd",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e0dfadf5-a069-4096-bd41-d257f5b12a7c.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/d162d58fb63c4c9eba3883315d87f8fd/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-19T01:53:18.163037105Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 74146
+    }
+  }
+}

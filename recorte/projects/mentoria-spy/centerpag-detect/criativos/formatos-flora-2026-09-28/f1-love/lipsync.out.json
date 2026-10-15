@@ -1,0 +1,28 @@
+{
+  "id": "d0503342f50b45c9909d1efca285d08b",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/08782b14-fd4c-4284-9db5-c3e08f384f71.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/formatos-flora-2026-09-28/f1-love/lipsync.mp4"
+  ],
+  "elapsed_ms": 96388,
+  "raw": {
+    "id": "d0503342f50b45c9909d1efca285d08b",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/08782b14-fd4c-4284-9db5-c3e08f384f71.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/d0503342f50b45c9909d1efca285d08b/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-27T17:06:04.973656817Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 88356
+    }
+  }
+}

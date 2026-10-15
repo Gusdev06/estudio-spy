@@ -1,0 +1,29 @@
+{
+  "id": "477809dce2494b9d89318dcc53422d65",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Photorealistic video still from a podcast recording. Same camera position, same tight close-up framing and same pose as the image: his face in profile turned toward the left side of the frame, wearing black over-ear headphones, a black podcast microphone in front of his mouth at the lower left, mouth slightly open as if mid-sentence, looking toward the person off-camera on the left. REPLACE the person with a DIFFERENT person: a man about 36 years old with olive Mediterranean skin, a clean-shaven bald head and a full dark beard, wearing a plain black t-shirt. REPLACE the whole background with a DIFFERENT podcast studio: a dim room at night with a large floor-to-ceiling window behind showing blurred city skyline lights as soft bokeh, a warm small desk lamp, dark navy walls, night-time city atmosphere, deep navy with warm orange city bokeh. Same size of the head in the frame and same head position as in the image. This person is the only person in the image. No monitors, no screens, no text, no logos, no watermark. Natural skin texture with visible pores, no retouching, ordinary person, not a model, soft warm studio light, shallow depth of field.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/8ebc44bd-7ab4-471b-9426-10cfa45d74fb.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/var6-flora-959352790554428-2026-09-25/base/B.png"
+  ],
+  "elapsed_ms": 37779,
+  "raw": {
+    "id": "477809dce2494b9d89318dcc53422d65",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/8ebc44bd-7ab4-471b-9426-10cfa45d74fb.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/477809dce2494b9d89318dcc53422d65/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:02:20.527611143Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 34364
+    }
+  }
+}

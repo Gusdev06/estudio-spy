@@ -1,0 +1,29 @@
+{
+  "id": "8a3ae4756b334be18fd04ff4bf22db85",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Same podcast studio, same camera position and framing, same warm daylight, same cream sofa and background with a light curtain and green plants, same black podcast microphone on a boom arm in front of her. Keep the wide 16:9 landscape framing exactly as in the image. REPLACE the woman with a DIFFERENT woman: a Pakistani woman about 28 years old with medium brown skin, long dark hair in a single side braid, small gold studs, wearing a plain maroon kurta top. She sits in the same position, same posture, same distance from the microphone, head and upper chest visible, mouth closed, looking toward the person she is talking to off-camera. Photorealistic video still, natural skin texture with visible pores, no retouching, ordinary person, not a model, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/0612444c-9bd9-4e20-934e-878be77a86bd.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-57s-copy-nova-2026-09-23/var6/base/x4-A.png"
+  ],
+  "elapsed_ms": 119490,
+  "raw": {
+    "id": "8a3ae4756b334be18fd04ff4bf22db85",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/0612444c-9bd9-4e20-934e-878be77a86bd.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/8a3ae4756b334be18fd04ff4bf22db85/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T03:06:10.627269645Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 115512
+    }
+  }
+}

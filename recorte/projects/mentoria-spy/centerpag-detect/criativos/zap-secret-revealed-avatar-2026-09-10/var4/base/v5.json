@@ -1,0 +1,29 @@
+{
+  "id": "f38d7791de894c9b9de040189ac0c613",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still, front phone camera at eye level, bright home office. A 38-year-old white man with short greying hair and a short grey beard, rectangular glasses, plain dark grey t-shirt. He looks straight into the lens with a friendly, slightly conspiratorial half-smile, as if about to explain a secret, mouth closed. Framing: chest up, hands out of frame, subject centered, eyes at about 35% from the top. Behind him: a white upholstered chair, a light neutral wall, soft natural window daylight, slightly overexposed background like a real webcam-style recording. Realistic skin texture, mild phone-camera softness, no retouching, ordinary person, not a model.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/1727e1b7-0655-4c02-ab69-5eefe7a8a381.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-secret-revealed-avatar-2026-09-10/var4/base/avatar-v5-homem-branco-grisalho.png"
+  ],
+  "elapsed_ms": 70931,
+  "raw": {
+    "id": "f38d7791de894c9b9de040189ac0c613",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/1727e1b7-0655-4c02-ab69-5eefe7a8a381.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/f38d7791de894c9b9de040189ac0c613/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-09T18:33:12.928079109Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 65448
+    }
+  }
+}

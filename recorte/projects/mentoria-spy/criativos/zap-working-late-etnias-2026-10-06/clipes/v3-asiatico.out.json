@@ -1,0 +1,28 @@
+{
+  "id": "bf82afebf1c24e0dbb363e105f200154",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/686290ca-1630-4c57-8792-07e936fb3aa5.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/zap-working-late-etnias-2026-10-06/clipes/v3-asiatico.mp4"
+  ],
+  "elapsed_ms": 110394,
+  "raw": {
+    "id": "bf82afebf1c24e0dbb363e105f200154",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/686290ca-1630-4c57-8792-07e936fb3aa5.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/bf82afebf1c24e0dbb363e105f200154/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-06T01:14:57.835115864Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 102897
+    }
+  }
+}

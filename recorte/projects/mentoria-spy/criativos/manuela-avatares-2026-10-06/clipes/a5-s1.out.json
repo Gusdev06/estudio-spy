@@ -1,0 +1,28 @@
+{
+  "id": "e2eb9d04cc8c455eb789ebcaaaa72262",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/69706b4b-404f-41ec-88ee-6ad703aafdde.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/manuela-avatares-2026-10-06/clipes/a5-s1.mp4"
+  ],
+  "elapsed_ms": 85675,
+  "raw": {
+    "id": "e2eb9d04cc8c455eb789ebcaaaa72262",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/69706b4b-404f-41ec-88ee-6ad703aafdde.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/e2eb9d04cc8c455eb789ebcaaaa72262/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-06T01:28:28.490143008Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 81452
+    }
+  }
+}

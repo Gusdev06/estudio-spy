@@ -1,0 +1,99 @@
+{
+  "id": "jmtbh5j29",
+  "created": "2026-08-27T12:03:57.249Z",
+  "windows": [
+    {
+      "id": "w1",
+      "segStart": 0,
+      "segEnd": 6,
+      "start": 0,
+      "end": 6,
+      "state": "done",
+      "attempts": [
+        {
+          "taskId": "95f6a304650c02d5c0b8801df7646570",
+          "seed": null,
+          "at": "2026-08-27T12:04:34.069Z"
+        }
+      ],
+      "error": "",
+      "taskId": "95f6a304650c02d5c0b8801df7646570",
+      "seed": null,
+      "file": "w1-1.mp4",
+      "duration": 6,
+      "credits": 168
+    }
+  ],
+  "spentCredits": 168,
+  "video": "video.mp4",
+  "meta": {
+    "duration": 6.293,
+    "size": 4721260,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "hasAudio": true
+  },
+  "frames": [
+    {
+      "t": 0,
+      "skin": 0.625
+    },
+    {
+      "t": 1,
+      "skin": 0.6259
+    },
+    {
+      "t": 2,
+      "skin": 0.6293
+    },
+    {
+      "t": 3,
+      "skin": 0.5972
+    },
+    {
+      "t": 4,
+      "skin": 0.5786
+    },
+    {
+      "t": 5,
+      "skin": 0.329
+    }
+  ],
+  "labels": [
+    "person",
+    "person",
+    "person",
+    "person",
+    "person",
+    "person"
+  ],
+  "thumbs": [
+    "t0001.jpg",
+    "t0002.jpg",
+    "t0003.jpg",
+    "t0004.jpg",
+    "t0005.jpg",
+    "t0006.jpg"
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 6,
+      "kind": "person"
+    }
+  ],
+  "avatarUrl": "https://tempfile.redpandaai.co/kieai/11456724/troca-avatar/img/jmtbh5j29-avatar.jpg",
+  "promptUrl": "https://tempfile.redpandaai.co/kieai/11456724/troca-avatar/img/jmtbh5j29-prompt.png",
+  "sources": {
+    "src-0-6": {
+      "file": "src-0-6.mp4",
+      "url": "https://tempfile.redpandaai.co/kieai/11456724/troca-avatar/vid/jmtbh5j29-src-0-6.mp4"
+    }
+  },
+  "final": {
+    "full": "final.mp4",
+    "web": "final-web.mp4",
+    "duration": 6.3
+  }
+}

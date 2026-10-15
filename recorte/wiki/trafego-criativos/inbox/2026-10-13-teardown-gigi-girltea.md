@@ -1,0 +1,1 @@
+- 2026-10-13: teardown @gigi.girltea (FollowOtter, concorrente Spy Gram): 32,7M views/100 reels com 1,3k seguidores; video banal sem fala + meme na tela + venda só na legenda. Fonte em raw/2026-10-13-teardown-gigi-girltea-followotter.md — ingerir em paginas atomicas.

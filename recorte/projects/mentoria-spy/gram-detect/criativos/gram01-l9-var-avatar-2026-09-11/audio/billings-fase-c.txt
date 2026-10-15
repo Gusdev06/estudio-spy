@@ -1,0 +1,17 @@
+- Fetching billing records…
+
+5 records  · page 1
+
+  -$0.8000    2026-09-11 17:12:24 UTC  pruna-ai/p-video/avatar                  key:macbook
+      prediction: 5abe9cef9f6f4ff6ad082423b8caa315
+  -$0.8000    2026-09-11 17:12:23 UTC  pruna-ai/p-video/avatar                  key:macbook
+      prediction: 545d9c16fbdb405ea18fd02c78d422d2
+  -$0.8000    2026-09-11 17:12:23 UTC  pruna-ai/p-video/avatar                  key:macbook
+      prediction: f2d012dcceb143afb9d72641c39681ae
+  -$0.8000    2026-09-11 17:12:23 UTC  pruna-ai/p-video/avatar                  key:macbook
+      prediction: 33279755c20f41f8bfdeb118c60a0914
+  -$0.8000    2026-09-11 17:12:23 UTC  pruna-ai/p-video/avatar                  key:macbook
+      prediction: de9803b625844dabb694528ce7bc5cc0
+
+  page net: -$4.0000
+

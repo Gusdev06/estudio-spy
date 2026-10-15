@@ -1,0 +1,31 @@
+{
+ "p-video-txt": {
+  "model": "pruna-ai/p-video/replace",
+  "id": "c5d66b3d8c4242648c51e351f1d2ee5b",
+  "raw": null
+ },
+ "p-video-img": {
+  "model": "pruna-ai/p-video/replace",
+  "id": "b49689588c7440778246d0c9c1291e96",
+  "raw": null
+ },
+ "skyreels-txt": {
+  "model": "skywork-ai/skyreels-v4/reference-to-video",
+  "id": "d639e9027b9342f3b8984f7c48a18772",
+  "raw": null
+ },
+ "kling-o3-txt": {
+  "model": "kwaivgi/kling-video-o3-pro/reference-to-video",
+  "id": "93ec6d36357144d48adfa12d059717cd",
+  "raw": null
+ },
+ "kling-o3-img": {
+  "model": "kwaivgi/kling-video-o3-pro/reference-to-video",
+  "id": "8013ff20ab6942f0ab6be1ce9d34f025",
+  "raw": null
+ },
+ "kling-o3-img-retry": {
+  "model": "kwaivgi/kling-video-o3-pro/reference-to-video",
+  "id": "e700556eab2741a3840611dba20189a5"
+ }
+}

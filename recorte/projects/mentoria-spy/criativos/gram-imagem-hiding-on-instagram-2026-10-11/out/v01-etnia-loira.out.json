@@ -1,0 +1,29 @@
+{
+  "id": "aa8b00c7dcfe4641b6e30c48868c28c8",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate this exact ad. Keep EVERYTHING identical — the full layout, every text element with the exact same words, fonts, colors, sizes and positions (\"Trust but verify...\" handwritten note top-left, headline \"I FOUND WHAT HE'S HIDING ON INSTAGRAM.\" with the pink-orange gradient brush stroke and gradient last word, the 8-item icon feature list, the \"The truth isn't always obvious. But now, it is.\" box, the gradient \"SEE THE TRUTH NOW →\" button, the chalkboard \"Better to know than to guess\" top-right), the phone showing the Instagram DM list, the dark moody bedroom and warm lamp light. Change ONLY the woman: a blonde American woman in her early 30s, same pose with her hand over her mouth, same shocked worried expression, same dark sweater. Photorealistic, natural skin texture, phone-photo realism.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/af7eb9c3-fb98-4c25-b6a5-ca3b287a22eb.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/gram-imagem-hiding-on-instagram-2026-10-11/out/v01-etnia-loira.png"
+  ],
+  "elapsed_ms": 114769,
+  "raw": {
+    "id": "aa8b00c7dcfe4641b6e30c48868c28c8",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/af7eb9c3-fb98-4c25-b6a5-ca3b287a22eb.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/aa8b00c7dcfe4641b6e30c48868c28c8/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-11T15:40:48.591939866Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 110500
+    }
+  }
+}

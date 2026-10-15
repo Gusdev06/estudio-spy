@@ -1,0 +1,29 @@
+{
+  "id": "07f713b532024e538e0e427dc47bd18e",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Character turnaround sheet in a single image, the same character shown four times on a plain flat light-gray background (#C8C8C8), evenly spaced left to right, no text, no labels, no props, no floor shadow clutter:\n1) head-and-shoulders close-up facing the camera, neutral expression;\n2) full body, front view, standing relaxed, arms at the sides;\n3) full body, three-quarter view facing left;\n4) full body, three-quarter view facing right.\nCharacter: Ryan, a 36-year-old white American man, short dark-blond hair with a neat side part, light stubble, gray-blue eyes, a smug lopsided half-smile, a large silver wristwatch on his left wrist, wearing a navy quarter-zip sweater over a white collared shirt and khaki chinos, athletic build.\n3D animated feature film style, stylized proportions, soft subsurface skin, large expressive eyes, sculpted hair strands, soft even studio lighting, high detail, consistent outfit and features across all four views.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/1097a6e7-0095-49db-8a47-d7aa5a9eef09.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/fichas/ryan.png"
+  ],
+  "elapsed_ms": 55563,
+  "raw": {
+    "id": "07f713b532024e538e0e427dc47bd18e",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/1097a6e7-0095-49db-8a47-d7aa5a9eef09.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/07f713b532024e538e0e427dc47bd18e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T09:53:15.70916518Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 51585
+    }
+  }
+}

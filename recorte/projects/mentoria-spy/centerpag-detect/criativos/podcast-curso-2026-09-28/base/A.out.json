@@ -1,0 +1,29 @@
+{
+  "id": "8fb805b770d04832999f158d7ec9b491",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Photorealistic vertical 9:16 video still from a podcast recording. A Taiwanese woman about 32 with fair skin, long straight dark hair, light makeup, wearing a cream blazer over a white top, black over-ear headphones, a black podcast microphone on a boom arm in front of her. Modern podcast studio with light-grey acoustic panels and soft warm key light behind her, softly out of focus. She is the ONLY person in the image, seen chest up, turned three-quarters to the right, looking toward the person off-camera on the right, mouth slightly open mid-sentence, friendly and knowledgeable. Natural skin texture, no retouching, ordinary person not a model. No text, no logos.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/def572fa-d98e-4f3a-97b3-29fdf454d932.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-curso-2026-09-28/base/A.png"
+  ],
+  "elapsed_ms": 71291,
+  "raw": {
+    "id": "8fb805b770d04832999f158d7ec9b491",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/def572fa-d98e-4f3a-97b3-29fdf454d932.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/8fb805b770d04832999f158d7ec9b491/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T09:11:23.12741292Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 67711
+    }
+  }
+}

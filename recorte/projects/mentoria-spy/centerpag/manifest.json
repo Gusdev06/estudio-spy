@@ -1,0 +1,1489 @@
+{
+ "fonte": "Meta Ad Library — busca \"go.centerpag.com\" (keyword_unordered, active, country=ALL, sort=total_impressions)",
+ "url_busca": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&media_type=all&q=go.centerpag.com&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+ "coletado_em": "2026-08-22",
+ "total_anuncios": 44,
+ "nota_busca": "keyword_unordered retornou ~180; 59 renderizados, 44 realmente apontam pra centerpag (resto = ruído)",
+ "anuncios": [
+  {
+   "ad_id": "2889531731400824",
+   "status": "Ativo",
+   "pagina": "Alberto Souza",
+   "inicio": "Veiculação iniciada em 22 de jul de 2026",
+   "dias_no_ar": 31.2,
+   "rank_impressoes": 8,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": null,
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "See this before it's too late...",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2889531731400824",
+   "arquivos": [
+    {
+     "file": "alberto-souza-2889531731400824.mp4",
+     "md5": "1488c3c4b425e89d1b1cc0780cfd5284",
+     "bytes": 964809
+    },
+    {
+     "file": "alberto-souza-2889531731400824-thumb.jpg",
+     "md5": "b43ddb119f5dc7ab5d1cdc1edb8155e0",
+     "bytes": 28021
+    }
+   ],
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "28643642485225786",
+   "status": "Ativo",
+   "pagina": "Alberto Souza",
+   "inicio": "Veiculação iniciada em 22 de jul de 2026",
+   "dias_no_ar": 31.2,
+   "rank_impressoes": 9,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": null,
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "See this before it's too late...",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=28643642485225786",
+   "arquivos": [
+    {
+     "file": "alberto-souza-28643642485225786.mp4",
+     "md5": "eb3892fe7a0eb93e20c1437720670b3d",
+     "bytes": 2300722
+    },
+    {
+     "file": "alberto-souza-28643642485225786-thumb.jpg",
+     "md5": "58cf899cbd12565fe229504833105657",
+     "bytes": 32787
+    }
+   ],
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "2521763091672685",
+   "status": "Ativo",
+   "pagina": "Alberto Souza",
+   "inicio": "Veiculação iniciada em 22 de jul de 2026",
+   "dias_no_ar": 31.2,
+   "rank_impressoes": 10,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": null,
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "See this before it's too late...",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2521763091672685",
+   "arquivos": [
+    {
+     "file": "alberto-souza-2521763091672685.mp4",
+     "md5": "29f59683ac91675f222837206f4fbffd",
+     "bytes": 2493797
+    },
+    {
+     "file": "alberto-souza-2521763091672685-thumb.jpg",
+     "md5": "52ccc0a75f8517d4c7d6ed363b868e77",
+     "bytes": 26977
+    }
+   ],
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "3314412245409622",
+   "status": "Ativo",
+   "pagina": "Alberto Souza",
+   "inicio": "Veiculação iniciada em 22 de jul de 2026",
+   "dias_no_ar": 31.2,
+   "rank_impressoes": 43,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": null,
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "See this before it's too late...",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=3314412245409622",
+   "arquivos": [
+    {
+     "file": "alberto-souza-3314412245409622.mp4",
+     "md5": "6602146de46ea245029335b5c3385033",
+     "bytes": 1698487
+    },
+    {
+     "file": "alberto-souza-3314412245409622-thumb.jpg",
+     "md5": "0cf5aa5cb38032154a87fbecfb84c30a",
+     "bytes": 33970
+    }
+   ],
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1734489651094548",
+   "status": "Ativo",
+   "pagina": "Emilly Bredoff",
+   "inicio": "Veiculação iniciada em 6 de ago de 2026",
+   "dias_no_ar": 16.2,
+   "rank_impressoes": 2,
+   "baixo_volume": false,
+   "formato": "imagem",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1734489651094548",
+   "arquivos": [
+    {
+     "file": "emilly-bredoff-1734489651094548.jpg",
+     "md5": "f22dde5692b69f1dbd9d6d3f067ce665",
+     "bytes": 44441
+    }
+   ],
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 8,
+   "tier": "A-escalado",
+   "plataforma": "instagram",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "estático \"What you see vs what really happens\" com Secret story views/Hidden DM + logo Instagram"
+  },
+  {
+   "ad_id": "1742720133541878",
+   "status": "Ativo",
+   "pagina": "Alberto Souza",
+   "inicio": "Veiculação iniciada em 10 de ago de 2026",
+   "dias_no_ar": 12.2,
+   "rank_impressoes": 1,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": null,
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "See today everything that happens... 🤫",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1742720133541878",
+   "arquivos": [
+    {
+     "file": "alberto-souza-1742720133541878.mp4",
+     "md5": "b220e3b52d665ea9f8ca260b86b8573c",
+     "bytes": 1018167
+    },
+    {
+     "file": "alberto-souza-1742720133541878-thumb.jpg",
+     "md5": "c8ebc1f7d6227bb0da4124cf48084194",
+     "bytes": 32216
+    }
+   ],
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1351759213605785",
+   "status": "Ativo",
+   "pagina": "Alberto Souza",
+   "inicio": "Veiculação iniciada em 10 de ago de 2026",
+   "dias_no_ar": 12.2,
+   "rank_impressoes": 13,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": null,
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "See today everything that happens... 🔥",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1351759213605785",
+   "arquivos": [
+    {
+     "file": "alberto-souza-1351759213605785.mp4",
+     "md5": "95508173accf633c3c116b05dcddf475",
+     "bytes": 1524960
+    },
+    {
+     "file": "alberto-souza-1351759213605785-thumb.jpg",
+     "md5": "e38f5f8b71f4bfc433ef5e0d4549d061",
+     "bytes": 32615
+    }
+   ],
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 0,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1762552938111855",
+   "status": "Ativo",
+   "pagina": "Esther Vicman",
+   "inicio": "Veiculação iniciada em 11 de ago de 2026",
+   "dias_no_ar": 11.2,
+   "rank_impressoes": 3,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1762552938111855",
+   "arquivos": [
+    {
+     "file": "esther-vicman-1762552938111855.mp4",
+     "md5": "31d9b6a30c53905c1ae2ac57f1a9b830",
+     "bytes": 1743046
+    },
+    {
+     "file": "esther-vicman-1762552938111855-thumb.jpg",
+     "md5": "be58759897fb515672128d225ddbacf7",
+     "bytes": 106387
+    }
+   ],
+   "ads_da_pagina": 1,
+   "pecas_no_mesmo_angulo": 8,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1135919432558273",
+   "status": "Ativo",
+   "pagina": "Emilly Bredoff",
+   "inicio": "Veiculação iniciada em 11 de ago de 2026",
+   "dias_no_ar": 11.2,
+   "rank_impressoes": 5,
+   "baixo_volume": false,
+   "formato": "imagem",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1135919432558273",
+   "arquivos": [
+    {
+     "file": "emilly-bredoff-1135919432558273.jpg",
+     "md5": "700d9678b4234932b0a07228f95a11a7",
+     "bytes": 42271
+    }
+   ],
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 8,
+   "tier": "A-escalado",
+   "plataforma": "instagram",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "story proof_alert perfil Instagram privado (Secret Story Views, Hidden Likes)"
+  },
+  {
+   "ad_id": "939122432559594",
+   "status": "Ativo",
+   "pagina": "Emilly Bredoff",
+   "inicio": "Veiculação iniciada em 11 de ago de 2026",
+   "dias_no_ar": 11.2,
+   "rank_impressoes": 6,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=939122432559594",
+   "arquivos": [
+    {
+     "file": "emilly-bredoff-939122432559594.mp4",
+     "md5": "e00cc6a45215ee7413a982c591f1442d",
+     "bytes": 809132
+    },
+    {
+     "file": "emilly-bredoff-939122432559594-thumb.jpg",
+     "md5": "b7d10e73ebb0659e0d0a61c4b0c176b0",
+     "bytes": 30088
+    }
+   ],
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 8,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1802290454462606",
+   "status": "Ativo",
+   "pagina": "Nelma Miranda",
+   "inicio": "Veiculação iniciada em 15 de ago de 2026",
+   "dias_no_ar": 7.2,
+   "rank_impressoes": 7,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "A quiet visit to a New York bakery turned into total chaos when a couple’s hidden texts were exposed right at the counter. 🍪 The illusion of a perfect relationship can collapse in seconds when the truth comes out. Today, not knowing what happens behind closed screens is what causes the most anxiety. 📱 But you don't need a public scene or endless arguments to find out what's really going on. There’s a faster, completely discreet way to get absolute clarity and protect your peace of mind. Tap \"Learn More\" below to see how to reveal the truth safely. 🧭",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "The secrets hidden behind a locked screen 📱",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1802290454462606",
+   "arquivos": [
+    {
+     "file": "nelma-miranda-1802290454462606.mp4",
+     "md5": "1922a1fc50632535a4d0ec8bb819b799",
+     "bytes": 1040466
+    },
+    {
+     "file": "nelma-miranda-1802290454462606-thumb.jpg",
+     "md5": "ee16966696282933f6358841a1f631a6",
+     "bytes": 140065
+    }
+   ],
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 5,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1433437945499565",
+   "status": "Ativo",
+   "pagina": "Emilly Bredoff",
+   "inicio": "Veiculação iniciada em 15 de ago de 2026",
+   "dias_no_ar": 7.2,
+   "rank_impressoes": 15,
+   "baixo_volume": false,
+   "formato": "imagem",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1433437945499565",
+   "arquivos": [
+    {
+     "file": "emilly-bredoff-1433437945499565.jpg",
+     "md5": "41edb4ab4f7b546faa57d4c22e375b02",
+     "bytes": 44235
+    }
+   ],
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 8,
+   "tier": "A-escalado",
+   "plataforma": "instagram",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "story live_shield \"LIVE MONITORING — New Instagram follower\" com logo Instagram"
+  },
+  {
+   "ad_id": "2140259270235541",
+   "status": "Ativo",
+   "pagina": "Nelma Miranda",
+   "inicio": "Veiculação iniciada em 15 de ago de 2026",
+   "dias_no_ar": 7.2,
+   "rank_impressoes": 22,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "A quiet visit to a New York bakery turned into total chaos when a couple’s hidden texts were exposed right at the counter. 🍪 The illusion of a perfect relationship can collapse in seconds when the truth comes out. Today, not knowing what happens behind closed screens is what causes the most anxiety. 📱 But you don't need a public scene or endless arguments to find out what's really going on. There’s a faster, completely discreet way to get absolute clarity and protect your peace of mind. Tap \"Learn More\" below to see how to reveal the truth safely. 🧭",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "The secrets hidden behind a locked screen 📱",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2140259270235541",
+   "arquivos": [
+    {
+     "file": "nelma-miranda-2140259270235541.mp4",
+     "md5": "b1669faed738d2f594ffe917bc6843c4",
+     "bytes": 4477569
+    },
+    {
+     "file": "nelma-miranda-2140259270235541-thumb.jpg",
+     "md5": "d170c500f42fd942651aafd4f4778d9c",
+     "bytes": 244790
+    }
+   ],
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 5,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1059880683256899",
+   "status": "Ativo",
+   "pagina": "Nelma Miranda",
+   "inicio": "Veiculação iniciada em 15 de ago de 2026",
+   "dias_no_ar": 7.2,
+   "rank_impressoes": 26,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "A quiet visit to a New York bakery turned into total chaos when a couple’s hidden texts were exposed right at the counter. 🍪 The illusion of a perfect relationship can collapse in seconds when the truth comes out. Today, not knowing what happens behind closed screens is what causes the most anxiety. 📱 But you don't need a public scene or endless arguments to find out what's really going on. There’s a faster, completely discreet way to get absolute clarity and protect your peace of mind. Tap \"Learn More\" below to see how to reveal the truth safely. 🧭",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "The secrets hidden behind a locked screen 📱",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1059880683256899",
+   "arquivos": [
+    {
+     "file": "nelma-miranda-1059880683256899.mp4",
+     "md5": "bb2381b0ab4afe86ea46686b633977b8",
+     "bytes": 874642
+    },
+    {
+     "file": "nelma-miranda-1059880683256899-thumb.jpg",
+     "md5": "4a23b6d0539e457ee747e52ee508ed35",
+     "bytes": 89304
+    }
+   ],
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 5,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1766100548174479",
+   "status": "Inativo",
+   "pagina": "Inêz Cunha",
+   "inicio": null,
+   "dias_no_ar": 7.0,
+   "rank_impressoes": 19,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "Your instinct isn't wrong. 🤫 That subtle shift in distance, the face-down phone, the sudden privacy—secrets always leave subtle clues. Stop guessing and start seeing clearly. You don't need to accuse anyone to get answers. One simple tool shows you what words are trying to hide. Tap \"Learn More\" to get full clarity and peace of mind now. 📱",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": "Try the app for free now and discover the whole truth.",
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1766100548174479",
+   "arquivos": [
+    {
+     "file": "inez-cunha-1766100548174479.mp4",
+     "md5": "249d24bd94c92bab8d1183ebe8485b10",
+     "bytes": 874283
+    },
+    {
+     "file": "inez-cunha-1766100548174479-thumb.jpg",
+     "md5": "4a23b6d0539e457ee747e52ee508ed35",
+     "bytes": 89304
+    }
+   ],
+   "ads_da_pagina": 2,
+   "pecas_no_mesmo_angulo": 2,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1617996769917348",
+   "status": "Inativo",
+   "pagina": "Inêz Cunha",
+   "inicio": null,
+   "dias_no_ar": 7.0,
+   "rank_impressoes": 20,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "Your instinct isn't wrong. 🤫 That subtle shift in distance, the face-down phone, the sudden privacy—secrets always leave subtle clues. Stop guessing and start seeing clearly. You don't need to accuse anyone to get answers. One simple tool shows you what words are trying to hide. Tap \"Learn More\" to get full clarity and peace of mind now. 📱",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": "Try the app for free now and discover the whole truth.",
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1617996769917348",
+   "arquivos": [
+    {
+     "file": "inez-cunha-1617996769917348.mp4",
+     "md5": "2d485fd311666034b9c78e5be5ca7f6a",
+     "bytes": 4477765
+    },
+    {
+     "file": "inez-cunha-1617996769917348-thumb.jpg",
+     "md5": "d170c500f42fd942651aafd4f4778d9c",
+     "bytes": 244790
+    }
+   ],
+   "ads_da_pagina": 2,
+   "pecas_no_mesmo_angulo": 2,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1319335843367040",
+   "status": "Ativo",
+   "pagina": "Emilly Bredoff",
+   "inicio": "Veiculação iniciada em 16 de ago de 2026",
+   "dias_no_ar": 6.2,
+   "rank_impressoes": 4,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1319335843367040",
+   "arquivos": [
+    {
+     "file": "emilly-bredoff-1319335843367040.mp4",
+     "md5": "74ffc3521bff0181d7003141d512cc63",
+     "bytes": 1791194
+    },
+    {
+     "file": "emilly-bredoff-1319335843367040-thumb.jpg",
+     "md5": "4bb6c7c6e62973510b5df7e2ac327d2b",
+     "bytes": 76294
+    }
+   ],
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 8,
+   "tier": "A-escalado",
+   "plataforma": "instagram",
+   "plataforma_confianca": "incerta",
+   "plataforma_evidencia": "INCERTO: frame só cabeça-falante; página Emilly é majoritariamente IG"
+  },
+  {
+   "ad_id": "1080408834422208",
+   "status": "Ativo",
+   "pagina": "Emilly Bredoff",
+   "inicio": "Veiculação iniciada em 17 de ago de 2026",
+   "dias_no_ar": 5.2,
+   "rank_impressoes": 12,
+   "baixo_volume": false,
+   "formato": "imagem",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1080408834422208",
+   "arquivos": [
+    {
+     "file": "emilly-bredoff-1080408834422208.jpg",
+     "md5": "18e74d7221b36840b3f4d90e6c513e8f",
+     "bytes": 33633
+    }
+   ],
+   "ads_da_pagina": 6,
+   "pecas_no_mesmo_angulo": 8,
+   "tier": "A-escalado",
+   "plataforma": "instagram",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "story watchdog_app \"HIS ACTIVITY LOG\" — UI Instagram"
+  },
+  {
+   "ad_id": "2093498788229105",
+   "status": "Ativo",
+   "pagina": "Charlotte Miller",
+   "inicio": "Veiculação iniciada em 18 de ago de 2026",
+   "dias_no_ar": 4.2,
+   "rank_impressoes": 14,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2093498788229105",
+   "arquivos": [
+    {
+     "file": "charlotte-miller-2093498788229105.mp4",
+     "md5": "bb6a01501449e3bf3ec788a4c85f97c9",
+     "bytes": 2899246
+    },
+    {
+     "file": "charlotte-miller-2093498788229105-thumb.jpg",
+     "md5": "da78e2cc97b8f6fa5a3a7344da3a8817",
+     "bytes": 148791
+    }
+   ],
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 6,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1773983983735759",
+   "status": "Ativo",
+   "pagina": "Charlotte Miller",
+   "inicio": "Veiculação iniciada em 18 de ago de 2026",
+   "dias_no_ar": 4.2,
+   "rank_impressoes": 24,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1773983983735759",
+   "arquivos": [
+    {
+     "file": "charlotte-miller-1773983983735759.mp4",
+     "md5": "069998dd7a5c851eb2e089cc8975950f",
+     "bytes": 1673261
+    },
+    {
+     "file": "charlotte-miller-1773983983735759-thumb.jpg",
+     "md5": "9167a7fa6eea132b4e38164daa8d7ed0",
+     "bytes": 63595
+    }
+   ],
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 6,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1066230983002756",
+   "status": "Ativo",
+   "pagina": "Maria Carmen",
+   "inicio": "Veiculação iniciada em 18 de ago de 2026",
+   "dias_no_ar": 4.2,
+   "rank_impressoes": 28,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "Try the app for free now and discover the whole truth.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1066230983002756",
+   "arquivos": [
+    {
+     "file": "maria-carmen-1066230983002756.mp4",
+     "md5": "eaa05759193d590e9e75e0a7cd01871c",
+     "bytes": 874415
+    },
+    {
+     "file": "maria-carmen-1066230983002756-thumb.jpg",
+     "md5": "4a23b6d0539e457ee747e52ee508ed35",
+     "bytes": 89304
+    }
+   ],
+   "ads_da_pagina": 3,
+   "pecas_no_mesmo_angulo": 3,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1932097360790669",
+   "status": "Ativo",
+   "pagina": "Charlotte Miller",
+   "inicio": "Veiculação iniciada em 18 de ago de 2026",
+   "dias_no_ar": 4.2,
+   "rank_impressoes": 33,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1932097360790669",
+   "arquivos": [
+    {
+     "file": "charlotte-miller-1932097360790669.mp4",
+     "md5": "49bbb80170fccd1ffcea3e96553f0cbc",
+     "bytes": 1961141
+    },
+    {
+     "file": "charlotte-miller-1932097360790669-thumb.jpg",
+     "md5": "212bbb8c2e395a15044300165a497fe2",
+     "bytes": 37251
+    }
+   ],
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 6,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1459046009390391",
+   "status": "Ativo",
+   "pagina": "Charlotte Miller",
+   "inicio": "Veiculação iniciada em 18 de ago de 2026",
+   "dias_no_ar": 4.2,
+   "rank_impressoes": 35,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1459046009390391",
+   "arquivos": [
+    {
+     "file": "charlotte-miller-1459046009390391.mp4",
+     "md5": "df58c6a190239674aa9d62a988eab473",
+     "bytes": 1995724
+    },
+    {
+     "file": "charlotte-miller-1459046009390391-thumb.jpg",
+     "md5": "bcb512eee6c75829e1edc0071912b700",
+     "bytes": 135124
+    }
+   ],
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 6,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "940757259062681",
+   "status": "Ativo",
+   "pagina": "Maria Carmen",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "dias_no_ar": 3.2,
+   "rank_impressoes": 11,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "Try the app for free now and discover the whole truth.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=940757259062681",
+   "arquivos": [
+    {
+     "file": "maria-carmen-940757259062681.mp4",
+     "md5": "c31366d4f1722285fe2bd520c053e5a1",
+     "bytes": 810360
+    },
+    {
+     "file": "maria-carmen-940757259062681-thumb.jpg",
+     "md5": "2e15cfd35c6f5bd4f110810336d28569",
+     "bytes": 147125
+    }
+   ],
+   "ads_da_pagina": 3,
+   "pecas_no_mesmo_angulo": 3,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "950859698036513",
+   "status": "Ativo",
+   "pagina": "Kendall Godfrey Stephanie",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "dias_no_ar": 3.2,
+   "rank_impressoes": 16,
+   "baixo_volume": false,
+   "formato": "imagem",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=950859698036513",
+   "arquivos": [
+    {
+     "file": "kendall-godfrey-stephanie-950859698036513.jpg",
+     "md5": "1f5ab15c595fb6fe147defe930aefbe6",
+     "bytes": 30036
+    }
+   ],
+   "ads_da_pagina": 2,
+   "pecas_no_mesmo_angulo": 6,
+   "tier": "A-escalado",
+   "plataforma": "instagram",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "story authentic.kate \"Ask me anything\" formato Instagram"
+  },
+  {
+   "ad_id": "4545042845779128",
+   "status": "Ativo",
+   "pagina": "Mia Davis",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "dias_no_ar": 3.2,
+   "rank_impressoes": 18,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "2.4M people already got the answers they were looking for. Stop wondering. Start knowing.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=4545042845779128",
+   "arquivos": [
+    {
+     "file": "mia-davis-4545042845779128.mp4",
+     "md5": "a2d68fb330ee74d67c291dadb6635045",
+     "bytes": 1659159
+    },
+    {
+     "file": "mia-davis-4545042845779128-thumb.jpg",
+     "md5": "82529dcb4d7d1b2817fbb021047a8d46",
+     "bytes": 57941
+    }
+   ],
+   "ads_da_pagina": 11,
+   "pecas_no_mesmo_angulo": 4,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "902585022515889",
+   "status": "Ativo",
+   "pagina": "Mia Davis",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "dias_no_ar": 3.2,
+   "rank_impressoes": 21,
+   "baixo_volume": false,
+   "formato": "imagem",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=902585022515889",
+   "arquivos": [
+    {
+     "file": "mia-davis-902585022515889.jpg",
+     "md5": "4eae6c39d5d8b95491d8751fb974f0e7",
+     "bytes": 47469
+    }
+   ],
+   "ads_da_pagina": 11,
+   "pecas_no_mesmo_angulo": 5,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1077579818077295",
+   "status": "Ativo",
+   "pagina": "Mia Davis",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "dias_no_ar": 3.2,
+   "rank_impressoes": 23,
+   "baixo_volume": false,
+   "formato": "imagem",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1077579818077295",
+   "arquivos": [
+    {
+     "file": "mia-davis-1077579818077295.jpg",
+     "md5": "c81cf70dd3687dc0e8d7da0c03acce97",
+     "bytes": 38422
+    }
+   ],
+   "ads_da_pagina": 11,
+   "pecas_no_mesmo_angulo": 5,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1029308546581973",
+   "status": "Ativo",
+   "pagina": "Mia Davis",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "dias_no_ar": 3.2,
+   "rank_impressoes": 27,
+   "baixo_volume": false,
+   "formato": "imagem",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1029308546581973",
+   "arquivos": [
+    {
+     "file": "mia-davis-1029308546581973.jpg",
+     "md5": "61b6e62c7d28e5b1d069e89aecdaf230",
+     "bytes": 51047
+    }
+   ],
+   "ads_da_pagina": 11,
+   "pecas_no_mesmo_angulo": 5,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1969803773724394",
+   "status": "Ativo",
+   "pagina": "Mia Davis",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "dias_no_ar": 3.2,
+   "rank_impressoes": 31,
+   "baixo_volume": false,
+   "formato": "imagem",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1969803773724394",
+   "arquivos": [
+    {
+     "file": "mia-davis-1969803773724394.jpg",
+     "md5": "5c93afc41ac11af1453e974583b08434",
+     "bytes": 43692
+    }
+   ],
+   "ads_da_pagina": 11,
+   "pecas_no_mesmo_angulo": 5,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1724939291985486",
+   "status": "Ativo",
+   "pagina": "Mia Davis",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "dias_no_ar": 3.2,
+   "rank_impressoes": 32,
+   "baixo_volume": false,
+   "formato": "imagem",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1724939291985486",
+   "arquivos": [
+    {
+     "file": "mia-davis-1724939291985486.jpg",
+     "md5": "f4d39952749ee92b8f90008a850c0530",
+     "bytes": 41211
+    }
+   ],
+   "ads_da_pagina": 11,
+   "pecas_no_mesmo_angulo": 5,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "928953516301446",
+   "status": "Ativo",
+   "pagina": "Mia Davis",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "dias_no_ar": 3.2,
+   "rank_impressoes": 34,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "2.4M people already got the answers they were looking for. Stop wondering. Start knowing.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=928953516301446",
+   "arquivos": [
+    {
+     "file": "mia-davis-928953516301446.mp4",
+     "md5": "527b3e4a89fb56a78931195e00a86ee0",
+     "bytes": 956879
+    },
+    {
+     "file": "mia-davis-928953516301446-thumb.jpg",
+     "md5": "5622cc59cb96bea756a73808bd1ebf90",
+     "bytes": 49044
+    }
+   ],
+   "ads_da_pagina": 11,
+   "pecas_no_mesmo_angulo": 4,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1903047424005851",
+   "status": "Ativo",
+   "pagina": "Kendall Godfrey Stephanie",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "dias_no_ar": 3.2,
+   "rank_impressoes": 36,
+   "baixo_volume": false,
+   "formato": "imagem",
+   "copy": "Oh my god, I was in shock when I found all those messages! 😱 I never imagined I'd discover infidelity and disappointments like this in my life 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1903047424005851",
+   "arquivos": [
+    {
+     "file": "kendall-godfrey-stephanie-1903047424005851.jpg",
+     "md5": "14862e560e1225401c4dbb000ef75ecf",
+     "bytes": 48004
+    }
+   ],
+   "ads_da_pagina": 2,
+   "pecas_no_mesmo_angulo": 6,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1050249077652082",
+   "status": "Ativo",
+   "pagina": "Mia Davis",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "dias_no_ar": 3.2,
+   "rank_impressoes": 38,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "2.4M people already got the answers they were looking for. Stop wondering. Start knowing.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1050249077652082",
+   "arquivos": [
+    {
+     "file": "mia-davis-1050249077652082.mp4",
+     "md5": "4aee9b7fbe4041c2114ab309340e8caa",
+     "bytes": 1706027
+    },
+    {
+     "file": "mia-davis-1050249077652082-thumb.jpg",
+     "md5": "2050945048417c23472a5a48f114bb92",
+     "bytes": 58069
+    }
+   ],
+   "ads_da_pagina": 11,
+   "pecas_no_mesmo_angulo": 4,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "4338019309780727",
+   "status": "Ativo",
+   "pagina": "Helena Alves",
+   "inicio": "Veiculação iniciada em 20 de ago de 2026",
+   "dias_no_ar": 2.2,
+   "rank_impressoes": 17,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "OMG, I couldn't believe my eyes when I saw all those messages! 😱 I never thought I'd uncover so many lies and betrayals like this 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Trial ✅",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=4338019309780727",
+   "arquivos": [
+    {
+     "file": "helena-alves-4338019309780727.mp4",
+     "md5": "6bc06d5236ff70c8fcdf7413e253a3e6",
+     "bytes": 2298600
+    },
+    {
+     "file": "helena-alves-4338019309780727-thumb.jpg",
+     "md5": "549b1bdda9fe6ab652fdb813ec410f91",
+     "bytes": 101933
+    }
+   ],
+   "ads_da_pagina": 3,
+   "pecas_no_mesmo_angulo": 3,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1738324150738718",
+   "status": "Ativo",
+   "pagina": "Maria Carmen",
+   "inicio": "Veiculação iniciada em 20 de ago de 2026",
+   "dias_no_ar": 2.2,
+   "rank_impressoes": 25,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "Try the app for free now and discover the whole truth.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "⭐️⭐️⭐️⭐️⭐️ (4.9/5.0)",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1738324150738718",
+   "arquivos": [
+    {
+     "file": "maria-carmen-1738324150738718.mp4",
+     "md5": "1bdc3d77e82c50fddbc4edbfd8c4bd24",
+     "bytes": 918126
+    },
+    {
+     "file": "maria-carmen-1738324150738718-thumb.jpg",
+     "md5": "09370df6d24182d585a0e65508c527da",
+     "bytes": 213222
+    }
+   ],
+   "ads_da_pagina": 3,
+   "pecas_no_mesmo_angulo": 3,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "2127652941125486",
+   "status": "Ativo",
+   "pagina": "Mia Davis",
+   "inicio": "Veiculação iniciada em 20 de ago de 2026",
+   "dias_no_ar": 2.2,
+   "rank_impressoes": 29,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "2.4M people already got the answers they were looking for. Stop wondering. Start knowing.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Test ✅",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2127652941125486",
+   "arquivos": [
+    {
+     "file": "mia-davis-2127652941125486.mp4",
+     "md5": "849d779f0b5d387c27db8441b1815ff1",
+     "bytes": 779657
+    },
+    {
+     "file": "mia-davis-2127652941125486-thumb.jpg",
+     "md5": "31306519c761a6ccdcf667ca9bdc2ae7",
+     "bytes": 84062
+    }
+   ],
+   "ads_da_pagina": 11,
+   "pecas_no_mesmo_angulo": 4,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1678481809918732",
+   "status": "Ativo",
+   "pagina": "Helena Alves",
+   "inicio": "Veiculação iniciada em 20 de ago de 2026",
+   "dias_no_ar": 2.2,
+   "rank_impressoes": 39,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "OMG, I couldn't believe my eyes when I saw all those messages! 😱 I never thought I'd uncover so many lies and betrayals like this 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Trial ✅",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1678481809918732",
+   "arquivos": [
+    {
+     "file": "helena-alves-1678481809918732.mp4",
+     "md5": "f2c12db1e935a0887e75972ed9642c02",
+     "bytes": 1314850
+    },
+    {
+     "file": "helena-alves-1678481809918732-thumb.jpg",
+     "md5": "ec6ca6f6d9bd2971e9c924d0c4c91ca8",
+     "bytes": 45948
+    }
+   ],
+   "ads_da_pagina": 3,
+   "pecas_no_mesmo_angulo": 3,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1061076299988863",
+   "status": "Ativo",
+   "pagina": "Helena Alves",
+   "inicio": "Veiculação iniciada em 20 de ago de 2026",
+   "dias_no_ar": 2.2,
+   "rank_impressoes": 41,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "OMG, I couldn't believe my eyes when I saw all those messages! 😱 I never thought I'd uncover so many lies and betrayals like this 💔",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free Trial ✅",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1061076299988863",
+   "arquivos": [
+    {
+     "file": "helena-alves-1061076299988863.mp4",
+     "md5": "83d522174730da001f893c6811ecad00",
+     "bytes": 960038
+    },
+    {
+     "file": "helena-alves-1061076299988863-thumb.jpg",
+     "md5": "c3016c13384abf193bbbeabc7c8b8af3",
+     "bytes": 36932
+    }
+   ],
+   "ads_da_pagina": 3,
+   "pecas_no_mesmo_angulo": 3,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1776616846669564",
+   "status": "Ativo",
+   "pagina": "Mia Davis",
+   "inicio": "Veiculação iniciada em 21 de ago de 2026 · Tempo total ativo: 22h",
+   "dias_no_ar": 1.2,
+   "rank_impressoes": 30,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "Vous êtes-vous déjà demandé à quoi ressemble réellement l’activité Instagram de quelqu’un ? 👀 Notre outil analyse n’importe quel profil public et vous montre qui il suit, ce qu’il aime et avec quels comptes il interagit le plus. Il vous suffit d’entrer le @nom d’utilisateur — la première analyse est gratuite.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Analysez n’importe quel @nom d’utilisateur en quelques secondes.",
+   "descricao": "Première analyse gratuite. Aucune connexion requise.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1776616846669564",
+   "arquivos": [
+    {
+     "file": "mia-davis-1776616846669564.mp4",
+     "md5": "2cc80a5ae6110cd087f4716559cdc031",
+     "bytes": 1086728
+    },
+    {
+     "file": "mia-davis-1776616846669564-thumb.jpg",
+     "md5": "1f791838bcc56b470fdb1d2f2e1431bf",
+     "bytes": 485114
+    }
+   ],
+   "ads_da_pagina": 11,
+   "pecas_no_mesmo_angulo": 2,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "1775089550188954",
+   "status": "Ativo",
+   "pagina": "Sophia Jones",
+   "inicio": "Veiculação iniciada em 21 de ago de 2026 · Tempo total ativo: 17h",
+   "dias_no_ar": 1.2,
+   "rank_impressoes": 37,
+   "baixo_volume": false,
+   "formato": "imagem",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Free trial: enter your partner's phone number",
+   "descricao": "Free test",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1775089550188954",
+   "arquivos": [
+    {
+     "file": "sophia-jones-1775089550188954.jpg",
+     "md5": "d5982965f0712b8e8d5711a675649036",
+     "bytes": 54881
+    }
+   ],
+   "ads_da_pagina": 1,
+   "pecas_no_mesmo_angulo": 8,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "2304938956973057",
+   "status": "Ativo",
+   "pagina": "Mia Davis",
+   "inicio": "Veiculação iniciada em 21 de ago de 2026 · Tempo total ativo: 22h",
+   "dias_no_ar": 1.2,
+   "rank_impressoes": 40,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "Vous êtes-vous déjà demandé à quoi ressemble réellement l’activité Instagram de quelqu’un ? 👀 Notre outil analyse n’importe quel profil public et vous montre qui il suit, ce qu’il aime et avec quels comptes il interagit le plus. Il vous suffit d’entrer le @nom d’utilisateur — la première analyse est gratuite.",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "Analysez n’importe quel @nom d’utilisateur en quelques secondes.",
+   "descricao": "Première analyse gratuite. Aucune connexion requise.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2304938956973057",
+   "arquivos": [
+    {
+     "file": "mia-davis-2304938956973057.mp4",
+     "md5": "8d5d265551dc7da1f69e6eab2bd770ba",
+     "bytes": 996896
+    },
+    {
+     "file": "mia-davis-2304938956973057-thumb.jpg",
+     "md5": "710e6ff185ab35efd6fc2e3ccee518eb",
+     "bytes": 540668
+    }
+   ],
+   "ads_da_pagina": 11,
+   "pecas_no_mesmo_angulo": 2,
+   "tier": "A-escalado",
+   "plataforma": "instagram",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "copy FR \"activité Instagram... @nom d’utilisateur\""
+  },
+  {
+   "ad_id": "2131164264491881",
+   "status": "Ativo",
+   "pagina": "Nelma Miranda",
+   "inicio": "Veiculação iniciada em 21 de ago de 2026 · Tempo total ativo: 8h",
+   "dias_no_ar": 1.2,
+   "rank_impressoes": 42,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "A quiet visit to a New York bakery turned into total chaos when a couple’s hidden texts were exposed right at the counter. 🍪 The illusion of a perfect relationship can collapse in seconds when the truth comes out. Today, not knowing what happens behind closed screens is what causes the most anxiety. 📱 But you don't need a public scene or endless arguments to find out what's really going on. There’s a faster, completely discreet way to get absolute clarity and protect your peace of mind. Tap \"Learn More\" below to see how to reveal the truth safely. 🧭",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "The secrets hidden behind a locked screen 📱",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2131164264491881",
+   "arquivos": [
+    {
+     "file": "nelma-miranda-2131164264491881.mp4",
+     "md5": "1922a1fc50632535a4d0ec8bb819b799",
+     "bytes": 1040466
+    },
+    {
+     "file": "nelma-miranda-2131164264491881-thumb.jpg",
+     "md5": "ee16966696282933f6358841a1f631a6",
+     "bytes": 140065
+    }
+   ],
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 5,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  },
+  {
+   "ad_id": "889576297278598",
+   "status": "Ativo",
+   "pagina": "Nelma Miranda",
+   "inicio": "Veiculação iniciada em 21 de ago de 2026 · Tempo total ativo: 8h",
+   "dias_no_ar": 1.2,
+   "rank_impressoes": 44,
+   "baixo_volume": false,
+   "formato": "video",
+   "copy": "A quiet visit to a New York bakery turned into total chaos when a couple’s hidden texts were exposed right at the counter. 🍪 The illusion of a perfect relationship can collapse in seconds when the truth comes out. Today, not knowing what happens behind closed screens is what causes the most anxiety. 📱 But you don't need a public scene or endless arguments to find out what's really going on. There’s a faster, completely discreet way to get absolute clarity and protect your peace of mind. Tap \"Learn More\" below to see how to reveal the truth safely. 🧭",
+   "destino": "GO.CENTERPAG.COM",
+   "headline": "The secrets hidden behind a locked screen 📱",
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=889576297278598",
+   "arquivos": [
+    {
+     "file": "nelma-miranda-889576297278598.mp4",
+     "md5": "1922a1fc50632535a4d0ec8bb819b799",
+     "bytes": 1040466
+    },
+    {
+     "file": "nelma-miranda-889576297278598-thumb.jpg",
+     "md5": "ee16966696282933f6358841a1f631a6",
+     "bytes": 140065
+    }
+   ],
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 5,
+   "tier": "A-escalado",
+   "plataforma": "whatsapp",
+   "plataforma_confianca": "alta",
+   "plataforma_evidencia": "UI WhatsApp / clone WhatsApp / 'text messages' de parceiro (sem sinal de Instagram)"
+  }
+ ]
+}

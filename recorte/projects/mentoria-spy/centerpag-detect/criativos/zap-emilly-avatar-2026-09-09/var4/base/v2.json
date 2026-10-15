@@ -1,0 +1,29 @@
+{
+  "id": "483164d0b5fd4218a3c2ae608f8d0e6a",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still of a podcast-style talking head. A 28-year-old Black woman with long box braids tied back, warm dark skin with real texture, minimal makeup, small gold hoop earrings, plain black t-shirt. Looks straight into the lens with a serious, explaining expression, brows slightly furrowed, mouth closed. Framing: medium close-up from the chest up, eyes at about 38% from the top of the frame, hands out of frame, subject centered. A black dynamic podcast microphone on an articulated boom arm enters the frame from the left in front of the subject. Background: dark studio, black backdrop with two or three warm amber lights out of focus as soft bokeh, a subtle warm rim light on the shoulder. Fixed camera at eye level, mirrorless camera look, slight grain, realistic skin texture, no retouching, not a model.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e9c5cc3a-a332-4091-88c3-79b45f71a790.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-emilly-avatar-2026-09-09/var4/base/avatar-v2-mulher-negra-trancas.png"
+  ],
+  "elapsed_ms": 92526,
+  "raw": {
+    "id": "483164d0b5fd4218a3c2ae608f8d0e6a",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e9c5cc3a-a332-4091-88c3-79b45f71a790.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/483164d0b5fd4218a3c2ae608f8d0e6a/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-09T16:48:43.624286661Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 88329
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "youtube:RUvw1shLd7c",
+  "provider": "youtube",
+  "source_id": "RUvw1shLd7c",
+  "source_url": "https://www.youtube.com/watch?v=RUvw1shLd7c",
+  "title": "2 Ways To Know If Someone Is Online On Instagram",
+  "creator": {
+    "name": "Trevor Nace",
+    "url": null
+  },
+  "query": "instagram active now activity status #shorts",
+  "collected_at": "2026-09-17T16:32:14.478348+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "Candidato de busca: correspondência visual deve ser revisada."
+  },
+  "media": {
+    "duration_s": 187,
+    "width": null,
+    "height": null,
+    "fps": null
+  },
+  "preview": {
+    "poster_path": null,
+    "contact_sheet_path": null,
+    "embed_url": "https://www.youtube-nocookie.com/embed/RUvw1shLd7c",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/RUvw1shLd7c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDt--lqlsqc8lSMP6WcxZe-PKHlAg"
+  },
+  "segment": {
+    "start_s": null,
+    "end_s": null,
+    "revision": 0
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "candidate",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": null,
+    "source_height": null,
+    "fit": "unknown",
+    "transform": "preserve_native"
+  }
+}

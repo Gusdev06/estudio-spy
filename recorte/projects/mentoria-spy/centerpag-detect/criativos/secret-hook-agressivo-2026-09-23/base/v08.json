@@ -1,0 +1,29 @@
+{
+  "id": "aeb4a2ba5cd344baae1d0ea82f9a4506",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still, front phone camera at eye level, bright home office. a Filipino man about 29 with medium tan skin, short wavy black hair, short beard, wearing a plain maroon t-shirt He looks straight into the lens with a friendly, slightly conspiratorial half-smile, as if about to explain a secret, mouth closed. Framing: chest up, hands out of frame, subject centered, eyes at about 35% from the top. Behind him: a white upholstered chair, a light neutral wall, soft natural window daylight, slightly overexposed background like a real webcam-style recording. Realistic skin texture, mild phone-camera softness, no retouching, ordinary person, not a model.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/b7844d06-fa0d-4717-8535-f460efaecfb6.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-hook-agressivo-2026-09-23/base/v08.png"
+  ],
+  "elapsed_ms": 42409,
+  "raw": {
+    "id": "aeb4a2ba5cd344baae1d0ea82f9a4506",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/b7844d06-fa0d-4717-8535-f460efaecfb6.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/aeb4a2ba5cd344baae1d0ea82f9a4506/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-23T03:26:10.468363014Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 38076
+    }
+  }
+}

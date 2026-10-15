@@ -1,0 +1,95 @@
+STARTED
+AUTHORIZED
+available=true onDevice=true
+task started
+=== TEXTO ===
+There's one Instagram detail that gives almost everyone away, but hardly anyone knows where to look. You don't have to guess you don't have to confront them and you don't have to sneak through their phone when someone tries to hide something. They usually leave small clues behind without even realizing it, that's how so many people uncover suspicious messages, contacts and unusual behavior even when the other person thinks they deleted everything you just need to know where to look get access below while this tool is still available.
+
+=== SEGMENTOS ===
+[ 10.38] There's
+[ 10.59] one
+[ 11.07] Instagram
+[ 11.76] detail
+[ 12.24] that
+[ 12.33] gives
+[ 12.60] almost
+[ 12.93] everyone
+[ 13.26] away,
+[ 14.55] but
+[ 14.79] hardly
+[ 15.12] anyone
+[ 15.48] knows
+[ 15.72] where
+[ 15.87] to
+[ 15.99] look.
+[ 17.31] You
+[ 17.52] don't
+[ 17.73] have to
+[ 18.00] guess
+[ 18.96] you
+[ 19.11] don't
+[ 19.29] have to
+[ 19.53] confront
+[ 19.95] them
+[ 21.00] and
+[ 21.21] you
+[ 21.27] don't
+[ 21.51] have to sneak
+[ 22.05] through
+[ 22.26] their
+[ 22.44] phone
+[ 23.73] when
+[ 24.00] someone
+[ 24.36] tries
+[ 24.72] to
+[ 24.87] hide
+[ 25.17] something.
+[ 26.07] They
+[ 26.28] usually
+[ 26.76] leave
+[ 27.03] small
+[ 27.69] clues
+[ 27.87] behind
+[ 28.29] without
+[ 28.56] even
+[ 28.80] realizing
+[ 29.37] it,
+[ 30.24] that's
+[ 30.54] how
+[ 30.69] so
+[ 31.05] many
+[ 31.32] people
+[ 31.83] uncover
+[ 32.31] suspicious
+[ 32.94] messages,
+[ 33.84] contacts
+[ 34.95] and
+[ 35.16] unusual
+[ 35.76] behavior
+[ 37.20] even
+[ 37.35] when
+[ 37.50] the
+[ 37.59] other
+[ 37.74] person
+[ 38.16] thinks
+[ 38.43] they
+[ 38.61] deleted
+[ 39.18] everything
+[ 40.44] you
+[ 40.56] just
+[ 40.80] need
+[ 40.95] to
+[ 41.04] know
+[ 41.22] where
+[ 41.43] to
+[ 41.52] look
+[ 42.48] get
+[ 42.66] access
+[ 43.02] below
+[ 43.95] while
+[ 44.28] this
+[ 44.40] tool
+[ 44.76] is
+[ 44.82] still
+[ 45.12] available.
+

@@ -1,0 +1,29 @@
+{
+  "id": "0e5f3168fd874b469464cb05d1a4d1ce",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Vertical 9:16 smartphone selfie video still, same camera position, same close-up framing and same head size, head position and pose as the image: a man looking straight into the phone camera, mouth relaxed and slightly open as if mid-sentence. REPLACE the man with a DIFFERENT man: a man about 28 years old of Middle-Eastern descent with olive skin, thick wavy black hair swept back, a neat short black beard and mustache, wearing a plain white t-shirt under an open dark-indigo denim overshirt. REPLACE the background with a DIFFERENT place: sitting at a dining table in an open kitchen at night: plain white kitchen cabinets out of focus behind him, a warm pendant lamp glowing above and off to the side, a dark window on one side, the rest of the room dim. Keep the same dark moody low-light look and the same crop (top of the head touching the top edge). He is the only person in the image. No text, no captions, no logos, no watermark. Photorealistic, natural skin texture with visible pores, no retouching, ordinary person, not a model, shot on a front phone camera.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/3d32825b-7e64-44bb-ba0e-066d0b1cb4e6.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/var5-beatriz-aguiar-1622854622757052-2026-09-25/base/homem.png"
+  ],
+  "elapsed_ms": 42809,
+  "raw": {
+    "id": "0e5f3168fd874b469464cb05d1a4d1ce",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/3d32825b-7e64-44bb-ba0e-066d0b1cb4e6.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/0e5f3168fd874b469464cb05d1a4d1ce/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:21:07.212290078Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 38991
+    }
+  }
+}

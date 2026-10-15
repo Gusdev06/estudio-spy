@@ -1,0 +1,31 @@
+✔ Done in 149s.
+✔ Saved 1 file.
+{
+  "id": "4521df17b00442e5b42fbe8854d87452",
+  "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "prompt": "The person tilts their head slightly and continues.\n[Denise, calm low confiding voice, measured]: \"You don't need to guess, or argue, or secretly check someone's phone. Because when people try to hide something, they usually leave small traces behind without realizing it.\"\nThen straightens and blinks once. Camera is locked off. Hands stay out of frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/4521df17b00442e5b42fbe8854d87452/1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/gram-detect/criativos/lote-5-avatares/m3-negra-34/clipes/b-02.mp4"
+  ],
+  "elapsed_ms": 154119,
+  "raw": {
+    "id": "4521df17b00442e5b42fbe8854d87452",
+    "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/4521df17b00442e5b42fbe8854d87452/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/4521df17b00442e5b42fbe8854d87452/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-23T19:09:05.395562612Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 145851
+    }
+  }
+}

@@ -1,0 +1,10 @@
+43f644baa28a4aee99d86d1d487d84f1 img v1-branco
+5b1c67adf4d642019e03d872f8acdaac img v2-latino
+d21b6c6224af426a9215bd4ac3eea137 img v3-asiatico
+ea27949588cc452ebebd1f5dcf0d29af img v4-indiano
+c011084561d544daae09046b6bd128f6 img v5-arabe
+e680fe096e864fbfb85fc3ac1606fbac pruna v5-arabe seed7
+bf82afebf1c24e0dbb363e105f200154 pruna v3-asiatico seed7
+f37b8bb4c1164be69a95841cf01bbabe pruna v1-branco seed7
+0fdd837e98264c5586b10b87bad2962e pruna v2-latino seed7
+fa990696074c45f9b5cbf613f562dd78 pruna v4-indiano seed7

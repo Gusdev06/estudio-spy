@@ -1,0 +1,29 @@
+{
+  "id": "b1739c90d1ec47868edd5f3de2c4676d",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Photorealistic still from a vertical selfie video shot on a front phone camera at eye level. A Taiwanese woman about 30 years old with fair skin, long straight dark-brown hair, light natural makeup, wearing a casual beige coat over a black top, sitting in a warm cozy cafe with soft bokeh lights and wood tones behind her, softly out of focus. She looks straight into the lens with a friendly, expressive teaching expression, mouth slightly open mid-sentence, one hand relaxed. Framing: head and upper chest, subject centered, eyes at about 35% from the top. Natural skin texture with visible pores, no retouching, ordinary person, not a model. Only one person in frame. No text, no captions, no logos.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/54859069-2fdf-418a-b227-681d418d660d.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/adele-avatares-2026-09-28/base/w1.png"
+  ],
+  "elapsed_ms": 36571,
+  "raw": {
+    "id": "b1739c90d1ec47868edd5f3de2c4676d",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/54859069-2fdf-418a-b227-681d418d660d.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/b1739c90d1ec47868edd5f3de2c4676d/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T08:15:45.106554329Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 31983
+    }
+  }
+}

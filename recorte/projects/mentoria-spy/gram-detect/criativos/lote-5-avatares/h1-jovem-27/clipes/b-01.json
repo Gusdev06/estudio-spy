@@ -1,0 +1,31 @@
+✔ Done in 113s.
+✔ Saved 1 file.
+{
+  "id": "e9ec324eedec42e0954a1fea73161eed",
+  "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "prompt": "The person leans forward very slightly and speaks directly into the lens.\n[Rafa, calm low serious voice]: \"There's one detail on Instagram that gives almost everyone away. The problem is, hardly anyone knows where to look.\"\nThen settles back and holds the look. Camera is locked off. Hands stay out of frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/e9ec324eedec42e0954a1fea73161eed/1.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/gram-detect/criativos/lote-5-avatares/h1-jovem-27/clipes/b-01.mp4"
+  ],
+  "elapsed_ms": 117902,
+  "raw": {
+    "id": "e9ec324eedec42e0954a1fea73161eed",
+    "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/e9ec324eedec42e0954a1fea73161eed/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/e9ec324eedec42e0954a1fea73161eed/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-23T19:16:44.852991427Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 110943
+    }
+  }
+}

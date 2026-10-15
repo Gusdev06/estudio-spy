@@ -1,0 +1,29 @@
+{
+  "id": "b7203ccc724b409bb44d36f88abc3a31",
+  "model": "wavespeed-ai/minimax-h3/image-to-video",
+  "prompt": "One continuous vertical shot, 3D animated feature film style. Maya walks toward the camera down a golden-hour suburban street with a firm stride; the camera tracks alongside her, her hair swaying. Characters: Maya (Latina woman, dark-brown hair down in soft waves, emerald-green wrap blouse, small gold hoop earrings, small beauty mark above her lip, burnt-red lipstick). Same faces, hair and outfits throughout, cinematic lighting, shallow depth of field, slow smooth camera. Any phone screen stays black or shows only a soft blank glow, never icons, apps or text. No text, no subtitles, no phone interface. Soft room ambience only, no speech, no music.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/47447fd4-0260-49c6-8fe8-6aee20a5137b-u2_60fc55b8-24bc-4310-b08e-8dd3c25d5e25.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/drama-song-zap-2026-09-28/clipes-v2/B19a.mp4"
+  ],
+  "elapsed_ms": 42153,
+  "raw": {
+    "id": "b7203ccc724b409bb44d36f88abc3a31",
+    "model": "wavespeed-ai/minimax-h3/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/47447fd4-0260-49c6-8fe8-6aee20a5137b-u2_60fc55b8-24bc-4310-b08e-8dd3c25d5e25.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/b7203ccc724b409bb44d36f88abc3a31/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-28T10:29:27.449685723Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 38841
+    }
+  }
+}

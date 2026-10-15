@@ -1,0 +1,29 @@
+{
+  "id": "70359954d87940858430ca7000a6813e",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Horizontal 4:3 webcam-style video still, same camera position, same framing and same pose as the image: a young woman seen from the chest up, centered slightly left of the middle, head at the same height and the same size in the frame, looking straight into the camera, mouth closed, calm and serious. REPLACE the woman with a DIFFERENT woman: a woman about 27 years old with warm light-brown skin and long loose wavy dark-brown hair with soft caramel ends, falling over both shoulders, small gold hoop earrings, wearing a plain cream-colored crewneck sweater. REPLACE the whole room behind her with a DIFFERENT place: a bright cozy bedroom with warm white walls, a light oak wooden headboard with white linen pillows behind her on the right, a small bedside table with a ceramic lamp glowing warmly and a green potted plant, a woven wall basket decoration on the left wall, soft daylight from a window. She is the only person in the image. No television, no screens with content, no text, no letters, no logos, no watermark. Photorealistic, natural skin texture with visible pores, light natural makeup, ordinary person, not a model, soft natural indoor light, shot on a phone front camera.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/3d54ce0f-e196-4715-9c4e-e91d71bbff41.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/var1-amanda-silva-1680455873461877-2026-09-25/base/base.png"
+  ],
+  "elapsed_ms": 175559,
+  "raw": {
+    "id": "70359954d87940858430ca7000a6813e",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/3d54ce0f-e196-4715-9c4e-e91d71bbff41.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/70359954d87940858430ca7000a6813e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T16:57:14.951984904Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 171935
+    }
+  }
+}

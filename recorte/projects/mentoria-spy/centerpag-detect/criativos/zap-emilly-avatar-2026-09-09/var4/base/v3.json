@@ -1,0 +1,29 @@
+{
+  "id": "5dfd69d1f62945eebb2b389054b5a9a9",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still of a podcast-style talking head. A 36-year-old white man with a short salt-and-pepper beard, short dark hair with a bit of grey at the temples, light wrinkles around the eyes, plain black t-shirt. Looks straight into the lens with a serious, explaining expression, brows slightly furrowed, mouth closed. Framing: medium close-up from the chest up, eyes at about 38% from the top of the frame, hands out of frame, subject centered. A black dynamic podcast microphone on an articulated boom arm enters the frame from the left in front of the subject. Background: dark studio, black backdrop with two or three warm amber lights out of focus as soft bokeh, a subtle warm rim light on the shoulder. Fixed camera at eye level, mirrorless camera look, slight grain, realistic skin texture, no retouching, not a model.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/4558eda2-d574-4a9a-9e27-9f97ed8c4157.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/zap-emilly-avatar-2026-09-09/var4/base/avatar-v3-homem-branco-barba.png"
+  ],
+  "elapsed_ms": 92663,
+  "raw": {
+    "id": "5dfd69d1f62945eebb2b389054b5a9a9",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/4558eda2-d574-4a9a-9e27-9f97ed8c4157.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/5dfd69d1f62945eebb2b389054b5a9a9/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-09T16:48:43.655853781Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 87771
+    }
+  }
+}

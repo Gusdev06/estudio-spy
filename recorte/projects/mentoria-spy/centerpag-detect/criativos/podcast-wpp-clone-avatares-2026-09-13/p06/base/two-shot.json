@@ -1,0 +1,29 @@
+{
+  "id": "0834a1821ab247ccb5090565d3d6c943",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate the FIRST image exactly — same podcast studio, same cream curved sofa, same low round table, same two black podcast microphones on boom arms, same green plants, same light patterned wall, same wide two-shot framing from the same camera position and height, same warm daylight, same body language (both women seated turned toward each other, mid-conversation). ONLY REPLACE the two women: the woman on the RIGHT must be the woman from the SECOND image (a Black woman about 35 with dark skin, short cropped hair, gold hoops, forest-green knit top, light jeans). The woman on the LEFT must be the woman from the THIRD image (a white woman about 28 with light brown hair in a bun, plain white long-sleeve top, black trousers). Keep their faces, hair and clothing exactly as in those images. Photorealistic video still, natural skin texture, no retouching, no text, no logos, no watermark.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/0a2ccb7c-9949-437f-a392-5fcea58ba27c.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/podcast-wpp-clone-avatares-2026-09-13/p06/base/two-shot.png"
+  ],
+  "elapsed_ms": 48638,
+  "raw": {
+    "id": "0834a1821ab247ccb5090565d3d6c943",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/0a2ccb7c-9949-437f-a392-5fcea58ba27c.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/0834a1821ab247ccb5090565d3d6c943/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-19T16:03:28.409314945Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 45459
+    }
+  }
+}

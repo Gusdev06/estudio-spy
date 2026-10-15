@@ -1,0 +1,28 @@
+✔ Done in 264s.
+{
+  "id": "80ab29f812494842909dbecf823cdf21",
+  "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+  "prompt": "Master Intent: The opening shot of a late-night television news broadcast. Tone: calm, serious, authoritative, unhurried. No music, only the quiet room tone of a studio.\n\nScene 1 (Duration: 11s):\nLocked-off medium shot, camera at eye level, no camera movement, no zoom.\n\nThe anchor squares his shoulders to camera and settles both hands flat on the glass desk, holding the viewer's gaze.\n[Character A: Anchor, calm measured broadcast voice, unhurried, American English]: \"We're following a growing concern tonight for anyone who's ever suspected a partner was hiding something on their phone.\"\n\nThen, he tilts his head very slightly and lifts one hand off the desk in a small open gesture.\n[Character A: Anchor, calm measured broadcast voice, unhurried, American English]: \"Nearly every app built for this fails. And we're told tonight it isn't the app's fault. Joining us now, Elena Ross.\"\n\nPause. He holds still, blinking once, waiting.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/predictions/80ab29f812494842909dbecf823cdf21/1.mp4"
+  ],
+  "saved": [],
+  "elapsed_ms": 264359,
+  "raw": {
+    "id": "80ab29f812494842909dbecf823cdf21",
+    "model": "kwaivgi/kling-v3.0-pro/image-to-video",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/predictions/80ab29f812494842909dbecf823cdf21/1.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/80ab29f812494842909dbecf823cdf21/result"
+    },
+    "status": "completed",
+    "created_at": "2026-08-31T05:30:36.528133561Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 262564
+    }
+  }
+}

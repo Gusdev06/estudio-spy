@@ -1,0 +1,29 @@
+{
+  "id": "3e1ff99477fb48668176320a4f8afb1c",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Vertical 9:16 front-camera smartphone selfie video still. Keep EXACTLY the same room, background, curtains, light, camera position, close-up framing, head size and head position as the image. REPLACE the woman with a DIFFERENT woman: a white woman about 24 years old with fair skin, light freckles across her nose and cheeks, green eyes and wavy copper-red hair just past her shoulders, wearing a plain olive-green cardigan over a white top. She looks straight into the phone camera, mouth relaxed and slightly open as if mid-sentence, natural light makeup. Only her head, shoulders and upper chest are visible; both of her arms hang relaxed at her sides, out of frame. She is the only person in the image. No text, no captions, no logos, no watermark. Photorealistic, natural skin texture with visible pores, no retouching, ordinary person, not a model, shot on a front phone camera.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/3ca48c8f-bda1-4fec-a0f9-da0c60c6f7a6.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/manuela-avatares-2026-10-06/base/a5.png"
+  ],
+  "elapsed_ms": 39110,
+  "raw": {
+    "id": "3e1ff99477fb48668176320a4f8afb1c",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/3ca48c8f-bda1-4fec-a0f9-da0c60c6f7a6.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/3e1ff99477fb48668176320a4f8afb1c/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-06T01:10:33.612057905Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 35393
+    }
+  }
+}

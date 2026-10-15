@@ -1,0 +1,29 @@
+{
+  "id": "2761078a7c8f419785de536fcee81b9e",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Vertical 9:16 front-camera smartphone selfie video still. Keep EXACTLY the same room, background, curtains, light, camera position, close-up framing, head size and head position as the image. REPLACE the woman with a DIFFERENT woman: a Latina woman about 24 years old with warm olive-tan skin, dark-brown eyes and long wavy dark-brown hair falling past her shoulders, wearing a plain black fitted crewneck top. She looks straight into the phone camera, mouth relaxed and slightly open as if mid-sentence, natural light makeup. Only her head, shoulders and upper chest are visible; both of her arms hang relaxed at her sides, out of frame. She is the only person in the image. No text, no captions, no logos, no watermark. Photorealistic, natural skin texture with visible pores, no retouching, ordinary person, not a model, shot on a front phone camera.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/33dc5116-64c2-4946-a65d-072aeef3105f.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/manuela-avatares-2026-10-06/base/a1.png"
+  ],
+  "elapsed_ms": 68735,
+  "raw": {
+    "id": "2761078a7c8f419785de536fcee81b9e",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/33dc5116-64c2-4946-a65d-072aeef3105f.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/2761078a7c8f419785de536fcee81b9e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-06T01:10:34.02443179Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 63528
+    }
+  }
+}

@@ -1,0 +1,6 @@
+  -$0.5250    2026-09-10 19:00:27 UTC  pruna-ai/p-video/avatar                  key:macbook
+      prediction: 9d438581847146e5a3c79dd483ae383f
+  -$0.5500    2026-09-10 18:58:48 UTC  pruna-ai/p-video/avatar                  key:macbook
+      prediction: 6b47ebea15294a48ad1c50319effde98
+  -$0.5250    2026-09-10 18:56:07 UTC  pruna-ai/p-video/avatar                  key:macbook
+      prediction: 9f823355927f49d29d61edbe4b60c8b6

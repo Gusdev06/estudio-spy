@@ -1,0 +1,29 @@
+{
+  "id": "10dd0a498ce64d99bad9d87073b26fc9",
+  "model": "openai/gpt-image-2/text-to-image",
+  "prompt": "Vertical 9:16 video still, front phone camera at eye level, bright home office. a Filipino man about 38 with tan skin, short side-swept black hair, a neat goatee, wearing a plain black polo shirt. He looks straight into the lens with a serious, direct expression, as if telling a hard truth, mouth closed. Framing: chest up, hands out of frame, subject centered, eyes at about 35% from the top. Behind him: a white upholstered chair, a light neutral wall, a bookshelf with a small plant, soft natural window daylight, slightly overexposed background like a real webcam-style recording. Realistic skin texture, mild phone-camera softness, no retouching, ordinary person, not a model. Only one person in frame.",
+  "outputs": [
+    "https://cdn.cachegalaxy.com/output/22b10fbe-f1e2-410b-a6c0-a8df9974c75f.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/secret-top5-avatar-copy-2026-10-07/base/v167.png"
+  ],
+  "elapsed_ms": 41664,
+  "raw": {
+    "id": "10dd0a498ce64d99bad9d87073b26fc9",
+    "model": "openai/gpt-image-2/text-to-image",
+    "outputs": [
+      "https://cdn.cachegalaxy.com/output/22b10fbe-f1e2-410b-a6c0-a8df9974c75f.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/10dd0a498ce64d99bad9d87073b26fc9/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-07T14:37:11.172618855Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 38824
+    }
+  }
+}

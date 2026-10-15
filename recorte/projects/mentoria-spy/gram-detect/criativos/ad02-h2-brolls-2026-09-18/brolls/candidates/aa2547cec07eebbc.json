@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "youtube:_uQjh91ywI0",
+  "provider": "youtube",
+  "source_id": "_uQjh91ywI0",
+  "source_url": "https://www.youtube.com/watch?v=_uQjh91ywI0",
+  "title": "How To Check Recently Deleted Messages On Instagram",
+  "creator": {
+    "name": "Trevor Nace",
+    "url": null
+  },
+  "query": "Instagram recently deleted folder how to see",
+  "collected_at": "2026-09-17T16:29:26.016321+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "1ª rodada: janela exploratória, ainda sem conferir"
+  },
+  "media": {
+    "duration_s": 127,
+    "width": 1920,
+    "height": 1080,
+    "fps": 29.97002997002997
+  },
+  "preview": {
+    "embed_url": "https://www.youtube-nocookie.com/embed/_uQjh91ywI0",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/_uQjh91ywI0/hq720.jpg?sqp=-oaymwEgCNAFEJQDSFXyq4qpAxIIARUAAIhCGAFwAcABBrgC9xg=&rs=AOn4CLA0RUdaFLyMD7C4vhb8wm2-PEBgDQ",
+    "poster_path": "previews/aa2547cec07eebbc-r1-4d812712-poster.jpg",
+    "contact_sheet_path": "previews/aa2547cec07eebbc-r1-4d812712-sheet.jpg",
+    "gif_path": "previews/aa2547cec07eebbc-r1-4d812712.gif",
+    "frame_times_s": [
+      40.0,
+      40.667,
+      41.333,
+      42.0,
+      42.667,
+      43.333,
+      44.0,
+      44.667,
+      45.333,
+      46.0,
+      46.667,
+      47.333
+    ],
+    "sheet_grid": [
+      4,
+      3
+    ],
+    "sheet_labels": true,
+    "config": {
+      "scope": "broll",
+      "mode": "gif",
+      "width": 360,
+      "fps": 8,
+      "colors": 128,
+      "max_mb": 5,
+      "max_seconds": 10,
+      "frames": 12
+    },
+    "warning": null,
+    "gif_bytes": 965929,
+    "scope": "broll"
+  },
+  "segment": {
+    "start_s": 40.0,
+    "end_s": 48.0,
+    "revision": 1
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "rejected",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "rejected",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": 1920,
+    "source_height": 1080,
+    "fit": "native",
+    "transform": "preserve_native"
+  },
+  "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/aa2547cec07eebbc-a479503cd0c8dc44f10acee2f40aa485b9fe7935745633be51cf67a6c07a0311.mp4",
+  "local_sha256": "a479503cd0c8dc44f10acee2f40aa485b9fe7935745633be51cf67a6c07a0311",
+  "local_start_s": 40.0,
+  "local_duration_s": 8.008,
+  "preview_scope": "broll",
+  "narration": "they usually leave small clues behind without even realizing it"
+}

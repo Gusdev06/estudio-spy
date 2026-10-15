@@ -1,0 +1,9 @@
+var4 frames=720,1280,1380 MD5=cd0c5c2ba489d921c9dff259e6b7e0c3
+frames: 1380 pixels iguais por frame: mediana 9050 max 20680 em n 1296
+esquete max 19871 n 303 mediana 16690
+split max 14455 n 319 mediana 8561
+painel1 max 11086 n 438 mediana 5960
+homem1 max 13031 n 746 mediana 6552
+painel2 max 15704 n 879 mediana 8441
+homem2 max 20680 n 1296 mediana 10003
+piores: [302, 303, 304, 305, 306, 1296, 1307, 1308]

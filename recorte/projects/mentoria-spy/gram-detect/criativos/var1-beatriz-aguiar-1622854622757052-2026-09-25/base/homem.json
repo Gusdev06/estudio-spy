@@ -1,0 +1,29 @@
+{
+  "id": "854efcbc222f48a680c46db21ee47c9b",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Vertical 9:16 smartphone selfie video still, same camera position, same close-up framing and same head size, head position and pose as the image: a man looking straight into the phone camera, mouth relaxed and slightly open as if mid-sentence. REPLACE the man with a DIFFERENT man: a man about 24 years old with light-brown skin, short straight dark-brown hair neatly cut with a low fade, a short well-trimmed dark stubble beard, wearing a plain heather-grey crewneck sweatshirt. REPLACE the background with a DIFFERENT place: sitting on a sofa in a dim living room at night: a plain warm-beige wall behind him, the edge of a tall bookshelf out of focus on one side, a small warm table lamp glowing softly off to the side, the rest of the room in shadow. Keep the same dark moody low-light look and the same crop (top of the head touching the top edge). He is the only person in the image. No text, no captions, no logos, no watermark. Photorealistic, natural skin texture with visible pores, no retouching, ordinary person, not a model, shot on a front phone camera.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/08100976-c798-4e14-8ae6-2db9e30c25aa.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/var1-beatriz-aguiar-1622854622757052-2026-09-25/base/homem.png"
+  ],
+  "elapsed_ms": 49796,
+  "raw": {
+    "id": "854efcbc222f48a680c46db21ee47c9b",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/08100976-c798-4e14-8ae6-2db9e30c25aa.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/854efcbc222f48a680c46db21ee47c9b/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T17:02:00.253800906Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 39983
+    }
+  }
+}

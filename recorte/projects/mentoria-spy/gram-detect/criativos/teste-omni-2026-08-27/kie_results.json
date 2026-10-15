@@ -1,0 +1,14 @@
+{
+ "omni-txt": {
+  "state": "fail",
+  "credits": 0.0,
+  "fail": "Request blocked: The uploaded audio was flagged by Google safety review.",
+  "urls": []
+ },
+ "omni-img": {
+  "state": "fail",
+  "credits": 0.0,
+  "fail": "Request blocked: The generation was blocked by Google safety review.",
+  "urls": []
+ }
+}

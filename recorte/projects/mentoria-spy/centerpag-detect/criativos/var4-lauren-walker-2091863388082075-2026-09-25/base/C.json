@@ -1,0 +1,29 @@
+{
+  "id": "5e888702d772415092811644f28e2078",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Vertical 9:16 smartphone selfie video still. Use the SECOND image only for camera framing and pose: a close front-camera selfie, the face large in the upper-middle of the frame, head and shoulders filling the frame, chest at the bottom edge, looking straight into the camera, mouth closed. The person is EXACTLY the man from the FIRST image: same face, same hair, same facial hair, same clothes (a white man about 50 years old, bald head, a short reddish-grey goatee, sturdy build, wearing a red and black checkered flannel shirt). New place: he stands in a green backyard with a wooden privacy fence, a lawn and a small tree behind him, softly out of focus, late afternoon sunlight on his face. He is the only person in the image. Clean photo with no graphics, no arrows, no text, no stickers, no logos, no watermark. Photorealistic, natural skin texture with visible pores, no retouching, shot on a phone front camera.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/1f6ca0b3-e92c-4333-a113-0dd91938586a.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/var4-lauren-walker-2091863388082075-2026-09-25/base/C.png"
+  ],
+  "elapsed_ms": 47936,
+  "raw": {
+    "id": "5e888702d772415092811644f28e2078",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/1f6ca0b3-e92c-4333-a113-0dd91938586a.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/5e888702d772415092811644f28e2078/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:21:43.664424082Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 46245
+    }
+  }
+}

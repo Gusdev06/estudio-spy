@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "youtube:MDUa6a2zQak",
+  "provider": "youtube",
+  "source_id": "MDUa6a2zQak",
+  "source_url": "https://www.youtube.com/watch?v=MDUa6a2zQak",
+  "title": "How To See Hidden Message Requests On Instagram",
+  "creator": {
+    "name": "Trevor Nace",
+    "url": null
+  },
+  "query": "Instagram hidden message requests folder how to find",
+  "collected_at": "2026-09-17T16:29:21.900288+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "1ª rodada: janela exploratória, ainda sem conferir"
+  },
+  "media": {
+    "duration_s": 88,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0
+  },
+  "preview": {
+    "embed_url": "https://www.youtube-nocookie.com/embed/MDUa6a2zQak",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/MDUa6a2zQak/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHlXgVUMg9jiVSOOCMD0fF3--J7g",
+    "poster_path": "previews/534deae114dd1949-r1-4d812712-poster.jpg",
+    "contact_sheet_path": "previews/534deae114dd1949-r1-4d812712-sheet.jpg",
+    "gif_path": "previews/534deae114dd1949-r1-4d812712.gif",
+    "frame_times_s": [
+      30.0,
+      30.667,
+      31.333,
+      32.0,
+      32.667,
+      33.333,
+      34.0,
+      34.667,
+      35.333,
+      36.0,
+      36.667,
+      37.333
+    ],
+    "sheet_grid": [
+      4,
+      3
+    ],
+    "sheet_labels": true,
+    "config": {
+      "scope": "broll",
+      "mode": "gif",
+      "width": 360,
+      "fps": 8,
+      "colors": 128,
+      "max_mb": 5,
+      "max_seconds": 10,
+      "frames": 12
+    },
+    "warning": null,
+    "gif_bytes": 1055669,
+    "scope": "broll"
+  },
+  "segment": {
+    "start_s": 30.0,
+    "end_s": 38.0,
+    "revision": 1
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "rejected",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "rejected",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": 1920,
+    "source_height": 1080,
+    "fit": "native",
+    "transform": "preserve_native"
+  },
+  "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/534deae114dd1949-d0069b90b1dcac979bc1d4c007c00e3db3391c7da7cf8ff12fc670950271ba8b.mp4",
+  "local_sha256": "d0069b90b1dcac979bc1d4c007c00e3db3391c7da7cf8ff12fc670950271ba8b",
+  "local_start_s": 30.0,
+  "local_duration_s": 8.0,
+  "preview_scope": "broll",
+  "narration": "You just need to know where to look"
+}

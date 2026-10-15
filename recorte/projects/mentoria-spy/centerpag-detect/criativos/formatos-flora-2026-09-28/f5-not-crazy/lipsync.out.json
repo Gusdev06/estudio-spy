@@ -1,0 +1,28 @@
+{
+  "id": "5fe061e3210f41b3a8941fe1473b3c81",
+  "model": "pruna-ai/p-video/avatar",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/9d3836f8-7bdb-4cc1-a88e-523711fa7417.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/formatos-flora-2026-09-28/f5-not-crazy/lipsync.mp4"
+  ],
+  "elapsed_ms": 130569,
+  "raw": {
+    "id": "5fe061e3210f41b3a8941fe1473b3c81",
+    "model": "pruna-ai/p-video/avatar",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/9d3836f8-7bdb-4cc1-a88e-523711fa7417.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/5fe061e3210f41b3a8941fe1473b3c81/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-27T17:06:04.927767876Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 121180
+    }
+  }
+}

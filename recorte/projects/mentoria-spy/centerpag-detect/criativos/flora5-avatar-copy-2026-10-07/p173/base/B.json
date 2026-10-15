@@ -1,0 +1,29 @@
+{
+  "id": "3ba667f3fea24591a5ed832d04d0091e",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Photorealistic video still from a podcast recording. Same camera position, same tight close-up framing and same pose as the image: his face in profile turned toward the left side of the frame, wearing black over-ear headphones, a black podcast microphone in front of his mouth at the lower left, mouth slightly open as if mid-sentence, looking toward the person off-camera on the left. REPLACE the person with a DIFFERENT person: a man about 35 years old of Polynesian (Samoan) descent with tan-brown skin, broad build, short curly black hair, full trimmed black beard, wearing a sage-green linen shirt. REPLACE the whole background with a DIFFERENT podcast studio: deep teal painted wall, a wall shelf full of vinyl records, a warm amber glass pendant lamp, a small brass desk lamp, moody warm-and-teal colour palette. Same size of the head in the frame and same head position as in the image. This person is the only person in the image. No monitors, no screens, no text, no logos, no watermark. Natural skin texture with visible pores, no retouching, ordinary person, not a model, soft warm studio light, shallow depth of field.",
+  "outputs": [
+    "https://cdn.cachegalaxy.com/output/6c446ce4-c59c-4d6d-af24-34b5c68b7977.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/centerpag-detect/criativos/flora5-avatar-copy-2026-10-07/p173/base/B.png"
+  ],
+  "elapsed_ms": 41973,
+  "raw": {
+    "id": "3ba667f3fea24591a5ed832d04d0091e",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://cdn.cachegalaxy.com/output/6c446ce4-c59c-4d6d-af24-34b5c68b7977.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/3ba667f3fea24591a5ed832d04d0091e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-07T14:33:59.388378714Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 38682
+    }
+  }
+}

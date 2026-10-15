@@ -1,0 +1,29 @@
+{
+  "id": "c1a7caa0555747f5bdf42a09d51db172",
+  "model": "bytedance/seedance-v1-lite-i2v-720p",
+  "prompt": "Handheld amateur phone video, slightly shaky. The young East Asian woman with straight black shoulder-length hair and bangs in a cream knit cardigan leans back against the edge of the open doorway, holding her phone, looking up at the ceiling and ranting dramatically, shaking her head and moving her free hand, comedic skit energy, the camera stays at the same wide distance. Natural indoor light, realistic.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/15242a2c-5f3a-446c-9152-ef9fe5f72335-u1_ef7678e5-13e5-4fb6-ae10-41b911f97fdf.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/var2-beatriz-aguiar-1622854622757052-2026-09-25/clipes/eB.mp4"
+  ],
+  "elapsed_ms": 60530,
+  "raw": {
+    "id": "c1a7caa0555747f5bdf42a09d51db172",
+    "model": "bytedance/seedance-v1-lite-i2v-720p",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/15242a2c-5f3a-446c-9152-ef9fe5f72335-u1_ef7678e5-13e5-4fb6-ae10-41b911f97fdf.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c1a7caa0555747f5bdf42a09d51db172/result"
+    },
+    "status": "completed",
+    "created_at": "2026-09-24T18:28:19.437258487Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 56645
+    }
+  }
+}

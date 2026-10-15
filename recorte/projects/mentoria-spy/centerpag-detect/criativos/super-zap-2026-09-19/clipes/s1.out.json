@@ -1,0 +1,5 @@
+{
+  "error": "Prediction failed: Service is temporarily unavailable. Please try again in a moment. (task_id: c7b1e34f431d43e7b02d4c3f5ef645ec)",
+  "prediction_id": "c7b1e34f431d43e7b02d4c3f5ef645ec",
+  "query_command": "wavespeed show c7b1e34f431d43e7b02d4c3f5ef645ec"
+}

@@ -1,0 +1,5 @@
+da6f4f42adad432984654245f2450ded base/A.json 0.0665
+5e888702d772415092811644f28e2078 base/C.json 0.0779
+3daa070e4c724d3ebbb29dc5d7997a7d clipes/c1.out.json 0.375
+fd94c0b6056248d5baa38481e8c42aab clipes/c2.out.json 0.075
+total 0.5944

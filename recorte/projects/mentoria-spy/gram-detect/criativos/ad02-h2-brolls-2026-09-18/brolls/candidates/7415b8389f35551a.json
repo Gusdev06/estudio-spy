@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "youtube:JH6AqDW2Ncg",
+  "provider": "youtube",
+  "source_id": "JH6AqDW2Ncg",
+  "source_url": "https://www.youtube.com/watch?v=JH6AqDW2Ncg",
+  "title": "How to Screen Record View Once Messages on Instagram (2026)",
+  "creator": {
+    "name": "Tech Oracle",
+    "url": null
+  },
+  "query": "Instagram vanish mode DM screen recording",
+  "collected_at": "2026-09-17T16:29:24.758318+00:00",
+  "match": {
+    "kind": "literal",
+    "reason": "1ª rodada: janela exploratória, ainda sem conferir"
+  },
+  "media": {
+    "duration_s": 68,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0
+  },
+  "preview": {
+    "embed_url": "https://www.youtube-nocookie.com/embed/JH6AqDW2Ncg",
+    "seek_mode": "native",
+    "poster_url": "https://i.ytimg.com/vi/JH6AqDW2Ncg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDWabH_ZJKxbezT-QdAGCneqJWRKw",
+    "poster_path": "previews/7415b8389f35551a-r1-4d812712-poster.jpg",
+    "contact_sheet_path": "previews/7415b8389f35551a-r1-4d812712-sheet.jpg",
+    "gif_path": "previews/7415b8389f35551a-r1-4d812712.gif",
+    "frame_times_s": [
+      25.0,
+      25.667,
+      26.333,
+      27.0,
+      27.667,
+      28.333,
+      29.0,
+      29.667,
+      30.333,
+      31.0,
+      31.667,
+      32.333
+    ],
+    "sheet_grid": [
+      4,
+      3
+    ],
+    "sheet_labels": true,
+    "config": {
+      "scope": "broll",
+      "mode": "gif",
+      "width": 360,
+      "fps": 8,
+      "colors": 128,
+      "max_mb": 5,
+      "max_seconds": 10,
+      "frames": 12
+    },
+    "warning": null,
+    "gif_bytes": 73994,
+    "scope": "broll"
+  },
+  "segment": {
+    "start_s": 25.0,
+    "end_s": 33.0,
+    "revision": 1
+  },
+  "rights": {
+    "status": "unknown",
+    "license_name": null,
+    "license_url": null,
+    "evidence": [],
+    "attribution": null
+  },
+  "acquisition": {
+    "status": "available",
+    "method": "yt-dlp",
+    "evidence": []
+  },
+  "approval": {
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "revision": null
+  },
+  "output": {
+    "path": null,
+    "sha256": null,
+    "verified": false
+  },
+  "state": "awaiting_approval",
+  "errors": [],
+  "format": {
+    "target": "native",
+    "source_width": 1920,
+    "source_height": 1080,
+    "fit": "native",
+    "transform": "preserve_native"
+  },
+  "local_path": "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/gram-detect/criativos/ad02-h2-brolls-2026-09-18/.getbrolls-sources/7415b8389f35551a-d2fcc5f1f733f1b25c7c3ce53864b052074780d25b255d9daca11fdd315d753b.mp4",
+  "local_sha256": "d2fcc5f1f733f1b25c7c3ce53864b052074780d25b255d9daca11fdd315d753b",
+  "local_start_s": 25.0,
+  "local_duration_s": 8.0,
+  "preview_scope": "broll",
+  "narration": "uncover suspicious messages, contacts and unusual behavior"
+}

@@ -1,0 +1,58 @@
+[
+ {
+  "papel": "A",
+  "linha": "Every cheater makes the same mistake.",
+  "src_ini": 0,
+  "src_fim": 2.18,
+  "ini": 0.0,
+  "fim": 2.18
+ },
+ {
+  "papel": "B",
+  "linha": "What mistake?",
+  "src_ini": 0,
+  "src_fim": 0.9,
+  "ini": 2.3,
+  "fim": 3.2
+ },
+ {
+  "papel": "A",
+  "linha": "They think deleting a message makes it disappear. It doesn't.",
+  "src_ini": 2.434,
+  "src_fim": 5.887,
+  "ini": 3.32,
+  "fim": 6.773
+ },
+ {
+  "papel": "B",
+  "linha": "Wait. So the deleted chats are still there?",
+  "src_ini": 1.15,
+  "src_fim": 3.408,
+  "ini": 6.893,
+  "fim": 9.151
+ },
+ {
+  "papel": "A",
+  "linha": "All of them. You enter their number, and you read everything on your own phone. They never find out.",
+  "src_ini": 6.347,
+  "src_fim": 12.864,
+  "ini": 9.271,
+  "fim": 15.788
+ },
+ {
+  "papel": "B",
+  "linha": "Where do I get that?",
+  "src_ini": 3.64,
+  "src_fim": 4.43,
+  "ini": 15.908,
+  "fim": 16.698
+ },
+ {
+  "papel": "A",
+  "linha": "The link is right below.",
+  "src_ini": 12.914,
+  "src_fim": 14.181,
+  "ini": 16.818,
+  "fim": 18.084
+ }
+]

@@ -1,0 +1,935 @@
+{
+ "fonte": "Meta Ad Library — busca de frase exata \"go.zappdetect.com\" (active_status=active, country=ALL, sort=total_impressions desc)",
+ "url_busca": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&media_type=all&q=%22go.zappdetect.com%22&search_type=keyword_exact_phrase",
+ "coletado_em": "2026-08-22",
+ "total_anuncios": 27,
+ "com_criativo": 23,
+ "sem_criativo": 4,
+ "anuncios": [
+  {
+   "ad_id": "1761247818659822",
+   "status": "Ativo",
+   "pagina": "Sophia Jones",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "rodando_ha": "3.2 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1761247818659822",
+   "arquivos": [
+    {
+     "file": "sophia-jones-1761247818659822.mp4",
+     "md5": "9e300448c20fd4d138ba074a2e35caa1",
+     "bytes": 1061460
+    },
+    {
+     "file": "sophia-jones-1761247818659822-thumb.jpg",
+     "md5": "7e8326af0285a0387a13dd88fd2ce3dd",
+     "bytes": 276927
+    }
+   ],
+   "rank_impressoes": 1,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 6,
+   "dias_no_ar": 3.2,
+   "tier": "A-escalado",
+   "posicao_escalados": 1,
+   "arquivos_escalados": [
+    "01-sophia-jones-1761247818659822.mp4",
+    "01-sophia-jones-1761247818659822-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1878736593305369",
+   "status": "Ativo",
+   "pagina": "Sophia Jones",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "rodando_ha": "3.2 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1878736593305369",
+   "arquivos": [
+    {
+     "file": "sophia-jones-1878736593305369.mp4",
+     "md5": "8040c84ec7928bc73dc1d155197ec644",
+     "bytes": 985303
+    },
+    {
+     "file": "sophia-jones-1878736593305369-thumb.jpg",
+     "md5": "25129ddade61d067cc16aa2d82b1dfcd",
+     "bytes": 200510
+    }
+   ],
+   "rank_impressoes": 2,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 6,
+   "dias_no_ar": 3.2,
+   "tier": "A-escalado",
+   "posicao_escalados": 2,
+   "arquivos_escalados": [
+    "02-sophia-jones-1878736593305369.mp4",
+    "02-sophia-jones-1878736593305369-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1802327631206922",
+   "status": "Ativo",
+   "pagina": "Sophia Jones",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "rodando_ha": "3.2 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1802327631206922",
+   "arquivos": [
+    {
+     "file": "sophia-jones-1802327631206922.mp4",
+     "md5": "0ce2e4ce35cd64bc79caa4874637675b",
+     "bytes": 762154
+    },
+    {
+     "file": "sophia-jones-1802327631206922-thumb.jpg",
+     "md5": "44f937f11fc28d06d19d3d14387e5430",
+     "bytes": 254490
+    }
+   ],
+   "rank_impressoes": 3,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 6,
+   "dias_no_ar": 3.2,
+   "tier": "A-escalado",
+   "posicao_escalados": 3,
+   "arquivos_escalados": [
+    "03-sophia-jones-1802327631206922.mp4",
+    "03-sophia-jones-1802327631206922-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "2302510360514309",
+   "status": "Ativo",
+   "pagina": "Charlotte Miller",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "rodando_ha": "3.2 days",
+   "formato": "imagem",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free test",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2302510360514309",
+   "arquivos": [
+    {
+     "file": "charlotte-miller-2302510360514309.jpg",
+     "md5": "e661bf1f612dacab67acf8f4aa259b2e",
+     "bytes": 47074
+    }
+   ],
+   "rank_impressoes": 4,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 12,
+   "dias_no_ar": 3.2,
+   "tier": "A-escalado",
+   "posicao_escalados": 4,
+   "arquivos_escalados": [
+    "04-charlotte-miller-2302510360514309.jpg"
+   ]
+  },
+  {
+   "ad_id": "1097910339469459",
+   "status": "Ativo",
+   "pagina": "Charlotte Miller",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "rodando_ha": "3.2 days",
+   "formato": "imagem",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free test",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1097910339469459",
+   "arquivos": [
+    {
+     "file": "charlotte-miller-1097910339469459.jpg",
+     "md5": "d8fbb334922836456ce1db56029597e1",
+     "bytes": 44512
+    }
+   ],
+   "rank_impressoes": 5,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 12,
+   "dias_no_ar": 3.2,
+   "tier": "A-escalado",
+   "posicao_escalados": 5,
+   "arquivos_escalados": [
+    "05-charlotte-miller-1097910339469459.jpg"
+   ]
+  },
+  {
+   "ad_id": "1632753375186917",
+   "status": "Ativo",
+   "pagina": "Sophia Jones",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "rodando_ha": "3.2 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1632753375186917",
+   "arquivos": [
+    {
+     "file": "sophia-jones-1632753375186917.mp4",
+     "md5": "eb9a8f3944f4afec4ceb4bf429668c3f",
+     "bytes": 1024588
+    },
+    {
+     "file": "sophia-jones-1632753375186917-thumb.jpg",
+     "md5": "a78df8561f813b057d0e699bedad252c",
+     "bytes": 246562
+    }
+   ],
+   "rank_impressoes": 6,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 6,
+   "dias_no_ar": 3.2,
+   "tier": "A-escalado",
+   "posicao_escalados": 6,
+   "arquivos_escalados": [
+    "06-sophia-jones-1632753375186917.mp4",
+    "06-sophia-jones-1632753375186917-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1062087256401023",
+   "status": "Ativo",
+   "pagina": "Charlotte Miller",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "rodando_ha": "3.2 days",
+   "formato": "imagem",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free test",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1062087256401023",
+   "arquivos": [
+    {
+     "file": "charlotte-miller-1062087256401023.jpg",
+     "md5": "97791baf1d7a9cb8006fd73a513e9913",
+     "bytes": 43311
+    }
+   ],
+   "rank_impressoes": 8,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 12,
+   "dias_no_ar": 3.2,
+   "tier": "A-escalado",
+   "posicao_escalados": 7,
+   "arquivos_escalados": [
+    "07-charlotte-miller-1062087256401023.jpg"
+   ]
+  },
+  {
+   "ad_id": "1220064266976954",
+   "status": "Ativo",
+   "pagina": "VolutPay",
+   "inicio": "Veiculação iniciada em 20 de ago de 2026",
+   "rodando_ha": "2.2 days",
+   "formato": "video",
+   "copy": "I couldn't believe someone could hide so much. 😢 Every message uncovered another betrayal. My heart broke with every word. 💔",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Free Trial ✅",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1220064266976954",
+   "arquivos": [
+    {
+     "file": "volutpay-1220064266976954.mp4",
+     "md5": "b5484ce8bcf72d1a75017bb3091c3f05",
+     "bytes": 877060
+    },
+    {
+     "file": "volutpay-1220064266976954-thumb.jpg",
+     "md5": "6d3e2b6aa192c8d8e7552af8ae6e5796",
+     "bytes": 119530
+    }
+   ],
+   "rank_impressoes": 9,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 1,
+   "dias_no_ar": 2.2,
+   "tier": "A-escalado",
+   "posicao_escalados": 8,
+   "arquivos_escalados": [
+    "08-volutpay-1220064266976954.mp4",
+    "08-volutpay-1220064266976954-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "4182228071912475",
+   "status": "Ativo",
+   "pagina": "Charlotte Miller",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "rodando_ha": "3.2 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=4182228071912475",
+   "arquivos": [
+    {
+     "file": "charlotte-miller-4182228071912475.mp4",
+     "md5": "312170594b24920f70e538971eea9c3c",
+     "bytes": 2440335
+    },
+    {
+     "file": "charlotte-miller-4182228071912475-thumb.jpg",
+     "md5": "e203def666356a5b5c20dbe8c1b23b94",
+     "bytes": 157173
+    }
+   ],
+   "rank_impressoes": 10,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 6,
+   "dias_no_ar": 3.2,
+   "tier": "A-escalado",
+   "posicao_escalados": 9,
+   "arquivos_escalados": [
+    "09-charlotte-miller-4182228071912475.mp4",
+    "09-charlotte-miller-4182228071912475-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1541537987137161",
+   "status": "Ativo",
+   "pagina": "Sophia Jones",
+   "inicio": "Veiculação iniciada em 19 de ago de 2026",
+   "rodando_ha": "3.2 days",
+   "formato": "video",
+   "copy": "Ever wondered what someone's Instagram activity really looks like? 👀 Our tool analyzes any public profile and shows you who they follow, what they like, and the accounts they interact with the most. Just type the @username — the first analysis is free.",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Analyze any @username in seconds",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1541537987137161",
+   "arquivos": [
+    {
+     "file": "sophia-jones-1541537987137161.mp4",
+     "md5": "2abac5b567d7af283a1a673fb5d2290c",
+     "bytes": 1112678
+    },
+    {
+     "file": "sophia-jones-1541537987137161-thumb.jpg",
+     "md5": "6f7f29681c1f17a606a52e0172605a24",
+     "bytes": 279176
+    }
+   ],
+   "rank_impressoes": 11,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 6,
+   "dias_no_ar": 3.2,
+   "tier": "A-escalado",
+   "posicao_escalados": 10,
+   "arquivos_escalados": [
+    "10-sophia-jones-1541537987137161.mp4",
+    "10-sophia-jones-1541537987137161-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1560047599470034",
+   "status": "Ativo",
+   "pagina": "VolutPay",
+   "inicio": "Veiculação iniciada em 20 de ago de 2026",
+   "rodando_ha": "2.2 days",
+   "formato": "video",
+   "copy": "I couldn't believe what I was seeing! 😳 Every message revealed another lie. I never imagined the truth would be this heartbreaking. 💔",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Free Trial ✅",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1560047599470034",
+   "arquivos": [
+    {
+     "file": "volutpay-1560047599470034.mp4",
+     "md5": "9d91adb0a5b33990517f2ff94455724f",
+     "bytes": 959493
+    },
+    {
+     "file": "volutpay-1560047599470034-thumb.jpg",
+     "md5": "363056f9a0336d3bc8fe4cd21cf67176",
+     "bytes": 139253
+    }
+   ],
+   "rank_impressoes": 12,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 4,
+   "dias_no_ar": 2.2,
+   "tier": "A-escalado",
+   "posicao_escalados": 11,
+   "arquivos_escalados": [
+    "11-volutpay-1560047599470034.mp4",
+    "11-volutpay-1560047599470034-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1080058538040737",
+   "status": "Ativo",
+   "pagina": "VolutPay",
+   "inicio": "Veiculação iniciada em 20 de ago de 2026",
+   "rodando_ha": "2.2 days",
+   "formato": "video",
+   "copy": "I couldn't believe what I was seeing! 😳 Every message revealed another lie. I never imagined the truth would be this heartbreaking. 💔",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Free first analysis. No login needed.",
+   "descricao": "Free Trial ✅",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1080058538040737",
+   "arquivos": [
+    {
+     "file": "volutpay-1080058538040737.mp4",
+     "md5": "0d85cd759d982b3b51bb91d7085672bb",
+     "bytes": 1238437
+    },
+    {
+     "file": "volutpay-1080058538040737-thumb.jpg",
+     "md5": "b1019537c17a6c1b4a295cfed6bbd11d",
+     "bytes": 72449
+    }
+   ],
+   "rank_impressoes": 15,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 4,
+   "dias_no_ar": 2.2,
+   "tier": "A-escalado",
+   "posicao_escalados": 12,
+   "arquivos_escalados": [
+    "12-volutpay-1080058538040737.mp4",
+    "12-volutpay-1080058538040737-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "2139608616904424",
+   "status": "Ativo",
+   "pagina": "VolutPay",
+   "inicio": "Veiculação iniciada em 20 de ago de 2026",
+   "rodando_ha": "2.2 days",
+   "formato": "video",
+   "copy": "I couldn't believe what I was seeing! 😳 Every message revealed another lie. I never imagined the truth would be this heartbreaking. 💔",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Free Trial ✅",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2139608616904424",
+   "arquivos": [
+    {
+     "file": "volutpay-2139608616904424.mp4",
+     "md5": "f8c010a0c591f3d6831e01a41bc0fdf5",
+     "bytes": 2403601
+    },
+    {
+     "file": "volutpay-2139608616904424-thumb.jpg",
+     "md5": "f79f082fcdd4781d7bcdd41c61604055",
+     "bytes": 88714
+    }
+   ],
+   "rank_impressoes": 16,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 4,
+   "dias_no_ar": 2.2,
+   "tier": "A-escalado",
+   "posicao_escalados": 13,
+   "arquivos_escalados": [
+    "13-volutpay-2139608616904424.mp4",
+    "13-volutpay-2139608616904424-thumb.jpg"
+   ]
+  },
+  {
+   "ad_id": "1721731255729332",
+   "status": "Ativo",
+   "pagina": "VolutPay",
+   "inicio": "Veiculação iniciada em 20 de ago de 2026",
+   "rodando_ha": "2.2 days",
+   "formato": "video",
+   "copy": "I couldn't believe what I was seeing! 😳 Every message revealed another lie. I never imagined the truth would be this heartbreaking. 💔",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Free Trial ✅",
+   "descricao": "Free first analysis. No login needed.",
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1721731255729332",
+   "arquivos": [
+    {
+     "file": "volutpay-1721731255729332.mp4",
+     "md5": "ac72089e2185e0492765e258d93f6262",
+     "bytes": 1105148
+    },
+    {
+     "file": "volutpay-1721731255729332-thumb.jpg",
+     "md5": "16f6aa0c9beadf08733a02b51337eef4",
+     "bytes": 161086
+    }
+   ],
+   "rank_impressoes": 17,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "ads_da_pagina": 5,
+   "pecas_no_mesmo_angulo": 4,
+   "dias_no_ar": 2.2,
+   "tier": "B-volume-baixo"
+  },
+  {
+   "ad_id": "3199979683532834",
+   "status": "Ativo",
+   "pagina": "Gustagoat",
+   "inicio": "Veiculação iniciada em 22 de ago de 2026 · Tempo total ativo: 2h",
+   "rodando_ha": "0.2 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=3199979683532834",
+   "arquivos": [
+    {
+     "file": "gustagoat-3199979683532834.mp4",
+     "md5": "de7c841acfe30712958a97c097be4e07",
+     "bytes": 1105300
+    },
+    {
+     "file": "gustagoat-3199979683532834-thumb.jpg",
+     "md5": "a61bd81787006f34fe22e0c058a4de76",
+     "bytes": 455732
+    }
+   ],
+   "rank_impressoes": 19,
+   "baixo_volume": true,
+   "impressoes": null,
+   "ads_da_pagina": 9,
+   "pecas_no_mesmo_angulo": 12,
+   "dias_no_ar": 0.2,
+   "tier": "B-volume-baixo"
+  },
+  {
+   "ad_id": "28028650136777965",
+   "status": "Ativo",
+   "pagina": "Gustagoat",
+   "inicio": "Veiculação iniciada em 22 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": "0.2 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=28028650136777965",
+   "arquivos": [
+    {
+     "file": "gustagoat-28028650136777965.mp4",
+     "md5": "6581ddfe8f65b17f2cbfa706c5c198ab",
+     "bytes": 1038368
+    },
+    {
+     "file": "gustagoat-28028650136777965-thumb.jpg",
+     "md5": "13d312f3caeab28454a99286b393812e",
+     "bytes": 307222
+    }
+   ],
+   "rank_impressoes": 20,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "ads_da_pagina": 9,
+   "pecas_no_mesmo_angulo": 12,
+   "dias_no_ar": 0.2,
+   "tier": "B-volume-baixo"
+  },
+  {
+   "ad_id": "1384176317230598",
+   "status": "Ativo",
+   "pagina": "Gustagoat",
+   "inicio": "Veiculação iniciada em 22 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": "0.2 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": "2 anúncios usam esse criativo e esse texto",
+   "ad_url": "https://www.facebook.com/ads/library/?id=1384176317230598",
+   "arquivos": [
+    {
+     "file": "gustagoat-1384176317230598.mp4",
+     "md5": "346e2dd963ca53a24898d4bbc7d40291",
+     "bytes": 1024600
+    },
+    {
+     "file": "gustagoat-1384176317230598-thumb.jpg",
+     "md5": "a78df8561f813b057d0e699bedad252c",
+     "bytes": 246562
+    }
+   ],
+   "rank_impressoes": 21,
+   "baixo_volume": true,
+   "impressoes": null,
+   "ads_da_pagina": 9,
+   "pecas_no_mesmo_angulo": 12,
+   "dias_no_ar": 0.2,
+   "tier": "B-volume-baixo"
+  },
+  {
+   "ad_id": "1392130866394716",
+   "status": "Ativo",
+   "pagina": "Gustagoat",
+   "inicio": "Veiculação iniciada em 22 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": "0.2 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1392130866394716",
+   "arquivos": [
+    {
+     "file": "gustagoat-1392130866394716.mp4",
+     "md5": "1294cdeb0ca51ba6a1a7f523e6ea4917",
+     "bytes": 981471
+    },
+    {
+     "file": "gustagoat-1392130866394716-thumb.jpg",
+     "md5": "e1250e94567cd88039850ea406457ebd",
+     "bytes": 374358
+    }
+   ],
+   "rank_impressoes": 22,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "ads_da_pagina": 9,
+   "pecas_no_mesmo_angulo": 12,
+   "dias_no_ar": 0.2,
+   "tier": "B-volume-baixo"
+  },
+  {
+   "ad_id": "1394281849345342",
+   "status": "Ativo",
+   "pagina": "Gustagoat",
+   "inicio": "Veiculação iniciada em 21 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": "1.2 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1394281849345342",
+   "arquivos": [
+    {
+     "file": "gustagoat-1394281849345342.mp4",
+     "md5": "29e0dcfb740a6ce9ca3ef2f8375b5e81",
+     "bytes": 776279
+    },
+    {
+     "file": "gustagoat-1394281849345342-thumb.jpg",
+     "md5": "3df3604f1266d4bd3978c57aa0491484",
+     "bytes": 305993
+    }
+   ],
+   "rank_impressoes": 23,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "ads_da_pagina": 9,
+   "pecas_no_mesmo_angulo": 12,
+   "dias_no_ar": 1.2,
+   "tier": "B-volume-baixo"
+  },
+  {
+   "ad_id": "2163375947554632",
+   "status": "Ativo",
+   "pagina": "Gustagoat",
+   "inicio": "Veiculação iniciada em 21 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": "1.2 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=2163375947554632",
+   "arquivos": [
+    {
+     "file": "gustagoat-2163375947554632.mp4",
+     "md5": "734ff02fcd121dc5e1670517fc48ad4a",
+     "bytes": 762178
+    },
+    {
+     "file": "gustagoat-2163375947554632-thumb.jpg",
+     "md5": "44f937f11fc28d06d19d3d14387e5430",
+     "bytes": 254490
+    }
+   ],
+   "rank_impressoes": 24,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "ads_da_pagina": 9,
+   "pecas_no_mesmo_angulo": 12,
+   "dias_no_ar": 1.2,
+   "tier": "B-volume-baixo"
+  },
+  {
+   "ad_id": "1011226631934551",
+   "status": "Ativo",
+   "pagina": "Gustagoat",
+   "inicio": "Veiculação iniciada em 21 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": "1.2 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1011226631934551",
+   "arquivos": [
+    {
+     "file": "gustagoat-1011226631934551.mp4",
+     "md5": "739fc36b82f44d38bc4fdf51948725ab",
+     "bytes": 920539
+    },
+    {
+     "file": "gustagoat-1011226631934551-thumb.jpg",
+     "md5": "2d86867318b60173870b94393c23a84b",
+     "bytes": 371751
+    }
+   ],
+   "rank_impressoes": 25,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "ads_da_pagina": 9,
+   "pecas_no_mesmo_angulo": 12,
+   "dias_no_ar": 1.2,
+   "tier": "B-volume-baixo"
+  },
+  {
+   "ad_id": "1431371458899401",
+   "status": "Ativo",
+   "pagina": "Gustagoat",
+   "inicio": "Veiculação iniciada em 21 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": "1.2 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1431371458899401",
+   "arquivos": [
+    {
+     "file": "gustagoat-1431371458899401.mp4",
+     "md5": "2cc57e0f8af8ad03e656527d0c19f3b0",
+     "bytes": 963761
+    },
+    {
+     "file": "gustagoat-1431371458899401-thumb.jpg",
+     "md5": "82d73850745f568261bddb1acb7b8050",
+     "bytes": 248435
+    }
+   ],
+   "rank_impressoes": 26,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "ads_da_pagina": 9,
+   "pecas_no_mesmo_angulo": 12,
+   "dias_no_ar": 1.2,
+   "tier": "B-volume-baixo"
+  },
+  {
+   "ad_id": "1584670570033447",
+   "status": "Ativo",
+   "pagina": "Gustagoat",
+   "inicio": "Veiculação iniciada em 22 de ago de 2026 · Tempo total ativo: 9h",
+   "rodando_ha": "0.2 days",
+   "formato": "video",
+   "copy": "2.4M people already stopped torturing themselves with 'what if.' They chose to know.👇",
+   "destino": "GO.ZAPPDETECT.COM",
+   "headline": "Free Test ✅",
+   "descricao": null,
+   "cta": "Saiba mais",
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1584670570033447",
+   "arquivos": [
+    {
+     "file": "gustagoat-1584670570033447.mp4",
+     "md5": "ecffb52a0187b062edc36518808c255e",
+     "bytes": 1112578
+    },
+    {
+     "file": "gustagoat-1584670570033447-thumb.jpg",
+     "md5": "6f7f29681c1f17a606a52e0172605a24",
+     "bytes": 279176
+    }
+   ],
+   "rank_impressoes": 27,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "ads_da_pagina": 9,
+   "pecas_no_mesmo_angulo": 12,
+   "dias_no_ar": 0.2,
+   "tier": "B-volume-baixo"
+  },
+  {
+   "ad_id": "775104445592096",
+   "status": "Inativo",
+   "pagina": "Quinn",
+   "inicio": "1 a 2 de jun de 2026",
+   "rodando_ha": null,
+   "formato": "indisponivel",
+   "copy": null,
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=775104445592096&country=ALL&active_status=all",
+   "arquivos": [],
+   "nota": "Criativo removido pela Meta — conta/Página desabilitada por violar Padrões de Publicidade (<100 impressões).",
+   "rank_impressoes": 7,
+   "baixo_volume": false,
+   "impressoes": null,
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 0,
+   "dias_no_ar": 0.0,
+   "tier": "C-sem-criativo"
+  },
+  {
+   "ad_id": "4014906755477185",
+   "status": "Inativo",
+   "pagina": "Quinn",
+   "inicio": "1 a 2 de jun de 2026",
+   "rodando_ha": null,
+   "formato": "indisponivel",
+   "copy": null,
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=4014906755477185&country=ALL&active_status=all",
+   "arquivos": [],
+   "nota": "Criativo removido pela Meta — conta/Página desabilitada por violar Padrões de Publicidade (<100 impressões).",
+   "rank_impressoes": 13,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 0,
+   "dias_no_ar": 0.0,
+   "tier": "C-sem-criativo"
+  },
+  {
+   "ad_id": "978000991813219",
+   "status": "Inativo",
+   "pagina": "Quinn",
+   "inicio": "1 a 2 de jun de 2026",
+   "rodando_ha": null,
+   "formato": "indisponivel",
+   "copy": null,
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=978000991813219&country=ALL&active_status=all",
+   "arquivos": [],
+   "nota": "Criativo removido pela Meta — conta/Página desabilitada por violar Padrões de Publicidade (<100 impressões).",
+   "rank_impressoes": 14,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 0,
+   "dias_no_ar": 0.0,
+   "tier": "C-sem-criativo"
+  },
+  {
+   "ad_id": "1728965198100910",
+   "status": "Inativo",
+   "pagina": "Quinn",
+   "inicio": "1 a 2 de jun de 2026",
+   "rodando_ha": null,
+   "formato": "indisponivel",
+   "copy": null,
+   "destino": null,
+   "headline": null,
+   "descricao": null,
+   "cta": null,
+   "agrupamento": null,
+   "ad_url": "https://www.facebook.com/ads/library/?id=1728965198100910&country=ALL&active_status=all",
+   "arquivos": [],
+   "nota": "Criativo removido pela Meta — conta/Página desabilitada por violar Padrões de Publicidade (<100 impressões).",
+   "rank_impressoes": 18,
+   "baixo_volume": true,
+   "impressoes": "<100",
+   "ads_da_pagina": 4,
+   "pecas_no_mesmo_angulo": 0,
+   "dias_no_ar": 0.0,
+   "tier": "C-sem-criativo"
+  }
+ ]
+}

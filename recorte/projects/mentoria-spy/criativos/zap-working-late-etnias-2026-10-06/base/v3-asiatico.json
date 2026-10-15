@@ -1,0 +1,29 @@
+{
+  "id": "d21b6c6224af426a9215bd4ac3eea137",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Smartphone selfie video still. Keep EXACTLY the same camera position, framing, crop, head size, head position and pose as the image: a young man sitting on the edge of a bed, leaning slightly toward the phone, looking straight into the camera, mouth slightly open mid-sentence, plain black crew-neck t-shirt. REPLACE the man with a DIFFERENT man: an East Asian (Korean-American) man around 20 years old, straight black hair with a slight fringe, clean-shaven, light olive skin, dark eyes. Keep the SAME room exactly: white door on the left with a dark jacket hanging on it, beige wall, white bed sheets, same soft daylight. He is the only person in the image. No text, no captions, no logos, no watermark. Photorealistic, natural skin texture with visible pores, no retouching, ordinary person, not a model, front phone camera.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/22a47f89-1ef4-4ebb-bbf0-be7dbd6a13a4.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/zap-working-late-etnias-2026-10-06/base/v3-asiatico.png"
+  ],
+  "elapsed_ms": 66082,
+  "raw": {
+    "id": "d21b6c6224af426a9215bd4ac3eea137",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/22a47f89-1ef4-4ebb-bbf0-be7dbd6a13a4.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/d21b6c6224af426a9215bd4ac3eea137/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-06T01:08:38.438720923Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 62113
+    }
+  }
+}
