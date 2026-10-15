@@ -27,6 +27,9 @@ const ORQ_URL_INTERNO = process.env.ORQ_URL_INTERNO || `http://127.0.0.1:${PORT_
 const DOCKER = { imagem: process.env.AGENTE_IMAGEM || 'estudio-spy-agente', rede: process.env.AGENTE_REDE || 'estudio-interno',
   jobsHost: process.env.JOBS_HOST_DIR, cpus: process.env.AGENTE_CPUS || '2', memoria: process.env.AGENTE_MEMORIA || '4g' };
 const MODELO = process.env.MODELO_AGENTE || 'claude-opus-5-5';
+// No servidor a chave fica com nome próprio (nunca vai pros containers). O que roda aqui dentro (porteiro, modo local) recebe explicitamente.
+const CHAVE_ANTHROPIC = process.env.ANTHROPIC_API_KEY_PRODUTO || '';
+const AMBIENTE_SDK = CHAVE_ANTHROPIC ? { ...process.env, ANTHROPIC_API_KEY: CHAVE_ANTHROPIC } : process.env;
 const TETO_TOKENS_BASE = Number(process.env.TETO_TOKENS_BASE_USD || 8), TETO_TOKENS_POR_VIDEO = Number(process.env.TETO_TOKENS_POR_VIDEO_USD || 4);
 fs.mkdirSync(BASE, { recursive: true });
 if (process.argv.includes('--recorte-novo')) fs.rmSync(MOLDE, { recursive: true, force: true });
@@ -100,11 +103,11 @@ mensagem_do_cliente: ${JSON.stringify(texto.slice(0, MAX_MSG))}
 Responda exatamente uma palavra: PERMITIR ou BLOQUEAR.`;
   try {
     let saida = '';
-    for await (const m of query({ prompt, options: { model: 'claude-haiku-5-5', maxTurns: 1, allowedTools: [], settingSources: [], cwd: BASE } }))
+    for await (const m of query({ prompt, options: { model: 'claude-haiku-5-5', maxTurns: 1, allowedTools: [], settingSources: [], cwd: BASE, env: AMBIENTE_SDK } }))
       if (m.type === 'assistant') for (const b of m.message.content ?? []) if (b.type === 'text') saida += b.text;
     const r = saida.trim().toUpperCase().replace(/[^A-Z]/g, '');
     return r === 'PERMITIR' ? 'ok' : r === 'BLOQUEAR' ? 'bloquear' : 'falha';
-  } catch (e) { log({ erro: 'porteiro', msg: String(e) }); return 'falha'; }
+  } catch (e) { log({ erro: 'porteiro', msg: String(e?.message || e).slice(0, 500) }); return 'falha'; }
 }
 
 const INTERNOS = [
@@ -138,7 +141,7 @@ function finalizar(j) {
   return `Pedido finalizado: ${j.reserva} vídeo(s) entregue(s), ${devolve} devolvido(s) ao saldo.`;
 }
 const ctxFerramentas = { evento, meta: (j) => meta(j), log, saldo, ehAdmin: (e) => admin(e), finalizar };
-const AMBIENTE = { ...process.env, BASH_DEFAULT_TIMEOUT_MS: '300000', BASH_MAX_TIMEOUT_MS: '900000' };
+const AMBIENTE = { ...AMBIENTE_SDK, BASH_DEFAULT_TIMEOUT_MS: '300000', BASH_MAX_TIMEOUT_MS: '900000' };
 
 const tokensAtivos = new Map(); // token temporário → id do job (só enquanto a rodada dura)
 async function* linhasJson(stream) { let buf = ''; for await (const c of stream) { buf += c; let i;
@@ -175,6 +178,7 @@ async function* executarAgente(j, texto) {
       '-e', `ORQ_URL=${ORQ_URL_INTERNO}`, '-e', `ORQ_TOKEN=${token}`, '-e', `JOB_ID=${j.id}`,
       '-e', `ANTHROPIC_BASE_URL=${ORQ_URL_INTERNO}/anthropic/${token}`, '-e', `ANTHROPIC_API_KEY=${token}`,
       '-e', 'CLAUDE_CONFIG_DIR=/w/job/.sessao', '-e', 'HOME=/home/agente',
+      '-e', 'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1', '-e', 'DISABLE_TELEMETRY=1', '-e', 'DISABLE_AUTOUPDATER=1',   // sem internet no container
       DOCKER.imagem, 'node', '/app/agente-runner.mjs'], { stdio: ['pipe', 'pipe', 'pipe'] });
   }
   j.filho = filho;
@@ -387,7 +391,6 @@ http.createServer(async (req, res) => {
 // /interno/<token>/ferramenta/<nome>  → executa a ferramenta do Estúdio pro job dono do token
 // /anthropic/<token>/v1/...           → proxy pra API da Anthropic, com a chave do servidor (o container só tem o token)
 import('node:stream').then(({ Readable }) => {
-const CHAVE_ANTHROPIC = process.env.ANTHROPIC_API_KEY_PRODUTO || '';
 http.createServer(async (req, res) => {
   const p = req.url.split('?')[0].split('/').filter(Boolean);
   const j = jobs.get(tokensAtivos.get(p[1]));
