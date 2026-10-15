@@ -25,7 +25,7 @@ const EXECUTOR = process.env.EXECUTOR || 'local';
 const PORT_INTERNO = Number(process.env.PORT_INTERNO || PORT + 1);
 const ORQ_URL_INTERNO = process.env.ORQ_URL_INTERNO || `http://127.0.0.1:${PORT_INTERNO}`;
 const DOCKER = { imagem: process.env.AGENTE_IMAGEM || 'estudio-spy-agente', rede: process.env.AGENTE_REDE || 'estudio-interno',
-  jobsHost: process.env.JOBS_HOST_DIR, recorteHost: process.env.RECORTE_HOST_DIR, cpus: process.env.AGENTE_CPUS || '2', memoria: process.env.AGENTE_MEMORIA || '4g' };
+  jobsHost: process.env.JOBS_HOST_DIR, cpus: process.env.AGENTE_CPUS || '2', memoria: process.env.AGENTE_MEMORIA || '4g' };
 const MODELO = process.env.MODELO_AGENTE || 'claude-opus-5-5';
 const TETO_TOKENS_BASE = Number(process.env.TETO_TOKENS_BASE_USD || 8), TETO_TOKENS_POR_VIDEO = Number(process.env.TETO_TOKENS_POR_VIDEO_USD || 4);
 fs.mkdirSync(BASE, { recursive: true });
@@ -166,12 +166,12 @@ async function* executarAgente(j, texto) {
     filho = spawn(process.execPath, [path.join(AQUI, 'agente-runner.mjs')], { cwd: j.cwd, stdio: ['pipe', 'pipe', 'pipe'],
       env: { ...process.env, ORQ_URL: ORQ_URL_INTERNO, ORQ_TOKEN: token, JOB_ID: j.id } });
   } else {
-    if (!DOCKER.jobsHost || !DOCKER.recorteHost) throw new Error('JOBS_HOST_DIR e RECORTE_HOST_DIR são obrigatórios no modo docker');
+    if (!DOCKER.jobsHost) throw new Error('JOBS_HOST_DIR é obrigatório no modo docker');
     const nome = `estudio-job-${j.id}`;
     filho = spawn('docker', ['run', '--rm', '-i', '--name', nome, '--network', DOCKER.rede,
       '--cpus', DOCKER.cpus, '--memory', DOCKER.memoria, '--pids-limit', '512', '--cap-drop', 'ALL', '--security-opt', 'no-new-privileges',
       '--user', '1000:1000', '--read-only', '--tmpfs', '/tmp:rw,size=2g', '--tmpfs', '/home/agente:rw,size=256m',
-      '-v', `${DOCKER.recorteHost}:/w:ro`, '-v', `${path.join(DOCKER.jobsHost, j.id, 'job')}:/w/job:rw`, '-w', '/w',
+      '-v', `${path.join(DOCKER.jobsHost, j.id, 'job')}:/w/job:rw`, '-w', '/w',          // recorte embutido na imagem em /w (somente leitura)
       '-e', `ORQ_URL=${ORQ_URL_INTERNO}`, '-e', `ORQ_TOKEN=${token}`, '-e', `JOB_ID=${j.id}`,
       '-e', `ANTHROPIC_BASE_URL=${ORQ_URL_INTERNO}/anthropic/${token}`, '-e', `ANTHROPIC_API_KEY=${token}`,
       '-e', 'CLAUDE_CONFIG_DIR=/w/job/.sessao', '-e', 'HOME=/home/agente',
@@ -234,7 +234,7 @@ const nomeEntrada = (nome) => {
 function novoJob(dono, nomeArquivo) {
   const id = new Date().toISOString().slice(0, 16).replace(/[-:T]/g, '') + '-' + crypto.randomBytes(3).toString('hex');
   const cwd = path.join(BASE, id);
-  if (EXECUTOR === 'docker') fs.mkdirSync(cwd);                     // o recorte entra montado somente leitura no container
+  if (EXECUTOR === 'docker') fs.mkdirSync(cwd);                     // o recorte já está embutido na imagem do agente
   else execFileSync('cp', [process.platform === 'darwin' ? '-cR' : '-R', MOLDE, cwd]);
   for (const d of ['entrada', 'saida', 'trabalho']) fs.mkdirSync(path.join(cwd, 'job', d), { recursive: true });
   if (EXECUTOR === 'docker') execFileSync('chown', ['-R', '1000:1000', path.join(cwd, 'job')]);

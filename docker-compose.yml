@@ -1,0 +1,28 @@
+# Estúdio Spy no EasyPanel (serviço Compose, fonte Git, Build Path "/"). Passo a passo no README.md.
+# EasyPanel roda `docker compose up --build -d` a cada deploy: as duas imagens são reconstruídas.
+# Domínio e HTTPS ficam no EasyPanel (Domains → serviço "orquestrador", porta 4330). Não use `ports` aqui.
+services:
+  orquestrador:
+    build: { context: ., dockerfile: deploy/Dockerfile.orquestrador }
+    restart: unless-stopped
+    env_file: [.env]                 # o EasyPanel cria a partir do .env.example (aba Environment); nunca vai pro git
+    environment:
+      COOKIE_SECURE: "1"
+      JOBS_HOST_DIR: /srv/estudio/jobs
+    volumes:
+      - /srv/estudio/jobs:/data/jobs                      # pedidos: mesma pasta no host e no orquestrador
+      - /var/run/docker.sock:/var/run/docker.sock         # o orquestrador cria um container por pedido
+    networks: [default, estudio-interno]
+
+  # Imagem do container de cada pedido (com o recorte embutido). Sobe, sai na hora e fica só a imagem.
+  agente:
+    image: estudio-spy-agente
+    build: { context: ., dockerfile: deploy/Dockerfile.agente }
+    command: ["true"]
+    restart: "no"
+    network_mode: none
+
+networks:
+  estudio-interno:
+    name: estudio-interno
+    internal: true                   # sem saída pra internet: os pedidos só alcançam o orquestrador

@@ -1,5 +1,6 @@
 # Imagem do container de UM pedido. Roda o runner do agente; não tem chave nenhuma e não tem internet
-# (a rede estudio-interno só alcança o orquestrador). O recorte entra montado somente leitura em /w e a pasta do pedido em /w/job.
+# (a rede estudio-interno só alcança o orquestrador). O recorte vem EMBUTIDO em /w (o container roda com --read-only) e a pasta
+# do pedido é montada em /w/job. Atualizar o recorte = novo deploy (a imagem é reconstruída).
 FROM node:24-bookworm-slim
 
 # Tudo que o agente já usou nos pedidos: ffmpeg, Python com visão (opencv, mediapipe, numpy, pillow, scipy) e fontes livres.
@@ -24,6 +25,8 @@ RUN npm ci --omit=dev && npm cache clean --force
 COPY site/agente-runner.mjs site/ferramentas-spec.mjs site/trava.mjs ./
 
 RUN useradd -u 1000 -m -d /home/agente agente || true
+COPY recorte/ /w/
+RUN mkdir -p /w/job && chown 1000:1000 /w/job
 USER 1000:1000
 WORKDIR /w
 CMD ["node", "/app/agente-runner.mjs"]

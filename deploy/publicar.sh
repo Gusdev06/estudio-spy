@@ -9,7 +9,7 @@ MSG="${1:-atualiza estúdio spy}"
 mkdir -p "$APP"
 
 rsync -a --delete --exclude node_modules --exclude 'deploy/dist' --exclude '.env' \
-  "$FASE0/package.json" "$FASE0/package-lock.json" "$FASE0/CLAUDE-recorte.md" "$FASE0/site" "$FASE0/deploy" "$APP/"
+  "$FASE0/package.json" "$FASE0/package-lock.json" "$FASE0/CLAUDE-recorte.md" "$FASE0/docker-compose.yml" "$FASE0/.env.example" "$FASE0/site" "$FASE0/deploy" "$APP/"
 rm -rf "$APP/recorte" && bash "$FASE0/montar-recorte.sh" "$APP/recorte" >/dev/null
 cp "$FASE0/deploy/README.md" "$APP/README.md"
 printf 'node_modules/\ndeploy/.env\n.env\n*.log\n.DS_Store\n' > "$APP/.gitignore"
