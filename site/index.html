@@ -39,6 +39,10 @@
   .admin { margin-top:30px; } .admin table { width:100%; border-collapse:collapse; font-size:14px; } .admin td,.admin th { border-top:1px solid var(--borda); padding:7px 4px; text-align:left; }
   .admin input { width:70px; margin:0; padding:6px; } .admin button { padding:6px 10px; font-size:13px; }
   .saldo { color:var(--acento); font-size:13px; }
+  .termos { display:flex; gap:8px; align-items:flex-start; font-size:13px; color:var(--suave); margin-top:12px; } .termos input { width:auto; margin:2px 0 0; }
+  .pacotes { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-top:18px; }
+  .pacote { display:flex; flex-direction:column; gap:6px; padding:18px; border:1px solid var(--borda); border-radius:14px; background:var(--painel); text-decoration:none; color:var(--texto); }
+  .pacote:hover { border-color:var(--acento); } .pacote span { color:var(--acento); font-size:22px; font-weight:700; } .pacote small { color:var(--suave); }
   .compor { position:fixed; left:0; right:0; bottom:0; background:linear-gradient(transparent,var(--bg) 30%); padding:24px 16px 16px; }
   .compor .in { max-width:860px; margin:0 auto; display:flex; gap:10px; align-items:flex-end; }
   .compor textarea { margin:0; min-height:52px; } .pensando { color:var(--suave); font-size:14px; margin:12px 4px; }
@@ -46,7 +50,7 @@
 </style>
 </head>
 <body>
-<header><b>Estúdio <i>Spy</i></b><a href="#" style="font-size:13px" id="novo">novo pedido</a><span class="saldo" id="saldo"></span><span class="st" id="st"></span><a href="#" id="sair" style="font-size:13px" hidden>sair</a></header>
+<header><b>Estúdio <i>Spy</i></b><a href="#" style="font-size:13px" id="novo">novo pedido</a><span class="saldo" id="saldo"></span><a href="#/comprar" id="comprar" style="font-size:13px" hidden>comprar vídeos</a><span class="st" id="st"></span><a href="#" id="sair" style="font-size:13px" hidden>sair</a></header>
 <main id="app"></main>
 <div class="compor" id="compor" hidden><div class="in">
   <textarea id="resp" placeholder="Escreva sua mensagem"></textarea><button id="enviar">Enviar</button>
@@ -60,7 +64,8 @@ let timer = null, ultimo = -1, jobAtual = null, eu = null;
 let det = false; try { det = localStorage.getItem('det') === '1'; } catch {}
 const detalhes = () => !!(eu?.admin && det);
 function mostraSaldo() {
-  const s = $('#saldo'); if (!eu) { s.textContent = ''; return; }
+  const s = $('#saldo'); if (!eu) { s.textContent = ''; $('#comprar').hidden = true; return; }
+  $('#comprar').hidden = !!eu.admin;
   if (!eu.admin) { s.textContent = `${eu.videos} vídeo${eu.videos === 1 ? '' : 's'} no saldo`; return; }
   s.innerHTML = `admin · <a href="#" id="det" style="font-size:13px">${det ? 'esconder detalhes' : 'ver detalhes'}</a>`;
   $('#det').onclick = (ev) => { ev.preventDefault(); det = !det; try { localStorage.setItem('det', det ? '1' : '0'); } catch {} if (jobAtual) job(jobAtual); else mostraSaldo(); };
@@ -73,17 +78,42 @@ function login() {
   app.innerHTML = `<h1 id="lt">Entrar</h1><p class="sub" id="ls">Entre com o seu e-mail e senha.</p>
   <div class="card" style="max-width:420px"><input id="em" type="email" placeholder="e-mail" autocomplete="email">
   <input id="se" type="password" placeholder="senha" autocomplete="current-password">
-  <div class="linha"><button id="ent">Entrar</button><a href="#" id="troca" style="font-size:13px">criar conta</a></div>
+  <label id="lt2" class="termos" hidden><input type="checkbox" id="aceito"> Li e aceito os <a href="/termos" target="_blank">termos de uso e a política de privacidade</a>.</label>
+  <div class="linha"><button id="ent">Entrar</button><a href="#" id="troca" style="font-size:13px">criar conta</a><a href="#" id="esq" style="font-size:13px;margin-left:auto">esqueci a senha</a></div>
   <p id="lerro" class="erro" style="font-size:13px;margin:10px 0 0"></p></div>`;
+  $('#esq').onclick = async (e) => { e.preventDefault(); const em = $('#em').value.trim();
+    if (!em) return $('#lerro').textContent = 'Digite o seu e-mail acima e clique de novo em "esqueci a senha".';
+    const r = await fetch('/api/esqueci', { method:'POST', body: JSON.stringify({ email: em }) }); const d = await r.json().catch(() => ({}));
+    $('#lerro').className = r.ok ? 'ok' : 'erro'; $('#lerro').innerHTML = esc(d.msg || d.erro || 'Tente de novo.') + (d.suporte ? ` <a href="${esc(d.suporte)}" target="_blank">Falar com o suporte</a>` : ''); };
   $('#troca').onclick = (e) => { e.preventDefault(); criar = !criar; $('#lerro').textContent = '';
     $('#lt').textContent = criar ? 'Criar conta' : 'Entrar'; $('#ls').textContent = criar ? 'Senha com 8 ou mais caracteres.' : 'Entre com o seu e-mail e senha.';
     $('#ent').textContent = criar ? 'Criar conta' : 'Entrar'; $('#troca').textContent = criar ? 'já tenho conta' : 'criar conta';
-    $('#se').autocomplete = criar ? 'new-password' : 'current-password'; };
+    $('#se').autocomplete = criar ? 'new-password' : 'current-password'; $('#lt2').hidden = !criar; $('#esq').hidden = criar; };
   const ir = async () => {
-    const r = await fetch(criar ? '/api/cadastrar' : '/api/entrar', { method:'POST', body: JSON.stringify({ email: $('#em').value, senha: $('#se').value }) });
+    const r = await fetch(criar ? '/api/cadastrar' : '/api/entrar', { method:'POST', body: JSON.stringify({ email: $('#em').value, senha: $('#se').value, termos: criar ? $('#aceito').checked : undefined }) });
     const d = await r.json(); if (!r.ok) return $('#lerro').textContent = d.erro; eu = d; rota();
   };
   $('#ent').onclick = ir; $('#se').onkeydown = (e) => { if (e.key === 'Enter') ir(); };
+}
+
+function novaSenha(tok) {
+  clearInterval(timer); $('#compor').hidden = true;
+  app.innerHTML = `<h1>Senha nova</h1><p class="sub">Escolha uma senha com 8 ou mais caracteres.</p>
+  <div class="card" style="max-width:420px"><input id="ns" type="password" placeholder="senha nova" autocomplete="new-password">
+  <div class="linha"><button id="nsb">Salvar e entrar</button></div><p id="nse" class="erro" style="font-size:13px;margin:10px 0 0"></p></div>`;
+  $('#nsb').onclick = async () => { const r = await fetch('/api/nova-senha', { method:'POST', body: JSON.stringify({ token: tok, senha: $('#ns').value }) });
+    const d = await r.json().catch(() => ({})); if (!r.ok) return $('#nse').textContent = d.erro || 'Não deu certo.'; eu = d; location.hash = ''; };
+}
+
+async function comprar() {
+  clearInterval(timer); jobAtual = null; $('#compor').hidden = true; mostraSaldo();
+  const { pacotes, suporte } = await (await fetch('/api/pacotes')).json();
+  app.innerHTML = `<h1>Comprar vídeos</h1><p class="sub">Cada vídeo do saldo = 1 variação pronta entregue. Se um pedido usar menos, a sobra volta pro saldo.</p>
+  <p class="sub"><b>Importante:</b> no pagamento, use o mesmo e-mail da sua conta (${esc(eu.email)}). O saldo cai sozinho em até 1 minuto depois da aprovação.</p>
+  <div class="pacotes">${pacotes.length ? pacotes.map((p) => `<a class="pacote" href="${esc(p.link)}" target="_blank" rel="noopener"><b>${esc(p.nome)}</b><span>${esc(p.preco)}</span><small>${p.videos} vídeos</small></a>`).join('')
+    : '<p class="sub">Os pacotes ainda não estão disponíveis.</p>'}</div>
+  ${suporte ? `<p class="sub" style="margin-top:20px">Dúvida ou problema com o pagamento? <a href="${esc(suporte)}" target="_blank">Fale com o suporte</a>.</p>` : ''}
+  <p><a href="#">voltar</a></p>`;
 }
 
 function home() {
@@ -113,7 +143,14 @@ async function painelAdmin() {
   const us = await (await api('/api/admin/usuarios')).json();
   $('#admin').innerHTML = `<small>Clientes (admin)</small><table><tr><th>e-mail</th><th>vídeos</th><th>pedidos</th><th>custo US$</th><th></th></tr>` +
     us.map((u) => `<tr><td>${esc(u.email)}${u.admin ? ' · admin' : ''}</td><td>${u.admin ? '∞' : u.videos}</td><td>${u.pedidos}</td><td>${u.custo.toFixed(2)}</td>
-      <td>${u.admin ? '' : `<input type="number" value="10" data-e="${esc(u.email)}"> <button data-e="${esc(u.email)}">creditar</button>`}</td></tr>`).join('') + '</table>';
+      <td>${u.admin ? '' : `<input type="number" value="10" data-e="${esc(u.email)}"> <button data-e="${esc(u.email)}">creditar</button>`} <button data-s="${esc(u.email)}">link de senha</button></td></tr>`).join('') + '</table><p id="linkSenha" class="ok"></p><div id="pags"></div>';
+  $('#admin').querySelectorAll('button[data-s]').forEach((b) => b.onclick = async () => {
+    const r = await api('/api/admin/link-senha', { method:'POST', body: JSON.stringify({ email: b.dataset.s }) }); const d = await r.json();
+    $('#linkSenha').textContent = r.ok ? `Mande pra ${b.dataset.s} (vale ${d.validade}): ${d.link}` : d.erro; });
+  const pg = await (await api('/api/admin/pagamentos')).json(); const pend = Object.entries(pg.pendentes || {});
+  $('#pags').innerHTML = `<small>Pagamentos Cakto (últimos 100)</small><table><tr><th>quando</th><th>e-mail</th><th>vídeos</th><th>situação</th></tr>` +
+    (pg.pedidos.map((x) => `<tr><td>${esc((x.t || '').slice(0, 16).replace('T', ' '))}</td><td>${esc(x.email)}</td><td>${x.videos}</td><td>${esc(x.estornado ? ({ refund: 'reembolsado', chargeback: 'chargeback' }[x.estornado] || x.estornado) : x.obs || (x.conta || !(pg.pendentes || {})[x.email] ? 'creditado' : 'aguardando cadastro'))}</td></tr>`).join('') || '<tr><td colspan="4">nenhum ainda</td></tr>') + '</table>' +
+    (pend.length ? `<small>Crédito esperando o cliente criar conta: ${pend.map(([e, n]) => esc(e) + ' (' + n + ')').join(', ')}</small>` : '');
   $('#admin').querySelectorAll('button[data-e]').forEach((b) => b.onclick = async () => {
     const n = $('#admin').querySelector(`input[data-e="${b.dataset.e}"]`).value;
     const r = await api('/api/admin/creditar', { method:'POST', body: JSON.stringify({ email: b.dataset.e, videos: Number(n) }) });
@@ -156,7 +193,7 @@ function job(id) {
       if (e.tipo === 'fim' && e.custo != null && detalhes()) chat.insertAdjacentHTML('beforeend', `<div class="fim">admin · rodada ${e.dur ? (e.dur / 60000).toFixed(1) + ' min (modelo ' + (e.durModelo / 60000).toFixed(1) + ' · vídeo/ferramentas ' + ((e.dur - e.durModelo) / 60000).toFixed(1) + ') · ' + e.passos + ' passos · ' : ''}tokens acumulados US$ ${e.custo.toFixed(2)}</div>`);
       if (e.tipo === 'erro') chat.insertAdjacentHTML('beforeend', `<p class="erro">${esc(e.texto)}</p>`);
       if (e.tipo === 'aprovacao') chat.insertAdjacentHTML('beforeend', `<div class="aprov" id="ap-${esc(e.id)}"><p>${esc(e.resumo)}</p>
-        <p><b>Usa ${e.videos} vídeo${e.videos === 1 ? '' : 's'} do seu saldo.</b> <small>${eu.admin ? '' : `Você tem ${eu.videos}.`}</small></p>
+        <p><b>Usa ${e.videos} vídeo${e.videos === 1 ? '' : 's'} do seu saldo.</b> <small>${eu.admin ? '' : `Você tem ${eu.videos}.`}</small>${!eu.admin && eu.videos < e.videos ? ' <a href="#/comprar">comprar vídeos</a>' : ''}</p>
         <button data-ap="${esc(e.id)}">Aprovar</button> <small class="aperro"></small></div>`);
       if (e.tipo === 'aprovado') { const c = document.getElementById('ap-' + e.ref); if (c) c.innerHTML = `<p class="ok">✓ Aprovado · ${e.videos} vídeo${e.videos === 1 ? '' : 's'} reservado${e.videos === 1 ? '' : 's'}</p>`; }
       if (e.tipo === 'entregue') chat.insertAdjacentHTML('beforeend', `<p class="ok">✓ Entregue: ${esc(e.caminho.split('/').pop())}</p>${midias(id, e.caminho)}`);
@@ -184,8 +221,10 @@ $('#enviar').onclick = async () => {
 function alertaErro(t) { const p = document.createElement('p'); p.className = 'erro'; p.textContent = t; $('#chat')?.append(p); }
 $('#resp').onkeydown = (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) $('#enviar').click(); };
 const rota = async () => {
+  const ns = location.hash.match(/^#\/senha\/([\w-]+)$/); if (ns) return novaSenha(ns[1]);
   if (!eu) { try { eu = await (await api('/api/eu')).json(); } catch { return; } }
-  const m = location.hash.match(/^#\/job\/(.+)$/); m ? job(m[1]) : home();
+  const m = location.hash.match(/^#\/job\/(.+)$/); if (m) return job(m[1]);
+  if (location.hash === '#/comprar') return comprar(); home();
 };
 $('#sair').onclick = async (e) => { e.preventDefault(); await fetch('/api/sair', { method:'POST' }); eu = null; mostraSaldo(); location.hash = ''; login(); };
 addEventListener('hashchange', rota); rota();

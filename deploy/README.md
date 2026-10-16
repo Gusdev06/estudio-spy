@@ -59,3 +59,14 @@ Se algo falhar, mande o log do serviço `orquestrador` (aba Logs) e o arquivo `/
 | `PREVIA_USD` | 1 | gasto de mídia permitido antes da aprovação |
 | `TETO_MIDIA_POR_VIDEO_USD` | 6 | teto de mídia por vídeo aprovado |
 | `TETO_TOKENS_BASE_USD` / `TETO_TOKENS_POR_VIDEO_USD` | 8 / 4 | teto de tokens por pedido |
+
+## Venda (16/10/2026)
+1. Na Cakto, crie um produto por pacote (ou um produto com várias ofertas). O id da oferta é o fim do link `pay.cakto.com.br/<id>`.
+2. Ambiente do EasyPanel:
+   - `PACOTES_CAKTO=[{"oferta":"<id>","videos":5,"nome":"5 vídeos","preco":"R$ 97","link":"https://pay.cakto.com.br/<id>"}, …]` (uma linha)
+   - `URL_PUBLICA=https://<domínio do Estúdio>` · `SUPORTE_URL=https://wa.me/55…` · `CAKTO_WEBHOOK_SECRET=<secret do webhook>`
+3. Na Cakto (Apps → Webhooks), crie o webhook com a URL `https://<domínio>/api/cakto` e os eventos `purchase_approved`, `refund` e `chargeback`. Copie o secret pro Ambiente e implante.
+4. Teste: "Testar webhook" na Cakto deve dar 200 (o pedido de teste não credita ninguém, porque a oferta do exemplo não está nos pacotes). Depois, 1 compra real de 1 pacote com o e-mail de uma conta: o saldo sobe sozinho e aparece em "Pagamentos Cakto" no admin.
+- Comprador sem conta: o crédito fica guardado e entra quando ele cria a conta com o mesmo e-mail.
+- Esqueci a senha: sem e-mail configurado, o cliente é mandado pro suporte e o admin gera o link no painel ("link de senha", vale 1 hora). Com `RESEND_API_KEY` + `EMAIL_REMETENTE` + `URL_PUBLICA`, o link vai por e-mail.
+- Backup diário de saldo e pagamentos em `/srv/estudio/jobs/_backup/` (30 dias). Pedidos sem atividade há `RETENCAO_DIAS` (30) são apagados.

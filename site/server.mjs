@@ -43,14 +43,33 @@ process.on('unhandledRejection', (e) => { log({ erro: 'unhandled', msg: String(e
 
 // ---------- contas ----------
 let usuarios = fs.existsSync(USUARIOS) ? JSON.parse(fs.readFileSync(USUARIOS, 'utf8')) : {};
-const salvarUsuarios = () => fs.writeFileSync(USUARIOS, JSON.stringify(usuarios, null, 1), { mode: 0o600 });
+// Escrita atômica (tmp + rename) e cópia diária em _backup/ (guarda 30 dias): o saldo dos clientes mora aqui.
+const gravar = (arq, o) => { const tmp = arq + '.tmp'; fs.writeFileSync(tmp, JSON.stringify(o, null, 1), { mode: 0o600 }); fs.renameSync(tmp, arq); };
+const BACKUP = path.join(BASE, '_backup'); fs.mkdirSync(BACKUP, { recursive: true, mode: 0o700 });
+function backupDiario() {
+  const dia = new Date().toISOString().slice(0, 10);
+  for (const arq of [USUARIOS, PAGAMENTOS]) { const dest = path.join(BACKUP, `${path.basename(arq, '.json')}-${dia}.json`);
+    if (fs.existsSync(arq) && !fs.existsSync(dest)) fs.copyFileSync(arq, dest); }
+  for (const f of fs.readdirSync(BACKUP)) if (Date.now() - fs.statSync(path.join(BACKUP, f)).mtimeMs > 30 * 86400e3) fs.rmSync(path.join(BACKUP, f));
+}
+const salvarUsuarios = () => { gravar(USUARIOS, usuarios); try { backupDiario(); } catch (e) { log({ erro: 'backup', msg: String(e) }); } };
+// Pagamentos da Cakto: id do pedido → { email, videos, evento }. Crédito de quem ainda não tem conta fica em pendentes[email].
+const PAGAMENTOS = path.join(BASE, '_pagamentos.json');
+let pagamentos = fs.existsSync(PAGAMENTOS) ? JSON.parse(fs.readFileSync(PAGAMENTOS, 'utf8')) : { pedidos: {}, pendentes: {} };
+const salvarPagamentos = () => gravar(PAGAMENTOS, pagamentos);
+const TERMOS_VERSAO = '2026-10-16';
 const scrypt = promisify(crypto.scrypt);
 const hash = async (senha, sal) => (await scrypt(String(senha), sal, 32)).toString('hex');
 const confere = (a, b) => a.length === b.length && crypto.timingSafeEqual(Buffer.from(a, 'hex'), Buffer.from(b, 'hex'));
 const SESSAO_MS = 7 * 24 * 3600e3;
-const sessoes = new Map(); // token → { email, ate }
-const quem = (req) => { const tok = (/(?:^|;\s*)sessao=([\w-]+)/.exec(req.headers.cookie || '') || [])[1]; const s = tok && sessoes.get(tok);
-  if (!s) return null; if (s.ate < Date.now()) { sessoes.delete(tok); return null; } return s.email; };
+// Sessões persistem em disco (só o hash do token) pra um deploy não deslogar todo mundo.
+const SESSOES = path.join(BASE, '_sessoes.json');
+const hTok = (t) => crypto.createHash('sha256').update(t).digest('hex');
+const sessoes = new Map(fs.existsSync(SESSOES) ? Object.entries(JSON.parse(fs.readFileSync(SESSOES, 'utf8'))).filter(([, s]) => s.ate > Date.now()) : []); // hash → { email, ate }
+const salvarSessoes = () => gravar(SESSOES, Object.fromEntries(sessoes));
+const abrirSessao = (email) => { const tok = crypto.randomBytes(24).toString('base64url'); sessoes.set(hTok(tok), { email, ate: Date.now() + SESSAO_MS }); salvarSessoes(); return tok; };
+const quem = (req) => { const tok = (/(?:^|;\s*)sessao=([\w-]+)/.exec(req.headers.cookie || '') || [])[1]; const s = tok && sessoes.get(hTok(tok));
+  if (!s || !usuarios[s.email]) return null; if (s.ate < Date.now()) { sessoes.delete(hTok(tok)); return null; } return s.email; };
 const admin = (email) => ADMINS.includes(email) || !!usuarios[email]?.admin;
 const tentativas = new Map(); // chave (ip|email) → [timestamps]
 const estourou = (chave, max = 10, janela = 15 * 60e3) => { const agora = Date.now();
@@ -260,6 +279,69 @@ function novoJob(dono, nomeArquivo) {
 }
 const apagarJob = (j) => { jobs.delete(j.id); fs.rmSync(j.cwd, { recursive: true, force: true }); };
 
+// ---------- venda: pacotes (Cakto), e-mail, senha nova ----------
+// PACOTES_CAKTO no Ambiente: JSON [{"oferta":"<id da oferta ou short_id do produto>","videos":5,"nome":"5 vídeos","preco":"R$ 97","link":"https://pay.cakto.com.br/..."}]
+let PACOTES = []; try { PACOTES = JSON.parse(process.env.PACOTES_CAKTO || '[]'); } catch { log({ erro: 'PACOTES_CAKTO não é JSON válido' }); }
+const SUPORTE = process.env.SUPORTE_URL || '';
+const URL_PUBLICA = (process.env.URL_PUBLICA || '').replace(/\/$/, '');
+const EMAIL_ATIVO = !!(process.env.RESEND_API_KEY && process.env.EMAIL_REMETENTE && URL_PUBLICA);
+async function enviarEmail(para, assunto, texto) {
+  const r = await fetch('https://api.resend.com/emails', { method: 'POST', headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ from: process.env.EMAIL_REMETENTE, to: [para], subject: assunto, text: texto }) });
+  if (!r.ok) throw new Error(`resend ${r.status}: ${(await r.text()).slice(0, 200)}`);
+}
+const novoReset = (e) => { const tok = crypto.randomBytes(24).toString('base64url'); usuarios[e].reset = { h: hTok(tok), ate: Date.now() + 3600e3 }; salvarUsuarios(); return tok; };
+function aplicarPendente(e) {
+  const n = pagamentos.pendentes[e]; if (!n) return;
+  usuarios[e].videos = saldo(e) + n; delete pagamentos.pendentes[e]; salvarPagamentos(); log({ pendenteAplicado: e, videos: n });
+}
+const pacoteDe = (d) => PACOTES.find((p) => [d.offer?.id, d.product?.short_id, d.product?.id].filter(Boolean).includes(p.oferta));
+// Webhook da Cakto: assinatura HMAC (X-Cakto-Signature) ou, na falta, o secret do corpo. Idempotente pelo id do pedido.
+async function webhookCakto(req, res) {
+  const SEGREDO = process.env.CAKTO_WEBHOOK_SECRET || '';
+  const pedaços = []; let n = 0; for await (const c of req) { n += c.length; if (n > 1e6) return json(res, { erro: 'grande' }, 413); pedaços.push(c); }
+  const cru = Buffer.concat(pedaços); let corpoJ; try { corpoJ = JSON.parse(cru.toString('utf8')); } catch { return json(res, { erro: 'json' }, 400); }
+  const igual = (a, b) => { const x = Buffer.from(String(a)), y = Buffer.from(String(b)); return x.length === y.length && crypto.timingSafeEqual(x, y); };
+  const ts = req.headers['x-cakto-timestamp'], sig = req.headers['x-cakto-signature'];
+  let valido = false;
+  if (SEGREDO && ts && sig && Math.abs(Date.now() / 1000 - Number(ts)) <= 300) {
+    const esperado = 'v1=' + crypto.createHmac('sha256', SEGREDO).update(`${ts}.`).update(cru).digest('hex');
+    valido = String(sig).split(',').some((s) => igual(s.trim(), esperado));
+  }
+  if (!valido && SEGREDO && corpoJ.secret) valido = igual(corpoJ.secret, SEGREDO);
+  if (!valido) { log({ cakto: 'assinatura inválida', ip: ip(req) }); return json(res, { erro: 'não autorizado' }, 401); }
+  const evento = corpoJ.event; const lista = Array.isArray(corpoJ.data) ? corpoJ.data : [corpoJ.data];
+  for (const d of lista) {
+    if (!d?.id || !d.customer?.email) continue;
+    const e = String(d.customer.email).trim().toLowerCase(); const pac = pacoteDe(d); const reg = pagamentos.pedidos[d.id];
+    if (evento === 'purchase_approved') {
+      if (reg) continue;                                                         // já creditado (reenvio da Cakto)
+      if (!pac) { log({ cakto: 'oferta sem pacote', oferta: d.offer?.id, produto: d.product?.short_id, pedido: d.id }); pagamentos.pedidos[d.id] = { email: e, videos: 0, evento, t: new Date().toISOString(), obs: 'oferta sem pacote' }; continue; }
+      if (usuarios[e]) usuarios[e].videos = saldo(e) + pac.videos; else pagamentos.pendentes[e] = (pagamentos.pendentes[e] || 0) + pac.videos;
+      pagamentos.pedidos[d.id] = { email: e, videos: pac.videos, evento, t: new Date().toISOString(), valor: d.amount, conta: !!usuarios[e] };
+      log({ cakto: 'creditado', email: e, videos: pac.videos, pedido: d.id });
+    } else if (['refund', 'chargeback'].includes(evento)) {
+      if (!reg || reg.estornado || !reg.videos) continue;
+      if (usuarios[e]) usuarios[e].videos = Math.max(0, saldo(e) - reg.videos);
+      else if (pagamentos.pendentes[e]) pagamentos.pendentes[e] = Math.max(0, pagamentos.pendentes[e] - reg.videos);
+      reg.estornado = evento; reg.tEstorno = new Date().toISOString(); log({ cakto: 'estornado', email: e, videos: reg.videos, pedido: d.id, evento });
+    }
+  }
+  salvarPagamentos(); salvarUsuarios(); return json(res, { ok: true });
+}
+
+// ---------- limpeza: pedidos parados há mais de RETENCAO_DIAS (30) somem do disco ----------
+const RETENCAO_DIAS = Number(process.env.RETENCAO_DIAS || 30);
+function limparAntigos() {
+  for (const j of [...jobs.values()]) {
+    if (j.status === 'rodando') continue;
+    const ult = j.eventos.filter((e) => e.tipo !== 'erro').at(-1)?.t || fs.statSync(j.cwd).mtimeMs;   // o aviso de reinício não conta como atividade
+    if (Date.now() - ult > RETENCAO_DIAS * 86400e3) { log({ limpeza: j.id, dono: j.dono }); apagarJob(j); }
+  }
+}
+setTimeout(() => { try { limparAntigos(); backupDiario(); } catch (e) { log({ erro: 'limpeza', msg: String(e) }); } }, 60e3);
+setInterval(() => { try { limparAntigos(); backupDiario(); } catch (e) { log({ erro: 'limpeza', msg: String(e) }); } }, 6 * 3600e3);
+
 // ---------- http ----------
 const MIDIA = { '.mp4': 'video/mp4', '.mov': 'video/quicktime', '.m4v': 'video/mp4', '.webm': 'video/webm', '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp' };
@@ -306,18 +388,49 @@ http.createServer(async (req, res) => {
       return res.end(fs.readFileSync(path.join(AQUI, 'index.html')));
     }
     if (req.method === 'POST' && (u.pathname === '/api/entrar' || u.pathname === '/api/cadastrar')) {
-      const { email, senha } = await corpo(req, 4e3); const e = String(email || '').trim().toLowerCase().slice(0, 200);
+      const { email, senha, termos } = await corpo(req, 4e3); const e = String(email || '').trim().toLowerCase().slice(0, 200);
       if (estourou('ip:' + ip(req), 20) || estourou('email:' + e, 10)) return json(res, { erro: 'Muitas tentativas. Espere 15 minutos.' }, 429);
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e) || !senha) return json(res, { erro: 'E-mail ou senha incorretos.' }, 401);
       if (u.pathname === '/api/cadastrar') {
         if (String(senha).length < 8) return json(res, { erro: 'Use uma senha com 8+ caracteres.' }, 400);
+        if (termos !== true) return json(res, { erro: 'Pra criar a conta, aceite os termos de uso.' }, 400);
         if (usuarios[e]) return json(res, { erro: 'Não foi possível criar a conta com esse e-mail. Tente entrar.' }, 400);
         const sal = crypto.randomBytes(16).toString('hex');
-        usuarios[e] = { sal, hash: await hash(senha, sal), criado: new Date().toISOString() }; salvarUsuarios();
+        usuarios[e] = { sal, hash: await hash(senha, sal), criado: new Date().toISOString(), termos: TERMOS_VERSAO };
+        aplicarPendente(e); salvarUsuarios();
       } else if (!usuarios[e] || !confere(await hash(senha, usuarios[e].sal), usuarios[e].hash)) {
         return json(res, { erro: 'E-mail ou senha incorretos.' }, 401);
       }
-      const tok = crypto.randomBytes(24).toString('base64url'); sessoes.set(tok, { email: e, ate: Date.now() + SESSAO_MS });
+      const tok = abrirSessao(e);
+      return json(res, { email: e, admin: admin(e), videos: admin(e) ? null : saldo(e) }, 200, { 'Set-Cookie': cookie(tok, SESSAO_MS) });
+    }
+    if (req.method === 'GET' && u.pathname === '/termos') {
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Content-Security-Policy': CSP, 'Cache-Control': 'no-store', ...SEGURANCA });
+      return res.end(fs.readFileSync(path.join(AQUI, 'termos.html')));
+    }
+    if (req.method === 'GET' && u.pathname === '/api/pacotes') return json(res, { pacotes: PACOTES.map(({ nome, videos, preco, link }) => ({ nome, videos, preco, link })), suporte: SUPORTE });
+    if (req.method === 'POST' && u.pathname === '/api/cakto') return webhookCakto(req, res);
+    if (req.method === 'POST' && u.pathname === '/api/esqueci') {
+      const { email: em } = await corpo(req, 2e3); const e = String(em || '').trim().toLowerCase().slice(0, 200);
+      if (estourou('ip:' + ip(req), 20) || estourou('reset:' + e, 3, 3600e3)) return json(res, { erro: 'Muitas tentativas. Espere um pouco.' }, 429);
+      const generico = { ok: true, msg: EMAIL_ATIVO ? 'Se existir uma conta com esse e-mail, mandamos um link pra criar uma senha nova. Confira a caixa de entrada e o spam.'
+        : 'Fale com o suporte pra receber o link de senha nova.', suporte: SUPORTE };
+      if (usuarios[e] && EMAIL_ATIVO) {
+        const link = `${URL_PUBLICA}/#/senha/${novoReset(e)}`;
+        enviarEmail(e, 'Sua senha nova no Estúdio', `Pra criar uma senha nova, abra este link (vale 1 hora):\n\n${link}\n\nSe não foi você, ignore este e-mail.`)
+          .catch((er) => log({ erro: 'email', msg: String(er).slice(0, 300) }));
+      }
+      log({ esqueci: e, existe: !!usuarios[e] }); return json(res, generico);
+    }
+    if (req.method === 'POST' && u.pathname === '/api/nova-senha') {
+      const { token, senha } = await corpo(req, 4e3);
+      if (estourou('ip:' + ip(req), 20)) return json(res, { erro: 'Muitas tentativas. Espere 15 minutos.' }, 429);
+      const h = hTok(String(token || '')); const e = Object.keys(usuarios).find((k) => usuarios[k].reset?.h === h && usuarios[k].reset.ate > Date.now());
+      if (!e) return json(res, { erro: 'Link vencido ou já usado. Peça outro.' }, 400);
+      if (String(senha || '').length < 8) return json(res, { erro: 'Use uma senha com 8+ caracteres.' }, 400);
+      usuarios[e].sal = crypto.randomBytes(16).toString('hex'); usuarios[e].hash = await hash(senha, usuarios[e].sal); delete usuarios[e].reset;
+      for (const [k, v] of sessoes) if (v.email === e) sessoes.delete(k);         // derruba as sessões antigas
+      salvarUsuarios(); const tok = abrirSessao(e); log({ novaSenha: e });
       return json(res, { email: e, admin: admin(e), videos: admin(e) ? null : saldo(e) }, 200, { 'Set-Cookie': cookie(tok, SESSAO_MS) });
     }
     const email = quem(req);
@@ -336,10 +449,18 @@ http.createServer(async (req, res) => {
         log({ admin: email, creditar: alvo, videos: n, saldo: usuarios[alvo].videos });
         return json(res, { email: alvo, videos: usuarios[alvo].videos });
       }
+      if (req.method === 'POST' && u.pathname === '/api/admin/link-senha') {
+        const { email: alvo } = await corpo(req); if (!usuarios[alvo]) return json(res, { erro: 'e-mail não encontrado' }, 400);
+        const base = URL_PUBLICA || `${COOKIE_SEGURO ? 'https' : 'http'}://${req.headers.host}`;
+        log({ admin: email, linkSenha: alvo }); return json(res, { link: `${base}/#/senha/${novoReset(alvo)}`, validade: '1 hora' });
+      }
+      if (req.method === 'GET' && u.pathname === '/api/admin/pagamentos')
+        return json(res, { pedidos: Object.entries(pagamentos.pedidos).map(([id, x]) => ({ id, ...x })).sort((a, b) => (b.t || '').localeCompare(a.t || '')).slice(0, 100),
+          pendentes: pagamentos.pendentes });
       return json(res, { erro: 'rota' }, 404);
     }
     if (req.method === 'POST' && u.pathname === '/api/sair') {
-      const tok = (/(?:^|;\s*)sessao=([\w-]+)/.exec(req.headers.cookie || '') || [])[1]; sessoes.delete(tok);
+      const tok = (/(?:^|;\s*)sessao=([\w-]+)/.exec(req.headers.cookie || '') || [])[1]; if (tok) { sessoes.delete(hTok(tok)); salvarSessoes(); }
       return json(res, { ok: true }, 200, { 'Set-Cookie': cookie('x', 0) });
     }
     if (req.method === 'GET' && u.pathname === '/api/jobs')
