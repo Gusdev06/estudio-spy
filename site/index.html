@@ -187,6 +187,52 @@
   .pacote { display:flex; flex-direction:column; gap:6px; padding:20px; border:1px solid var(--borda); border-radius:var(--raio); background:var(--painel); color:var(--texto); }
   .pacote:hover { border-color:var(--acento); text-decoration:none; } .pacote span { color:var(--acento); font:600 26px "Inter Tight",Inter; } .pacote small { color:var(--suave); }
 
+
+  /* painel do admin */
+  .atalho { display:flex; flex-direction:column; gap:4px; color:var(--texto); } .atalho:hover { border-color:var(--acento); text-decoration:none; } .atalho small { color:var(--suave); }
+  main:has(.painel) { max-width:1120px; }
+  .painel-topo { display:flex; align-items:flex-end; justify-content:space-between; gap:12px; } .painel-topo h1 { margin:18px 0 4px; } .painel-topo .sub { margin:0; font-size:14px; }
+  .painel button.sec { padding:9px 14px; font-size:13px; }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; margin:20px 0 10px; }
+  .kpi { padding:16px; border-radius:16px; border:1px solid var(--borda); background:var(--painel); display:flex; flex-direction:column; gap:4px; }
+  .kpi small { color:var(--suave); font-size:12px; } .kpi b { font:600 30px/1.1 "Inter Tight",Inter; font-variant-numeric:tabular-nums; } .kpi span { color:var(--suave); font-size:12px; }
+  .kpi.destaque { border-color:rgba(212,255,58,.35); background:linear-gradient(180deg,rgba(212,255,58,.07),var(--painel)); } .kpi.destaque b { color:var(--acento); }
+  .kpi.alerta { border-color:rgba(255,122,122,.35); } .kpi.alerta b { color:var(--erro); }
+  .grafico { padding:16px 18px; } .g-topo { display:flex; justify-content:space-between; color:var(--suave); }
+  .barras { display:grid; grid-template-columns:repeat(14,1fr); gap:6px; height:130px; margin-top:12px; align-items:end; }
+  .barra-d { height:100%; display:flex; flex-direction:column; justify-content:flex-end; align-items:center; gap:6px; }
+  .barra-d span { width:100%; min-height:3px; border-radius:6px 6px 3px 3px; background:linear-gradient(180deg,var(--acento),rgba(212,255,58,.35)); font-size:11px; color:#0b0b0b; font-weight:600; text-align:center; padding-top:2px; overflow:hidden; }
+  .barra-d i { font-style:normal; font-size:11px; color:var(--suave); }
+  .abas { display:flex; gap:4px; margin:26px 0 16px; border-bottom:1px solid var(--borda); overflow-x:auto; }
+  .abas a { padding:10px 14px; color:var(--suave); font-size:14px; border-bottom:2px solid transparent; white-space:nowrap; } .abas a:hover { color:var(--texto); text-decoration:none; }
+  .abas a.on { color:var(--texto); border-color:var(--acento); } .abas em, .chip-f em { font-style:normal; font-size:11px; padding:1px 6px; border-radius:999px; background:var(--painel2); margin-left:4px; }
+  .painel .tabela { overflow-x:auto; border:1px solid var(--borda); border-radius:14px; padding:4px 10px; background:var(--painel); }
+  .painel table { width:100%; border-collapse:collapse; font-size:14px; } .painel td, .painel th { border-top:1px solid var(--borda); padding:10px 8px; text-align:left; vertical-align:top; }
+  .painel th { color:var(--suave); font-weight:500; font-size:12px; border-top:0; } .painel td small { color:var(--suave); font-size:12px; }
+  table.clicavel tbody tr { cursor:pointer; } table.clicavel tbody tr:hover td { background:rgba(255,255,255,.02); }
+  .tag { display:inline-block; font-size:11px; padding:2px 8px; border-radius:999px; background:var(--painel2); color:var(--suave); } .tag.erro { background:rgba(255,122,122,.12); color:var(--erro); }
+  .chips { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:14px; }
+  .chip-f { background:var(--painel); color:var(--suave); border:1px solid var(--borda); border-radius:999px; padding:6px 12px; font:500 13px Inter; } .chip-f:hover { box-shadow:none; transform:none; color:var(--texto); }
+  .chip-f.on { color:#0b0b0b; background:var(--acento); border-color:var(--acento); } .chip-f.on em { background:rgba(0,0,0,.15); }
+  .peds { display:flex; flex-direction:column; gap:10px; }
+  .ped { display:flex; gap:14px; padding:12px; } .ped .mini { width:64px; height:96px; object-fit:cover; border-radius:10px; background:#000; flex:none; }
+  .ped-info { min-width:0; flex:1; display:flex; flex-direction:column; gap:6px; } .ped-info p { margin:0; font-size:14px; }
+  .ped-l1 { display:flex; gap:10px; align-items:center; flex-wrap:wrap; } .ped-l1 small { color:var(--suave); margin-left:auto; font-size:12px; } .dono { font-size:13px; color:var(--texto); }
+  .ped-l3 { display:flex; gap:12px; flex-wrap:wrap; align-items:center; font-size:12px; color:var(--suave); } .ped-l3 a { margin-left:auto; font-size:13px; }
+  .ped-midias { display:flex; gap:6px; flex-wrap:wrap; } .ped-midias img, .ped-midias video { width:54px; height:80px; object-fit:cover; border-radius:8px; background:#000; border:1px solid var(--borda); display:block; }
+  .ped-midias video { border-color:rgba(212,255,58,.4); }
+  .galeria { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:12px; }
+  .galeria figure { margin:0; } .galeria video { width:100%; aspect-ratio:9/16; object-fit:cover; border-radius:12px; background:#000; border:1px solid var(--borda); display:block; }
+  .galeria figcaption { display:flex; flex-direction:column; gap:2px; padding:8px 2px; font-size:12px; } .galeria figcaption b { font-weight:500; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; } .galeria figcaption small { color:var(--suave); }
+  .falhas { display:flex; flex-direction:column; gap:8px; } .falha { padding:12px 14px; display:flex; flex-direction:column; gap:6px; }
+  .falha p { margin:0; font-size:14px; } .f-l1, .f-l3 { display:flex; justify-content:space-between; gap:10px; align-items:center; font-size:13px; } .f-l1 small { color:var(--suave); font-size:12px; }
+  .voltar { display:inline-block; margin-bottom:12px; font-size:13px; color:var(--suave); }
+  .usuario { display:flex; flex-direction:column; gap:14px; margin-bottom:16px; } .usuario h2 { margin:0 0 4px; font-size:20px; } .usuario small { color:var(--suave); }
+  .u-nums { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; } .u-nums div { padding:10px; border-radius:12px; background:var(--painel2); display:flex; flex-direction:column; }
+  .u-nums b { font:600 22px "Inter Tight",Inter; } .u-nums small { font-size:12px; }
+  .u-acoes { display:flex; gap:8px; flex-wrap:wrap; align-items:center; } .u-acoes input { width:80px; padding:10px; } .u-acoes button { padding:10px 14px; font-size:13px; }
+  @media (max-width:640px) { .galeria { grid-template-columns:1fr 1fr; gap:8px; } .ped .mini { width:48px; height:72px; } .u-nums { grid-template-columns:repeat(2,1fr); } .barras { gap:3px; } .barra-d span { font-size:0; } .painel td, .painel th { padding:8px 5px; } }
+
   @media (max-width:640px) {
     header { padding:6px 6px 6px 12px; gap:6px; } header .st { display:none; } .nav { padding:6px 8px; } .btn-novo .txt { display:none; } .marca .nome { display:none; } .saldo { margin-right:auto; }
     main { padding-top:16px; } .card { padding:18px; }
@@ -222,7 +268,7 @@ function mostraSaldo() {
   const s = $('#saldo'); if (!eu) { s.textContent = ''; $('#comprar').hidden = true; return; }
   $('#comprar').hidden = !!eu.admin || !temPacotes;
   if (!eu.admin) { s.innerHTML = `<span class="chip">${eu.videos} vídeo${eu.videos === 1 ? '' : 's'}</span>`; return; }
-  s.innerHTML = `<span class="chip">admin</span> <a href="#" id="det" class="nav">${det ? 'esconder detalhes' : 'ver detalhes'}</a>`;
+  s.innerHTML = `<span class="chip">admin</span> <a href="#/admin" class="nav">painel</a> <a href="#" id="det" class="nav">${det ? 'esconder detalhes' : 'ver detalhes'}</a>`;
   $('#det').onclick = (ev) => { ev.preventDefault(); det = !det; try { localStorage.setItem('det', det ? '1' : '0'); } catch {} if (jobAtual) job(jobAtual); else mostraSaldo(); };
 }
 // Aviso de pronto: título da aba piscando, som curto e notificação do navegador (se a pessoa permitiu).
@@ -327,7 +373,7 @@ function home() {
   <div class="barra" id="barra" hidden><i></i></div>
   <div class="linha"><button id="ir" disabled>Enviar meu criativo →</button><span id="info" style="color:var(--suave);font-size:13px"></span></div></div>
   <div id="jobs"></div><div class="admin" id="admin"></div>`;
-  if (eu.admin) painelAdmin();
+  if (eu.admin) $('#admin').innerHTML = `<a class="card atalho" href="#/admin"><b>Painel do admin</b><small>Usuários, pedidos, vídeos gerados, falhas, convites e créditos →</small></a>`;
   let ganhou = null; try { ganhou = sessionStorage.getItem('ganhou'); sessionStorage.removeItem('ganhou'); } catch {}
   if (+ganhou) app.insertAdjacentHTML('afterbegin', `<div class="pronto" style="margin:8px 0 0"><span class="check">${CHECK.replace('stroke="currentColor"', 'stroke="#0b0b0b"')}</span><div><b>${ganhou} vídeo${+ganhou === 1 ? '' : 's'} no seu saldo!</b><small>Mande o seu primeiro criativo aqui embaixo.</small></div></div>`);
   const drop = $('#drop'), arq = $('#arq');
@@ -409,6 +455,112 @@ function falhouMidia(el) {
   const nome = decodeURIComponent(el.getAttribute('src').split('?')[0].split('/').pop());
   fig.innerHTML = `<a class="sem-previa" href="${el.getAttribute('src').split('?')[0]}" target="_blank">▶ ${esc(nome)}<small>abrir o vídeo</small></a>`;
 }
+
+// ---------- painel do admin ----------
+const ESTADOS = { 'rodando': 'rodando', 'concluído': 'feito', 'parcial': 'esperando', 'sem entrega': 'erro', 'parado': 'esperando', 'conversa': '', 'recusado': 'erro' };
+const dataCurta = (t) => t ? new Date(t).toLocaleString('pt-BR', { day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit' }) : '—';
+const minDur = (ms) => ms == null ? '—' : ms < 60e3 ? `${Math.round(ms / 1000)} s` : `${Math.round(ms / 60e3)} min`;
+const arq = (id, rel) => `/arquivos/${id}/${encodeURI(rel)}`;
+const vidLento = (src, cls = '') => `<video class="${cls}" data-src="${src}#t=0.5" preload="none" muted playsinline></video>`;
+let obsVid = null;
+function carregaVideos(raiz) {   // só baixa a prévia do vídeo quando ele aparece na tela
+  obsVid?.disconnect(); obsVid = new IntersectionObserver((es) => es.forEach((x) => { if (x.isIntersecting) { const v = x.target; v.preload = 'metadata'; v.src = v.dataset.src; obsVid.unobserve(v); } }), { rootMargin: '300px' });
+  raiz.querySelectorAll('video[data-src]').forEach((v) => obsVid.observe(v));
+}
+let P = null;
+async function painelGeral(aba) {
+  clearInterval(timer); jobAtual = null; geracao++; $('#compor').hidden = true; botaoNovo(true); mostraSaldo(); $('#st').textContent = '';
+  if (!P || !app.querySelector('.painel')) app.innerHTML = '<div class="painel"><p class="sub">carregando…</p></div>';
+  P = await (await api('/api/admin/painel')).json();
+  const sem = Date.now() - 7 * 86400e3, ps = P.pedidos;
+  const fechados = ps.filter((p) => ['concluído', 'parcial', 'sem entrega'].includes(p.estado));
+  const acerto = fechados.length ? Math.round(ps.filter((p) => p.estado === 'concluído').length / fechados.length * 100) : null;
+  const falhas = ps.flatMap((p) => p.falhas.map((f) => ({ ...f, pedido: p.id, dono: p.dono })));
+  const vids = ps.reduce((s, p) => s + p.entregues.length, 0);
+  const kpi = (rot, val, sub, cls = '') => `<div class="kpi ${cls}"><small>${rot}</small><b>${val}</b><span>${sub}</span></div>`;
+  const maxD = Math.max(1, ...P.dias.map((d) => d.videos));
+  app.innerHTML = `<div class="painel">
+    <div class="painel-topo"><div><h1>Painel</h1><p class="sub">${P.rodando} rodando agora · ${P.fila} na fila · até ${P.max} ao mesmo tempo</p></div><button class="sec" id="atu">Atualizar</button></div>
+    <div class="kpis">
+      ${kpi('Usuários', P.usuarios.filter((u) => !u.admin).length, `${P.usuarios.filter((u) => !u.admin && Date.parse(u.criado) > sem).length} novos em 7 dias`)}
+      ${kpi('Pedidos', ps.length, `${ps.filter((p) => p.ini > sem).length} em 7 dias`)}
+      ${kpi('Vídeos entregues', vids, `${P.dias.slice(-7).reduce((s, d) => s + d.videos, 0)} em 7 dias`, 'destaque')}
+      ${kpi('Taxa de acerto', acerto == null ? '—' : acerto + '%', `${ps.filter((p) => p.estado === 'concluído').length} de ${fechados.length} pedidos fechados`)}
+      ${kpi('Falhas', falhas.length, `${falhas.filter((f) => f.t > sem).length} em 7 dias`, falhas.some((f) => f.t > sem) ? 'alerta' : '')}
+      ${kpi('Saldo em aberto', P.usuarios.reduce((s, u) => s + (u.saldo || 0), 0), 'vídeos nas contas')}
+    </div>
+    <div class="grafico card"><div class="g-topo"><small>Vídeos entregues por dia</small><small>14 dias</small></div><div class="barras">${P.dias.map((d) =>
+      `<div class="barra-d" title="${d.dia}: ${d.videos} vídeo(s), ${d.pedidos} pedido(s)"><span style="height:${d.videos / maxD * 100}%">${d.videos || ''}</span><i>${d.dia.slice(8)}</i></div>`).join('')}</div></div>
+    <nav class="abas">${[['usuarios', 'Usuários'], ['pedidos', 'Pedidos'], ['videos', 'Vídeos'], ['falhas', `Falhas${falhas.length ? ` <em>${falhas.length}</em>` : ''}`], ['convites', 'Convites e créditos']]
+      .map(([k, r]) => `<a href="#/admin/${k}" class="${aba === k ? 'on' : ''}">${r}</a>`).join('')}</nav>
+    <div id="aba"></div></div>`;
+  $('#atu').onclick = () => painelGeral(aba);
+  const el = $('#aba');
+  if (aba === 'usuarios') abaUsuarios(el);
+  if (aba === 'pedidos') abaPedidos(el, ps);
+  if (aba === 'videos') abaVideos(el, ps);
+  if (aba === 'falhas') abaFalhas(el, falhas);
+  if (aba === 'convites') { el.innerHTML = '<div class="admin" id="admin"></div>'; painelAdmin(); }
+  if (aba.startsWith('usuario:')) abaUsuario(el, decodeURIComponent(aba.slice(8)));
+}
+function abaUsuarios(el) {
+  el.innerHTML = `<input id="busca" placeholder="Buscar por e-mail ou convite" style="margin-bottom:12px"><div class="tabela"><table class="clicavel"><thead><tr><th>usuário</th><th>saldo</th><th>pedidos</th><th>entregues</th><th>acertos</th><th>falhas</th><th>último uso</th></tr></thead><tbody></tbody></table></div>`;
+  const pinta = (q = '') => { el.querySelector('tbody').innerHTML = P.usuarios.filter((u) => (u.email + ' ' + (u.convite || '')).toLowerCase().includes(q.toLowerCase())).map((u) =>
+    `<tr data-u="${esc(u.email)}"><td><b>${esc(u.email)}</b>${u.admin ? ' <span class="tag">admin</span>' : ''}<br><small>${u.convite ? '🎁 ' + esc(u.convite) + ' · ' : ''}desde ${dataCurta(Date.parse(u.criado))}</small></td>
+     <td>${u.admin ? '∞' : u.saldo}</td><td>${u.pedidos}</td><td>${u.entregues}</td><td>${u.concluidos}</td><td>${u.falhas ? `<span class="tag erro">${u.falhas}</span>` : '0'}</td><td>${u.ultimo ? quando(u.ultimo) : '—'}</td></tr>`).join('') || '<tr><td colspan="7">ninguém encontrado</td></tr>';
+    el.querySelectorAll('tr[data-u]').forEach((tr) => tr.onclick = () => location.hash = '#/admin/usuario:' + encodeURIComponent(tr.dataset.u)); };
+  pinta(); $('#busca').oninput = (e) => pinta(e.target.value);
+}
+function cartaoPedido(p, comDono = true) {
+  const est = `<span class="estado ${ESTADOS[p.estado] || ''}">${p.estado}</span>`;
+  const thumb = p.entrada && /\.(mp4|mov|m4v|webm)$/i.test(p.entrada) ? vidLento(arq(p.id, p.entrada), 'mini') : p.entrada ? `<img class="mini" src="${arq(p.id, p.entrada)}" loading="lazy">` : '<div class="mini"></div>';
+  return `<div class="ped card">${thumb}<div class="ped-info">
+    <div class="ped-l1">${est}${comDono ? `<a href="#/admin/usuario:${encodeURIComponent(p.dono)}" class="dono">${esc(p.dono)}</a>` : ''}<small>${dataCurta(p.ini)}</small></div>
+    <p>${esc(p.primeira || 'sem descrição')}</p>
+    <div class="ped-l3"><span>${p.entregues.length}${p.reservados ? '/' + p.reservados : ''} entregue${p.entregues.length === 1 ? '' : 's'}</span><span>produção ${minDur(p.dur)}</span>${p.falhas.length ? `<span class="tag erro">${p.falhas.length} falha${p.falhas.length === 1 ? '' : 's'}</span>` : ''}<a href="#/job/${p.id}">abrir chat →</a></div>
+    ${p.entregues.length || p.imagens.length ? `<div class="ped-midias">${p.imagens.map((i) => `<img src="${arq(p.id, i)}" loading="lazy">`).join('')}${p.entregues.map((v) => `<a href="${arq(p.id, v)}" target="_blank">${vidLento(arq(p.id, v))}</a>`).join('')}</div>` : ''}
+  </div></div>`;
+}
+function abaPedidos(el, ps, comDono = true) {
+  const FILTROS = [['todos', () => true], ['rodando', (p) => p.estado === 'rodando'], ['concluídos', (p) => p.estado === 'concluído'], ['com falha', (p) => p.falhas.length || ['sem entrega', 'parcial'].includes(p.estado)],
+    ['parados', (p) => p.estado === 'parado'], ['só conversa', (p) => ['conversa', 'recusado'].includes(p.estado)]];
+  el.insertAdjacentHTML('beforeend', `<div class="chips">${FILTROS.map(([n, f], i) => `<button class="chip-f${i ? '' : ' on'}" data-f="${i}">${n} <em>${ps.filter(f).length}</em></button>`).join('')}</div><div class="peds"></div>`);
+  const lista = el.querySelector('.peds');
+  const pinta = (i) => { const f = FILTROS[i][1]; lista.innerHTML = ps.filter(f).map((p) => cartaoPedido(p, comDono)).join('') || '<p class="sub">Nenhum pedido aqui.</p>'; carregaVideos(lista);
+    el.querySelectorAll('.chip-f').forEach((b) => b.classList.toggle('on', +b.dataset.f === i)); };
+  el.querySelectorAll('.chip-f').forEach((b) => b.onclick = () => pinta(+b.dataset.f)); pinta(0);
+}
+function abaVideos(el, ps) {
+  const vs = ps.flatMap((p) => p.entregues.map((v) => ({ p, v }))).sort((a, b) => (b.p.ult || 0) - (a.p.ult || 0));
+  el.innerHTML = vs.length ? `<div class="galeria">${vs.map(({ p, v }) => `<figure>${vidLento(arq(p.id, v))}<figcaption><b>${esc(p.dono)}</b><small>${dataCurta(p.ult)}</small>
+    <span><a href="${arq(p.id, v)}" target="_blank">ver</a> · <a href="${arq(p.id, v)}?baixar">baixar</a> · <a href="#/job/${p.id}">pedido</a></span></figcaption></figure>`).join('')}</div>` : '<p class="sub">Nenhum vídeo entregue ainda.</p>';
+  el.querySelectorAll('.galeria video').forEach((v) => { v.controls = true; }); carregaVideos(el);
+}
+function abaFalhas(el, falhas) {
+  const tipos = [...new Set(falhas.map((f) => f.tipo))];
+  el.innerHTML = falhas.length ? `<div class="chips">${tipos.map((t) => `<span class="chip-f">${t} <em>${falhas.filter((f) => f.tipo === t).length}</em></span>`).join('')}</div>
+    <div class="falhas">${falhas.sort((a, b) => b.t - a.t).map((f) => `<div class="falha card"><div class="f-l1"><span class="tag erro">${esc(f.tipo)}</span><small>${dataCurta(f.t)}</small></div>
+      <p>${esc(f.texto || '')}</p><div class="f-l3"><a href="#/admin/usuario:${encodeURIComponent(f.dono)}">${esc(f.dono)}</a><a href="#/job/${f.pedido}">abrir pedido →</a></div></div>`).join('')}</div>`
+    : '<p class="sub">Nenhuma falha registrada. 🎉</p>';
+}
+function abaUsuario(el, email) {
+  const u = P.usuarios.find((x) => x.email === email); if (!u) return el.innerHTML = '<p class="sub">Usuário não encontrado.</p>';
+  const meus = P.pedidos.filter((p) => p.dono === email);
+  el.innerHTML = `<a href="#/admin/usuarios" class="voltar">← todos os usuários</a>
+    <div class="usuario card"><div><h2>${esc(email)}</h2><small>${u.convite ? '🎁 convite: ' + esc(u.convite) + ' · ' : ''}conta criada ${dataCurta(Date.parse(u.criado))} · último uso ${u.ultimo ? quando(u.ultimo) : '—'}</small></div>
+      <div class="u-nums"><div><b>${u.admin ? '∞' : u.saldo}</b><small>saldo</small></div><div><b>${u.pedidos}</b><small>pedidos</small></div><div><b>${u.entregues}</b><small>vídeos</small></div><div><b>${u.falhas}</b><small>falhas</small></div></div>
+      ${u.admin ? '' : `<div class="u-acoes"><input type="number" id="uq" value="5"><button id="uc">Dar vídeos</button><button class="sec" id="ut">Tirar</button><button class="sec" id="us">Link de nova senha</button></div><p id="um" class="ok" style="word-break:break-all"></p>`}</div>
+    <div id="upeds"></div>`;
+  abaPedidos($('#upeds'), meus, false);
+  if (u.admin) return;
+  const credita = async (sinal) => { const n = Math.abs(Math.trunc(Number($('#uq').value))); if (!n) return;
+    const r = await api('/api/admin/creditar', { method:'POST', body: JSON.stringify({ email, videos: sinal * n }) }); const d = await r.json();
+    if (!r.ok) return $('#um').textContent = d.erro; painelGeral('usuario:' + encodeURIComponent(email)); };
+  $('#uc').onclick = () => credita(1); $('#ut').onclick = () => credita(-1);
+  $('#us').onclick = async () => { const r = await api('/api/admin/link-senha', { method:'POST', body: JSON.stringify({ email }) }); const d = await r.json();
+    $('#um').innerHTML = r.ok ? `Mande pra ${esc(email)} (vale ${d.validade}): <code>${esc(d.link)}</code>` : esc(d.erro); };
+}
+
 function midias(id, texto, { legenda = true, baixar = true, vistos = null } = {}) {
   const achados = [...new Set(texto.match(/job\/[\w.\-\/]+\.(mp4|mov|jpg|jpeg|png|webp)/gi) || [])].filter((p) => !vistos || !vistos.has(p));
   if (vistos) achados.forEach((p) => vistos.add(p));
@@ -528,7 +680,9 @@ const rota = async () => {
   const cv = location.hash.match(/^#\/convite\/([\w-]+)$/); if (cv) return convite(cv[1]);
   if (!eu) { try { eu = await (await api('/api/eu')).json(); } catch { return; } }
   const m = location.hash.match(/^#\/job\/(.+)$/); if (m) return job(m[1]);
-  if (location.hash === '#/comprar') return comprar(); home();
+  if (location.hash === '#/comprar') return comprar();
+  if (location.hash.startsWith('#/admin') && eu.admin) return painelGeral(location.hash.split('/')[2] || 'usuarios');
+  home();
 };
 $('#sair').onclick = async (e) => { e.preventDefault(); await fetch('/api/sair', { method:'POST' }); eu = null; mostraSaldo(); location.hash = ''; login(); };
 addEventListener('hashchange', rota); rota();

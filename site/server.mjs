@@ -391,6 +391,42 @@ async function webhookCakto(req, res) {
   salvarPagamentos(); salvarUsuarios(); return json(res, { ok: true });
 }
 
+// ---------- painel do admin: resumo de cada pedido (acertos, falhas, entregas) ----------
+function resumoPedido(j) {
+  const ev = j.eventos, aprov = ev.filter((e) => e.tipo === 'aprovado'), fin = ev.findLast((e) => e.tipo === 'finalizado');
+  const falhas = [];
+  for (const e of ev) {
+    const f = (tipo, texto = e.texto) => falhas.push({ t: e.t, tipo, texto });
+    if (e.tipo === 'erro') f(/reiniciou/.test(e.texto) ? 'reinício do servidor' : 'erro');
+    else if (e.tipo === 'agente' && e.texto === INSTAVEL) f('instabilidade no envio');
+    else if (e.tipo === 'agente' && e.texto === INSTAVEL_AGENTE) f('limite da plataforma');
+    else if (e.tipo === 'agente' && e.texto === RECUSA) f('pedido recusado');
+    else if (e.tipo === 'agente' && /chegou ao limite de trabalho/.test(e.texto)) f('limite do pedido');
+    else if (e.tipo === 'fim' && e.ok === false) f('rodada falhou', 'O agente parou sem concluir a rodada.');
+  }
+  if (fin?.devolvidos) falhas.push({ t: fin.t, tipo: 'entrega parcial', texto: `${fin.devolvidos} vídeo(s) não saíram e voltaram pro saldo.` });
+  const estado = j.status === 'rodando' ? 'rodando' : fin ? (!fin.entregues ? 'sem entrega' : fin.devolvidos ? 'parcial' : 'concluído')
+    : aprov.length ? 'parado' : falhas.some((f) => f.tipo === 'pedido recusado') ? 'recusado' : 'conversa';
+  return { id: j.id, dono: j.dono, entrada: j.entrada, primeira: ev.find((e) => e.tipo === 'cliente')?.texto?.replace(/^Mandei o arquivo em \S+\.\s*/, '').slice(0, 140),
+    ini: ev[0]?.t, ult: ev.at(-1)?.t, estado, reservados: aprov.reduce((s, e) => s + (e.videos || 0), 0), entregues: j.entregues || [],
+    devolvidos: fin?.devolvidos || 0, falhas, dur: aprov[0] && fin ? fin.t - aprov[0].t : null,
+    imagens: ev.filter((e) => e.tipo === 'andamento').map((e) => e.caminho).slice(0, 6) };
+}
+function painel() {
+  const ps = [...jobs.values()].map(resumoPedido).sort((a, b) => (b.ult || 0) - (a.ult || 0));
+  const dia = (t) => new Date(t - 3 * 3600e3).toISOString().slice(0, 10);   // dia no horário de Brasília
+  const porDia = {}; for (const j of jobs.values()) for (const e of j.eventos) if (e.tipo === 'entregue') porDia[dia(e.t)] = (porDia[dia(e.t)] || 0) + 1;
+  const pedDia = {}; for (const p of ps) if (p.ini) pedDia[dia(p.ini)] = (pedDia[dia(p.ini)] || 0) + 1;
+  const dias = Array.from({ length: 14 }, (_, i) => dia(Date.now() - (13 - i) * 86400e3)).map((d) => ({ dia: d, videos: porDia[d] || 0, pedidos: pedDia[d] || 0 }));
+  const conviteDe = {}; for (const c of Object.values(convites)) if (c.usado) conviteDe[c.usado.email] = c.nota || 'convite';
+  const us = Object.entries(usuarios).map(([e, x]) => { const meus = ps.filter((p) => p.dono === e);
+    return { email: e, saldo: admin(e) ? null : x.videos || 0, admin: admin(e), criado: x.criado, convite: conviteDe[e] || null, pedidos: meus.length,
+      entregues: meus.reduce((s, p) => s + p.entregues.length, 0), falhas: meus.reduce((s, p) => s + p.falhas.length, 0),
+      concluidos: meus.filter((p) => p.estado === 'concluído').length, ultimo: Math.max(0, ...meus.map((p) => p.ult || 0)) || null }; })
+    .sort((a, b) => (b.ultimo || 0) - (a.ultimo || 0));
+  return { agora: Date.now(), rodando: emExecucao, fila: fila.length, max: MAX_SIMULT, dias, usuarios: us, pedidos: ps.slice(0, 500) };
+}
+
 // ---------- limpeza: pedidos parados há mais de RETENCAO_DIAS (30) somem do disco ----------
 const RETENCAO_DIAS = Number(process.env.RETENCAO_DIAS || 30);
 function limparAntigos() {
@@ -510,6 +546,7 @@ http.createServer(async (req, res) => {
     }
     if (u.pathname.startsWith('/api/admin/')) {
       if (!admin(email)) return json(res, { erro: 'não achei' }, 404);
+      if (req.method === 'GET' && u.pathname === '/api/admin/painel') return json(res, painel());
       if (req.method === 'GET' && u.pathname === '/api/admin/usuarios')
         return json(res, Object.entries(usuarios).map(([e, x]) => ({ email: e, videos: x.videos || 0, criado: x.criado, admin: admin(e),
           pedidos: [...jobs.values()].filter((j) => j.dono === e).length,
