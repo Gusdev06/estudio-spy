@@ -193,6 +193,16 @@ async function* executarAgente(j, texto) {
   } finally { tokensAtivos.delete(token); j.filho = null; }
 }
 
+// Fila global: no máximo MAX_PEDIDOS_SIMULTANEOS agentes rodando na máquina; o resto espera a vez (FIFO).
+const MAX_SIMULT = Math.max(1, Number(process.env.MAX_PEDIDOS_SIMULTANEOS || 1));
+let emExecucao = 0; const fila = [];
+async function vaga(j) {
+  if (emExecucao < MAX_SIMULT) { emExecucao++; return; }
+  evento(j, { tipo: 'agente', texto: fila.length ? `Seu pedido é o ${fila.length + 1}º da fila. Começa sozinho, pode deixar a página aberta.` : 'Seu pedido é o próximo. Começa sozinho em instantes, pode deixar a página aberta.' });
+  await new Promise((ok) => fila.push(ok));                      // quem libera já passa a vaga adiante
+}
+const liberar = () => { const prox = fila.shift(); if (prox) prox(); else emExecucao--; };
+
 async function rodar(j, texto, { confiavel = false } = {}) {
   j.status = 'rodando'; evento(j, { tipo: 'cliente', texto });
   if (j.bloqueado && !admin(j.dono)) {
@@ -206,6 +216,7 @@ async function rodar(j, texto, { confiavel = false } = {}) {
     fs.appendFileSync(path.join(BASE, '_bloqueios.log'), JSON.stringify({ t: new Date().toISOString(), veredito, dono: j.dono, job: j.id, texto }) + '\n');
     j.status = 'esperando'; return;
   }
+  await vaga(j);
   try {
     for await (const m of executarAgente(j, texto)) {
       if (m.type === 'runner_log') { log({ job: j.id, ...m }); continue; }
@@ -229,6 +240,7 @@ async function rodar(j, texto, { confiavel = false } = {}) {
     j.status = 'esperando';
   } catch (e) { j.status = 'erro'; evento(j, { tipo: 'erro', texto: 'Algo deu errado do nosso lado. Mande "continua" para tentar de novo.' });
     fs.appendFileSync(path.join(j.cwd, 'job', 'erros.log'), String(e?.stack || e) + '\n'); }
+  finally { liberar(); }
 }
 
 const nomeEntrada = (nome) => {

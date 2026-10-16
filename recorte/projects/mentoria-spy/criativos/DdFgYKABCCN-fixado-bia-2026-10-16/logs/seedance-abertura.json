@@ -1,0 +1,29 @@
+{
+  "id": "ebd3b217e2b3494080bab18af8ecdbbd",
+  "model": "bytedance/seedance-2.5/video-edit",
+  "prompt": "Replace the blonde woman in the video with the dark-haired woman from the reference images for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her cheek, long loose dark brown hair with a slight wave, fitted black ribbed long-sleeve top and small gold hoop earrings exactly as in the first reference image. She must not be blonde in any frame and must keep this outfit in every frame. She is alone. Keep every movement, gesture, hand position, lip movement, timing, camera framing, the ceiling fan with the lit lamp and the bedroom exactly as in the original video. Remove the white on-screen text captions; show only the original scene there, with no text anywhere.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/ac81b123-efe4-4e51-ba1c-5ea7ff0a11d2.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/DdFgYKABCCN-fixado-bia-2026-10-16/clipes/abertura-bia.mp4"
+  ],
+  "elapsed_ms": 218757,
+  "raw": {
+    "id": "ebd3b217e2b3494080bab18af8ecdbbd",
+    "model": "bytedance/seedance-2.5/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/ac81b123-efe4-4e51-ba1c-5ea7ff0a11d2.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/ebd3b217e2b3494080bab18af8ecdbbd/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-16T06:10:03.967545697Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 213592
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+ "original": "https://www.tiktok.com/@lily.girltea/video/7665930306133822733 (15,9M views, #1 da biblioteca FollowSpy no darkugc)",
+ "pipeline": "frame 2,5 s -> nano-banana-2.1/edit 2k [frame,01,05] -> seedance-2.5/video-edit 720p generate_audio=false -> texto original redesenhado idêntico (legendas.py) + áudio original",
+ "roupa": "camiseta cinza oversized, brinco prata, cabelo solto",
+ "prediction_ids": {
+  "bia": "f55125e527054a57b43dfcf182442546",
+  "seedance": "7677601d638840b6b4a190701cf07133"
+ }
+}

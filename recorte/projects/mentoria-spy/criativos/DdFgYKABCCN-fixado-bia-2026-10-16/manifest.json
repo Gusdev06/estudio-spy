@@ -1,0 +1,14 @@
+{
+ "original": "https://www.instagram.com/reel/DdFgYKABCCN/ (fixado da @gigi.girltea)",
+ "destino": "@itsteawithbia, Reel normal (não Trial) pra fixar",
+ "roupa": "blusa preta canelada manga longa, argolas douradas, cabelo solto",
+ "pipeline": "corte por cena (5,367 s / 16,133 s) -> nano-banana-2.1/edit 2k [frame,01,05] -> seedance-2.5/video-edit 720p generate_audio=false -> demo original no meio, áudio original inteiro, título e frase do fechamento redesenhados (legendas.py) -> montar.sh",
+ "custo_usd_estimado": "~5 (3 imagens 0,11 + Seedance 2.5 ~4,9; conferir na fatura)",
+ "prediction_ids": {
+  "bia-abertura": "f0419e259f8c4b4a81ef3e1ed571e29c",
+  "bia-abertura-v2": "13aea000c75648709c550a42bc84898e",
+  "bia-fechamento": "0f9766d910b6482c9cca33e7d79debd4",
+  "seedance-abertura": "ebd3b217e2b3494080bab18af8ecdbbd",
+  "seedance-fechamento": "0df8eb440f214c0abe8cf45cbed04bd5"
+ }
+}
