@@ -9,6 +9,7 @@ import http from 'node:http'; import fs from 'node:fs'; import path from 'node:p
 import { execFileSync, spawn } from 'node:child_process'; import crypto from 'node:crypto'; import { promisify } from 'node:util';
 import { servidorDeFerramentas, executar, semDinheiro, NOMES as FERRAMENTAS } from './ferramentas.mjs';
 import { trava } from './trava.mjs';
+import { abrirBanco } from './banco.mjs'; import { abrirStorage } from './storage.mjs';
 
 const PORT = Number(process.env.PORT || 4330);
 const AQUI = path.dirname(new URL(import.meta.url).pathname);
@@ -41,8 +42,22 @@ const log = (o) => fs.appendFileSync(path.join(BASE, '_servidor.log'), JSON.stri
 process.on('uncaughtException', (e) => { log({ erro: 'uncaught', msg: String(e?.stack || e) }); });
 process.on('unhandledRejection', (e) => { log({ erro: 'unhandled', msg: String(e?.stack || e) }); });
 
+// ---------- banco (Supabase, schema estudio) e storage das gerações ----------
+// Sem DATABASE_URL o servidor roda só com o disco, como antes. Com banco: ele é a fonte no boot; o disco segue como cópia de segurança (tudo é gravado nos dois).
+let banco = null, snap = null;
+// Banco configurado mas fora do ar: tenta por ~1 min e, se não voltar, sai (o Docker reinicia). Subir pelo disco faria o banco ficar pra trás.
+if (process.env.DATABASE_URL) for (let i = 1; ; i++) {
+  try { banco = await abrirBanco(process.env.DATABASE_URL, log); snap = await banco.carregar(); break; }
+  catch (e) { log({ erro: 'banco-boot', tentativa: i, msg: String(e.message || e).slice(0, 300) }); console.error(`banco indisponível (tentativa ${i}):`, e.message);
+    if (i >= 6) process.exit(1); await new Promise((r) => setTimeout(r, 10e3)); }
+}
+const nuvem = abrirStorage(process.env, log);
+console.log(`banco: ${banco ? (snap ? 'carregado' : 'vazio, migrando do disco') : 'desligado'} · storage: ${nuvem ? 'ligado' : 'desligado'}`);
+for (const sinal of ['SIGTERM', 'SIGINT']) process.on(sinal, async () => {   // deploy: termina de gravar no banco antes de sair
+  await Promise.race([banco?.esvaziar(), new Promise((r) => setTimeout(r, 8000))]); process.exit(0); });
+
 // ---------- contas ----------
-let usuarios = fs.existsSync(USUARIOS) ? JSON.parse(fs.readFileSync(USUARIOS, 'utf8')) : {};
+let usuarios = snap ? snap.usuarios : fs.existsSync(USUARIOS) ? JSON.parse(fs.readFileSync(USUARIOS, 'utf8')) : {};
 // Escrita atômica (tmp + rename) e cópia diária em _backup/ (guarda 30 dias): o saldo dos clientes mora aqui.
 const gravar = (arq, o) => { const tmp = arq + '.tmp'; fs.writeFileSync(tmp, JSON.stringify(o, null, 1), { mode: 0o600 }); fs.renameSync(tmp, arq); };
 const BACKUP = path.join(BASE, '_backup'); fs.mkdirSync(BACKUP, { recursive: true, mode: 0o700 });
@@ -52,11 +67,11 @@ function backupDiario() {
     if (fs.existsSync(arq) && !fs.existsSync(dest)) fs.copyFileSync(arq, dest); }
   for (const f of fs.readdirSync(BACKUP)) if (Date.now() - fs.statSync(path.join(BACKUP, f)).mtimeMs > 30 * 86400e3) fs.rmSync(path.join(BACKUP, f));
 }
-const salvarUsuarios = () => { gravar(USUARIOS, usuarios); try { backupDiario(); } catch (e) { log({ erro: 'backup', msg: String(e) }); } };
+const salvarUsuarios = () => { banco?.usuarios(usuarios); gravar(USUARIOS, usuarios); try { backupDiario(); } catch (e) { log({ erro: 'backup', msg: String(e) }); } };
 // Pagamentos da Cakto: id do pedido → { email, videos, evento }. Crédito de quem ainda não tem conta fica em pendentes[email].
 const PAGAMENTOS = path.join(BASE, '_pagamentos.json');
-let pagamentos = fs.existsSync(PAGAMENTOS) ? JSON.parse(fs.readFileSync(PAGAMENTOS, 'utf8')) : { pedidos: {}, pendentes: {} };
-const salvarPagamentos = () => gravar(PAGAMENTOS, pagamentos);
+let pagamentos = snap ? snap.pagamentos : fs.existsSync(PAGAMENTOS) ? JSON.parse(fs.readFileSync(PAGAMENTOS, 'utf8')) : { pedidos: {}, pendentes: {} };
+const salvarPagamentos = () => { banco?.pagamentos(pagamentos); gravar(PAGAMENTOS, pagamentos); };
 const TERMOS_VERSAO = '2026-10-16';
 const scrypt = promisify(crypto.scrypt);
 const hash = async (senha, sal) => (await scrypt(String(senha), sal, 32)).toString('hex');
@@ -65,8 +80,8 @@ const SESSAO_MS = 7 * 24 * 3600e3;
 // Sessões persistem em disco (só o hash do token) pra um deploy não deslogar todo mundo.
 const SESSOES = path.join(BASE, '_sessoes.json');
 const hTok = (t) => crypto.createHash('sha256').update(t).digest('hex');
-const sessoes = new Map(fs.existsSync(SESSOES) ? Object.entries(JSON.parse(fs.readFileSync(SESSOES, 'utf8'))).filter(([, s]) => s.ate > Date.now()) : []); // hash → { email, ate }
-const salvarSessoes = () => gravar(SESSOES, Object.fromEntries(sessoes));
+const sessoes = snap ? snap.sessoes : new Map(fs.existsSync(SESSOES) ? Object.entries(JSON.parse(fs.readFileSync(SESSOES, 'utf8'))).filter(([, s]) => s.ate > Date.now()) : []); // hash → { email, ate }
+const salvarSessoes = () => { banco?.sessoes(sessoes); gravar(SESSOES, Object.fromEntries(sessoes)); };
 const abrirSessao = (email) => { const tok = crypto.randomBytes(24).toString('base64url'); sessoes.set(hTok(tok), { email, ate: Date.now() + SESSAO_MS }); salvarSessoes(); return tok; };
 const quem = (req) => { const tok = (/(?:^|;\s*)sessao=([\w-]+)/.exec(req.headers.cookie || '') || [])[1]; const s = tok && sessoes.get(hTok(tok));
   if (!s || !usuarios[s.email]) return null; if (s.ate < Date.now()) { sessoes.delete(hTok(tok)); return null; } return s.email; };
@@ -78,12 +93,32 @@ const estourou = (chave, max = 10, janela = 15 * 60e3) => { const agora = Date.n
 // ---------- jobs ----------
 const jobs = new Map(); // id → { id, dono, cwd, eventos, status, sessao, custo, entrada }
 const ID_JOB = /^\d{12}-[0-9a-f]{4,6}$/;
-const CAMPOS = ['dono', 'sessao', 'custo', 'entrada', 'reserva', 'entregues', 'gastoMidia', 'predicoes', 'bloqueado', 'finalizado'];
-const meta = (j) => fs.writeFileSync(path.join(j.cwd, 'job', 'meta.json'), JSON.stringify(Object.fromEntries(CAMPOS.map((k) => [k, j[k]]))));
-const evento = (j, e) => { e.n = j.eventos.length; e.t = Date.now(); j.eventos.push(e);
-  fs.appendFileSync(path.join(j.cwd, 'job', 'chat.jsonl'), JSON.stringify(e) + '\n'); };
+const CAMPOS = ['dono', 'sessao', 'custo', 'entrada', 'reserva', 'entregues', 'gastoMidia', 'predicoes', 'bloqueado', 'finalizado', 'nuvem'];
+const pastaJob = (j) => { const d = path.join(j.cwd, 'job'); fs.mkdirSync(d, { recursive: true }); return d; };   // pedido vindo do banco pode não ter pasta no disco
+const meta = (j) => { const m = Object.fromEntries(CAMPOS.map((k) => [k, j[k]])); banco?.pedido(j.id, j.dono, m);
+  try { fs.writeFileSync(path.join(pastaJob(j), 'meta.json'), JSON.stringify(m)); } catch (e) { log({ erro: 'meta', id: j.id, msg: String(e) }); } };
+const evento = (j, e) => { e.n = j.eventos.length; e.t = Date.now(); j.eventos.push(e); banco?.evento(j.id, e);
+  try { fs.appendFileSync(path.join(pastaJob(j), 'chat.jsonl'), JSON.stringify(e) + '\n'); } catch (err) { log({ erro: 'evento', id: j.id, msg: String(err) }); }
+  if ((e.tipo === 'andamento' || e.tipo === 'entregue') && e.caminho) subirArquivo(j, e.caminho); };
+// Gerações do cliente (entrada, imagens de andamento, vídeos entregues) vão pro storage; j.nuvem marca o que já está lá.
+function subirArquivo(j, rel) {
+  if (!nuvem || j.nuvem?.[rel] || !/^job\/(saida|entrada|trabalho)\/[^\0]+\.(mp4|mov|m4v|webm|png|jpe?g|webp)$/i.test(rel)) return;
+  const arq = path.join(j.cwd, rel); if (!fs.existsSync(arq) || fs.lstatSync(arq).isSymbolicLink()) return;
+  nuvem.subir(j.id, rel, arq).then((ok) => { if (ok && jobs.has(j.id)) { (j.nuvem ||= {})[rel] = true; meta(j); } });
+}
+const arquivosDoPedido = (j) => [j.entrada, ...(j.entregues || []), ...j.eventos.filter((e) => e.tipo === 'andamento').map((e) => e.caminho)].filter(Boolean);
 
-for (const id of fs.readdirSync(BASE)) {          // restaura pedidos depois de reiniciar
+// restaura pedidos depois de reiniciar: do banco quando ele já tem os dados; senão do disco (e, com banco ligado, migra tudo pra lá)
+function montarJob(id, m, eventos, sessao, custo) {
+  const j = { ...m, id, cwd: path.join(BASE, id), eventos, sessao, custo, dono: m.dono && m.dono !== '_legado' ? m.dono : (ADMINS[0] || '_legado'), status: 'esperando',
+    reserva: m.reserva || 0, entregues: m.entregues || [], gastoMidia: m.gastoMidia || 0 };
+  for (const e of eventos) if (e.tipo === 'aprovado') { const a = eventos.find((x) => x.tipo === 'aprovacao' && x.id === e.ref); if (a) a.estado = 'aprovada'; }
+  if (eventos.length && !['fim', 'erro', 'finalizado'].includes(eventos.at(-1).tipo))
+    evento(j, { tipo: 'erro', texto: 'O servidor reiniciou no meio do trabalho. Mande "continua" para retomar de onde parou.' });
+  jobs.set(id, j);
+}
+if (snap) for (const [id, { dados, eventos }] of snap.pedidos) { try { eventos.forEach((e, i) => { e.n = i; }); montarJob(id, dados, eventos, dados.sessao, dados.custo || 0); } catch (e) { log({ erro: 'restaurar', id, msg: String(e) }); } }
+else for (const id of fs.readdirSync(BASE)) {
   try {
     const cwd = path.join(BASE, id), chat = path.join(cwd, 'job', 'chat.jsonl'), ag = path.join(cwd, 'job', 'agente.jsonl');
     if (!ID_JOB.test(id) || !fs.existsSync(chat)) continue;
@@ -94,14 +129,17 @@ for (const id of fs.readdirSync(BASE)) {          // restaura pedidos depois de 
       try { const x = JSON.parse(l); if (x.session_id) sessao = x.session_id; if (x.type === 'result') custo += x.total_cost_usd || 0; } catch {} }
     const eventos = fs.readFileSync(chat, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
     eventos.forEach((e, i) => { e.n = i; });
-    const j = { ...m, id, cwd, eventos, sessao, custo, dono: m.dono && m.dono !== '_legado' ? m.dono : (ADMINS[0] || '_legado'), status: 'esperando',
-      reserva: m.reserva || 0, entregues: m.entregues || [], gastoMidia: m.gastoMidia || 0 };
-    for (const e of eventos) if (e.tipo === 'aprovado') { const a = eventos.find((x) => x.tipo === 'aprovacao' && x.id === e.ref); if (a) a.estado = 'aprovada'; }
-    if (eventos.length && !['fim', 'erro'].includes(eventos.at(-1).tipo))
-      evento(j, { tipo: 'erro', texto: 'O servidor reiniciou no meio do trabalho. Mande "continua" para retomar de onde parou.' });
-    jobs.set(id, j);
+    montarJob(id, m, eventos, sessao, custo);
   } catch (e) { log({ erro: 'restaurar', id, msg: String(e) }); }
 }
+if (banco && !snap) {   // primeira vez com banco: copia o disco inteiro pra lá (eventos já gravados no boot entram por evento())
+  banco.usuarios(usuarios); banco.sessoes(sessoes); banco.pagamentos(pagamentos);
+  for (const j of jobs.values()) { meta(j); for (const e of j.eventos) banco.evento(j.id, e); }
+  banco.marcarMigrado(); log({ banco: 'migrado do disco', usuarios: Object.keys(usuarios).length, pedidos: jobs.size });
+}
+if (nuvem) setTimeout(async () => {   // o que ainda não está no storage (pedidos antigos, falha de rede) sobe em segundo plano, um por vez
+  for (const j of [...jobs.values()]) for (const rel of arquivosDoPedido(j)) if (!j.nuvem?.[rel]) await new Promise((ok) => { subirArquivo(j, rel); setTimeout(ok, 300); });
+}, 20e3);
 
 // ---------- proteção ----------
 const RECUSA = 'Aqui eu só trabalho nos seus criativos: variações, troca de avatar, headlines, layout, clones. Me diga o que quer fazer com o seu vídeo.';
@@ -290,7 +328,7 @@ function novoJob(dono, nomeArquivo) {
   const j = { id, dono, cwd, eventos: [], status: 'novo', sessao: null, custo: 0, entrada: 'job/entrada/' + nomeArquivo, reserva: 0, entregues: [], gastoMidia: 0 };
   jobs.set(id, j); meta(j); return j;
 }
-const apagarJob = (j) => { jobs.delete(j.id); fs.rmSync(j.cwd, { recursive: true, force: true }); };
+const apagarJob = (j) => { jobs.delete(j.id); fs.rmSync(j.cwd, { recursive: true, force: true }); banco?.apagarPedido(j.id); nuvem?.apagar(j.id); };
 
 // ---------- venda: pacotes (Cakto), e-mail, senha nova ----------
 // PACOTES_CAKTO no Ambiente: JSON [{"oferta":"<id da oferta ou short_id do produto>","videos":5,"nome":"5 vídeos","preco":"R$ 97","link":"https://pay.cakto.com.br/..."}]
@@ -348,7 +386,7 @@ const RETENCAO_DIAS = Number(process.env.RETENCAO_DIAS || 30);
 function limparAntigos() {
   for (const j of [...jobs.values()]) {
     if (j.status === 'rodando') continue;
-    const ult = j.eventos.filter((e) => e.tipo !== 'erro').at(-1)?.t || fs.statSync(j.cwd).mtimeMs;   // o aviso de reinício não conta como atividade
+    const ult = j.eventos.filter((e) => e.tipo !== 'erro').at(-1)?.t || (fs.existsSync(j.cwd) ? fs.statSync(j.cwd).mtimeMs : 0);   // o aviso de reinício não conta como atividade
     if (Date.now() - ult > RETENCAO_DIAS * 86400e3) { log({ limpeza: j.id, dono: j.dono }); apagarJob(j); }
   }
 }
@@ -360,7 +398,7 @@ const MIDIA = { '.mp4': 'video/mp4', '.mov': 'video/quicktime', '.m4v': 'video/m
   '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp' };
 const TEXTO_CLIENTE = { '.md': 'text/plain; charset=utf-8', '.txt': 'text/plain; charset=utf-8' };
 const SEGURANCA = { 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'no-referrer', 'X-Frame-Options': 'DENY' };
-const CSP = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'";
+const CSP = `default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:${nuvem ? ' ' + nuvem.origem : ''}; media-src 'self' blob:${nuvem ? ' ' + nuvem.origem : ''}; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'`;
 
 function servirArquivo(req, res, arq, { baixar = false, tipos = { ...MIDIA, ...TEXTO_CLIENTE }, raiz = null } = {}) {
   let real;
@@ -495,6 +533,7 @@ http.createServer(async (req, res) => {
           req.on('data', (d) => { n += d.length; if (n > MAX_UPLOAD) { erro(new Error('grande')); req.destroy(); w.destroy(); } });
           req.pipe(w).on('finish', ok).on('error', erro); req.on('error', erro); });
       } catch { apagarJob(j); return json(res, { erro: `Arquivo maior que ${MAX_UPLOAD / 1e6} MB ou envio interrompido.` }, 413); }
+      subirArquivo(j, j.entrada);
       rodar(j, `Mandei o arquivo em ${j.entrada}. ${String(u.searchParams.get('msg') || '').slice(0, MAX_MSG)}`.trim());
       return json(res, { id: j.id });
     }
@@ -528,6 +567,9 @@ http.createServer(async (req, res) => {
       let rel; try { rel = p.slice(2).map(decodeURIComponent).join('/'); } catch { return json(res, { erro: 'não achei' }, 404); }
       const raiz = path.join(j.cwd, 'job'); const arq = path.resolve(j.cwd, rel);
       if (!arq.startsWith(raiz + path.sep) || (!admin(email) && !arquivoDoCliente(rel))) return json(res, { erro: 'não achei' }, 404);
+      // no storage: o dono (já conferido acima) vai pra um link assinado de 1 hora; o disco é só o plano B
+      if (nuvem && j.nuvem?.[rel]) { try { res.writeHead(302, { Location: await nuvem.url(j.id, rel, { baixar: u.searchParams.has('baixar') }), 'Cache-Control': 'private, max-age=600', ...SEGURANCA }); return res.end(); }
+        catch (e) { log({ erro: 'storage-url', id: j.id, msg: String(e.message || e).slice(0, 200) }); } }
       return servirArquivo(req, res, arq, { baixar: u.searchParams.has('baixar'), raiz });
     }
     json(res, { erro: 'rota' }, 404);

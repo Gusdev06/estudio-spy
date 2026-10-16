@@ -70,3 +70,11 @@ Se algo falhar, mande o log do serviço `orquestrador` (aba Logs) e o arquivo `/
 - Comprador sem conta: o crédito fica guardado e entra quando ele cria a conta com o mesmo e-mail.
 - Esqueci a senha: sem e-mail configurado, o cliente é mandado pro suporte e o admin gera o link no painel ("link de senha", vale 1 hora). Com `RESEND_API_KEY` + `EMAIL_REMETENTE` + `URL_PUBLICA`, o link vai por e-mail.
 - Backup diário de saldo e pagamentos em `/srv/estudio/jobs/_backup/` (30 dias). Pedidos sem atividade há `RETENCAO_DIAS` (30) são apagados.
+
+## Banco e storage (16/10/2026)
+- Dados (contas, saldo, sessões, pagamentos, pedidos e chat) ficam no Supabase do HookMill, schema `estudio`, com o usuário `estudio_app`, que só enxerga esse schema.
+- Gerações do cliente (vídeo enviado, imagens de andamento, vídeos entregues) vão pro bucket privado `estudio-spy`. O cliente recebe um link assinado de 1 hora, depois que o servidor confere que o pedido é dele.
+- O disco da VPS continua sendo a área de trabalho do agente e uma cópia de segurança; no boot, a fonte é o banco.
+- Primeira subida com `DATABASE_URL`: o servidor copia sozinho o que está no disco pro banco e sobe os arquivos pro storage em segundo plano.
+- Banco fora do ar no boot: o servidor tenta por cerca de 1 min e sai; o Docker reinicia. Ele não sobe pelo disco, pra não deixar o banco pra trás.
+- Criar schema, usuário e bucket: `node setup-banco.mjs` na pasta `fase0` do AIOS (usa a conexão de admin do HookMill e grava as variáveis em `~/estudio-banco.env`).
