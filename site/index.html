@@ -61,11 +61,12 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;
 const md = (t) => DOMPurify.sanitize(marked.parse(t), { FORBID_TAGS: ['style','form','input','iframe','video','audio','img'], FORBID_ATTR: ['style'] });
 let timer = null, ultimo = -1, jobAtual = null, eu = null;
 // Admin vê o chat igual ao cliente; "detalhes" liga passos, tempos e custo (lembrado só neste navegador).
+let temPacotes = false; fetch('/api/pacotes').then((r) => r.json()).then((d) => { temPacotes = d.pacotes.length > 0; mostraSaldo(); }).catch(() => {});
 let det = false; try { det = localStorage.getItem('det') === '1'; } catch {}
 const detalhes = () => !!(eu?.admin && det);
 function mostraSaldo() {
   const s = $('#saldo'); if (!eu) { s.textContent = ''; $('#comprar').hidden = true; return; }
-  $('#comprar').hidden = !!eu.admin;
+  $('#comprar').hidden = !!eu.admin || !temPacotes;
   if (!eu.admin) { s.textContent = `${eu.videos} vídeo${eu.videos === 1 ? '' : 's'} no saldo`; return; }
   s.innerHTML = `admin · <a href="#" id="det" style="font-size:13px">${det ? 'esconder detalhes' : 'ver detalhes'}</a>`;
   $('#det').onclick = (ev) => { ev.preventDefault(); det = !det; try { localStorage.setItem('det', det ? '1' : '0'); } catch {} if (jobAtual) job(jobAtual); else mostraSaldo(); };
@@ -125,6 +126,7 @@ function home() {
   <div class="linha"><button id="ir" disabled>Começar</button><span id="info" style="color:var(--suave);font-size:13px"></span></div></div>
   <div class="jobs" id="jobs"></div><div class="admin" id="admin"></div>`;
   if (eu.admin) painelAdmin();
+  if (!eu.admin && eu.videos < 1) { $('#drop').textContent = 'Você ainda não tem vídeos no saldo. Fale com quem te passou o acesso.'; $('#drop').style.pointerEvents = 'none'; $('#msg').disabled = true; }
   let arquivo = null; const drop = $('#drop'), arq = $('#arq');
   const pega = (f) => { arquivo = f; drop.textContent = f.name + ' · ' + (f.size/1e6).toFixed(1) + ' MB'; drop.classList.add('ok'); $('#ir').disabled = false; };
   drop.onclick = () => arq.click(); arq.onchange = () => arq.files[0] && pega(arq.files[0]);
@@ -193,7 +195,7 @@ function job(id) {
       if (e.tipo === 'fim' && e.custo != null && detalhes()) chat.insertAdjacentHTML('beforeend', `<div class="fim">admin · rodada ${e.dur ? (e.dur / 60000).toFixed(1) + ' min (modelo ' + (e.durModelo / 60000).toFixed(1) + ' · vídeo/ferramentas ' + ((e.dur - e.durModelo) / 60000).toFixed(1) + ') · ' + e.passos + ' passos · ' : ''}tokens acumulados US$ ${e.custo.toFixed(2)}</div>`);
       if (e.tipo === 'erro') chat.insertAdjacentHTML('beforeend', `<p class="erro">${esc(e.texto)}</p>`);
       if (e.tipo === 'aprovacao') chat.insertAdjacentHTML('beforeend', `<div class="aprov" id="ap-${esc(e.id)}"><p>${esc(e.resumo)}</p>
-        <p><b>Usa ${e.videos} vídeo${e.videos === 1 ? '' : 's'} do seu saldo.</b> <small>${eu.admin ? '' : `Você tem ${eu.videos}.`}</small>${!eu.admin && eu.videos < e.videos ? ' <a href="#/comprar">comprar vídeos</a>' : ''}</p>
+        <p><b>Usa ${e.videos} vídeo${e.videos === 1 ? '' : 's'} do seu saldo.</b> <small>${eu.admin ? '' : `Você tem ${eu.videos}.`}</small>${!eu.admin && eu.videos < e.videos && temPacotes ? ' <a href="#/comprar">comprar vídeos</a>' : ''}</p>
         <button data-ap="${esc(e.id)}">Aprovar</button> <small class="aperro"></small></div>`);
       if (e.tipo === 'aprovado') { const c = document.getElementById('ap-' + e.ref); if (c) c.innerHTML = `<p class="ok">✓ Aprovado · ${e.videos} vídeo${e.videos === 1 ? '' : 's'} reservado${e.videos === 1 ? '' : 's'}</p>`; }
       if (e.tipo === 'entregue') chat.insertAdjacentHTML('beforeend', `<p class="ok">✓ Entregue: ${esc(e.caminho.split('/').pop())}</p>${midias(id, e.caminho)}`);

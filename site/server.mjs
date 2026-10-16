@@ -469,6 +469,8 @@ http.createServer(async (req, res) => {
           primeira: eventos.find((e) => e.tipo === 'cliente')?.texto?.replace(/^Mandei o arquivo em \S+\.\s*/, '').slice(0, 80) })));
     if (req.method === 'POST' && u.pathname === '/api/jobs') {
       const nome = nomeEntrada(u.searchParams.get('nome'));
+      // Sem saldo não abre pedido: a análise antes da aprovação também gasta (acesso só pra quem recebeu crédito).
+      if (!admin(email) && saldo(email) < 1) return json(res, { erro: 'Você ainda não tem vídeos no saldo. Fale com quem te passou o acesso.' }, 402);
       if (!nome) return json(res, { erro: 'Mande um vídeo (mp4, mov, webm) ou imagem (jpg, png, webp).' }, 400);
       if (Number(req.headers['content-length'] || 0) > MAX_UPLOAD) return json(res, { erro: `Arquivo maior que ${MAX_UPLOAD / 1e6} MB.` }, 413);
       if ([...jobs.values()].some((j) => j.dono === email && j.status === 'rodando'))
