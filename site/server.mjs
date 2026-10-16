@@ -26,7 +26,7 @@ const PORT_INTERNO = Number(process.env.PORT_INTERNO || PORT + 1);
 const ORQ_URL_INTERNO = process.env.ORQ_URL_INTERNO || `http://127.0.0.1:${PORT_INTERNO}`;
 const DOCKER = { imagem: process.env.AGENTE_IMAGEM || 'estudio-spy-agente', rede: process.env.AGENTE_REDE || 'estudio-interno',
   jobsHost: process.env.JOBS_HOST_DIR, cpus: process.env.AGENTE_CPUS || '2', memoria: process.env.AGENTE_MEMORIA || '4g' };
-const MODELO = process.env.MODELO_AGENTE || 'claude-opus-5-5';
+const MODELO = process.env.MODELO_AGENTE || 'claude-sonnet-5-5';
 // No servidor a chave fica com nome próprio (nunca vai pros containers). O que roda aqui dentro (porteiro, modo local) recebe explicitamente.
 const CHAVE_ANTHROPIC = process.env.ANTHROPIC_API_KEY_PRODUTO || '';
 const AMBIENTE_SDK = CHAVE_ANTHROPIC ? { ...process.env, ANTHROPIC_API_KEY: CHAVE_ANTHROPIC } : process.env;
