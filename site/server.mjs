@@ -567,8 +567,9 @@ http.createServer(async (req, res) => {
       let rel; try { rel = p.slice(2).map(decodeURIComponent).join('/'); } catch { return json(res, { erro: 'não achei' }, 404); }
       const raiz = path.join(j.cwd, 'job'); const arq = path.resolve(j.cwd, rel);
       if (!arq.startsWith(raiz + path.sep) || (!admin(email) && !arquivoDoCliente(rel))) return json(res, { erro: 'não achei' }, 404);
-      // no storage: o dono (já conferido acima) vai pra um link assinado de 1 hora; o disco é só o plano B
-      if (nuvem && j.nuvem?.[rel]) { try { res.writeHead(302, { Location: await nuvem.url(j.id, rel, { baixar: u.searchParams.has('baixar') }), 'Cache-Control': 'private, max-age=600', ...SEGURANCA }); return res.end(); }
+      // arquivo ainda no disco da VPS: serve daqui (mesma origem, sem depender de outro domínio). Só some do disco na limpeza;
+      // aí o dono (já conferido acima) vai pra um link assinado de 1 hora no storage.
+      if (nuvem && j.nuvem?.[rel] && !fs.existsSync(arq)) { try { res.writeHead(302, { Location: await nuvem.url(j.id, rel, { baixar: u.searchParams.has('baixar') }), 'Cache-Control': 'private, max-age=600', ...SEGURANCA }); return res.end(); }
         catch (e) { log({ erro: 'storage-url', id: j.id, msg: String(e.message || e).slice(0, 200) }); } }
       return servirArquivo(req, res, arq, { baixar: u.searchParams.has('baixar'), raiz });
     }
