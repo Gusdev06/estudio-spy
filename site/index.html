@@ -106,6 +106,8 @@
   .aprov .uso b { color:var(--texto); } .aprov button { margin-top:4px; }
   .selo { display:inline-flex; align-items:center; gap:8px; margin:12px 0 12px 40px; padding:7px 12px; border-radius:999px; background:var(--acento-sombra); color:var(--acento); font-size:13px; font-weight:600; }
   .entregas { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:16px; margin:16px 0 16px 40px; }
+  .andamento { margin:12px 0 12px 40px; } .andamento small { color:var(--suave); display:block; margin-bottom:8px; }
+  .andamento .fotos { display:flex; flex-wrap:wrap; gap:8px; } .andamento img { width:96px; height:128px; object-fit:cover; border-radius:12px; border:1px solid var(--borda); background:#000; display:block; }
   .entrega { min-width:0; } .entrega .selo { margin:0 0 10px; } .entrega .midia { margin:0; } .entrega figure { width:100%; }
   .entrega video { width:100%; max-height:420px; object-fit:contain; }
   .pensando { display:inline-flex; align-items:center; gap:10px; margin:12px 0 0 40px; padding:9px 14px; border-radius:999px; background:var(--painel); border:1px solid var(--borda); color:var(--suave); font-size:13px; }
@@ -131,7 +133,7 @@
     header { padding:10px 14px; gap:6px; } header .st { display:none; } .nav { padding:6px 8px; }
     main { padding-top:16px; } .card { padding:18px; }
     .entregas { grid-template-columns:1fr 1fr; gap:10px; }
-    .aprov, .entregas, .selo, .pensando, .aviso-erro, .ferrs { margin-left:0; } .msg.agente > .logo { display:none; }
+    .aprov, .entregas, .andamento, .selo, .pensando, .aviso-erro, .ferrs { margin-left:0; } .msg.agente > .logo { display:none; }
   }
   @media (prefers-reduced-motion:reduce) { * { animation:none !important; transition:none !important; } }
 </style>
@@ -318,6 +320,8 @@ function job(id) {
         <div class="uso"><span>Usa <b>${e.videos} vídeo${e.videos === 1 ? '' : 's'}</b> do seu saldo${eu.admin ? '' : ` · você tem <b>${eu.videos}</b>`}</span>${!eu.admin && eu.videos < e.videos && temPacotes ? '<a href="#/comprar">comprar vídeos</a>' : ''}</div>
         <div class="linha"><button data-ap="${esc(e.id)}">Aprovar e começar</button><small class="aperro erro"></small></div></div>`);
       if (e.tipo === 'aprovado') { const c = document.getElementById('ap-' + e.ref); if (c) c.outerHTML = `<div class="selo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Aprovado · ${e.videos} vídeo${e.videos === 1 ? '' : 's'} reservado${e.videos === 1 ? '' : 's'}</div>`; }
+      if (e.tipo === 'andamento') { let g = chat.lastElementChild; if (!g?.classList.contains('andamento')) { chat.insertAdjacentHTML('beforeend', '<div class="andamento"><small>Já está saindo:</small><div class="fotos"></div></div>'); g = chat.lastElementChild; }
+        const src = `/arquivos/${id}/${encodeURI(e.caminho)}`; g.querySelector('.fotos').insertAdjacentHTML('beforeend', `<a href="${src}" target="_blank"><img src="${src}" loading="lazy" onerror="this.parentNode.remove()"></a>`); }
       if (e.tipo === 'entregue') { let g = chat.lastElementChild; if (!g?.classList.contains('entregas')) { g = document.createElement('div'); g.className = 'entregas'; chat.append(g); } g.insertAdjacentHTML('beforeend', `<div class="entrega"><div class="selo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> ${esc(e.caminho.split('/').pop().replace(/\.[^.]+$/, '').replace(/[-_]/g, ' '))}</div>${midias(id, e.caminho, { legenda: false, vistos })}</div>`); }
       if (e.tipo === 'finalizado') chat.insertAdjacentHTML('beforeend', `<p class="selo">Pedido concluído: ${e.entregues} vídeo${e.entregues === 1 ? '' : 's'} entregue${e.entregues === 1 ? '' : 's'}${e.devolvidos ? ` · ${e.devolvidos} devolvido${e.devolvidos === 1 ? '' : 's'} ao saldo` : ''}.</p>`);
     }

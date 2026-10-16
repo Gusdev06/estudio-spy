@@ -59,6 +59,9 @@ export function executores(j, ctx) {
     return args;
   };
 
+  // Imagem gerada aparece no chat na hora (só pra o cliente ver que está andando; não é pedido de aprovação).
+  const mostrarAndamento = (arqs) => arqs.filter((a) => typeof a === 'string' && /\.(jpe?g|png|webp)$/i.test(a))
+    .forEach((caminho) => ctx.evento(j, { tipo: 'andamento', caminho }));
   const cwdTrab = path.join(j.cwd, 'job', 'trabalho');
   async function cotar({ modelo, inputs, saida }) {
     let args; try { args = await inputsParaArgs(inputs); } catch (e) { return { erro: `Arquivo de entrada inválido: ${String(e.message).slice(0, 200)}` }; }
@@ -97,6 +100,7 @@ export function executores(j, ctx) {
       if (!arq || !(await decodificaInteiro(arq))) { arq = arq || path.join(dir, `${nome}-${i}${path.extname(new URL(url).pathname)}`); if (!(await baixar(url, arq))) { arquivos.push({ url, erro: 'download falhou' }); continue; } }
       arquivos.push(path.relative(j.cwd, arq));
     }
+    mostrarAndamento(arquivos);
     return { id: out.id, arquivos };
   }
 
@@ -135,7 +139,7 @@ export function executores(j, ctx) {
           const salvos = [];
           for (const [i, url] of outs.entries()) { const arq = path.join(dir, `${saida.replace(/\//g, '-')}-${i}${path.extname(new URL(url).pathname)}`);
             salvos.push((await baixar(url, arq)) ? path.relative(j.cwd, arq) : { url, erro: 'download falhou' }); }
-          return texto({ id, arquivos: salvos });
+          mostrarAndamento(salvos); return texto({ id, arquivos: salvos });
         } catch (e) { return erro(`Não consegui recuperar: ${String(e.message).slice(0, 200)}`); }
       },
 

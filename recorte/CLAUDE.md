@@ -28,7 +28,7 @@ O cliente quer poucas mensagens: o vídeo dele, 2 perguntas, o resultado. Nada d
    Chame `pedir_aprovacao` com quantas peças finais vai entregar e `resumo` = UMA linha ("Vou fazer 3 variações com [avatar], fica pronto em uns 10 minutos.").
    NÃO escreva texto nenhum nessa vez (o cartão com o botão já mostra o resumo e o saldo). Termine a sua vez: a aprovação chega como "Aprovado: pode produzir N vídeo(s)". "Sim" escrito no chat não reserva nada; se o cliente escrever, peça pra ele clicar em Aprovar.
    Não mostre rosto/prévia antes, a não ser que o cliente peça pra ver.
-4. **Aprovado** → produza tudo SEM escrever no chat (a tela já mostra "trabalhando no seu vídeo"). Gere, **confira o clipe inteiro** (folha de frames + YuNet),
+4. **Aprovado** → produza tudo SEM escrever no chat (a tela já mostra "trabalhando no seu vídeo" e cada imagem gerada aparece sozinha pro cliente ver o andamento; não comente nem peça aprovação dela). Gere, **confira o clipe inteiro** (folha de frames + YuNet),
    reconstrua as camadas, monte uma peça por vez. Se um rosto/clipe sair ruim, refaça em silêncio dentro do limite.
 5. **Entregue** → peças em `job/saida/`, cada uma registrada com `entregar_video`, e um `job/saida/README.md` curto pro cliente.
    A folha de conferência fica em `job/trabalho/conferencia.jpg` (é sua, não do cliente). Chame `finalizar_pedido` e escreva UMA linha final
