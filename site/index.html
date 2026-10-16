@@ -5,59 +5,153 @@
 <title>Estúdio Spy</title>
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#0d0e10; --painel:#16181c; --borda:#262a31; --texto:#e8e9eb; --suave:#8b919c; --acento:#d4ff3a; --cliente:#1f2937; }
-  * { box-sizing:border-box; } html,body { margin:0; background:var(--bg); color:var(--texto); font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }
-  a { color:var(--acento); } header { display:flex; align-items:center; gap:12px; padding:14px 20px; border-bottom:1px solid var(--borda); }
-  header b { font-size:16px; letter-spacing:.2px; } header b i { color:var(--acento); font-style:normal; }
-  header .st { margin-left:auto; color:var(--suave); font-size:13px; }
-  main { max-width:860px; margin:0 auto; padding:20px 16px 160px; }
-  .card { background:var(--painel); border:1px solid var(--borda); border-radius:14px; padding:20px; }
-  h1 { font-size:26px; margin:28px 0 6px; } .sub { color:var(--suave); margin:0 0 22px; }
-  .drop { border:1.5px dashed var(--borda); border-radius:12px; padding:28px; text-align:center; cursor:pointer; color:var(--suave); }
-  .drop.ok { border-color:var(--acento); color:var(--texto); }
-  input { width:100%; background:#0f1114; color:var(--texto); border:1px solid var(--borda); border-radius:10px; padding:12px; font:inherit; margin-top:10px; }
-  textarea { width:100%; background:#0f1114; color:var(--texto); border:1px solid var(--borda); border-radius:10px; padding:12px; font:inherit; resize:vertical; min-height:80px; margin-top:14px; }
-  button { background:var(--acento); color:#111; border:0; border-radius:10px; padding:11px 18px; font:600 15px system-ui; cursor:pointer; }
-  button:disabled { opacity:.4; cursor:default; } .linha { display:flex; gap:10px; align-items:center; margin-top:12px; }
-  .jobs { margin-top:26px; } .jobs a { display:block; padding:10px 0; border-top:1px solid var(--borda); text-decoration:none; color:var(--texto); }
-  .jobs small { color:var(--suave); }
-  .msg { margin:14px 0; } .msg.cliente { display:flex; flex-direction:column; align-items:flex-end; gap:6px; } .msg.cliente .midia video { max-width:260px; border-radius:12px; }
-  .msg.cliente > div:not(.midia) { background:var(--cliente); border-radius:14px 14px 4px 14px; padding:10px 14px; max-width:80%; white-space:pre-wrap; }
-  .msg.agente { background:var(--painel); border:1px solid var(--borda); border-radius:14px 14px 14px 4px; padding:4px 16px; }
-  .msg.agente table { border-collapse:collapse; font-size:14px; } .msg.agente td,.msg.agente th { border:1px solid var(--borda); padding:5px 9px; }
-  .msg.agente code { background:#0f1114; padding:1px 5px; border-radius:5px; font-size:13px; }
+  :root { --bg:#09090b; --painel:#121215; --painel2:#18181c; --borda:rgba(255,255,255,.08); --borda2:rgba(255,255,255,.14); --texto:#f2f2f3; --suave:#8e8e96;
+    --acento:#d4ff3a; --acento-sombra:rgba(212,255,58,.18); --cliente:#1d1d22; --erro:#ff7a7a; --aviso:#ffc35a; --raio:18px; }
+  * { box-sizing:border-box; } [hidden] { display:none !important; }
+  html,body { margin:0; background:var(--bg); color:var(--texto); font:15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased; }
+  body::before { content:""; position:fixed; inset:-20vh -10vw auto; height:60vh; pointer-events:none; z-index:-1;
+    background:radial-gradient(50% 60% at 50% 0%, rgba(212,255,58,.10), transparent 70%); }
+  a { color:var(--acento); text-decoration:none; } a:hover { text-decoration:underline; }
+  h1,h2,.marca { font-family:"Inter Tight",Inter,sans-serif; letter-spacing:-.02em; }
+
+  /* topo */
+  header { position:sticky; top:0; z-index:5; display:flex; align-items:center; gap:10px; padding:12px 20px;
+    background:rgba(9,9,11,.72); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid var(--borda); }
+  .marca { display:flex; align-items:center; gap:9px; font-weight:600; font-size:16px; color:var(--texto); margin-right:6px; }
+  .marca:hover { text-decoration:none; } .marca i { color:var(--acento); font-style:normal; }
+  .logo { width:26px; height:26px; border-radius:8px; background:var(--acento); display:grid; place-items:center; box-shadow:0 0 0 4px var(--acento-sombra); flex:none; }
+  .logo svg { width:12px; height:12px; margin-left:2px; }
+  .nav { font-size:13px; color:var(--suave); padding:6px 10px; border-radius:999px; } .nav:hover { color:var(--texto); background:var(--painel2); text-decoration:none; }
+  .saldo { font-size:13px; } .saldo .chip { display:inline-flex; align-items:center; gap:6px; padding:5px 11px; border-radius:999px; background:var(--acento-sombra); color:var(--acento); font-weight:600; }
+  .saldo a { color:var(--suave); font-weight:400; } .saldo a:hover { color:var(--texto); }
+  header .st { margin-left:auto; color:var(--suave); font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:30vw; }
+
+  main { max-width:880px; margin:0 auto; padding:28px 16px 170px; }
+  h1 { font-size:clamp(30px,5vw,46px); line-height:1.05; margin:28px 0 12px; font-weight:600; }
+  h1 em { font-style:normal; color:var(--acento); }
+  .sub { color:var(--suave); margin:0 0 26px; font-size:16px; max-width:560px; }
+  .card { background:linear-gradient(180deg,var(--painel2),var(--painel)); border:1px solid var(--borda); border-radius:var(--raio); padding:22px; }
+  .rotulo { display:block; font-size:12px; font-weight:500; color:var(--suave); margin:16px 0 6px; letter-spacing:.02em; }
+
+  input, textarea { width:100%; background:#0c0c0e; color:var(--texto); border:1px solid var(--borda2); border-radius:12px; padding:12px 14px; font:inherit; outline:none; transition:border-color .15s, box-shadow .15s; }
+  input:focus, textarea:focus { border-color:var(--acento); box-shadow:0 0 0 4px var(--acento-sombra); }
+  textarea { resize:vertical; min-height:84px; } input::placeholder, textarea::placeholder { color:#5d5d66; }
+  button { background:var(--acento); color:#0b0b0b; border:0; border-radius:12px; padding:12px 20px; font:600 15px Inter,system-ui; cursor:pointer; transition:transform .12s, box-shadow .15s, opacity .15s; }
+  button:hover:not(:disabled) { box-shadow:0 8px 28px var(--acento-sombra); transform:translateY(-1px); } button:active:not(:disabled) { transform:translateY(0); }
+  button:disabled { opacity:.35; cursor:default; } button.sec { background:var(--painel2); color:var(--texto); border:1px solid var(--borda2); }
+  .linha { display:flex; gap:12px; align-items:center; margin-top:16px; flex-wrap:wrap; } .cheio { width:100%; }
+  .erro { color:var(--erro); } .ok { color:var(--acento); font-size:14px; margin:8px 0; }
+
+  /* login */
+  .entrada { min-height:calc(100vh - 140px); display:grid; place-items:center; }
+  .entrada .card { width:100%; max-width:410px; padding:30px; } .entrada h1 { font-size:30px; margin:18px 0 6px; } .entrada .sub { font-size:14px; margin-bottom:8px; }
+  .entrada .logo { width:40px; height:40px; border-radius:12px; } .entrada .logo svg { width:17px; height:17px; }
+  .termos { display:flex; gap:10px; align-items:flex-start; font-size:13px; color:var(--suave); margin-top:14px; line-height:1.5; }
+  .termos input { width:16px; height:16px; margin:2px 0 0; accent-color:var(--acento); flex:none; }
+  .rodape-login { display:flex; justify-content:space-between; margin-top:18px; font-size:13px; } .rodape-login a { color:var(--suave); } .rodape-login a:hover { color:var(--texto); }
+
+  /* início */
+  .passos { display:flex; gap:8px; flex-wrap:wrap; margin:-6px 0 24px; }
+  .passo { font-size:13px; color:var(--suave); padding:6px 12px; border:1px solid var(--borda); border-radius:999px; background:var(--painel); }
+  .passo b { color:var(--acento); margin-right:6px; font-weight:600; }
+  .drop { position:relative; border:1.5px dashed var(--borda2); border-radius:14px; padding:38px 20px; text-align:center; cursor:pointer; color:var(--suave);
+    transition:border-color .15s, background .15s; display:flex; flex-direction:column; align-items:center; gap:10px; }
+  .drop:hover, .drop.sobre { border-color:var(--acento); background:rgba(212,255,58,.03); }
+  .drop .ic { width:46px; height:46px; border-radius:14px; background:var(--painel2); border:1px solid var(--borda2); display:grid; place-items:center; color:var(--acento); }
+  .drop b { color:var(--texto); font-weight:500; } .drop small { font-size:12px; }
+  .drop.ok { flex-direction:row; text-align:left; padding:14px; border-style:solid; border-color:var(--borda2); }
+  .drop.ok video { width:76px; height:110px; object-fit:cover; border-radius:10px; background:#000; flex:none; }
+  .drop.bloq { cursor:default; pointer-events:none; }
+  .barra { height:4px; border-radius:4px; background:var(--painel2); overflow:hidden; margin-top:14px; } .barra i { display:block; height:100%; width:0; background:var(--acento); transition:width .2s; }
+  .secao { display:flex; align-items:baseline; justify-content:space-between; margin:42px 0 12px; } .secao h2 { font-size:18px; margin:0; font-weight:600; } .secao small { color:var(--suave); }
+  .jobs { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:12px; }
+  .job { display:flex; gap:12px; padding:10px; border:1px solid var(--borda); border-radius:14px; background:var(--painel); color:var(--texto); transition:border-color .15s, transform .15s; min-width:0; }
+  .job:hover { border-color:var(--borda2); transform:translateY(-1px); text-decoration:none; }
+  .job video { width:54px; height:76px; object-fit:cover; border-radius:9px; background:#000; flex:none; pointer-events:none; }
+  .job div { min-width:0; display:flex; flex-direction:column; gap:4px; justify-content:center; }
+  .job p { margin:0; font-size:14px; line-height:1.35; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .job small { color:var(--suave); font-size:12px; }
+  .estado { display:inline-flex; align-items:center; gap:6px; font-size:12px; color:var(--suave); }
+  .estado::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--suave); }
+  .estado.rodando::before, .estado.novo::before { background:var(--acento); animation:pulso 1.4s infinite; } .estado.esperando::before { background:var(--aviso); }
+  .estado.erro::before { background:var(--erro); } .estado.pronto::before { background:var(--acento); }
+  @keyframes pulso { 50% { opacity:.25; } }
+
+  /* chat */
+  #chat { padding-top:8px; }
+  .msg { margin:16px 0; animation:entra .25s ease-out; } @keyframes entra { from { opacity:0; transform:translateY(6px); } }
+  .msg.cliente { display:flex; flex-direction:column; align-items:flex-end; gap:8px; }
+  .msg.cliente > div:not(.midia) { background:var(--cliente); border:1px solid var(--borda); border-radius:18px 18px 6px 18px; padding:10px 15px; max-width:78%; white-space:pre-wrap; }
+  .msg.cliente .midia { justify-content:flex-end; margin:0; } .msg.cliente .midia video { max-height:300px; max-width:200px; }
+  .msg.agente { display:flex; gap:12px; align-items:flex-start; }
+  .msg.agente > .logo { margin-top:3px; width:28px; height:28px; } .msg.agente > .logo svg { width:11px; height:11px; }
+  .msg.agente > .corpo { min-width:0; flex:1; padding-top:2px; } .msg.agente p { margin:0 0 10px; } .msg.agente p:last-child { margin-bottom:0; }
+  .msg.agente table { border-collapse:collapse; font-size:14px; } .msg.agente td,.msg.agente th { border:1px solid var(--borda2); padding:5px 9px; }
+  .msg.agente code { background:var(--painel2); padding:1px 6px; border-radius:6px; font-size:13px; }
   .ferr { color:var(--suave); font-size:13px; margin:3px 0 3px 6px; } .ferr::before { content:"⚙ "; }
-  .ferrs { margin:8px 0; } .ferrs summary { color:var(--suave); font-size:13px; cursor:pointer; }
-  .midia { display:flex; flex-wrap:wrap; gap:10px; margin:10px 0 12px; }
-  .midia video,.midia img { max-height:440px; max-width:100%; border-radius:10px; border:1px solid var(--borda); background:#000; }
-  .midia figure { margin:0; } .midia figcaption { color:var(--suave); font-size:12px; margin-top:3px; }
+  .ferrs { margin:8px 0 8px 40px; } .ferrs summary { color:var(--suave); font-size:13px; cursor:pointer; }
+  .midia { display:flex; flex-wrap:wrap; gap:12px; margin:12px 0; }
+  .midia figure { margin:0; display:flex; flex-direction:column; gap:8px; }
+  .midia video,.midia img { max-height:460px; max-width:100%; border-radius:14px; border:1px solid var(--borda); background:#000; display:block; }
+  .midia figcaption { color:var(--suave); font-size:12px; }
+  .baixar { display:inline-flex; align-items:center; justify-content:center; gap:6px; font-size:13px; font-weight:600; padding:8px 12px; border-radius:10px; background:var(--painel2); border:1px solid var(--borda2); color:var(--texto); }
+  .baixar:hover { border-color:var(--acento); text-decoration:none; }
   .fim { color:var(--suave); font-size:12px; text-align:center; margin:6px 0 16px; }
-  .erro { color:#ff8080; }
-  .aprov { border:1px solid var(--acento); border-radius:14px; padding:14px 16px; margin:14px 0; background:#14170c; }
-  .aprov p { margin:0 0 10px; } .aprov small { color:var(--suave); } .ok { color:var(--acento); font-size:14px; margin:8px 0; }
-  .admin { margin-top:30px; } .admin table { width:100%; border-collapse:collapse; font-size:14px; } .admin td,.admin th { border-top:1px solid var(--borda); padding:7px 4px; text-align:left; }
-  .admin input { width:70px; margin:0; padding:6px; } .admin button { padding:6px 10px; font-size:13px; }
-  .saldo { color:var(--acento); font-size:13px; }
-  .termos { display:flex; gap:8px; align-items:flex-start; font-size:13px; color:var(--suave); margin-top:12px; } .termos input { width:auto; margin:2px 0 0; }
-  .pacotes { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-top:18px; }
-  .pacote { display:flex; flex-direction:column; gap:6px; padding:18px; border:1px solid var(--borda); border-radius:14px; background:var(--painel); text-decoration:none; color:var(--texto); }
-  .pacote:hover { border-color:var(--acento); } .pacote span { color:var(--acento); font-size:22px; font-weight:700; } .pacote small { color:var(--suave); }
-  .compor { position:fixed; left:0; right:0; bottom:0; background:linear-gradient(transparent,var(--bg) 30%); padding:24px 16px 16px; }
-  .compor .in { max-width:860px; margin:0 auto; display:flex; gap:10px; align-items:flex-end; }
-  .compor textarea { margin:0; min-height:52px; } .pensando { color:var(--suave); font-size:14px; margin:12px 4px; }
-  .pensando::after { content:"…"; animation:p 1.2s infinite; } @keyframes p { 50% { opacity:.2; } }
+  .aviso-erro { margin:14px 0 14px 40px; padding:10px 14px; border-radius:12px; background:rgba(255,122,122,.08); border:1px solid rgba(255,122,122,.25); color:var(--erro); font-size:14px; }
+  .aprov { margin:16px 0 16px 40px; padding:18px 20px; border-radius:var(--raio); border:1px solid rgba(212,255,58,.45); background:linear-gradient(180deg,rgba(212,255,58,.08),rgba(212,255,58,.02)); }
+  .aprov p { margin:0 0 12px; } .aprov .uso { display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:14px; color:var(--suave); }
+  .aprov .uso b { color:var(--texto); } .aprov button { margin-top:4px; }
+  .selo { display:inline-flex; align-items:center; gap:8px; margin:12px 0 12px 40px; padding:7px 12px; border-radius:999px; background:var(--acento-sombra); color:var(--acento); font-size:13px; font-weight:600; }
+  .entregas { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:16px; margin:16px 0 16px 40px; }
+  .entrega { min-width:0; } .entrega .selo { margin:0 0 10px; } .entrega .midia { margin:0; } .entrega figure { width:100%; }
+  .entrega video { width:100%; max-height:420px; object-fit:contain; }
+  .pensando { display:inline-flex; align-items:center; gap:10px; margin:12px 0 0 40px; padding:9px 14px; border-radius:999px; background:var(--painel); border:1px solid var(--borda); color:var(--suave); font-size:13px; }
+  .pontos { display:inline-flex; gap:4px; } .pontos i { width:6px; height:6px; border-radius:50%; background:var(--acento); animation:pulo 1.2s infinite; }
+  .pontos i:nth-child(2) { animation-delay:.15s; } .pontos i:nth-child(3) { animation-delay:.3s; }
+  @keyframes pulo { 0%,60%,100% { opacity:.25; transform:translateY(0); } 30% { opacity:1; transform:translateY(-3px); } }
+  .compor { position:fixed; left:0; right:0; bottom:0; padding:28px 16px 18px; background:linear-gradient(transparent,var(--bg) 35%); }
+  .compor .in { max-width:880px; margin:0 auto; display:flex; gap:8px; align-items:flex-end; padding:8px; border-radius:20px; background:var(--painel2); border:1px solid var(--borda2); box-shadow:0 12px 40px rgba(0,0,0,.45); }
+  .compor .in:focus-within { border-color:rgba(212,255,58,.5); }
+  .compor textarea { border:0; background:transparent; min-height:44px; max-height:180px; padding:11px 10px; resize:none; box-shadow:none !important; }
+  .compor button { width:44px; height:44px; padding:0; border-radius:14px; display:grid; place-items:center; flex:none; }
+
+  /* admin, compra */
+  .admin { margin-top:44px; } .admin > small, #pags > small { display:block; color:var(--suave); font-size:12px; text-transform:uppercase; letter-spacing:.08em; margin:22px 0 8px; }
+  .admin table { width:100%; border-collapse:collapse; font-size:14px; } .admin td,.admin th { border-top:1px solid var(--borda); padding:9px 6px; text-align:left; }
+  .admin th { color:var(--suave); font-weight:500; font-size:12px; } .admin input { width:64px; margin:0; padding:7px 8px; }
+  .admin button { padding:7px 11px; font-size:12px; border-radius:9px; } .admin .tabela { overflow-x:auto; border:1px solid var(--borda); border-radius:14px; padding:4px 10px; background:var(--painel); }
+  .pacotes { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px; margin-top:18px; }
+  .pacote { display:flex; flex-direction:column; gap:6px; padding:20px; border:1px solid var(--borda); border-radius:var(--raio); background:var(--painel); color:var(--texto); }
+  .pacote:hover { border-color:var(--acento); text-decoration:none; } .pacote span { color:var(--acento); font:600 26px "Inter Tight",Inter; } .pacote small { color:var(--suave); }
+
+  @media (max-width:640px) {
+    header { padding:10px 14px; gap:6px; } header .st { display:none; } .nav { padding:6px 8px; }
+    main { padding-top:16px; } .card { padding:18px; }
+    .entregas { grid-template-columns:1fr 1fr; gap:10px; }
+    .aprov, .entregas, .selo, .pensando, .aviso-erro, .ferrs { margin-left:0; } .msg.agente > .logo { display:none; }
+  }
+  @media (prefers-reduced-motion:reduce) { * { animation:none !important; transition:none !important; } }
 </style>
 </head>
 <body>
-<header><b>Estúdio <i>Spy</i></b><a href="#" style="font-size:13px" id="novo">novo pedido</a><span class="saldo" id="saldo"></span><a href="#/comprar" id="comprar" style="font-size:13px" hidden>comprar vídeos</a><span class="st" id="st"></span><a href="#" id="sair" style="font-size:13px" hidden>sair</a></header>
+<header><a href="#" class="marca" id="novo"><span class="logo"><svg viewBox="0 0 12 12"><path d="M2 1.2v9.6L10.4 6z" fill="#0b0b0b"/></svg></span>Estúdio <i>Spy</i></a><span class="saldo" id="saldo"></span><a href="#/comprar" id="comprar" class="nav" hidden>comprar vídeos</a><span class="st" id="st"></span><a href="#" id="sair" class="nav" hidden>sair</a></header>
 <main id="app"></main>
 <div class="compor" id="compor" hidden><div class="in">
-  <textarea id="resp" placeholder="Escreva sua mensagem"></textarea><button id="enviar">Enviar</button>
+  <textarea id="resp" rows="1" placeholder="Escreva sua mensagem"></textarea><button id="enviar" aria-label="Enviar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0b0b0b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 </div></div>
 <script>
 const $ = (s) => document.querySelector(s); const app = $('#app');
+const LOGO = '<span class="logo"><svg viewBox="0 0 12 12"><path d="M2 1.2v9.6L10.4 6z" fill="#0b0b0b"/></svg></span>';
+const ICONE_UP = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M6 10l6-6 6 6M4 20h16"/></svg>';
+const ESTADO = { rodando:'trabalhando', esperando:'esperando você', erro:'erro', novo:'começando' };
+const quando = (t) => { if (!t) return ''; const m = Math.round((Date.now() - t) / 60000); if (m < 1) return 'agora'; if (m < 60) return `há ${m} min`;
+  const h = Math.round(m / 60); if (h < 24) return `há ${h} h`; return new Date(t).toLocaleDateString('pt-BR', { day:'2-digit', month:'short' }); };
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+// Caminho interno (job/saida/variacao-1.mp4) vira o nome legível ("variacao 1"); o arquivo em si aparece embaixo como vídeo.
+const semCaminho = (t) => t.replace(/`?job\/[\w.\-\/]+\/([\w.\-]+)\.(mp4|mov|m4v|webm|jpe?g|png|webp)`?/gi, (_, n) => n.replace(/[-_]/g, ' '));
 const md = (t) => DOMPurify.sanitize(marked.parse(t), { FORBID_TAGS: ['style','form','input','iframe','video','audio','img'], FORBID_ATTR: ['style'] });
 let timer = null, ultimo = -1, jobAtual = null, eu = null;
 // Admin vê o chat igual ao cliente; "detalhes" liga passos, tempos e custo (lembrado só neste navegador).
@@ -67,8 +161,8 @@ const detalhes = () => !!(eu?.admin && det);
 function mostraSaldo() {
   const s = $('#saldo'); if (!eu) { s.textContent = ''; $('#comprar').hidden = true; return; }
   $('#comprar').hidden = !!eu.admin || !temPacotes;
-  if (!eu.admin) { s.textContent = `${eu.videos} vídeo${eu.videos === 1 ? '' : 's'} no saldo`; return; }
-  s.innerHTML = `admin · <a href="#" id="det" style="font-size:13px">${det ? 'esconder detalhes' : 'ver detalhes'}</a>`;
+  if (!eu.admin) { s.innerHTML = `<span class="chip">${eu.videos} vídeo${eu.videos === 1 ? '' : 's'}</span>`; return; }
+  s.innerHTML = `<span class="chip">admin</span> <a href="#" id="det" class="nav">${det ? 'esconder detalhes' : 'ver detalhes'}</a>`;
   $('#det').onclick = (ev) => { ev.preventDefault(); det = !det; try { localStorage.setItem('det', det ? '1' : '0'); } catch {} if (jobAtual) job(jobAtual); else mostraSaldo(); };
 }
 async function api(url, op) { const r = await fetch(url, op); if (r.status === 401) { eu = null; login(); throw new Error('login'); } return r; }
@@ -76,20 +170,21 @@ async function api(url, op) { const r = await fetch(url, op); if (r.status === 4
 function login() {
   clearInterval(timer); $('#compor').hidden = true; $('#st').textContent = ''; $('#sair').hidden = true;
   let criar = false;
-  app.innerHTML = `<h1 id="lt">Entrar</h1><p class="sub" id="ls">Entre com o seu e-mail e senha.</p>
-  <div class="card" style="max-width:420px"><input id="em" type="email" placeholder="e-mail" autocomplete="email">
-  <input id="se" type="password" placeholder="senha" autocomplete="current-password">
-  <label id="lt2" class="termos" hidden><input type="checkbox" id="aceito"> Li e aceito os <a href="/termos" target="_blank">termos de uso e a política de privacidade</a>.</label>
-  <div class="linha"><button id="ent">Entrar</button><a href="#" id="troca" style="font-size:13px">criar conta</a><a href="#" id="esq" style="font-size:13px;margin-left:auto">esqueci a senha</a></div>
-  <p id="lerro" class="erro" style="font-size:13px;margin:10px 0 0"></p></div>`;
+  app.innerHTML = `<div class="entrada"><div class="card">${LOGO}<h1 id="lt">Bem-vindo de volta</h1><p class="sub" id="ls">Entre pra mandar seus criativos.</p>
+  <label class="rotulo" for="em">E-mail</label><input id="em" type="email" placeholder="voce@email.com" autocomplete="email">
+  <label class="rotulo" for="se">Senha</label><input id="se" type="password" placeholder="••••••••" autocomplete="current-password">
+  <label id="lt2" class="termos" hidden><input type="checkbox" id="aceito"> <span>Li e aceito os <a href="/termos" target="_blank">termos de uso e a política de privacidade</a>.</span></label>
+  <div class="linha"><button id="ent" class="cheio">Entrar</button></div>
+  <p id="lerro" class="erro" style="font-size:13px;margin:12px 0 0"></p>
+  <div class="rodape-login"><a href="#" id="troca">Criar conta</a><a href="#" id="esq">Esqueci a senha</a></div></div></div>`;
   $('#esq').onclick = async (e) => { e.preventDefault(); const em = $('#em').value.trim();
     if (!em) return $('#lerro').textContent = 'Digite o seu e-mail acima e clique de novo em "esqueci a senha".';
     const r = await fetch('/api/esqueci', { method:'POST', body: JSON.stringify({ email: em }) }); const d = await r.json().catch(() => ({}));
     $('#lerro').className = r.ok ? 'ok' : 'erro'; $('#lerro').innerHTML = esc(d.msg || d.erro || 'Tente de novo.') + (d.suporte ? ` <a href="${esc(d.suporte)}" target="_blank">Falar com o suporte</a>` : ''); };
   $('#troca').onclick = (e) => { e.preventDefault(); criar = !criar; $('#lerro').textContent = '';
-    $('#lt').textContent = criar ? 'Criar conta' : 'Entrar'; $('#ls').textContent = criar ? 'Senha com 8 ou mais caracteres.' : 'Entre com o seu e-mail e senha.';
-    $('#ent').textContent = criar ? 'Criar conta' : 'Entrar'; $('#troca').textContent = criar ? 'já tenho conta' : 'criar conta';
-    $('#se').autocomplete = criar ? 'new-password' : 'current-password'; $('#lt2').hidden = !criar; $('#esq').hidden = criar; };
+    $('#lt').textContent = criar ? 'Criar sua conta' : 'Bem-vindo de volta'; $('#ls').textContent = criar ? 'Use uma senha com 8 ou mais caracteres.' : 'Entre pra mandar seus criativos.';
+    $('#ent').textContent = criar ? 'Criar conta' : 'Entrar'; $('#troca').textContent = criar ? 'Já tenho conta' : 'Criar conta';
+    $('#se').autocomplete = criar ? 'new-password' : 'current-password'; $('#lt2').hidden = !criar; $('#esq').style.visibility = criar ? 'hidden' : 'visible'; };
   const ir = async () => {
     const r = await fetch(criar ? '/api/cadastrar' : '/api/entrar', { method:'POST', body: JSON.stringify({ email: $('#em').value, senha: $('#se').value, termos: criar ? $('#aceito').checked : undefined }) });
     const d = await r.json(); if (!r.ok) return $('#lerro').textContent = d.erro; eu = d; rota();
@@ -99,9 +194,9 @@ function login() {
 
 function novaSenha(tok) {
   clearInterval(timer); $('#compor').hidden = true;
-  app.innerHTML = `<h1>Senha nova</h1><p class="sub">Escolha uma senha com 8 ou mais caracteres.</p>
-  <div class="card" style="max-width:420px"><input id="ns" type="password" placeholder="senha nova" autocomplete="new-password">
-  <div class="linha"><button id="nsb">Salvar e entrar</button></div><p id="nse" class="erro" style="font-size:13px;margin:10px 0 0"></p></div>`;
+  app.innerHTML = `<div class="entrada"><div class="card">${LOGO}<h1>Senha nova</h1><p class="sub">Escolha uma senha com 8 ou mais caracteres.</p>
+  <label class="rotulo" for="ns">Senha nova</label><input id="ns" type="password" placeholder="••••••••" autocomplete="new-password">
+  <div class="linha"><button id="nsb" class="cheio">Salvar e entrar</button></div><p id="nse" class="erro" style="font-size:13px;margin:12px 0 0"></p></div></div>`;
   $('#nsb').onclick = async () => { const r = await fetch('/api/nova-senha', { method:'POST', body: JSON.stringify({ token: tok, senha: $('#ns').value }) });
     const d = await r.json().catch(() => ({})); if (!r.ok) return $('#nse').textContent = d.erro || 'Não deu certo.'; eu = d; location.hash = ''; };
 }
@@ -119,39 +214,59 @@ async function comprar() {
 
 function home() {
   clearInterval(timer); jobAtual = null; $('#compor').hidden = true; $('#st').textContent = eu.email; $('#sair').hidden = false; mostraSaldo();
-  app.innerHTML = `<h1>Mande o criativo. Diga a variação.</h1>
-  <p class="sub">Troca de avatar, headline, layout, clone com outra pessoa — do mesmo jeito que você pediria pra um editor.</p>
-  <div class="card"><div class="drop" id="drop">Clique ou arraste o vídeo aqui</div><input type="file" id="arq" accept="video/*,image/*" hidden>
-  <textarea id="msg" placeholder="Ex.: faz 3 variações desse trocando só o avatar por mulheres latinas"></textarea>
-  <div class="linha"><button id="ir" disabled>Começar</button><span id="info" style="color:var(--suave);font-size:13px"></span></div></div>
-  <div class="jobs" id="jobs"></div><div class="admin" id="admin"></div>`;
+  app.innerHTML = `<h1>Mande o criativo.<br><em>Diga a variação.</em></h1>
+  <p class="sub">Troca de avatar, headline, layout ou pessoa: do jeito que você pediria pra um editor. As variações chegam prontas pra subir.</p>
+  <div class="passos"><span class="passo"><b>1</b>Envie o vídeo</span><span class="passo"><b>2</b>Diga o que variar</span><span class="passo"><b>3</b>Aprove e receba</span></div>
+  <div class="card"><div class="drop" id="drop"><span class="ic">${ICONE_UP}</span><b>Arraste o criativo aqui</b><small>ou clique pra escolher · vídeo ou imagem</small></div>
+  <input type="file" id="arq" accept="video/*,image/*" hidden>
+  <label class="rotulo" for="msg">O que você quer variar? <span style="color:#5d5d66">(opcional)</span></label>
+  <textarea id="msg" placeholder="Ex.: 3 variações trocando o avatar por mulheres latinas de 30 anos"></textarea>
+  <div class="barra" id="barra" hidden><i></i></div>
+  <div class="linha"><button id="ir" disabled>Começar →</button><span id="info" style="color:var(--suave);font-size:13px"></span></div></div>
+  <div id="jobs"></div><div class="admin" id="admin"></div>`;
   if (eu.admin) painelAdmin();
-  if (!eu.admin && eu.videos < 1) { $('#drop').textContent = 'Você ainda não tem vídeos no saldo. Fale com quem te passou o acesso.'; $('#drop').style.pointerEvents = 'none'; $('#msg').disabled = true; }
-  let arquivo = null; const drop = $('#drop'), arq = $('#arq');
-  const pega = (f) => { arquivo = f; drop.textContent = f.name + ' · ' + (f.size/1e6).toFixed(1) + ' MB'; drop.classList.add('ok'); $('#ir').disabled = false; };
+  const drop = $('#drop'), arq = $('#arq');
+  if (!eu.admin && eu.videos < 1) { drop.classList.add('bloq'); drop.innerHTML = `<span class="ic">${ICONE_UP}</span><b>Você ainda não tem vídeos no saldo</b><small>Fale com quem te passou o acesso.</small>`; $('#msg').disabled = true; }
+  let arquivo = null;
+  const pega = (f) => { arquivo = f; drop.classList.add('ok'); const url = URL.createObjectURL(f);
+    drop.innerHTML = `${f.type.startsWith('video') ? `<video src="${url}" muted playsinline autoplay loop></video>` : `<video poster="${url}"></video>`}
+      <div style="min-width:0"><b style="display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(f.name)}</b><small>${(f.size/1e6).toFixed(1)} MB · clique pra trocar</small></div>`;
+    $('#ir').disabled = false; };
   drop.onclick = () => arq.click(); arq.onchange = () => arq.files[0] && pega(arq.files[0]);
-  drop.ondragover = (e) => { e.preventDefault(); }; drop.ondrop = (e) => { e.preventDefault(); e.dataTransfer.files[0] && pega(e.dataTransfer.files[0]); };
-  $('#ir').onclick = async () => {
-    $('#ir').disabled = true; $('#info').textContent = 'enviando…';
-    const r = await api(`/api/jobs?nome=${encodeURIComponent(arquivo.name)}&msg=${encodeURIComponent($('#msg').value)}`, { method:'POST', body: arquivo });
-    const d = await r.json(); if (!r.ok) { $('#info').textContent = d.erro || 'Não deu pra enviar.'; $('#ir').disabled = false; return; }
-    location.hash = '#/job/' + d.id;
+  drop.ondragover = (e) => { e.preventDefault(); drop.classList.add('sobre'); }; drop.ondragleave = () => drop.classList.remove('sobre');
+  drop.ondrop = (e) => { e.preventDefault(); drop.classList.remove('sobre'); e.dataTransfer.files[0] && pega(e.dataTransfer.files[0]); };
+  $('#ir').onclick = () => {
+    $('#ir').disabled = true; $('#info').textContent = 'enviando…'; $('#barra').hidden = false;
+    const x = new XMLHttpRequest(); x.open('POST', `/api/jobs?nome=${encodeURIComponent(arquivo.name)}&msg=${encodeURIComponent($('#msg').value)}`);
+    x.upload.onprogress = (e) => { if (e.lengthComputable) { const p = Math.round(e.loaded / e.total * 100); $('#barra i').style.width = p + '%'; $('#info').textContent = `enviando… ${p}%`; } };
+    x.onload = () => { let d = {}; try { d = JSON.parse(x.responseText); } catch {}
+      if (x.status === 401) { eu = null; return login(); }
+      if (x.status >= 300) { $('#info').textContent = d.erro || 'Não deu pra enviar.'; $('#ir').disabled = false; $('#barra').hidden = true; return; }
+      location.hash = '#/job/' + d.id; };
+    x.onerror = () => { $('#info').textContent = 'A conexão caiu. Tente de novo.'; $('#ir').disabled = false; $('#barra').hidden = true; };
+    x.send(arquivo);
   };
-  api('/api/jobs').then((r) => r.json()).then((js) => { if (js.length) $('#jobs').innerHTML = '<small>Seus pedidos</small>' +
-    js.map((j) => `<a href="#/job/${j.id}">${esc(j.primeira || 'pedido ' + j.id)}<br><small>${{ rodando:'trabalhando', esperando:'esperando você', erro:'erro', novo:'começando' }[j.status]}${j.custo != null ? ' · tokens US$ ' + j.custo.toFixed(2) : ''}</small></a>`).join(''); });
+  api('/api/jobs').then((r) => r.json()).then((js) => { if (!js.length) return;
+    $('#jobs').innerHTML = `<div class="secao"><h2>Seus pedidos</h2><small>${js.length}</small></div><div class="jobs">` + js.map((j) => {
+      const st = j.entregues && j.status !== 'rodando' ? 'pronto' : j.status;
+      const rot = st === 'pronto' ? `${j.entregues} pronto${j.entregues === 1 ? '' : 's'}` : ESTADO[j.status];
+      const thumb = j.entrada && /\.(mp4|mov|m4v|webm)$/i.test(j.entrada) ? `<video src="/arquivos/${j.id}/${esc(j.entrada)}#t=0.5" preload="metadata" muted playsinline></video>`
+        : j.entrada ? `<video poster="/arquivos/${j.id}/${esc(j.entrada)}"></video>` : '';
+      return `<a class="job" href="#/job/${j.id}">${thumb}<div><p>${esc(j.primeira || 'Pedido sem descrição')}</p><span class="estado ${st}">${rot}</span>
+        <small>${quando(j.t)}${j.custo != null && detalhes() ? ' · US$ ' + j.custo.toFixed(2) : ''}</small></div></a>`; }).join('') + '</div>'; });
 }
 
 async function painelAdmin() {
   const us = await (await api('/api/admin/usuarios')).json();
-  $('#admin').innerHTML = `<small>Clientes (admin)</small><table><tr><th>e-mail</th><th>vídeos</th><th>pedidos</th><th>custo US$</th><th></th></tr>` +
+  $('#admin').innerHTML = `<small>Clientes (admin)</small><div class="tabela"><table><tr><th>e-mail</th><th>vídeos</th><th>pedidos</th><th>custo US$</th><th></th></tr>` +
     us.map((u) => `<tr><td>${esc(u.email)}${u.admin ? ' · admin' : ''}</td><td>${u.admin ? '∞' : u.videos}</td><td>${u.pedidos}</td><td>${u.custo.toFixed(2)}</td>
-      <td>${u.admin ? '' : `<input type="number" value="10" data-e="${esc(u.email)}"> <button data-e="${esc(u.email)}">creditar</button>`} <button data-s="${esc(u.email)}">link de senha</button></td></tr>`).join('') + '</table><p id="linkSenha" class="ok"></p><div id="pags"></div>';
+      <td>${u.admin ? '' : `<input type="number" value="10" data-e="${esc(u.email)}"> <button data-e="${esc(u.email)}">creditar</button>`} <button data-s="${esc(u.email)}">link de senha</button></td></tr>`).join('') + '</table></div><p id="linkSenha" class="ok" style="word-break:break-all"></p><div id="pags"></div>';
   $('#admin').querySelectorAll('button[data-s]').forEach((b) => b.onclick = async () => {
     const r = await api('/api/admin/link-senha', { method:'POST', body: JSON.stringify({ email: b.dataset.s }) }); const d = await r.json();
     $('#linkSenha').textContent = r.ok ? `Mande pra ${b.dataset.s} (vale ${d.validade}): ${d.link}` : d.erro; });
   const pg = await (await api('/api/admin/pagamentos')).json(); const pend = Object.entries(pg.pendentes || {});
-  $('#pags').innerHTML = `<small>Pagamentos Cakto (últimos 100)</small><table><tr><th>quando</th><th>e-mail</th><th>vídeos</th><th>situação</th></tr>` +
-    (pg.pedidos.map((x) => `<tr><td>${esc((x.t || '').slice(0, 16).replace('T', ' '))}</td><td>${esc(x.email)}</td><td>${x.videos}</td><td>${esc(x.estornado ? ({ refund: 'reembolsado', chargeback: 'chargeback' }[x.estornado] || x.estornado) : x.obs || (x.conta || !(pg.pendentes || {})[x.email] ? 'creditado' : 'aguardando cadastro'))}</td></tr>`).join('') || '<tr><td colspan="4">nenhum ainda</td></tr>') + '</table>' +
+  $('#pags').innerHTML = `<small>Pagamentos Cakto (últimos 100)</small><div class="tabela"><table><tr><th>quando</th><th>e-mail</th><th>vídeos</th><th>situação</th></tr>` +
+    (pg.pedidos.map((x) => `<tr><td>${esc((x.t || '').slice(0, 16).replace('T', ' '))}</td><td>${esc(x.email)}</td><td>${x.videos}</td><td>${esc(x.estornado ? ({ refund: 'reembolsado', chargeback: 'chargeback' }[x.estornado] || x.estornado) : x.obs || (x.conta || !(pg.pendentes || {})[x.email] ? 'creditado' : 'aguardando cadastro'))}</td></tr>`).join('') || '<tr><td colspan="4">nenhum ainda</td></tr>') + '</table></div>' +
     (pend.length ? `<small>Crédito esperando o cliente criar conta: ${pend.map(([e, n]) => esc(e) + ' (' + n + ')').join(', ')}</small>` : '');
   $('#admin').querySelectorAll('button[data-e]').forEach((b) => b.onclick = async () => {
     const n = $('#admin').querySelector(`input[data-e="${b.dataset.e}"]`).value;
@@ -160,22 +275,23 @@ async function painelAdmin() {
   });
 }
 
-function midias(id, texto, { legenda = true, baixar = true } = {}) {
-  const achados = [...new Set(texto.match(/job\/[\w.\-\/]+\.(mp4|mov|jpg|jpeg|png|webp)/gi) || [])];
+function midias(id, texto, { legenda = true, baixar = true, vistos = null } = {}) {
+  const achados = [...new Set(texto.match(/job\/[\w.\-\/]+\.(mp4|mov|jpg|jpeg|png|webp)/gi) || [])].filter((p) => !vistos || !vistos.has(p));
+  if (vistos) achados.forEach((p) => vistos.add(p));
   if (!achados.length) return '';
   return '<div class="midia">' + achados.map((p) => {
     const src = `/arquivos/${id}/${p}`, nome = p.split('/').pop();
-    const el = /\.(mp4|mov)$/i.test(p) ? `<video src="${src}" controls playsinline preload="metadata" onerror="this.parentNode.remove()"></video>${baixar ? `<a href="${src}?baixar" style="font-size:12px">baixar</a> ` : ''}`
+    const el = /\.(mp4|mov)$/i.test(p) ? `<video src="${src}" controls playsinline preload="metadata" onerror="this.parentNode.remove()"></video>${baixar ? `<a class="baixar" href="${src}?baixar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg> Baixar</a>` : ''}`
                                        : `<a href="${src}" target="_blank"><img src="${src}" onerror="this.closest('figure').remove()"></a>`;
     return `<figure>${el}${legenda ? `<figcaption>${esc(nome)}</figcaption>` : ''}</figure>`;
   }).join('') + '</div>';
 }
 
 function job(id) {
-  clearInterval(timer); jobAtual = id; ultimo = -1; mostraSaldo(); app.innerHTML = '<div id="chat"></div><div id="pens"></div>'; $('#compor').hidden = false;
+  clearInterval(timer); jobAtual = id; ultimo = -1; mostraSaldo(); app.innerHTML = '<div id="chat"></div><div id="pens"></div>'; $('#compor').hidden = false; const vistos = new Set(); let concluido = false;
   let ferrs = null;
   const puxar = async () => {
-    const r = await api(`/api/jobs/${id}/eventos?depois=${ultimo}`); if (!r.ok) { app.innerHTML = '<p class="erro">Pedido não encontrado (o servidor reiniciou?).</p>'; return clearInterval(timer); }
+    const r = await api(`/api/jobs/${id}/eventos?depois=${ultimo}`); if (!r.ok) { app.innerHTML = '<div class="aviso-erro" style="margin-left:0">Não achamos esse pedido. <a href="#">Voltar pro início</a></div>'; return clearInterval(timer); }
     const { status, custo, eventos } = await r.json(); const chat = $('#chat'); const embaixo = innerHeight + scrollY >= document.body.scrollHeight - 80;
     for (const e of eventos) {
       ultimo = e.n;
@@ -191,37 +307,40 @@ function job(id) {
       ferrs = null;
       if (e.tipo === 'cliente') { const txt = e.texto.replace(/^Mandei o arquivo em \S+\.\s*/, '');
         chat.insertAdjacentHTML('beforeend', `<div class="msg cliente">${midias(id, e.texto.startsWith('Mandei o arquivo em ') ? e.texto.split(/\s/)[4] : '', { legenda: false, baixar: false })}${txt ? `<div>${esc(txt)}</div>` : ''}</div>`); }
-      if (e.tipo === 'agente') chat.insertAdjacentHTML('beforeend', `<div class="msg agente">${md(e.texto)}${midias(id, e.texto)}</div>`);
+      if (e.tipo === 'agente') chat.insertAdjacentHTML('beforeend', `<div class="msg agente">${LOGO}<div class="corpo">${md(semCaminho(e.texto))}${midias(id, e.texto, { vistos })}</div></div>`);
       if (e.tipo === 'fim' && e.custo != null && detalhes()) chat.insertAdjacentHTML('beforeend', `<div class="fim">admin · rodada ${e.dur ? (e.dur / 60000).toFixed(1) + ' min (modelo ' + (e.durModelo / 60000).toFixed(1) + ' · vídeo/ferramentas ' + ((e.dur - e.durModelo) / 60000).toFixed(1) + ') · ' + e.passos + ' passos · ' : ''}tokens acumulados US$ ${e.custo.toFixed(2)}</div>`);
-      if (e.tipo === 'erro') chat.insertAdjacentHTML('beforeend', `<p class="erro">${esc(e.texto)}</p>`);
+      if (e.tipo === 'erro') chat.insertAdjacentHTML('beforeend', `<div class="aviso-erro">${esc(e.texto)}</div>`);
       if (e.tipo === 'aprovacao') chat.insertAdjacentHTML('beforeend', `<div class="aprov" id="ap-${esc(e.id)}"><p>${esc(e.resumo)}</p>
-        <p><b>Usa ${e.videos} vídeo${e.videos === 1 ? '' : 's'} do seu saldo.</b> <small>${eu.admin ? '' : `Você tem ${eu.videos}.`}</small>${!eu.admin && eu.videos < e.videos && temPacotes ? ' <a href="#/comprar">comprar vídeos</a>' : ''}</p>
-        <button data-ap="${esc(e.id)}">Aprovar</button> <small class="aperro"></small></div>`);
-      if (e.tipo === 'aprovado') { const c = document.getElementById('ap-' + e.ref); if (c) c.innerHTML = `<p class="ok">✓ Aprovado · ${e.videos} vídeo${e.videos === 1 ? '' : 's'} reservado${e.videos === 1 ? '' : 's'}</p>`; }
-      if (e.tipo === 'entregue') chat.insertAdjacentHTML('beforeend', `<p class="ok">✓ Entregue: ${esc(e.caminho.split('/').pop())}</p>${midias(id, e.caminho)}`);
-      if (e.tipo === 'finalizado') chat.insertAdjacentHTML('beforeend', `<p class="ok">Pedido concluído: ${e.entregues} vídeo${e.entregues === 1 ? '' : 's'} entregue${e.entregues === 1 ? '' : 's'}${e.devolvidos ? ` · ${e.devolvidos} devolvido${e.devolvidos === 1 ? '' : 's'} ao saldo` : ''}.</p>`);
+        <div class="uso"><span>Usa <b>${e.videos} vídeo${e.videos === 1 ? '' : 's'}</b> do seu saldo${eu.admin ? '' : ` · você tem <b>${eu.videos}</b>`}</span>${!eu.admin && eu.videos < e.videos && temPacotes ? '<a href="#/comprar">comprar vídeos</a>' : ''}</div>
+        <div class="linha"><button data-ap="${esc(e.id)}">Aprovar e começar</button><small class="aperro erro"></small></div></div>`);
+      if (e.tipo === 'aprovado') { const c = document.getElementById('ap-' + e.ref); if (c) c.outerHTML = `<div class="selo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Aprovado · ${e.videos} vídeo${e.videos === 1 ? '' : 's'} reservado${e.videos === 1 ? '' : 's'}</div>`; }
+      if (e.tipo === 'entregue') { let g = chat.lastElementChild; if (!g?.classList.contains('entregas')) { g = document.createElement('div'); g.className = 'entregas'; chat.append(g); } g.insertAdjacentHTML('beforeend', `<div class="entrega"><div class="selo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> ${esc(e.caminho.split('/').pop().replace(/\.[^.]+$/, '').replace(/[-_]/g, ' '))}</div>${midias(id, e.caminho, { legenda: false, vistos })}</div>`); }
+      if (e.tipo === 'finalizado') chat.insertAdjacentHTML('beforeend', `<p class="selo">Pedido concluído: ${e.entregues} vídeo${e.entregues === 1 ? '' : 's'} entregue${e.entregues === 1 ? '' : 's'}${e.devolvidos ? ` · ${e.devolvidos} devolvido${e.devolvidos === 1 ? '' : 's'} ao saldo` : ''}.</p>`);
     }
-    $('#pens').innerHTML = status === 'rodando' ? '<div class="pensando">trabalhando no seu vídeo</div>' : '';
-    $('#st').textContent = { rodando:'trabalhando', esperando:'esperando você', erro:'erro', novo:'começando' }[status] + (custo != null && detalhes() ? ` · tokens US$ ${custo.toFixed(2)}` : '');
+    $('#pens').innerHTML = status === 'rodando' ? '<div class="pensando"><span class="pontos"><i></i><i></i><i></i></span>trabalhando no seu vídeo</div>' : '';
+    if (eventos.some((e) => e.tipo === 'finalizado')) concluido = true; else if (eventos.some((e) => e.tipo === 'aprovado' || e.tipo === 'cliente')) concluido = false;
+    $('#st').textContent = (status !== 'rodando' && concluido ? 'concluído' : ESTADO[status]) + (custo != null && detalhes() ? ` · tokens US$ ${custo.toFixed(2)}` : '');
     $('#enviar').disabled = status === 'rodando';
     chat.querySelectorAll('button[data-ap]').forEach((b) => { b.disabled = status === 'rodando'; b.onclick = async () => {
       b.disabled = true; const r = await api(`/api/jobs/${id}/aprovar`, { method:'POST', body: JSON.stringify({ id: b.dataset.ap }) });
       const d = await r.json().catch(() => ({})); if (!r.ok) { b.disabled = false; b.parentNode.querySelector('.aperro').textContent = d.erro || 'Não deu pra aprovar.'; }
       else if (d.videos != null) { eu.videos = d.videos; mostraSaldo(); } }; });
     if (eventos.some((e) => e.tipo === 'finalizado')) api('/api/eu').then((r) => r.json()).then((d) => { eu = d; mostraSaldo(); });
-    if (eventos.length && embaixo) scrollTo(0, document.body.scrollHeight);
+    if (eventos.length && embaixo) { scrollTo(0, document.body.scrollHeight);
+      chat.querySelectorAll('video:not([data-r])').forEach((v) => { v.dataset.r = 1; v.addEventListener('loadedmetadata', () => { if (innerHeight + scrollY >= document.body.scrollHeight - 600) scrollTo(0, document.body.scrollHeight); }, { once: true }); }); }
   };
   puxar(); timer = setInterval(puxar, 1500);
 }
 
 $('#enviar').onclick = async () => {
   const t = $('#resp').value.trim(); if (!t || !jobAtual) return;
-  $('#enviar').disabled = true; $('#resp').value = '';
+  $('#enviar').disabled = true; $('#resp').value = ''; $('#resp').style.height = 'auto';
   const r = await api(`/api/jobs/${jobAtual}/mensagem`, { method:'POST', body: JSON.stringify({ texto: t }) });
   if (!r.ok) { const d = await r.json().catch(() => ({})); $('#resp').value = t; alertaErro(d.erro || 'Não deu pra enviar.'); }
 };
 function alertaErro(t) { const p = document.createElement('p'); p.className = 'erro'; p.textContent = t; $('#chat')?.append(p); }
-$('#resp').onkeydown = (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) $('#enviar').click(); };
+$('#resp').onkeydown = (e) => { if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) { e.preventDefault(); $('#enviar').click(); } };
+$('#resp').oninput = () => { const t = $('#resp'); t.style.height = 'auto'; t.style.height = Math.min(t.scrollHeight, 180) + 'px'; };
 const rota = async () => {
   const ns = location.hash.match(/^#\/senha\/([\w-]+)$/); if (ns) return novaSenha(ns[1]);
   if (!eu) { try { eu = await (await api('/api/eu')).json(); } catch { return; } }

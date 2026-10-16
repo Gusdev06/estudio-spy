@@ -1,0 +1,29 @@
+{
+  "id": "da55bc9fb789405eab35686b23d22c1b",
+  "model": "google/nano-banana-2.1/edit",
+  "prompt": "Edit image 1. Replace the woman with the woman from images 2 and 3 (same identity, face and beauty mark). She is alone. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nHer dark brown hair is pulled back tightly into a sleek low bun, exactly like the hairstyle in image 1. She wears a chunky cream knit cardigan, open at the front, over a plain white tank top, and a thin delicate gold chain necklace. No jacket, no scrubs, no logo.\nKeep everything else in image 1 exactly the same: she is sitting in a chair, her pose, head angle, her chewing mouth, her right hand holding a peeled orange segment in front of her chest, arm positions, the white wall, the whiteboard at the top left, the black chair armrest at the bottom right, the lighting, the colors, the framing and the camera angle.\nIMPORTANT: image 1 has white caption text over her chest (\"Men are so embarrasing bc wdym you hide and sit on the toilet...\"). Remove ALL of that text completely: the output must contain no letters, words or captions anywhere; show her cardigan, tank top and hand there instead. Photorealistic front phone camera, not retouched.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/b630d7c1-0c8d-44c7-841f-172e83784bd1.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/lily-girltea-7670633492090293517-bia-2026-10-16/base/bia.png"
+  ],
+  "elapsed_ms": 57319,
+  "raw": {
+    "id": "da55bc9fb789405eab35686b23d22c1b",
+    "model": "google/nano-banana-2.1/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/b630d7c1-0c8d-44c7-841f-172e83784bd1.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/da55bc9fb789405eab35686b23d22c1b/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-16T10:59:44.539117008Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 55589
+    }
+  }
+}

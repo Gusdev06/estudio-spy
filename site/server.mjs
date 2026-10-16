@@ -347,7 +347,7 @@ const MIDIA = { '.mp4': 'video/mp4', '.mov': 'video/quicktime', '.m4v': 'video/m
   '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp' };
 const TEXTO_CLIENTE = { '.md': 'text/plain; charset=utf-8', '.txt': 'text/plain; charset=utf-8' };
 const SEGURANCA = { 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'no-referrer', 'X-Frame-Options': 'DENY' };
-const CSP = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'";
+const CSP = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'";
 
 function servirArquivo(req, res, arq, { baixar = false, tipos = { ...MIDIA, ...TEXTO_CLIENTE }, raiz = null } = {}) {
   let real;
@@ -465,7 +465,8 @@ http.createServer(async (req, res) => {
     }
     if (req.method === 'GET' && u.pathname === '/api/jobs')
       return json(res, [...jobs.values()].filter((j) => j.dono === email).reverse()
-        .map(({ id, status, custo, eventos }) => ({ id, status, custo: admin(email) ? custo : undefined,
+        .map(({ id, status, custo, eventos, entrada, entregues }) => ({ id, status, custo: admin(email) ? custo : undefined, entrada, entregues: (entregues || []).length,
+          t: eventos.at(-1)?.t,
           primeira: eventos.find((e) => e.tipo === 'cliente')?.texto?.replace(/^Mandei o arquivo em \S+\.\s*/, '').slice(0, 80) })));
     if (req.method === 'POST' && u.pathname === '/api/jobs') {
       const nome = nomeEntrada(u.searchParams.get('nome'));
