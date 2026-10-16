@@ -1,0 +1,29 @@
+{
+  "id": "0844174a7de14ee2ac00a11c0985fb95",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate this exact ad. Keep EVERYTHING identical — the minimal black layout, fonts, colors, sizes and positions: \"INSTAGRAM SPY\" letter-spaced at top, the Instagram gradient logo, the 4 left-side gradient-outline icons with letter-spaced labels \"READ MESSAGES\", \"VIEW MEDIA\", \"CHECK CALL LOGS\", \"SEE CONTACTS\", the bottom line \"STAY ONE STEP AHEAD\" between thin rules. Replace the grey subline under the headline with exactly: \"See what's really going on in their Instagram chats.\" Keep the tilted black phone showing the Instagram DM with \"Sophie, Active now\" and the chat bubbles exactly as they are. Change ONLY the headline: replace it with exactly \"Who are they really talking to?\" — same font and size, white, with \"really\" in the purple-orange Instagram gradient. Photorealistic, natural skin texture, all text spelled exactly as written, no extra text.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/9624945e-343d-4ee1-ac51-31967de9d4eb.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/zap-gram-imagem-whatsspy-igdark-2026-10-15/out/i2-headline-who.png"
+  ],
+  "elapsed_ms": 99363,
+  "raw": {
+    "id": "0844174a7de14ee2ac00a11c0985fb95",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/9624945e-343d-4ee1-ac51-31967de9d4eb.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/0844174a7de14ee2ac00a11c0985fb95/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-15T15:33:30.706039029Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 97151
+    }
+  }
+}

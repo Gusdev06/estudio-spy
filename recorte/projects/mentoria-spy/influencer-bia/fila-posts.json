@@ -164,7 +164,9 @@
     "quando_utc": "2026-10-15T23:00:00Z",
     "slot": "07h Bali 16/10",
     "trial": "MANUAL",
-    "status": "pendente"
+    "status": "publicado",
+    "rodou_em": "2026-10-15T15:02:40+00:00",
+    "permalink": "https://www.instagram.com/reel/DehO9f0DYry/"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l1-14-pepino.mp4",
@@ -172,7 +174,9 @@
     "quando_utc": "2026-10-15T23:00:00Z",
     "slot": "07h Bali 16/10",
     "trial": "MANUAL",
-    "status": "pendente"
+    "status": "publicado",
+    "rodou_em": "2026-10-15T15:03:24+00:00",
+    "permalink": "https://www.instagram.com/reel/DehPB9cjC-z/"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l1-15-maquiagem.mp4",
@@ -180,7 +184,9 @@
     "quando_utc": "2026-10-15T23:00:00Z",
     "slot": "07h Bali 16/10",
     "trial": "MANUAL",
-    "status": "pendente"
+    "status": "publicado",
+    "rodou_em": "2026-10-15T15:04:05+00:00",
+    "permalink": "https://www.instagram.com/reel/DehPHVJjM0S/"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-prontos-2026-10-14/05-pimentao-DdFwAIcBKX7.mp4",
@@ -437,7 +443,9 @@
     "quando_utc": "2026-10-15T23:00:00Z",
     "slot": "07h Bali 16/10",
     "trial": "MANUAL",
-    "status": "pendente"
+    "status": "publicado",
+    "rodou_em": "2026-10-15T15:04:48+00:00",
+    "permalink": "https://www.instagram.com/reel/DehPMTumcVd/"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-prontos-2026-10-14/07-pimentao2-DdsYwhpB-qD.mp4",
@@ -445,6 +453,8 @@
     "quando_utc": "2026-10-15T23:00:00Z",
     "slot": "07h Bali 16/10",
     "trial": "MANUAL",
-    "status": "pendente"
+    "status": "publicado",
+    "rodou_em": "2026-10-15T15:05:22+00:00",
+    "permalink": "https://www.instagram.com/reel/DehPRjPkR8x/"
   }
 ]

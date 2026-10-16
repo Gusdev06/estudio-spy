@@ -1,0 +1,29 @@
+{
+  "id": "3ce15e82661b48d199568965a766f5e2",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate this exact ad. Keep EVERYTHING identical — the full layout, every text element with the exact same words, fonts, colors, sizes and positions (WhatsSpy logo and \"MONITOR ANY WHATSAPP\" top-left, \"MORE CONTROL. LESS WORRIES.\" top-right, the 6 green-icon feature cards on the right: Read messages, Track calls, View media, Real-time location, See contacts, Check deleted messages, with their exact descriptions; the subline \"Messages, calls, photos, videos and more. All in one place.\", the green brush \"Know the truth.\", the phone showing the WhatsApp chat list, the 3 trust badges \"100% SAFE & SECURE\", \"WORKS ON iOS & ANDROID\", \"EASY TO USE\", the green \"TRY NOW FREE TRIAL\" button and the handwritten \"Their activity. Your peace of mind.\" bottom-right), the dark green-black background. Keep the headline \"Everything they do on WhatsApp.\" exactly, with \"WhatsApp.\" in green. Change ONLY the woman on the left: a Black American woman in her early 30s with natural curly hair, same pose looking down at her phone with a slight smile, same dark green sweater, same soft lighting. Photorealistic, natural skin texture, all text spelled exactly as written, no extra text.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/37812df1-ce39-40d9-9d77-c7b71c625542.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/zap-gram-imagem-whatsspy-igdark-2026-10-15/out/w2-mulher-negra.png"
+  ],
+  "elapsed_ms": 45348,
+  "raw": {
+    "id": "3ce15e82661b48d199568965a766f5e2",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/37812df1-ce39-40d9-9d77-c7b71c625542.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/3ce15e82661b48d199568965a766f5e2/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-15T15:33:30.774834503Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 43142
+    }
+  }
+}

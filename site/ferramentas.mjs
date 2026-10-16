@@ -37,14 +37,65 @@ async function baixar(url, destino) {
 
 export function executores(j, ctx) {
   // ctx: { evento, meta, log, saldo(email), ehAdmin(email) }
-  const inputsParaArgs = (inputs) => {
+  // "@caminho" (solto, em lista ou em objeto) vira URL pública: o arquivo sobe antes (mesmo arquivo = mesmo upload por 24 h)
+  const uploads = new Map();
+  async function subir(rel) {
+    const abs = dentroDoJob(j, rel);
+    if (!uploads.has(abs)) uploads.set(abs, sh('wavespeed', ['upload', abs, '--json'], { timeout: 300e3, maxBuffer: 1e6 }).then(({ stdout }) => JSON.parse(stdout).url));
+    return uploads.get(abs);
+  }
+  async function resolver(v) {
+    if (typeof v === 'string') return v.startsWith('@') ? subir(v.slice(1)) : v;
+    if (Array.isArray(v)) return Promise.all(v.map(resolver));
+    if (v && typeof v === 'object') return Object.fromEntries(await Promise.all(Object.entries(v).map(async ([k, x]) => [k, await resolver(x)])));
+    return v;
+  }
+  const inputsParaArgs = async (inputs) => {
     const args = [];
-    for (const [k, v] of Object.entries(inputs || {})) {
-      if (typeof v === 'string' && v.startsWith('@')) args.push('-i', `${k}=@${dentroDoJob(j, v.slice(1))}`);
-      else args.push('-i', `${k}=${typeof v === 'string' ? v : JSON.stringify(v)}`);
-    }
+    for (const [k, v] of Object.entries(inputs || {})) { const r = await resolver(v); args.push('-i', `${k}=${typeof r === 'string' ? r : JSON.stringify(r)}`); }
     return args;
   };
+
+  const cwdTrab = path.join(j.cwd, 'job', 'trabalho');
+  async function cotar({ modelo, inputs, saida }) {
+    let args; try { args = await inputsParaArgs(inputs); } catch (e) { return { erro: `Arquivo de entrada inválido: ${String(e.message).slice(0, 200)}` }; }
+    try {
+      const { stdout } = await sh('wavespeed', ['price', modelo, ...args, '--json'], { cwd: cwdTrab, timeout: 180e3, maxBuffer: 1e7 });
+      const p = JSON.parse(stdout); const preco = Number(p.discounted_price ?? p.price);
+      if (preco > 0) return { args, preco };
+    } catch (e) { ctx.log({ job: j.id, aviso: 'preco', modelo, msg: String(e).slice(0, 300) }); }
+    return { erro: `Não consegui estimar o preço de ${modelo} com esses inputs. Confira os parâmetros com a ferramenta ver_modelo.` };
+  }
+  function checarTeto(preco, oque) {
+    const teto = tetoMidia(j), gasto = j.gastoMidia || 0;
+    if (ctx.ehAdmin(j.dono) || gasto + preco <= teto) return null;
+    ctx.log({ job: j.id, teto: 'estourou', oque, preco, gasto, limite: teto });
+    return j.reserva ? 'Limite de geração deste pedido atingido. Não gere mais nada: entregue o que já está pronto e explique ao cliente que o pedido chegou ao limite.'
+                     : 'Isso precisa da aprovação do cliente antes. Mostre o plano/prévia e chame pedir_aprovacao.';
+  }
+  async function gerar({ modelo, saida }, { args, preco }) {
+    const dir = path.join(cwdTrab, 'gerado'); fs.mkdirSync(dir, { recursive: true });
+    const nome = saida.replace(/\//g, '-');
+    let out;
+    try {
+      const { stdout } = await sh('wavespeed', ['run', modelo, ...args, '--json', '--download', path.join(dir, `${nome}-{index}.{ext}`)], { cwd: cwdTrab, timeout: 1200e3, maxBuffer: 2e7 });
+      out = JSON.parse(stdout);
+    } catch (e) {
+      const m = /"id"\s*:\s*"([0-9a-f]{32})"/.exec(String(e.stdout || '') + String(e.stderr || ''));
+      j.gastoMidia = (j.gastoMidia || 0) + preco; ctx.meta(j);
+      ctx.log({ job: j.id, erro: 'run', modelo, id: m?.[1], msg: String(e).slice(0, 400) });
+      return { erro: m ? `Erro de rede, mas a geração pode ter sido concluída (id ${m[1]}). Use recuperar_midia com esse id; NÃO gere de novo.`
+                       : `A geração falhou: ${String(e.stderr || e.message).slice(0, 300)}` };
+    }
+    j.gastoMidia = (j.gastoMidia || 0) + preco; (j.predicoes ||= []).push({ id: out.id, modelo, preco, t: new Date().toISOString() }); ctx.meta(j);
+    const arquivos = [];
+    for (const [i, url] of (out.outputs || []).entries()) {
+      let arq = out.saved?.[i];
+      if (!arq || !(await decodificaInteiro(arq))) { arq = arq || path.join(dir, `${nome}-${i}${path.extname(new URL(url).pathname)}`); if (!(await baixar(url, arq))) { arquivos.push({ url, erro: 'download falhou' }); continue; } }
+      arquivos.push(path.relative(j.cwd, arq));
+    }
+    return { id: out.id, arquivos };
+  }
 
   return {
     pedir_aprovacao: async ({ videos, resumo }) => {
@@ -55,43 +106,21 @@ export function executores(j, ctx) {
         return texto(`Botão de aprovação de ${videos} vídeo(s) mostrado ao cliente. Termine a sua vez agora e espere a resposta. Saldo atual dele: ${ctx.ehAdmin(j.dono) ? 'ilimitado (admin)' : ctx.saldo(j.dono) + ' vídeo(s)'}.`);
       },
 
-    gerar_midia: async ({ modelo, inputs, saida }) => {
-        let args;
-        try { args = inputsParaArgs(inputs); } catch (e) { return erro(String(e.message)); }
-        const cwd = path.join(j.cwd, 'job', 'trabalho');
-        let preco = null;
-        try {
-          const { stdout } = await sh('wavespeed', ['price', modelo, ...args, '--upload', '--json'], { cwd, timeout: 180e3, maxBuffer: 1e7 });
-          const p = JSON.parse(stdout); preco = Number(p.discounted_price ?? p.price);
-        } catch (e) { ctx.log({ job: j.id, aviso: 'preco', modelo, msg: String(e).slice(0, 300) }); }
-        if (!(preco > 0)) return erro(`Não consegui estimar o preço de ${modelo} com esses inputs. Confira os parâmetros com a ferramenta ver_modelo e tente de novo.`);
-        const teto = tetoMidia(j), gasto = j.gastoMidia || 0;
-        if (!ctx.ehAdmin(j.dono) && gasto + preco > teto) {
-          ctx.log({ job: j.id, teto: 'estourou', modelo, preco, gasto, teto });
-          return erro(j.reserva ? `Limite de geração deste pedido atingido. Não gere mais nada: entregue o que já está pronto e explique ao cliente que o pedido chegou ao limite.`
-                                : `Isso precisa da aprovação do cliente antes. Mostre o plano/prévia e chame pedir_aprovacao.`);
-        }
-        const dir = path.join(j.cwd, 'job', 'trabalho', 'gerado'); fs.mkdirSync(dir, { recursive: true });
-        const molde = path.join(dir, `${saida.replace(/\//g, '-')}-{index}.{ext}`);
-        let out = null;
-        try {
-          const { stdout } = await sh('wavespeed', ['run', modelo, ...args, '--json', '--download', molde], { cwd, timeout: 1200e3, maxBuffer: 2e7 });
-          out = JSON.parse(stdout);
-        } catch (e) {
-          const m = /"id"\s*:\s*"([0-9a-f]{32})"/.exec(String(e.stdout || '') + String(e.stderr || ''));
-          j.gastoMidia = gasto + preco; ctx.meta(j);
-          ctx.log({ job: j.id, erro: 'run', modelo, id: m?.[1], msg: String(e).slice(0, 400) });
-          return erro(m ? `A geração deu erro de rede mas pode ter sido concluída (id ${m[1]}). Use recuperar_midia com esse id; NÃO gere de novo.`
-                        : `A geração falhou: ${String(e.stderr || e.message).slice(0, 300)}`);
-        }
-        j.gastoMidia = gasto + preco; (j.predicoes ||= []).push({ id: out.id, modelo, preco, t: new Date().toISOString() }); ctx.meta(j);
-        const salvos = [];
-        for (const [i, url] of (out.outputs || []).entries()) {
-          let arq = out.saved?.[i];
-          if (!arq || !(await decodificaInteiro(arq))) { arq = arq || path.join(dir, `${saida}-${i}${path.extname(new URL(url).pathname)}`); if (!(await baixar(url, arq))) { salvos.push({ url, erro: 'download falhou' }); continue; } }
-          salvos.push(path.relative(path.join(j.cwd), arq));
-        }
-        return texto({ id: out.id, arquivos: salvos, aviso: 'Confira o arquivo inteiro antes de usar.' });
+    gerar_midia: async (item) => {
+        const c = await cotar(item); if (c.erro) return erro(c.erro);
+        const t = checarTeto(c.preco, item.modelo); if (t) return erro(t);
+        const r = await gerar(item, c); return r.erro ? erro(r.erro) : texto({ ...r, aviso: 'Confira o arquivo inteiro antes de usar.' });
+      },
+
+    gerar_midia_lote: async ({ itens }) => {
+        // cota tudo em paralelo, confere o teto pelo TOTAL e só então dispara todas as gerações juntas
+        const cot = await Promise.all(itens.map(cotar));
+        const falhas = cot.map((c, i) => c.erro && `${itens[i].saida}: ${c.erro}`).filter(Boolean);
+        if (falhas.length) return erro(`Nada foi gerado. Corrija e mande o lote de novo:\n${falhas.join('\n')}`);
+        const total = cot.reduce((s, c) => s + c.preco, 0);
+        const t = checarTeto(total, `lote de ${itens.length}`); if (t) return erro(t);
+        const res = await Promise.all(itens.map((it, i) => gerar(it, cot[i]).then((r) => ({ saida: it.saida, ...r }))));
+        return texto({ resultados: res, aviso: 'Confira cada arquivo inteiro antes de usar. Para os que deram erro com id, use recuperar_midia (não gere de novo).' });
       },
 
     recuperar_midia: async ({ id, saida }) => {

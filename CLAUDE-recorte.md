@@ -50,6 +50,13 @@ Tudo fora de `job/` é **só leitura**. Não leia nem cite nada fora desta pasta
 - Nunca fique mais de ~3 minutos sem uma linha nova.
 - Não instale pacote no meio do pedido. Use o que já existe; se faltar algo essencial, explique em uma linha e siga por outro caminho.
 
+## Velocidade (o cliente espera na tela)
+- **Gerações independentes vão juntas:** os rostos das N variações num único `gerar_midia_lote`; depois os lipsyncs/vídeos das N variações em outro. Nunca uma por vez quando não dependem uma da outra.
+- **ffmpeg rápido no meio, qualidade só no fim:** prévias, cortes intermediários, folhas de conferência e testes com `-preset ultrafast -crf 18`; só a peça final em `job/saida/` com `-preset medium -crf 18`. Sempre `-threads 0`.
+- **Analise em resolução reduzida:** medir blocos, rostos e cortes em frames amostrados (2–5 fps, lado menor ≤ 540 px) e só renderizar em resolução cheia na montagem.
+- **Montagem das variações:** o que é igual entre elas (fundo, painéis, legendas redesenhadas) se renderiza UMA vez e se reaproveita; a parte que muda é que se compõe por variação.
+- Nunca rode a mesma conferência pesada duas vezes sem necessidade.
+
 ## Fontes
 - Nunca use fonte do sistema operacional (`/System/Library/Fonts`, Helvetica, Arial, SF): no servidor elas não existem e a licença não permite.
 - Use as fontes livres de `projects/mentoria-spy/PACOTE-ESTEIRA-CRIATIVOS/fontes/` (Inter, Poppins, Montserrat, Oswald, Anton, Bebas Neue).

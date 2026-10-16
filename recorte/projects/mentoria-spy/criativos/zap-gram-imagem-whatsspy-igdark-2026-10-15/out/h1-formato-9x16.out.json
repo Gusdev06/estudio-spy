@@ -1,0 +1,29 @@
+{
+  "id": "c698ebc4262b4bcebe0549a669199399",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate this exact ad. Keep EVERYTHING identical unless told otherwise — the full layout, every text element with the exact same words, fonts, colors, sizes and positions (\"Trust but verify...\" handwritten note top-left, headline \"I FOUND WHAT HE'S HIDING ON INSTAGRAM.\" with the pink-orange gradient brush stroke and gradient last word, the 8-item icon feature list, the \"The truth isn't always obvious. But now, it is.\" box, the gradient \"SEE THE TRUTH NOW →\" button, the chalkboard \"Better to know than to guess\" top-right), the phone showing the Instagram DM list, the dark moody bedroom and warm lamp light, the woman with her hand over her mouth. Change ONLY the format: re-lay out the same ad as a tall 9:16 story. Keep all elements, give them a bit more vertical breathing room, keep everything inside safe margins. Photorealistic, natural skin texture, all text spelled exactly as written, no extra text.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/25d5bc3e-e2d3-4ecb-aa33-046497e56dae.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/zap-gram-imagem-whatsspy-igdark-2026-10-15/out/h1-formato-9x16.png"
+  ],
+  "elapsed_ms": 77351,
+  "raw": {
+    "id": "c698ebc4262b4bcebe0549a669199399",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/25d5bc3e-e2d3-4ecb-aa33-046497e56dae.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c698ebc4262b4bcebe0549a669199399/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-15T15:47:09.464856087Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 75854
+    }
+  }
+}

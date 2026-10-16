@@ -1,0 +1,29 @@
+{
+  "id": "e767635e09804f32af580a022db6dd13",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate this exact ad. Keep EVERYTHING identical — the minimal black layout, fonts, colors, sizes and positions: \"INSTAGRAM SPY\" letter-spaced at top, the Instagram gradient logo, the 4 left-side gradient-outline icons with letter-spaced labels \"READ MESSAGES\", \"VIEW MEDIA\", \"CHECK CALL LOGS\", \"SEE CONTACTS\", the bottom line \"STAY ONE STEP AHEAD\" between thin rules. Replace the grey subline under the headline with exactly: \"See what's really going on in their Instagram chats.\" Keep the tilted black phone showing the Instagram DM with \"Sophie, Active now\" and the chat bubbles exactly as they are. Change ONLY the headline: replace it with exactly \"Stop guessing what's in their DMs.\" — same font and size, white, with \"their DMs.\" in the purple-orange Instagram gradient. Photorealistic, natural skin texture, all text spelled exactly as written, no extra text.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/75d22688-d340-48df-a17f-d3131bb28708.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/zap-gram-imagem-whatsspy-igdark-2026-10-15/out/i3-headline-dms.png"
+  ],
+  "elapsed_ms": 63927,
+  "raw": {
+    "id": "e767635e09804f32af580a022db6dd13",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/75d22688-d340-48df-a17f-d3131bb28708.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/e767635e09804f32af580a022db6dd13/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-15T15:33:31.173018968Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 61479
+    }
+  }
+}

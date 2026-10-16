@@ -1,0 +1,29 @@
+{
+  "id": "81e6ffca906e4416a36413c374b9cd22",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate this exact ad. Keep EVERYTHING identical unless told otherwise — the full layout, every text element with the exact same words, fonts, colors, sizes and positions (\"Trust but verify...\" handwritten note top-left, headline \"I FOUND WHAT HE'S HIDING ON INSTAGRAM.\" with the pink-orange gradient brush stroke and gradient last word, the 8-item icon feature list, the \"The truth isn't always obvious. But now, it is.\" box, the gradient \"SEE THE TRUTH NOW →\" button, the chalkboard \"Better to know than to guess\" top-right), the phone showing the Instagram DM list, the dark moody bedroom and warm lamp light, the woman with her hand over her mouth. Change ONLY two things: the person is now a man in his early 30s with short dark hair and light stubble, same pose with his hand over his mouth, same shocked worried expression, same dark sweater; and the headline reads exactly \"I FOUND WHAT SHE'S HIDING ON INSTAGRAM.\" with the same styling. Photorealistic, natural skin texture, all text spelled exactly as written, no extra text.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/3a3b90ef-2ead-43c7-8552-73fe2581c710.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/zap-gram-imagem-whatsspy-igdark-2026-10-15/out/h2-genero-homem.png"
+  ],
+  "elapsed_ms": 113036,
+  "raw": {
+    "id": "81e6ffca906e4416a36413c374b9cd22",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/3a3b90ef-2ead-43c7-8552-73fe2581c710.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/81e6ffca906e4416a36413c374b9cd22/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-15T15:47:09.093592419Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 110713
+    }
+  }
+}

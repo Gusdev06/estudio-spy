@@ -1,0 +1,29 @@
+{
+  "id": "6e5e10abaceb4f259848cbfba6ab3fd8",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate this exact ad. Keep EVERYTHING identical — the minimal black layout, fonts, colors, sizes and positions: \"INSTAGRAM SPY\" letter-spaced at top, the Instagram gradient logo, the 4 left-side gradient-outline icons with letter-spaced labels \"READ MESSAGES\", \"VIEW MEDIA\", \"CHECK CALL LOGS\", \"SEE CONTACTS\", the bottom line \"STAY ONE STEP AHEAD\" between thin rules. Replace the grey subline under the headline with exactly: \"See what's really going on in their Instagram chats.\" Keep the headline \"Want to know what they're really talking about?\" with \"really\" in the purple-orange Instagram gradient. Keep the tilted black phone and the \"Sophie, Active now\" header, but change the chat bubbles to exactly these three, in order: grey incoming bubble \"Did you delete our chat?\", purple-pink gradient outgoing bubble \"Yes, she'll never see it 🤫\", grey incoming bubble \"Good. Tonight?\" with matching timestamps. Photorealistic, natural skin texture, all text spelled exactly as written, no extra text.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/add2ade6-ff22-4f6a-99af-f7445a53401b.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/zap-gram-imagem-whatsspy-igdark-2026-10-15/out/i4-conversa-nova.png"
+  ],
+  "elapsed_ms": 41309,
+  "raw": {
+    "id": "6e5e10abaceb4f259848cbfba6ab3fd8",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/add2ade6-ff22-4f6a-99af-f7445a53401b.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/6e5e10abaceb4f259848cbfba6ab3fd8/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-15T15:33:31.104516794Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 38218
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "4e0ac80a356147c29880339c2caae44e",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Recreate this exact ad. Keep EVERYTHING identical unless told otherwise — the full layout, every text element with the exact same words, fonts, colors, sizes and positions (\"Trust but verify...\" handwritten note top-left, headline \"I FOUND WHAT HE'S HIDING ON INSTAGRAM.\" with the pink-orange gradient brush stroke and gradient last word, the 8-item icon feature list, the \"The truth isn't always obvious. But now, it is.\" box, the gradient \"SEE THE TRUTH NOW →\" button, the chalkboard \"Better to know than to guess\" top-right), the phone showing the Instagram DM list, the dark moody bedroom and warm lamp light, the woman with her hand over her mouth. Change ONLY the platform from Instagram to WhatsApp: the headline reads exactly \"I FOUND WHAT HE'S HIDING ON WHATSAPP.\" with the brush stroke and last word in WhatsApp green (#25D366) instead of the pink-orange gradient; the icons, the box border and the button become green gradients; the phone shows a dark-mode WhatsApp chat list with the same contact names and messages. Keep the woman, room, lighting and all other text identical. Photorealistic, natural skin texture, all text spelled exactly as written, no extra text.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/ecf1d52a-2897-450c-a91d-c59ea3c43491.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/zap-gram-imagem-whatsspy-igdark-2026-10-15/out/h3-whatsapp.png"
+  ],
+  "elapsed_ms": 122836,
+  "raw": {
+    "id": "4e0ac80a356147c29880339c2caae44e",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/ecf1d52a-2897-450c-a91d-c59ea3c43491.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/4e0ac80a356147c29880339c2caae44e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-15T15:47:09.343829831Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 121275
+    }
+  }
+}

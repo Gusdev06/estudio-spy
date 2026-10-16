@@ -217,12 +217,13 @@ async function rodar(j, texto, { confiavel = false } = {}) {
           if (LIMITE_PLATAFORMA.test(b.text)) { log({ job: j.id, alerta: 'limite-plataforma', texto: b.text.slice(0, 200) }); evento(j, { tipo: 'agente', texto: INSTAVEL_AGENTE }); continue; }
           evento(j, { tipo: 'agente', texto: limpar(b.text) });
         }
-        if (b.type === 'tool_use') evento(j, { tipo: 'ferramenta', texto: PASSO[b.name] || 'trabalhando' });
+        if (b.type === 'tool_use') evento(j, { tipo: 'ferramenta', texto: PASSO[b.name] || 'trabalhando',
+          detalhe: `${b.name.replace('mcp__estudio__', '')}: ${b.input?.description || b.input?.modelo || (b.input?.itens ? b.input.itens.length + ' itens' : '') || b.input?.file_path || ''}`.slice(0, 140) });
       }
       if (m.type === 'result') {
         j.custo += m.total_cost_usd || 0;
         if (!admin(j.dono) && j.custo > TETO_TOKENS_BASE + TETO_TOKENS_POR_VIDEO * (j.reserva || 0)) { j.bloqueado = true; log({ job: j.id, teto: 'tokens', custo: j.custo }); }
-        meta(j); evento(j, { tipo: 'fim', custo: j.custo, ok: m.subtype === 'success' });
+        meta(j); evento(j, { tipo: 'fim', custo: j.custo, ok: m.subtype === 'success', dur: m.duration_ms, durModelo: m.duration_api_ms, passos: m.num_turns });
       }
     }
     j.status = 'esperando';
@@ -353,7 +354,7 @@ http.createServer(async (req, res) => {
     if (req.method === 'GET' && p[3] === 'eventos') {
       const depois = Number(u.searchParams.get('depois') ?? -1);
       return json(res, { status: j.status, custo: admin(email) ? j.custo : undefined, admin: admin(email),
-        eventos: j.eventos.filter((e) => e.n > depois).map((e) => e.tipo === 'fim' && !admin(email) ? { ...e, custo: undefined } : e) });
+        eventos: j.eventos.filter((e) => e.n > depois).map((e) => admin(email) ? e : e.tipo === 'fim' ? { tipo: 'fim', n: e.n, t: e.t, ok: e.ok } : e.tipo === 'ferramenta' ? { ...e, detalhe: undefined } : e) });
     }
     if (req.method === 'POST' && p[3] === 'aprovar') {
       if (j.dono !== email) return json(res, { erro: 'só o dono do pedido aprova' }, 403);

@@ -134,13 +134,16 @@ function job(id) {
       ultimo = e.n;
       if (e.tipo === 'ferramenta') {
         if (!ferrs) { ferrs = document.createElement('details'); ferrs.className = 'ferrs'; ferrs.innerHTML = '<summary>trabalhando…</summary>'; chat.append(ferrs); }
-        ferrs.insertAdjacentHTML('beforeend', `<div class="ferr">${esc(e.texto)}</div>`); ferrs.querySelector('summary').textContent = `${ferrs.children.length - 1} passos`;
+        if (ferrs.ultimo && eu.admin) ferrs.ultimo.insertAdjacentHTML('beforeend', ` <small>${((e.t - ferrs.ultimo.dataset.t) / 1000).toFixed(0)}s</small>`);
+        ferrs.insertAdjacentHTML('beforeend', `<div class="ferr" data-t="${e.t}">${esc(eu.admin && e.detalhe ? e.detalhe : e.texto)}</div>`); ferrs.ultimo = ferrs.lastElementChild;
+        ferrs.querySelector('summary').textContent = `${ferrs.children.length - 1} passos`;
         continue;
       }
+      if (ferrs?.ultimo && eu.admin) ferrs.ultimo.insertAdjacentHTML('beforeend', ` <small>${((e.t - ferrs.ultimo.dataset.t) / 1000).toFixed(0)}s</small>`);
       ferrs = null;
       if (e.tipo === 'cliente') chat.insertAdjacentHTML('beforeend', `<div class="msg cliente"><div>${esc(e.texto)}</div></div>`);
       if (e.tipo === 'agente') chat.insertAdjacentHTML('beforeend', `<div class="msg agente">${md(e.texto)}${midias(id, e.texto)}</div>`);
-      if (e.tipo === 'fim' && e.custo != null) chat.insertAdjacentHTML('beforeend', `<div class="fim">admin · tokens acumulados US$ ${e.custo.toFixed(2)}</div>`);
+      if (e.tipo === 'fim' && e.custo != null) chat.insertAdjacentHTML('beforeend', `<div class="fim">admin · rodada ${e.dur ? (e.dur / 60000).toFixed(1) + ' min (modelo ' + (e.durModelo / 60000).toFixed(1) + ' · vídeo/ferramentas ' + ((e.dur - e.durModelo) / 60000).toFixed(1) + ') · ' + e.passos + ' passos · ' : ''}tokens acumulados US$ ${e.custo.toFixed(2)}</div>`);
       if (e.tipo === 'erro') chat.insertAdjacentHTML('beforeend', `<p class="erro">${esc(e.texto)}</p>`);
       if (e.tipo === 'aprovacao') chat.insertAdjacentHTML('beforeend', `<div class="aprov" id="ap-${esc(e.id)}"><p>${esc(e.resumo)}</p>
         <p><b>Usa ${e.videos} vídeo${e.videos === 1 ? '' : 's'} do seu saldo.</b> <small>${eu.admin ? '' : `Você tem ${eu.videos}.`}</small></p>

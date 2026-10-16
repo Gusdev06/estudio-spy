@@ -9,10 +9,16 @@ export const SPEC = {
               resumo: z.string().max(400).describe('uma frase pro cliente: o que será entregue') },
   },
   gerar_midia: {
-    descricao: 'ÚNICA forma de gerar mídia paga (imagem, vídeo, lipsync, voz, transcrição). Equivale a `wavespeed run <modelo> -i chave=valor`. Arquivos locais: valor "@caminho" relativo a job/ (ex.: "@trabalho/rosto/a1.png"). Estima o preço com os arquivos reais e recusa se passar do limite do pedido. Antes da aprovação só cabe prévia barata (rosto, sonda). Também use para consultar parâmetros: modelo + inputs {"_schema": true}.',
+    descricao: 'ÚNICA forma de gerar mídia paga (imagem, vídeo, lipsync, voz, transcrição). Equivale a `wavespeed run <modelo> -i chave=valor`. Arquivos locais: valor "@caminho" relativo a job/ (ex.: "@trabalho/rosto/a1.png"). Estima o preço com os arquivos reais e recusa se passar do limite do pedido. Antes da aprovação só cabe prévia barata (rosto, sonda). Pra várias gerações independentes, use gerar_midia_lote.',
     schema: { modelo: z.string().max(120).describe('id do modelo, ex.: openai/gpt-image-2/edit'),
               inputs: z.record(z.string(), z.any()).describe('inputs do modelo; arquivos como "@trabalho/…"'),
               saida: z.string().max(120).regex(/^[\w\-\/]+$/).describe('nome base dentro de job/trabalho/gerado/, sem extensão, ex.: rosto-v1') },
+  },
+  gerar_midia_lote: {
+    descricao: 'Gera VÁRIAS mídias pagas AO MESMO TEMPO (mesmo formato de gerar_midia, uma por item). Use sempre que houver mais de uma geração independente (ex.: os rostos das 3 variações, os lipsyncs das 3 variações): é muito mais rápido que uma por vez. O limite do pedido é conferido pelo total antes de gerar.',
+    schema: { itens: z.array(z.object({
+      modelo: z.string().max(120), inputs: z.record(z.string(), z.any()), saida: z.string().max(120).regex(/^[\w\-\/]+$/),
+    })).min(1).max(12) },
   },
   ver_modelo: {
     descricao: 'Mostra os parâmetros (schema) de um modelo de geração, sem gerar nada nem gastar. Equivale a `wavespeed schema <modelo>`.',
