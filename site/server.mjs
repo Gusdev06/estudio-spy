@@ -143,6 +143,19 @@ const PASSO = { Bash: 'trabalhando no vídeo', Read: 'analisando', Glob: 'analis
 
 const travaDoJob = (cwd) => trava(cwd, log);
 
+// Tempo típico por vídeo (da aprovação até o fim), pra tela estimar "faltam ~X min". Mediana dos últimos 30 pedidos; recalcula a cada minuto.
+let mediaCache = { t: 0, ms: 4 * 60e3 };
+function mediaPorVideo() {
+  if (Date.now() - mediaCache.t < 60e3) return mediaCache.ms;
+  const ds = [];
+  for (const j of jobs.values()) { let ap = null;
+    for (const e of j.eventos) { if (e.tipo === 'aprovado') ap = e; else if (e.tipo === 'finalizado' && ap && e.entregues > 0) { ds.push({ t: e.t, ms: (e.t - ap.t) / e.entregues }); ap = null; } } }
+  const ult = ds.sort((a, b) => a.t - b.t).slice(-30).map((d) => d.ms).sort((a, b) => a - b);
+  const med = ult.length ? ult[Math.floor(ult.length / 2)] : 4 * 60e3;
+  mediaCache = { t: Date.now(), ms: Math.min(15 * 60e3, Math.max(90e3, med)) };
+  return mediaCache.ms;
+}
+
 const SISTEMA = (cwd) => `Você está rodando no Estúdio Spy. Quem conversa com você é o CLIENTE, por um chat na web. Todo texto que você escreve aparece na tela dele.
 Leia o CLAUDE.md do workspace primeiro e siga à risca as seções "Como trabalhar com o cliente" (roteiro fixo: vídeo → o que variar → avatar e quantas → aprovar → resultado),
 "Silêncio enquanto trabalha" e "Como falar com o cliente": idioma do cliente, mensagens de uma linha, nada de bastidor, medição, custo, ferramenta, modelo, fornecedor ou trabalho anterior.
@@ -489,7 +502,7 @@ http.createServer(async (req, res) => {
     if (!j || !visivel(j, email)) return json(res, { erro: 'não achei' }, 404);
     if (req.method === 'GET' && p[3] === 'eventos') {
       const depois = Number(u.searchParams.get('depois') ?? -1);
-      return json(res, { status: j.status, admin: admin(email),
+      return json(res, { status: j.status, admin: admin(email), media: mediaPorVideo(),
         eventos: j.eventos.filter((e) => e.n > depois && (admin(email) || e.tipo !== 'ferramenta')).map((e) => e.tipo === 'agente' ? { ...e, texto: semDinheiro(e.texto) } : e.tipo === 'aprovacao' ? { ...e, resumo: semDinheiro(e.resumo) } : e).filter((e) => e.tipo !== 'agente' || e.texto)
           .map((e) => admin(email) ? (e.tipo === 'fim' ? { ...e, custo: undefined } : e) : e.tipo === 'fim' ? { tipo: 'fim', n: e.n, t: e.t, ok: e.ok } : e.tipo === 'ferramenta' ? { ...e, detalhe: undefined } : e) });
     }

@@ -30,6 +30,8 @@ O cliente quer poucas mensagens: o vídeo dele, 2 perguntas, o resultado. Nada d
    Não mostre rosto/prévia antes, a não ser que o cliente peça pra ver.
 4. **Aprovado** → produza tudo SEM escrever no chat (a tela já mostra "trabalhando no seu vídeo" e cada imagem gerada aparece sozinha pro cliente ver o andamento; não comente nem peça aprovação dela). Gere, **confira o clipe inteiro** (folha de frames + YuNet),
    reconstrua as camadas, monte uma peça por vez. Se um rosto/clipe sair ruim, refaça em silêncio dentro do limite.
+   **Entregue peça a peça:** gere os rostos de todas juntas e as animações de todas juntas (lote), mas monte, confira e chame `entregar_video`
+   em UMA variação antes de começar a montar a próxima. O cliente assiste a primeira enquanto as outras saem; não guarde as prontas pro fim.
 5. **Entregue** → peças em `job/saida/`, cada uma registrada com `entregar_video`, e um `job/saida/README.md` curto pro cliente.
    A folha de conferência fica em `job/trabalho/conferencia.jpg` (é sua, não do cliente). Chame `finalizar_pedido` e escreva UMA linha final
    ("Prontas! Suas 3 variações estão aqui em cima.") citando os caminhos `job/saida/…` das peças. Ajuste pedido depois disso volta pra etapa 3.

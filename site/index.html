@@ -18,14 +18,17 @@
   h1,h2,.marca { font-family:"Inter Tight",Inter,sans-serif; letter-spacing:-.02em; }
 
   /* topo */
-  header { position:sticky; top:0; z-index:5; display:flex; align-items:center; gap:10px; padding:12px 20px;
-    background:rgba(9,9,11,.72); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid var(--borda); }
+  header { position:sticky; top:10px; z-index:5; display:flex; align-items:center; gap:10px; padding:8px 8px 8px 14px; margin:10px auto 0; width:calc(100% - 24px); max-width:900px;
+    border-radius:999px; background:rgba(18,18,21,.72); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid var(--borda); box-shadow:0 10px 30px rgba(0,0,0,.35); }
+  .btn-novo { display:inline-flex; align-items:center; gap:6px; padding:7px 14px; border-radius:999px; background:var(--acento); color:#0b0b0b; font-size:13px; font-weight:600; white-space:nowrap; }
+  .btn-novo:hover { text-decoration:none; box-shadow:0 6px 22px var(--acento-sombra); }
+  .mono { font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase; }
   .marca { display:flex; align-items:center; gap:9px; font-weight:600; font-size:16px; color:var(--texto); margin-right:6px; }
   .marca:hover { text-decoration:none; } .marca i { color:var(--acento); font-style:normal; }
   .logo { width:26px; height:26px; border-radius:8px; background:var(--acento); display:grid; place-items:center; box-shadow:0 0 0 4px var(--acento-sombra); flex:none; }
   .logo svg { width:12px; height:12px; margin-left:2px; }
   .nav { font-size:13px; color:var(--suave); padding:6px 10px; border-radius:999px; } .nav:hover { color:var(--texto); background:var(--painel2); text-decoration:none; }
-  .saldo { font-size:13px; } .saldo .chip { display:inline-flex; align-items:center; gap:6px; padding:5px 11px; border-radius:999px; background:var(--acento-sombra); color:var(--acento); font-weight:600; }
+  .saldo { font-size:13px; } .saldo .chip { display:inline-flex; align-items:center; gap:6px; padding:5px 11px; font-variant-numeric:tabular-nums; border-radius:999px; background:var(--acento-sombra); color:var(--acento); font-weight:600; }
   .saldo a { color:var(--suave); font-weight:400; } .saldo a:hover { color:var(--texto); }
   header .st { margin-left:auto; color:var(--suave); font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:30vw; }
 
@@ -46,7 +49,11 @@
   .erro { color:var(--erro); } .ok { color:var(--acento); font-size:14px; margin:8px 0; }
 
   /* login */
-  .entrada { min-height:calc(100vh - 140px); display:grid; place-items:center; }
+  .entrada { position:relative; min-height:calc(100vh - 140px); display:grid; place-items:center; }
+  .entrada::before { content:""; position:absolute; inset:-40px -16px; z-index:-1; pointer-events:none;
+    background:radial-gradient(circle, rgba(255,255,255,.09) 1px, transparent 1.4px) 0 0/22px 22px;
+    -webkit-mask:radial-gradient(closest-side, #000 30%, transparent); mask:radial-gradient(closest-side, #000 30%, transparent); }
+  .entrada .card { box-shadow:0 30px 80px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.02) inset; }
   .entrada .card { width:100%; max-width:410px; padding:30px; } .entrada h1 { font-size:30px; margin:18px 0 6px; } .entrada .sub { font-size:14px; margin-bottom:8px; }
   .entrada .logo { width:40px; height:40px; border-radius:12px; } .entrada .logo svg { width:17px; height:17px; }
   .termos { display:flex; gap:10px; align-items:flex-start; font-size:13px; color:var(--suave); margin-top:14px; line-height:1.5; }
@@ -107,7 +114,48 @@
   .selo { display:inline-flex; align-items:center; gap:8px; margin:12px 0 12px 40px; padding:7px 12px; border-radius:999px; background:var(--acento-sombra); color:var(--acento); font-size:13px; font-weight:600; }
   .entregas { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:16px; margin:16px 0 16px 40px; }
   .andamento { margin:12px 0 12px 40px; } .andamento small { color:var(--suave); display:block; margin-bottom:8px; }
-  .andamento .fotos { display:flex; flex-wrap:wrap; gap:8px; } .andamento img { width:96px; height:128px; object-fit:cover; border-radius:12px; border:1px solid var(--borda); background:#000; display:block; }
+  .andamento .fotos { display:flex; flex-wrap:wrap; gap:8px; } .andamento img { width:96px; height:128px; object-fit:cover; border-radius:12px; border:1px solid var(--borda); background:#000; display:block; animation:revela .6s ease-out both; }
+  @keyframes revela { from { opacity:0; filter:blur(12px); transform:scale(1.04); } }
+  /* vídeo que ainda vai sair: cartão tracejado no lugar, que vira o vídeo */
+  .vaga { aspect-ratio:9/16; max-height:420px; border:1.5px dashed var(--borda2); border-radius:14px; display:grid; place-items:center; align-content:center; gap:10px; color:var(--suave); font-size:13px; background:rgba(255,255,255,.015); }
+  .ativo .vaga { animation:vaga 1.6s ease-in-out infinite; } @keyframes vaga { 50% { border-color:rgba(212,255,58,.35); background:rgba(212,255,58,.03); } }
+  .vaga .roda { width:22px; height:22px; border-radius:50%; border:2px solid var(--borda2); border-top-color:var(--acento); animation:gira 1s linear infinite; }
+  @keyframes gira { to { transform:rotate(360deg); } }
+  .entrega.nova { animation:pop .45s cubic-bezier(.34,1.56,.64,1) both; } @keyframes pop { from { opacity:0; transform:scale(.96); } }
+  @media (min-width:641px) { .entregas.bento > .entrega:first-child { grid-column:span 2; grid-row:span 2; } .entregas.bento > .entrega:first-child video { max-height:720px; } }
+  /* espera */
+  .espera { position:relative; overflow:hidden; margin:18px 0 0 40px; padding:22px; border-radius:var(--raio); border:1px solid var(--borda); background:var(--painel); }
+  .espera .orbe { position:absolute; width:260px; height:260px; right:-60px; top:-90px; border-radius:50%; filter:blur(60px); opacity:.35; background:var(--cor, #3affd4);
+    transition:background-color 1.2s ease; animation:flutua 6s ease-in-out infinite; pointer-events:none; }
+  .espera[data-fase="1"] { --cor:#7dff6a; } .espera[data-fase="2"], .espera[data-fase="3"] { --cor:#d4ff3a; }
+  @keyframes flutua { 50% { transform:translate(-14px, 10px) scale(1.06); } }
+  .espera .topo { position:relative; display:flex; align-items:center; gap:12px; }
+  .espera .topo .logo { animation:respira 2.4s ease-in-out infinite; } @keyframes respira { 50% { box-shadow:0 0 0 7px var(--acento-sombra), 0 0 24px rgba(212,255,58,.35); } }
+  .espera .frase { display:block; font:600 17px "Inter Tight",Inter; transition:opacity .3s, transform .3s; } .espera .frase.sai { opacity:0; transform:translateY(-4px); }
+  .espera .eta { color:var(--suave); font-size:13px; font-variant-numeric:tabular-nums; }
+  .espera ol { position:relative; list-style:none; margin:18px 0 0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:6px; }
+  .espera li { display:flex; flex-direction:column; gap:8px; font-size:12px; color:var(--suave); }
+  .espera li::before { content:""; height:4px; border-radius:4px; background:var(--painel2); }
+  .espera li.feito { color:var(--texto); } .espera li.feito::before { background:var(--acento); }
+  .espera li.ativo { color:var(--texto); } .espera li.ativo::before { background:linear-gradient(90deg, var(--painel2) 0%, var(--acento) 50%, var(--painel2) 100%) 0 0/200% 100%; animation:brilho 1.6s linear infinite; }
+  @keyframes brilho { to { background-position:-200% 0; } }
+  .espera .dica { position:relative; margin:14px 0 0; color:var(--suave); font-size:12px; }
+  .pronto { display:flex; align-items:center; gap:14px; margin:16px 0 16px 40px; padding:16px 18px; border-radius:var(--raio); border:1px solid rgba(212,255,58,.35); background:linear-gradient(180deg,rgba(212,255,58,.08),rgba(212,255,58,.02)); }
+  .pronto .check { width:38px; height:38px; border-radius:50%; background:var(--acento); display:grid; place-items:center; flex:none; animation:pop .5s cubic-bezier(.34,1.56,.64,1) both; }
+  .pronto b { display:block; font:600 18px "Inter Tight",Inter; animation:sobe .4s .12s ease-out both; } .pronto small { color:var(--suave); animation:sobe .4s .2s ease-out both; display:block; }
+  @keyframes sobe { from { opacity:0; transform:translateY(12px); } }
+  /* aprovação: segurar pra confirmar */
+  .segurar { position:relative; overflow:hidden; user-select:none; -webkit-user-select:none; touch-action:manipulation; min-width:250px; }
+  .segurar .enche { position:absolute; inset:0; background:rgba(255,255,255,.5); transform:scaleX(0); transform-origin:left; transition:transform .2s ease-out; }
+  .segurar.segurando .enche { transform:scaleX(1); transition:transform 1.2s linear; } .segurar .rot { position:relative; }
+  .aprov .dica { display:block; margin-top:10px; color:var(--suave); font-size:12px; }
+  .pensando .logo { width:20px; height:20px; border-radius:6px; box-shadow:none; animation:respira 2.4s ease-in-out infinite; } .pensando .logo svg { width:8px; height:8px; }
+  /* 404 */
+  .perdido { min-height:60vh; display:grid; place-content:center; text-align:center; gap:6px; }
+  .perdido .num { font:700 clamp(96px,22vw,180px)/.9 "Inter Tight",Inter; letter-spacing:-.06em; color:transparent; -webkit-text-stroke:1.5px var(--borda2);
+    background:radial-gradient(circle, rgba(212,255,58,.5) 1px, transparent 1.5px) 0 0/6px 6px; -webkit-background-clip:text; background-clip:text; }
+  .perdido h2 { margin:10px 0 0; font-size:22px; } .perdido p { color:var(--suave); margin:0 0 18px; }
+  .perdido .btn-novo { justify-self:center; padding:10px 18px; font-size:14px; }
   .entrega { min-width:0; } .entrega .selo { margin:0 0 10px; } .entrega .midia { margin:0; } .entrega figure { width:100%; }
   .entrega video { width:100%; max-height:420px; object-fit:contain; }
   .pensando { display:inline-flex; align-items:center; gap:10px; margin:12px 0 0 40px; padding:9px 14px; border-radius:999px; background:var(--painel); border:1px solid var(--borda); color:var(--suave); font-size:13px; }
@@ -130,16 +178,16 @@
   .pacote:hover { border-color:var(--acento); text-decoration:none; } .pacote span { color:var(--acento); font:600 26px "Inter Tight",Inter; } .pacote small { color:var(--suave); }
 
   @media (max-width:640px) {
-    header { padding:10px 14px; gap:6px; } header .st { display:none; } .nav { padding:6px 8px; }
+    header { padding:6px 6px 6px 12px; gap:6px; } header .st { display:none; } .nav { padding:6px 8px; } .btn-novo .txt { display:none; } .marca .nome { display:none; } .saldo { margin-right:auto; }
     main { padding-top:16px; } .card { padding:18px; }
     .entregas { grid-template-columns:1fr 1fr; gap:10px; }
-    .aprov, .entregas, .andamento, .selo, .pensando, .aviso-erro, .ferrs { margin-left:0; } .msg.agente > .logo { display:none; }
+    .aprov, .entregas, .andamento, .selo, .pensando, .aviso-erro, .ferrs, .espera, .pronto { margin-left:0; } .espera ol { grid-template-columns:1fr 1fr; row-gap:12px; } .segurar { min-width:0; width:100%; } .msg.agente > .logo { display:none; }
   }
   @media (prefers-reduced-motion:reduce) { * { animation:none !important; transition:none !important; } }
 </style>
 </head>
 <body>
-<header><a href="#" class="marca" id="novo"><span class="logo"><svg viewBox="0 0 12 12"><path d="M2 1.2v9.6L10.4 6z" fill="#0b0b0b"/></svg></span>Estúdio <i>Spy</i></a><span class="saldo" id="saldo"></span><a href="#/comprar" id="comprar" class="nav" hidden>comprar vídeos</a><span class="st" id="st"></span><a href="#" id="sair" class="nav" hidden>sair</a></header>
+<header><a href="#" class="marca" id="novo"><span class="logo"><svg viewBox="0 0 12 12"><path d="M2 1.2v9.6L10.4 6z" fill="#0b0b0b"/></svg></span><span class="nome">Estúdio <i>Spy</i></span></a><span class="saldo" id="saldo"></span><a href="#/comprar" id="comprar" class="nav" hidden>comprar vídeos</a><span class="st" id="st"></span><a href="#" id="sair" class="nav" hidden>sair</a><a href="#" id="novoBtn" class="btn-novo" hidden><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg><span class="txt">Novo criativo</span></a></header>
 <main id="app"></main>
 <div class="compor" id="compor" hidden><div class="in">
   <textarea id="resp" rows="1" placeholder="Escreva sua mensagem"></textarea><button id="enviar" aria-label="Enviar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0b0b0b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
@@ -167,10 +215,32 @@ function mostraSaldo() {
   s.innerHTML = `<span class="chip">admin</span> <a href="#" id="det" class="nav">${det ? 'esconder detalhes' : 'ver detalhes'}</a>`;
   $('#det').onclick = (ev) => { ev.preventDefault(); det = !det; try { localStorage.setItem('det', det ? '1' : '0'); } catch {} if (jobAtual) job(jobAtual); else mostraSaldo(); };
 }
+// Aviso de pronto: título da aba piscando, som curto e notificação do navegador (se a pessoa permitiu).
+const TITULO = document.title; let pisca = null, audio = null;
+function destravaAviso() { try { audio ||= new (window.AudioContext || window.webkitAudioContext)(); audio.resume(); } catch {}
+  try { if ('Notification' in window && Notification.permission === 'default') Notification.requestPermission(); } catch {} }
+function som() { try { if (!audio) return; const t = audio.currentTime;
+  [[880, 0], [1320, .12]].forEach(([f, d]) => { const o = audio.createOscillator(), g = audio.createGain(); o.frequency.value = f; o.type = 'sine';
+    g.gain.setValueAtTime(0, t + d); g.gain.linearRampToValueAtTime(.12, t + d + .02); g.gain.exponentialRampToValueAtTime(.001, t + d + .5);
+    o.connect(g).connect(audio.destination); o.start(t + d); o.stop(t + d + .55); }); } catch {} }
+function avisar(titulo, corpo) {
+  clearInterval(pisca); let on = false; pisca = setInterval(() => { document.title = (on = !on) ? titulo : TITULO; }, 1000); document.title = titulo;
+  const para = () => { if (!document.hidden) { clearInterval(pisca); document.title = TITULO; removeEventListener('focus', para); document.removeEventListener('visibilitychange', para); } };
+  addEventListener('focus', para); document.addEventListener('visibilitychange', para); if (!document.hidden) setTimeout(para, 4000);
+  som(); try { if (document.hidden && 'Notification' in window && Notification.permission === 'granted') new Notification(titulo, { body: corpo }); } catch {}
+}
+const minutos = (ms) => Math.max(1, Math.round(ms / 60000));
+const CHECK = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+const FASES = ['Novo visual', 'Dando vida', 'Montagem', 'Pronto'];
+const FRASES = [['Lendo o seu criativo…', 'Criando o novo visual…', 'Ajustando luz e enquadramento…'],
+  ['Dando vida ao vídeo…', 'Gerando as cenas…', 'Conferindo cada quadro…'],
+  ['Montando o vídeo…', 'Recolocando textos e legendas…', 'Conferindo o vídeo inteiro…'], ['Finalizando…']];
+const botaoNovo = (on) => { $('#novoBtn').hidden = !on || !eu; };
+
 async function api(url, op) { const r = await fetch(url, op); if (r.status === 401) { eu = null; login(); throw new Error('login'); } return r; }
 
 function login() {
-  clearInterval(timer); $('#compor').hidden = true; $('#st').textContent = ''; $('#sair').hidden = true;
+  clearInterval(timer); geracao++; botaoNovo(false); $('#compor').hidden = true; $('#st').textContent = ''; $('#sair').hidden = true;
   let criar = false;
   app.innerHTML = `<div class="entrada"><div class="card">${LOGO}<h1 id="lt">Bem-vindo de volta</h1><p class="sub" id="ls">Entre pra mandar seus criativos.</p>
   <label class="rotulo" for="em">E-mail</label><input id="em" type="email" placeholder="voce@email.com" autocomplete="email">
@@ -204,7 +274,7 @@ function novaSenha(tok) {
 }
 
 async function comprar() {
-  clearInterval(timer); jobAtual = null; geracao++; $('#compor').hidden = true; mostraSaldo();
+  clearInterval(timer); jobAtual = null; geracao++; botaoNovo(true); $('#compor').hidden = true; mostraSaldo();
   const { pacotes, suporte } = await (await fetch('/api/pacotes')).json();
   app.innerHTML = `<h1>Comprar vídeos</h1><p class="sub">Cada vídeo do saldo = 1 variação pronta entregue. Se um pedido usar menos, a sobra volta pro saldo.</p>
   <p class="sub"><b>Importante:</b> no pagamento, use o mesmo e-mail da sua conta (${esc(eu.email)}). O saldo cai sozinho em até 1 minuto depois da aprovação.</p>
@@ -215,7 +285,7 @@ async function comprar() {
 }
 
 function home() {
-  clearInterval(timer); jobAtual = null; geracao++; $('#compor').hidden = true; $('#st').textContent = eu.email; $('#sair').hidden = false; mostraSaldo();
+  clearInterval(timer); jobAtual = null; geracao++; botaoNovo(false); $('#compor').hidden = true; $('#st').textContent = eu.email; $('#sair').hidden = false; mostraSaldo();
   app.innerHTML = `<h1>Mande o criativo.<br><em>Diga a variação.</em></h1>
   <p class="sub">Troca de avatar, headline, layout ou pessoa: do jeito que você pediria pra um editor. As variações chegam prontas pra subir.</p>
   <div class="passos"><span class="passo"><b>1</b>Envie o vídeo</span><span class="passo"><b>2</b>Diga o que variar</span><span class="passo"><b>3</b>Aprove e receba</span></div>
@@ -224,7 +294,7 @@ function home() {
   <label class="rotulo" for="msg">O que você quer variar? <span style="color:#5d5d66">(opcional)</span></label>
   <textarea id="msg" placeholder="Ex.: 3 variações trocando o avatar por mulheres latinas de 30 anos"></textarea>
   <div class="barra" id="barra" hidden><i></i></div>
-  <div class="linha"><button id="ir" disabled>Começar →</button><span id="info" style="color:var(--suave);font-size:13px"></span></div></div>
+  <div class="linha"><button id="ir" disabled>Enviar meu criativo →</button><span id="info" style="color:var(--suave);font-size:13px"></span></div></div>
   <div id="jobs"></div><div class="admin" id="admin"></div>`;
   if (eu.admin) painelAdmin();
   const drop = $('#drop'), arq = $('#arq');
@@ -290,13 +360,33 @@ function midias(id, texto, { legenda = true, baixar = true, vistos = null } = {}
 }
 
 function job(id) {
-  clearInterval(timer); jobAtual = id; ultimo = -1; const g = ++geracao; mostraSaldo(); app.innerHTML = '<div id="chat"></div><div id="pens"></div>'; $('#compor').hidden = false; const vistos = new Set(); let concluido = false;
+  clearInterval(timer); jobAtual = id; ultimo = -1; const g = ++geracao; mostraSaldo(); botaoNovo(true); app.innerHTML = '<div id="chat"></div><div id="pens"></div>'; $('#compor').hidden = false; const vistos = new Set(); let concluido = false;
+  let prod = null, media = 4 * 60e3, vivo = false, fraseI = 0;   // prod: produção aprovada em curso; vivo: eventos chegando agora (não o histórico)
+  const giro = setInterval(() => { if (g !== geracao) return clearInterval(giro); const f = $('#pens .frase'); if (!f) return;
+    const lista = FRASES[+$('#pens .espera').dataset.fase]; if (lista.length < 2) return;
+    f.classList.add('sai'); setTimeout(() => { fraseI++; f.textContent = lista[fraseI % lista.length]; f.classList.remove('sai'); }, 300); }, 4000);
+  const painel = (status) => {
+    const pens = $('#pens');
+    if (status === 'rodando' && prod && !prod.fim) {
+      const fase = prod.entregues >= prod.videos ? 3 : prod.vids > 0 || prod.entregues > 0 ? 2 : prod.imgs > 0 ? 1 : 0;
+      let el = pens.querySelector('.espera');
+      if (!el) { pens.innerHTML = `<div class="espera"><div class="orbe"></div><div class="topo">${LOGO}<div><b class="frase"></b><span class="eta"></span></div></div>
+        <ol>${FASES.map((f) => `<li>${f}</li>`).join('')}</ol><p class="dica">Pode trocar de aba: avisamos aqui quando ficar pronto.</p></div>`; el = pens.querySelector('.espera'); el.dataset.fase = -1; }
+      if (+el.dataset.fase !== fase) { el.dataset.fase = fase; fraseI = 0; el.querySelector('.frase').textContent = FRASES[fase][0]; }
+      el.querySelectorAll('li').forEach((li, i) => li.className = i < fase ? 'feito' : i === fase ? 'ativo' : '');
+      const resta = prod.t0 + media * prod.videos - Date.now();
+      el.querySelector('.eta').textContent = (prod.entregues ? `${prod.entregues} de ${prod.videos} pronto${prod.entregues === 1 ? '' : 's'} · ` : '') + (resta > 60e3 ? `faltam ~${minutos(resta)} min` : 'quase lá');
+    } else if (status === 'rodando') { if (!pens.querySelector('.pensando')) pens.innerHTML = `<div class="pensando">${LOGO}<span class="pontos"><i></i><i></i><i></i></span></div>`; }
+    else pens.innerHTML = '';
+    $('#chat').classList.toggle('ativo', status === 'rodando');
+  };
   let ferrs = null;
   let puxando = false;
   const puxar = async () => { if (puxando) return; puxando = true; try { await puxar1(); } finally { puxando = false; } };
   const puxar1 = async () => {
-    const r = await api(`/api/jobs/${id}/eventos?depois=${ultimo}`); if (g !== geracao) return;   // resposta de uma tela que já foi trocada if (!r.ok) { app.innerHTML = '<div class="aviso-erro" style="margin-left:0">Não achamos esse pedido. <a href="#">Voltar pro início</a></div>'; return clearInterval(timer); }
-    const { status, eventos } = await r.json(); const chat = $('#chat'); const embaixo = innerHeight + scrollY >= document.body.scrollHeight - 80;
+    const r = await api(`/api/jobs/${id}/eventos?depois=${ultimo}`); if (g !== geracao) return;   // resposta de uma tela que já foi trocada
+    if (!r.ok) { clearInterval(timer); $('#compor').hidden = true; $('#st').textContent = ''; app.innerHTML = '<div class="perdido"><span class="num">404</span><h2>Esse criativo fugiu do radar.</h2><p>O pedido não existe ou não é da sua conta.</p><a class="btn-novo" href="#">Voltar pro início</a></div>'; return; }
+    const { status, eventos, media: m } = await r.json(); if (m) media = m; const chat = $('#chat'); const embaixo = innerHeight + scrollY >= document.body.scrollHeight - 80;
     for (const e of eventos) {
       if (e.n <= ultimo) continue;   // nunca desenha o mesmo evento duas vezes
       ultimo = e.n;
@@ -318,21 +408,43 @@ function job(id) {
       if (e.tipo === 'erro') chat.insertAdjacentHTML('beforeend', `<div class="aviso-erro">${esc(e.texto)}</div>`);
       if (e.tipo === 'aprovacao') chat.insertAdjacentHTML('beforeend', `<div class="aprov" id="ap-${esc(e.id)}"><p>${esc(e.resumo)}</p>
         <div class="uso"><span>Usa <b>${e.videos} vídeo${e.videos === 1 ? '' : 's'}</b> do seu saldo${eu.admin ? '' : ` · você tem <b>${eu.videos}</b>`}</span>${!eu.admin && eu.videos < e.videos && temPacotes ? '<a href="#/comprar">comprar vídeos</a>' : ''}</div>
-        <div class="linha"><button data-ap="${esc(e.id)}">Aprovar e começar</button><small class="aperro erro"></small></div></div>`);
-      if (e.tipo === 'aprovado') { const c = document.getElementById('ap-' + e.ref); if (c) c.outerHTML = `<div class="selo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Aprovado · ${e.videos} vídeo${e.videos === 1 ? '' : 's'} reservado${e.videos === 1 ? '' : 's'}</div>`; }
-      if (e.tipo === 'andamento') { let g = chat.lastElementChild; if (!g?.classList.contains('andamento')) { chat.insertAdjacentHTML('beforeend', '<div class="andamento"><small>Já está saindo:</small><div class="fotos"></div></div>'); g = chat.lastElementChild; }
-        const src = `/arquivos/${id}/${encodeURI(e.caminho)}`; g.querySelector('.fotos').insertAdjacentHTML('beforeend', `<a href="${src}" target="_blank"><img src="${src}" loading="lazy" onerror="this.parentNode.remove()"></a>`); }
-      if (e.tipo === 'entregue') { let g = chat.lastElementChild; if (!g?.classList.contains('entregas')) { g = document.createElement('div'); g.className = 'entregas'; chat.append(g); } g.insertAdjacentHTML('beforeend', `<div class="entrega"><div class="selo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> ${esc(e.caminho.split('/').pop().replace(/\.[^.]+$/, '').replace(/[-_]/g, ' '))}</div>${midias(id, e.caminho, { legenda: false, vistos })}</div>`); }
-      if (e.tipo === 'finalizado') chat.insertAdjacentHTML('beforeend', `<p class="selo">Pedido concluído: ${e.entregues} vídeo${e.entregues === 1 ? '' : 's'} entregue${e.entregues === 1 ? '' : 's'}${e.devolvidos ? ` · ${e.devolvidos} devolvido${e.devolvidos === 1 ? '' : 's'} ao saldo` : ''}.</p>`);
+        <div class="linha"><button class="segurar" data-ap="${esc(e.id)}"><span class="enche"></span><span class="rot">Segure pra gerar ${e.videos === 1 ? 'meu vídeo' : 'minhas variações'}</span></button><small class="aperro erro"></small></div>
+        <small class="dica">Fica pronto em ~${minutos(media * e.videos)} min. O que não for entregue volta pro saldo.</small></div>`);
+      if (e.tipo === 'aprovado') { const c = document.getElementById('ap-' + e.ref); const selo = `<div class="selo">${CHECK} Aprovado · ${e.videos} vídeo${e.videos === 1 ? '' : 's'} reservado${e.videos === 1 ? '' : 's'}</div>`;
+        if (c) c.outerHTML = selo; else chat.insertAdjacentHTML('beforeend', selo);
+        prod = { t0: e.t, videos: e.videos, imgs: 0, vids: 0, entregues: 0, fim: false };
+        chat.insertAdjacentHTML('beforeend', `<div class="andamento" hidden><small>Já está saindo:</small><div class="fotos"></div></div><div class="entregas">${
+          Array.from({ length: e.videos }, (_, i) => `<div class="vaga"><span class="roda"></span>variação ${i + 1}</div>`).join('')}</div>`); }
+      if (e.tipo === 'etapa' && prod) prod.vids++;
+      if (e.tipo === 'andamento') { let a = [...chat.querySelectorAll('.andamento')].pop(); if (!a) { chat.insertAdjacentHTML('beforeend', '<div class="andamento"><small>Já está saindo:</small><div class="fotos"></div></div>'); a = chat.lastElementChild; }
+        a.hidden = false; const fotos = a.querySelector('.fotos'), src = `/arquivos/${id}/${encodeURI(e.caminho)}`; if (prod) prod.imgs++;
+        fotos.insertAdjacentHTML('beforeend', `<a href="${src}" target="_blank"><img src="${src}" style="animation-delay:${(fotos.children.length % 6) * 80}ms" onerror="this.parentNode.remove()"></a>`); }
+      if (e.tipo === 'entregue') { let gr = [...chat.querySelectorAll('.entregas')].pop(); if (!gr || !prod) { gr = document.createElement('div'); gr.className = 'entregas'; chat.append(gr); }
+        const html = `<div class="entrega${vivo ? ' nova' : ''}"><div class="selo">${CHECK} ${esc(e.caminho.split('/').pop().replace(/\.[^.]+$/, '').replace(/[-_]/g, ' '))}</div>${midias(id, e.caminho, { legenda: false, vistos })}</div>`;
+        const vaga = gr.querySelector('.vaga'); if (vaga) vaga.outerHTML = html; else gr.insertAdjacentHTML('beforeend', html);
+        gr.classList.toggle('bento', gr.querySelectorAll('.entrega').length >= 3);
+        if (prod) { prod.entregues++; if (vivo && prod.entregues < prod.videos) avisar(`✓ ${prod.entregues} de ${prod.videos} pronto`, 'Já dá pra assistir o primeiro vídeo.'); } }
+      if (e.tipo === 'finalizado') { chat.querySelectorAll('.vaga').forEach((v) => v.remove()); chat.querySelectorAll('.entregas').forEach((gr) => gr.classList.toggle('bento', gr.querySelectorAll('.entrega').length >= 3));
+        if (prod) prod.fim = true;
+        chat.insertAdjacentHTML('beforeend', `<div class="pronto"><span class="check">${CHECK.replace('stroke="currentColor"', 'stroke="#0b0b0b"')}</span><div><b>${e.entregues ? (e.entregues === 1 ? 'Seu vídeo está pronto!' : `Prontas! ${e.entregues} variações`) : 'Pedido encerrado'}</b>
+          <small>${e.entregues ? 'Assista e baixe aqui em cima.' : 'Nenhum vídeo foi entregue.'}${e.devolvidos ? ` ${e.devolvidos} vídeo${e.devolvidos === 1 ? '' : 's'} voltou${e.devolvidos === 1 ? '' : 'aram'} pro saldo.` : ''}</small></div></div>`);
+        if (vivo && e.entregues) avisar('✓ Pronto · Estúdio Spy', `${e.entregues} vídeo${e.entregues === 1 ? '' : 's'} pronto${e.entregues === 1 ? '' : 's'} pra baixar.`); }
     }
-    $('#pens').innerHTML = status === 'rodando' ? '<div class="pensando"><span class="pontos"><i></i><i></i><i></i></span>trabalhando no seu vídeo</div>' : '';
+    painel(status); vivo = true;
     if (eventos.some((e) => e.tipo === 'finalizado')) concluido = true; else if (eventos.some((e) => e.tipo === 'aprovado' || e.tipo === 'cliente')) concluido = false;
     $('#st').textContent = (status !== 'rodando' && concluido ? 'concluído' : ESTADO[status]);
     $('#enviar').disabled = status === 'rodando';
-    chat.querySelectorAll('button[data-ap]').forEach((b) => { b.disabled = status === 'rodando'; b.onclick = async () => {
-      b.disabled = true; const r = await api(`/api/jobs/${id}/aprovar`, { method:'POST', body: JSON.stringify({ id: b.dataset.ap }) });
-      const d = await r.json().catch(() => ({})); if (!r.ok) { b.disabled = false; b.parentNode.querySelector('.aperro').textContent = d.erro || 'Não deu pra aprovar.'; }
-      else if (d.videos != null) { eu.videos = d.videos; mostraSaldo(); } }; });
+    chat.querySelectorAll('button[data-ap]').forEach((b) => { b.disabled = status === 'rodando'; if (b.dataset.pronto) return; b.dataset.pronto = 1;
+      const rot = b.querySelector('.rot'), texto = rot.textContent; let t = null;
+      const aprovar = async () => { b.classList.remove('segurando'); b.disabled = true; rot.textContent = 'Aprovando…'; destravaAviso();
+        const r = await api(`/api/jobs/${id}/aprovar`, { method:'POST', body: JSON.stringify({ id: b.dataset.ap }) });
+        const d = await r.json().catch(() => ({})); if (!r.ok) { b.disabled = false; rot.textContent = texto; b.parentNode.querySelector('.aperro').textContent = d.erro || 'Não deu pra aprovar.'; }
+        else if (d.videos != null) { eu.videos = d.videos; mostraSaldo(); } };
+      const solta = () => { if (!t) return; clearTimeout(t); t = null; b.classList.remove('segurando'); rot.textContent = texto; };
+      b.onpointerdown = (ev) => { if (b.disabled || ev.button > 0) return; b.classList.add('segurando'); rot.textContent = 'Continue segurando…'; t = setTimeout(() => { t = null; aprovar(); }, 1200); };
+      b.onpointerup = b.onpointerleave = b.onpointercancel = solta; b.oncontextmenu = (ev) => ev.preventDefault();
+      b.onclick = (ev) => { if (ev.detail === 0) aprovar(); };   // teclado (Enter/Espaço) aprova direto
+    }); 
     if (eventos.some((e) => e.tipo === 'finalizado')) api('/api/eu').then((r) => r.json()).then((d) => { eu = d; mostraSaldo(); });
     if (eventos.length && embaixo) { scrollTo(0, document.body.scrollHeight);
       chat.querySelectorAll('video:not([data-r])').forEach((v) => { v.dataset.r = 1; v.addEventListener('loadedmetadata', () => { if (innerHeight + scrollY >= document.body.scrollHeight - 600) scrollTo(0, document.body.scrollHeight); }, { once: true }); }); }

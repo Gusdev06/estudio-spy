@@ -101,6 +101,7 @@ export function executores(j, ctx) {
       arquivos.push(path.relative(j.cwd, arq));
     }
     mostrarAndamento(arquivos);
+    if (arquivos.some((a) => typeof a === 'string' && /\.(mp4|mov|webm|m4v)$/i.test(a))) ctx.evento(j, { tipo: 'etapa', nome: 'video' });   // a barra de etapas avança
     return { id: out.id, arquivos };
   }
 
