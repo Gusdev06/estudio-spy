@@ -1,0 +1,29 @@
+{
+  "id": "452dac5a34ce481eb81f3baa3fa7f173",
+  "model": "bytedance/seedance-2.5/video-edit",
+  "prompt": "Replace the woman in the video with the dark-haired woman from the reference images for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her cheek, dark brown hair pulled up in a loose messy bun, plain black fitted ribbed tank top with thin straps and small gold hoop earrings exactly as in the first reference image. She must not be blonde or light-haired in any frame, must not wear a floral or red patterned top, and must keep this black tank top outfit in every frame. She is alone. Keep every movement, gesture, hand position, timing and camera framing exactly as in the original video: she looks down at the big white pot on the stove and stirs it with the wooden spoon in her right hand, while steam rises from the pot. Keep the big white pot, the wooden spoon, the stove, the steam, the kitchen with the skylight, the ceiling spotlights and the gray walls exactly as in the original video. There is no text in the video: keep it that way, with no letters, words or captions anywhere in any frame. Where the input video looks smudged or blurry over her chest and arm, render a clean, sharp black ribbed tank top, her arm and the wooden spoon.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/afc28477-e8b2-4377-9c42-4f59ec5b1dbd.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/cat.girltea-7680383645965700366-bia-2026-10-16/clipes/bia.mp4"
+  ],
+  "elapsed_ms": 318247,
+  "raw": {
+    "id": "452dac5a34ce481eb81f3baa3fa7f173",
+    "model": "bytedance/seedance-2.5/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/afc28477-e8b2-4377-9c42-4f59ec5b1dbd.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/452dac5a34ce481eb81f3baa3fa7f173/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-16T11:06:28.367047233Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 313786
+    }
+  }
+}

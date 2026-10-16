@@ -1,0 +1,29 @@
+{
+  "id": "4ce4a3e997564cb9ae833bbfbb9b36c8",
+  "model": "bytedance/seedance-2.5/video-edit",
+  "prompt": "Replace the pale woman with straight black hair in the video with the woman from the reference images for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her cheek, loose dark brown hair with a slight natural wave, fitted black ribbed tank top with thin straps (bare shoulders and bare arms) and small gold hoop earrings exactly as in the first reference image. She must not wear a long-sleeve shirt or sweatshirt in any frame, her arms must stay bare, and she must keep this outfit in every frame. She is alone. Keep every movement, gesture, hand position, timing and camera framing exactly as in the original video: she looks down at the wooden cutting board, cuts the end off a lemon with the red-handled knife, sets the end slice aside, then slices the lemon into several thin slices, holding it with her left hand. Keep the lemons, the lemon slices, the wooden cutting board, the kitchen with wooden cabinets, the bottles on top of the cabinets, the chandelier and the sloped white ceiling exactly as in the original video. Remove all white on-screen text captions; show only the original scene there, with no text anywhere in any frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/51152782-38a9-44f5-bad3-0bab920a4e4b.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/kourtney-girlcode-DVt8gtCkY9f-bia-2026-10-16/clipes/bia.mp4"
+  ],
+  "elapsed_ms": 198765,
+  "raw": {
+    "id": "4ce4a3e997564cb9ae833bbfbb9b36c8",
+    "model": "bytedance/seedance-2.5/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/51152782-38a9-44f5-bad3-0bab920a4e4b.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/4ce4a3e997564cb9ae833bbfbb9b36c8/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-16T11:01:31.781902139Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 195151
+    }
+  }
+}

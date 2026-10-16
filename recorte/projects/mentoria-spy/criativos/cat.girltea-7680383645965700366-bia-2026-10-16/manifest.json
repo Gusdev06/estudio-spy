@@ -1,0 +1,11 @@
+{
+ "original": "https://www.tiktok.com/@cat.girltea/video/7680383645965700366 (12M views, #2 da biblioteca FollowSpy no darkugc); 5,534 s, 166 frames a 30 fps",
+ "pipeline": "frame 0,5 s -> nano-banana-2.1/edit 2k [frame,01,05] -> texto do original apagado por inpaint OpenCV (original/apagar-texto.py; a 1ª rodada do Seedance manteve o texto) -> seedance-2.5/video-edit 720p generate_audio=false sobre o vídeo sem texto -> texto original redesenhado idêntico (legendas.py, Helvetica Neue Medium 72, branco, posição medida) + áudio original",
+ "roupa": "regata preta canelada de alcinha, argolas douradas pequenas, cabelo em coque bagunçado (original: blusa floral vermelha)",
+ "prediction_ids": {
+  "bia": "734a38ec8f8a43fe8ff2c14f4f3ed8cb",
+  "seedance_v1_descartado_texto_preso": "19bd9509b29b40f6aa7f9b8e4c086e84",
+  "seedance": "452dac5a34ce481eb81f3baa3fa7f173"
+ },
+ "custo_estimado_usd": "~4,85 (nano banana ~0,08 + 2 x seedance 2,376 pelo wavespeed price)"
+}

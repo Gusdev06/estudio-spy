@@ -1,0 +1,29 @@
+{
+  "id": "e15a48d33dd44ca88e264aa57e765d7e",
+  "model": "bytedance/seedance-2.5/video-edit",
+  "prompt": "Replace the woman with auburn hair in braids in the video with the dark-haired woman from the reference images for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her cheek, dark brown hair pulled back in a low bun at the nape of her neck, an olive green zip-up hoodie worn open over a plain white crewneck t-shirt, exactly as in the first reference image. She must not have auburn or red hair or braids in any frame, must not wear pink, must not wear a black top or hoop earrings, and must keep this outfit in every frame. She is alone. Keep every movement, gesture, hand position, timing and camera framing exactly as in the original video: she holds the tall butternut squash upright on the wooden cutting board with one hand and peels it with a big kitchen knife in her other hand, slicing strips of peel downward, looking down at the squash. Keep the butternut squash, the orange peel strips on the cutting board, the white kitchen with the built-in microwave and the lighting exactly as in the original video. Remove all pale yellow on-screen text captions; show only the original scene there, with no text anywhere in any frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/3991c497-40c0-4b6d-b16e-492fa910bba5.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/cindy-girlcode-DWQggrRjd9D-bia-2026-10-16/clipes/bia.mp4"
+  ],
+  "elapsed_ms": 324746,
+  "raw": {
+    "id": "e15a48d33dd44ca88e264aa57e765d7e",
+    "model": "bytedance/seedance-2.5/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/3991c497-40c0-4b6d-b16e-492fa910bba5.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/e15a48d33dd44ca88e264aa57e765d7e/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-16T11:01:05.206476175Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 319414
+    }
+  }
+}

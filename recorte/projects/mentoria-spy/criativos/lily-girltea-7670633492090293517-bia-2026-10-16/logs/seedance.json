@@ -1,0 +1,29 @@
+{
+  "id": "33002cbd3d774cce82a1b4f8117426bc",
+  "model": "bytedance/seedance-2.5/video-edit",
+  "prompt": "Replace the woman in the video with the dark-haired woman from the reference images for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her cheek, dark brown hair pulled back into a sleek low bun, chunky cream knit cardigan open over a plain white tank top and a thin gold chain necklace exactly as in the first reference image. She must not wear a dark gray fleece jacket or navy scrubs in any frame, must not have blonde highlights, and must keep this cream cardigan, white tank top and gold necklace in every frame. She is alone. Keep every movement, gesture, hand position, timing and camera framing exactly as in the original video: she sits in a black chair, peels a small orange with both hands in front of her chest, pulls off segments, eats an orange segment and chews while looking down at the orange and glancing toward the camera. Keep the white wall, the whiteboard at the top left and the black chair armrest exactly as in the original video. Remove all white on-screen text captions; show only the original scene there (her cardigan, tank top, hands and the orange), with no text anywhere in any frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/ad25fe04-d785-4cff-8668-a002814dc27f.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/lily-girltea-7670633492090293517-bia-2026-10-16/clipes/bia.mp4"
+  ],
+  "elapsed_ms": 225118,
+  "raw": {
+    "id": "33002cbd3d774cce82a1b4f8117426bc",
+    "model": "bytedance/seedance-2.5/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/ad25fe04-d785-4cff-8668-a002814dc27f.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/33002cbd3d774cce82a1b4f8117426bc/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-16T11:01:11.363214805Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 220849
+    }
+  }
+}

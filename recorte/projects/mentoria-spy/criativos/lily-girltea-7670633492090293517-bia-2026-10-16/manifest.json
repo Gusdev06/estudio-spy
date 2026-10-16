@@ -1,0 +1,14 @@
+{
+ "original": "https://www.tiktok.com/@lily.girltea/video/7670633492090293517 (10,5M views, #5 da biblioteca FollowSpy no darkugc; 5,067 s)",
+ "pipeline": "frame 1,0 s -> nano-banana-2.1/edit 2k [frame,01,05] -> seedance-2.5/video-edit 720p generate_audio=false -> texto original redesenhado idêntico (legendas.py, medido por mínimo temporal) + áudio original",
+ "roupa": "cardigan de tricô creme aberto sobre regata branca, colar fino dourado, cabelo preso em coque baixo (como o original)",
+ "prediction_ids": {
+  "bia": "da55bc9fb789405eab35686b23d22c1b",
+  "seedance": "33002cbd3d774cce82a1b4f8117426bc"
+ },
+ "outputs": {
+  "bia": "https://d2h7xmz5gqybh9.cloudfront.net/output/b630d7c1-0c8d-44c7-841f-172e83784bd1.png",
+  "seedance": "https://d2h7xmz5gqybh9.cloudfront.net/output/ad25fe04-d785-4cff-8668-a002814dc27f.mp4"
+ },
+ "custo_estimado_usd": "~1,2 (nano ~0,08 + seedance base 1,10; não conferido na fatura)"
+}

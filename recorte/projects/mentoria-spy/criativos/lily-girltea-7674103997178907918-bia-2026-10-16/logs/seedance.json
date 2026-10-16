@@ -1,0 +1,29 @@
+{
+  "id": "ca60513198ed41b29339a167f8fb72d4",
+  "model": "bytedance/seedance-2.5/video-edit",
+  "prompt": "Replace the blonde woman in the video with the dark-haired woman from the reference images for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her cheek, long loose dark brown hair with a slight wave, white linen button-up shirt with the sleeves rolled up to her forearms and a thin silver bracelet on her wrist, exactly as in the first reference image. She must not be blonde in any frame, must not wear a black t-shirt, and must keep this white linen shirt with rolled sleeves in every frame. She is alone. Keep every movement, gesture, hand position, timing and camera framing exactly as in the original video: she stands at the bathroom sink looking down and washes her hands with soap foam, rubbing her palms and fingers together in front of her, from a low phone camera angle looking up at her. Keep the white marble bathroom walls, the ceiling light, the glass shower door with the black fixture on the left and the bottles on the shelf exactly as in the original video. Remove all white on-screen text captions; show only the original scene there, with no text anywhere in any frame.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/754b4fa9-4a83-4fdd-ae85-c41cfda96219.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/lily-girltea-7674103997178907918-bia-2026-10-16/clipes/bia.mp4"
+  ],
+  "elapsed_ms": 224890,
+  "raw": {
+    "id": "ca60513198ed41b29339a167f8fb72d4",
+    "model": "bytedance/seedance-2.5/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/754b4fa9-4a83-4fdd-ae85-c41cfda96219.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/ca60513198ed41b29339a167f8fb72d4/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-16T11:01:38.12995084Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 220965
+    }
+  }
+}

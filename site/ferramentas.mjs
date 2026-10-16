@@ -14,6 +14,9 @@ export { NOMES };
 
 const texto = (o) => ({ content: [{ type: 'text', text: typeof o === 'string' ? o : JSON.stringify(o, null, 1) }] });
 const erro = (t) => ({ content: [{ type: 'text', text: t }], isError: true });
+// O cliente só enxerga saldo em vídeos: frase que fala de dinheiro sai inteira do que ele vê.
+const DINHEIRO = /US\$|R\$|\$\s?\d|\bUSD\b|\bBRL\b|\bd[óo]lar(?:es)?\b|\breais\b|\bcentavos?\b|\bcust(?:o|os|ou|a|ar)\b|\bgast(?:o|os|ei|ou)\b|\bor[çc]amento\b/i;
+export const semDinheiro = (t) => String(t || '').split('\n').map((l) => DINHEIRO.test(l) ? l.split(/(?<=[.!?…])\s+/).filter((f) => !DINHEIRO.test(f)).join(' ') : l).join('\n').replace(/\n{3,}/g, '\n\n').trim();
 export const tetoMidia = (j) => PREVIA_USD + TETO_MIDIA_POR_VIDEO_USD * (j.reserva || 0);
 
 // caminho relativo a job/ → absoluto, recusando qualquer coisa fora de job/ (inclusive symlink)
@@ -102,7 +105,7 @@ export function executores(j, ctx) {
         const pend = j.eventos.find((e) => e.tipo === 'aprovacao' && e.estado === 'pendente');
         if (pend) pend.estado = 'substituida';
         const id = crypto.randomBytes(4).toString('hex');
-        ctx.evento(j, { tipo: 'aprovacao', id, videos, resumo, estado: 'pendente' });
+        ctx.evento(j, { tipo: 'aprovacao', id, videos, resumo: semDinheiro(resumo) || `Vou fazer ${videos} vídeo(s).`, estado: 'pendente' });
         return texto(`Botão de aprovação de ${videos} vídeo(s) mostrado ao cliente. Termine a sua vez agora e espere a resposta. Saldo atual dele: ${ctx.ehAdmin(j.dono) ? 'ilimitado (admin)' : ctx.saldo(j.dono) + ' vídeo(s)'}.`);
       },
 

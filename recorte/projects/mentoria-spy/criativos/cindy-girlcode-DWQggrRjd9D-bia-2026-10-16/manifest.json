@@ -1,0 +1,9 @@
+{
+ "original": "https://www.instagram.com/reel/DWQggrRjd9D/ (@cindy.girlcode, 10,2M views, #6 da biblioteca FollowSpy no darkugc; 6,64 s)",
+ "pipeline": "frame 2,0 s -> nano-banana-2.1/edit 2k [frame,01,05] -> seedance-2.5/video-edit 720p generate_audio=false -> texto original redesenhado idêntico (legendas.py, cor medida 253,244,168, Helvetica Neue Medium 58,25 px) + áudio original",
+ "roupa": "moletom com zíper verde-oliva aberto sobre camiseta branca, cabelo preso em coque baixo, sem brinco",
+ "prediction_ids": {
+  "bia": "d1d68e6c2955480fa2bbb1e483fcd1d4",
+  "seedance": "e15a48d33dd44ca88e264aa57e765d7e"
+ }
+}

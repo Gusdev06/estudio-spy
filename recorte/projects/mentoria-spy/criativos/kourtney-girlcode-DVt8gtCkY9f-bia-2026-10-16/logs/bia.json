@@ -1,0 +1,29 @@
+{
+  "id": "bf4f60bda98e4f2db176c77dd038ee8d",
+  "model": "google/nano-banana-2.1/edit",
+  "prompt": "Edit image 1. Replace the pale woman with straight black hair with the woman from images 2 and 3 (same identity, face and beauty mark). She is alone. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nHer dark brown hair is loose, falling past her shoulders with a slight natural wave. She wears a fitted black ribbed tank top (bare shoulders and bare arms) and small gold hoop earrings.\nKeep everything else in image 1 exactly the same: her pose, head angle, downward gaze at the cutting board, hand and arm positions, the knife with the red handle in her right hand, her left hand holding the lemon, the lemons and lemon slices on the wooden cutting board, the kitchen with wooden cabinets, the bottles on top of the cabinets, the chandelier, the sloped white ceiling, the lighting, the colors, the framing and the camera angle.\nIMPORTANT: image 1 has white caption text over her chest (\"he could tell me a million times he loves me...\"). Remove ALL of that text completely: the output must contain no letters, words or captions anywhere; show her tank top, her arms and the kitchen there instead. Photorealistic front phone camera, not retouched.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/577b8a74-cbaf-471b-b711-ae5266682f0a.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/kourtney-girlcode-DVt8gtCkY9f-bia-2026-10-16/base/bia.png"
+  ],
+  "elapsed_ms": 83232,
+  "raw": {
+    "id": "bf4f60bda98e4f2db176c77dd038ee8d",
+    "model": "google/nano-banana-2.1/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/577b8a74-cbaf-471b-b711-ae5266682f0a.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/bf4f60bda98e4f2db176c77dd038ee8d/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-16T10:59:44.889494925Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 80219
+    }
+  }
+}

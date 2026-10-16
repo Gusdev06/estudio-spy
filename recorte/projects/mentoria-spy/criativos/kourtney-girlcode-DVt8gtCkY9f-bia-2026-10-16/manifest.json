@@ -1,0 +1,9 @@
+{
+ "original": "https://www.instagram.com/reel/DVt8gtCkY9f/ (@kourtney.girlcode, 11,4M views, #3 da biblioteca FollowSpy no darkugc; vídeo 6,533 s / 196 frames 30 fps)",
+ "pipeline": "frame 3,0 s -> nano-banana-2.1/edit 2k [frame,01,05] -> seedance-2.5/video-edit 720p generate_audio=false (ref [bia-na-cena,01,05]) -> texto original redesenhado idêntico (legendas.py, Helvetica Neue Medium 47 px, posição medida) + áudio original",
+ "roupa": "regata canelada preta de alcinha, argolas douradas pequenas, cabelo solto",
+ "prediction_ids": {
+  "bia": "bf4f60bda98e4f2db176c77dd038ee8d",
+  "seedance": "4ce4a3e997564cb9ae833bbfbb9b36c8"
+ }
+}

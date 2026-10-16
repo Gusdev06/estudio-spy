@@ -153,8 +153,8 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;
 // Caminho interno (job/saida/variacao-1.mp4) vira o nome legível ("variacao 1"); o arquivo em si aparece embaixo como vídeo.
 const semCaminho = (t) => t.replace(/`?job\/[\w.\-\/]+\/([\w.\-]+)\.(mp4|mov|m4v|webm|jpe?g|png|webp)`?/gi, (_, n) => n.replace(/[-_]/g, ' '));
 const md = (t) => DOMPurify.sanitize(marked.parse(t), { FORBID_TAGS: ['style','form','input','iframe','video','audio','img'], FORBID_ATTR: ['style'] });
-let timer = null, ultimo = -1, jobAtual = null, eu = null;
-// Admin vê o chat igual ao cliente; "detalhes" liga passos, tempos e custo (lembrado só neste navegador).
+let timer = null, ultimo = -1, jobAtual = null, eu = null, geracao = 0;
+// Admin vê o chat igual ao cliente; "detalhes" liga passos e tempos (lembrado só neste navegador).
 let temPacotes = false; fetch('/api/pacotes').then((r) => r.json()).then((d) => { temPacotes = d.pacotes.length > 0; mostraSaldo(); }).catch(() => {});
 let det = false; try { det = localStorage.getItem('det') === '1'; } catch {}
 const detalhes = () => !!(eu?.admin && det);
@@ -202,7 +202,7 @@ function novaSenha(tok) {
 }
 
 async function comprar() {
-  clearInterval(timer); jobAtual = null; $('#compor').hidden = true; mostraSaldo();
+  clearInterval(timer); jobAtual = null; geracao++; $('#compor').hidden = true; mostraSaldo();
   const { pacotes, suporte } = await (await fetch('/api/pacotes')).json();
   app.innerHTML = `<h1>Comprar vídeos</h1><p class="sub">Cada vídeo do saldo = 1 variação pronta entregue. Se um pedido usar menos, a sobra volta pro saldo.</p>
   <p class="sub"><b>Importante:</b> no pagamento, use o mesmo e-mail da sua conta (${esc(eu.email)}). O saldo cai sozinho em até 1 minuto depois da aprovação.</p>
@@ -213,7 +213,7 @@ async function comprar() {
 }
 
 function home() {
-  clearInterval(timer); jobAtual = null; $('#compor').hidden = true; $('#st').textContent = eu.email; $('#sair').hidden = false; mostraSaldo();
+  clearInterval(timer); jobAtual = null; geracao++; $('#compor').hidden = true; $('#st').textContent = eu.email; $('#sair').hidden = false; mostraSaldo();
   app.innerHTML = `<h1>Mande o criativo.<br><em>Diga a variação.</em></h1>
   <p class="sub">Troca de avatar, headline, layout ou pessoa: do jeito que você pediria pra um editor. As variações chegam prontas pra subir.</p>
   <div class="passos"><span class="passo"><b>1</b>Envie o vídeo</span><span class="passo"><b>2</b>Diga o que variar</span><span class="passo"><b>3</b>Aprove e receba</span></div>
@@ -253,13 +253,13 @@ function home() {
       const thumb = j.entrada && /\.(mp4|mov|m4v|webm)$/i.test(j.entrada) ? `<video src="/arquivos/${j.id}/${esc(j.entrada)}#t=0.5" preload="metadata" muted playsinline></video>`
         : j.entrada ? `<video poster="/arquivos/${j.id}/${esc(j.entrada)}"></video>` : '';
       return `<a class="job" href="#/job/${j.id}">${thumb}<div><p>${esc(j.primeira || 'Pedido sem descrição')}</p><span class="estado ${st}">${rot}</span>
-        <small>${quando(j.t)}${j.custo != null && detalhes() ? ' · US$ ' + j.custo.toFixed(2) : ''}</small></div></a>`; }).join('') + '</div>'; });
+        <small>${quando(j.t)}</small></div></a>`; }).join('') + '</div>'; });
 }
 
 async function painelAdmin() {
   const us = await (await api('/api/admin/usuarios')).json();
-  $('#admin').innerHTML = `<small>Clientes (admin)</small><div class="tabela"><table><tr><th>e-mail</th><th>vídeos</th><th>pedidos</th><th>custo US$</th><th></th></tr>` +
-    us.map((u) => `<tr><td>${esc(u.email)}${u.admin ? ' · admin' : ''}</td><td>${u.admin ? '∞' : u.videos}</td><td>${u.pedidos}</td><td>${u.custo.toFixed(2)}</td>
+  $('#admin').innerHTML = `<small>Clientes (admin)</small><div class="tabela"><table><tr><th>e-mail</th><th>vídeos</th><th>pedidos</th><th>usados</th><th></th></tr>` +
+    us.map((u) => `<tr><td>${esc(u.email)}${u.admin ? ' · admin' : ''}</td><td>${u.admin ? '∞' : u.videos}</td><td>${u.pedidos}</td><td>${u.usados}</td>
       <td>${u.admin ? '' : `<input type="number" value="10" data-e="${esc(u.email)}"> <button data-e="${esc(u.email)}">creditar</button>`} <button data-s="${esc(u.email)}">link de senha</button></td></tr>`).join('') + '</table></div><p id="linkSenha" class="ok" style="word-break:break-all"></p><div id="pags"></div>';
   $('#admin').querySelectorAll('button[data-s]').forEach((b) => b.onclick = async () => {
     const r = await api('/api/admin/link-senha', { method:'POST', body: JSON.stringify({ email: b.dataset.s }) }); const d = await r.json();
@@ -288,12 +288,15 @@ function midias(id, texto, { legenda = true, baixar = true, vistos = null } = {}
 }
 
 function job(id) {
-  clearInterval(timer); jobAtual = id; ultimo = -1; mostraSaldo(); app.innerHTML = '<div id="chat"></div><div id="pens"></div>'; $('#compor').hidden = false; const vistos = new Set(); let concluido = false;
+  clearInterval(timer); jobAtual = id; ultimo = -1; const g = ++geracao; mostraSaldo(); app.innerHTML = '<div id="chat"></div><div id="pens"></div>'; $('#compor').hidden = false; const vistos = new Set(); let concluido = false;
   let ferrs = null;
-  const puxar = async () => {
-    const r = await api(`/api/jobs/${id}/eventos?depois=${ultimo}`); if (!r.ok) { app.innerHTML = '<div class="aviso-erro" style="margin-left:0">Não achamos esse pedido. <a href="#">Voltar pro início</a></div>'; return clearInterval(timer); }
-    const { status, custo, eventos } = await r.json(); const chat = $('#chat'); const embaixo = innerHeight + scrollY >= document.body.scrollHeight - 80;
+  let puxando = false;
+  const puxar = async () => { if (puxando) return; puxando = true; try { await puxar1(); } finally { puxando = false; } };
+  const puxar1 = async () => {
+    const r = await api(`/api/jobs/${id}/eventos?depois=${ultimo}`); if (g !== geracao) return;   // resposta de uma tela que já foi trocada if (!r.ok) { app.innerHTML = '<div class="aviso-erro" style="margin-left:0">Não achamos esse pedido. <a href="#">Voltar pro início</a></div>'; return clearInterval(timer); }
+    const { status, eventos } = await r.json(); const chat = $('#chat'); const embaixo = innerHeight + scrollY >= document.body.scrollHeight - 80;
     for (const e of eventos) {
+      if (e.n <= ultimo) continue;   // nunca desenha o mesmo evento duas vezes
       ultimo = e.n;
       if (e.tipo === 'ferramenta') {
         if (!detalhes()) continue;
@@ -305,10 +308,11 @@ function job(id) {
       }
       if (ferrs?.ultimo && eu.admin) ferrs.ultimo.insertAdjacentHTML('beforeend', ` <small>${((e.t - ferrs.ultimo.dataset.t) / 1000).toFixed(0)}s</small>`);
       ferrs = null;
+      if (e.tipo === 'cliente' && (e.interno || /^Aprovado: pode produzir/.test(e.texto))) continue;
       if (e.tipo === 'cliente') { const txt = e.texto.replace(/^Mandei o arquivo em \S+\.\s*/, '');
         chat.insertAdjacentHTML('beforeend', `<div class="msg cliente">${midias(id, e.texto.startsWith('Mandei o arquivo em ') ? e.texto.split(/\s/)[4] : '', { legenda: false, baixar: false })}${txt ? `<div>${esc(txt)}</div>` : ''}</div>`); }
       if (e.tipo === 'agente') chat.insertAdjacentHTML('beforeend', `<div class="msg agente">${LOGO}<div class="corpo">${md(semCaminho(e.texto))}${midias(id, e.texto, { vistos })}</div></div>`);
-      if (e.tipo === 'fim' && e.custo != null && detalhes()) chat.insertAdjacentHTML('beforeend', `<div class="fim">admin · rodada ${e.dur ? (e.dur / 60000).toFixed(1) + ' min (modelo ' + (e.durModelo / 60000).toFixed(1) + ' · vídeo/ferramentas ' + ((e.dur - e.durModelo) / 60000).toFixed(1) + ') · ' + e.passos + ' passos · ' : ''}tokens acumulados US$ ${e.custo.toFixed(2)}</div>`);
+      if (e.tipo === 'fim' && e.dur && detalhes()) chat.insertAdjacentHTML('beforeend', `<div class="fim">admin · rodada ${(e.dur / 60000).toFixed(1)} min (modelo ${(e.durModelo / 60000).toFixed(1)} · vídeo/ferramentas ${((e.dur - e.durModelo) / 60000).toFixed(1)}) · ${e.passos} passos</div>`);
       if (e.tipo === 'erro') chat.insertAdjacentHTML('beforeend', `<div class="aviso-erro">${esc(e.texto)}</div>`);
       if (e.tipo === 'aprovacao') chat.insertAdjacentHTML('beforeend', `<div class="aprov" id="ap-${esc(e.id)}"><p>${esc(e.resumo)}</p>
         <div class="uso"><span>Usa <b>${e.videos} vídeo${e.videos === 1 ? '' : 's'}</b> do seu saldo${eu.admin ? '' : ` · você tem <b>${eu.videos}</b>`}</span>${!eu.admin && eu.videos < e.videos && temPacotes ? '<a href="#/comprar">comprar vídeos</a>' : ''}</div>
@@ -319,7 +323,7 @@ function job(id) {
     }
     $('#pens').innerHTML = status === 'rodando' ? '<div class="pensando"><span class="pontos"><i></i><i></i><i></i></span>trabalhando no seu vídeo</div>' : '';
     if (eventos.some((e) => e.tipo === 'finalizado')) concluido = true; else if (eventos.some((e) => e.tipo === 'aprovado' || e.tipo === 'cliente')) concluido = false;
-    $('#st').textContent = (status !== 'rodando' && concluido ? 'concluído' : ESTADO[status]) + (custo != null && detalhes() ? ` · tokens US$ ${custo.toFixed(2)}` : '');
+    $('#st').textContent = (status !== 'rodando' && concluido ? 'concluído' : ESTADO[status]);
     $('#enviar').disabled = status === 'rodando';
     chat.querySelectorAll('button[data-ap]').forEach((b) => { b.disabled = status === 'rodando'; b.onclick = async () => {
       b.disabled = true; const r = await api(`/api/jobs/${id}/aprovar`, { method:'POST', body: JSON.stringify({ id: b.dataset.ap }) });

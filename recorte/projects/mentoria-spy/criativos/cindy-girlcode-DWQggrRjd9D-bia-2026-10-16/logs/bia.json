@@ -1,0 +1,29 @@
+{
+  "id": "d1d68e6c2955480fa2bbb1e483fcd1d4",
+  "model": "google/nano-banana-2.1/edit",
+  "prompt": "Edit image 1. Replace the woman with auburn hair in braids with the woman from images 2 and 3 (same identity, face and beauty mark). She is alone. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nHer dark brown hair is pulled back in a low bun at the nape of her neck, a few loose strands framing her face. She wears an olive green zip-up hoodie, unzipped and open, over a plain white crewneck t-shirt. No hoop earrings.\nKeep everything else in image 1 exactly the same: her pose, head angle, downward gaze, both hands holding the butternut squash and the big kitchen knife, the peeled orange butternut squash on the wooden cutting board, the orange peel strips, the white kitchen with the built-in microwave, the lighting, the colors, the framing and the camera angle.\nIMPORTANT: image 1 has pale yellow caption text over her chest (\"Resentment is weird because yes I want to forgive you...\"). Remove ALL of that text completely: the output must contain no letters, words or captions anywhere; show her white t-shirt, hoodie, the knife and the squash there instead. Photorealistic front phone camera, not retouched.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/8de2d6c3-4dbd-4337-865a-5c8f1ca23670.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/cindy-girlcode-DWQggrRjd9D-bia-2026-10-16/base/bia.png"
+  ],
+  "elapsed_ms": 58581,
+  "raw": {
+    "id": "d1d68e6c2955480fa2bbb1e483fcd1d4",
+    "model": "google/nano-banana-2.1/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/8de2d6c3-4dbd-4337-865a-5c8f1ca23670.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/d1d68e6c2955480fa2bbb1e483fcd1d4/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-16T10:59:52.608284856Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 55658
+    }
+  }
+}

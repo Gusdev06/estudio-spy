@@ -1,0 +1,11 @@
+{
+ "original": "https://www.tiktok.com/@lily.girltea/video/7674103997178907918 (10,2M views, #7 da biblioteca FollowSpy no darkugc; 5,067 s, 152 frames a 30 fps)",
+ "pipeline": "frame 3,0 s -> nano-banana-2.1/edit 2k [frame,01,05] -> seedance-2.5/video-edit 720p generate_audio=false -> texto do original que o Seedance manteve apagado por inpainting (limpar-texto.py, máscara medida no original) -> texto original redesenhado idêntico (legendas.py, posição por IoU contra a máscara do original) + áudio original",
+ "roupa": "camisa de linho branca de botão com mangas dobradas, pulseira prata fina, cabelo solto",
+ "prediction_ids": {
+  "bia": "c6eeeb1a2a634a76a1918152e5fbfc4f",
+  "seedance": "ca60513198ed41b29339a167f8fb72d4"
+ },
+ "custo_estimado_usd": "~2,6 (Nano Banana ~0,08 + Seedance 2.5 ~2,5; estimado, não conferido na fatura)",
+ "defeitos": "O Seedance não removeu o texto do original; sem o inpainting ficava contorno fantasma atrás do texto redesenhado. Com inpainting, o borrado fica escondido sob as letras."
+}

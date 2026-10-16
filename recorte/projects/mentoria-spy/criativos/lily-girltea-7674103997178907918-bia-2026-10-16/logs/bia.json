@@ -1,0 +1,29 @@
+{
+  "id": "c6eeeb1a2a634a76a1918152e5fbfc4f",
+  "model": "google/nano-banana-2.1/edit",
+  "prompt": "Edit image 1. Replace the blonde woman with the woman from images 2 and 3 (same identity, face and beauty mark). She is alone. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nHer dark brown hair is loose, falling past her shoulders with a slight natural wave. She wears a white linen button-up shirt with the sleeves rolled up to her forearms, top button open, and a thin silver bracelet on her wrist. She does not wear a black t-shirt.\nKeep everything else in image 1 exactly the same: her pose, head angle, downward gaze, arm positions, the low phone camera angle looking up at her from the sink, the white marble bathroom wall, the ceiling light, the shower glass and black fixture on the left, the lighting, the colors and the framing.\nIMPORTANT: image 1 has white caption text over her face and chest (\"When I forgive him for the 5th time but suddenly his jokes irritate me...\"). Remove ALL of that text completely: the output must contain no letters, words or captions anywhere; show her shirt, hair and the bathroom there instead. Photorealistic front phone camera, not retouched.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/3b892f61-049a-46d5-bb96-824387c5f8e5.png"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/lily-girltea-7674103997178907918-bia-2026-10-16/base/bia.png"
+  ],
+  "elapsed_ms": 83879,
+  "raw": {
+    "id": "c6eeeb1a2a634a76a1918152e5fbfc4f",
+    "model": "google/nano-banana-2.1/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/3b892f61-049a-46d5-bb96-824387c5f8e5.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c6eeeb1a2a634a76a1918152e5fbfc4f/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-16T10:59:56.242822962Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 80272
+    }
+  }
+}

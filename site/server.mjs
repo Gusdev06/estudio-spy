@@ -7,7 +7,7 @@
 import { query } from '@anthropic-ai/claude-agent-sdk';
 import http from 'node:http'; import fs from 'node:fs'; import path from 'node:path';
 import { execFileSync, spawn } from 'node:child_process'; import crypto from 'node:crypto'; import { promisify } from 'node:util';
-import { servidorDeFerramentas, executar, NOMES as FERRAMENTAS } from './ferramentas.mjs';
+import { servidorDeFerramentas, executar, semDinheiro, NOMES as FERRAMENTAS } from './ferramentas.mjs';
 import { trava } from './trava.mjs';
 
 const PORT = Number(process.env.PORT || 4330);
@@ -136,7 +136,7 @@ const INTERNOS = [
   [/\b(?:wave ?speed|pruna|p-video|seedance|kling|gpt[- ]?image[\w.-]*|nano[- ]?banana[\w.-]*|minimax|omnihuman|bytedance|openai|google|yunet|mediapipe|whisper|mlx|remotion|hyperframes|ffmpeg|ffprobe|anthropic|claude|opus|sonnet|haiku|maestri|peneira|isca|bisturi)\b/gi, (m) => /^(ffmpeg|ffprobe)$/i.test(m) ? 'nosso editor' : 'nosso gerador'],
   [/\b(?:Gusta|Gustavo|esteira[- ]spy|lote \d+|pipeline)\b/gi, ''],
 ];
-const limpar = (t) => INTERNOS.reduce((s, [re, por]) => s.replace(re, por), t);
+const limpar = (t) => semDinheiro(INTERNOS.reduce((s, [re, por]) => s.replace(re, por), t));
 
 const PASSO = { Bash: 'trabalhando no vídeo', Read: 'analisando', Glob: 'analisando', Grep: 'analisando', Skill: 'planejando',
   Write: 'preparando os arquivos', Edit: 'preparando os arquivos', Task: 'trabalhando em paralelo', TodoWrite: 'organizando as etapas' };
@@ -223,7 +223,7 @@ async function vaga(j) {
 const liberar = () => { const prox = fila.shift(); if (prox) prox(); else emExecucao--; };
 
 async function rodar(j, texto, { confiavel = false } = {}) {
-  j.status = 'rodando'; evento(j, { tipo: 'cliente', texto });
+  j.status = 'rodando'; evento(j, { tipo: 'cliente', texto, ...(confiavel ? { interno: true } : {}) });   // interno: recado do sistema pro agente, não aparece no chat
   if (j.bloqueado && !admin(j.dono)) {
     evento(j, { tipo: 'agente', texto: 'Este pedido chegou ao limite de trabalho. Pra continuar, abra um pedido novo com o vídeo.' }); evento(j, { tipo: 'fim', custo: j.custo, ok: true });
     j.status = 'esperando'; return;
@@ -245,7 +245,7 @@ async function rodar(j, texto, { confiavel = false } = {}) {
       if (m.type === 'assistant' && !m.parent_tool_use_id) for (const b of m.message.content ?? []) {
         if (b.type === 'text' && b.text.trim()) {
           if (LIMITE_PLATAFORMA.test(b.text)) { log({ job: j.id, alerta: 'limite-plataforma', texto: b.text.slice(0, 200) }); evento(j, { tipo: 'agente', texto: INSTAVEL_AGENTE }); continue; }
-          evento(j, { tipo: 'agente', texto: limpar(b.text) });
+          const txt = limpar(b.text); if (txt) evento(j, { tipo: 'agente', texto: txt });
         }
         if (b.type === 'tool_use') evento(j, { tipo: 'ferramenta', texto: PASSO[b.name] || 'trabalhando',
           detalhe: `${b.name.replace('mcp__estudio__', '')}: ${b.input?.description || b.input?.modelo || (b.input?.itens ? b.input.itens.length + ' itens' : '') || b.input?.file_path || ''}`.slice(0, 140) });
@@ -441,7 +441,7 @@ http.createServer(async (req, res) => {
       if (req.method === 'GET' && u.pathname === '/api/admin/usuarios')
         return json(res, Object.entries(usuarios).map(([e, x]) => ({ email: e, videos: x.videos || 0, criado: x.criado, admin: admin(e),
           pedidos: [...jobs.values()].filter((j) => j.dono === e).length,
-          custo: +[...jobs.values()].filter((j) => j.dono === e).reduce((s, j) => s + (j.custo || 0) + (j.gastoMidia || 0), 0).toFixed(2) })));
+          usados: [...jobs.values()].filter((j) => j.dono === e).reduce((s, j) => s + (j.entregues || []).length, 0) })));
       if (req.method === 'POST' && u.pathname === '/api/admin/creditar') {
         const { email: alvo, videos } = await corpo(req); const n = Math.trunc(Number(videos));
         if (!usuarios[alvo] || !Number.isFinite(n) || n === 0 || Math.abs(n) > 1000) return json(res, { erro: 'e-mail ou quantidade inválida' }, 400);
@@ -465,7 +465,7 @@ http.createServer(async (req, res) => {
     }
     if (req.method === 'GET' && u.pathname === '/api/jobs')
       return json(res, [...jobs.values()].filter((j) => j.dono === email).reverse()
-        .map(({ id, status, custo, eventos, entrada, entregues }) => ({ id, status, custo: admin(email) ? custo : undefined, entrada, entregues: (entregues || []).length,
+        .map(({ id, status, eventos, entrada, entregues }) => ({ id, status, entrada, entregues: (entregues || []).length,
           t: eventos.at(-1)?.t,
           primeira: eventos.find((e) => e.tipo === 'cliente')?.texto?.replace(/^Mandei o arquivo em \S+\.\s*/, '').slice(0, 80) })));
     if (req.method === 'POST' && u.pathname === '/api/jobs') {
@@ -489,8 +489,9 @@ http.createServer(async (req, res) => {
     if (!j || !visivel(j, email)) return json(res, { erro: 'não achei' }, 404);
     if (req.method === 'GET' && p[3] === 'eventos') {
       const depois = Number(u.searchParams.get('depois') ?? -1);
-      return json(res, { status: j.status, custo: admin(email) ? j.custo : undefined, admin: admin(email),
-        eventos: j.eventos.filter((e) => e.n > depois && (admin(email) || e.tipo !== 'ferramenta')).map((e) => admin(email) ? e : e.tipo === 'fim' ? { tipo: 'fim', n: e.n, t: e.t, ok: e.ok } : e.tipo === 'ferramenta' ? { ...e, detalhe: undefined } : e) });
+      return json(res, { status: j.status, admin: admin(email),
+        eventos: j.eventos.filter((e) => e.n > depois && (admin(email) || e.tipo !== 'ferramenta')).map((e) => e.tipo === 'agente' ? { ...e, texto: semDinheiro(e.texto) } : e.tipo === 'aprovacao' ? { ...e, resumo: semDinheiro(e.resumo) } : e).filter((e) => e.tipo !== 'agente' || e.texto)
+          .map((e) => admin(email) ? (e.tipo === 'fim' ? { ...e, custo: undefined } : e) : e.tipo === 'fim' ? { tipo: 'fim', n: e.n, t: e.t, ok: e.ok } : e.tipo === 'ferramenta' ? { ...e, detalhe: undefined } : e) });
     }
     if (req.method === 'POST' && p[3] === 'aprovar') {
       if (j.dono !== email) return json(res, { erro: 'só o dono do pedido aprova' }, 403);
