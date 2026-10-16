@@ -84,7 +84,7 @@
   .estado { display:inline-flex; align-items:center; gap:6px; font-size:12px; color:var(--suave); }
   .estado::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--suave); }
   .estado.rodando::before, .estado.novo::before { background:var(--acento); animation:pulso 1.4s infinite; } .estado.esperando::before { background:var(--aviso); }
-  .estado.erro::before { background:var(--erro); } .estado.pronto::before { background:var(--acento); }
+  .estado.erro::before { background:var(--erro); } .estado.feito::before { background:var(--acento); } .estado.pronto::before { background:var(--acento); }
   @keyframes pulso { 50% { opacity:.25; } }
 
   /* chat */
@@ -172,6 +172,14 @@
 
   /* admin, compra */
   .admin { margin-top:44px; } .admin > small, #pags > small { display:block; color:var(--suave); font-size:12px; text-transform:uppercase; letter-spacing:.08em; margin:22px 0 8px; }
+  .presente { display:inline-flex; align-items:center; gap:6px; padding:6px 12px; border-radius:999px; background:var(--acento-sombra); color:var(--acento); font-weight:600; font-size:13px; }
+  .convite-novo { padding:16px; margin-bottom:10px; } .convite-novo .campos { display:flex; gap:10px; align-items:flex-end; flex-wrap:wrap; }
+  .convite-novo label { display:flex; flex-direction:column; } .convite-novo .rotulo { margin:0 0 6px; } .convite-novo .nota { flex:1; min-width:180px; }
+  .admin .convite-novo input { width:100%; padding:12px 14px; } .admin .convite-novo input[type=number] { width:90px; } .convite-novo select { background:#0c0c0e; color:var(--texto); border:1px solid var(--borda2); border-radius:12px; padding:12px; font:inherit; }
+  .convite-novo .campos button { padding:12px 18px; font-size:14px; border-radius:12px; }
+  .link-convite { display:flex; gap:8px; align-items:center; margin-top:12px; padding:8px 8px 8px 12px; border-radius:12px; background:rgba(212,255,58,.06); border:1px solid rgba(212,255,58,.3); }
+  .link-convite code { flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px; color:var(--acento); background:none; }
+  .admin button.sec { background:var(--painel2); color:var(--texto); border:1px solid var(--borda2); }
   .admin table { width:100%; border-collapse:collapse; font-size:14px; } .admin td,.admin th { border-top:1px solid var(--borda); padding:9px 6px; text-align:left; }
   .admin th { color:var(--suave); font-weight:500; font-size:12px; } .admin input { width:64px; margin:0; padding:7px 8px; }
   .admin button { padding:7px 11px; font-size:12px; border-radius:9px; } .admin .tabela { overflow-x:auto; border:1px solid var(--borda); border-radius:14px; padding:4px 10px; background:var(--painel); }
@@ -241,10 +249,10 @@ const botaoNovo = (on) => { $('#novoBtn').hidden = !on || !eu; };
 
 async function api(url, op) { const r = await fetch(url, op); if (r.status === 401) { eu = null; login(); throw new Error('login'); } return r; }
 
-function login() {
+function login(conv = null) {   // conv: { token, videos } quando a pessoa chegou por um link de convite
   clearInterval(timer); geracao++; botaoNovo(false); $('#compor').hidden = true; $('#st').textContent = ''; $('#sair').hidden = true;
-  let criar = false;
-  app.innerHTML = `<div class="entrada"><div class="card">${LOGO}<h1 id="lt">Bem-vindo de volta</h1><p class="sub" id="ls">Entre pra mandar seus criativos.</p>
+  let criar = !!conv;
+  app.innerHTML = `<div class="entrada"><div class="card">${conv ? `<span class="presente">🎁 ${conv.videos} vídeo${conv.videos === 1 ? '' : 's'} pra testar</span>` : LOGO}<h1 id="lt">Bem-vindo de volta</h1><p class="sub" id="ls">Entre pra mandar seus criativos.</p>
   <label class="rotulo" for="em">E-mail</label><input id="em" type="email" placeholder="voce@email.com" autocomplete="email">
   <label class="rotulo" for="se">Senha</label><input id="se" type="password" placeholder="••••••••" autocomplete="current-password">
   <label id="lt2" class="termos" hidden><input type="checkbox" id="aceito"> <span>Li e aceito os <a href="/termos" target="_blank">termos de uso e a política de privacidade</a>.</span></label>
@@ -255,15 +263,36 @@ function login() {
     if (!em) return $('#lerro').textContent = 'Digite o seu e-mail acima e clique de novo em "esqueci a senha".';
     const r = await fetch('/api/esqueci', { method:'POST', body: JSON.stringify({ email: em }) }); const d = await r.json().catch(() => ({}));
     $('#lerro').className = r.ok ? 'ok' : 'erro'; $('#lerro').innerHTML = esc(d.msg || d.erro || 'Tente de novo.') + (d.suporte ? ` <a href="${esc(d.suporte)}" target="_blank">Falar com o suporte</a>` : ''); };
-  $('#troca').onclick = (e) => { e.preventDefault(); criar = !criar; $('#lerro').textContent = '';
-    $('#lt').textContent = criar ? 'Criar sua conta' : 'Bem-vindo de volta'; $('#ls').textContent = criar ? 'Use uma senha com 8 ou mais caracteres.' : 'Entre pra mandar seus criativos.';
-    $('#ent').textContent = criar ? 'Criar conta' : 'Entrar'; $('#troca').textContent = criar ? 'Já tenho conta' : 'Criar conta';
-    $('#se').autocomplete = criar ? 'new-password' : 'current-password'; $('#lt2').hidden = !criar; $('#esq').style.visibility = criar ? 'hidden' : 'visible'; };
+  const modo = () => { $('#lerro').textContent = '';
+    $('#lt').textContent = conv ? (criar ? 'Você foi convidado' : 'Entre pra receber') : criar ? 'Criar sua conta' : 'Bem-vindo de volta';
+    $('#ls').textContent = conv ? (criar ? `Crie sua conta e os ${conv.videos} vídeo${conv.videos === 1 ? '' : 's'} já caem no seu saldo.` : `Os ${conv.videos} vídeo${conv.videos === 1 ? '' : 's'} vão pra sua conta assim que você entrar.`)
+      : criar ? 'Use uma senha com 8 ou mais caracteres.' : 'Entre pra mandar seus criativos.';
+    $('#ent').textContent = criar ? (conv ? 'Criar conta e receber' : 'Criar conta') : 'Entrar'; $('#troca').textContent = criar ? 'Já tenho conta' : 'Criar conta';
+    $('#se').autocomplete = criar ? 'new-password' : 'current-password'; $('#se').placeholder = criar ? 'mínimo 8 caracteres' : '••••••••';
+    $('#lt2').hidden = !criar; $('#esq').style.visibility = criar ? 'hidden' : 'visible'; };
+  $('#troca').onclick = (e) => { e.preventDefault(); criar = !criar; modo(); }; modo();
   const ir = async () => {
-    const r = await fetch(criar ? '/api/cadastrar' : '/api/entrar', { method:'POST', body: JSON.stringify({ email: $('#em').value, senha: $('#se').value, termos: criar ? $('#aceito').checked : undefined }) });
-    const d = await r.json(); if (!r.ok) return $('#lerro').textContent = d.erro; eu = d; rota();
+    $('#ent').disabled = true;
+    const r = await fetch(criar ? '/api/cadastrar' : '/api/entrar', { method:'POST', body: JSON.stringify({ email: $('#em').value, senha: $('#se').value, termos: criar ? $('#aceito').checked : undefined, convite: conv?.token }) });
+    const d = await r.json(); $('#ent').disabled = false; if (!r.ok) return $('#lerro').textContent = d.erro; eu = d;
+    if (conv) { try { if (d.ganhou) sessionStorage.setItem('ganhou', d.ganhou); } catch {} location.hash = ''; return; }   // a troca de hash já chama rota()
+    rota();
   };
   $('#ent').onclick = ir; $('#se').onkeydown = (e) => { if (e.key === 'Enter') ir(); };
+}
+
+async function convite(tok) {
+  clearInterval(timer); geracao++; $('#compor').hidden = true; botaoNovo(false);
+  const r = await fetch('/api/convite?c=' + encodeURIComponent(tok)); const d = await r.json().catch(() => ({}));
+  if (!r.ok) { app.innerHTML = `<div class="perdido"><span style="font-size:56px;line-height:1">🎟️</span><h2>Esse convite não vale mais.</h2><p>${esc(d.erro || 'Ele já foi usado ou expirou.')} Peça um novo pra quem te mandou.</p><a class="btn-novo" href="#">Entrar na minha conta</a></div>`; return; }
+  const sessao = await fetch('/api/eu').then((x) => x.ok ? x.json() : null).catch(() => null);
+  if (!sessao) return login({ token: tok, videos: d.videos });
+  eu = sessao; mostraSaldo();   // já logado: um clique adiciona o saldo
+  app.innerHTML = `<div class="entrada"><div class="card"><span class="presente">🎁 ${d.videos} vídeo${d.videos === 1 ? '' : 's'} pra testar</span><h1>Você foi convidado</h1>
+    <p class="sub">Você está como ${esc(eu.email)}.</p><div class="linha"><button id="resg" class="cheio">Adicionar à minha conta</button></div><p id="rerro" class="erro" style="font-size:13px;margin:12px 0 0"></p></div></div>`;
+  $('#resg').onclick = async () => { $('#resg').disabled = true; const x = await api('/api/convite/resgatar', { method:'POST', body: JSON.stringify({ convite: tok }) }); const y = await x.json().catch(() => ({}));
+    if (!x.ok) { $('#resg').disabled = false; return $('#rerro').textContent = y.erro || 'Não deu certo.'; }
+    eu.videos = y.videos; try { sessionStorage.setItem('ganhou', y.ganhou); } catch {} location.hash = ''; };
 }
 
 function novaSenha(tok) {
@@ -299,6 +328,8 @@ function home() {
   <div class="linha"><button id="ir" disabled>Enviar meu criativo →</button><span id="info" style="color:var(--suave);font-size:13px"></span></div></div>
   <div id="jobs"></div><div class="admin" id="admin"></div>`;
   if (eu.admin) painelAdmin();
+  let ganhou = null; try { ganhou = sessionStorage.getItem('ganhou'); sessionStorage.removeItem('ganhou'); } catch {}
+  if (+ganhou) app.insertAdjacentHTML('afterbegin', `<div class="pronto" style="margin:8px 0 0"><span class="check">${CHECK.replace('stroke="currentColor"', 'stroke="#0b0b0b"')}</span><div><b>${ganhou} vídeo${+ganhou === 1 ? '' : 's'} no seu saldo!</b><small>Mande o seu primeiro criativo aqui embaixo.</small></div></div>`);
   const drop = $('#drop'), arq = $('#arq');
   if (!eu.admin && eu.videos < 1) { drop.classList.add('bloq'); drop.innerHTML = `<span class="ic">${ICONE_UP}</span><b>Você ainda não tem vídeos no saldo</b><small>Fale com quem te passou o acesso.</small>`; $('#msg').disabled = true; }
   let arquivo = null;
@@ -330,11 +361,33 @@ function home() {
         <small>${quando(j.t)}</small></div></a>`; }).join('') + '</div>'; });
 }
 
+function ligaCopiar(el) { el.querySelectorAll('button[data-copia]').forEach((b) => b.onclick = async () => {
+  try { await navigator.clipboard.writeText(b.dataset.copia); } catch { const t = document.createElement('textarea'); t.value = b.dataset.copia; document.body.append(t); t.select(); document.execCommand('copy'); t.remove(); }
+  const o = b.textContent; b.textContent = 'Copiado ✓'; setTimeout(() => b.textContent = o, 1500); }); }
+async function listaConvites() {
+  const cs = await (await api('/api/admin/convites')).json(); const el = $('#cvs'); if (!el) return;
+  if (!cs.length) return el.innerHTML = '';
+  el.innerHTML = `<div class="tabela"><table><tr><th>pra quem</th><th>vídeos</th><th>situação</th><th></th></tr>` + cs.map((c) => `<tr><td>${esc(c.nota || '—')}<br><small style="color:var(--suave)">${quando(Date.parse(c.criado))}</small></td><td>${c.videos}</td>
+    <td><span class="estado ${c.estado === 'aberto' ? 'rodando' : c.estado === 'usado' ? 'feito' : 'erro'}">${c.estado}</span>${c.usado ? `<br><small style="color:var(--suave)">${esc(c.usado.email)}</small>` : c.estado === 'aberto' ? `<br><small style="color:var(--suave)">até ${new Date(c.ate).toLocaleDateString('pt-BR', { day:'2-digit', month:'short' })}</small>` : ''}</td>
+    <td style="white-space:nowrap">${c.estado === 'aberto' ? `<button class="sec" data-copia="${esc(c.link)}">Copiar</button> <button class="sec" data-cancela="${esc(c.token)}">Cancelar</button>` : ''}</td></tr>`).join('') + '</table></div>';
+  ligaCopiar(el);
+  el.querySelectorAll('button[data-cancela]').forEach((b) => b.onclick = async () => { b.disabled = true; await api('/api/admin/convites/cancelar', { method:'POST', body: JSON.stringify({ token: b.dataset.cancela }) }); listaConvites(); });
+}
 async function painelAdmin() {
   const us = await (await api('/api/admin/usuarios')).json();
-  $('#admin').innerHTML = `<small>Clientes (admin)</small><div class="tabela"><table><tr><th>e-mail</th><th>vídeos</th><th>pedidos</th><th>usados</th><th></th></tr>` +
+  $('#admin').innerHTML = `<small>Convites</small><div class="convite-novo card">
+    <div class="campos"><label><span class="rotulo">Vídeos</span><input type="number" id="cvv" value="3" min="1" max="100"></label>
+    <label class="nota"><span class="rotulo">Pra quem <span style="color:#5d5d66">(opcional)</span></span><input id="cvn" placeholder="Ex.: Ana da mentoria"></label>
+    <label><span class="rotulo">Vale por</span><select id="cvd"><option value="3">3 dias</option><option value="7" selected>7 dias</option><option value="30">30 dias</option></select></label>
+    <button id="cvb">Gerar link</button></div><div id="cvl"></div></div><div id="cvs"></div>
+    <small>Clientes (admin)</small><div class="tabela"><table><tr><th>e-mail</th><th>vídeos</th><th>pedidos</th><th>usados</th><th></th></tr>` +
     us.map((u) => `<tr><td>${esc(u.email)}${u.admin ? ' · admin' : ''}</td><td>${u.admin ? '∞' : u.videos}</td><td>${u.pedidos}</td><td>${u.usados}</td>
       <td>${u.admin ? '' : `<input type="number" value="10" data-e="${esc(u.email)}"> <button data-e="${esc(u.email)}">creditar</button>`} <button data-s="${esc(u.email)}">link de senha</button></td></tr>`).join('') + '</table></div><p id="linkSenha" class="ok" style="word-break:break-all"></p><div id="pags"></div>';
+  $('#cvb').onclick = async () => { $('#cvb').disabled = true;
+    const r = await api('/api/admin/convites', { method:'POST', body: JSON.stringify({ videos: Number($('#cvv').value), nota: $('#cvn').value, dias: Number($('#cvd').value) }) }); const d = await r.json();
+    $('#cvb').disabled = false; if (!r.ok) return $('#cvl').innerHTML = `<p class="erro">${esc(d.erro)}</p>`;
+    $('#cvl').innerHTML = `<div class="link-convite"><code>${esc(d.link)}</code><button class="sec" data-copia="${esc(d.link)}">Copiar</button></div>`; ligaCopiar($('#cvl')); $('#cvn').value = ''; listaConvites(); };
+  listaConvites();
   $('#admin').querySelectorAll('button[data-s]').forEach((b) => b.onclick = async () => {
     const r = await api('/api/admin/link-senha', { method:'POST', body: JSON.stringify({ email: b.dataset.s }) }); const d = await r.json();
     $('#linkSenha').textContent = r.ok ? `Mande pra ${b.dataset.s} (vale ${d.validade}): ${d.link}` : d.erro; });
@@ -472,6 +525,7 @@ $('#resp').onkeydown = (e) => { if (e.key === 'Enter' && !e.shiftKey && !e.isCom
 $('#resp').oninput = () => { const t = $('#resp'); t.style.height = 'auto'; t.style.height = Math.min(t.scrollHeight, 180) + 'px'; };
 const rota = async () => {
   const ns = location.hash.match(/^#\/senha\/([\w-]+)$/); if (ns) return novaSenha(ns[1]);
+  const cv = location.hash.match(/^#\/convite\/([\w-]+)$/); if (cv) return convite(cv[1]);
   if (!eu) { try { eu = await (await api('/api/eu')).json(); } catch { return; } }
   const m = location.hash.match(/^#\/job\/(.+)$/); if (m) return job(m[1]);
   if (location.hash === '#/comprar') return comprar(); home();

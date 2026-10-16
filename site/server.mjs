@@ -72,6 +72,16 @@ const salvarUsuarios = () => { banco?.usuarios(usuarios); gravar(USUARIOS, usuar
 const PAGAMENTOS = path.join(BASE, '_pagamentos.json');
 let pagamentos = snap ? snap.pagamentos : fs.existsSync(PAGAMENTOS) ? JSON.parse(fs.readFileSync(PAGAMENTOS, 'utf8')) : { pedidos: {}, pendentes: {} };
 const salvarPagamentos = () => { banco?.pagamentos(pagamentos); gravar(PAGAMENTOS, pagamentos); };
+// Convites: o admin gera um link de uso único com N vídeos; quem abre cria a conta (ou entra) e recebe o saldo. token → { videos, nota, por, criado, ate, usado?, revogado? }
+const CONVITES = path.join(BASE, '_convites.json');
+let convites = snap ? snap.convites : fs.existsSync(CONVITES) ? JSON.parse(fs.readFileSync(CONVITES, 'utf8')) : {};
+const salvarConvites = () => { banco?.convites(convites); gravar(CONVITES, convites); };
+const conviteValido = (tok) => { const c = typeof tok === 'string' && Object.hasOwn(convites, tok) ? convites[tok] : null; return c && !c.usado && !c.revogado && Date.parse(c.ate) > Date.now() ? c : null; };
+function usarConvite(tok, e) {
+  const c = conviteValido(tok); if (!c || admin(e)) return 0;
+  c.usado = { email: e, t: new Date().toISOString() }; usuarios[e].videos = saldo(e) + c.videos;
+  salvarConvites(); salvarUsuarios(); log({ convite: tok.slice(0, 6), email: e, videos: c.videos }); return c.videos;
+}
 const TERMOS_VERSAO = '2026-10-16';
 const scrypt = promisify(crypto.scrypt);
 const hash = async (senha, sal) => (await scrypt(String(senha), sal, 32)).toString('hex');
@@ -133,7 +143,7 @@ else for (const id of fs.readdirSync(BASE)) {
   } catch (e) { log({ erro: 'restaurar', id, msg: String(e) }); }
 }
 if (banco && !snap) {   // primeira vez com banco: copia o disco inteiro pra lá (eventos já gravados no boot entram por evento())
-  banco.usuarios(usuarios); banco.sessoes(sessoes); banco.pagamentos(pagamentos);
+  banco.usuarios(usuarios); banco.sessoes(sessoes); banco.pagamentos(pagamentos); banco.convites(convites);
   for (const j of jobs.values()) { meta(j); for (const e of j.eventos) banco.evento(j.id, e); }
   banco.marcarMigrado(); log({ banco: 'migrado do disco', usuarios: Object.keys(usuarios).length, pedidos: jobs.size });
 }
@@ -439,25 +449,31 @@ http.createServer(async (req, res) => {
       return res.end(fs.readFileSync(path.join(AQUI, 'index.html')));
     }
     if (req.method === 'POST' && (u.pathname === '/api/entrar' || u.pathname === '/api/cadastrar')) {
-      const { email, senha, termos } = await corpo(req, 4e3); const e = String(email || '').trim().toLowerCase().slice(0, 200);
+      const { email, senha, termos, convite } = await corpo(req, 4e3); const e = String(email || '').trim().toLowerCase().slice(0, 200);
       if (estourou('ip:' + ip(req), 20) || estourou('email:' + e, 10)) return json(res, { erro: 'Muitas tentativas. Espere 15 minutos.' }, 429);
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e) || !senha) return json(res, { erro: 'E-mail ou senha incorretos.' }, 401);
       if (u.pathname === '/api/cadastrar') {
         if (String(senha).length < 8) return json(res, { erro: 'Use uma senha com 8+ caracteres.' }, 400);
         if (termos !== true) return json(res, { erro: 'Pra criar a conta, aceite os termos de uso.' }, 400);
         if (usuarios[e]) return json(res, { erro: 'Não foi possível criar a conta com esse e-mail. Tente entrar.' }, 400);
+        if (convite && !conviteValido(convite)) return json(res, { erro: 'Esse convite já foi usado ou expirou. Peça um novo pra quem te mandou.' }, 400);
         const sal = crypto.randomBytes(16).toString('hex');
         usuarios[e] = { sal, hash: await hash(senha, sal), criado: new Date().toISOString(), termos: TERMOS_VERSAO };
         aplicarPendente(e); salvarUsuarios();
       } else if (!usuarios[e] || !confere(await hash(senha, usuarios[e].sal), usuarios[e].hash)) {
         return json(res, { erro: 'E-mail ou senha incorretos.' }, 401);
       }
+      const ganhou = convite ? usarConvite(convite, e) : 0;
       const tok = abrirSessao(e);
-      return json(res, { email: e, admin: admin(e), videos: admin(e) ? null : saldo(e) }, 200, { 'Set-Cookie': cookie(tok, SESSAO_MS) });
+      return json(res, { email: e, admin: admin(e), videos: admin(e) ? null : saldo(e), ganhou }, 200, { 'Set-Cookie': cookie(tok, SESSAO_MS) });
     }
     if (req.method === 'GET' && u.pathname === '/termos') {
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Content-Security-Policy': CSP, 'Cache-Control': 'no-store', ...SEGURANCA });
       return res.end(fs.readFileSync(path.join(AQUI, 'termos.html')));
+    }
+    if (req.method === 'GET' && u.pathname === '/api/convite') {      // público: só diz se o convite vale e quantos vídeos dá
+      if (estourou('conv:' + ip(req), 30)) return json(res, { erro: 'Muitas tentativas. Espere 15 minutos.' }, 429);
+      const c = conviteValido(u.searchParams.get('c')); return c ? json(res, { videos: c.videos }) : json(res, { erro: 'Esse convite já foi usado ou expirou.' }, 404);
     }
     if (req.method === 'GET' && u.pathname === '/api/pacotes') return json(res, { pacotes: PACOTES.map(({ nome, videos, preco, link }) => ({ nome, videos, preco, link })), suporte: SUPORTE });
     if (req.method === 'POST' && u.pathname === '/api/cakto') return webhookCakto(req, res);
@@ -487,6 +503,11 @@ http.createServer(async (req, res) => {
     const email = quem(req);
     if (!email) return json(res, { erro: 'login' }, 401);
     if (req.method === 'GET' && u.pathname === '/api/eu') return json(res, { email, admin: admin(email), videos: admin(email) ? null : saldo(email) });
+    if (req.method === 'POST' && u.pathname === '/api/convite/resgatar') {   // já logado abrindo um convite
+      const { convite } = await corpo(req); if (!conviteValido(convite)) return json(res, { erro: 'Esse convite já foi usado ou expirou.' }, 400);
+      if (admin(email)) return json(res, { erro: 'Conta de admin não usa convite.' }, 400);
+      const ganhou = usarConvite(convite, email); return json(res, { ganhou, videos: saldo(email) });
+    }
     if (u.pathname.startsWith('/api/admin/')) {
       if (!admin(email)) return json(res, { erro: 'não achei' }, 404);
       if (req.method === 'GET' && u.pathname === '/api/admin/usuarios')
@@ -500,9 +521,25 @@ http.createServer(async (req, res) => {
         log({ admin: email, creditar: alvo, videos: n, saldo: usuarios[alvo].videos });
         return json(res, { email: alvo, videos: usuarios[alvo].videos });
       }
+      const base = URL_PUBLICA || `${COOKIE_SEGURO ? 'https' : 'http'}://${req.headers.host}`;
+      if (req.method === 'POST' && u.pathname === '/api/admin/convites') {
+        const { videos, nota, dias } = await corpo(req); const n = Math.trunc(Number(videos)), d = Math.trunc(Number(dias || 7));
+        if (!(n >= 1 && n <= 100) || !(d >= 1 && d <= 60)) return json(res, { erro: 'Use de 1 a 100 vídeos e de 1 a 60 dias.' }, 400);
+        const tok = crypto.randomBytes(12).toString('base64url');
+        convites[tok] = { videos: n, nota: String(nota || '').trim().slice(0, 80), por: email, criado: new Date().toISOString(), ate: new Date(Date.now() + d * 86400e3).toISOString() };
+        salvarConvites(); log({ admin: email, conviteNovo: tok.slice(0, 6), videos: n });
+        return json(res, { link: `${base}/#/convite/${tok}`, token: tok });
+      }
+      if (req.method === 'GET' && u.pathname === '/api/admin/convites')
+        return json(res, Object.entries(convites).sort((a, b) => b[1].criado.localeCompare(a[1].criado)).slice(0, 200).map(([t, c]) => ({ token: t, link: `${base}/#/convite/${t}`, ...c,
+          estado: c.revogado ? 'cancelado' : c.usado ? 'usado' : Date.parse(c.ate) <= Date.now() ? 'expirado' : 'aberto' })));
+      if (req.method === 'POST' && u.pathname === '/api/admin/convites/cancelar') {
+        const { token } = await corpo(req); const c = Object.hasOwn(convites, token) ? convites[token] : null;
+        if (!c || c.usado) return json(res, { erro: 'convite não encontrado ou já usado' }, 400);
+        c.revogado = new Date().toISOString(); salvarConvites(); return json(res, { ok: true });
+      }
       if (req.method === 'POST' && u.pathname === '/api/admin/link-senha') {
         const { email: alvo } = await corpo(req); if (!usuarios[alvo]) return json(res, { erro: 'e-mail não encontrado' }, 400);
-        const base = URL_PUBLICA || `${COOKIE_SEGURO ? 'https' : 'http'}://${req.headers.host}`;
         log({ admin: email, linkSenha: alvo }); return json(res, { link: `${base}/#/senha/${novoReset(alvo)}`, validade: '1 hora' });
       }
       if (req.method === 'GET' && u.pathname === '/api/admin/pagamentos')
