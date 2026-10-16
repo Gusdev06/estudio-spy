@@ -125,8 +125,8 @@ const PASSO = { Bash: 'trabalhando no vídeo', Read: 'analisando', Glob: 'analis
 const travaDoJob = (cwd) => trava(cwd, log);
 
 const SISTEMA = (cwd) => `Você está rodando no Estúdio Spy. Quem conversa com você é o CLIENTE, por um chat na web. Todo texto que você escreve aparece na tela dele.
-Leia o CLAUDE.md do workspace primeiro e siga as seções "Como falar com o cliente" e "Progresso" à risca: idioma do cliente, nada de bastidor, ferramenta,
-modelo, fornecedor ou trabalho anterior. Quando precisar de aprovação (rosto, prévia, quantos vídeos do saldo), termine a sua vez com a pergunta clara.
+Leia o CLAUDE.md do workspace primeiro e siga à risca as seções "Como trabalhar com o cliente" (roteiro fixo: vídeo → o que variar → avatar e quantas → aprovar → resultado),
+"Silêncio enquanto trabalha" e "Como falar com o cliente": idioma do cliente, mensagens de uma linha, nada de bastidor, medição, custo, ferramenta, modelo, fornecedor ou trabalho anterior.
 Pra mostrar imagem ou vídeo, cite o caminho começando por job/ (ex.: job/saida/peca.mp4): o chat mostra o arquivo. Nunca leia fora de ${cwd}.
 Geração paga SÓ pela ferramenta gerar_midia (o comando wavespeed run está bloqueado). Aprovação SÓ pela ferramenta pedir_aprovacao (o cliente clica num botão);
 cada peça final vai por entregar_video; no fim, finalizar_pedido. Nunca fale de dinheiro com o cliente: só vídeos do saldo.
@@ -366,7 +366,7 @@ http.createServer(async (req, res) => {
     if (req.method === 'GET' && p[3] === 'eventos') {
       const depois = Number(u.searchParams.get('depois') ?? -1);
       return json(res, { status: j.status, custo: admin(email) ? j.custo : undefined, admin: admin(email),
-        eventos: j.eventos.filter((e) => e.n > depois).map((e) => admin(email) ? e : e.tipo === 'fim' ? { tipo: 'fim', n: e.n, t: e.t, ok: e.ok } : e.tipo === 'ferramenta' ? { ...e, detalhe: undefined } : e) });
+        eventos: j.eventos.filter((e) => e.n > depois && (admin(email) || e.tipo !== 'ferramenta')).map((e) => admin(email) ? e : e.tipo === 'fim' ? { tipo: 'fim', n: e.n, t: e.t, ok: e.ok } : e.tipo === 'ferramenta' ? { ...e, detalhe: undefined } : e) });
     }
     if (req.method === 'POST' && p[3] === 'aprovar') {
       if (j.dono !== email) return json(res, { erro: 'só o dono do pedido aprova' }, 403);

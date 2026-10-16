@@ -4,9 +4,9 @@ import { z } from 'zod';
 
 export const SPEC = {
   pedir_aprovacao: {
-    descricao: 'Mostra ao cliente um botão "Aprovar" que reserva N vídeos do saldo dele. Chame depois de mostrar o plano/rosto e ANTES de qualquer geração paga de vídeo. Depois de chamar, termine a sua vez e espere: a aprovação chega como mensagem do cliente.',
+    descricao: 'Mostra ao cliente um botão "Aprovar" que reserva N vídeos do saldo dele. Chame quando já souber o que variar, o avatar e quantas variações, ANTES de qualquer geração paga de vídeo. Depois de chamar, termine a sua vez e espere: a aprovação chega como mensagem do cliente.',
     schema: { videos: z.number().int().min(1).max(20).describe('quantas peças finais serão entregues (1 peça = 1 vídeo do saldo)'),
-              resumo: z.string().max(400).describe('uma frase pro cliente: o que será entregue') },
+              resumo: z.string().max(400).describe('UMA linha pro cliente: o que será entregue e em quanto tempo fica pronto') },
   },
   gerar_midia: {
     descricao: 'ÚNICA forma de gerar mídia paga (imagem, vídeo, lipsync, voz, transcrição). Equivale a `wavespeed run <modelo> -i chave=valor`. Arquivos locais: valor "@caminho" relativo a job/ (ex.: "@trabalho/rosto/a1.png"). Estima o preço com os arquivos reais e recusa se passar do limite do pedido. Antes da aprovação só cabe prévia barata (rosto, sonda). Pra várias gerações independentes, use gerar_midia_lote.',

@@ -22,8 +22,8 @@
   button:disabled { opacity:.4; cursor:default; } .linha { display:flex; gap:10px; align-items:center; margin-top:12px; }
   .jobs { margin-top:26px; } .jobs a { display:block; padding:10px 0; border-top:1px solid var(--borda); text-decoration:none; color:var(--texto); }
   .jobs small { color:var(--suave); }
-  .msg { margin:14px 0; } .msg.cliente { display:flex; justify-content:flex-end; }
-  .msg.cliente div { background:var(--cliente); border-radius:14px 14px 4px 14px; padding:10px 14px; max-width:80%; white-space:pre-wrap; }
+  .msg { margin:14px 0; } .msg.cliente { display:flex; flex-direction:column; align-items:flex-end; gap:6px; } .msg.cliente .midia video { max-width:260px; border-radius:12px; }
+  .msg.cliente > div:not(.midia) { background:var(--cliente); border-radius:14px 14px 4px 14px; padding:10px 14px; max-width:80%; white-space:pre-wrap; }
   .msg.agente { background:var(--painel); border:1px solid var(--borda); border-radius:14px 14px 14px 4px; padding:4px 16px; }
   .msg.agente table { border-collapse:collapse; font-size:14px; } .msg.agente td,.msg.agente th { border:1px solid var(--borda); padding:5px 9px; }
   .msg.agente code { background:#0f1114; padding:1px 5px; border-radius:5px; font-size:13px; }
@@ -49,14 +49,22 @@
 <header><b>Estúdio <i>Spy</i></b><a href="#" style="font-size:13px" id="novo">novo pedido</a><span class="saldo" id="saldo"></span><span class="st" id="st"></span><a href="#" id="sair" style="font-size:13px" hidden>sair</a></header>
 <main id="app"></main>
 <div class="compor" id="compor" hidden><div class="in">
-  <textarea id="resp" placeholder="Responda ao agente (ex.: aprovado, pode gerar)"></textarea><button id="enviar">Enviar</button>
+  <textarea id="resp" placeholder="Escreva sua mensagem"></textarea><button id="enviar">Enviar</button>
 </div></div>
 <script>
 const $ = (s) => document.querySelector(s); const app = $('#app');
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
 const md = (t) => DOMPurify.sanitize(marked.parse(t), { FORBID_TAGS: ['style','form','input','iframe','video','audio','img'], FORBID_ATTR: ['style'] });
 let timer = null, ultimo = -1, jobAtual = null, eu = null;
-function mostraSaldo() { $('#saldo').textContent = !eu ? '' : eu.admin ? 'admin' : `${eu.videos} vídeo${eu.videos === 1 ? '' : 's'} no saldo`; }
+// Admin vê o chat igual ao cliente; "detalhes" liga passos, tempos e custo (lembrado só neste navegador).
+let det = false; try { det = localStorage.getItem('det') === '1'; } catch {}
+const detalhes = () => !!(eu?.admin && det);
+function mostraSaldo() {
+  const s = $('#saldo'); if (!eu) { s.textContent = ''; return; }
+  if (!eu.admin) { s.textContent = `${eu.videos} vídeo${eu.videos === 1 ? '' : 's'} no saldo`; return; }
+  s.innerHTML = `admin · <a href="#" id="det" style="font-size:13px">${det ? 'esconder detalhes' : 'ver detalhes'}</a>`;
+  $('#det').onclick = (ev) => { ev.preventDefault(); det = !det; try { localStorage.setItem('det', det ? '1' : '0'); } catch {} if (jobAtual) job(jobAtual); else mostraSaldo(); };
+}
 async function api(url, op) { const r = await fetch(url, op); if (r.status === 401) { eu = null; login(); throw new Error('login'); } return r; }
 
 function login() {
@@ -113,14 +121,14 @@ async function painelAdmin() {
   });
 }
 
-function midias(id, texto) {
+function midias(id, texto, { legenda = true, baixar = true } = {}) {
   const achados = [...new Set(texto.match(/job\/[\w.\-\/]+\.(mp4|mov|jpg|jpeg|png|webp)/gi) || [])];
   if (!achados.length) return '';
   return '<div class="midia">' + achados.map((p) => {
     const src = `/arquivos/${id}/${p}`, nome = p.split('/').pop();
-    const el = /\.(mp4|mov)$/i.test(p) ? `<video src="${src}" controls playsinline preload="metadata" onerror="this.parentNode.remove()"></video><a href="${src}?baixar" style="font-size:12px">baixar</a> `
+    const el = /\.(mp4|mov)$/i.test(p) ? `<video src="${src}" controls playsinline preload="metadata" onerror="this.parentNode.remove()"></video>${baixar ? `<a href="${src}?baixar" style="font-size:12px">baixar</a> ` : ''}`
                                        : `<a href="${src}" target="_blank"><img src="${src}" onerror="this.closest('figure').remove()"></a>`;
-    return `<figure>${el}<figcaption>${esc(nome)}</figcaption></figure>`;
+    return `<figure>${el}${legenda ? `<figcaption>${esc(nome)}</figcaption>` : ''}</figure>`;
   }).join('') + '</div>';
 }
 
@@ -133,6 +141,7 @@ function job(id) {
     for (const e of eventos) {
       ultimo = e.n;
       if (e.tipo === 'ferramenta') {
+        if (!detalhes()) continue;
         if (!ferrs) { ferrs = document.createElement('details'); ferrs.className = 'ferrs'; ferrs.innerHTML = '<summary>trabalhando…</summary>'; chat.append(ferrs); }
         if (ferrs.ultimo && eu.admin) ferrs.ultimo.insertAdjacentHTML('beforeend', ` <small>${((e.t - ferrs.ultimo.dataset.t) / 1000).toFixed(0)}s</small>`);
         ferrs.insertAdjacentHTML('beforeend', `<div class="ferr" data-t="${e.t}">${esc(eu.admin && e.detalhe ? e.detalhe : e.texto)}</div>`); ferrs.ultimo = ferrs.lastElementChild;
@@ -141,9 +150,10 @@ function job(id) {
       }
       if (ferrs?.ultimo && eu.admin) ferrs.ultimo.insertAdjacentHTML('beforeend', ` <small>${((e.t - ferrs.ultimo.dataset.t) / 1000).toFixed(0)}s</small>`);
       ferrs = null;
-      if (e.tipo === 'cliente') chat.insertAdjacentHTML('beforeend', `<div class="msg cliente"><div>${esc(e.texto)}</div></div>`);
+      if (e.tipo === 'cliente') { const txt = e.texto.replace(/^Mandei o arquivo em \S+\.\s*/, '');
+        chat.insertAdjacentHTML('beforeend', `<div class="msg cliente">${midias(id, e.texto.startsWith('Mandei o arquivo em ') ? e.texto.split(/\s/)[4] : '', { legenda: false, baixar: false })}${txt ? `<div>${esc(txt)}</div>` : ''}</div>`); }
       if (e.tipo === 'agente') chat.insertAdjacentHTML('beforeend', `<div class="msg agente">${md(e.texto)}${midias(id, e.texto)}</div>`);
-      if (e.tipo === 'fim' && e.custo != null) chat.insertAdjacentHTML('beforeend', `<div class="fim">admin · rodada ${e.dur ? (e.dur / 60000).toFixed(1) + ' min (modelo ' + (e.durModelo / 60000).toFixed(1) + ' · vídeo/ferramentas ' + ((e.dur - e.durModelo) / 60000).toFixed(1) + ') · ' + e.passos + ' passos · ' : ''}tokens acumulados US$ ${e.custo.toFixed(2)}</div>`);
+      if (e.tipo === 'fim' && e.custo != null && detalhes()) chat.insertAdjacentHTML('beforeend', `<div class="fim">admin · rodada ${e.dur ? (e.dur / 60000).toFixed(1) + ' min (modelo ' + (e.durModelo / 60000).toFixed(1) + ' · vídeo/ferramentas ' + ((e.dur - e.durModelo) / 60000).toFixed(1) + ') · ' + e.passos + ' passos · ' : ''}tokens acumulados US$ ${e.custo.toFixed(2)}</div>`);
       if (e.tipo === 'erro') chat.insertAdjacentHTML('beforeend', `<p class="erro">${esc(e.texto)}</p>`);
       if (e.tipo === 'aprovacao') chat.insertAdjacentHTML('beforeend', `<div class="aprov" id="ap-${esc(e.id)}"><p>${esc(e.resumo)}</p>
         <p><b>Usa ${e.videos} vídeo${e.videos === 1 ? '' : 's'} do seu saldo.</b> <small>${eu.admin ? '' : `Você tem ${eu.videos}.`}</small></p>
@@ -152,8 +162,8 @@ function job(id) {
       if (e.tipo === 'entregue') chat.insertAdjacentHTML('beforeend', `<p class="ok">✓ Entregue: ${esc(e.caminho.split('/').pop())}</p>${midias(id, e.caminho)}`);
       if (e.tipo === 'finalizado') chat.insertAdjacentHTML('beforeend', `<p class="ok">Pedido concluído: ${e.entregues} vídeo${e.entregues === 1 ? '' : 's'} entregue${e.entregues === 1 ? '' : 's'}${e.devolvidos ? ` · ${e.devolvidos} devolvido${e.devolvidos === 1 ? '' : 's'} ao saldo` : ''}.</p>`);
     }
-    $('#pens').innerHTML = status === 'rodando' ? '<div class="pensando">o agente está trabalhando</div>' : '';
-    $('#st').textContent = { rodando:'trabalhando', esperando:'esperando você', erro:'erro', novo:'começando' }[status] + (custo != null ? ` · tokens US$ ${custo.toFixed(2)}` : '');
+    $('#pens').innerHTML = status === 'rodando' ? '<div class="pensando">trabalhando no seu vídeo</div>' : '';
+    $('#st').textContent = { rodando:'trabalhando', esperando:'esperando você', erro:'erro', novo:'começando' }[status] + (custo != null && detalhes() ? ` · tokens US$ ${custo.toFixed(2)}` : '');
     $('#enviar').disabled = status === 'rodando';
     chat.querySelectorAll('button[data-ap]').forEach((b) => { b.disabled = status === 'rodando'; b.onclick = async () => {
       b.disabled = true; const r = await api(`/api/jobs/${id}/aprovar`, { method:'POST', body: JSON.stringify({ id: b.dataset.ap }) });
