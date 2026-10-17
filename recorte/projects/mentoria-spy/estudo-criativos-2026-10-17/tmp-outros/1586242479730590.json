@@ -1,0 +1,15 @@
+{
+  "backend": "groq",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.74,
+      "text": "find out who he's really talking to behind your back see who he's been keeping secret from you"
+    },
+    {
+      "start": 5.74,
+      "end": 8.86,
+      "text": "free only today don't miss this opportunity"
+    }
+  ]
+}

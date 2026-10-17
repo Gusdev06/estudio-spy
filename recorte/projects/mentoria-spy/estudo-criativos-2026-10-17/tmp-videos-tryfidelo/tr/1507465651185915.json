@@ -1,0 +1,55 @@
+{
+  "backend": "groq",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.02,
+      "text": "Il y a un d\u00e9tail sur Instagram qui finit presque toujours par trahir les gens."
+    },
+    {
+      "start": 4.1,
+      "end": 7.08,
+      "text": "Le probl\u00e8me, c'est que presque personne ne sait o\u00f9 regarder."
+    },
+    {
+      "start": 7.2,
+      "end": 10.18,
+      "text": "Tu n'as pas besoin de deviner, tu n'as pas besoin de te disputer,"
+    },
+    {
+      "start": 10.34,
+      "end": 12.86,
+      "text": "tu n'as pas besoin de prendre leur t\u00e9l\u00e9phone en cachette."
+    },
+    {
+      "start": 12.98,
+      "end": 15.52,
+      "text": "Parce que quand quelqu'un essaye de cacher quelque chose,"
+    },
+    {
+      "start": 15.7,
+      "end": 19.32,
+      "text": "il laisse presque toujours de petites traces, sans m\u00eame s'en rendre compte."
+    },
+    {
+      "start": 19.48,
+      "end": 24.46,
+      "text": "C'est pour \u00e7a que tant de gens d\u00e9couvrent des messages, des contacts et des comportements \u00e9tranges."
+    },
+    {
+      "start": 24.58,
+      "end": 26.92,
+      "text": "M\u00eame quand l'autre personne pense avoir tout sous-supprim\u00e9."
+    },
+    {
+      "start": 27.02,
+      "end": 29.14,
+      "text": "Il suffit simplement de savoir o\u00f9 regarder."
+    },
+    {
+      "start": 29.14,
+      "end": 32.86,
+      "text": "L'acc\u00e8s est juste ici en dessous, tant que cet outil est encore disponible."
+    }
+  ]
+}

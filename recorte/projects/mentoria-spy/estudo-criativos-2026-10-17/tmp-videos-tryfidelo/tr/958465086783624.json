@@ -1,0 +1,15 @@
+{
+  "backend": "groq",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.76,
+      "text": "Bro, how do I get into my girl's Insta without her knowing?"
+    },
+    {
+      "start": 30.0,
+      "end": 30.72,
+      "text": "you"
+    }
+  ]
+}

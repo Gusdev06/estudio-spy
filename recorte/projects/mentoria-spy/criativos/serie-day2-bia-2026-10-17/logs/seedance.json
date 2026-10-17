@@ -1,0 +1,29 @@
+{
+  "id": "e111537d604843139574acbc03fe0cd7",
+  "model": "bytedance/seedance-2.5/video-edit",
+  "prompt": "Replace the woman in the video with the dark-haired woman from the reference images for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her cheek, dark brown hair down, straight and tucked behind her ears, fitted plain black long-sleeve crewneck top, small silver stud earrings, exactly as in the first reference image. She must not wear a light blue or off-shoulder sweater, and must keep this outfit in every frame. She is alone. Serious, slightly sad expression, never smiling, never looking at the camera. Keep every movement, gesture, hand position, timing and camera framing exactly as in the original video: she looks down and slices the orange butternut squash with the big knife on the light wooden table, holding it with her left hand. Keep the butternut squash, the knife, the light wooden table and the plain light gray kitchen exactly as in the original video. There is no text in the video: keep it that way, with no letters, words or captions anywhere in any frame. Where the input video looks smudged or blurry over her chest and arms, render her clothes and hands clean and sharp.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/78b3f2e7-a3c7-46c7-ac32-0fa8b5e656ae.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/serie-day2-bia-2026-10-17/clipes/bia.mp4"
+  ],
+  "elapsed_ms": 250560,
+  "raw": {
+    "id": "e111537d604843139574acbc03fe0cd7",
+    "model": "bytedance/seedance-2.5/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/78b3f2e7-a3c7-46c7-ac32-0fa8b5e656ae.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/e111537d604843139574acbc03fe0cd7/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-17T09:54:41.291137564Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 246777
+    }
+  }
+}

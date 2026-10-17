@@ -1,0 +1,13 @@
+{
+ "1a-she-deleted": {"headline":"SHE DELETED THE EVIDENCE. OR AT LEAST SHE THOUGHT SHE DID.","primeira_fala":"-","angulo":"homem desconfiado: ela apagou as DMs","formato":"estático manchete neon + timeline"},
+ "1b-he-deleted-dms": {"headline":"HE DELETED THE DMs. OR AT LEAST HE THOUGHT HE DID.","primeira_fala":"-","angulo":"DMs apagadas no Instagram ainda aparecem","formato":"estático manchete neon + timeline"},
+ "1c-clone-novo-rosto": {"headline":"HE DELETED THE EVIDENCE. OR AT LEAST HE THOUGHT HE DID.","primeira_fala":"-","angulo":"apagar não some","formato":"estático manchete neon + timeline"},
+ "2a-dare-ig-boyfriend": {"headline":"If you truly trust your boyfriend... I dare you to type his @ here and see who he's really talking to.","primeira_fala":"-","angulo":"desafio de confiança, Instagram","formato":"estático tipográfico"},
+ "2b-dare-girlfriend": {"headline":"If you truly trust your girlfriend... I dare you to type her @ here and see who she's really talking to.","primeira_fala":"-","angulo":"desafio de confiança, público masculino","formato":"estático tipográfico"},
+ "2c-dare-wpp-number": {"headline":"If you truly trust your husband... I dare you to enter his number here and see who he's really texting.","primeira_fala":"-","angulo":"desafio de confiança, WhatsApp","formato":"estático tipográfico"},
+ "3a-found-hiding-novo-rosto": {"headline":"I FOUND WHAT HE'S HIDING ON INSTAGRAM.","primeira_fala":"-","angulo":"reação de choque + lista de recursos","formato":"estático foto reação + mockup"},
+ "4a-video-without-touching": {"headline":"This is how I caught him cheating without touching his phone","primeira_fala":"-","angulo":"descobrir sem mexer no celular dele","formato":"gancho texto + demo do app"},
+ "4b-video-stopped-guessing": {"headline":"I finally stopped guessing.","primeira_fala":"-","angulo":"alívio de parar de imaginar","formato":"gancho texto + demo do app"},
+ "ref-champion-he-deleted": {"headline":"HE DELETED THE EVIDENCE. OR AT LEAST HE THOUGHT HE DID.","primeira_fala":"-","angulo":"","formato":"estático manchete neon + timeline"},
+ "ref-dare-original": {"headline":"If you truly trust your husband... I dare you to enter his phone number here ad see if he has hidden profiles.","primeira_fala":"-","angulo":"","formato":"estático tipográfico"}
+}

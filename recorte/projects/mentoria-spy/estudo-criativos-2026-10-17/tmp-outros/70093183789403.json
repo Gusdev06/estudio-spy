@@ -1,0 +1,40 @@
+{
+  "backend": "groq",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.98,
+      "text": "This is how I caught him cheating without touching his phone."
+    },
+    {
+      "start": 4.4,
+      "end": 9.12,
+      "text": "First, I downloaded this app called Lens AI and searched his name."
+    },
+    {
+      "start": 9.6,
+      "end": 13.1,
+      "text": "Within seconds, all his profiles started showing up."
+    },
+    {
+      "start": 13.7,
+      "end": 16.36,
+      "text": "Dating accounts I didn't even know existed."
+    },
+    {
+      "start": 17.1,
+      "end": 18.48,
+      "text": "Now I know the truth."
+    },
+    {
+      "start": 19.04,
+      "end": 20.46,
+      "text": "Feeling suspicious too?"
+    },
+    {
+      "start": 21.06,
+      "end": 23.52,
+      "text": "Type A name and see what comes up."
+    }
+  ]
+}

@@ -302,160 +302,185 @@
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-11.txt",
     "quando_utc": "2026-10-16T23:00:00Z",
     "slot": "07h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "trial": "SS_PERFORMANCE",
+    "status": "publicado",
+    "rodou_em": "2026-10-17T09:38:05+00:00",
+    "permalink": "https://www.instagram.com/reel/DelzaSLjBLC/"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-12-pepino.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-12.txt",
     "quando_utc": "2026-10-16T23:00:00Z",
     "slot": "07h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "trial": "SS_PERFORMANCE",
+    "status": "publicado",
+    "rodou_em": "2026-10-17T09:38:48+00:00",
+    "permalink": "https://www.instagram.com/reel/DelzejNFQIC/"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-13-maquiagem.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-13.txt",
     "quando_utc": "2026-10-16T23:00:00Z",
     "slot": "07h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "trial": "SS_PERFORMANCE",
+    "status": "publicado",
+    "rodou_em": "2026-10-17T09:39:53+00:00",
+    "permalink": "https://www.instagram.com/reel/DelzmurD1Zd/"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-14-cebola.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-14.txt",
     "quando_utc": "2026-10-16T23:00:00Z",
     "slot": "07h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "trial": "SS_PERFORMANCE",
+    "status": "publicado",
+    "rodou_em": "2026-10-17T09:40:25+00:00",
+    "permalink": "https://www.instagram.com/reel/DelzroBDWkK/"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-15-sanduiche.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-15.txt",
     "quando_utc": "2026-10-16T23:00:00Z",
     "slot": "07h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "trial": "SS_PERFORMANCE",
+    "status": "publicado",
+    "rodou_em": "2026-10-17T09:41:08+00:00",
+    "permalink": "https://www.instagram.com/reel/Delzvd5gYb6/"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-16-pimentao2.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-16.txt",
     "quando_utc": "2026-10-17T11:00:00Z",
     "slot": "19h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: fila encerrada pra estratégia nova"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-17-pepino.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-17.txt",
     "quando_utc": "2026-10-17T11:00:00Z",
     "slot": "19h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: fila encerrada pra estratégia nova"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-18-cebola.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-18.txt",
-    "quando_utc": "2026-10-17T11:00:00Z",
-    "slot": "19h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "quando_utc": "2026-10-17T23:00:00Z",
+    "slot": "07h Bali 18/10",
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: fila encerrada pra estratégia nova"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-19-brocolis.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-19.txt",
     "quando_utc": "2026-10-17T11:00:00Z",
     "slot": "19h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: base trava em ~150 views"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-20-sanduiche.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-20.txt",
-    "quando_utc": "2026-10-17T11:00:00Z",
-    "slot": "19h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "quando_utc": "2026-10-17T23:00:00Z",
+    "slot": "07h Bali 18/10",
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: fila encerrada pra estratégia nova"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-21-pimentao2.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-21.txt",
-    "quando_utc": "2026-10-17T15:00:00Z",
-    "slot": "23h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "quando_utc": "2026-10-18T11:00:00Z",
+    "slot": "19h Bali 18/10",
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: fila encerrada pra estratégia nova"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-22-pepino.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-22.txt",
-    "quando_utc": "2026-10-17T15:00:00Z",
-    "slot": "23h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "quando_utc": "2026-10-18T11:00:00Z",
+    "slot": "19h Bali 18/10",
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: fila encerrada pra estratégia nova"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-23-cebola.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-23.txt",
-    "quando_utc": "2026-10-17T15:00:00Z",
-    "slot": "23h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "quando_utc": "2026-10-18T23:00:00Z",
+    "slot": "07h Bali 19/10",
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: fila encerrada pra estratégia nova"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-24-sanduiche.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-24.txt",
-    "quando_utc": "2026-10-17T15:00:00Z",
-    "slot": "23h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "quando_utc": "2026-10-18T23:00:00Z",
+    "slot": "07h Bali 19/10",
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: fila encerrada pra estratégia nova"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-25-pimentao2.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-25.txt",
-    "quando_utc": "2026-10-17T15:00:00Z",
-    "slot": "23h Bali 17/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "quando_utc": "2026-10-19T11:00:00Z",
+    "slot": "19h Bali 19/10",
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: fila encerrada pra estratégia nova"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-26-maquiagem.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-26.txt",
     "quando_utc": "2026-10-17T23:00:00Z",
     "slot": "07h Bali 18/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: base trava em ~150 views"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-27-cebola.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-27.txt",
-    "quando_utc": "2026-10-17T23:00:00Z",
-    "slot": "07h Bali 18/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "quando_utc": "2026-10-19T11:00:00Z",
+    "slot": "19h Bali 19/10",
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: fila encerrada pra estratégia nova"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-28-sanduiche.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-28.txt",
-    "quando_utc": "2026-10-17T23:00:00Z",
-    "slot": "07h Bali 18/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "quando_utc": "2026-10-19T23:00:00Z",
+    "slot": "07h Bali 20/10",
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: fila encerrada pra estratégia nova"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-29-pimentao2.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-29.txt",
-    "quando_utc": "2026-10-17T23:00:00Z",
-    "slot": "07h Bali 18/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "quando_utc": "2026-10-19T23:00:00Z",
+    "slot": "07h Bali 20/10",
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: fila encerrada pra estratégia nova"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/videos/l2-30-pepino.mp4",
     "legenda": "projects/mentoria-spy/babado-da-bia-variacoes-2026-10-15/legendas/l2-30.txt",
-    "quando_utc": "2026-10-17T23:00:00Z",
-    "slot": "07h Bali 18/10",
-    "trial": "MANUAL",
-    "status": "pendente"
+    "quando_utc": "2026-10-20T11:00:00Z",
+    "slot": "19h Bali 20/10",
+    "trial": "SS_PERFORMANCE",
+    "status": "descartado",
+    "nota": "17/10: fila encerrada pra estratégia nova"
   },
   {
     "video": "projects/mentoria-spy/babado-da-bia-prontos-2026-10-14/06-sanduiche-DdoqNVChINJ.mp4",
@@ -603,5 +628,30 @@
     "nota": "base réplica lily7 (Seedance 2.5) + texto vencedor dos lotes",
     "rodou_em": "2026-10-17T01:56:23+00:00",
     "permalink": "https://www.instagram.com/reel/Dek-TXikgdP/"
+  },
+  {
+    "video": "projects/mentoria-spy/criativos/serie-day1-bia-2026-10-17/final/bia-serie-day1.mp4",
+    "legenda": "projects/mentoria-spy/criativos/serie-day1-bia-2026-10-17/final/legenda.txt",
+    "quando_utc": "2026-10-17T10:05:23Z",
+    "slot": "18h Bali 17/10",
+    "trial": "nenhum",
+    "status": "publicado",
+    "permalink": "https://www.instagram.com/reel/Del2hvpD5S4/"
+  },
+  {
+    "video": "projects/mentoria-spy/criativos/serie-day2-bia-2026-10-17/final/bia-serie-day2.mp4",
+    "legenda": "projects/mentoria-spy/criativos/serie-day2-bia-2026-10-17/final/legenda.txt",
+    "quando_utc": "2026-10-18T10:00:00Z",
+    "slot": "18h Bali 18/10",
+    "trial": "nenhum",
+    "status": "pendente"
+  },
+  {
+    "video": "projects/mentoria-spy/criativos/serie-day3-bia-2026-10-17/final/bia-serie-day3.mp4",
+    "legenda": "projects/mentoria-spy/criativos/serie-day3-bia-2026-10-17/final/legenda.txt",
+    "quando_utc": "2026-10-19T10:00:00Z",
+    "slot": "18h Bali 19/10",
+    "trial": "nenhum",
+    "status": "pendente"
   }
 ]

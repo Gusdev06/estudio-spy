@@ -1,0 +1,10 @@
+{
+ "prompt": "Edit image 1. Replace the woman with the woman from images 2 and 3 (same identity, face and beauty mark). She is alone. Bia, 27 years old woman. Light olive skin, brown eyes, thick natural dark eyebrows, small beauty mark on her right cheek (appears on the left side of the image when she faces the camera), a few faint freckles across the nose, full lips, oval face with soft jawline, dark brown hair (mid-back length, slight natural wave). Slim natural body. Real skin texture: visible pores, slight shine on forehead and nose, faint redness around the nostrils, tiny under-eye shadows. Not retouched.\nHer dark brown hair is pulled back in a low claw clip with a few loose strands. She wears a chunky cream knit sweater (no black top) and no earrings.\nKeep everything else in image 1 exactly the same: her pose, head angle, downward gaze at the baking dish, her hands holding the serving spatula over the white baking dish of lasagna, the dim warm kitchen lighting, the background, the colors, the low framing and the camera angle. Serious, slightly sad expression, not smiling, not looking at the camera.\nThe output must contain no letters, words or captions anywhere. Photorealistic front phone camera, not retouched.",
+ "images": [
+  "https://d2h7xmz5gqybh9.cloudfront.net/media/images/e0cdbe00-92ff-4716-aa51-fb08755f6efc.png",
+  "https://d2h7xmz5gqybh9.cloudfront.net/output/830ba082-8535-4e13-b18f-72c02ce86df9.png",
+  "https://d2h7xmz5gqybh9.cloudfront.net/output/8d03e351-b7a8-4666-b7f8-a07743de3b3c.png"
+ ],
+ "resolution": "2k",
+ "aspect_ratio": "9:16"
+}

@@ -1,0 +1,60 @@
+{
+  "backend": "groq",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.68,
+      "text": "There's one detail on Instagram that gives almost everyone away."
+    },
+    {
+      "start": 3.38,
+      "end": 5.68,
+      "text": "The problem is, hardly anyone knows where to look."
+    },
+    {
+      "start": 6.24,
+      "end": 7.1,
+      "text": "You don't need to guess."
+    },
+    {
+      "start": 7.58,
+      "end": 8.48,
+      "text": "You don't need to argue."
+    },
+    {
+      "start": 9.0,
+      "end": 10.62,
+      "text": "You don't need to secretly check their phone."
+    },
+    {
+      "start": 11.1,
+      "end": 12.66,
+      "text": "Because when someone tries to hide something,"
+    },
+    {
+      "start": 13.02,
+      "end": 15.54,
+      "text": "they usually leave small traces behind without realising it."
+    },
+    {
+      "start": 16.16,
+      "end": 18.48,
+      "text": "That's why so many people discover messages, contacts,"
+    },
+    {
+      "start": 18.9,
+      "end": 22.16,
+      "text": "and suspicious behaviour even when the other person thinks they deleted everything."
+    },
+    {
+      "start": 22.58,
+      "end": 24.08,
+      "text": "You just need to know where to look."
+    },
+    {
+      "start": 24.7,
+      "end": 27.54,
+      "text": "Access is right below, while this tool is still available."
+    }
+  ]
+}

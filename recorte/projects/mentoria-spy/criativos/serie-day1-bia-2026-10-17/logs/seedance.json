@@ -1,0 +1,29 @@
+{
+  "id": "c6213757c1bb4d6b81ecf109916e2626",
+  "model": "bytedance/seedance-2.5/video-edit",
+  "prompt": "Replace the woman in the video with the dark-haired woman from the reference images for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her cheek, dark brown hair in a single loose side braid over her left shoulder, oversized heather-gray crewneck sweatshirt, no earrings, exactly as in the first reference image. She must not wear a robe or anything lavender or white, and must keep this outfit in every frame. She is alone. Serious, slightly sad expression, never smiling, never looking at the camera. Keep every movement, gesture, hand position, timing and camera framing exactly as in the original video: she looks down and cuts the orange sweet potato into sticks with the big knife on the wooden cutting board, pushing the cut sticks aside with her left hand. Keep the sweet potato, the knife, the wooden cutting board, the wooden kitchen cabinets and the round glass ceiling light exactly as in the original video. There is no text in the video: keep it that way, with no letters, words or captions anywhere in any frame. Where the input video looks smudged or blurry over her chest and arms, render her clothes and hands clean and sharp.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/1c17c910-67d8-429c-b6dd-67f9ac012583.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/serie-day1-bia-2026-10-17/clipes/bia.mp4"
+  ],
+  "elapsed_ms": 242586,
+  "raw": {
+    "id": "c6213757c1bb4d6b81ecf109916e2626",
+    "model": "bytedance/seedance-2.5/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/1c17c910-67d8-429c-b6dd-67f9ac012583.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c6213757c1bb4d6b81ecf109916e2626/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-17T09:54:41.888678058Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 237781
+    }
+  }
+}

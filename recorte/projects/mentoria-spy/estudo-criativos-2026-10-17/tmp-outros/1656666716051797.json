@@ -1,0 +1,35 @@
+{
+  "backend": "groq",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.2,
+      "text": "Here's how to see text messages from your boyfriend's, girlfriend's, husband's, or wife's phone using your own phone."
+    },
+    {
+      "start": 5.52,
+      "end": 10.74,
+      "text": "No need to have physical access to the phone, and the best part, she'll never find out she's being spied on."
+    },
+    {
+      "start": 11.06,
+      "end": 17.78,
+      "text": "Look, first, enter your partner's number on the site below, wait a few seconds while the site tracks and clones the messages, done."
+    },
+    {
+      "start": 18.06,
+      "end": 24.12,
+      "text": "Now you have access to all messages, photos, videos, real-time location, and even deleted messages."
+    },
+    {
+      "start": 24.5,
+      "end": 29.44,
+      "text": "I'll leave a link below where you can run a free check using my personal account, but be quick, because it's limited."
+    },
+    {
+      "start": 29.44,
+      "end": 32.28,
+      "text": "Tap the button below and type the number you want to spy on."
+    }
+  ]
+}

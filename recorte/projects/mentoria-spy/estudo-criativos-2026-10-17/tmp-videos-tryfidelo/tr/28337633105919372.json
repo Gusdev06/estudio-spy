@@ -1,0 +1,40 @@
+{
+  "backend": "groq",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.9,
+      "text": "After I came across this video and watched it, my life completely changed for the better."
+    },
+    {
+      "start": 5.64,
+      "end": 10.76,
+      "text": "Want to read texts, emails, and messages? What they're saying? Even what they delete?"
+    },
+    {
+      "start": 11.5,
+      "end": 16.64,
+      "text": "Now you can. No access codes, no sneaky apps, no physical contact with the device."
+    },
+    {
+      "start": 17.18,
+      "end": 23.92,
+      "text": "This tool gives you full live access to their messages and calls, social activity, and much"
+    },
+    {
+      "start": 23.92,
+      "end": 29.18,
+      "text": "more. If they've been acting strange, changing their habits, keeping their phone closer than"
+    },
+    {
+      "start": 29.18,
+      "end": 34.42,
+      "text": "usual, they're probably not being truthful. It's time to find out what's really going on."
+    },
+    {
+      "start": 59.18,
+      "end": 59.68,
+      "text": "you"
+    }
+  ]
+}

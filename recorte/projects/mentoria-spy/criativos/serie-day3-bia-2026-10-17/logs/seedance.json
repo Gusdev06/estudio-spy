@@ -1,0 +1,29 @@
+{
+  "id": "cefc9d9cf2a54b5582ef30060327a3b4",
+  "model": "bytedance/seedance-2.5/video-edit",
+  "prompt": "Replace the woman in the video with the dark-haired woman from the reference images for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her cheek, dark brown hair pulled back in a low claw clip with a few loose strands, chunky cream knit sweater, no earrings, exactly as in the first reference image. She must not be blonde or light-haired and must not wear a black top, and must keep this outfit in every frame. She is alone. Serious, slightly sad expression, never smiling, never looking at the camera. Keep every movement, gesture, hand position, timing and camera framing exactly as in the original video: she looks down and serves the lasagna from the white baking dish with the spatula and fork. Keep the white baking dish of lasagna, the spatula, the dim warm kitchen and the background exactly as in the original video. There is no text in the video: keep it that way, with no letters, words or captions anywhere in any frame. Where the input video looks smudged or blurry over her chest and arms, render her clothes and hands clean and sharp.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/4369f633-357e-4715-9361-cc763dc21144.mp4"
+  ],
+  "saved": [
+    "/Users/gustagoat/Documents/AIS-OS/projects/mentoria-spy/criativos/serie-day3-bia-2026-10-17/clipes/bia.mp4"
+  ],
+  "elapsed_ms": 392897,
+  "raw": {
+    "id": "cefc9d9cf2a54b5582ef30060327a3b4",
+    "model": "bytedance/seedance-2.5/video-edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/4369f633-357e-4715-9361-cc763dc21144.mp4"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/cefc9d9cf2a54b5582ef30060327a3b4/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-17T09:54:41.425242715Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 386931
+    }
+  }
+}

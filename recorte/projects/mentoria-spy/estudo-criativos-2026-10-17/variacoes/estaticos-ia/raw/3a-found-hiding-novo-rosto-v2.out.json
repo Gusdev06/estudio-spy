@@ -1,0 +1,27 @@
+{
+  "id": "c5f9d354c12740c8a7e055bb554b6f0f",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Edit this ad image. Keep EXACTLY the same layout, all text, colors, fonts, icons, list, lock box, button and the phone screen. Change ONLY the woman: replace her with a different woman — a white woman in her mid 30s with straight shoulder-length auburn hair, wearing a cream knit sweater — same pose with one hand on her head, the same shocked, distressed expression, holding the same phone toward the camera, same dark room and lighting.\nKeep the icons in the left list exactly as in the original: the first icon (\"Deleted messages\") is the same round chat-bubble-with-lightning messenger icon as in the original — do NOT replace it with a camera logo or any other logo. Do not add any new logo anywhere.\nAll text must remain exactly as in the original and spelled correctly: \"Trust but verify...\", \"I FOUND WHAT HE'S HIDING ON INSTAGRAM.\", \"Deleted messages\", \"Hidden chats\", \"Photos & videos\", \"Voice messages\", \"Live location\", \"Call history\", \"Contacts\", \"And more...\", \"The truth isn't always obvious. But now, it is.\", \"SEE THE TRUTH NOW\", chalkboard \"Better to know than to guess.\"\nThe phone inbox rows must read exactly, top to bottom (name / preview / time): \"chris.off\" / \"last night was everything\" / \"01:12\"; \"blocked\" / \"save this new one\" / \"00:58\"; \"mia.exx\" / \"I miss u\" / \"00:42\"; \"spin.coach\" / \"after class?\" / \"00:21\"; \"private_vault\" / \"Sent a file\" / \"Yesterday\"; \"+1 917 555 0121\" / \"Voice message\" / \"Yesterday\"; \"shh.delete\" / \"he's asleep now\" / \"Yesterday\"; \"lena.k\" / \"you up?\" / \"Yesterday\". Status bar time \"01:24\".",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/2151f9f7-79d7-4baf-8d05-1e02fa9dd92f.png"
+  ],
+  "saved": [],
+  "elapsed_ms": 99307,
+  "raw": {
+    "id": "c5f9d354c12740c8a7e055bb554b6f0f",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/2151f9f7-79d7-4baf-8d05-1e02fa9dd92f.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/c5f9d354c12740c8a7e055bb554b6f0f/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-17T10:09:09.805120787Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 97558
+    }
+  }
+}

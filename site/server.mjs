@@ -103,7 +103,7 @@ const estourou = (chave, max = 10, janela = 15 * 60e3) => { const agora = Date.n
 // ---------- jobs ----------
 const jobs = new Map(); // id → { id, dono, cwd, eventos, status, sessao, custo, entrada }
 const ID_JOB = /^\d{12}-[0-9a-f]{4,6}$/;
-const CAMPOS = ['dono', 'sessao', 'custo', 'entrada', 'reserva', 'entregues', 'gastoMidia', 'predicoes', 'bloqueado', 'finalizado', 'nuvem'];
+const CAMPOS = ['dono', 'sessao', 'custo', 'entrada', 'reserva', 'entregues', 'gastoMidia', 'predicoes', 'bloqueado', 'finalizado', 'nuvem', 'aguardaCredito'];
 const pastaJob = (j) => { const d = path.join(j.cwd, 'job'); fs.mkdirSync(d, { recursive: true }); return d; };   // pedido vindo do banco pode não ter pasta no disco
 const meta = (j) => { const m = Object.fromEntries(CAMPOS.map((k) => [k, j[k]])); banco?.pedido(j.id, j.dono, m);
   try { fs.writeFileSync(path.join(pastaJob(j), 'meta.json'), JSON.stringify(m)); } catch (e) { log({ erro: 'meta', id: j.id, msg: String(e) }); } };
@@ -155,10 +155,42 @@ if (nuvem) setTimeout(async () => {   // o que ainda não está no storage (pedi
 const RECUSA_ANTIGA = 'Aqui eu só trabalho nos seus criativos: variações, troca de avatar, headlines, layout, clones. Me diga o que quer fazer com o seu vídeo.';
 const RECUSA = 'Esse pedido eu não consigo fazer. Eu trabalho só nos seus criativos (variações, troca de avatar, headlines, layout, clones) e não faço avatar parecido com pessoa real ou famosa, nem conteúdo sexual. Me diga de novo o que quer variar, por exemplo: "3 variações com mulher loira de 25 anos".';
 // Mensagens da própria plataforma (limite de uso, conta, cobrança) nunca chegam ao cliente.
-const LIMITE_PLATAFORMA = /hit your .*limit|usage limit|rate limit|weekly limit|credit balance|quota|overloaded|api error|invalid api key|authentication/i;
+// Inclui os erros técnicos que o SDK devolve como fala do agente (modelo inválido, contexto estourado, login): nunca vão crus pro cliente.
+const LIMITE_PLATAFORMA = /hit your .*limit|usage limit|rate limit|weekly limit|credit balance|quota|overloaded|api error|invalid api key|authentication|selected model|run --model|\/login|claude code|prompt is too long/i;
 const INSTAVEL_AGENTE = 'Estamos com uma instabilidade momentânea do nosso lado. O seu pedido fica salvo: mande "continua" daqui a pouco.';
 const INSTAVEL = 'Tivemos uma instabilidade pra receber a sua mensagem. Mande de novo em alguns segundos.';
-async function porteiro(texto, historico) {   // 'ok' | 'bloquear' | 'falha'  (fecha na falha)
+
+// ---------- crédito da Anthropic ----------
+// Sem crédito (ou com a chave suspensa) o pedido parava no meio e o cliente tinha que mandar "continua" (17/10). Agora o pedido fica marcado
+// com a mensagem que ficou sem resposta, o admin recebe e-mail, a chave é testada a cada 5 min e os pedidos marcados retomam sozinhos.
+const SEM_CREDITO = /credit balance|billing|insufficient|quota|usage limit|hit your .*limit|weekly limit|spend limit|invalid api key|authentication/i;
+const AVISO_CREDITO = 'Tivemos uma pausa do nosso lado. O seu pedido está salvo e continua sozinho assim que normalizar: não precisa mandar nada.';
+let semCredito = 0;   // desde quando (ms); 0 = chave ok
+const avisarAdmins = (assunto, texto) => { if (EMAIL_ATIVO) for (const a of ADMINS) enviarEmail(a, assunto, texto).catch((e) => log({ erro: 'email-admin', msg: String(e).slice(0, 200) })); };
+function faltouCredito(j, motivo, pendente = { texto: 'Continue de onde parou.', confiavel: true }) {
+  if (j && !j.aguardaCredito) { j.aguardaCredito = pendente; meta(j); evento(j, { tipo: 'agente', texto: AVISO_CREDITO }); }
+  if (semCredito) return;
+  semCredito = Date.now(); log({ alerta: 'sem-credito', job: j?.id, motivo: String(motivo || '').slice(0, 300) });
+  avisarAdmins('Estúdio Spy: a chave da Anthropic parou (crédito)', `A API recusou por crédito/limite: ${String(motivo || '').slice(0, 300)}\n\n`
+    + 'Os pedidos afetados ficam pausados e retomam sozinhos quando a chave voltar (teste a cada 5 min). Recarregue em console.anthropic.com.');
+}
+async function chaveOk() {
+  const r = await fetch('https://api.anthropic.com/v1/messages', { method: 'POST',
+    headers: { 'x-api-key': CHAVE_ANTHROPIC, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+    body: JSON.stringify({ model: 'claude-haiku-5-5', max_tokens: 1, messages: [{ role: 'user', content: 'oi' }] }) });
+  return r.ok;
+}
+setInterval(async () => {
+  const parados = [...jobs.values()].filter((j) => j.aguardaCredito && j.status !== 'rodando');
+  if (!CHAVE_ANTHROPIC || (!semCredito && !parados.length)) return;
+  try { if (!await chaveOk()) return; } catch { return; }
+  if (semCredito) { log({ alerta: 'credito-voltou', parado_min: Math.round((Date.now() - semCredito) / 60e3), retomando: parados.length });
+    avisarAdmins('Estúdio Spy: a chave da Anthropic voltou', `Retomando ${parados.length} pedido(s): ${parados.map((j) => j.id).join(', ') || 'nenhum'}.`); }
+  semCredito = 0;
+  for (const j of parados) { const { texto, confiavel } = j.aguardaCredito; j.aguardaCredito = null; meta(j); rodar(j, texto, { confiavel, repetida: true }); }
+}, Number(process.env.CHECAR_CREDITO_S || 300) * 1e3);
+
+async function porteiro(texto, historico) {   // 'ok' | 'bloquear' | 'falha' | 'sem-credito'  (fecha na falha)
   const prompt = `Você é o filtro de entrada de um estúdio de criativos de vídeo. O cliente conversa com um editor que produz variações de anúncios.
 Mensagens PERMITIDAS: pedidos e ajustes de criativo (variação, avatar, texto, headline, layout, idioma, duração, formato, quantidade), aprovações e respostas
 ao editor ("aprovado", "pode gerar", "troca a segunda", "não gostei do rosto", "continua"), dúvidas sobre o resultado, prazo ou saldo, e saudações.
@@ -174,8 +206,8 @@ Responda exatamente uma palavra: PERMITIR ou BLOQUEAR.`;
     for await (const m of query({ prompt, options: { model: 'claude-haiku-5-5', maxTurns: 1, allowedTools: [], settingSources: [], cwd: BASE, env: AMBIENTE_SDK } }))
       if (m.type === 'assistant') for (const b of m.message.content ?? []) if (b.type === 'text') saida += b.text;
     const r = saida.trim().toUpperCase().replace(/[^A-Z]/g, '');
-    return r === 'PERMITIR' ? 'ok' : r === 'BLOQUEAR' ? 'bloquear' : 'falha';
-  } catch (e) { log({ erro: 'porteiro', msg: String(e?.message || e).slice(0, 500) }); return 'falha'; }
+    return r === 'PERMITIR' ? 'ok' : r === 'BLOQUEAR' ? 'bloquear' : SEM_CREDITO.test(saida) ? 'sem-credito' : 'falha';
+  } catch (e) { log({ erro: 'porteiro', msg: String(e?.message || e).slice(0, 500) }); return SEM_CREDITO.test(String(e?.message || e)) ? 'sem-credito' : 'falha'; }
 }
 
 const INTERNOS = [
@@ -284,14 +316,19 @@ async function vaga(j) {
 }
 const liberar = () => { const prox = fila.shift(); if (prox) prox(); else emExecucao--; };
 
-async function rodar(j, texto, { confiavel = false } = {}) {
-  j.status = 'rodando'; evento(j, { tipo: 'cliente', texto, ...(confiavel ? { interno: true } : {}) });   // interno: recado do sistema pro agente, não aparece no chat
+async function rodar(j, texto, { confiavel = false, repetida = false } = {}) {   // repetida: retomada automática de mensagem já registrada
+  j.status = 'rodando'; if (!repetida) evento(j, { tipo: 'cliente', texto, ...(confiavel ? { interno: true } : {}) });   // interno: recado do sistema pro agente, não aparece no chat
+  if (semCredito && CHAVE_ANTHROPIC) {   // chave parada: guarda a mensagem pra quando voltar, sem gastar a rodada
+    if (j.aguardaCredito) { j.aguardaCredito = { texto, confiavel }; meta(j); } else faltouCredito(j, 'já sem crédito', { texto, confiavel });
+    evento(j, { tipo: 'fim', custo: j.custo, ok: true }); j.status = 'esperando'; return;
+  }
   if (j.bloqueado && !admin(j.dono)) {
     evento(j, { tipo: 'agente', texto: 'Este pedido chegou ao limite de trabalho. Pra continuar, abra um pedido novo com o vídeo.' }); evento(j, { tipo: 'fim', custo: j.custo, ok: true });
     j.status = 'esperando'; return;
   }
   const ultimaFala = [...j.eventos].reverse().find((e) => e.tipo === 'agente')?.texto || '';
   const veredito = confiavel ? 'ok' : await porteiro(texto, ultimaFala);
+  if (veredito === 'sem-credito') { faltouCredito(j, 'porteiro', { texto, confiavel }); evento(j, { tipo: 'fim', custo: j.custo, ok: true }); j.status = 'esperando'; return; }
   if (veredito !== 'ok') {
     evento(j, { tipo: 'agente', texto: veredito === 'bloquear' ? RECUSA : INSTAVEL }); evento(j, { tipo: 'fim', custo: j.custo, ok: true });
     fs.appendFileSync(path.join(BASE, '_bloqueios.log'), JSON.stringify({ t: new Date().toISOString(), veredito, dono: j.dono, job: j.id, texto }) + '\n');
@@ -306,6 +343,7 @@ async function rodar(j, texto, { confiavel = false } = {}) {
       if (m.session_id && m.session_id !== j.sessao) { j.sessao = m.session_id; meta(j); }
       if (m.type === 'assistant' && !m.parent_tool_use_id) for (const b of m.message.content ?? []) {
         if (b.type === 'text' && b.text.trim()) {
+          if (LIMITE_PLATAFORMA.test(b.text) && SEM_CREDITO.test(b.text)) { faltouCredito(j, b.text); continue; }
           if (LIMITE_PLATAFORMA.test(b.text)) { log({ job: j.id, alerta: 'limite-plataforma', texto: b.text.slice(0, 200) }); evento(j, { tipo: 'agente', texto: INSTAVEL_AGENTE }); continue; }
           const txt = limpar(b.text); if (txt) evento(j, { tipo: 'agente', texto: txt });
         }
@@ -319,9 +357,10 @@ async function rodar(j, texto, { confiavel = false } = {}) {
       }
     }
     j.status = 'esperando';
-  } catch (e) { j.status = 'erro'; log({ job: j.id, erro: 'rodada', msg: String(e?.message || e).slice(0, 500) });
-    evento(j, { tipo: 'erro', texto: 'Algo deu errado do nosso lado. Mande "continua" para tentar de novo.', detalhe: String(e?.message || e).slice(0, 400) });
-    fs.appendFileSync(path.join(j.cwd, 'job', 'erros.log'), String(e?.stack || e) + '\n'); }
+  } catch (e) { log({ job: j.id, erro: 'rodada', msg: String(e?.message || e).slice(0, 500) });
+    fs.appendFileSync(path.join(pastaJob(j), 'erros.log'), String(e?.stack || e) + '\n');
+    if (j.aguardaCredito || SEM_CREDITO.test(String(e?.message || e))) { faltouCredito(j, e?.message || e); j.status = 'esperando'; return; }
+    j.status = 'erro'; evento(j, { tipo: 'erro', texto: 'Algo deu errado do nosso lado. Mande "continua" para tentar de novo.', detalhe: String(e?.message || e).slice(0, 400) }); }
   finally { liberar(); }
 }
 
@@ -402,6 +441,7 @@ function resumoPedido(j) {
     if (e.tipo === 'erro') f(/reiniciou/.test(e.texto) ? 'reinício do servidor' : 'erro', e.detalhe ? `${e.texto} · técnico: ${e.detalhe}` : e.texto);
     else if (e.tipo === 'agente' && e.texto === INSTAVEL) f('instabilidade no envio');
     else if (e.tipo === 'agente' && e.texto === INSTAVEL_AGENTE) f('limite da plataforma');
+    else if (e.tipo === 'agente' && e.texto === AVISO_CREDITO) f('sem crédito na Anthropic (retoma sozinho)');
     else if (e.tipo === 'agente' && (e.texto === RECUSA || e.texto === RECUSA_ANTIGA)) f('pedido recusado');
     else if (e.tipo === 'agente' && /chegou ao limite de trabalho/.test(e.texto)) f('limite do pedido');
     else if (e.tipo === 'fim' && e.ok === false) f('rodada falhou', 'O agente parou sem concluir a rodada.');
@@ -682,6 +722,7 @@ http.createServer(async (req, res) => {
       const r = await fetch(destino, { method: req.method, headers: cab, body: ['GET', 'HEAD'].includes(req.method) ? undefined : Buffer.concat(pedaços) });
       const volta = {}; for (const k of ['content-type', 'request-id', 'anthropic-ratelimit-requests-remaining', 'retry-after']) { const v = r.headers.get(k); if (v) volta[k] = v; }
       res.writeHead(r.status, volta);
+      if (!r.ok) { const txt = await r.text(); if (SEM_CREDITO.test(txt)) faltouCredito(j, txt); return res.end(txt); }
       if (r.body) Readable.fromWeb(r.body).pipe(res); else res.end();
       return;
     }

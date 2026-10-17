@@ -1,0 +1,45 @@
+{
+  "backend": "groq",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.6,
+      "text": "Amazing new feature in WhatsApp."
+    },
+    {
+      "start": 1.84,
+      "end": 3.34,
+      "text": "Looking at the new version of WhatsApp here."
+    },
+    {
+      "start": 3.54,
+      "end": 5.48,
+      "text": "And with this new version, there's a new function"
+    },
+    {
+      "start": 5.48,
+      "end": 7.84,
+      "text": "where you can find out who the person is talking to."
+    },
+    {
+      "start": 7.96,
+      "end": 9.9,
+      "text": "I've already found out several things about my boyfriend."
+    },
+    {
+      "start": 10.16,
+      "end": 11.26,
+      "text": "And today I'm going to show you"
+    },
+    {
+      "start": 11.26,
+      "end": 12.64,
+      "text": "how you can access this version."
+    },
+    {
+      "start": 12.92,
+      "end": 14.38,
+      "text": "Click on the link below to find out."
+    }
+  ]
+}

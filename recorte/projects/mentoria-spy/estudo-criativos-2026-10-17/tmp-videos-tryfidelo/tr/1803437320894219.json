@@ -1,0 +1,45 @@
+{
+  "backend": "groq",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 6.78,
+      "text": "Did you know that you can clone your partner's Instagram using just their username?"
+    },
+    {
+      "start": 7.0,
+      "end": 9.08,
+      "text": "You can access everything within minutes."
+    },
+    {
+      "start": 9.52,
+      "end": 12.8,
+      "text": "To start, just enter the username you want to monitor, wait a few seconds,"
+    },
+    {
+      "start": 13.08,
+      "end": 16.34,
+      "text": "and all conversations will be available for you to read on your own device."
+    },
+    {
+      "start": 16.34,
+      "end": 20.14,
+      "text": "You'll even see messages she deleted or tried to hide from you."
+    },
+    {
+      "start": 20.24,
+      "end": 22.62,
+      "text": "You'll know everything she does on her phone when you are not around,"
+    },
+    {
+      "start": 22.78,
+      "end": 27.04,
+      "text": "including all conversations, histories, deleted, archived, received, and removed."
+    },
+    {
+      "start": 27.04,
+      "end": 31.8,
+      "text": "If you want to have access, I'll leave the link below and you can put an end to your doubts."
+    }
+  ]
+}

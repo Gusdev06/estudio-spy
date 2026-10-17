@@ -1,0 +1,30 @@
+{
+  "backend": "groq",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 6.54,
+      "text": "Guys, I hate to be messy, but I just found this app that you can see who he follows without him ever knowing."
+    },
+    {
+      "start": 6.88,
+      "end": 13.44,
+      "text": "This app is called Toxic, and you can track anybody you want as long as you follow them or their account is public."
+    },
+    {
+      "start": 13.74,
+      "end": 16.78,
+      "text": "You can also view stories anonymously."
+    },
+    {
+      "start": 17.26,
+      "end": 22.54,
+      "text": "Girl to girl, you are welcome. I hope you find what you're looking for or not looking for."
+    },
+    {
+      "start": 22.72,
+      "end": 24.08,
+      "text": "Stay toxic out there, my friend."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+Custo real — wavespeed billings, key macbook, filtrado pelos ids de predição (17/10/2026)
+modelo: openai/gpt-image-2/edit, resolution 1k
+
+c5f9d354c12740c8a7e055bb554b6f0f  deduct  US$ 0.2185  3a-found-hiding-novo-rosto v2 (high)  2026-10-17T10:09:09.81Z
+d8d6a24c4f4541898f314e60f8653d9d  deduct  US$ 0.0665  1b-he-deleted-dms v2 (medium)  2026-10-17T10:09:09.805Z
+dc9c0cccbf3e46838d3cd452b6566743  deduct  US$ 0.0665  1a-she-deleted (medium)  2026-10-17T10:06:56.178Z
+a33a4c6bdcd94d12893411cb5a6ec9ef  deduct  US$ 0.0665  3a v1 (medium, descartada)  2026-10-17T10:06:56.141Z
+7dd49ad8b30c487686f5f927264269fb  deduct  US$ 0.0665  1c-clone-novo-rosto (medium)  2026-10-17T10:06:56.115Z
+e851de45768e414ca3e28766ddf5a654  deduct  US$ 0.0665  1b v1 (medium, descartada)  2026-10-17T10:06:55.737Z
+
+TOTAL: US$ 0.5510  (teto US$ 1,50)
+ids sem cobrança encontrada: []

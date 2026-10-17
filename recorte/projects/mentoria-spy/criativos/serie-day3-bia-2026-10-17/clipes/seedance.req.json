@@ -1,0 +1,11 @@
+{
+ "prompt": "Replace the woman in the video with the dark-haired woman from the reference images for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her cheek, dark brown hair pulled back in a low claw clip with a few loose strands, chunky cream knit sweater, no earrings, exactly as in the first reference image. She must not be blonde or light-haired and must not wear a black top, and must keep this outfit in every frame. She is alone. Serious, slightly sad expression, never smiling, never looking at the camera. Keep every movement, gesture, hand position, timing and camera framing exactly as in the original video: she looks down and serves the lasagna from the white baking dish with the spatula and fork. Keep the white baking dish of lasagna, the spatula, the dim warm kitchen and the background exactly as in the original video. There is no text in the video: keep it that way, with no letters, words or captions anywhere in any frame. Where the input video looks smudged or blurry over her chest and arms, render her clothes and hands clean and sharp.",
+ "video": "https://d2h7xmz5gqybh9.cloudfront.net/media/videos/d1c78edf-2e9a-4228-8482-8c436e7d1067.mp4",
+ "reference_images": [
+  "https://d2h7xmz5gqybh9.cloudfront.net/output/4918c88f-56e3-42f2-a8dd-aa555b03dd30.png",
+  "https://d2h7xmz5gqybh9.cloudfront.net/output/830ba082-8535-4e13-b18f-72c02ce86df9.png",
+  "https://d2h7xmz5gqybh9.cloudfront.net/output/8d03e351-b7a8-4666-b7f8-a07743de3b3c.png"
+ ],
+ "resolution": "720p",
+ "generate_audio": false
+}

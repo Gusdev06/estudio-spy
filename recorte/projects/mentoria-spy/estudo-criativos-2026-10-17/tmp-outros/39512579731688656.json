@@ -1,0 +1,55 @@
+{
+  "backend": "groq",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 8.04,
+      "text": "Here's how to see every text message from your boyfriend's, girlfriend's, husband's or wife's phone using only your own phone."
+    },
+    {
+      "start": 8.28,
+      "end": 9.74,
+      "text": "No physical access needed."
+    },
+    {
+      "start": 9.98,
+      "end": 12.32,
+      "text": "And the best part, they'll never know they're being watched."
+    },
+    {
+      "start": 12.52,
+      "end": 14.8,
+      "text": "Just enter their number on the site below."
+    },
+    {
+      "start": 15.02,
+      "end": 18.32,
+      "text": "Wait a few seconds while the system tracks and clones the messages."
+    },
+    {
+      "start": 18.8,
+      "end": 18.98,
+      "text": "Done."
+    },
+    {
+      "start": 19.18,
+      "end": 26.24,
+      "text": "Now you have full access to all messages, photos, videos, real-time location, and even deleted conversations."
+    },
+    {
+      "start": 26.24,
+      "end": 30.82,
+      "text": "I'll leave a link below so you can run a free check using my personal account."
+    },
+    {
+      "start": 31.14,
+      "end": 33.72,
+      "text": "But be quick, access is limited."
+    },
+    {
+      "start": 33.96,
+      "end": 36.96,
+      "text": "Tap the button below and type the number you want to check."
+    }
+  ]
+}

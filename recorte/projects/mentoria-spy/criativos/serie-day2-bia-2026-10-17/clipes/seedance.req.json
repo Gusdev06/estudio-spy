@@ -1,0 +1,11 @@
+{
+ "prompt": "Replace the woman in the video with the dark-haired woman from the reference images for the entire video: her face, light olive skin, thick dark eyebrows, beauty mark on her cheek, dark brown hair down, straight and tucked behind her ears, fitted plain black long-sleeve crewneck top, small silver stud earrings, exactly as in the first reference image. She must not wear a light blue or off-shoulder sweater, and must keep this outfit in every frame. She is alone. Serious, slightly sad expression, never smiling, never looking at the camera. Keep every movement, gesture, hand position, timing and camera framing exactly as in the original video: she looks down and slices the orange butternut squash with the big knife on the light wooden table, holding it with her left hand. Keep the butternut squash, the knife, the light wooden table and the plain light gray kitchen exactly as in the original video. There is no text in the video: keep it that way, with no letters, words or captions anywhere in any frame. Where the input video looks smudged or blurry over her chest and arms, render her clothes and hands clean and sharp.",
+ "video": "https://d2h7xmz5gqybh9.cloudfront.net/media/videos/8799a2de-3225-4120-9c4f-312982285065.mp4",
+ "reference_images": [
+  "https://d2h7xmz5gqybh9.cloudfront.net/output/45602c79-a13e-4a0e-a64c-4bde53aab7bd.png",
+  "https://d2h7xmz5gqybh9.cloudfront.net/output/830ba082-8535-4e13-b18f-72c02ce86df9.png",
+  "https://d2h7xmz5gqybh9.cloudfront.net/output/8d03e351-b7a8-4666-b7f8-a07743de3b3c.png"
+ ],
+ "resolution": "720p",
+ "generate_audio": false
+}

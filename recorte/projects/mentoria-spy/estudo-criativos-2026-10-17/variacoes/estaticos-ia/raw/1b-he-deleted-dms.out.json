@@ -1,0 +1,27 @@
+{
+  "id": "e851de45768e414ca3e28766ddf5a654",
+  "model": "openai/gpt-image-2/edit",
+  "prompt": "Edit this ad image. Keep EVERYTHING exactly the same — same man, same pose, same layout, colors, fonts, icons, timeline, chat phone mockup, list and bottom button. Change ONLY the top headline, which must read exactly: \"HE DELETED\" (white) / \"THE DMs.\" (pink, capital D, capital M, lowercase s), then \"OR AT LEAST\" (white) / \"HE THOUGHT HE DID.\" (pink). All other text stays exactly as in the original, spelled correctly: \"2:14 AM Private DM\", \"2:37 AM Photo sent\", \"2:41 AM Message deleted\", \"2:46 AM Photo deleted\", \"SEE WHAT HE TRIED TO ERASE.\", \"Private conversations\", \"Deleted messages\", \"Deleted photos\", \"THE DIGITAL FOOTPRINT DOESN'T LIE.\", \"Tap the button below\", \"Him\", \"Active now\", \"Can't stop thinking about you...\", \"This message was deleted\", \"Photo removed\", \"Message deleted\". No logos, no brand names.",
+  "outputs": [
+    "https://d2h7xmz5gqybh9.cloudfront.net/output/e83d33d5-e192-43e0-b2c7-423f0807fa4e.png"
+  ],
+  "saved": [],
+  "elapsed_ms": 81262,
+  "raw": {
+    "id": "e851de45768e414ca3e28766ddf5a654",
+    "model": "openai/gpt-image-2/edit",
+    "outputs": [
+      "https://d2h7xmz5gqybh9.cloudfront.net/output/e83d33d5-e192-43e0-b2c7-423f0807fa4e.png"
+    ],
+    "urls": {
+      "get": "https://api.wavespeed.ai/api/v3/predictions/e851de45768e414ca3e28766ddf5a654/result"
+    },
+    "status": "completed",
+    "created_at": "2026-10-17T10:06:55.735934684Z",
+    "code": 0,
+    "error": "",
+    "timings": {
+      "inference": 80252
+    }
+  }
+}

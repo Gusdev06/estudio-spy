@@ -1,0 +1,40 @@
+{
+  "backend": "groq",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.96,
+      "text": "How to clone your partner's WhatsApp using only their phone number."
+    },
+    {
+      "start": 4.32,
+      "end": 8.78,
+      "text": "First, go to the website I'm sharing below and enter the number of the person you want to investigate."
+    },
+    {
+      "start": 9.26,
+      "end": 11.6,
+      "text": "In a few seconds, their photo will appear on the screen."
+    },
+    {
+      "start": 12.1,
+      "end": 15.46,
+      "text": "This confirms that the number exists and is active on WhatsApp."
+    },
+    {
+      "start": 15.8,
+      "end": 18.14,
+      "text": "After that, the system starts retrieving everything."
+    },
+    {
+      "start": 18.46,
+      "end": 22.32,
+      "text": "Recent conversations, sent photos, location and even deleted messages."
+    },
+    {
+      "start": 22.82,
+      "end": 25.96,
+      "text": "Now click on learn more and enter the number you want to investigate."
+    }
+  ]
+}

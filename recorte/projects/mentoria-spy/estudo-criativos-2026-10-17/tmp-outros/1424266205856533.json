@@ -1,0 +1,35 @@
+{
+  "backend": "groq",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.66,
+      "text": "Did you know it's possible to mirror any WhatsApp using just a phone number?"
+    },
+    {
+      "start": 3.82,
+      "end": 6.4,
+      "text": "Our technology works in minutes and shows everything."
+    },
+    {
+      "start": 6.68,
+      "end": 9.28,
+      "text": "Deleted messages, voice notes, and even where they are."
+    },
+    {
+      "start": 9.44,
+      "end": 11.66,
+      "text": "Access is completely discreet and secure."
+    },
+    {
+      "start": 11.88,
+      "end": 13.48,
+      "text": "Don't let lies destroy your peace."
+    },
+    {
+      "start": 13.72,
+      "end": 16.26,
+      "text": "Tap the button and start your investigation right now."
+    }
+  ]
+}
