@@ -257,7 +257,8 @@ const quando = (t) => { if (!t) return ''; const m = Math.round((Date.now() - t)
   const h = Math.round(m / 60); if (h < 24) return `há ${h} h`; return new Date(t).toLocaleDateString('pt-BR', { day:'2-digit', month:'short' }); };
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
 // Caminho interno (job/saida/variacao-1.mp4) vira o nome legível ("variacao 1"); o arquivo em si aparece embaixo como vídeo.
-const semCaminho = (t) => t.replace(/`?job\/[\w.\-\/]+\/([\w.\-]+)\.(mp4|mov|m4v|webm|jpe?g|png|webp)`?/gi, (_, n) => n.replace(/[-_]/g, ' '));
+const semCaminho = (t, id) => t.replace(/`?job\/[\w.\-\/]+\/([\w.\-]+)\.(mp4|mov|m4v|webm|jpe?g|png|webp)`?/gi, (_, n) => n.replace(/[-_]/g, ' '))
+  .replace(/(\b(?:em|no|in)\s+)?`?job\/saida\/README\.md`?/g, (_, pre) => { const r = pre ? (/in/.test(pre) ? 'in this file' : 'neste arquivo') : 'resumo das variações'; return id ? `[${r}](${arq(id, 'job/saida/README.md')})` : r; });
 const md = (t) => DOMPurify.sanitize(marked.parse(t), { FORBID_TAGS: ['style','form','input','iframe','video','audio','img'], FORBID_ATTR: ['style'] });
 let timer = null, ultimo = -1, jobAtual = null, eu = null, geracao = 0;
 // Admin vê o chat igual ao cliente; "detalhes" liga passos e tempos (lembrado só neste navegador).
@@ -617,8 +618,8 @@ function job(id) {
       if (e.tipo === 'cliente' && (e.interno || /^Aprovado: pode produzir/.test(e.texto))) continue;
       if (e.tipo === 'cliente') { const txt = e.texto.replace(/^Mandei o arquivo em \S+\.\s*/, '');
         chat.insertAdjacentHTML('beforeend', `<div class="msg cliente">${midias(id, e.texto.startsWith('Mandei o arquivo em ') ? e.texto.split(/\s/)[4] : '', { legenda: false, baixar: false })}${txt ? `<div>${esc(txt)}</div>` : ''}</div>`); }
-      if (e.tipo === 'agente') chat.insertAdjacentHTML('beforeend', `<div class="msg agente">${LOGO}<div class="corpo">${md(semCaminho(e.texto))}${midias(id, e.texto, { vistos })}</div></div>`);
-      if (e.tipo === 'fim' && e.dur && detalhes()) chat.insertAdjacentHTML('beforeend', `<div class="fim">admin · rodada ${(e.dur / 60000).toFixed(1)} min (modelo ${(e.durModelo / 60000).toFixed(1)} · vídeo/ferramentas ${((e.dur - e.durModelo) / 60000).toFixed(1)}) · ${e.passos} passos</div>`);
+      if (e.tipo === 'agente') chat.insertAdjacentHTML('beforeend', `<div class="msg agente">${LOGO}<div class="corpo">${md(semCaminho(e.texto, id))}${midias(id, e.texto, { vistos })}</div></div>`);
+      if (e.tipo === 'fim' && e.dur && detalhes()) chat.insertAdjacentHTML('beforeend', `<div class="fim">admin · rodada ${(e.dur / 60000).toFixed(1)} min${e.durModelo <= e.dur ? ` (modelo ${(e.durModelo / 60000).toFixed(1)} · vídeo/ferramentas ${((e.dur - e.durModelo) / 60000).toFixed(1)})` : ''} · ${e.passos} passos</div>`);
       if (e.tipo === 'erro') chat.insertAdjacentHTML('beforeend', `<div class="aviso-erro">${esc(e.texto)}</div>`);
       if (e.tipo === 'aprovacao') chat.insertAdjacentHTML('beforeend', `<div class="aprov" id="ap-${esc(e.id)}"><p>${esc(e.resumo)}</p>
         <div class="uso"><span>Usa <b>${e.videos} vídeo${e.videos === 1 ? '' : 's'}</b> do seu saldo${eu.admin ? '' : ` · você tem <b>${eu.videos}</b>`}</span>${!eu.admin && eu.videos < e.videos && temPacotes ? '<a href="#/comprar">comprar vídeos</a>' : ''}</div>

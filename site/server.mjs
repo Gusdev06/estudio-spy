@@ -103,7 +103,7 @@ const estourou = (chave, max = 10, janela = 15 * 60e3) => { const agora = Date.n
 // ---------- jobs ----------
 const jobs = new Map(); // id → { id, dono, cwd, eventos, status, sessao, custo, entrada }
 const ID_JOB = /^\d{12}-[0-9a-f]{4,6}$/;
-const CAMPOS = ['dono', 'sessao', 'custo', 'entrada', 'reserva', 'entregues', 'gastoMidia', 'predicoes', 'bloqueado', 'finalizado', 'nuvem', 'aguardaCredito'];
+const CAMPOS = ['dono', 'sessao', 'custo', 'entrada', 'reserva', 'entregues', 'gastoMidia', 'predicoes', 'bloqueado', 'finalizado', 'nuvem', 'aguardaCredito', 'apiAcum'];
 const pastaJob = (j) => { const d = path.join(j.cwd, 'job'); fs.mkdirSync(d, { recursive: true }); return d; };   // pedido vindo do banco pode não ter pasta no disco
 const meta = (j) => { const m = Object.fromEntries(CAMPOS.map((k) => [k, j[k]])); banco?.pedido(j.id, j.dono, m);
   try { fs.writeFileSync(path.join(pastaJob(j), 'meta.json'), JSON.stringify(m)); } catch (e) { log({ erro: 'meta', id: j.id, msg: String(e) }); } };
@@ -353,7 +353,8 @@ async function rodar(j, texto, { confiavel = false, repetida = false } = {}) {  
       if (m.type === 'result') {
         j.custo += m.total_cost_usd || 0;
         if (!admin(j.dono) && j.custo > TETO_TOKENS_BASE + TETO_TOKENS_POR_VIDEO * (j.reserva || 0)) { j.bloqueado = true; log({ job: j.id, teto: 'tokens', custo: j.custo }); }
-        meta(j); evento(j, { tipo: 'fim', custo: j.custo, ok: m.subtype === 'success', dur: m.duration_ms, durModelo: m.duration_api_ms, passos: m.num_turns });
+        meta(j); evento(j, { tipo: 'fim', custo: j.custo, ok: m.subtype === 'success', dur: m.duration_ms, durModelo: Math.max(0, (m.duration_api_ms || 0) - (j.apiAcum?.sessao === j.sessao ? j.apiAcum.ms : 0)), passos: m.num_turns });
+        j.apiAcum = { sessao: j.sessao, ms: m.duration_api_ms || 0 };
       }
     }
     j.status = 'esperando';
