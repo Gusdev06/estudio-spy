@@ -152,7 +152,8 @@ if (nuvem) setTimeout(async () => {   // o que ainda não está no storage (pedi
 }, 20e3);
 
 // ---------- proteção ----------
-const RECUSA = 'Aqui eu só trabalho nos seus criativos: variações, troca de avatar, headlines, layout, clones. Me diga o que quer fazer com o seu vídeo.';
+const RECUSA_ANTIGA = 'Aqui eu só trabalho nos seus criativos: variações, troca de avatar, headlines, layout, clones. Me diga o que quer fazer com o seu vídeo.';
+const RECUSA = 'Esse pedido eu não consigo fazer. Eu trabalho só nos seus criativos (variações, troca de avatar, headlines, layout, clones) e não faço avatar parecido com pessoa real ou famosa, nem conteúdo sexual. Me diga de novo o que quer variar, por exemplo: "3 variações com mulher loira de 25 anos".';
 // Mensagens da própria plataforma (limite de uso, conta, cobrança) nunca chegam ao cliente.
 const LIMITE_PLATAFORMA = /hit your .*limit|usage limit|rate limit|weekly limit|credit balance|quota|overloaded|api error|invalid api key|authentication/i;
 const INSTAVEL_AGENTE = 'Estamos com uma instabilidade momentânea do nosso lado. O seu pedido fica salvo: mande "continua" daqui a pouco.';
@@ -318,7 +319,8 @@ async function rodar(j, texto, { confiavel = false } = {}) {
       }
     }
     j.status = 'esperando';
-  } catch (e) { j.status = 'erro'; evento(j, { tipo: 'erro', texto: 'Algo deu errado do nosso lado. Mande "continua" para tentar de novo.' });
+  } catch (e) { j.status = 'erro'; log({ job: j.id, erro: 'rodada', msg: String(e?.message || e).slice(0, 500) });
+    evento(j, { tipo: 'erro', texto: 'Algo deu errado do nosso lado. Mande "continua" para tentar de novo.', detalhe: String(e?.message || e).slice(0, 400) });
     fs.appendFileSync(path.join(j.cwd, 'job', 'erros.log'), String(e?.stack || e) + '\n'); }
   finally { liberar(); }
 }
@@ -397,10 +399,10 @@ function resumoPedido(j) {
   const falhas = [];
   for (const e of ev) {
     const f = (tipo, texto = e.texto) => falhas.push({ t: e.t, tipo, texto });
-    if (e.tipo === 'erro') f(/reiniciou/.test(e.texto) ? 'reinício do servidor' : 'erro');
+    if (e.tipo === 'erro') f(/reiniciou/.test(e.texto) ? 'reinício do servidor' : 'erro', e.detalhe ? `${e.texto} · técnico: ${e.detalhe}` : e.texto);
     else if (e.tipo === 'agente' && e.texto === INSTAVEL) f('instabilidade no envio');
     else if (e.tipo === 'agente' && e.texto === INSTAVEL_AGENTE) f('limite da plataforma');
-    else if (e.tipo === 'agente' && e.texto === RECUSA) f('pedido recusado');
+    else if (e.tipo === 'agente' && (e.texto === RECUSA || e.texto === RECUSA_ANTIGA)) f('pedido recusado');
     else if (e.tipo === 'agente' && /chegou ao limite de trabalho/.test(e.texto)) f('limite do pedido');
     else if (e.tipo === 'fim' && e.ok === false) f('rodada falhou', 'O agente parou sem concluir a rodada.');
   }
@@ -617,7 +619,7 @@ http.createServer(async (req, res) => {
       const depois = Number(u.searchParams.get('depois') ?? -1);
       return json(res, { status: j.status, admin: admin(email), media: mediaPorVideo(),
         eventos: j.eventos.filter((e) => e.n > depois && (admin(email) || e.tipo !== 'ferramenta')).map((e) => e.tipo === 'agente' ? { ...e, texto: semDinheiro(e.texto) } : e.tipo === 'aprovacao' ? { ...e, resumo: semDinheiro(e.resumo) } : e).filter((e) => e.tipo !== 'agente' || e.texto)
-          .map((e) => admin(email) ? (e.tipo === 'fim' ? { ...e, custo: undefined } : e) : e.tipo === 'fim' ? { tipo: 'fim', n: e.n, t: e.t, ok: e.ok } : e.tipo === 'ferramenta' ? { ...e, detalhe: undefined } : e) });
+          .map((e) => admin(email) ? (e.tipo === 'fim' ? { ...e, custo: undefined } : e) : e.tipo === 'fim' ? { tipo: 'fim', n: e.n, t: e.t, ok: e.ok } : e.tipo === 'ferramenta' || e.tipo === 'erro' ? { ...e, detalhe: undefined } : e) });
     }
     if (req.method === 'POST' && p[3] === 'aprovar') {
       if (j.dono !== email) return json(res, { erro: 'só o dono do pedido aprova' }, 403);
