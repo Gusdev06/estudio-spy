@@ -48,11 +48,14 @@ export async function abrirBanco(url, log) {
       for (const r of (await pool.query('select email, videos, dados from estudio.usuarios')).rows) { usuarios[r.email] = { ...r.dados, videos: r.videos }; mudou(ultimo.usuarios, r.email, usuarios[r.email]); }
       for (const r of (await pool.query('select hash, email, ate from estudio.sessoes where ate > now()')).rows) { const s = { email: r.email, ate: r.ate.getTime() }; sessoes.set(r.hash, s); mudou(ultimo.sessoes, r.hash, s); }
       for (const r of (await pool.query('select id, dados from estudio.pagamentos')).rows) { pagamentos.pedidos[r.id] = r.dados; mudou(ultimo.pagamentos, r.id, r.dados); }
+      // a coluna pendentes.videos guarda segundos desde 17/10; a marca em config evita converter de novo a cada boot
+      if ((await pool.query(`select 1 from estudio.config where chave = 'pendentes_em_segundos'`)).rows.length) pagamentos.unidade = 'segundos';
       for (const r of (await pool.query('select email, videos from estudio.pendentes')).rows) { pagamentos.pendentes[r.email] = r.videos; mudou(ultimo.pendentes, r.email, r.videos); }
       for (const r of (await pool.query('select id, dados from estudio.pedidos')).rows) { pedidos.set(r.id, { dados: r.dados, eventos: [] }); mudou(ultimo.pedidos, r.id, r.dados); }
       for (const r of (await pool.query('select pedido, dados from estudio.eventos order by pedido, n')).rows) pedidos.get(r.pedido)?.eventos.push(r.dados);
       return { usuarios, sessoes, pagamentos, pedidos, convites };
     },
+    marcarSegundos: () => enfileirar('segundos', () => pool.query(`insert into estudio.config values ('pendentes_em_segundos', $1) on conflict (chave) do nothing`, [JSON.stringify(new Date().toISOString())])),
     marcarMigrado: () => enfileirar('migrado', () => pool.query(`insert into estudio.config values ('migrado', $1) on conflict (chave) do update set valor = $1`, [JSON.stringify(new Date().toISOString())])),
 
     usuarios(todos) {

@@ -87,7 +87,7 @@ const SEG_POR_VIDEO_ANTIGO = 60, MIN_SEG_POR_PECA = 30;
 {
   let mudou = false;
   for (const u of Object.values(usuarios)) if (u.videos != null && u.segundos == null) { u.segundos = u.videos * SEG_POR_VIDEO_ANTIGO; delete u.videos; mudou = true; }
-  if (pagamentos.unidade !== 'segundos') { for (const e of Object.keys(pagamentos.pendentes || {})) pagamentos.pendentes[e] *= SEG_POR_VIDEO_ANTIGO; pagamentos.unidade = 'segundos'; salvarPagamentos(); }
+  if (pagamentos.unidade !== 'segundos') { for (const e of Object.keys(pagamentos.pendentes || {})) pagamentos.pendentes[e] *= SEG_POR_VIDEO_ANTIGO; pagamentos.unidade = 'segundos'; salvarPagamentos(); banco?.marcarSegundos(); }
   let mudouC = false; for (const c of Object.values(convites)) if (c.videos != null && c.segundos == null) { c.segundos = c.videos * SEG_POR_VIDEO_ANTIGO; delete c.videos; mudouC = true; }
   if (mudou) salvarUsuarios(); if (mudouC) salvarConvites();
 }
