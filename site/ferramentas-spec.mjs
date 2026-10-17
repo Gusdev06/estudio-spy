@@ -4,9 +4,10 @@ import { z } from 'zod';
 
 export const SPEC = {
   pedir_aprovacao: {
-    descricao: 'Mostra ao cliente um botão "Aprovar" que reserva N vídeos do saldo dele. Chame quando já souber o que variar, o avatar e quantas variações, ANTES de qualquer geração paga de vídeo. Depois de chamar, termine a sua vez e espere: a aprovação chega como mensagem do cliente.',
-    schema: { videos: z.number().int().min(1).max(20).describe('quantas peças finais serão entregues (1 peça = 1 vídeo do saldo)'),
-              resumo: z.string().max(400).describe('UMA linha pro cliente: o que será entregue e em quanto tempo fica pronto') },
+    descricao: 'Mostra ao cliente um botão "Aprovar" que reserva do saldo dele os segundos das N peças (o servidor calcula: duração de cada peça × N, mínimo 30 s por peça). Chame quando já souber o que variar, o avatar e quantas variações, ANTES de qualquer geração paga de vídeo. Depois de chamar, termine a sua vez e espere: a aprovação chega como mensagem do cliente.',
+    schema: { videos: z.number().int().min(1).max(20).describe('quantas peças finais serão entregues'),
+              resumo: z.string().max(400).describe('UMA linha pro cliente: o que será entregue e em quanto tempo fica pronto'),
+              duracao_s: z.number().min(1).max(600).optional().describe('duração prevista de CADA peça em segundos, só quando for diferente do vídeo que o cliente enviou (ex.: corte pra 20 s); sem isso vale a duração do vídeo enviado') },
   },
   gerar_midia: {
     descricao: 'ÚNICA forma de gerar mídia paga (imagem, vídeo, lipsync, voz, transcrição). Equivale a `wavespeed run <modelo> -i chave=valor`. Arquivos locais: valor "@caminho" relativo a job/ (ex.: "@trabalho/rosto/a1.png"). Estima o preço com os arquivos reais e recusa se passar do limite do pedido. Antes da aprovação só cabe prévia barata (rosto, sonda). Pra várias gerações independentes, use gerar_midia_lote.',
@@ -29,11 +30,11 @@ export const SPEC = {
     schema: { id: z.string().regex(/^[0-9a-f]{32}$/), saida: z.string().max(120).regex(/^[\w\-\/]+$/) },
   },
   entregar_video: {
-    descricao: 'Registra uma peça final como entregue ao cliente (consome 1 vídeo da reserva). Só pra peças finais em job/saida/, já conferidas.',
+    descricao: 'Registra uma peça final como entregue ao cliente (cobra a duração real dela, mínimo 30 s, da reserva). Só pra peças finais em job/saida/, já conferidas.',
     schema: { caminho: z.string().max(200).describe('ex.: job/saida/variacao-1.mp4') },
   },
   finalizar_pedido: {
-    descricao: 'Chame quando tudo o que foi pedido estiver entregue: devolve ao saldo do cliente os vídeos reservados e não usados.',
+    descricao: 'Chame quando tudo o que foi pedido estiver entregue: devolve ao saldo do cliente os segundos reservados e não usados.',
     schema: {},
   },
 };

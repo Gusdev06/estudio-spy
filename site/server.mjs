@@ -68,19 +68,28 @@ function backupDiario() {
   for (const f of fs.readdirSync(BACKUP)) if (Date.now() - fs.statSync(path.join(BACKUP, f)).mtimeMs > 30 * 86400e3) fs.rmSync(path.join(BACKUP, f));
 }
 const salvarUsuarios = () => { banco?.usuarios(usuarios); gravar(USUARIOS, usuarios); try { backupDiario(); } catch (e) { log({ erro: 'backup', msg: String(e) }); } };
-// Pagamentos da Cakto: id do pedido → { email, videos, evento }. Crédito de quem ainda não tem conta fica em pendentes[email].
+// Pagamentos da Cakto: id do pedido → { email, segundos, evento } (registros antigos têm videos). Crédito de quem ainda não tem conta fica em pendentes[email].
 const PAGAMENTOS = path.join(BASE, '_pagamentos.json');
 let pagamentos = snap ? snap.pagamentos : fs.existsSync(PAGAMENTOS) ? JSON.parse(fs.readFileSync(PAGAMENTOS, 'utf8')) : { pedidos: {}, pendentes: {} };
 const salvarPagamentos = () => { banco?.pagamentos(pagamentos); gravar(PAGAMENTOS, pagamentos); };
-// Convites: o admin gera um link de uso único com N vídeos; quem abre cria a conta (ou entra) e recebe o saldo. token → { videos, nota, por, criado, ate, usado?, revogado? }
+// Convites: o admin gera um link de uso único com N segundos; quem abre cria a conta (ou entra) e recebe o saldo. token → { segundos, nota, por, criado, ate, usado?, revogado? }
 const CONVITES = path.join(BASE, '_convites.json');
 let convites = snap ? snap.convites : fs.existsSync(CONVITES) ? JSON.parse(fs.readFileSync(CONVITES, 'utf8')) : {};
 const salvarConvites = () => { banco?.convites(convites); gravar(CONVITES, convites); };
 const conviteValido = (tok) => { const c = typeof tok === 'string' && Object.hasOwn(convites, tok) ? convites[tok] : null; return c && !c.usado && !c.revogado && Date.parse(c.ate) > Date.now() ? c : null; };
 function usarConvite(tok, e) {
   const c = conviteValido(tok); if (!c || admin(e)) return 0;
-  c.usado = { email: e, t: new Date().toISOString() }; usuarios[e].videos = saldo(e) + c.videos;
-  salvarConvites(); salvarUsuarios(); log({ convite: tok.slice(0, 6), email: e, videos: c.videos }); return c.videos;
+  c.usado = { email: e, t: new Date().toISOString() }; usuarios[e].segundos = saldo(e) + c.segundos;
+  salvarConvites(); salvarUsuarios(); log({ convite: tok.slice(0, 6), email: e, segundos: c.segundos }); return c.segundos;
+}
+// 17/10: o saldo deixou de ser em vídeos e passou a ser em segundos de vídeo entregue. Saldo antigo: 1 vídeo = 60 s (decisão do Gusta).
+const SEG_POR_VIDEO_ANTIGO = 60, MIN_SEG_POR_PECA = 30;
+{
+  let mudou = false;
+  for (const u of Object.values(usuarios)) if (u.videos != null && u.segundos == null) { u.segundos = u.videos * SEG_POR_VIDEO_ANTIGO; delete u.videos; mudou = true; }
+  if (pagamentos.unidade !== 'segundos') { for (const e of Object.keys(pagamentos.pendentes || {})) pagamentos.pendentes[e] *= SEG_POR_VIDEO_ANTIGO; pagamentos.unidade = 'segundos'; salvarPagamentos(); }
+  let mudouC = false; for (const c of Object.values(convites)) if (c.videos != null && c.segundos == null) { c.segundos = c.videos * SEG_POR_VIDEO_ANTIGO; delete c.videos; mudouC = true; }
+  if (mudou) salvarUsuarios(); if (mudouC) salvarConvites();
 }
 const TERMOS_VERSAO = '2026-10-16';
 const scrypt = promisify(crypto.scrypt);
@@ -103,7 +112,7 @@ const estourou = (chave, max = 10, janela = 15 * 60e3) => { const agora = Date.n
 // ---------- jobs ----------
 const jobs = new Map(); // id → { id, dono, cwd, eventos, status, sessao, custo, entrada }
 const ID_JOB = /^\d{12}-[0-9a-f]{4,6}$/;
-const CAMPOS = ['dono', 'sessao', 'custo', 'entrada', 'reserva', 'entregues', 'gastoMidia', 'predicoes', 'bloqueado', 'finalizado', 'nuvem', 'aguardaCredito', 'apiAcum'];
+const CAMPOS = ['dono', 'sessao', 'custo', 'entrada', 'reserva', 'reservaSeg', 'cobradoSeg', 'entregues', 'gastoMidia', 'predicoes', 'bloqueado', 'finalizado', 'nuvem', 'aguardaCredito', 'apiAcum'];
 const pastaJob = (j) => { const d = path.join(j.cwd, 'job'); fs.mkdirSync(d, { recursive: true }); return d; };   // pedido vindo do banco pode não ter pasta no disco
 const meta = (j) => { const m = Object.fromEntries(CAMPOS.map((k) => [k, j[k]])); banco?.pedido(j.id, j.dono, m);
   try { fs.writeFileSync(path.join(pastaJob(j), 'meta.json'), JSON.stringify(m)); } catch (e) { log({ erro: 'meta', id: j.id, msg: String(e) }); } };
@@ -121,7 +130,9 @@ const arquivosDoPedido = (j) => [j.entrada, ...(j.entregues || []), ...j.eventos
 // restaura pedidos depois de reiniciar: do banco quando ele já tem os dados; senão do disco (e, com banco ligado, migra tudo pra lá)
 function montarJob(id, m, eventos, sessao, custo) {
   const j = { ...m, id, cwd: path.join(BASE, id), eventos, sessao, custo, dono: m.dono && m.dono !== '_legado' ? m.dono : (ADMINS[0] || '_legado'), status: 'esperando',
-    reserva: m.reserva || 0, entregues: m.entregues || [], gastoMidia: m.gastoMidia || 0 };
+    reserva: m.reserva || 0, entregues: m.entregues || [], gastoMidia: m.gastoMidia || 0,
+    // pedido de antes da troca pra segundos: a reserva foi paga em vídeos (60 s cada) e cada peça já entregue conta 60 s
+    reservaSeg: m.reservaSeg ?? (m.reserva || 0) * SEG_POR_VIDEO_ANTIGO, cobradoSeg: m.cobradoSeg ?? (m.entregues || []).length * SEG_POR_VIDEO_ANTIGO };
   for (const e of eventos) if (e.tipo === 'aprovado') { const a = eventos.find((x) => x.tipo === 'aprovacao' && x.id === e.ref); if (a) a.estado = 'aprovada'; }
   if (eventos.length && !['fim', 'erro', 'finalizado'].includes(eventos.at(-1).tipo))
     evento(j, { tipo: 'erro', texto: 'O servidor reiniciou no meio do trabalho. Mande "continua" para retomar de onde parou.' });
@@ -242,18 +253,21 @@ Leia o CLAUDE.md do workspace primeiro e siga à risca as seções "Como trabalh
 "Silêncio enquanto trabalha" e "Como falar com o cliente": idioma do cliente, mensagens de uma linha, nada de bastidor, medição, custo, ferramenta, modelo, fornecedor ou trabalho anterior.
 Pra mostrar imagem ou vídeo, cite o caminho começando por job/ (ex.: job/saida/peca.mp4): o chat mostra o arquivo. Nunca leia fora de ${cwd}.
 Geração paga SÓ pela ferramenta gerar_midia (o comando wavespeed run está bloqueado). Aprovação SÓ pela ferramenta pedir_aprovacao (o cliente clica num botão);
-cada peça final vai por entregar_video; no fim, finalizar_pedido. Nunca fale de dinheiro com o cliente: só vídeos do saldo.
+cada peça final vai por entregar_video; no fim, finalizar_pedido. Nunca fale de dinheiro com o cliente: só segundos de vídeo do saldo.
 Nunca copie nem crie link (symlink) de arquivos internos (skills, regras, wiki, scripts do método) para job/saida ou job/entrada.`;
 
-const saldo = (email) => usuarios[email]?.videos || 0;
+const saldo = (email) => usuarios[email]?.segundos || 0;
+// Acerto do pedido: a reserva foi estimada na aprovação; cobra a duração real do que foi entregue (mínimo 30 s por peça)
+// e devolve a sobra. Se o entregue passou da reserva, o excesso sai do saldo (até zerar).
 function finalizar(j) {
   const devolve = Math.max(0, (j.reserva || 0) - (j.entregues || []).length);
-  if (devolve && !admin(j.dono) && usuarios[j.dono]) { usuarios[j.dono].videos = saldo(j.dono) + devolve; salvarUsuarios(); }
-  j.reserva = (j.entregues || []).length; j.finalizado = true; meta(j);
-  evento(j, { tipo: 'finalizado', devolvidos: devolve, entregues: j.reserva });
-  return `Pedido finalizado: ${j.reserva} vídeo(s) entregue(s), ${devolve} devolvido(s) ao saldo.`;
+  const difSeg = (j.reservaSeg || 0) - (j.cobradoSeg || 0);
+  if (difSeg && !admin(j.dono) && usuarios[j.dono]) { usuarios[j.dono].segundos = Math.max(0, saldo(j.dono) + difSeg); salvarUsuarios(); }
+  j.reserva = (j.entregues || []).length; j.reservaSeg = j.cobradoSeg || 0; j.finalizado = true; meta(j);
+  evento(j, { tipo: 'finalizado', devolvidos: devolve, entregues: j.reserva, segundosCobrados: j.cobradoSeg || 0, segundosDevolvidos: Math.max(0, difSeg) });
+  return `Pedido finalizado: ${j.reserva} peça(s) entregue(s), ${j.cobradoSeg || 0} s cobrados, ${Math.max(0, difSeg)} s devolvidos ao saldo.`;
 }
-const ctxFerramentas = { evento, meta: (j) => meta(j), log, saldo, ehAdmin: (e) => admin(e), finalizar };
+const ctxFerramentas = { evento, meta: (j) => meta(j), log, saldo, ehAdmin: (e) => admin(e), finalizar, MIN_SEG_POR_PECA };
 const AMBIENTE = { ...AMBIENTE_SDK, BASH_DEFAULT_TIMEOUT_MS: '300000', BASH_MAX_TIMEOUT_MS: '900000' };
 
 const tokensAtivos = new Map(); // token temporário → id do job (só enquanto a rodada dura)
@@ -343,7 +357,7 @@ async function rodar(j, texto, { confiavel = false, repetida = false } = {}) {  
       if (m.session_id && m.session_id !== j.sessao) { j.sessao = m.session_id; meta(j); }
       if (m.type === 'assistant' && !m.parent_tool_use_id) for (const b of m.message.content ?? []) {
         if (b.type === 'text' && b.text.trim()) {
-          if (LIMITE_PLATAFORMA.test(b.text) && SEM_CREDITO.test(b.text)) { faltouCredito(j, b.text); continue; }
+          if (LIMITE_PLATAFORMA.test(b.text) && SEM_CREDITO.test(b.text)) { faltouCredito(j, b.text, { texto, confiavel }); continue; }
           if (LIMITE_PLATAFORMA.test(b.text)) { log({ job: j.id, alerta: 'limite-plataforma', texto: b.text.slice(0, 200) }); evento(j, { tipo: 'agente', texto: INSTAVEL_AGENTE }); continue; }
           const txt = limpar(b.text); if (txt) evento(j, { tipo: 'agente', texto: txt });
         }
@@ -360,7 +374,7 @@ async function rodar(j, texto, { confiavel = false, repetida = false } = {}) {  
     j.status = 'esperando';
   } catch (e) { log({ job: j.id, erro: 'rodada', msg: String(e?.message || e).slice(0, 500) });
     fs.appendFileSync(path.join(pastaJob(j), 'erros.log'), String(e?.stack || e) + '\n');
-    if (j.aguardaCredito || SEM_CREDITO.test(String(e?.message || e))) { faltouCredito(j, e?.message || e); j.status = 'esperando'; return; }
+    if (j.aguardaCredito || SEM_CREDITO.test(String(e?.message || e))) { faltouCredito(j, e?.message || e, { texto, confiavel }); j.status = 'esperando'; return; }
     j.status = 'erro'; evento(j, { tipo: 'erro', texto: 'Algo deu errado do nosso lado. Mande "continua" para tentar de novo.', detalhe: String(e?.message || e).slice(0, 400) }); }
   finally { liberar(); }
 }
@@ -383,7 +397,7 @@ function novoJob(dono, nomeArquivo) {
 const apagarJob = (j) => { jobs.delete(j.id); fs.rmSync(j.cwd, { recursive: true, force: true }); banco?.apagarPedido(j.id); nuvem?.apagar(j.id); };
 
 // ---------- venda: pacotes (Cakto), e-mail, senha nova ----------
-// PACOTES_CAKTO no Ambiente: JSON [{"oferta":"<id da oferta ou short_id do produto>","videos":5,"nome":"5 vídeos","preco":"R$ 97","link":"https://pay.cakto.com.br/..."}]
+// PACOTES_CAKTO no Ambiente: JSON [{"oferta":"<id da oferta ou short_id do produto>","segundos":300,"nome":"Starter","preco":"R$ 297","link":"https://pay.cakto.com.br/..."}]
 let PACOTES = []; try { PACOTES = JSON.parse(process.env.PACOTES_CAKTO || '[]'); } catch { log({ erro: 'PACOTES_CAKTO não é JSON válido' }); }
 const SUPORTE = process.env.SUPORTE_URL || '';
 const URL_PUBLICA = (process.env.URL_PUBLICA || '').replace(/\/$/, '');
@@ -396,7 +410,7 @@ async function enviarEmail(para, assunto, texto) {
 const novoReset = (e) => { const tok = crypto.randomBytes(24).toString('base64url'); usuarios[e].reset = { h: hTok(tok), ate: Date.now() + 3600e3 }; salvarUsuarios(); return tok; };
 function aplicarPendente(e) {
   const n = pagamentos.pendentes[e]; if (!n) return;
-  usuarios[e].videos = saldo(e) + n; delete pagamentos.pendentes[e]; salvarPagamentos(); log({ pendenteAplicado: e, videos: n });
+  usuarios[e].segundos = saldo(e) + n; delete pagamentos.pendentes[e]; salvarPagamentos(); log({ pendenteAplicado: e, segundos: n });
 }
 const pacoteDe = (d) => PACOTES.find((p) => [d.offer?.id, d.product?.short_id, d.product?.id].filter(Boolean).includes(p.oferta));
 // Webhook da Cakto: assinatura HMAC (X-Cakto-Signature) ou, na falta, o secret do corpo. Idempotente pelo id do pedido.
@@ -419,15 +433,16 @@ async function webhookCakto(req, res) {
     const e = String(d.customer.email).trim().toLowerCase(); const pac = pacoteDe(d); const reg = pagamentos.pedidos[d.id];
     if (evento === 'purchase_approved') {
       if (reg) continue;                                                         // já creditado (reenvio da Cakto)
-      if (!pac) { log({ cakto: 'oferta sem pacote', oferta: d.offer?.id, produto: d.product?.short_id, pedido: d.id }); pagamentos.pedidos[d.id] = { email: e, videos: 0, evento, t: new Date().toISOString(), obs: 'oferta sem pacote' }; continue; }
-      if (usuarios[e]) usuarios[e].videos = saldo(e) + pac.videos; else pagamentos.pendentes[e] = (pagamentos.pendentes[e] || 0) + pac.videos;
-      pagamentos.pedidos[d.id] = { email: e, videos: pac.videos, evento, t: new Date().toISOString(), valor: d.amount, conta: !!usuarios[e] };
-      log({ cakto: 'creditado', email: e, videos: pac.videos, pedido: d.id });
+      if (!pac) { log({ cakto: 'oferta sem pacote', oferta: d.offer?.id, produto: d.product?.short_id, pedido: d.id }); pagamentos.pedidos[d.id] = { email: e, segundos: 0, evento, t: new Date().toISOString(), obs: 'oferta sem pacote' }; continue; }
+      if (usuarios[e]) usuarios[e].segundos = saldo(e) + pac.segundos; else pagamentos.pendentes[e] = (pagamentos.pendentes[e] || 0) + pac.segundos;
+      pagamentos.pedidos[d.id] = { email: e, segundos: pac.segundos, evento, t: new Date().toISOString(), valor: d.amount, conta: !!usuarios[e] };
+      log({ cakto: 'creditado', email: e, segundos: pac.segundos, pedido: d.id });
     } else if (['refund', 'chargeback'].includes(evento)) {
-      if (!reg || reg.estornado || !reg.videos) continue;
-      if (usuarios[e]) usuarios[e].videos = Math.max(0, saldo(e) - reg.videos);
-      else if (pagamentos.pendentes[e]) pagamentos.pendentes[e] = Math.max(0, pagamentos.pendentes[e] - reg.videos);
-      reg.estornado = evento; reg.tEstorno = new Date().toISOString(); log({ cakto: 'estornado', email: e, videos: reg.videos, pedido: d.id, evento });
+      const seg = reg ? reg.segundos ?? (reg.videos || 0) * SEG_POR_VIDEO_ANTIGO : 0;
+      if (!reg || reg.estornado || !seg) continue;
+      if (usuarios[e]) usuarios[e].segundos = Math.max(0, saldo(e) - seg);
+      else if (pagamentos.pendentes[e]) pagamentos.pendentes[e] = Math.max(0, pagamentos.pendentes[e] - seg);
+      reg.estornado = evento; reg.tEstorno = new Date().toISOString(); log({ cakto: 'estornado', email: e, segundos: seg, pedido: d.id, evento });
     }
   }
   salvarPagamentos(); salvarUsuarios(); return json(res, { ok: true });
@@ -463,7 +478,7 @@ function painel() {
   const dias = Array.from({ length: 14 }, (_, i) => dia(Date.now() - (13 - i) * 86400e3)).map((d) => ({ dia: d, videos: porDia[d] || 0, pedidos: pedDia[d] || 0 }));
   const conviteDe = {}; for (const c of Object.values(convites)) if (c.usado) conviteDe[c.usado.email] = c.nota || 'convite';
   const us = Object.entries(usuarios).map(([e, x]) => { const meus = ps.filter((p) => p.dono === e);
-    return { email: e, saldo: admin(e) ? null : x.videos || 0, admin: admin(e), criado: x.criado, convite: conviteDe[e] || null, pedidos: meus.length,
+    return { email: e, saldo: admin(e) ? null : x.segundos || 0, admin: admin(e), criado: x.criado, convite: conviteDe[e] || null, pedidos: meus.length,
       entregues: meus.reduce((s, p) => s + p.entregues.length, 0), falhas: meus.reduce((s, p) => s + p.falhas.length, 0),
       concluidos: meus.filter((p) => p.estado === 'concluído').length, ultimo: Math.max(0, ...meus.map((p) => p.ult || 0)) || null }; })
     .sort((a, b) => (b.ultimo || 0) - (a.ultimo || 0));
@@ -544,7 +559,7 @@ http.createServer(async (req, res) => {
       }
       const ganhou = convite ? usarConvite(convite, e) : 0;
       const tok = abrirSessao(e);
-      return json(res, { email: e, admin: admin(e), videos: admin(e) ? null : saldo(e), ganhou }, 200, { 'Set-Cookie': cookie(tok, SESSAO_MS) });
+      return json(res, { email: e, admin: admin(e), segundos: admin(e) ? null : saldo(e), ganhou }, 200, { 'Set-Cookie': cookie(tok, SESSAO_MS) });
     }
     if (req.method === 'GET' && u.pathname === '/termos') {
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Content-Security-Policy': CSP, 'Cache-Control': 'no-store', ...SEGURANCA });
@@ -552,9 +567,9 @@ http.createServer(async (req, res) => {
     }
     if (req.method === 'GET' && u.pathname === '/api/convite') {      // público: só diz se o convite vale e quantos vídeos dá
       if (estourou('conv:' + ip(req), 30)) return json(res, { erro: 'Muitas tentativas. Espere 15 minutos.' }, 429);
-      const c = conviteValido(u.searchParams.get('c')); return c ? json(res, { videos: c.videos }) : json(res, { erro: 'Esse convite já foi usado ou expirou.' }, 404);
+      const c = conviteValido(u.searchParams.get('c')); return c ? json(res, { segundos: c.segundos }) : json(res, { erro: 'Esse convite já foi usado ou expirou.' }, 404);
     }
-    if (req.method === 'GET' && u.pathname === '/api/pacotes') return json(res, { pacotes: PACOTES.map(({ nome, videos, preco, link }) => ({ nome, videos, preco, link })), suporte: SUPORTE });
+    if (req.method === 'GET' && u.pathname === '/api/pacotes') return json(res, { pacotes: PACOTES.map(({ nome, segundos, preco, link }) => ({ nome, segundos, preco, link })), suporte: SUPORTE });
     if (req.method === 'POST' && u.pathname === '/api/cakto') return webhookCakto(req, res);
     if (req.method === 'POST' && u.pathname === '/api/esqueci') {
       const { email: em } = await corpo(req, 2e3); const e = String(em || '').trim().toLowerCase().slice(0, 200);
@@ -577,37 +592,37 @@ http.createServer(async (req, res) => {
       usuarios[e].sal = crypto.randomBytes(16).toString('hex'); usuarios[e].hash = await hash(senha, usuarios[e].sal); delete usuarios[e].reset;
       for (const [k, v] of sessoes) if (v.email === e) sessoes.delete(k);         // derruba as sessões antigas
       salvarUsuarios(); const tok = abrirSessao(e); log({ novaSenha: e });
-      return json(res, { email: e, admin: admin(e), videos: admin(e) ? null : saldo(e) }, 200, { 'Set-Cookie': cookie(tok, SESSAO_MS) });
+      return json(res, { email: e, admin: admin(e), segundos: admin(e) ? null : saldo(e) }, 200, { 'Set-Cookie': cookie(tok, SESSAO_MS) });
     }
     const email = quem(req);
     if (!email) return json(res, { erro: 'login' }, 401);
-    if (req.method === 'GET' && u.pathname === '/api/eu') return json(res, { email, admin: admin(email), videos: admin(email) ? null : saldo(email) });
+    if (req.method === 'GET' && u.pathname === '/api/eu') return json(res, { email, admin: admin(email), segundos: admin(email) ? null : saldo(email) });
     if (req.method === 'POST' && u.pathname === '/api/convite/resgatar') {   // já logado abrindo um convite
       const { convite } = await corpo(req); if (!conviteValido(convite)) return json(res, { erro: 'Esse convite já foi usado ou expirou.' }, 400);
       if (admin(email)) return json(res, { erro: 'Conta de admin não usa convite.' }, 400);
-      const ganhou = usarConvite(convite, email); return json(res, { ganhou, videos: saldo(email) });
+      const ganhou = usarConvite(convite, email); return json(res, { ganhou, segundos: saldo(email) });
     }
     if (u.pathname.startsWith('/api/admin/')) {
       if (!admin(email)) return json(res, { erro: 'não achei' }, 404);
       if (req.method === 'GET' && u.pathname === '/api/admin/painel') return json(res, painel());
       if (req.method === 'GET' && u.pathname === '/api/admin/usuarios')
-        return json(res, Object.entries(usuarios).map(([e, x]) => ({ email: e, videos: x.videos || 0, criado: x.criado, admin: admin(e),
+        return json(res, Object.entries(usuarios).map(([e, x]) => ({ email: e, segundos: x.segundos || 0, criado: x.criado, admin: admin(e),
           pedidos: [...jobs.values()].filter((j) => j.dono === e).length,
           usados: [...jobs.values()].filter((j) => j.dono === e).reduce((s, j) => s + (j.entregues || []).length, 0) })));
       if (req.method === 'POST' && u.pathname === '/api/admin/creditar') {
-        const { email: alvo, videos } = await corpo(req); const n = Math.trunc(Number(videos));
-        if (!usuarios[alvo] || !Number.isFinite(n) || n === 0 || Math.abs(n) > 1000) return json(res, { erro: 'e-mail ou quantidade inválida' }, 400);
-        usuarios[alvo].videos = Math.max(0, saldo(alvo) + n); salvarUsuarios();
-        log({ admin: email, creditar: alvo, videos: n, saldo: usuarios[alvo].videos });
-        return json(res, { email: alvo, videos: usuarios[alvo].videos });
+        const { email: alvo, segundos } = await corpo(req); const n = Math.trunc(Number(segundos));
+        if (!usuarios[alvo] || !Number.isFinite(n) || n === 0 || Math.abs(n) > 100000) return json(res, { erro: 'e-mail ou quantidade inválida' }, 400);
+        usuarios[alvo].segundos = Math.max(0, saldo(alvo) + n); salvarUsuarios();
+        log({ admin: email, creditar: alvo, segundos: n, saldo: usuarios[alvo].segundos });
+        return json(res, { email: alvo, segundos: usuarios[alvo].segundos });
       }
       const base = URL_PUBLICA || `${COOKIE_SEGURO ? 'https' : 'http'}://${req.headers.host}`;
       if (req.method === 'POST' && u.pathname === '/api/admin/convites') {
-        const { videos, nota, dias } = await corpo(req); const n = Math.trunc(Number(videos)), d = Math.trunc(Number(dias || 7));
-        if (!(n >= 1 && n <= 100) || !(d >= 1 && d <= 60)) return json(res, { erro: 'Use de 1 a 100 vídeos e de 1 a 60 dias.' }, 400);
+        const { segundos, nota, dias } = await corpo(req); const n = Math.trunc(Number(segundos)), d = Math.trunc(Number(dias || 7));
+        if (!(n >= MIN_SEG_POR_PECA && n <= 6000) || !(d >= 1 && d <= 60)) return json(res, { erro: `Use de ${MIN_SEG_POR_PECA} a 6000 segundos e de 1 a 60 dias.` }, 400);
         const tok = crypto.randomBytes(12).toString('base64url');
-        convites[tok] = { videos: n, nota: String(nota || '').trim().slice(0, 80), por: email, criado: new Date().toISOString(), ate: new Date(Date.now() + d * 86400e3).toISOString() };
-        salvarConvites(); log({ admin: email, conviteNovo: tok.slice(0, 6), videos: n });
+        convites[tok] = { segundos: n, nota: String(nota || '').trim().slice(0, 80), por: email, criado: new Date().toISOString(), ate: new Date(Date.now() + d * 86400e3).toISOString() };
+        salvarConvites(); log({ admin: email, conviteNovo: tok.slice(0, 6), segundos: n });
         return json(res, { link: `${base}/#/convite/${tok}`, token: tok });
       }
       if (req.method === 'GET' && u.pathname === '/api/admin/convites')
@@ -639,7 +654,7 @@ http.createServer(async (req, res) => {
     if (req.method === 'POST' && u.pathname === '/api/jobs') {
       const nome = nomeEntrada(u.searchParams.get('nome'));
       // Sem saldo não abre pedido: a análise antes da aprovação também gasta (acesso só pra quem recebeu crédito).
-      if (!admin(email) && saldo(email) < 1) return json(res, { erro: 'Você ainda não tem vídeos no saldo. Fale com quem te passou o acesso.' }, 402);
+      if (!admin(email) && saldo(email) < MIN_SEG_POR_PECA) return json(res, { erro: 'Você ainda não tem segundos de vídeo no saldo. Compre um pacote pra começar.' }, 402);
       if (!nome) return json(res, { erro: 'Mande um vídeo (mp4, mov, webm) ou imagem (jpg, png, webp).' }, 400);
       if (Number(req.headers['content-length'] || 0) > MAX_UPLOAD) return json(res, { erro: `Arquivo maior que ${MAX_UPLOAD / 1e6} MB.` }, 413);
       if ([...jobs.values()].some((j) => j.dono === email && j.status === 'rodando'))
@@ -667,12 +682,13 @@ http.createServer(async (req, res) => {
       if (j.status === 'rodando') return json(res, { erro: 'o agente ainda está trabalhando' }, 409);
       const { id } = await corpo(req); const a = j.eventos.find((e) => e.tipo === 'aprovacao' && e.id === id);
       if (!a || a.estado !== 'pendente') return json(res, { erro: 'essa aprovação não está mais valendo' }, 409);
-      if (!admin(email)) { if (saldo(email) < a.videos) return json(res, { erro: `Você tem ${saldo(email)} vídeo(s) e este pedido precisa de ${a.videos}.` }, 402);
-        usuarios[email].videos = saldo(email) - a.videos; salvarUsuarios(); }
-      a.estado = 'aprovada'; j.reserva = (j.reserva || 0) + a.videos; j.finalizado = false; meta(j);
-      evento(j, { tipo: 'aprovado', ref: a.id, videos: a.videos });
+      const seg = a.segundos ?? a.videos * SEG_POR_VIDEO_ANTIGO;   // aprovação pedida antes da troca pra segundos
+      if (!admin(email)) { if (saldo(email) < seg) return json(res, { erro: `Você tem ${saldo(email)} s e este pedido precisa de ${seg} s.` }, 402);
+        usuarios[email].segundos = saldo(email) - seg; salvarUsuarios(); }
+      a.estado = 'aprovada'; j.reserva = (j.reserva || 0) + a.videos; j.reservaSeg = (j.reservaSeg || 0) + seg; j.finalizado = false; meta(j);
+      evento(j, { tipo: 'aprovado', ref: a.id, videos: a.videos, segundos: seg });
       rodar(j, `Aprovado: pode produzir ${a.videos} vídeo(s).`, { confiavel: true });
-      return json(res, { ok: true, videos: admin(email) ? null : saldo(email) });
+      return json(res, { ok: true, segundos: admin(email) ? null : saldo(email) });
     }
     if (req.method === 'POST' && p[3] === 'mensagem') {
       if (j.status === 'rodando') return json(res, { erro: 'o agente ainda está trabalhando' }, 409);

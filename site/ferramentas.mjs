@@ -1,6 +1,7 @@
 // Ferramentas do orquestrador (rodam no processo do servidor, fora do terminal do agente).
-// Saldo em vídeos: o cliente aprova N vídeos num botão (a reserva acontece no clique, não no texto do agente),
-// cada peça entregue consome 1, e o que sobrar volta ao saldo no fim do pedido.
+// Saldo em segundos de vídeo: o agente pede aprovação de N peças, o servidor estima os segundos (duração prevista × N,
+// mínimo 30 s por peça) e o cliente reserva no clique; cada peça entregue é cobrada pela duração real (mínimo 30 s)
+// e no fim do pedido a diferença volta ao saldo (ou sai dele, se passou da reserva).
 // Geração paga só por gerar_midia: estima o preço com os arquivos reais e confere o teto antes de cada chamada.
 import { createSdkMcpServer, tool } from '@anthropic-ai/claude-agent-sdk';
 import { SPEC, NOMES } from './ferramentas-spec.mjs';
@@ -14,7 +15,7 @@ export { NOMES };
 
 const texto = (o) => ({ content: [{ type: 'text', text: typeof o === 'string' ? o : JSON.stringify(o, null, 1) }] });
 const erro = (t) => ({ content: [{ type: 'text', text: t }], isError: true });
-// O cliente só enxerga saldo em vídeos: frase que fala de dinheiro sai inteira do que ele vê.
+// O cliente só enxerga saldo em segundos: frase que fala de dinheiro sai inteira do que ele vê.
 const DINHEIRO = /US\$|R\$|\$\s?\d|\bUSD\b|\bBRL\b|\bd[óo]lar(?:es)?\b|\breais\b|\bcentavos?\b|\bcust(?:o|os|ou|a|ar)\b|\bgast(?:o|os|ei|ou)\b|\bor[çc]amento\b/i;
 export const semDinheiro = (t) => String(t || '').split('\n').map((l) => DINHEIRO.test(l) ? l.split(/(?<=[.!?…])\s+/).filter((f) => !DINHEIRO.test(f)).join(' ') : l).join('\n').replace(/\n{3,}/g, '\n\n').trim();
 export const tetoMidia = (j) => PREVIA_USD + TETO_MIDIA_POR_VIDEO_USD * (j.reserva || 0);
@@ -30,6 +31,11 @@ function dentroDoJob(j, rel) {
 async function decodificaInteiro(arq) {
   if (!/\.(mp4|mov|webm|m4v|mp3|wav|m4a)$/i.test(arq)) return fs.statSync(arq).size > 0;
   try { const { stderr } = await sh('ffmpeg', ['-v', 'error', '-i', arq, '-f', 'null', '-'], { maxBuffer: 1e7 }); return !stderr.trim(); } catch { return false; }
+}
+// duração em segundos (0 pra imagem ou se o ffprobe falhar)
+async function duracao(arq) {
+  if (!/\.(mp4|mov|webm|m4v)$/i.test(arq)) return 0;
+  try { const { stdout } = await sh('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', arq], { timeout: 60e3 }); return Number(stdout) || 0; } catch { return 0; }
 }
 async function baixar(url, destino) {
   for (let t = 0; t < 3; t++) {
@@ -106,12 +112,14 @@ export function executores(j, ctx) {
   }
 
   return {
-    pedir_aprovacao: async ({ videos, resumo }) => {
+    pedir_aprovacao: async ({ videos, resumo, duracao_s }) => {
         const pend = j.eventos.find((e) => e.tipo === 'aprovacao' && e.estado === 'pendente');
         if (pend) pend.estado = 'substituida';
         const id = crypto.randomBytes(4).toString('hex');
-        ctx.evento(j, { tipo: 'aprovacao', id, videos, resumo: semDinheiro(resumo) || `Vou fazer ${videos} vídeo(s).`, estado: 'pendente' });
-        return texto(`Botão de aprovação de ${videos} vídeo(s) mostrado ao cliente. Termine a sua vez agora e espere a resposta. Saldo atual dele: ${ctx.ehAdmin(j.dono) ? 'ilimitado (admin)' : ctx.saldo(j.dono) + ' vídeo(s)'}.`);
+        let base = duracao_s; if (!base && j.entrada) { try { base = await duracao(dentroDoJob(j, j.entrada)); } catch {} }
+        const porPeca = Math.max(ctx.MIN_SEG_POR_PECA, Math.ceil(base || 0)), segundos = porPeca * videos;
+        ctx.evento(j, { tipo: 'aprovacao', id, videos, segundos, resumo: semDinheiro(resumo) || `Vou fazer ${videos} vídeo(s).`, estado: 'pendente' });
+        return texto(`Botão de aprovação de ${videos} peça(s) mostrado ao cliente: reserva ${segundos} s (${porPeca} s por peça). Termine a sua vez agora e espere a resposta. Saldo atual dele: ${ctx.ehAdmin(j.dono) ? 'ilimitado (admin)' : ctx.saldo(j.dono) + ' s'}.`);
       },
 
     gerar_midia: async (item) => {
@@ -151,9 +159,10 @@ export function executores(j, ctx) {
         if ((j.entregues || []).includes(rel)) return texto(`Já estava entregue: ${rel}`);
         if (!ctx.ehAdmin(j.dono) && (j.entregues || []).length >= (j.reserva || 0)) return erro('Não há vídeo reservado pra esta peça. Peça aprovação de mais vídeos com pedir_aprovacao.');
         if (!(await decodificaInteiro(arq))) return erro('O arquivo não decodifica inteiro. Remonte antes de entregar.');
-        (j.entregues ||= []).push(rel); ctx.meta(j);
-        ctx.evento(j, { tipo: 'entregue', caminho: rel });
-        return texto(`Entregue (${j.entregues.length} de ${j.reserva || 0} reservados).`);
+        const seg = Math.max(ctx.MIN_SEG_POR_PECA, Math.ceil(await duracao(arq)));
+        (j.entregues ||= []).push(rel); j.cobradoSeg = (j.cobradoSeg || 0) + seg; ctx.meta(j);
+        ctx.evento(j, { tipo: 'entregue', caminho: rel, segundos: seg });
+        return texto(`Entregue (${j.entregues.length} de ${j.reserva || 0} reservados; ${seg} s, total ${j.cobradoSeg} de ${j.reservaSeg || 0} s reservados).`);
       },
 
     finalizar_pedido: async () => texto(ctx.finalizar(j)),

@@ -255,6 +255,9 @@ const ICONE_UP = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" st
 const ESTADO = { rodando:'trabalhando', esperando:'esperando você', erro:'erro', novo:'começando' };
 const quando = (t) => { if (!t) return ''; const m = Math.round((Date.now() - t) / 60000); if (m < 1) return 'agora'; if (m < 60) return `há ${m} min`;
   const h = Math.round(m / 60); if (h < 24) return `há ${h} h`; return new Date(t).toLocaleDateString('pt-BR', { day:'2-digit', month:'short' }); };
+// saldo em segundos de vídeo, legível: "45 s", "5 min", "1 min 30 s"
+const segAp = (e) => e.segundos ?? e.videos * 60;
+const fmtS = (n) => { n = Math.max(0, Math.round(n || 0)); const m = Math.floor(n / 60), r = n % 60; return m ? (r ? `${m} min ${r} s` : `${m} min`) : `${r} s`; };
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
 // Caminho interno (job/saida/variacao-1.mp4) vira o nome legível ("variacao 1"); o arquivo em si aparece embaixo como vídeo.
 const semCaminho = (t, id) => t.replace(/`?job\/[\w.\-\/]+\/([\w.\-]+)\.(mp4|mov|m4v|webm|jpe?g|png|webp)`?/gi, (_, n) => n.replace(/[-_]/g, ' '))
@@ -268,7 +271,7 @@ const detalhes = () => !!(eu?.admin && det);
 function mostraSaldo() {
   const s = $('#saldo'); if (!eu) { s.textContent = ''; $('#comprar').hidden = true; return; }
   $('#comprar').hidden = !!eu.admin || !temPacotes;
-  if (!eu.admin) { s.innerHTML = `<span class="chip">${eu.videos} vídeo${eu.videos === 1 ? '' : 's'}</span>`; return; }
+  if (!eu.admin) { s.innerHTML = `<span class="chip">${fmtS(eu.segundos)} de vídeo</span>`; return; }
   s.innerHTML = `<span class="chip">admin</span> <a href="#/admin" class="nav">painel</a> <a href="#" id="det" class="nav">${det ? 'esconder detalhes' : 'ver detalhes'}</a>`;
   $('#det').onclick = (ev) => { ev.preventDefault(); det = !det; try { localStorage.setItem('det', det ? '1' : '0'); } catch {} if (jobAtual) job(jobAtual); else mostraSaldo(); };
 }
@@ -296,10 +299,10 @@ const botaoNovo = (on) => { $('#novoBtn').hidden = !on || !eu; };
 
 async function api(url, op) { const r = await fetch(url, op); if (r.status === 401) { eu = null; login(); throw new Error('login'); } return r; }
 
-function login(conv = null) {   // conv: { token, videos } quando a pessoa chegou por um link de convite
+function login(conv = null) {   // conv: { token, segundos } quando a pessoa chegou por um link de convite
   clearInterval(timer); geracao++; botaoNovo(false); $('#compor').hidden = true; $('#st').textContent = ''; $('#sair').hidden = true;
   let criar = !!conv;
-  app.innerHTML = `<div class="entrada"><div class="card">${conv ? `<span class="presente">🎁 ${conv.videos} vídeo${conv.videos === 1 ? '' : 's'} pra testar</span>` : LOGO}<h1 id="lt">Bem-vindo de volta</h1><p class="sub" id="ls">Entre pra mandar seus criativos.</p>
+  app.innerHTML = `<div class="entrada"><div class="card">${conv ? `<span class="presente">🎁 ${fmtS(conv.segundos)} de vídeo pra testar</span>` : LOGO}<h1 id="lt">Bem-vindo de volta</h1><p class="sub" id="ls">Entre pra mandar seus criativos.</p>
   <label class="rotulo" for="em">E-mail</label><input id="em" type="email" placeholder="voce@email.com" autocomplete="email">
   <label class="rotulo" for="se">Senha</label><input id="se" type="password" placeholder="••••••••" autocomplete="current-password">
   <label id="lt2" class="termos" hidden><input type="checkbox" id="aceito"> <span>Li e aceito os <a href="/termos" target="_blank">termos de uso e a política de privacidade</a>.</span></label>
@@ -312,7 +315,7 @@ function login(conv = null) {   // conv: { token, videos } quando a pessoa chego
     $('#lerro').className = r.ok ? 'ok' : 'erro'; $('#lerro').innerHTML = esc(d.msg || d.erro || 'Tente de novo.') + (d.suporte ? ` <a href="${esc(d.suporte)}" target="_blank">Falar com o suporte</a>` : ''); };
   const modo = () => { $('#lerro').textContent = '';
     $('#lt').textContent = conv ? (criar ? 'Você foi convidado' : 'Entre pra receber') : criar ? 'Criar sua conta' : 'Bem-vindo de volta';
-    $('#ls').textContent = conv ? (criar ? `Crie sua conta e os ${conv.videos} vídeo${conv.videos === 1 ? '' : 's'} já caem no seu saldo.` : `Os ${conv.videos} vídeo${conv.videos === 1 ? '' : 's'} vão pra sua conta assim que você entrar.`)
+    $('#ls').textContent = conv ? (criar ? `Crie sua conta e ${fmtS(conv.segundos)} de vídeo já caem no seu saldo.` : `${fmtS(conv.segundos)} de vídeo vão pra sua conta assim que você entrar.`)
       : criar ? 'Use uma senha com 8 ou mais caracteres.' : 'Entre pra mandar seus criativos.';
     $('#ent').textContent = criar ? (conv ? 'Criar conta e receber' : 'Criar conta') : 'Entrar'; $('#troca').textContent = criar ? 'Já tenho conta' : 'Criar conta';
     $('#se').autocomplete = criar ? 'new-password' : 'current-password'; $('#se').placeholder = criar ? 'mínimo 8 caracteres' : '••••••••';
@@ -333,13 +336,13 @@ async function convite(tok) {
   const r = await fetch('/api/convite?c=' + encodeURIComponent(tok)); const d = await r.json().catch(() => ({}));
   if (!r.ok) { app.innerHTML = `<div class="perdido"><span style="font-size:56px;line-height:1">🎟️</span><h2>Esse convite não vale mais.</h2><p>${esc(d.erro || 'Ele já foi usado ou expirou.')} Peça um novo pra quem te mandou.</p><a class="btn-novo" href="#">Entrar na minha conta</a></div>`; return; }
   const sessao = await fetch('/api/eu').then((x) => x.ok ? x.json() : null).catch(() => null);
-  if (!sessao) return login({ token: tok, videos: d.videos });
+  if (!sessao) return login({ token: tok, segundos: d.segundos });
   eu = sessao; mostraSaldo();   // já logado: um clique adiciona o saldo
-  app.innerHTML = `<div class="entrada"><div class="card"><span class="presente">🎁 ${d.videos} vídeo${d.videos === 1 ? '' : 's'} pra testar</span><h1>Você foi convidado</h1>
+  app.innerHTML = `<div class="entrada"><div class="card"><span class="presente">🎁 ${fmtS(d.segundos)} de vídeo pra testar</span><h1>Você foi convidado</h1>
     <p class="sub">Você está como ${esc(eu.email)}.</p><div class="linha"><button id="resg" class="cheio">Adicionar à minha conta</button></div><p id="rerro" class="erro" style="font-size:13px;margin:12px 0 0"></p></div></div>`;
   $('#resg').onclick = async () => { $('#resg').disabled = true; const x = await api('/api/convite/resgatar', { method:'POST', body: JSON.stringify({ convite: tok }) }); const y = await x.json().catch(() => ({}));
     if (!x.ok) { $('#resg').disabled = false; return $('#rerro').textContent = y.erro || 'Não deu certo.'; }
-    eu.videos = y.videos; try { sessionStorage.setItem('ganhou', y.ganhou); } catch {} location.hash = ''; };
+    eu.segundos = y.segundos; try { sessionStorage.setItem('ganhou', y.ganhou); } catch {} location.hash = ''; };
 }
 
 function novaSenha(tok) {
@@ -354,9 +357,9 @@ function novaSenha(tok) {
 async function comprar() {
   clearInterval(timer); jobAtual = null; geracao++; botaoNovo(true); $('#compor').hidden = true; mostraSaldo();
   const { pacotes, suporte } = await (await fetch('/api/pacotes')).json();
-  app.innerHTML = `<h1>Comprar vídeos</h1><p class="sub">Cada vídeo do saldo = 1 variação pronta entregue. Se um pedido usar menos, a sobra volta pro saldo.</p>
+  app.innerHTML = `<h1>Comprar segundos de vídeo</h1><p class="sub">Cada vídeo entregue desconta a duração dele do saldo (mínimo de 30 s por vídeo). Você aprova antes de gastar, e o que sobrar da reserva volta pro saldo.</p>
   <p class="sub"><b>Importante:</b> no pagamento, use o mesmo e-mail da sua conta (${esc(eu.email)}). O saldo cai sozinho em até 1 minuto depois da aprovação.</p>
-  <div class="pacotes">${pacotes.length ? pacotes.map((p) => `<a class="pacote" href="${esc(p.link)}" target="_blank" rel="noopener"><b>${esc(p.nome)}</b><span>${esc(p.preco)}</span><small>${p.videos} vídeos</small></a>`).join('')
+  <div class="pacotes">${pacotes.length ? pacotes.map((p) => `<a class="pacote" href="${esc(p.link)}" target="_blank" rel="noopener"><b>${esc(p.nome)}</b><span>${esc(p.preco)}</span><small>${fmtS(p.segundos)} de vídeo</small></a>`).join('')
     : '<p class="sub">Os pacotes ainda não estão disponíveis.</p>'}</div>
   ${suporte ? `<p class="sub" style="margin-top:20px">Dúvida ou problema com o pagamento? <a href="${esc(suporte)}" target="_blank">Fale com o suporte</a>.</p>` : ''}
   <p><a href="#">voltar</a></p>`;
@@ -376,9 +379,9 @@ function home() {
   <div id="jobs"></div><div class="admin" id="admin"></div>`;
   if (eu.admin) $('#admin').innerHTML = `<a class="card atalho" href="#/admin"><b>Painel do admin</b><small>Usuários, pedidos, vídeos gerados, falhas, convites e créditos →</small></a>`;
   let ganhou = null; try { ganhou = sessionStorage.getItem('ganhou'); sessionStorage.removeItem('ganhou'); } catch {}
-  if (+ganhou) app.insertAdjacentHTML('afterbegin', `<div class="pronto" style="margin:8px 0 0"><span class="check">${CHECK.replace('stroke="currentColor"', 'stroke="#0b0b0b"')}</span><div><b>${ganhou} vídeo${+ganhou === 1 ? '' : 's'} no seu saldo!</b><small>Mande o seu primeiro criativo aqui embaixo.</small></div></div>`);
+  if (+ganhou) app.insertAdjacentHTML('afterbegin', `<div class="pronto" style="margin:8px 0 0"><span class="check">${CHECK.replace('stroke="currentColor"', 'stroke="#0b0b0b"')}</span><div><b>${fmtS(+ganhou)} de vídeo no seu saldo!</b><small>Mande o seu primeiro criativo aqui embaixo.</small></div></div>`);
   const drop = $('#drop'), arq = $('#arq');
-  if (!eu.admin && eu.videos < 1) { drop.classList.add('bloq'); drop.innerHTML = `<span class="ic">${ICONE_UP}</span><b>Você ainda não tem vídeos no saldo</b><small>Fale com quem te passou o acesso.</small>`; $('#msg').disabled = true; }
+  if (!eu.admin && eu.segundos < 30) { drop.classList.add('bloq'); drop.innerHTML = `<span class="ic">${ICONE_UP}</span><b>Você ainda não tem segundos de vídeo no saldo</b><small>${temPacotes ? 'Compre um pacote pra começar.' : 'Fale com quem te passou o acesso.'}</small>`; $('#msg').disabled = true; }
   let arquivo = null;
   const pega = (f) => { arquivo = f; drop.classList.add('ok'); const url = URL.createObjectURL(f);
     drop.innerHTML = `${f.type.startsWith('video') ? `<video src="${url}" muted playsinline autoplay loop></video>` : `<video poster="${url}"></video>`}
@@ -414,7 +417,7 @@ function ligaCopiar(el) { el.querySelectorAll('button[data-copia]').forEach((b) 
 async function listaConvites() {
   const cs = await (await api('/api/admin/convites')).json(); const el = $('#cvs'); if (!el) return;
   if (!cs.length) return el.innerHTML = '';
-  el.innerHTML = `<div class="tabela"><table><tr><th>pra quem</th><th>vídeos</th><th>situação</th><th></th></tr>` + cs.map((c) => `<tr><td>${esc(c.nota || '—')}<br><small style="color:var(--suave)">${quando(Date.parse(c.criado))}</small></td><td>${c.videos}</td>
+  el.innerHTML = `<div class="tabela"><table><tr><th>pra quem</th><th>saldo</th><th>situação</th><th></th></tr>` + cs.map((c) => `<tr><td>${esc(c.nota || '—')}<br><small style="color:var(--suave)">${quando(Date.parse(c.criado))}</small></td><td>${fmtS(c.segundos ?? c.videos * 60)}</td>
     <td><span class="estado ${c.estado === 'aberto' ? 'rodando' : c.estado === 'usado' ? 'feito' : 'erro'}">${c.estado}</span>${c.usado ? `<br><small style="color:var(--suave)">${esc(c.usado.email)}</small>` : c.estado === 'aberto' ? `<br><small style="color:var(--suave)">até ${new Date(c.ate).toLocaleDateString('pt-BR', { day:'2-digit', month:'short' })}</small>` : ''}</td>
     <td style="white-space:nowrap">${c.estado === 'aberto' ? `<button class="sec" data-copia="${esc(c.link)}">Copiar</button> <button class="sec" data-cancela="${esc(c.token)}">Cancelar</button>` : ''}</td></tr>`).join('') + '</table></div>';
   ligaCopiar(el);
@@ -423,15 +426,15 @@ async function listaConvites() {
 async function painelAdmin() {
   const us = await (await api('/api/admin/usuarios')).json();
   $('#admin').innerHTML = `<small>Convites</small><div class="convite-novo card">
-    <div class="campos"><label><span class="rotulo">Vídeos</span><input type="number" id="cvv" value="3" min="1" max="100"></label>
+    <div class="campos"><label><span class="rotulo">Segundos</span><input type="number" id="cvv" value="90" min="30" max="6000" step="30"></label>
     <label class="nota"><span class="rotulo">Pra quem <span style="color:#5d5d66">(opcional)</span></span><input id="cvn" placeholder="Ex.: Ana da mentoria"></label>
     <label><span class="rotulo">Vale por</span><select id="cvd"><option value="3">3 dias</option><option value="7" selected>7 dias</option><option value="30">30 dias</option></select></label>
     <button id="cvb">Gerar link</button></div><div id="cvl"></div></div><div id="cvs"></div>
-    <small>Clientes (admin)</small><div class="tabela"><table><tr><th>e-mail</th><th>vídeos</th><th>pedidos</th><th>usados</th><th></th></tr>` +
-    us.map((u) => `<tr><td>${esc(u.email)}${u.admin ? ' · admin' : ''}</td><td>${u.admin ? '∞' : u.videos}</td><td>${u.pedidos}</td><td>${u.usados}</td>
-      <td>${u.admin ? '' : `<input type="number" value="10" data-e="${esc(u.email)}"> <button data-e="${esc(u.email)}">creditar</button>`} <button data-s="${esc(u.email)}">link de senha</button></td></tr>`).join('') + '</table></div><p id="linkSenha" class="ok" style="word-break:break-all"></p><div id="pags"></div>';
+    <small>Clientes (admin)</small><div class="tabela"><table><tr><th>e-mail</th><th>saldo</th><th>pedidos</th><th>usados</th><th></th></tr>` +
+    us.map((u) => `<tr><td>${esc(u.email)}${u.admin ? ' · admin' : ''}</td><td>${u.admin ? '∞' : fmtS(u.segundos)}</td><td>${u.pedidos}</td><td>${u.usados}</td>
+      <td>${u.admin ? '' : `<input type="number" value="60" step="30" data-e="${esc(u.email)}" aria-label="segundos"> <button data-e="${esc(u.email)}">creditar s</button>`} <button data-s="${esc(u.email)}">link de senha</button></td></tr>`).join('') + '</table></div><p id="linkSenha" class="ok" style="word-break:break-all"></p><div id="pags"></div>';
   $('#cvb').onclick = async () => { $('#cvb').disabled = true;
-    const r = await api('/api/admin/convites', { method:'POST', body: JSON.stringify({ videos: Number($('#cvv').value), nota: $('#cvn').value, dias: Number($('#cvd').value) }) }); const d = await r.json();
+    const r = await api('/api/admin/convites', { method:'POST', body: JSON.stringify({ segundos: Number($('#cvv').value), nota: $('#cvn').value, dias: Number($('#cvd').value) }) }); const d = await r.json();
     $('#cvb').disabled = false; if (!r.ok) return $('#cvl').innerHTML = `<p class="erro">${esc(d.erro)}</p>`;
     $('#cvl').innerHTML = `<div class="link-convite"><code>${esc(d.link)}</code><button class="sec" data-copia="${esc(d.link)}">Copiar</button></div>`; ligaCopiar($('#cvl')); $('#cvn').value = ''; listaConvites(); };
   listaConvites();
@@ -439,12 +442,12 @@ async function painelAdmin() {
     const r = await api('/api/admin/link-senha', { method:'POST', body: JSON.stringify({ email: b.dataset.s }) }); const d = await r.json();
     $('#linkSenha').textContent = r.ok ? `Mande pra ${b.dataset.s} (vale ${d.validade}): ${d.link}` : d.erro; });
   const pg = await (await api('/api/admin/pagamentos')).json(); const pend = Object.entries(pg.pendentes || {});
-  $('#pags').innerHTML = `<small>Pagamentos Cakto (últimos 100)</small><div class="tabela"><table><tr><th>quando</th><th>e-mail</th><th>vídeos</th><th>situação</th></tr>` +
-    (pg.pedidos.map((x) => `<tr><td>${esc((x.t || '').slice(0, 16).replace('T', ' '))}</td><td>${esc(x.email)}</td><td>${x.videos}</td><td>${esc(x.estornado ? ({ refund: 'reembolsado', chargeback: 'chargeback' }[x.estornado] || x.estornado) : x.obs || (x.conta || !(pg.pendentes || {})[x.email] ? 'creditado' : 'aguardando cadastro'))}</td></tr>`).join('') || '<tr><td colspan="4">nenhum ainda</td></tr>') + '</table></div>' +
-    (pend.length ? `<small>Crédito esperando o cliente criar conta: ${pend.map(([e, n]) => esc(e) + ' (' + n + ')').join(', ')}</small>` : '');
+  $('#pags').innerHTML = `<small>Pagamentos Cakto (últimos 100)</small><div class="tabela"><table><tr><th>quando</th><th>e-mail</th><th>saldo</th><th>situação</th></tr>` +
+    (pg.pedidos.map((x) => `<tr><td>${esc((x.t || '').slice(0, 16).replace('T', ' '))}</td><td>${esc(x.email)}</td><td>${fmtS(x.segundos ?? x.videos * 60)}</td><td>${esc(x.estornado ? ({ refund: 'reembolsado', chargeback: 'chargeback' }[x.estornado] || x.estornado) : x.obs || (x.conta || !(pg.pendentes || {})[x.email] ? 'creditado' : 'aguardando cadastro'))}</td></tr>`).join('') || '<tr><td colspan="4">nenhum ainda</td></tr>') + '</table></div>' +
+    (pend.length ? `<small>Crédito esperando o cliente criar conta: ${pend.map(([e, n]) => esc(e) + ' (' + fmtS(n) + ')').join(', ')}</small>` : '');
   $('#admin').querySelectorAll('button[data-e]').forEach((b) => b.onclick = async () => {
     const n = $('#admin').querySelector(`input[data-e="${b.dataset.e}"]`).value;
-    const r = await api('/api/admin/creditar', { method:'POST', body: JSON.stringify({ email: b.dataset.e, videos: Number(n) }) });
+    const r = await api('/api/admin/creditar', { method:'POST', body: JSON.stringify({ email: b.dataset.e, segundos: Number(n) }) });
     if (!r.ok) alert((await r.json()).erro); painelAdmin();
   });
 }
@@ -488,7 +491,7 @@ async function painelGeral(aba) {
       ${kpi('Vídeos entregues', vids, `${P.dias.slice(-7).reduce((s, d) => s + d.videos, 0)} em 7 dias`, 'destaque')}
       ${kpi('Taxa de acerto', acerto == null ? '—' : acerto + '%', `${ps.filter((p) => p.estado === 'concluído').length} de ${fechados.length} pedidos fechados`)}
       ${kpi('Falhas', falhas.length, `${falhas.filter((f) => f.t > sem).length} em 7 dias`, falhas.some((f) => f.t > sem) ? 'alerta' : '')}
-      ${kpi('Saldo em aberto', P.usuarios.reduce((s, u) => s + (u.saldo || 0), 0), 'vídeos nas contas')}
+      ${kpi('Saldo em aberto', fmtS(P.usuarios.reduce((s, u) => s + (u.saldo || 0), 0)), 'de vídeo nas contas')}
     </div>
     <div class="grafico card"><div class="g-topo"><small>Vídeos entregues por dia</small><small>14 dias</small></div><div class="barras">${P.dias.map((d) =>
       `<div class="barra-d" title="${d.dia}: ${d.videos} vídeo(s), ${d.pedidos} pedido(s)"><span style="height:${d.videos / maxD * 100}%">${d.videos || ''}</span><i>${d.dia.slice(8)}</i></div>`).join('')}</div></div>
@@ -549,13 +552,13 @@ function abaUsuario(el, email) {
   const meus = P.pedidos.filter((p) => p.dono === email);
   el.innerHTML = `<a href="#/admin/usuarios" class="voltar">← todos os usuários</a>
     <div class="usuario card"><div><h2>${esc(email)}</h2><small>${u.convite ? '🎁 convite: ' + esc(u.convite) + ' · ' : ''}conta criada ${dataCurta(Date.parse(u.criado))} · último uso ${u.ultimo ? quando(u.ultimo) : '—'}</small></div>
-      <div class="u-nums"><div><b>${u.admin ? '∞' : u.saldo}</b><small>saldo</small></div><div><b>${u.pedidos}</b><small>pedidos</small></div><div><b>${u.entregues}</b><small>vídeos</small></div><div><b>${u.falhas}</b><small>falhas</small></div></div>
-      ${u.admin ? '' : `<div class="u-acoes"><input type="number" id="uq" value="5"><button id="uc">Dar vídeos</button><button class="sec" id="ut">Tirar</button><button class="sec" id="us">Link de nova senha</button></div><p id="um" class="ok" style="word-break:break-all"></p>`}</div>
+      <div class="u-nums"><div><b>${u.admin ? '∞' : fmtS(u.saldo)}</b><small>saldo</small></div><div><b>${u.pedidos}</b><small>pedidos</small></div><div><b>${u.entregues}</b><small>vídeos</small></div><div><b>${u.falhas}</b><small>falhas</small></div></div>
+      ${u.admin ? '' : `<div class="u-acoes"><input type="number" id="uq" value="60" step="30" aria-label="segundos"><button id="uc">Dar segundos</button><button class="sec" id="ut">Tirar</button><button class="sec" id="us">Link de nova senha</button></div><p id="um" class="ok" style="word-break:break-all"></p>`}</div>
     <div id="upeds"></div>`;
   abaPedidos($('#upeds'), meus, false);
   if (u.admin) return;
   const credita = async (sinal) => { const n = Math.abs(Math.trunc(Number($('#uq').value))); if (!n) return;
-    const r = await api('/api/admin/creditar', { method:'POST', body: JSON.stringify({ email, videos: sinal * n }) }); const d = await r.json();
+    const r = await api('/api/admin/creditar', { method:'POST', body: JSON.stringify({ email, segundos: sinal * n }) }); const d = await r.json();
     if (!r.ok) return $('#um').textContent = d.erro; painelGeral('usuario:' + encodeURIComponent(email)); };
   $('#uc').onclick = () => credita(1); $('#ut').onclick = () => credita(-1);
   $('#us').onclick = async () => { const r = await api('/api/admin/link-senha', { method:'POST', body: JSON.stringify({ email }) }); const d = await r.json();
@@ -622,10 +625,10 @@ function job(id) {
       if (e.tipo === 'fim' && e.dur && detalhes()) chat.insertAdjacentHTML('beforeend', `<div class="fim">admin · rodada ${(e.dur / 60000).toFixed(1)} min${e.durModelo <= e.dur ? ` (modelo ${(e.durModelo / 60000).toFixed(1)} · vídeo/ferramentas ${((e.dur - e.durModelo) / 60000).toFixed(1)})` : ''} · ${e.passos} passos</div>`);
       if (e.tipo === 'erro') chat.insertAdjacentHTML('beforeend', `<div class="aviso-erro">${esc(e.texto)}</div>`);
       if (e.tipo === 'aprovacao') chat.insertAdjacentHTML('beforeend', `<div class="aprov" id="ap-${esc(e.id)}"><p>${esc(e.resumo)}</p>
-        <div class="uso"><span>Usa <b>${e.videos} vídeo${e.videos === 1 ? '' : 's'}</b> do seu saldo${eu.admin ? '' : ` · você tem <b>${eu.videos}</b>`}</span>${!eu.admin && eu.videos < e.videos && temPacotes ? '<a href="#/comprar">comprar vídeos</a>' : ''}</div>
+        <div class="uso"><span>Usa até <b>${fmtS(segAp(e))}</b> do seu saldo (${e.videos} vídeo${e.videos === 1 ? '' : 's'})${eu.admin ? '' : ` · você tem <b>${fmtS(eu.segundos)}</b>`}</span>${!eu.admin && eu.segundos < segAp(e) && temPacotes ? '<a href="#/comprar">comprar segundos</a>' : ''}</div>
         <div class="linha"><button class="segurar" data-ap="${esc(e.id)}"><span class="enche"></span><span class="rot">Segure pra gerar ${e.videos === 1 ? 'meu vídeo' : 'minhas variações'}</span></button><small class="aperro erro"></small></div>
-        <small class="dica">Fica pronto em ~${minutos(media * e.videos)} min. O que não for entregue volta pro saldo.</small></div>`);
-      if (e.tipo === 'aprovado') { const c = document.getElementById('ap-' + e.ref); const selo = `<div class="selo">${CHECK} Aprovado · ${e.videos} vídeo${e.videos === 1 ? '' : 's'} reservado${e.videos === 1 ? '' : 's'}</div>`;
+        <small class="dica">Fica pronto em ~${minutos(media * e.videos)} min. Desconta a duração real de cada vídeo (mínimo 30 s); a sobra volta pro saldo.</small></div>`);
+      if (e.tipo === 'aprovado') { const c = document.getElementById('ap-' + e.ref); const selo = `<div class="selo">${CHECK} Aprovado · ${e.videos} vídeo${e.videos === 1 ? '' : 's'} · ${fmtS(segAp(e))} reservados</div>`;
         if (c) c.outerHTML = selo; else chat.insertAdjacentHTML('beforeend', selo);
         prod = { t0: e.t, videos: e.videos, imgs: 0, vids: 0, entregues: 0, fim: false };
         chat.insertAdjacentHTML('beforeend', `<div class="andamento" hidden><small>Já está saindo:</small><div class="fotos"></div></div><div class="entregas">${
@@ -642,7 +645,7 @@ function job(id) {
       if (e.tipo === 'finalizado') { chat.querySelectorAll('.vaga').forEach((v) => v.remove()); chat.querySelectorAll('.entregas').forEach((gr) => gr.classList.toggle('bento', gr.querySelectorAll('.entrega').length >= 3));
         if (prod) prod.fim = true;
         chat.insertAdjacentHTML('beforeend', `<div class="pronto"><span class="check">${CHECK.replace('stroke="currentColor"', 'stroke="#0b0b0b"')}</span><div><b>${e.entregues ? (e.entregues === 1 ? 'Seu vídeo está pronto!' : `Prontas! ${e.entregues} variações`) : 'Pedido encerrado'}</b>
-          <small>${e.entregues ? 'Assista e baixe aqui em cima.' : 'Nenhum vídeo foi entregue.'}${e.devolvidos ? ` ${e.devolvidos} vídeo${e.devolvidos === 1 ? '' : 's'} voltou${e.devolvidos === 1 ? '' : 'aram'} pro saldo.` : ''}</small></div></div>`);
+          <small>${e.entregues ? 'Assista e baixe aqui em cima.' : 'Nenhum vídeo foi entregue.'}${e.segundosDevolvidos ? ` ${fmtS(e.segundosDevolvidos)} voltaram pro saldo.` : e.devolvidos && e.segundosDevolvidos == null ? ` ${e.devolvidos} vídeo${e.devolvidos === 1 ? '' : 's'} voltou${e.devolvidos === 1 ? '' : 'aram'} pro saldo.` : ''}</small></div></div>`);
         if (vivo && e.entregues) avisar('✓ Pronto · Estúdio Spy', `${e.entregues} vídeo${e.entregues === 1 ? '' : 's'} pronto${e.entregues === 1 ? '' : 's'} pra baixar.`); }
     }
     painel(status); vivo = true;
@@ -654,7 +657,7 @@ function job(id) {
       const aprovar = async () => { b.classList.remove('segurando'); b.disabled = true; rot.textContent = 'Aprovando…'; destravaAviso();
         const r = await api(`/api/jobs/${id}/aprovar`, { method:'POST', body: JSON.stringify({ id: b.dataset.ap }) });
         const d = await r.json().catch(() => ({})); if (!r.ok) { b.disabled = false; rot.textContent = texto; b.parentNode.querySelector('.aperro').textContent = d.erro || 'Não deu pra aprovar.'; }
-        else if (d.videos != null) { eu.videos = d.videos; mostraSaldo(); } };
+        else if (d.segundos != null) { eu.segundos = d.segundos; mostraSaldo(); } };
       const solta = () => { if (!t) return; clearTimeout(t); t = null; b.classList.remove('segurando'); rot.textContent = texto; };
       b.onpointerdown = (ev) => { if (b.disabled || ev.button > 0) return; b.classList.add('segurando'); rot.textContent = 'Continue segurando…'; t = setTimeout(() => { t = null; aprovar(); }, 1200); };
       b.onpointerup = b.onpointerleave = b.onpointercancel = solta; b.oncontextmenu = (ev) => ev.preventDefault();

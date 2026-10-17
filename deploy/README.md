@@ -63,7 +63,7 @@ Se algo falhar, mande o log do serviço `orquestrador` (aba Logs) e o arquivo `/
 ## Venda (16/10/2026)
 1. Na Cakto, crie um produto por pacote (ou um produto com várias ofertas). O id da oferta é o fim do link `pay.cakto.com.br/<id>`.
 2. Ambiente do EasyPanel:
-   - `PACOTES_CAKTO=[{"oferta":"<id>","videos":5,"nome":"5 vídeos","preco":"R$ 97","link":"https://pay.cakto.com.br/<id>"}, …]` (uma linha)
+   - `PACOTES_CAKTO=[{"oferta":"<id>","segundos":300,"nome":"Starter","preco":"R$ 297","link":"https://pay.cakto.com.br/<id>"}, …]` (saldo em segundos de vídeo desde 17/10) (uma linha)
    - `URL_PUBLICA=https://<domínio do Estúdio>` · `SUPORTE_URL=https://wa.me/55…` · `CAKTO_WEBHOOK_SECRET=<secret do webhook>`
 3. Na Cakto (Apps → Webhooks), crie o webhook com a URL `https://<domínio>/api/cakto` e os eventos `purchase_approved`, `refund` e `chargeback`. Copie o secret pro Ambiente e implante.
 4. Teste: "Testar webhook" na Cakto deve dar 200 (o pedido de teste não credita ninguém, porque a oferta do exemplo não está nos pacotes). Depois, 1 compra real de 1 pacote com o e-mail de uma conta: o saldo sobe sozinho e aparece em "Pagamentos Cakto" no admin.
